@@ -1,0 +1,13 @@
+# Package                       Version     
+# ----------------------------- ------------
+setuptools
+wheel
+numpy
+scikit-learn                    ~=1.2.2       
+sentencepiece                   ~=0.1.97      
+tqdm                            ~=4.65.0      
+spacy                           ~=3.5.1       
+sphinx                          ~=6.1.3       
+sphinx-rtd-theme                ~=1.2.0       
+torch                           ~=1.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+transformers                    ~=4.27.3      

@@ -4,7 +4,8 @@ import torch
 
 
 def log_sum_exp(tensor: torch.Tensor, dim=-1, keepdim=False):
-    """Compute log sum exp a numerically stable way for the forward algorithm.
+    """Computes the LogSumExp in a numerically stable way for the forward
+    algorithm.
 
     Parameters
     ----------
@@ -18,7 +19,7 @@ def log_sum_exp(tensor: torch.Tensor, dim=-1, keepdim=False):
     Returns
     -------
     max_score: torch.Tensor
-        Rank 0 tensor containing the highest scores of the input.
+        Rank 0 tensor containing the input's highest score.
     """
     max_score, _ = tensor.max(dim, keepdim=keepdim)
     if keepdim:

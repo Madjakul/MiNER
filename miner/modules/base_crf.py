@@ -10,7 +10,7 @@ from miner.utils import IMPOSSIBLE_SCORE, log_sum_exp
 
 
 class BaseCRF(nn.Module):
-    """BaseCRF _[1] .
+    """Abstract class[2]_ to represent Conditional Random Fields[1]_.
 
     Parameters
     ----------
@@ -32,7 +32,12 @@ class BaseCRF(nn.Module):
 
     References
     ----------
-    ..  [1] Kajyuuen. 2021. Pytorch-partial-crf/base_crf.py at master ·
+    ..  [1] John D. Lafferty, Andrew McCallum, and Fernando C. N. Pereira.
+        2001. Conditional Random Fields: Probabilistic Models for Segmenting
+        and Labeling Sequence Data. In Proceedings of the Eighteenth
+        International Conference on Machine Learning (ICML '01). Morgan
+        Kaufmann Publishers Inc., San Francisco, CA, USA, 282–289.
+    ..  [2] Kajyuuen. 2021. Pytorch-partial-crf/base_crf.py at master ·
         Kajyuuen/pytorch-partial-CRF. (November 2021). Retrieved November 8,
         2022 from
         https://github.com/kajyuuen/pytorch-partial-crf/blob/master/pytorch_partial_crf/base_crf.py
@@ -51,20 +56,20 @@ class BaseCRF(nn.Module):
     @abstractmethod
     def forward(
         self, emissions: torch.Tensor, tags: torch.LongTensor,
-        mask: Optional[torch.ByteTensor] = None
-        ):
+        mask: Optional[torch.Tensor]=None
+    ):
         raise NotImplementedError()
 
     def marginal_probabilities(
-        self, emissions: torch.Tensor, mask: Optional[torch.ByteTensor] = None
+        self, emissions: torch.Tensor, mask: Optional[torch.Tensor]=None
     ):
-        """Compute Marginal probabilities.
+        """Computes the marginal probabilities.
 
         Parameters
         ----------
         emissions: ``torch.Tensor``
             (batch_size, sequence_length, num_tags).
-        mask: ``torch.ByteTensor``
+        mask: ``torch.Tensor``, ``None``
             Show padding tags. 0 don't calculate score. (batch_size,
             sequence_length)
 
@@ -93,10 +98,10 @@ class BaseCRF(nn.Module):
         return torch.exp(proba)
 
     def _forward_algorithm(
-        self, emissions: torch.Tensor, mask: torch.ByteTensor,
-        reverse_direction: bool = False
+        self, emissions: torch.Tensor, mask: torch.Tensor,
+        reverse_direction: bool=False
     ):
-        """Compute the log probabilities.
+        """Computes the log probabilities.
 
         Parameters
         ----------
@@ -157,15 +162,15 @@ class BaseCRF(nn.Module):
         return torch.stack(log_proba)
 
     def viterbi_decode(
-        self, emissions: torch.Tensor, mask: Optional[torch.ByteTensor] = None
+        self, emissions: torch.Tensor, mask: Optional[torch.Tensor]=None
     ):
-        """Dynamicaly decodes the output sequence tag.
+        """Dynamicaly decodes a sequence of tags.
 
         Parameters
         ----------
         emissions: ``torch.Tensor``
             (batch_size, sequence_length, num_tags).
-        mask: ``torch.ByteTensor``
+        mask: ``torch.Tensor``
             Show padding tags. 0 don't calculate score. (batch_size,
             sequence_length).
 
@@ -223,8 +228,8 @@ class BaseCRF(nn.Module):
         return best_tags_list
 
     def restricted_viterbi_decode(
-        self, emissions: torch.Tensor, possible_tags: torch.ByteTensor,
-        mask: Optional[torch.ByteTensor] = None
+        self, emissions: torch.Tensor, possible_tags: torch.Tensor,
+        mask: Optional[torch.Tensor]=None
     ):
         """Dynamicaly decodes a restricted list of output tags.
 
@@ -232,16 +237,16 @@ class BaseCRF(nn.Module):
         ----------
         emissions: ``torch.Tensor``
             (batch_size, sequence_length, num_tags).
-        possible_tags: ``torch.ByteTensor``
+        possible_tags: ``torch.Tensor``
             (batch_size, sequence_length, num_tags).
-        mask: ``torch.ByteTensor``
+        mask: ``torch.Tensor``
             Show padding tags. 0 don't calculate score. (batch_size,
             sequence_length).
 
         Returns
         -------
-            tags: ``torch.Tensor``
-                (batch_size).
+        tags: ``torch.Tensor``
+            (batch_size).
         """
         batch_size, sequence_length, num_tags = emissions.data.shape
         if mask is None:

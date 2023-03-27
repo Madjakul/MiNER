@@ -1,6 +1,6 @@
 # miner/utils/data/ner_dataset.py
 
-from typing import Union, Optional, List, Dict
+from typing import Literal, Union, Optional, List, Dict
 
 import torch
 from torch.utils.data import Dataset
@@ -8,22 +8,48 @@ from transformers import AutoTokenizer
 
 
 class NER_Dataset(Dataset):
-    """Custom Dataset to take care of the training and the inference of the
+    """Custom Dataset taiking care of the training and the inference of the
     NER.
 
     Parameters
     ----------
+    lang: ``str``, {"en", "fr"}
+        Language of the training data.
+    device: ``str``, {"cpu", "cuda"}
+        Wether or not to use the GPU for computation.
+    max_length: ``int``
+        Maximum length of a sentence.
+    iterable_corpus: ``list``
+        List of tokens per document.
+    labels: ``list``
+        List of possible labels in natural language.
+    iterable_labels: ``list``, ``None``
+        List of label per document.
 
     Attributes
     ----------
-
-    Examples
-    --------
+    device: ``str``, {"cpu", "cuda"}
+        Wether or not to use the GPU for computation.
+    max_length: ``int``
+        Maximum length of a sentence.
+    iterable_corpus: ``list``
+        List of tokens per document.
+    iterable_labels: ``list``, ``None``
+        List of label per document.
+    label2idx: ``dict``
+        maps each label to a unique integer.
+    tokenizer: ``transformers.AutoTokenizer``
+        LLM tokenizer.
+    inputs: ``list``
+        List of dictionaries returned by ``self.tokenizer``.
+    outputs: ``list``
+        List of labels from ``self.iterable_labels`` expressed as a list of
+        integers.
     """
 
     def __init__(
-        self, lang: str, device: str, max_length: int,
-        iterable_corpus: List[str], labels: List[str],
+        self, lang: Literal["en", "fr"], device: Literal["cpu", "cuda"],
+        max_length: int, iterable_corpus: List[str], labels: List[str],
         iterable_labels: Optional[List[str]]=None
     ):
         self.iterable_corpus = iterable_corpus

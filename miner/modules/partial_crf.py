@@ -12,7 +12,7 @@ from miner.utils import (
 
 
 class PartialCRF(BaseCRF):
-    """Partial/Fuzzy Conditional random field _[1].
+    """Partial/Fuzzy Conditional random field[1]_.
 
     Parameters
     ----------
@@ -36,27 +36,43 @@ class PartialCRF(BaseCRF):
         nn.init.uniform_(self.transitions, -0.1, 0.1)
 
     def forward(
-        self, emissions: torch.Tensor, tags: torch.LongTensor,
-        mask: Optional[torch.ByteTensor] = None
-    ) -> torch.Tensor:
+        self, emissions: torch.Tensor, tags: torch.Tensor,
+        mask: Optional[torch.Tensor]=None
+    ):
+        """Compute the negative log-likelihood of an observed sequence of tags.
+
+        Parameters
+        ----------
+        emissions: ``torch.Tensor``
+            Emission scores of each tokens.
+        tags: ``torch.Tensor``
+            Seqeuence of true labels.
+        mask: ``torch.Tensor``
+            Binary tensor mapping the padding labels to 0.
+
+        Returns
+        -------
+        torch.sum(forward_score - gold_score): ``torch.Tensor``
+            Negative log-likelihood.
+        """
         if mask is None:
             mask = torch.ones_like(tags, dtype=torch.uint8)
         possible_tags = create_possible_tag_masks(self.num_tags, tags)
 
-        gold_score = self._numerator_score(emissions, tags, mask, possible_tags)
+        gold_score = self._numerator_score(emissions, mask, possible_tags)
         forward_score = self._denominator_score(emissions, mask)
         return torch.sum(forward_score - gold_score)
 
     def _denominator_score(
-        self, emissions: torch.Tensor, mask: torch.ByteTensor
-    ) -> torch.Tensor:
-        """ Compute the partition score.
+        self, emissions: torch.Tensor, mask: torch.Tensor
+    ):
+        """ Computes the partition score.
 
         Parameters
         ----------
         emissions: ``torch.Tensor``
             (batch_size, sequence_length, num_tags).
-        mask: ``torch.ByteTensor``
+        mask: ``torch.Tensor``
             Show padding tags. 0 don't calculate score. (batch_size,
             sequence_length).
 
@@ -90,16 +106,16 @@ class PartialCRF(BaseCRF):
         return log_sum_exp(stops) # (batch_size,)
 
     def _numerator_score(
-        self, emissions: torch.Tensor, tags: torch.LongTensor,
-        mask: torch.ByteTensor, possible_tags: torch.ByteTensor
-    ) -> torch.Tensor:
-        """COmpute the sentence's score.
+        self, emissions: torch.Tensor, mask: torch.Tensor,
+        possible_tags: torch.Tensor
+    ):
+        """Computes the sentence's score.
 
         Parameters
         ----------
         emissions: ``torch.Tensor``
             (batch_size, sequence_length, num_tags).
-        mask: ``torch.ByteTensor``
+        mask: ``torch.Tensor``
             Show padding tags. 0 don't calculate score. (batch_size,
             sequence_length).
 
@@ -163,10 +179,10 @@ class PartialCRF(BaseCRF):
         return log_sum_exp(stops) # (batch_size,)
 
     def _forward_algorithm(
-        self, emissions: torch.Tensor, mask: torch.ByteTensor,
-        reverse_direction: bool = False
-    ) -> torch.FloatTensor:
-        """Compute the log probabilities.
+        self, emissions: torch.Tensor, mask: torch.Tensor,
+        reverse_direction: bool=False
+    ):
+        """Computes the log probabilities.
 
         Parameters
         ----------

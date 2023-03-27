@@ -23,10 +23,10 @@ if DEVICE == "cuda":
 
 def bio_classification_report(y_true: list, y_pred: list):
     """Classification report for a list of BIO-encoded sequences. It computes
-    token-level metrics and discards "O" labels.
+    token-level metrics.
 
-    Notes
-    -----
+    Warnings
+    --------
     It requires scikit-learn 0.15+ (or a version from github master) to
     calculate averages properly!
 
@@ -59,7 +59,6 @@ def bio_classification_report(y_true: list, y_pred: list):
 
 
 if __name__=="__main__":
-    logging.info("=== Testing ===")
     parser = argparse.ArgumentParser()
     parser.add_argument("--lang", choices=["en", "fr"], default="en")
     parser.add_argument(
@@ -68,9 +67,9 @@ if __name__=="__main__":
         default="./data/bc5cdr/cdr_test.conll"
     )
     parser.add_argument(
-        "--labels",
-        nargs="+",
-        default=["O", "B-CHEMICAL", "I-CHEMICAL", "B-DISEASE", "I-DISEASE"]
+        "--labels_path",
+        type=str,
+        default="./data/labels.txt"
     )
     parser.add_argument("--lm_path", type=str, default="./tmp/lm")
     parser.add_argument("--max_length", type=int, default=256)
@@ -78,13 +77,20 @@ if __name__=="__main__":
     parser.add_argument("--ner_path", type=str, default="./tmp/ner.pt")
     args = parser.parse_args()
 
+    logging.info("=== Testing ===")
+
+    logging.info(f"Reading labels from {args.labels_path}")
+    with open(args.labels_path, "r", encoding="utf-8") as f:
+        labels = f.read().splitlines()
+    logging.info(f"Loading test data from {args.test_corpus_path}")
     test_corpus, test_labels = pp.read_conll(args.test_corpus_path)
+    logging.info("Building the test dataloader...")
     test_dataset = NER_Dataset(
         lang=args.lang,
         device=DEVICE,
         iterable_corpus=test_corpus,
         iterable_labels=test_labels,
-        labels=args.labels,
+        labels=labels,
         max_length=args.max_length,
     )
     test_dataloader = DataLoader(
@@ -93,16 +99,20 @@ if __name__=="__main__":
         shuffle=True
     )
     idx2label = {v: k for k, v in test_dataset.label2idx.items()}
+
+    logging.info(f"Loading the NER from {args.ner_path}")
     ner = NER(
         lang=args.lang,
         max_length=args.max_length,
         lm_path=args.lm_path,
-        num_labels=len(args.labels) + 1,
+        num_labels=len(labels) + 1,
         padding_idx=test_dataset.label2idx["PAD"],
         device=DEVICE
     ).to(DEVICE)
     ner.load_state_dict(torch.load(args.ner_path)["model_state_dict"])
     ner.eval()
+
+    logging.info("Predicting...")
     y_true = []
     y_pred = []
     with torch.no_grad():
@@ -115,5 +125,7 @@ if __name__=="__main__":
             y_pred[i][j] = idx2label[y_pred[i][j]]
             y_true[i][j] = idx2label[y_true[i][j]]
         y_true[i] = y_true[i][:len(y_pred[i])]
+
+    logging.info("Testing...")
     logging.warning(bio_classification_report(y_true, y_pred))
 

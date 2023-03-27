@@ -21,7 +21,6 @@ else: DEVICE = "cpu"
 
 
 if __name__=="__main__":
-    logging.info("=== Training ===")
     parser = argparse.ArgumentParser()
     parser.add_argument("--lang", choices=["en", "fr"], default="en")
     parser.add_argument(
@@ -30,7 +29,7 @@ if __name__=="__main__":
         default="./data/bc5cdr/cdr_train.conll"
     )
     parser.add_argument(
-        "--valid_corpus_path",
+        "--val_corpus_path",
         type=str,
         default="./data/bc5cdr/cdr_val.conll"
     )
@@ -40,9 +39,9 @@ if __name__=="__main__":
         default="./data/gazetteers/"
     )
     parser.add_argument(
-        "--labels",
-        nargs="+",
-        default=["O", "B-CHEMICAL", "I-CHEMICAL", "B-DISEASE", "I-DISEASE"]
+        "--labels_path",
+        type=str,
+        default="./data/labels.txt"
     )
     parser.add_argument("--lm_path", type=str, default="./tmp/lm")
     parser.add_argument("--max_length", type=int, default=256)
@@ -57,16 +56,24 @@ if __name__=="__main__":
     parser.add_argument("--seed", type=int, default=8)
     args = parser.parse_args()
 
+    logging.info("=== Training ===")
+
     torch.manual_seed(args.seed)
 
+    logging.info(f"Loading labels from {args.labels_path}")
+    with open(args.labels_path, "r", encoding="utf-8") as f:
+        labels = f.read().splitlines()
+    logging.info(f"Loading training data from {args.train_corpus_path}")
     train_corpus, train_labels = pp.read_conll(args.train_corpus_path)
-    val_corpus, val_labels = pp.read_conll(args.valid_corpus_path)
+    logging.info(f"Loading validation data from {args.val_corpus_path}")
+    val_corpus, val_labels = pp.read_conll(args.val_corpus_path)
+    logging.info("Building the training dataloader...")
     train_dataset = NER_Dataset(
         lang=args.lang,
         device=DEVICE,
         max_length=args.max_length,
         iterable_corpus=train_corpus,
-        labels=args.labels,
+        labels=labels,
         iterable_labels=train_labels
     )
     train_dataloader = DataLoader(
@@ -74,12 +81,13 @@ if __name__=="__main__":
         batch_size=args.ner_batch_size,
         shuffle=True
     )
+    logging.info("Building the validation dataloader...")
     val_dataset = NER_Dataset(
         lang=args.lang,
         device=DEVICE,
         max_length=args.max_length,
         iterable_corpus=val_corpus,
-        labels=args.labels,
+        labels=labels,
         iterable_labels=val_labels
     )
     val_dataloader = DataLoader(
@@ -87,14 +95,18 @@ if __name__=="__main__":
         batch_size=args.ner_batch_size,
         shuffle=True
     )
+
+    logging.info(f"Building the NER with {train_dataset.label2idx}")
     ner = NER(
         lang=args.lang,
         max_length=args.max_length,
         lm_path=args.lm_path,
-        num_labels=len(args.labels) + 1,
-        padding_idx=len(args.labels),
+        num_labels=len(labels) + 1,
+        padding_idx=len(labels),
         device=DEVICE
     ).to(DEVICE)
+
+    logging.info("Training...")
     trainer = NER_Trainer(
         ner=ner,
         lr=args.lr,
@@ -103,7 +115,6 @@ if __name__=="__main__":
         min_delta=args.min_delta,
         epochs=args.ner_epochs,
         max_length=args.max_length,
-        label2idx=train_dataset.label2idx,
         device=DEVICE,
         accumulation_steps=args.ner_accumulation_steps,
         ner_path=args.ner_path

@@ -14,9 +14,9 @@ FORMAT = (
 
 
 def logging_config():
-    """Configures of the `logging` module: creates a `log` file with the
-    current date. If the file already exists, the logs are added afterwards.
-    Only warning and error messages are displayed in the console.
+    """Configures the `logging` module: creates a `log` file with the current
+    date. If the file already exists, the logs are added afterwards. Only
+    warning and error messages are displayed in the console.
     """
     logging.basicConfig(
         filename=LOG,

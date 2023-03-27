@@ -13,12 +13,6 @@ def load_gazetteers(path: str):
     """Loads every files in a given directory and treats each of them as a
     dictionary's key.
 
-    Warnings
-    --------
-    Make sure to have `txt` files as dictionaries with explicit names. One line
-    corresponds to one entry. The tagging made made afterward is case
-    insensitive.
-
     Parameters
     ----------
     path: ``str``
@@ -28,6 +22,11 @@ def load_gazetteers(path: str):
     -------
     gazetteers: ``dict``
         Dictionary with format {"name_of_file": ["list", "of", "entries"]}.
+
+    Warnings
+    --------
+    Make sure to have `txt` files as dictionaries with explicit names. One line
+    corresponds to one entry. The tagging made afterward is case insensitive.
     """
     gazetteers = {}
     for file in os.listdir(path):
@@ -44,7 +43,8 @@ def tokenize(nlp: Union[English, French], text: str):
     return Doc(nlp.vocab, escaped_text)
 
 def read_conll(path: str):
-    """Reads a ``conll`` file and returns it as a list of dictionnaries.
+    """Reads a ``conll`` file and returns a tuple containing the list of tokens
+    per doc and tags epr doc.
 
     Parameters
     ----------
@@ -53,6 +53,10 @@ def read_conll(path: str):
 
     Returns
     -------
+    token_docs: ``list``
+        List of tokens per document.
+    tag_docs: ``list``
+        List of labels per document.
     """
     with open(path, "r", encoding="utf-8") as f:
         raw_text = f.read().strip()

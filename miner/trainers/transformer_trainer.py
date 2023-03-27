@@ -9,12 +9,27 @@ from miner.utils.data import TransformerDataset
 
 class TransformerTrainer():
     """Wrapper for the transformers ``Trainer`` class to perform domain-
-    specific MLM _[1] before adding the NER head _[2].
+    specific MLM [1]_ before adding the NER head [2]_.
 
     Parameters
     ----------
-    lm: ``miner.modules.RoBERTa``, ``miner.modules.CamemBERT`` or ``miner.modules.Longformer``
+    lm: ``miner.modules.RoBERTa``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
         Language model checkpoint from **HuggingFace**.
+    lm_path: ``str``
+        Path to the local file that will contained the trained language model.
+    lm_dataset: ``miner.utils.data.TransformerDataset``
+        Iterable object containing the training and validation data.
+    per_device_train_batch_size: ``int``
+        Training batch size.
+    seed: ``int``
+        Integers used to initialized the weight of the LLM. Used for
+        replicability.
+    per_device_eval_batch_size: ``int``
+        Validation batch size.
+    num_train_epochs: ``int``
+        Maximum number of training epochs.
+    gradient_accumulation_steps: ``int``
+        For how manys steps the gradient is accumulated.
 
     Attributes
     ----------
@@ -69,7 +84,7 @@ class TransformerTrainer():
         )
 
     def train(self):
-        """Perform MLM to further pretrain a large language model.
+        """Performs MLM to further pretrain a large language model.
         """
         self.trainer.train()
         self.trainer.save_model(self.lm_path)

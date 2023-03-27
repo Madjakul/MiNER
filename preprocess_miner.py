@@ -1,4 +1,4 @@
-# phrase_mining.py
+# preprocess_miner.py
 
 import logging
 import argparse
@@ -22,7 +22,7 @@ if __name__=="__main__":
     parser.add_argument(
         "--val_corpus_path",
         type=str,
-        default="./data/bc5cdr/cdr_valid_corpus.txt"
+        default="./data/bc5cdr/cdr_val_corpus.txt"
     )
     parser.add_argument(
         "--train_conll_path", type=str, default="./data/bc5cdr/cdr_train.conll"
@@ -37,7 +37,8 @@ if __name__=="__main__":
         "--unk_gazetteers_path", type=str, default="./data/gazetteers/UNK.txt"
     )
     args = parser.parse_args()
-    logging.info("=== Mining Quality Phrases ===")
+
+    logging.info("=== Mining Phrases ===")
 
     logging.info(f"Reading training data from {args.train_corpus_path}")
     with open(args.train_corpus_path, "r", encoding="utf-8") as f:
@@ -46,8 +47,8 @@ if __name__=="__main__":
     with open(args.val_corpus_path, "r", encoding="utf-8") as f:
         val_corpus = f.read().splitlines()
 
-    phrase_miner = PhraseMiner(lang=args.lang)
     logging.info(f"Loading gazetteers from {args.gazetteers_path}")
+    phrase_miner = PhraseMiner(lang=args.lang)
     gazetteers = pp.load_gazetteers(args.gazetteers_path)
     phrase_miner.compute_patterns(gazetteers)
     logging.info("Mining phrases...")

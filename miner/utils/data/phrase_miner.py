@@ -2,7 +2,7 @@
 
 import re
 import logging
-from typing import List, Dict
+from typing import Literal,List, Dict
 from collections import defaultdict
 
 from spacy.tokens import Doc
@@ -13,10 +13,9 @@ from spacy.tokens.token import Token
 
 
 class PhraseMiner():
-    """Abstract class wrapping **SPaCy** functions for tokenization and entity
-    ruling. This class also hold the methods to mine potential important
-    propostions in natural language using the a previously defined
-    ``entity_ruler``.
+    """Abstract class wrapping **SpaCy** functions for tokenization and entity
+    ruling. This class also holds the methods to mine potential important
+    propostions.
 
     Notes
     -----
@@ -24,12 +23,12 @@ class PhraseMiner():
 
     Parameters
     ----------
-    lang: ``str``
+    lang: ``str``, {"en", "fr"}
         Language of the corpus. `fr` for french or `en` for english.
 
     Attributes
     ----------
-    nlp: ``spacy.lang.en.English`` or ``spacy.lang.fr.French``
+    nlp: ``spacy.lang.en.English``, ``spacy.lang.fr.French``
         **SpaCy** tokenizer to use.
     ruler: ``spacy.pipeline.entity_ruler.EntityRuler``
         **SpaCy**'s entity ruler object to perform string matching.
@@ -40,7 +39,7 @@ class PhraseMiner():
         "world": 2}, 2: {"Hello World": 1}}`.
     """
 
-    def __init__(self, lang: str):
+    def __init__(self, lang: Literal["en", "fr"]):
         self.nlp = English() if lang == "en" else French()
         self.ruler = self.nlp.add_pipe("entity_ruler")
         self.n_grams = defaultdict(lambda: defaultdict(int))
@@ -91,7 +90,7 @@ class PhraseMiner():
                 self._update_frequencies(n, span, freq)
 
     def get_unk_gazetteers(self, corpus: List[str]):
-        """Unsupervised principal propositions mining _[1].
+        """Unsupervised principal propositions mining [1]_.
 
         Parameters
         ----------
@@ -137,7 +136,7 @@ class PhraseMiner():
     def compute_patterns(self, gazetteers: Dict[str, List[str]]):
         """Adds each gazetteer from a given list to the **SpaCy**'s entity
         ruler in order to retrieve them from any given text in an IOB format
-        [1]_.
+        [2]_.
 
         Parameters
         ----------
@@ -146,12 +145,13 @@ class PhraseMiner():
 
         References
         ----------
-        .. [1] Lance A. Ramshaw and Mitchell P. Marcus. 1995. Text chunking
+        .. [2] Lance A. Ramshaw and Mitchell P. Marcus. 1995. Text chunking
             using transformation-based learning. (May 1995). Retrieved November
             7, 2022 from https://arxiv.org/abs/cmp-lg/9505040
         """
         patterns = []
         for label, entries in gazetteers.items():
+            logging.info(f"Adding {len(entries)} entries to {label}")
             for entry in entries:
                 patterns.append({
                     "label": label,

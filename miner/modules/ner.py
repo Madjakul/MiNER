@@ -1,6 +1,6 @@
 # miner/modules/ner.py
 
-from typing import Dict
+from typing import Literal, Dict
 
 import torch
 import torch.nn as nn
@@ -12,24 +12,42 @@ from miner.modules.partial_crf import PartialCRF
 
 
 class NER(nn.Module):
-    """Named Entity Recognizer.
+    """Named Entity Recognizer. RoBERTa-like model with a fuzzy/partial
+    conditional random filed on top.
 
     Parameters
     ----------
+    lang: ``str``, {"en", "fr"}
+        language of the training data.
+    lm_path: ``str``
+        Path to a local or online checkpoint.
+    num_labels: ``int``
+        Number of possible labels. The unknown labels are not taken into
+        account contrary to the padding label.
+    padding_idx: ``int``
+        Integer mapped to the padding label.
+    max_length: ``int``
+        Maximum length of a sequence.
+    device: ``str``, {"cpu", "cuda"}
+        Wether or not to use the GPU for computation.
 
     Attributes
     ----------
-
-    References
-    ----------
-
-    Examples
-    --------
+    device: ``str``, {"cpu", "cuda"}
+        Wether or not to use the GPU for computation.
+    transformer: ``transformers.CamembertModel``, ``transformers.LongformerModel``, ``transformers.RobertaModel``
+        Pretrained LLM checkpoint to load.
+    linear_dropout: ``torch.nn.Dropout``
+        Linear dropout.
+    fc: ``torch.nn.Linear``
+        Fully connected layer. (batch_size, max_length, num_labels).
+    partial_crf: ``miner.modules.PartialCRF``
+        Partial/fuzzy crf layer.
     """
 
     def __init__(
-        self, lang: str, lm_path: str, num_labels: int, padding_idx: int,
-        max_length: int, device: str
+        self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
+        padding_idx: int, max_length: int, device: Literal["cpu", "cuda"]
     ):
         super(NER, self).__init__()
         self.device = device
@@ -58,9 +76,6 @@ class NER(nn.Module):
             {"input_ids": torch.tensor(), "attention_mask": torch.tensor()}.
         outputs: ``torch.Tensor``
             List of true labels.
-        masks: ``torch.Tensor``
-            Labels to not include in the computation of the loss (e.g. outside
-            and padding).
 
         Returns
         -------
@@ -85,9 +100,6 @@ class NER(nn.Module):
         inputs: ``dict``
             Input dictionary from **HuggingFace**'s tokenizer with format
             {"input_ids": torch.tensor(), "attention_mask": torch.tensor()}.
-        masks: ``torch.Tensor``
-            Labels to not include in the computation of the loss (e.g. outside
-            and padding).
 
         Returns
         -------

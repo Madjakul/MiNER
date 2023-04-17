@@ -11,6 +11,7 @@ from torch.utils.data import DataLoader
 from torch.optim import SGD, lr_scheduler
 
 from miner.modules import NER
+from miner.optimizer import SAM
 
 
 class EarlyStopping():
@@ -89,7 +90,7 @@ class LRScheduler():
 
     Attributes
     ----------
-    optimizer: ``torch.optim.SGD``
+    optimizer: ``miner.optimizer.SAM``
         The optimizer we are using.
     patience: ``int``
         How many epochs to wait before updating the learning rate.
@@ -107,7 +108,7 @@ class LRScheduler():
         https://debuggercafe.com/using-learning-rate-scheduler-and-early-stopping-with-pytorch/
     """
 
-    def __init__(self, optimizer: SGD, patience: int, factor: float):
+    def __init__(self, optimizer: SAM, patience: int, factor: float):
         self.optimizer = optimizer
         self.lr_scheduler = lr_scheduler.ReduceLROnPlateau(
             optimizer=optimizer,
@@ -184,11 +185,12 @@ class NER_Trainer():
         self.epochs = epochs
         self.accumulation_steps = accumulation_steps
         self.max_length = max_length
-        self.optimizer = SGD(
+        base_optimizer = SGD(
             ner.parameters(),
             lr=lr,
             momentum=momentum
         )
+        self.optimizer = SAM(ner.parameters(), base_optimizer, lr, momentum)
         self.lrs = LRScheduler(
             optimizer=self.optimizer,
             patience=patience,
@@ -204,18 +206,24 @@ class NER_Trainer():
         self.ner.train()
         losses = []
         idx = 0
+        first = True
         for x, y in tqdm(train_dataloader):
             self.ner.zero_grad()
             loss = self.ner(x, y) / self.accumulation_steps
-            losses.append(loss.item())
             loss.backward()
             if ((idx + 1) % self.accumulation_steps == 0) \
                 or ((idx + 1) == len(train_dataloader)):
-                nn.utils.clip_grad_norm_(self.ner.parameters(), 5.0)    # type: ignore
-                self.optimizer.step()
+                if first:
+                    # nn.utils.clip_grad_norm_(self.ner.parameters(), 5.0)    # type: ignore
+                    losses.append(loss.item())
+                    self.optimizer.first_step(zero_grad=True)
+                    first = False
+                else:
+                    self.optimizer.second_step(zero_grad=True)
+                    first = True
             idx += 1
-        val_loss = np.mean(losses)
-        return val_loss
+        train_loss = np.mean(losses)
+        return train_loss
 
     def _validate(self, val_dataloader: DataLoader):
         logging.info("Validating...")

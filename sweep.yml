@@ -1,0 +1,14 @@
+# sweep.yml
+
+program: optimize_miner.py
+
+method: bayes
+
+project: miner
+
+metric:
+  name: f1
+  goal: maximize
+
+parameters:
+  accumulation_steps: 4

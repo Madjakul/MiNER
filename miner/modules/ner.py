@@ -47,7 +47,8 @@ class NER(nn.Module):
 
     def __init__(
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
-        padding_idx: int, max_length: int, device: Literal["cpu", "cuda"]
+        padding_idx: int, max_length: int, device: Literal["cpu", "cuda"],
+        dropout: float=0.1
     ):
         super(NER, self).__init__()
         self.device = device
@@ -57,7 +58,7 @@ class NER(nn.Module):
             self.transformer = LongformerModel.from_pretrained(lm_path)
         else:
             self.transformer = RobertaModel.from_pretrained(lm_path)
-        self.linear_dropout = nn.Dropout(0.1)
+        self.linear_dropout = nn.Dropout(dropout)
         self.fc = nn.Linear(768, num_labels)    # (batch_size, max_length, num_labels)
         self.partial_crf = PartialCRF(          # (batch_size, max_length)
             num_tags=num_labels,

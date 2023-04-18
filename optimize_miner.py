@@ -13,7 +13,7 @@ from miner.utils.data import NER_Dataset
 from miner.utils.data import preprocessing as pp
 
 
-WANDB_PROJECT_NAME = "miner_bc5cdr_hyperparameter-optimization_sgd"
+WANDB_PROJECT_NAME = "miner_bc5cdr_hyperparameter-optimization"
 logging_config()
 if torch.cuda.is_available():
     DEVICE = "cuda"
@@ -25,7 +25,7 @@ if __name__=="__main__":
     logging.info("=== Training ===")
 
     lang = "en"
-    max_length = 512
+    max_length = 256
     epochs = 100
     ner_path = "./tmp/ner.pt"
     lm_path = "roberta-base"
@@ -41,13 +41,14 @@ if __name__=="__main__":
         padding_idx=0,
         device=DEVICE
     ).to(DEVICE)
-    batch_size = get_batch_size(
-        model=dummy_ner,
-        max_length=max_length,
-        dataset_size=5000,
-        device=DEVICE,
-    )
-    logging.info(f"Maximum supported batch size: {batch_size}")
+    # batch_size = get_batch_size(
+    #     model=dummy_ner,
+    #     max_length=max_length,
+    #     dataset_size=5000,
+    #     device=DEVICE,
+    # )
+    # logging.info(f"Maximum supported batch size: {batch_size}")
+    batch_size = 1
 
     with wandb.init(project=WANDB_PROJECT_NAME):    # type: ignore
         config = wandb.config
@@ -94,14 +95,15 @@ if __name__=="__main__":
             lm_path=lm_path,
             num_labels=len(labels) + 1,
             padding_idx=len(labels),
-            device=DEVICE
+            device=DEVICE,
+            dropout=config.dropout
         ).to(DEVICE)
 
         logging.info("Training...")
         trainer = NER_Trainer(
             ner=ner,
             lr=config.lr,
-            momentum=config.momentum,
+            optim=config.optim,
             patience=config.patience,
             min_delta=config.min_delta,
             epochs=epochs,

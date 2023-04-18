@@ -41,14 +41,14 @@ if __name__=="__main__":
         padding_idx=0,
         device=DEVICE
     ).to(DEVICE)
-    # batch_size = get_batch_size(
-    #     model=dummy_ner,
-    #     max_length=max_length,
-    #     dataset_size=5000,
-    #     device=DEVICE,
-    # )
-    # logging.info(f"Maximum supported batch size: {batch_size}")
-    batch_size = 1
+    batch_size = get_batch_size(
+        model=dummy_ner,
+        max_length=max_length,
+        dataset_size=5000,
+        device=DEVICE,
+    ) // 2
+    logging.info(f"Maximum supported batch size: {batch_size}")
+    # batch_size = 1
 
     with wandb.init(project=WANDB_PROJECT_NAME):    # type: ignore
         config = wandb.config

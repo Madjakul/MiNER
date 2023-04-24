@@ -45,14 +45,15 @@ if __name__=="__main__":
     )
     parser.add_argument("--lm_path", type=str, default="./tmp/lm")
     parser.add_argument("--max_length", type=int, default=256)
-    parser.add_argument("--ner_batch_size", type=int, default=4)
+    parser.add_argument("--ner_batch_size", type=int, default=8)
     parser.add_argument("--lr", type=float, default=5e-3)
-    parser.add_argument("--momentum", type=float, default=0.9)
+    parser.add_argument("--momentum", type=float, default=0.72)
+    parser.add_argument("--clip", type=float, default=3.2)
     parser.add_argument("--patience", type=int, default=5)
-    parser.add_argument("--ner_epochs", type=int, default=50)
+    parser.add_argument("--ner_epochs", type=int, default=100)
     parser.add_argument("--ner_accumulation_steps", type=int, default=4)
     parser.add_argument("--ner_path", type=str, default="./tmp/ner.pt")
-    parser.add_argument("--min_delta", type=int, default=0.1)
+    parser.add_argument("--min_delta", type=int, default=1)
     parser.add_argument("--seed", type=int, default=8)
     args = parser.parse_args()
 
@@ -117,7 +118,8 @@ if __name__=="__main__":
         max_length=args.max_length,
         device=DEVICE,
         accumulation_steps=args.ner_accumulation_steps,
-        ner_path=args.ner_path
+        ner_path=args.ner_path,
+        clip=args.clip
     )
     trainer.train(train_dataloader, val_dataloader)
     logging.info("--- Done ---\n\n")

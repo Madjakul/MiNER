@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#SBATCH --job-name=miner_optim-Adam # create a short name for your job
+#SBATCH --nodes=1                   # node count
+#SBATCH --ntasks=1                  # total number of tasks across all nodes
+#SBATCH --cpus-per-task=1           # cpu-cores per task (>1 if multi-threaded tasks)
+#SBATCH --partition=gpu             # Name of the partition
+#SBATCH --mem=12G                   # Total memory allocated
+#SBATCH --time=23:00:00             # total run time limit (HH:MM:SS)
+#SBATCH --output=%x-%j.out          # output file name
+
+echo "### Running $SLURM_JOB_NAME ###"
+
+set -x
+cd ${SLURM_SUBMIT_DIR}
+
+module purge
+module load cuda/11.3
+
+# Set your conda environment
+source /home/$USER/.bashrc
+# tensorflow environment shloud bre created previously
+source activate miner
+
+mkdir logs tmp
+
+wandb run agent

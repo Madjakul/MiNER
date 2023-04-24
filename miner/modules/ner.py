@@ -48,7 +48,7 @@ class NER(nn.Module):
     def __init__(
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
         padding_idx: int, max_length: int, device: Literal["cpu", "cuda"],
-        dropout: float=0.1
+        dropout: float=0.3
     ):
         super(NER, self).__init__()
         self.device = device

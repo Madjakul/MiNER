@@ -13,7 +13,7 @@ from miner.utils.data import NER_Dataset
 from miner.utils.data import preprocessing as pp
 
 
-WANDB_PROJECT_NAME = "miner_bc5cdr_hyperparameter-optimization"
+WANDB_PROJECT_NAME = "miner_hyperparameter-optimization_SGD"
 logging_config()
 if torch.cuda.is_available():
     DEVICE = "cuda"
@@ -47,8 +47,8 @@ if __name__=="__main__":
         dataset_size=5000,
         device=DEVICE,
     ) // 2
-    logging.info(f"Maximum supported batch size: {batch_size}")
-    # batch_size = 1
+    logging.info(f"Supported batch size: {batch_size}")
+    logging.info(f"Batch size: {batch_size}*4")
 
     with wandb.init(project=WANDB_PROJECT_NAME):    # type: ignore
         config = wandb.config
@@ -103,14 +103,15 @@ if __name__=="__main__":
         trainer = NER_Trainer(
             ner=ner,
             lr=config.lr,
-            optim=config.optim,
-            patience=config.patience,
-            min_delta=config.min_delta,
+            patience=5,
+            min_delta=1.0,
             epochs=epochs,
             max_length=max_length,
             device=DEVICE,
-            accumulation_steps=config.accumulation_steps,
-            ner_path=ner_path
+            accumulation_steps=4,
+            ner_path=ner_path,
+            momentum=config.momentum,
+            clip=config.clip
         )
         trainer.train(train_dataloader, val_dataloader)
         logging.info("--- Done ---\n\n")

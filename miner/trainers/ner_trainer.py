@@ -7,6 +7,7 @@ import wandb
 import numpy as np
 from tqdm import tqdm
 import torch
+import torch.nn as nn
 from torch.utils.data import DataLoader
 from torch.optim import SGD, Adam, lr_scheduler
 
@@ -176,8 +177,8 @@ class NER_Trainer():
 
     def __init__(
         self, ner: NER, lr: float, patience: int, min_delta: float,
-        epochs: int, max_length: int, optim: Literal["SGD", "Adam"],
-        device: Literal["cpu", "cuda"], accumulation_steps: int, ner_path: str
+        epochs: int, max_length: int, device: Literal["cpu", "cuda"],
+        accumulation_steps: int, ner_path: str, momentum: float, clip: float
     ):
         self.path = ner_path
         self.device = device
@@ -185,14 +186,15 @@ class NER_Trainer():
         self.epochs = epochs
         self.accumulation_steps = accumulation_steps
         self.max_length = max_length
-        if optim == "SGD":
-            base_optimizer = SGD
-            self.optimizer = SAM(ner.parameters(), base_optimizer, lr=lr)
-        elif optim == "Adam":
-            base_optimizer = Adam
-            self.optimizer = SAM(ner.parameters(), base_optimizer, lr=lr)
-        else:
-            raise ValueError(f"Optimizer {optim} is not recognized.")
+        self.clip = clip
+        base_optimizer = SGD
+        # self.optimizer = SAM(ner.parameters(), base_optimizer, lr=lr)
+        self.optimizer= SAM(
+            ner.parameters(),
+            base_optimizer,
+            lr=lr,
+            momentum=momentum
+        )
         self.lrs = LRScheduler(
             optimizer=self.optimizer,
             patience=patience,
@@ -212,22 +214,23 @@ class NER_Trainer():
         for x, y in tqdm(train_dataloader):
             self.ner.zero_grad()
             loss = self.ner(x, y) / self.accumulation_steps
-            losses.append(loss.item())                      # Only the first loss is saved for statistics
+            losses.append(loss.item())                                      # Only the first loss is saved for statistics
             loss.backward()
-            x_list.append(x)                                # Save the inputs
-            y_list.append(y)                                # Save the targets
+            x_list.append(x)                                                # Save the inputs
+            y_list.append(y)                                                # Save the targets
             if ((idx + 1) % self.accumulation_steps == 0) \
             or ((idx + 1) == len(train_dataloader)):
-                # nn.utils.clip_grad_norm_(self.ner.parameters(), 5.0)    # type: ignore
-                self.optimizer.first_step(zero_grad=True)   # First step
+                nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
+                self.optimizer.first_step(zero_grad=True)                   # First step
                 for i in range(len(y_list)):
                     loss = (
                         self.ner(x_list[i], y_list[i])
                         / self.accumulation_steps
                     )
                     loss.backward()
-                self.optimizer.second_step(zero_grad=True)  # Second step
-                x_list, y_list = [], []                     # Clear
+                nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
+                self.optimizer.second_step(zero_grad=True)                  # Second step
+                x_list, y_list = [], []                                     # Clear
             idx += 1
         train_loss = np.mean(losses)
         return train_loss
@@ -240,7 +243,6 @@ class NER_Trainer():
         losses = []
         for x, y in tqdm(val_dataloader):
             loss = self.ner(x, y)
-            print(loss)
             losses.append(loss.item())
         val_loss = np.mean(losses)
         return val_loss

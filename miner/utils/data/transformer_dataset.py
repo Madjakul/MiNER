@@ -3,6 +3,7 @@
 import logging
 from typing import Literal, Union, List
 
+import torch
 import datasets
 from transformers import AutoTokenizer, DataCollatorForLanguageModeling
 
@@ -99,7 +100,10 @@ class TransformerDataset():
         self, corpus: List[List[str]],
         lm: Union[RoBERTa, CamemBERT, Longformer]
     ):
-        """Adds new tokens to a pretrained LLM.
+        """Adds new tokens to a pretrained LLM. The embedding of the added
+        tokens are initialized using the mean of the already existing tokens
+        plus some noise in order to avoid diverging too much from the initial
+        distributions, thus converging faster during pretraining [1]_.
 
         Parameters
         ----------
@@ -107,11 +111,38 @@ class TransformerDataset():
             List of tokens per document.
         lm: ``miner.modules.RoBERTa``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
             Pretrained large language model.
+
+        References
+        ----------
+        ..  [1] Hewitt John. 2021. Initializing new word embeddings for
+            pretrained language models. (2021). Retrieved April 24, 2023 from
+            https://nlp.stanford.edu/~johnhew/vocab-expansion.html
         """
         new_tokens = [token for text in corpus for token in text]
-        new_tokens = set(new_tokens) - set(self.tokenizer.vocab.keys())
+        new_tokens = set(new_tokens) - set(self.tokenizer.vocab.keys()) # New tokens don't already exist
         logging.info( f"Adding {len(new_tokens)} new tokens to the vocabulary")
         self.tokenizer.add_tokens(list(new_tokens))
         logging.info("Resizing the Language model")
         lm.model.resize_token_embeddings(len(self.tokenizer))
+        # Computing the distribution of the new embeddings
+        params = lm.model.state_dict()
+        embeddings = params["transformer.wte.weight"]
+        pre_expansion_embeddings = embeddings[:-3, :]
+        mu = torch.mean(pre_expansion_embeddings, dim=0)
+        n = pre_expansion_embeddings.size()[0]
+        sigma = (
+            (pre_expansion_embeddings - mu).T @ (pre_expansion_embeddings - mu)
+        ) / n
+        dist = torch.distributions.multivariate_normal.MultivariateNormal(
+            mu,
+            covariance_matrix=1e-5*sigma
+        )
+        # Loading the new embeddings in the model
+        new_embeddings = torch.stack(
+            tuple((dist.sample() for _ in range(3))),
+            dim=0
+        )
+        embeddings[-3:, :] = new_embeddings
+        params["transformer.wte.weight"][-3:, :] = new_embeddings
+        lm.model.load_state_dict(params)
 

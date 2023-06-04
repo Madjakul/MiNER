@@ -22,16 +22,11 @@ else: DEVICE = "cpu"
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--lang", choices=["en", "fr"], default="en")
+    parser.add_argument("--lang", type=str, default="en")
     parser.add_argument(
-        "--train_corpus_path",
+        "--train_data_path",
         type=str,
         default="./data/bc5cdr/cdr_train.conll"
-    )
-    parser.add_argument(
-        "--val_corpus_path",
-        type=str,
-        default="./data/bc5cdr/cdr_val.conll"
     )
     parser.add_argument(
         "--gazetteers_path",
@@ -49,11 +44,13 @@ if __name__=="__main__":
     parser.add_argument("--lr", type=float, default=5e-3)
     parser.add_argument("--momentum", type=float, default=0.72)
     parser.add_argument("--clip", type=float, default=3.2)
+    parser.add_argument("--corrected_loss", type=int, default=0)
+    parser.add_argument("--gamma", type=float, default=1.0)
     parser.add_argument("--patience", type=int, default=5)
     parser.add_argument("--ner_epochs", type=int, default=100)
     parser.add_argument("--ner_accumulation_steps", type=int, default=4)
     parser.add_argument("--ner_path", type=str, default="./tmp/ner.pt")
-    parser.add_argument("--min_delta", type=int, default=1)
+    parser.add_argument("--min_delta", type=float, default=1.0)
     parser.add_argument("--seed", type=int, default=8)
     args = parser.parse_args()
 
@@ -64,8 +61,8 @@ if __name__=="__main__":
     logging.info(f"Loading labels from {args.labels_path}")
     with open(args.labels_path, "r", encoding="utf-8") as f:
         labels = f.read().splitlines()
-    logging.info(f"Loading training data from {args.train_corpus_path}")
-    train_corpus, train_labels = pp.read_conll(args.train_corpus_path)
+    logging.info(f"Loading training data from {args.train_data_path}")
+    train_corpus, train_labels = pp.read_conll(args.train_data_path)
     logging.info(f"Loading validation data from {args.val_corpus_path}")
     val_corpus, val_labels = pp.read_conll(args.val_corpus_path)
     logging.info("Building the training dataloader...")
@@ -82,20 +79,6 @@ if __name__=="__main__":
         batch_size=args.ner_batch_size,
         shuffle=True
     )
-    logging.info("Building the validation dataloader...")
-    val_dataset = NER_Dataset(
-        lang=args.lang,
-        device=DEVICE,
-        max_length=args.max_length,
-        iterable_corpus=val_corpus,
-        labels=labels,
-        iterable_labels=val_labels
-    )
-    val_dataloader = DataLoader(
-        val_dataset,
-        batch_size=args.ner_batch_size,
-        shuffle=True
-    )
 
     logging.info(f"Building the NER with {train_dataset.label2idx}")
     ner = NER(
@@ -104,7 +87,10 @@ if __name__=="__main__":
         lm_path=args.lm_path,
         num_labels=len(labels) + 1,
         padding_idx=len(labels),
-        device=DEVICE
+        device=DEVICE,
+        partial=True,
+        corrected_loss=bool(args.corrected_loss),
+        gamma=args.gamma
     ).to(DEVICE)
 
     logging.info("Training...")
@@ -121,6 +107,6 @@ if __name__=="__main__":
         ner_path=args.ner_path,
         clip=args.clip
     )
-    trainer.train(train_dataloader, val_dataloader)
+    trainer.train(train_dataloader)
     logging.info("--- Done ---\n\n")
 

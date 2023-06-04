@@ -1,4 +1,4 @@
-# optimize_miner.py
+# wandb_train.py
 
 import logging
 
@@ -6,14 +6,13 @@ import wandb
 import torch
 from torch.utils.data import DataLoader
 
-from miner.utils import logging_config, get_batch_size
+from miner.utils import logging_config
 from miner.modules import NER
 from miner.trainers import NER_Trainer
 from miner.utils.data import NER_Dataset
 from miner.utils.data import preprocessing as pp
 
 
-WANDB_PROJECT_NAME = "miner_hyperparameter-optimization_SGD"
 logging_config()
 if torch.cuda.is_available():
     DEVICE = "cuda"
@@ -25,7 +24,7 @@ if __name__=="__main__":
     logging.info("=== Training ===")
 
     lang = "en"
-    max_length = 256
+    max_length = 512
     epochs = 100
     ner_path = "./tmp/ner.pt"
     lm_path = "roberta-base"
@@ -33,24 +32,8 @@ if __name__=="__main__":
     train_corpus_path = "./data/bc5cdr/cdr_val.conll"
     val_corpus_path = "./data/bc5cdr/cdr_train.conll"
     test_corpus_path ="./data/bc5cdr/cdr_test.conll"
-    dummy_ner = NER(
-        lang="en",
-        max_length=max_length,
-        lm_path=lm_path,
-        num_labels=5,
-        padding_idx=0,
-        device=DEVICE
-    ).to(DEVICE)
-    batch_size = get_batch_size(
-        model=dummy_ner,
-        max_length=max_length,
-        dataset_size=5000,
-        device=DEVICE,
-    ) // 2
-    logging.info(f"Supported batch size: {batch_size}")
-    logging.info(f"Batch size: {batch_size}*4")
 
-    with wandb.init(project=WANDB_PROJECT_NAME):    # type: ignore
+    with wandb.init(project="miner", entity="madjakul", name="bc5cdr_tuning"):
         config = wandb.config
         logging.info(f"Loading labels from {labels_path}")
         with open(labels_path, "r", encoding="utf-8") as f:
@@ -70,7 +53,7 @@ if __name__=="__main__":
         )
         train_dataloader = DataLoader(
             train_dataset,
-            batch_size=batch_size,
+            batch_size=4,
             shuffle=True
         )
         logging.info("Building the validation dataloader...")
@@ -84,7 +67,7 @@ if __name__=="__main__":
         )
         val_dataloader = DataLoader(
             val_dataset,
-            batch_size=batch_size,
+            batch_size=4,
             shuffle=True
         )
 

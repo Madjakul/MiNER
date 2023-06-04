@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # LANG="en"
-# TRAIN_CORPUS_PATH=""
-# VAL_CORPUS_PATH=""
+# TRAIN_DATA_PATH=""
 # GAZETTEERS_PATH=""
 # LABELS_PATH=""
 # LM_PATH=""
@@ -15,6 +14,8 @@
 # NER_ACCUMULATION_STEPS=0
 # NER_PATH=""
 # MIN_DELTA=0
+CORRECTED_LOSS=1
+GAMMA=0.5
 # SEED=0
 
 # -----------------------------------------------------------------------------
@@ -25,13 +26,12 @@ reset=`tput sgr0`
 mkdir tmp logs
 
 echo ${green}=== Training ===${reset}
-python3 pretrain_miner.py \
+python3 train_miner.py \
     --lang ${LANG:-"en"} \
-    --train_corpus_path ${TRAIN_CORPUS_PATH:-"./data/bc5cdr/cdr_train.conll"} \
-    --val_corpus_path ${VAL_CORPUS_PATH:-"./data/bc5cdr/cdr_val.conll"} \
+    --train_data_path ${TRAIN_DATA_PATH:-"./data/bc5cdr/cdr_train.conll"} \
     --gazetteers_path ${GAZETTEERS_PATH:-"./data/gazetteers/"} \
-    --labels_path ${LABELS_PATH:-"./data/labels.txt"} \
-    --lm_path ${LM_PATH:-"./tmp/lm"} \
+    --labels_path ${LABELS_PATH:-"./data/bc5cdr/labels.txt"} \
+    --lm_path ${LM_PATH:-"roberta-base"} \
     --max_length ${MAX_LENGTH:-256} \
     --ner_batch_size ${NER_BATCH_SIZE:-4} \
     --lr ${LR:-0.005} \
@@ -41,5 +41,7 @@ python3 pretrain_miner.py \
     --ner_accumulation_steps ${NER_ACCUMULATION_STEPS:-4} \
     --ner_path ${NER_PATH:-"./tmp/ner.pt"} \
     --min_delta ${MIN_DELTA:-0.1} \
+    --corrected_loss ${CORRECTED_LOSS:-0} \
+    --gamma ${GAMMA:-1.0} \
     --seed ${SEED:-8}
 echo ${green}--- Done ---${reset}

@@ -111,17 +111,15 @@ class LRScheduler():
 
     def __init__(self, optimizer: SAM, patience: int, factor: float):
         self.optimizer = optimizer
-        self.lr_scheduler = lr_scheduler.ReduceLROnPlateau(
+        self.lr_scheduler = lr_scheduler.StepLR(
             optimizer=optimizer,
-            mode="min",
-            factor=factor,
-            patience=patience,
-            threshold=1.0,
-            verbose=False
+            step_size=patience,
+            gamma=factor,
+            verbose=True
         )
 
-    def __call__(self, loss: float):
-        self.lr_scheduler.step(loss)
+    def __call__(self):
+        self.lr_scheduler.step()
 
 
 class NER_Trainer():
@@ -235,19 +233,7 @@ class NER_Trainer():
         train_loss = np.mean(losses)
         return train_loss
 
-    @torch.no_grad()
-    def _validate(self, val_dataloader: DataLoader):
-        logging.info("Validating...")
-        torch.set_printoptions(profile="full")
-        self.ner.eval()
-        losses = []
-        for x, y in tqdm(val_dataloader):
-            loss = self.ner(x, y)
-            losses.append(loss.item())
-        val_loss = np.mean(losses)
-        return val_loss
-
-    def train(self, train_dataloader: DataLoader, val_dataloader: DataLoader):
+    def train(self, train_dataloader: DataLoader):
         """Trains the named entity recognizer and saves the best one at the end
         of each epoch.
 
@@ -255,37 +241,32 @@ class NER_Trainer():
         ----------
         train_dataloader: ``torch.utils.data.DataLoader``
             Iterable object used for training.
-        val_dataloader: ``torch.utils.data.DataLoader``
-            Iterable object used for validation.
         """
         best_loss = 1e100
         train_loss = 0.0
-        val_loss = 0.0
         try:
             for epoch in tqdm(range(self.epochs)):
                 train_loss = self._fit(train_dataloader=train_dataloader,)
-                val_loss = self._validate(val_dataloader=val_dataloader)
-                wandb.log({"train_loss": train_loss, "val_loss": val_loss})
-                self.lrs(val_loss)              # type: ignore
-                self.early_stopping(train_loss) # type: ignore
+                wandb.log({"train_loss": train_loss})
+                self.lrs()
+                self.early_stopping(train_loss)
                 if self.early_stopping.early_stop:
                     break
                 logging.info(
                     f"Epoch: {epoch + 1}\n"
                     + f"LR: {self.lrs.optimizer.param_groups[0]['lr']}\n"
                     + f"Train Loss: {train_loss}\n"
-                    + f"Val Loss: {val_loss}"
                 )
-                if val_loss <= best_loss:
+                if train_loss <= best_loss:
                     torch.save({
                         "model_state_dict": self.ner.state_dict(),
                         "optimizer_state_dict": self.optimizer.state_dict(),
                         "loss": train_loss,
                     }, self.path)
-                    best_loss = val_loss
+                    best_loss = train_loss
         except KeyboardInterrupt:
             logging.warning("Exiting from training early.")
-            if val_loss >= best_loss:
+            if train_loss <= best_loss:
                 torch.save({
                     "model_state_dict": self.ner.state_dict(),
                     "optimizer_state_dict": self.optimizer.state_dict(),

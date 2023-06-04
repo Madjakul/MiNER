@@ -27,8 +27,11 @@ class PartialCRF(BaseCRF):
         Kajyuuen/pytorch-partial-CRF. Retrieved November 8, 2022 from
         https://github.com/kajyuuen/pytorch-partial-crf/blob/master/pytorch_partial_crf/partial_crf.py
     """
-    def __init__(self, num_tags: int, padding_idx: Optional[int]=None):
-        super().__init__(num_tags, padding_idx)
+    def __init__(
+        self, num_tags: int, padding_idx: Optional[int]=None,
+        corrected_loss: Optional[bool]=None, gamma: Optional[float]=None
+    ):
+        super().__init__(num_tags, padding_idx, corrected_loss, gamma)
 
     def _reset_parameters(self) -> None:
         nn.init.uniform_(self.start_transitions, -0.1, 0.1)
@@ -59,9 +62,19 @@ class PartialCRF(BaseCRF):
             mask = torch.ones_like(tags, dtype=torch.uint8)
         possible_tags = create_possible_tag_masks(self.num_tags, tags)
 
-        gold_score = self._numerator_score(emissions, mask, possible_tags)
-        forward_score = self._denominator_score(emissions, mask)
-        return torch.sum(forward_score - gold_score)
+        gold_score = self._numerator_score(emissions, mask, possible_tags).double()
+        forward_score = self._denominator_score(emissions, mask).double()
+        nll = forward_score - gold_score
+        print(nll)
+        if self.corrected_loss:
+            nlu = -(1 - (-nll).exp()).log()
+            if torch.isnan(nlu).any() or torch.isinf(nlu).any():
+                nl = (1 - (-nll).exp())
+                nl = nl + (nl < 1e-4).to(nl).detach() * (1e-4 - nl).detach()
+                nlu = - nl.log()
+            print(nlu)
+            return torch.sum(nll * self.gamma + nlu * (1 - self.gamma))
+        return torch.sum(nll * self.gamma)
 
     def _denominator_score(
         self, emissions: torch.Tensor, mask: torch.Tensor
@@ -103,7 +116,7 @@ class PartialCRF(BaseCRF):
         # Add end transition score
         stops = alpha + self.end_transitions.view(1, num_tags)
 
-        return log_sum_exp(stops) # (batch_size,)
+        return log_sum_exp(stops) * 1e-2 # (batch_size,)
 
     def _numerator_score(
         self, emissions: torch.Tensor, mask: torch.Tensor,
@@ -176,7 +189,7 @@ class PartialCRF(BaseCRF):
         end_transitions[(end_transitions == 0)] = IMPOSSIBLE_SCORE
         stops = alpha + end_transitions
 
-        return log_sum_exp(stops) # (batch_size,)
+        return log_sum_exp(stops) * 1e-2 # (batch_size,)
 
     def _forward_algorithm(
         self, emissions: torch.Tensor, mask: torch.Tensor,

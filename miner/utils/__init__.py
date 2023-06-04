@@ -6,7 +6,6 @@ from miner.utils.crf_utils import (
     IMPOSSIBLE_SCORE,
     UNLABELED_INDEX,
     create_possible_tag_masks,
-    get_batch_size
 )
 
 
@@ -15,7 +14,6 @@ __all__ = [
     "UNLABELED_INDEX",
     "logging_config",
     "create_possible_tag_masks",
-    "get_batch_size",
     "log_sum_exp",
 ]
 

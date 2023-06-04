@@ -29,6 +29,12 @@ class BaseCRF(nn.Module):
         Ending scores of the transition matrix.
     transitions: ``torch.nn.Parameter``
         Transition matrix.
+    corrected_loss: bool, default=False
+        Wether or not to use negative log-unlikelihood.
+    gamma: float, default=1.0
+        Scaling coefficient for the loss.
+        ``loss = gamma * nll``.
+        ``corrected_loss = gamma * nll + nlu * (1 - gamma)``.
 
     References
     ----------
@@ -42,8 +48,14 @@ class BaseCRF(nn.Module):
         2022 from
         https://github.com/kajyuuen/pytorch-partial-crf/blob/master/pytorch_partial_crf/base_crf.py
     """
-    def __init__(self, num_tags: int, padding_idx: Optional[int]=None):
+    def __init__(
+        self, num_tags: int, padding_idx: Optional[int]=None,
+        corrected_loss: Optional[bool]=None, gamma: Optional[float]=None
+    ):
         super().__init__()
+        self.corrected_loss = \
+            False if corrected_loss is None else corrected_loss
+        self.gamma = 1.0 if gamma is None else gamma
         self.num_tags = num_tags
         self.start_transitions = nn.Parameter(torch.randn(num_tags))
         self.end_transitions = nn.Parameter(torch.randn(num_tags))

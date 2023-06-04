@@ -70,7 +70,7 @@ class PhraseMiner():
         for n in self.n_grams:
             self.n_grams[n] = { # type: ignore
                 span: freq \
-                    for span, freq in self.n_grams[n].items() if freq >= 3
+                    for span, freq in self.n_grams[n].items() if freq > 3
             }
 
     def _update_frequencies(self, n: int, span: str, freq: int):

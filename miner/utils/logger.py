@@ -7,16 +7,17 @@ from datetime import datetime
 NOW = datetime.now()
 LOG = "logs/" + NOW.strftime("%Y-%m-%d") + ".log"
 FORMAT = (
-    "[%(asctime)s]"
-    + " [%(filename)s:%(lineno)s - %(funcName)s]"
-    + "\t%(levelname)s: %(message)s"
+    "[%(asctime)s] %(levelname)s:"
+    + " %(filename)s:%(lineno)s -"
+    + " %(message)s"
 )
 
 
 def logging_config():
-    """Configures the `logging` module: creates a `log` file with the current
-    date. If the file already exists, the logs are added afterwards. Only
-    warning and error messages are displayed in the console.
+    """Configures of the `logging` module: creates a `log` file with the
+    current date. If the file already exists, the logs are added afterwards.
+    Only warning and error messages are displayed on the console, information
+    messages are in the logs.
     """
     logging.basicConfig(
         filename=LOG,

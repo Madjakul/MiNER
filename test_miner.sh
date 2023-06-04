@@ -16,11 +16,11 @@ reset=`tput sgr0`
 mkdir tmp logs
 
 echo ${green}=== Testing ===${reset}
-python3 pretrain_miner.py \
+python3 test_miner.py \
     --lang ${LANG:-"en"} \
     --test_corpus_path ${TEST_CORPUS_PATH:-"./data/bc5cdr/cdr_test.conll"} \
     --labels_path ${LABELS_PATH:-"./data/labels.txt"} \
-    --lm_path ${LM_PATH:-"./tmp/lm"} \
+    --lm_path ${LM_PATH:-"roberta-base"} \
     --max_length ${MAX_LENGTH:-256} \
     --ner_batch_size ${NER_BATCH_SIZE:-4} \
     --ner_path ${NER_PATH:-"./tmp/ner.pt"}

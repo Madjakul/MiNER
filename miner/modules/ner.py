@@ -1,6 +1,6 @@
 # miner/modules/ner.py
 
-from typing import Literal, Dict
+from typing import Optional, Literal, Dict
 
 import torch
 import torch.nn as nn
@@ -8,6 +8,7 @@ from transformers import (
     RobertaModel, CamembertModel, LongformerModel
 )
 
+from miner.modules.crf import CRF
 from miner.modules.partial_crf import PartialCRF
 
 
@@ -41,14 +42,15 @@ class NER(nn.Module):
         Linear dropout.
     fc: ``torch.nn.Linear``
         Fully connected layer. (batch_size, max_length, num_labels).
-    partial_crf: ``miner.modules.PartialCRF``
+    crf: ``miner.modules.PartialCRF``
         Partial/fuzzy crf layer.
     """
 
     def __init__(
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
         padding_idx: int, max_length: int, device: Literal["cpu", "cuda"],
-        dropout: float=0.3
+        dropout: float=0.3, partial=False, corrected_loss: Optional[bool]=None,
+        gamma: Optional[float]=None
     ):
         super(NER, self).__init__()
         self.device = device
@@ -60,10 +62,20 @@ class NER(nn.Module):
             self.transformer = RobertaModel.from_pretrained(lm_path)
         self.linear_dropout = nn.Dropout(dropout)
         self.fc = nn.Linear(768, num_labels)    # (batch_size, max_length, num_labels)
-        self.partial_crf = PartialCRF(          # (batch_size, max_length)
-            num_tags=num_labels,
-            padding_idx=padding_idx
-        )
+        if partial:
+            self.crf = PartialCRF(          # (batch_size, max_length)
+                num_tags=num_labels,
+                padding_idx=padding_idx,
+                corrected_loss=corrected_loss,
+                gamma=gamma
+            )
+        else:
+            self.crf = CRF(
+                num_tags=num_labels,
+                padding_idx=padding_idx,
+                corrected_loss=corrected_loss,
+                gamma=gamma
+            )
 
     def forward(
         self, inputs: Dict[str, torch.Tensor], outputs: torch.Tensor
@@ -90,7 +102,7 @@ class NER(nn.Module):
             attention_mask=masks
         ).last_hidden_state.to(self.device)
         logits = self.fc(self.linear_dropout(h))
-        nll = self.partial_crf(logits, outputs, mask=masks)
+        nll = self.crf(logits, outputs, mask=masks)
         return nll
 
     def viterbi_decode(self, inputs: Dict[str, torch.Tensor]):
@@ -113,6 +125,6 @@ class NER(nn.Module):
             attention_mask=masks
         ).last_hidden_state.to(self.device)
         logits = self.fc(self.linear_dropout(h))
-        tag_seq = self.partial_crf.viterbi_decode(logits, mask=masks)   # type: ignore
+        tag_seq = self.crf.viterbi_decode(logits, mask=masks)   # type: ignore
         return tag_seq
 

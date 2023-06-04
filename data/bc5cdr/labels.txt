@@ -1,5 +1,5 @@
 O
-B-CHEMICAL
-I-CHEMICAL
-B-DISEASE
-I-DISEASE
+B-Chemical
+I-Chemical
+B-Disease
+I-Disease

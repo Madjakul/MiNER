@@ -5,12 +5,12 @@ import logging
 from typing import Literal,List, Dict
 from collections import defaultdict
 
-from spacy.tokens import Doc
 from spacy.lang.fr import French
 from spacy.lang.en import English
 from spacy.tokens.span import Span
 from spacy.tokens.token import Token
 
+import miner.utils.data.preprocessing as pp
 
 class PhraseMiner():
     """Abstract class wrapping **SpaCy** functions for tokenization and entity
@@ -44,19 +44,17 @@ class PhraseMiner():
         self.ruler = self.nlp.add_pipe("entity_ruler")
         self.n_grams = defaultdict(lambda: defaultdict(int))
 
-    def __call__(self, text: str):
-        escaped_text = re.sub(
-            r"([^A-Za-zÀ-ÖØ-öø-ÿ0-9\s]+)", r" \1 ", text
-        ).split()
-        return Doc(self.nlp.vocab, escaped_text)
-
     def __is_beginning(self, token: Token):
-        if token.ent_iob_ == "O" and not token.is_stop and not token.is_punct:
+        if token.ent_iob_ == "O" and token.text.lower() not in pp.STOP_WORDS_EN \
+                and token.text.lower() not in pp.STOP_WORDS_EN \
+                and not token.is_punct and not token.is_digit:
             return True
         return False
 
     def __is_ending(self, token: Token):
-        if token.ent_iob_ != "O" or token.is_stop or token.is_punct:
+        if token.ent_iob_ != "O" or token.text.lower() in pp.STOP_WORDS_EN \
+                or token.text.lower() in pp.STOP_WORDS_FR or token.is_punct \
+                or token.is_digit:
             return True
         return False
 
@@ -70,7 +68,7 @@ class PhraseMiner():
         for n in self.n_grams:
             self.n_grams[n] = { # type: ignore
                 span: freq \
-                    for span, freq in self.n_grams[n].items() if freq > 3
+                    for span, freq in self.n_grams[n].items() if freq >= 3
             }
 
     def _update_frequencies(self, n: int, span: str, freq: int):
@@ -79,6 +77,7 @@ class PhraseMiner():
                 continue
             else:
                 for new_span in self.n_grams[lower_n]:
+                    if len(new_span.split()) < 1: continue
                     b = new_span.split()[0]
                     e = new_span.split()[-1]
                     if bool(set(span.split()) & set([b, e])):
@@ -109,7 +108,9 @@ class PhraseMiner():
             https://arxiv.org/abs/2206.13748
         """
         for text in corpus:
-            doc = self.nlp(text)
+            escaped_text = pp.escape(text).lower()
+            doc = self.nlp(escaped_text)
+            # doc = pp.tokenize(self.nlp, text)
             b_idx = -1
             for idx, token in enumerate(doc):
                 if b_idx == -1 and self.__is_beginning(token):
@@ -153,9 +154,18 @@ class PhraseMiner():
         for label, entries in gazetteers.items():
             logging.info(f"Adding {len(entries)} entries to {label}")
             for entry in entries:
+                escaped_text = pp.escape(entry).lower()
+                # pattern = self.nlp(escaped_text)
+                # if len(pattern) > 1: # If there are more than one token in the entry
+                #     patterns.append({
+                #         "label": label,
+                #         "pattern": [{"LOWER": token.text} for token in pattern]
+                #     })
+                # else:
+                #     print(pattern.text)
                 patterns.append({
                     "label": label,
-                    "pattern": entry
+                    "pattern": escaped_text
                 })
         self.ruler.add_patterns(patterns)
 
@@ -171,7 +181,8 @@ class PhraseMiner():
         """
         with open(path, "w", encoding="utf-8") as f:
             for text in corpus:
-                for token in self.nlp(text):
+                doc = self.nlp(pp.escape(text).lower())
+                for token in doc:
                     if token.ent_iob_ == "O":
                         f.write(
                             f"{token.text}\t{token.ent_iob_}\n"

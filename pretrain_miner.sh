@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # LANG="en"
-# TRAIN_CORPUS_PATH=""
-# VAL_CORPUS_PATH=""
+# TRAIN_CORPUS_PATH="./data/bc5cdr/cdr_dev_corpus.txt"
+# VAL_CORPUS_PATH="./data/bc5cdr/cdr_train_corpus.txt"
 # MAX_LENGTH=0
 # LM_PATH=""
 # SEED=0
@@ -21,13 +21,13 @@ mkdir tmp logs
 echo ${green}=== Pretraining ===${reset}
 python3 pretrain_miner.py \
     --lang ${LANG:-"en"} \
-    --train_corpus_path ${TRAIN_CORPUS_PATH:-"./data/bc5cdr/cdr_train.conll"} \
-    --val_corpus_path ${VAL_CORPUS_PATH:-"./data/bc5cdr/cdr_val.conll"} \
-    --max_length ${MAX_LENGTH:-256} \
+    --train_corpus_path ${TRAIN_CORPUS_PATH:-"./data/bc5cdr/cdr_train_corpus.txt"} \
+    --val_corpus_path ${VAL_CORPUS_PATH:-"./data/bc5cdr/cdr_dev_corpus.txt"} \
+    --max_length ${MAX_LENGTH:-512} \
     --lm_path ${LM_PATH:-"./tmp/lm"} \
     --seed ${SEED:-8} \
     --mlm_probability ${MLM_PROBABILITY:-0.15} \
-    --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-4} \
-    --lm_epochs ${LM_EPOCHS:-50} \
-    --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-16}
+    --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-2} \
+    --lm_epochs ${LM_EPOCHS:-30} \
+    --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-32}
 echo ${green}--- Done ---${reset}

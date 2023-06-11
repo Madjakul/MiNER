@@ -13,20 +13,30 @@ logging_config()
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--lang", choices=["en", "fr"], default="en")
+    parser.add_argument(
+        "--lang",
+        type=str,
+        help="Language of the corpus {'en', 'fr'}"
+    )
     parser.add_argument(
         "--corpus_path",
         type=str,
-        default="./data/bc5cdr/cdr_corpus.txt"
+        help="Path to the raw corpus."
     )
     parser.add_argument(
-        "--conll_path", type=str, default="./data/bc5cdr/cdr_train.conll"
+        "--conll_path",
+        type=str,
+        help="Path and name of the conll distant training data."
     )
     parser.add_argument(
-        "--gazetteers_path", type=str, default="./data/gazetteers/"
+        "--gazetteers_path",
+        type=str,
+        help="Path to the dictionaries"
     )
     parser.add_argument(
-        "--unk_gazetteers_path", type=str, default="./data/gazetteers/UNK.txt"
+        "--unk_gazetteers_path",
+        type=str,
+        help="Path and name to the file containing the mined entities."
     )
     args = parser.parse_args()
 
@@ -35,6 +45,7 @@ if __name__=="__main__":
     logging.info(f"Reading training data from {args.corpus_path}")
     with open(args.corpus_path, "r", encoding="utf-8") as f:
         corpus = f.read().splitlines()
+    corpus = [text.lower() for text in corpus]
 
     logging.info(f"Loading gazetteers from {args.gazetteers_path}")
     phrase_miner = PhraseMiner(lang=args.lang)

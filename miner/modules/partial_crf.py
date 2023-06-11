@@ -65,14 +65,12 @@ class PartialCRF(BaseCRF):
         gold_score = self._numerator_score(emissions, mask, possible_tags).double()
         forward_score = self._denominator_score(emissions, mask).double()
         nll = forward_score - gold_score
-        print(nll)
         if self.corrected_loss:
             nlu = -(1 - (-nll).exp()).log()
             if torch.isnan(nlu).any() or torch.isinf(nlu).any():
                 nl = (1 - (-nll).exp())
                 nl = nl + (nl < 1e-4).to(nl).detach() * (1e-4 - nl).detach()
                 nlu = - nl.log()
-            print(nlu)
             return torch.sum(nll * self.gamma + nlu * (1 - self.gamma))
         return torch.sum(nll * self.gamma)
 

@@ -51,8 +51,8 @@ class TransformerDataset():
     ):
         self.mlm_ds = None
         self.max_length = max_length
-        self.train_corpus = [" ".join(text) for text in train_corpus]
-        self.valid_corpus = [" ".join(text) for text in valid_corpus]
+        self.train_corpus = train_corpus
+        self.valid_corpus = valid_corpus
         if lang == "fr":
             logging.info(f"Using camembert-base tokenizer")
             self.tokenizer = AutoTokenizer.from_pretrained(
@@ -97,8 +97,7 @@ class TransformerDataset():
         )
 
     def add_vocab(
-        self, corpus: List[List[str]],
-        lm: Union[RoBERTa, CamemBERT, Longformer]
+        self, corpus: List[str], lm: Union[RoBERTa, CamemBERT, Longformer]
     ):
         """Adds new tokens to a pretrained LLM. The embedding of the added
         tokens are initialized using the mean of the already existing tokens
@@ -118,7 +117,7 @@ class TransformerDataset():
             pretrained language models. (2021). Retrieved April 24, 2023 from
             https://nlp.stanford.edu/~johnhew/vocab-expansion.html
         """
-        new_tokens = [token for text in corpus for token in text]
+        new_tokens = [token for text in corpus for token in text.split()]
         new_tokens = set(new_tokens) - set(self.tokenizer.vocab.keys()) # New tokens don't already exist
         logging.info( f"Adding {len(new_tokens)} new tokens to the vocabulary")
         self.tokenizer.add_tokens(list(new_tokens))
@@ -126,7 +125,8 @@ class TransformerDataset():
         lm.model.resize_token_embeddings(len(self.tokenizer))
         # Computing the distribution of the new embeddings
         params = lm.model.state_dict()
-        embeddings = params["transformer.wte.weight"]
+        # embeddings = params["transformer.wte.weight"]
+        embeddings = params["roberta.embeddings.word_embeddings.weight"]
         pre_expansion_embeddings = embeddings[:-3, :]
         mu = torch.mean(pre_expansion_embeddings, dim=0)
         n = pre_expansion_embeddings.size()[0]
@@ -143,6 +143,6 @@ class TransformerDataset():
             dim=0
         )
         embeddings[-3:, :] = new_embeddings
-        params["transformer.wte.weight"][-3:, :] = new_embeddings
+        params["roberta.embeddings.word_embeddings.weight"][-3:, :] = new_embeddings
         lm.model.load_state_dict(params)
 

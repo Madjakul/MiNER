@@ -104,7 +104,6 @@ Avista
 Avnet
 Avon Products
 Baker Hughes Incorporated
-Ball
 Bank of America
 The Bank of New York Company
 Bank One
@@ -476,8 +475,7 @@ Knight-Ridder
 Kohl's
 KPMG Consulting 
 Kroger
-L-3 Communications Holdings 
-Laboratory
+L-3 Communications Holdings
 Lam Research
 LandAmerica Financial Group 
 Lands' End 
@@ -491,8 +489,7 @@ Lennar
 Lennox International 
 Level 3 Communications 
 Levi Strauss &
-Lexmark International 
-Limited 
+Lexmark International
 Lincoln National
 Linens 'n Things 
 Lithia Motors 
@@ -593,7 +590,6 @@ North Fork Bancorporation
 Northeast Utilities System
 Northern Trust
 Northrop Grumman
-NorthWestern
 Novellus Systems 
 NSTAR
 NTL Incorporated
@@ -623,8 +619,7 @@ Owens Corning
 Owens-Illinois 
 Oxford Health Plans 
 Paccar 
-PacifiCare Health Systems 
-Packaging
+PacifiCare Health Systems
 Pactiv
 Pall
 Pantry 
@@ -778,8 +773,7 @@ Southwest Gas
 Sovereign Bancorp 
 Spartan Stores 
 Spherion
-Sports Authority 
-Sprint
+Sports Authority
 SPX
 St. Jude Medical 
 St. Paul
@@ -809,8 +803,7 @@ Swift Transportation
 Symbol Technologies 
 Synovus Financial
 Sysco
-Systemax 
-Target
+Systemax
 Tech Data
 TECO Energy 
 Tecumseh Products Company
@@ -1192,7 +1185,6 @@ Green Party of Germany
 Left Party
 National Democratic Party of Germany
 National Liberal Party
-The Republicans
 Social Democratic Party of Germany
 New Democracy
 Panhellenic Socialist Movement
@@ -1525,7 +1517,6 @@ Feeding America
 Food Bank For New York City
 Food for the Hungry
 The Hunger Project
-Alight
 All Hands and Hearts
 American Friends Service Committee
 American Near East Refugee Aid
@@ -1609,7 +1600,7 @@ COPS
 Tunnel to Towers Foundation
 American Battlefield Trust
 Common Cause Education Fund
-FAIR
+Facebook AI Research
 Center for Reproductive Rights
 EngenderHealth
 Fòs Feminista
@@ -1718,6 +1709,7 @@ General Electric
 General Motors
 GlaxoSmithKline
 Goldman Sachs
+Goldman, Sachs
 Google
 GMA Network
 GVK Industries
@@ -1827,4 +1819,1190 @@ Williams-Sonoma
 WWE
 Yum! Brands
 Zillow Group
+Zoom
+African Development Bank
+Arab Bank for Economic Development in Africa
+Bank for International Settlements
+International Bank for Reconstruction and Development
+Islamic Development Bank
+World Bank
+Grameen Bank
+Reserve Bank of India
+State Bank of India
+Dai-Ichi Kangyō Bank
+Export-Import Bank of Japan
+Fuji Bank
+Industrial Bank of Japan
+Mitsubishi Tokyo Financial Group
+Sanwa Bank
+Tōkai Bank Ltd.
+Arab Bank for Economic Development in Africa
+Asian Development Bank
+Bank for International Settlements
+International Bank for Economic Cooperation
+International Bank for Reconstruction and Development
+International Investment Bank
+Islamic Development Bank
+World Bank
+Bank for International Settlements
+International Bank for Reconstruction and Development
+World Bank
+Banque de France
+BNP Paribas
+Le Crédit Lyonnais
+Société Générale
+Commerzbank AG
+Deutsche Bank AG
+NRW.BANK
+Banco Santander, SA
+BBVA SA
+Swiss Bank Corporation
+UBS AG
+Union Bank of Switzerland
+Bank of England
+Barclays PLC
+Lloyds Banking Group
+Midland Bank PLC
+National Westminster Bank
+RBS
+Bank for International Settlements
+European Bank for Reconstruction and Development
+International Bank for Economic Cooperation
+International Bank for Reconstruction and Development
+International Investment Bank
+World Bank
+Bank of Canada
+Canadian Imperial Bank of Commerce
+Royal Bank of Canada
+Bank of the United States
+Bank One
+Export-Import Bank of the United States
+First National Bank of Boston
+First National Bank of Chicago
+First National Bank of Minneapolis
+Freedmen’s Bank
+Bank for International Settlements
+Inter-American Development Bank
+International Bank for Reconstruction and Development
+International Investment Bank
+World Bank
+Bank for International Settlements
+International Bank for Reconstruction and Development
+World Bank
+Banco do Brasil
+Bank for International Settlements
+Inter-American Development Bank
+International Bank for Reconstruction and Development
+World Bank
+La Prensa
+The Sydney Morning Herald
+Royal Bank of Scotland Group (RBS)
 Zoom Video Communications
+Die Presse
+O Estado de S. Paulo
+Jornal do Brasil
+The Globe and Mail
+La Presse
+The Toronto Star
+Winnipeg Free Press
+Renmin ribao
+Granma
+Berlingske
+Al-Ahram
+Helsingin Sanomat
+Le Figaro
+France-Soir
+l’Humanité
+International New York Times
+Le Journal des Débats
+Le Monde
+Le Parisien
+Allgemeine Zeitung
+Frankfurter Allgemeine Zeitung
+Neues Deutschland
+Süddeutsche Zeitung
+Völkischer Beobachter
+Die Welt
+Die Zeit
+Ananda Bazar Patrika
+The Hindu
+The Statesman
+The Times of India
+Ha’aretz
+The Jerusalem Post
+Corriere della Sera
+La Stampa
+Il Tempo
+Asahi shimbun
+Mainichi shimbun
+Yomiuri shimbun
+The Standard
+Het Vrije Volk
+Aftenposten
+El Comercio
+Izvestiya
+Komsomolskaya Pravda
+Pravda
+The Straits Times
+Die Burger
+Rand Daily Mail
+ABC
+El País
+La Vanguardia Española
+Dagens Nyheter
+Svenska Dagbladet
+Journal de Genève
+Neue Zürcher Zeitung
+Daily Express
+Daily Mail
+The Daily Telegraph
+Financial Times
+The Guardian
+The Independent
+The Mirror
+News of the World
+The Observer
+The Scotsman
+The Sunday Times
+The Times
+Yorkshire Post
+Amsterdam News
+The Atlanta Journal-Constitution
+The Baltimore Sun
+The Boston Globe
+The Bulletin
+Chicago Daily News
+Chicago Defender
+Chicago Tribune
+The Christian Science Monitor
+The Chronicle of Higher Education
+The Commercial Appeal
+The Courier-Journal
+Daily Worker
+The Des Moines Register
+The Deseret News
+Detroit Free Press
+Freedom’s Journal
+The Hill
+Jewish Daily Forward
+The Kansas City Star
+The Liberator
+Los Angeles Times
+The Miami Herald
+Milwaukee Journal Sentinel
+National Enquirer
+Newsday
+New York Daily News
+New York Herald
+New York Sun
+The New York Times
+New York World
+The North Star
+The Oregonian
+The Philadelphia Inquirer
+New Pittsburgh Courier
+The Revolution
+Roll Call
+St. Louis Post-Dispatch
+The Stars and Stripes
+USA Today
+The Wall Street Journal
+The Washington Post
+L’Osservatore Romano
+Borba
+Ansett Transport Industries Limited
+BHP Billiton
+Qantas Airways Limited
+Ostend Company
+Agfa-Gevaert NV
+Brussels Airlines
+Petrofina SA
+Petrobras
+Varig
+Air Canada
+Alcan Aluminium Limited
+Bombardier, Inc.
+Canada Company
+Canadian Broadcasting Corporation
+Canadian Pacific Railway Ltd.
+Grand Trunk Railway
+Hudson’s Bay Company
+North West Company
+Royal Bank of Canada
+Thomson Corporation
+VIA Rail Canada, Inc.
+Codelco
+Air France
+Aventis
+Carrefour SA
+Citroën
+Dassault Industries
+Elf Aquitaine
+France Telecom SA
+French East India Company
+Larousse
+Michelin
+PSA Peugeot Citroën SA
+Pechiney
+Renault
+Rhône-Poulenc SA
+Compaignie de Saint-Gobain-Pont-à-Mousson
+Sanofi-Aventis
+Société Nationale des Chemins de Fer Français
+Total SA
+AEG AG
+BASF Aktiengesellschaft
+Bayer AG
+Bayerische Motoren Werke AG
+Bosch GmbH
+Cassella Farbewerke Mainkur Aktiengesellschaft
+Daimler AG
+Deutsche Bahn AG
+Dresdner Bank AG
+Flick Group
+Hoechst Aktiengesellschaft
+Krupp AG
+Lufthansa
+Opel AG
+RAG Aktiengesellschaft
+Siemens AG
+Thyssen AG
+ThyssenKrupp AG
+UFA
+Vodafone
+Volkswagen AG
+Olympic Airlines
+Air India
+Indian Airlines
+Tata Group
+Aer Lingus
+Guinness
+El Al Israel Airlines
+Alfa Romeo SpA
+Alitalia-Linee Aeree Italiane
+Beretta SpA
+Cinecittà
+Eni
+Fiat SpA
+Olivetti & C. SpA
+Pirelli SpA
+Telecom Italia SpA
+All Nippon Airways Co., Ltd.
+Fujitsu Limited
+Hitachi, Ltd.
+Honda Motor Company, Ltd.
+Idemitsu Kosan Co., Ltd.
+Ishikawajima-Harima Heavy Industries Company, Ltd.
+Japan Airlines
+Japan Railways Group
+Kawasaki Heavy Industries, Ltd.
+Kawasaki Steel Corporation
+Kobe Steel, Ltd.
+Matsushita Electric Industrial Company, Ltd.
+Mazda Motor Corporation
+Mitsubishi Group
+Mitsui Group
+NEC Corporation
+NKK Corporation
+Nikkatsu Motion Picture Company
+Nippon Hoso Kyokai
+Nippon Steel Corporation
+Nippon Telegraph and Telephone Corporation
+Nissan Motor Co., Ltd.
+Sega Corporation
+Shintōhō Motion Picture Company
+Shōchiku Co., Ltd.
+Sony Corporation
+Sumitomo Group
+Tōei Company, Ltd.
+Toho Motion Picture Company
+Toshiba Corporation
+Toyota Motor Corporation
+ArcelorMittal
+Mexicana Airlines
+Petróleos Mexicanos
+Telmex SA
+AkzoNobel
+DSM
+Dutch East India Company
+Dutch West India Company
+ING Group NV
+KLM
+Philips Electronics NV
+Royal Dutch Shell PLC
+Air New Zealand Limited
+House of India
+Aeroflot
+Energia
+MiG
+Russian-American Company
+Sukhoy
+Tupolev
+Aramco
+De Beers S.A.
+Hyundai Group
+Samsung Electronics
+Endesa
+La Granja De San Ildefonso
+Compañía Guipuzcoana
+Iberia
+Repsol SA
+Telefonica SA
+Saab AB
+Svensk Filmindustri
+Volvo Aktiebolaget
+Ciba-Geigy AG
+Nestlé SA
+Novartis AG
+Swiss International Air Lines
+BAE Systems
+BP PLC
+British Airways PLC
+British American Tobacco PLC
+British Leyland Motor Corporation, Ltd.
+British South Africa Company
+British Steel Corporation PLC
+Christie’s International PLC
+Dunlop Holdings PLC
+Ealing Studios
+East India Company
+George Philip and Son
+Guest, Keen & Nettlefolds, PLC
+Hammer Films
+Imperial Chemical Industries PLC
+Imperial Tobacco Group, PLC
+Independent Television
+John Bartholomew and Son
+Lloyd’s
+Macmillan Publishers Ltd.
+Marks & Spencer PLC
+Rolls-Royce PLC
+Royal Bank of Scotland Group
+Sotheby’s
+AOL
+AT&T Corporation
+Abercrombie & Fitch
+Activision Blizzard, Inc.
+Adobe Systems Incorporated
+Advanced Micro Devices, Inc.
+AlliedSignal
+Altria Group
+Aluminum Company of America
+Amazon.com
+Amerada Hess Corporation
+American Airlines
+American Broadcasting Company
+American Express Company
+American Fur Company
+American Tobacco Company
+Amoco Corporation
+Amtrak
+Anaconda Company
+Anheuser-Busch Companies, Inc.
+Apple Inc.
+Armco Inc.
+Atchison, Topeka and Santa Fe Railway Company
+Atlantic Richfield Company
+B.F. Goodrich Company
+Baltimore and Ohio Railroad
+Bank of America Corporation
+The Bank of New York Company, Inc.
+Bell Laboratories
+Bendix Corporation
+Bethlehem Steel Corporation
+Biograph Company
+Black Entertainment Television
+Boeing Company
+Boston and Maine Corporation
+Bristol-Myers Squibb Company
+Burlington Northern Santa Fe Corporation
+Burlington Worldwide
+CBS Corporation
+CSX Corporation
+Cable News Network
+Campbell Soup Company
+Caterpillar Inc.
+Central Pacific Railroad
+Champion International Corporation
+The Chase Manhattan Corporation
+Chesapeake and Ohio Railway Company
+Chevron Corporation
+Chicago and North Western Transportation Company
+Chicago, Burlington and Quincy Railroad Company
+Chicago, Milwaukee, St. Paul and Pacific Railroad Company
+Chicago, Rock Island, and Pacific Railroad Company
+Chiquita Brands International, Inc.
+Chrysler
+Citigroup
+The Coca-Cola Company
+Colgate-Palmolive Company
+Columbia Pictures Entertainment, Inc.
+Comcast
+Compaq Computer Corporation
+Comsat
+Conoco
+ConocoPhillips
+Consolidated Rail Corporation
+Continental Airlines, Inc.
+Continental Group, Inc.
+Craigslist
+Currier & Ives
+DC Comics
+Dark Horse Comics
+Deere & Company
+Del Monte Foods
+Delaware, Lackawanna and Western Railroad Company
+Dell Inc.
+Delta Air Lines, Inc.
+Denver and Rio Grande Western Railroad Company
+Digital Equipment Corporation
+Disney Company
+Dow Chemical Company
+DuMont Television Network
+DuPont Company
+Eastern Air Lines, Inc.
+Eastman Kodak Company
+eBay
+eHarmony
+Electronic Arts, Inc.
+Erie Railroad Company
+ESPN, Inc.
+Etsy
+Exxon Corporation
+Exxon Mobil Corporation
+Facebook
+Fairchild Semiconductor Corporation
+Fannie Mae
+Farrar, Straus and Giroux
+Filene’s
+First Bank System, Inc.
+First Interstate Bancorp
+FirstCity
+Ford Motor Company
+Fox Broadcasting Company
+Freddie Mac
+Fruehauf Trailer Corporation
+GTE Corporation
+Gannett Co., Inc.
+General Dynamics Corp.
+General Electric Co.
+General Foods Corporation
+General Mills, Inc.
+General Motors Corporation
+Goodyear Tire & Rubber Company
+Google Inc.
+Great Atlantic & Pacific Tea Company, Inc.
+Great Northern Railway Company
+Greyhound Lines, Inc.
+Groupon
+Gulf + Western Inc.
+Gulf Oil Corporation
+HBO
+Heinz Company
+Herman Miller, Inc.
+Hewlett-Packard Company
+Honeywell International Inc.
+Hughes Electronics Corporation
+ITT Corporation
+Illinois Central Railroad
+Intel Corporation
+International Business Machines Corporation
+International Paper Company
+Intuit Inc.
+J. Walter Thompson Co.
+J.C. Penney Corporation, Inc.
+JPMorgan Chase & Co.
+Jewel-Osco
+Kellogg Company
+Kmart
+Kraft Foods Inc.
+Lehigh Valley Railroad Company
+Levi Strauss & Co.
+Libbey Inc.
+Liggett Group Inc.
+LinkedIn
+Litton Industries, Inc.
+Lockheed Martin Corporation
+Long Island Rail Road Company
+Lorillard
+Macy’s
+MapQuest
+Marathon Oil Company
+Marshall Field’s
+Martin Marietta Corporation
+Marvel Comics
+McDonald’s Corporation
+McDonnell Douglas Corporation
+Mellon Financial Corporation
+Merrill Lynch & Co., Inc.
+Metro-Goldwyn-Mayer, Inc.
+Microsoft Corporation
+MillerCoors
+Missouri Pacific Railroad Company
+Mobil Corporation
+Monsanto Company
+Monster
+Montgomery Ward & Co.
+Motion Picture Patents Company
+Motorola, Inc.
+Motown
+MTV
+NBC Universal
+NCR Corporation
+NVIDIA Corporation
+Nabisco
+Napster
+National Broadcasting Co., Inc.
+National Intergroup, Inc.
+Navistar International Corporation
+Neiman Marcus
+Netflix, Inc.
+Netscape Communications Corp.
+New York Central Railroad Company
+New York, Chicago and St. Louis Railroad Company
+New York, New Haven and Hartford Railroad Company
+Nike, Inc.
+Norfolk and Western Railway Company
+Northern Pacific Railway Company
+Northrop Grumman Corporation
+Northwest Airlines, Inc.
+Norwest Corporation
+Occidental Petroleum Corporation
+Oracle Corporation
+PPG Industries, Inc.
+Pan American World Airways, Inc.
+Paramount Communications Inc.
+Paramount Pictures Corporation
+PayPal
+Penguin Random House
+Pennsylvania Railroad Company
+Pennzoil Company
+PepsiCo, Inc.
+Pfizer, Inc.
+Phillips Petroleum Company
+Pillsbury Company
+Pixar Animation Studios
+Polaroid Corporation
+Procter & Gamble Company
+Quaker Oats Company
+R.J. Reynolds Tobacco Company
+RCA Corporation
+REA Express, Inc.
+RJR Nabisco, Inc.
+RKO Radio Pictures, Inc.
+Ralston Purina Company
+Rand McNally & Company
+Raytheon Company
+Reading Company
+Rockwell International Corporation
+Russell, Majors and Waddell
+SGI
+Saint Louis-San Francisco Railway Company
+Salesforce.com
+Sara Lee Corporation
+SeaWorld
+Seagram Company Ltd.
+Sears, Roebuck and Company
+The ServiceMaster Company
+The Signal Companies, Inc.
+Simon & Schuster, Inc.
+Singer Company
+Smith & Wesson
+Sotheby’s
+Southern Overland Mail Company
+Southern Pacific Railroad
+Southern Railway Company
+Southwest Airlines Co.
+Southworth & Hawes
+Standard Oil Company and Trust
+Starbucks
+Steuben Glass Company
+Sun Microsystems, Inc.
+Sunoco, Inc.
+TRW Inc.
+Target Corporation
+Tenneco Inc.
+Tesla Motors
+Texaco Inc.
+Texas Instruments Incorporated
+Texas and Pacific Railway Company
+Textron Inc.
+3M Company
+Trans World Airlines, Inc.
+Transamerica Corporation
+Travelers Insurance
+20th Century Fox Film Corporation
+Twitter
+US Airways
+USX Corporation
+Union Carbide Corporation
+Union Pacific Railroad Company
+Unisys Corporation
+United Airlines
+United Artists Corporation
+United States Steel Corporation
+United Technologies Corporation
+Universal Studios
+Unocal Corporation
+Viacom Inc.
+W.R. Grace & Co.
+Wal-Mart
+Warner Brothers
+Warner-Lambert Company
+Wells Fargo
+Western Air Lines, Inc.
+Western Electric Company Inc.
+Western Union Corporation
+Westinghouse Electric Corporation
+Woolworth Co.
+Xerox Corporation
+Yahoo! Inc.
+Petróleos de Venezuela, SA
+Islamic Salvation Front
+National Liberation Front
+Popular Movement for the Liberation of Angola
+UNITA
+Radical Civic Union
+Australian Democratic Labor Party
+Australian Democrats
+Australian Labor Party
+the Greens
+Liberal Party of Australia
+the Nationals
+United Australia Party
+United Tasmania Group
+Brazilian Democratic Movement, Party of the
+Brazilian Social Democratic Party
+Liberal Front Party
+Bulgarian Agrarian National Union
+Khmer Rouge
+Bloc Québécois
+Canadian Alliance
+Clear Grits
+Co-operative Commonwealth Federation
+Conservative Party of Canada
+Liberal Party of Canada
+New Democratic Party
+Parti Québécois
+Parti Rouge
+Reform Party
+Social Credit Party
+Chinese Communist Party
+Nationalist Party
+Croatian Peasant Party
+Ustaša
+Communist Party of Cuba
+Wafd
+Farabundo Martí National Liberation Front
+European Liberal Democrat and Reform Party
+European People’s Party
+Party of European Socialists
+French Communist Party
+National Centre of Independents and Peasants
+National Front
+Popular Republican Movement
+Radical-Socialist Party
+Rally for the Republic
+Socialist Party
+Australian National University
+University of Melbourne
+University of Sydney
+University of Vienna
+Catholic University of Leuven
+Ghent University
+University of Liège
+Acadia University
+University of Alberta
+Bishop’s University
+University of British Columbia
+University of Calgary
+Dalhousie University
+University of Guelph
+Laval University
+University of Manitoba
+McGill University
+McMaster University
+Memorial University of Newfoundland
+University of Montreal
+University of New Brunswick
+Queen’s University at Kingston
+Ryerson University
+University of Saskatchewan
+Simon Fraser University
+University of Toronto
+University of Victoria
+University of Waterloo
+University of Western Ontario
+York University
+Peking University
+Charles University
+School of Alexandria
+Al-Azhar University
+Universities of Aix-Marseille
+École des Beaux-Arts
+Collège de France
+Universities of Grenoble I
+Universities of Grenoble II
+Universities of Grenoble III
+Universities of Lille I
+Universities of Lille II
+Universities of Lille III
+Universities of Montpellier I
+Universities of Montpellier II
+Universities of Montpellier III
+University of Nantes
+University of Paris
+Universities of Paris I–XIII
+University of Poitiers
+Albert Ludwig University of Freiburg
+University of Cologne
+Free University of Berlin
+University of Göttingen
+University of Heidelberg
+Humboldt University of Berlin
+University of Leipzig
+Martin Luther University of Halle-Wittenberg
+University of Munich
+Philipps University of Marburg
+University of Tübingen
+University of Würzburg
+University of Calcutta
+University of Delhi
+Kuvempu University
+University of Madras
+University of Mumbai
+University of Dublin
+National University of Ireland
+The Hebrew University of Jerusalem
+University of Bologna
+University of Florence
+University of Milan
+University of Naples
+University of Padua
+University of Perugia
+Pontifical Gregorian University
+University of Rome
+University of Salerno
+University of Siena
+University of Turin
+Kyoto University
+Keiō University
+University of Tokyo
+Waseda University
+American University of Beirut
+University of Guadalajara
+National Autonomous University of Mexico
+Qarawīyīn
+State University of Leiden
+Utrecht University
+University of the Punjab
+Main National University of San Marcos of Lima
+Hebrew university
+University of Lisbon
+Albertus University of Königsberg
+Moscow State University
+Peoples’ Friendship University of Russia
+Saint Petersburg State University
+University of Pretoria
+Complutense University of Madrid
+University of Salamanca
+University of Sevilla
+University of Valladolid
+Uppsala University
+University of Geneva
+School of Nisibis
+University of Cambridge
+University of Edinburgh
+University of Glasgow
+Imperial College London
+University of London
+London School of Economics and Political Science
+University of Manchester
+Open University
+University of Oxford
+University of St. Andrews
+Winchester College
+University of Alabama
+Alabama Agricultural and Mechanical University
+Alabama State University
+Auburn University
+Tuskegee University
+University of Alaska
+University of Arizona
+Arizona State University
+Northern Arizona University
+University of Arkansas
+Arkansas State University
+Art Center College of Design
+University of California
+California Institute of the Arts
+California Institute of Technology
+California State University
+Claremont Colleges
+Mills College
+Occidental College
+University of the Pacific
+University of San Francisco
+Santa Clara University
+University of Southern California
+Stanford University
+University of Colorado
+Colorado College
+Colorado School of Mines
+Colorado State University
+University of Denver
+University of Northern Colorado
+Western State Colorado University
+University of Bridgeport
+Central Connecticut State University
+University of Connecticut
+Connecticut College
+Fairfield University
+University of Hartford
+Southern Connecticut State University
+Trinity College
+Wesleyan University
+Yale University
+University of Delaware
+Delaware State University
+University of Central Florida
+University of Florida
+Florida Agricultural and Mechanical University
+Florida Atlantic University
+Florida State University
+University of Miami
+Agnes Scott College
+Emory University
+Fort Valley State University
+University of Georgia
+Georgia Institute of Technology
+Georgia State University
+Morehouse College
+Oglethorpe University
+Spelman College
+University of Hawaii
+Boise State University
+University of Idaho
+Idaho State University
+Augustana College
+University of Chicago
+Chicago State University
+DePaul University
+Dominican University
+Eastern Illinois University
+University of Illinois
+Illinois Institute of Technology
+Illinois State University
+Knox College
+Lewis University
+Loyola University Chicago
+Northern Illinois University
+Northwestern University
+Roosevelt University
+Southern Illinois University
+Western Illinois University
+Wheaton College
+Ball State University
+Butler University
+DePauw University
+Earlham College
+University of Evansville
+Goshen College
+Indiana University
+Indiana State University
+Manchester University
+University of Notre Dame
+Purdue University
+Valparaiso University
+Coe College
+Drake University
+Grinnell College
+University of Iowa
+Iowa State University
+Loras College
+University of Northern Iowa
+Emporia State University
+Fort Hays State University
+University of Kansas
+Kansas State University
+Wichita State University
+Eastern Kentucky University
+University of Kentucky
+Kentucky State University
+University of Louisville
+Murray State University
+Western Kentucky University
+École Polytechnique
+University of Strasbourg
+Universities of Toulouse I
+Universities of Toulouse II
+Universities of Toulouse III
+Grambling State University
+University of Louisiana at Monroe
+Louisiana State University
+Southern University
+Tulane University
+Bates College
+Bowdoin College
+Colby College
+University of Maine
+Johns Hopkins University
+University of Maryland
+Morgan State University
+St. John’s College
+Amherst College
+Babson College
+Bentley University
+Boston College
+Boston University
+Brandeis University
+Clark University
+Emerson College
+Harvard University
+College of the Holy Cross
+University of Massachusetts
+Massachusetts Institute of Technology
+Mount Holyoke College
+Northeastern University
+Smith College
+Tufts University
+Wellesley College
+Westfield State University
+Wheaton College
+Williams College
+Albion College
+Central Michigan University
+Cranbrook Academy of Art
+University of Detroit Mercy
+Eastern Michigan University
+Ferris State University
+Grand Valley State University
+Hillsdale College
+Kalamazoo College
+University of Michigan
+Michigan State University
+Northern Michigan University
+Olivet College
+Wayne State University
+Western Michigan University
+Bemidji State University
+Carleton College
+University of Minnesota
+Minnesota State University
+Minnesota State University, Mankato
+Minnesota State University Moorhead
+St. Cloud State University
+St. Olaf College
+Winona State University
+Alcorn State University
+University of Mississippi
+Mississippi College
+Mississippi State University
+University of Southern Mississippi
+Lincoln University
+University of Missouri
+Missouri State University
+Northwest Missouri State University
+Saint Louis University
+Southeast Missouri State University
+Truman State University
+Washington University in St. Louis
+University of Montana
+Montana State University
+Creighton University
+University of Nebraska
+University of Nevada
+Dartmouth College
+University of New Hampshire
+Drew University
+Fairleigh Dickinson University
+Kean University
+Montclair State University
+Princeton University
+Rider University
+Rowan College
+Rutgers, The State University of New Jersey
+Saint Peter’s University
+Seton Hall University
+University of New Mexico
+New Mexico State University
+Adelphi University
+Alfred University
+Bank Street College of Education
+Bard College
+Barnard College
+Canisius College
+The City University of New York
+Colgate University
+Columbia University
+Cooper Union
+Cornell University
+Eastman School of Music
+Elmira College
+Fordham University
+Hamilton College
+Hofstra University
+Ithaca College
+Juilliard School
+The New School
+State University of New York
+New York University
+Pace University
+Pratt Institute
+Rensselaer Polytechnic Institute
+University of Rochester
+Rochester Institute of Technology
+Rockefeller University
+Sarah Lawrence College
+St. John’s University
+Syracuse University
+Union College
+Vassar College
+Yeshiva University
+Campbell University
+Davidson College
+Duke University
+Guilford College
+University of North Carolina
+Wake Forest University
+University of North Dakota
+North Dakota State University
+University of Akron
+Antioch University
+Bowling Green State University
+Case Western Reserve University
+University of Cincinnati
+Cleveland State University
+University of Dayton
+Denison University
+Hiram College
+John Carroll University
+Kent State University
+Kenyon College
+Miami University
+Muskingum University
+Oberlin College
+Ohio University
+The Ohio State University
+University of Toledo
+Wilberforce University
+Xavier University
+Youngstown State University
+University of Central Oklahoma
+Langston University
+Northeastern State University
+University of Oklahoma
+Oklahoma State University
+Oral Roberts University
+University of Tulsa
+University of Oregon
+Oregon Health and Science University
+Oregon State University
+Portland State University
+Reed College
+Allegheny College
+Bryn Mawr College
+Bucknell University
+California University of Pennsylvania
+Carnegie Mellon University
+Clarion University of Pennsylvania
+Dickinson College
+Drexel University
+Duquesne University
+Edinboro University of Pennsylvania
+Franklin and Marshall College
+Gettysburg College
+Haverford College
+Indiana University of Pennsylvania
+Kutztown University of Pennsylvania
+La Salle University
+Lafayette College
+Lehigh University
+Lock Haven University of Pennsylvania
+Lycoming College
+University of Pennsylvania
+University of Pittsburgh
+Saint Joseph’s University
+Slippery Rock University of Pennsylvania
+Swarthmore College
+Temple University
+Thomas Jefferson University
+Villanova University
+West Chester University of Pennsylvania
+Widener University
+Brown University
+Providence College
+University of Rhode Island
+Rhode Island School of Design
+College of Charleston
+The Citadel
+Clemson University
+Furman University
+University of South Carolina
+South Carolina State University
+University of South Dakota
+South Dakota State University
+East Tennessee State University
+Fisk University
+University of Memphis
+University of Tennessee
+Tennessee State University
+Vanderbilt University
+Angelo State University
+Austin College
+Baylor University
+University of Houston
+Lamar University
+University of North Texas
+Rice University
+Sam Houston State University
+Southern Methodist University
+Stephen F. Austin State University
+University of Texas
+Texas A&M University
+Texas Christian University
+Texas Southern University
+Texas State University
+Texas Tech University
+Texas Woman’s University
+Brigham Young University
+University of Utah
+Utah State University
+Weber State University
+Bennington College
+Castleton State College
+Middlebury College
+University of Vermont
+George Mason University
+Hampton University
+National Defense University
+Old Dominion University
+University of Richmond
+Roanoke College
+University of Virginia
+Virginia Commonwealth University
+Virginia State University
+Virginia Tech
+Washington and Lee University
+College of William & Mary
+Central Washington University
+Gonzaga University
+Seattle University
+University of Washington
+Washington State University
+Western Washington University
+American University
+The Catholic University of America
+University of the District of Columbia
+Gallaudet University
+The George Washington University
+Georgetown University
+Howard University
+National Defense University
+Marshall University
+West Liberty University
+West Virginia University
+Beloit College
+Marquette University
+University of Wisconsin
+University of Wyoming

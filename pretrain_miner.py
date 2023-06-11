@@ -9,7 +9,6 @@ from miner.utils import logging_config
 from miner.trainers import TransformerTrainer
 from miner.utils.data import TransformerDataset
 from miner.modules import RoBERTa, CamemBERT, Longformer
-from miner.utils.data import preprocessing as pp
 
 
 logging_config()
@@ -21,7 +20,11 @@ else: DEVICE = "cpu"
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--lang", choices=["fr", "en"], default="en")
+    parser.add_argument(
+        "--lang",
+        type=str,
+        help="Language of the corpus {'en', 'fr'}"
+    )
     parser.add_argument(
         "--train_corpus_path",
         type=str,
@@ -46,9 +49,11 @@ if __name__=="__main__":
     torch.manual_seed(args.seed)
 
     logging.info(f"Loading training data from {args.train_corpus_path}")
-    train_corpus, _ = pp.read_conll(args.train_corpus_path)
+    with open(args.train_corpus_path, "r", encoding="utf-8") as f:
+        train_corpus = f.read().splitlines()
     logging.info(f"Loading validation data from {args.val_corpus_path}")
-    val_corpus, _ = pp.read_conll(args.val_corpus_path)
+    with open(args.val_corpus_path, "r", encoding="utf-8") as f:
+        val_corpus = f.read().splitlines()
 
     if args.lang == "fr":
         logging.info("using CamemBERT checkpoint as language model")

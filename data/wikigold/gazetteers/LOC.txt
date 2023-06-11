@@ -34,6 +34,7 @@ Central African Republic
 Chad
 Chile
 China
+People's Republic of China
 Colombia
 Comoros
 Congo
@@ -4323,7 +4324,8 @@ Ankara
 Ashgabat
 Funafuti
 Kampala
-Kyiv or Kiev
+Kyiv
+Kiev
 Abu Dhabi
 London
 Washington D.C.
@@ -4337,3 +4339,3693 @@ Cardiff
 Sana'a
 Lusaka
 Harare
+Golden Gate Bridge
+Alcatraz Island
+Yosemite National Park
+The Hollywood Sign
+The Metropolitan Museum of Art
+Empire State Building
+Statue of Liberty
+Central Park
+One World Trade Center
+Chrysler Building
+Ellis Island
+Times Square
+Mount Rushmore
+Cloud Gate
+The Welcome to Fabulous Las Vegas Sign
+The Las Vegas Strip
+Hoover Dam
+Space Needle
+Mount Rainier National Park
+Delicate Arch
+Everglades National Park
+Grand Canyon
+Pearl Harbor
+Diamond Head State Monument
+Hawaiʻi Volcanoes National Park
+Arlington National Cemetery
+Washington Monument
+The White House
+Yellowstone National Park
+Sigiriya Rock Fortress
+Great Wall of China
+The Terracotta Army Museum
+Mount Everest
+Twelve Apostles
+Great Barrier Reef
+Uluru
+Bondi Beach
+Sydney Opera House
+Sydney Harbour Bridge
+Palace of Versailles
+Saint Michael's Mount
+Cité de Carcassonne
+The Basilica of the Sacred Heart of Montmartre
+Eiffel Tower
+Arc de Triomphe
+Louvre Museum
+Notre Dame Cathedral
+Moulin Rouge
+Milan Cathedral
+Leaning Tower of Pisa
+St. Mark's Square
+Rialto Bridge
+Mount Vesuvius
+Pompeii
+Spanish Steps
+Largo di Torre Argentina
+Colosseum
+Trevi Fountain
+St. Peter's Basilica
+Sistine Chapel
+Stonehenge
+Big Ben
+Buckingham Palace
+Palace of Westminster
+The London Eye
+The Shard
+Tower Bridge
+Westminster Abbey
+Malham Cove
+Fushimi Inari Taisha
+Arashiyama Bamboo Forest
+Hiroshima Peace Memorial Park
+Imperial Palace
+Tokyo Tower
+Mount Fuji
+Gibraltar Nature Reserve
+Dom Luis Bridge
+Gardens by the Bay
+Merlion
+La Rambla
+La Sagrada Familia
+The Alhambra
+Guggenheim Museum
+Niagara Falls
+CN Tower
+Banff National Park
+Peggy's Point Lighthouse
+Saint Joseph's Oratory
+Giant's Causeway
+Acropolis
+Tulum Archaeological Zone
+Chichen Itza
+Metropolitan Cathedral
+Ha Long Bay
+Brandenburg Gate
+Berlin Wall Memorial
+Neuschwanstein Castle
+Tian Tan Buddha
+Angkor Wat
+Machu Picchu
+Sugarloaf Mountain
+Christ the Redeemer
+Copacabana Beach
+Selaron Steps
+The Meeting of the Waters
+Amazon Rainforest
+Recoleta Cemetery
+Iguazu Falls
+Chornobyl
+Taipei 101
+Victoria Falls
+The Valley of Kings
+Pyramids of Giza
+Serengeti National Park
+Mount Kilimanjaro
+Burj Khalifa
+Sheikh Zayed Grand Mosque
+Panama Canal
+Cliffs of Moher
+Table Mountain
+Petra
+Dubrovnik City Walls
+Taj Mahal
+Petronas Twin Towers
+Hungarian Parliament Building
+Blue Mosque
+Chapel Bridge
+Edinburgh Castle
+Mount Bromo
+Atomium
+Mount Everest
+Kangchenjunga
+Lhotse
+Makalu
+Cho Oyu
+Dhaulagiri
+Manaslu
+Nanga Parbat
+Annapurna
+Gasherbrum
+Gasherbrum I
+Broad Peak
+Gasherbrum II
+Shishapangma
+Gasherbrum III
+Gyachung Kang
+Annapurna
+Annapurna II
+Gasherbrum IV
+Himalchuli
+Distaghil Sar
+Ngadi Chuli
+Nuptse
+Khunyang Chhish
+Masherbrum
+Nanda Devi
+Chomo Lonzo
+Batura Sar
+Kanjut Sar
+Rakaposhi
+Namcha Barwa
+Batura
+Batura II
+Kamet
+Saltoro Kangri
+Batura III
+Jannu
+Tirich Mir
+Molamenqing
+Gurla Mandhata
+Saser Kangri
+Chogolisa
+Kongur Tagh
+Shispare
+Silberzacken
+Changtse
+Trivor
+Gangkhar Puensum
+Gongga Shan
+Annapurna III
+Kula Kangri
+Skyang Kangri
+Liankang Kangri
+Yukshin Gardan Sar
+Annapurna IV
+Saser Kangri
+Saser Kangri II
+Mamostong Kangri
+Muztagh Ata
+Ismoil Somoni Peak
+Saser Kangri III
+Noshaq
+Pumari Chhish
+Passu Sar
+Jongsong Peak
+Malubiting
+Gangapurna
+Muchu Chhish
+Batura V
+Jengish Chokusu
+Sia Kangri
+Momhil Sar
+Istor-o-Nal
+Ghent Kangri
+Haramosh Peak
+Kabru
+Ultar
+Rimo
+Rimo I
+Sherpi Kangri
+Churen Himal
+Labuche Kang
+Kirat Chuli
+Skil Brum
+Abi Gamin
+Gimmigela Chuli
+Saraghrar
+Bojohagur Duanasir
+Chamlang
+Chongtar Kangri
+Jomolhari
+Chomolhari
+Baltoro Kangri
+Siguang Ri
+Summa Ri
+The Crown
+Gyala Peri
+Porong Ri
+Baintha Brakk
+Yutmaru Sar
+Kangpenqing
+Mana Peak
+Muztagh Tower
+Diran
+Apsarasas Kangri
+Langtang Lirung
+Karjiang
+Annapurna South
+Khartaphu
+Tongshanjiabu
+Langtang Ri
+Kangphu Kang
+Singhi Kangri
+Lupghar Sar
+Gurja Himal
+Melungtse
+Liushi Shan
+Baruntse
+Pumori
+Hardeol
+Gasherbrum V
+Latok
+Latok I
+Nemjung
+Udren Zom
+Chaukhamba
+Nun Kun
+Tilicho Peak
+Gauri Sankar
+Lenin Peak
+Bularung Sar
+Api
+Teri Kang
+Pauhunri
+Trisul
+Korzhenevskaya
+Lunpo Gangri
+Satopanth
+Tirsuli
+Dunagiri
+Kangto
+Nyegyi Kansang
+Chomolhari Kang
+Salasungo
+Link Sar
+Kezhen Peak
+Shah Dhar
+Saipal
+Padmanabh
+Spantik
+Khan Tengri
+Machapuchare
+Laila Peak
+Haramosh Valley
+Kang Guru
+Gasherbrum VI
+Karun Kuh
+Avicenna Peak
+Ulugh Muztagh
+Aconcagua
+Sangemarmar Sar
+Kedarnath
+Panchchuli
+Thalay Sagar
+Lunkho e Dosare
+Lunag Ri
+Ojos del Salado
+Siniolchu
+Kanjiroba
+Bairiga
+Koyo Zom
+Nanda Kot
+Kubi Gangri
+Angel Sar
+Bhagirathi Parbat
+Bhagirathi Parbat I
+Jethi Bahurani
+Chongra Peak
+Chomo Yummo
+Reo Purgyil
+Ama Dablam
+Monte Pissis
+Kangtega
+Biarchedi
+Huascarán Sur
+Cerro Bonete
+Nevado Tres Cruces
+Kawagarbo
+Llullaillaco
+Cho Polu
+Kangju Kangri
+Changla
+Mercedario
+Mount Pandim
+Num Ri
+Lungser Kangri
+Meru Peak
+Gul Lasht Zom
+Huascarán Norte
+Khumbutse
+Mount Kailash
+Yerupajá
+Nevado Tres Cruces Central
+Thamserku
+Geladaindong Peak
+Incahuasi
+Pangpoche
+Manirang
+Nilkantha
+Phuparash Peak
+Sickle Moon Peak
+Tupungato
+Buni Zom
+Nevado Sajama
+Ghamubar Zom
+Singu Chuli
+Taboche
+Cerro El Muerto
+Mera Peak
+Hiunchuli
+Cholatse
+Illimani
+Ancohuma
+Coropuna
+Antofalla
+Kang Yatze
+Huandoy
+Ausangate
+Chapaev Peak
+Illampu
+Kusum Kangguru
+Kinnaur Kailash
+Parinaquta
+Siula Grande
+Bamba Dhura
+Chinchey
+Ampato
+Amne Machin
+Pomerape
+Palcaraju
+Salcantay
+Chimborazo
+Mount Siguniang
+Grid Nie Mountain
+Yuzhu Peak
+Genyen Massif
+Kongde Ri
+Aucanquilcha
+Imja Tse
+Denali
+Mount McKinley
+Stok Kangri
+Lobuche
+Marmolejo
+Laila Peak
+Hushe Valley
+Pisang Peak
+Huayna Potosí
+Aracar
+Chachakumani
+Chachani
+Mianzimu
+Acotango
+Socompa
+Minglik Sar
+Acamarachi
+Tocllaraju
+Shayaz
+Hualca Hualca
+Uturunku
+Mitre Peak
+Laila Peak
+Mount Logan
+Alpamayo
+Cerro Lípez
+Licancabur
+Falak Sar
+Cotopaxi
+Mount Kilimanjaro
+Hkakabo Razi
+San José
+Nevado Mariposa
+El Misti
+Altun Shan
+Cayambe
+Pico Cristóbal Colón
+Antisana
+Nevado Pisco
+Nevado Anallajsi
+Pokalde
+Ubinas
+Pichu Pichu
+Mount Elbrus
+Mehrbani Peak
+Pico de Orizaba
+Mount Damavand
+Nevado Mismi
+Jade Dragon Snow Mountain
+Lascar Volcano
+Mount Xuebaoding
+Kala Patthar
+Mount Saint Elias
+Concord Peak
+Dindaw Razi
+Machoi Peak
+El Plomo
+Bogda Feng
+Mount Little Xuebaoding
+Cerro El Plomo
+Popocatépetl
+Kolahoi Peak
+Chacaltaya
+Mount Pomiu
+Ritacuba Blanco
+Haba Xueshan
+Nevado del Ruiz
+Nevado del Huila
+El Altar
+Mount Foraker
+Mount Haramukh
+Nevado del Tolima
+Maipo
+Illiniza
+Point 5240
+Sirbal Peak
+Sangay
+Iztaccíhuatl
+Mount Lucania
+Karakol Peak
+Dykh-Tau
+Shkhara
+Mount Kenya
+Malika Parbat
+Amarnath Peak
+Laram Q'awa
+Charaña
+King Peak
+Boris Yeltsin Peak
+Koshtan-Tau
+Mount Ararat
+Mount Stanley
+Tami Razi
+Mount Steele
+Janga
+Mount Kazbek
+Tungurahua
+Carihuairazo
+Mount Bona
+Mount Blackburn
+Pico Bolívar
+Talgar Peak
+Shota Rustaveli Peak
+Mount Sanford
+Pico Humboldt
+Pin Bhaba Pass
+Vinson Massif
+Pico Bonpland
+Puncak Jaya
+Pico La Concha
+Gistola
+Tetnuldi
+Mount Tyree
+Huaynaputina
+Alam Kuh
+Mount Wood
+Mount Vancouver
+Sabalan
+Mont Blanc
+Corazón
+Pichincha
+Jimara
+Mount Churchill
+Puncak Mandala
+Klyuchevskaya Sopka
+Puncak Trikora
+Mont Blanc de Courmayeur
+Sunset Peak
+Mount Slaggard
+Pico Piedras Blancas
+Pico El Toro
+Tatakooti Peak
+Rumiñahui
+Pico El Leon
+Ushba
+Volcán Domuyo
+Pico Pan de Azucar
+Naltar Peak
+Mount Fairweather
+Pico Mucuñuque
+Khazret Sultan
+Sierra Negra
+Dufourspitze
+Monte Rosa
+Dunantspitze
+Nordend
+Mount Hubbard
+Nevado de Toluca
+Mount Meru
+Zumsteinspitze
+Signalkuppe
+Dom
+Ras Dashen
+Eastern Liskamm
+Lyskamm
+Mount Bear
+Mount Wilhelm
+Mount Karisimbi
+Mount Walsh
+Belukha Mountain
+Weisshorn
+Tebulosmta
+Täschhorn
+Bazarduzu Dagi
+Matterhorn
+Mount Rutford
+Mont Maudit
+Babis Mta
+Mount Shani
+Dena
+Vladimir Putin Peak
+Mount Hunter
+Parrotspitze
+La Malinche
+Mount Whitney
+Mount Alverstone
+University Peak
+Aello Peak
+Mount Elbert
+Mount Massive
+Mount Harvard
+Mount Rainier
+Apharwat Peak
+Kholeno
+Mount Williamson
+Tavan Bogd Uul
+Blanca Peak
+La Plata Peak
+Mount Giluwe
+Burchula
+Uncompahgre Peak
+Dent Blanche
+Crestone Peak
+Mount Lincoln
+Azad Kuh
+Grays Peak
+Mount Evans
+Quandary Peak
+Lalveri
+Mount Antero
+Torreys Peak
+Castle Peak
+Longs Peak
+McArthur Peak
+Mount Wilsion
+White Mountain Peak
+North Palisade
+Ludwigshöhe
+Mount Shavano
+Colima
+Crestone Needle
+Mount Belford
+Mount Princeton
+Mount Shasta
+Mount Elgon
+Mount Bross
+Kit Carson Mountain
+Mount Wrangell
+Maroon Peak
+Tabeguache Peak
+El Diente Peak
+Mount Sill
+Grand Combin
+Mount Oxford
+Mount Sneffels
+Mount Democrat
+Capitol Peak
+Pikes Peak
+Mount Russell
+Snowmass Mountain
+Lenzspitze
+Mount Eolus
+Windom Peak
+Challenger Point
+Mount Columbia
+Mount Adishi
+Mount Augusta
+Humboldt Peak
+Split Mountain
+Mount Bierstadt
+Diklosmta
+Sunlight Peak
+Mount Sidley
+Missouri Mountain
+Culebra Peak
+Handies Peak
+Ellingwood Point
+Mount Lindsey
+Little Bear Peak
+Mount Sherman
+Redcloud Peak
+Galeras
+Mount Langley
+Finsteraarhorn
+Pyramid Peak
+Mount Tyndall
+Wilson Peak
+Mount Muir
+San Luis Peak
+Wetterhorn Peak
+Middle Palisade
+Huron Peak
+Mount of the Holy Cross
+Thunderbolt Peak
+Sunshine Peak
+Mount Strickland
+Pigeon Peak
+Mount Kennedy
+Pointe Bayeux
+Mont Blanc du Tacul
+Stecknadelhorn
+Avalanche Peak
+Castor
+Zinalrothorn
+Volcán Tajumulco
+Hohberghorn
+Turret Peak
+Mount Darwin
+Mount Hayes
+Sacabaya
+Grandes Jorasses
+Gannett Peak
+Mauna Kea
+Alphubel
+Cofre de Perote
+Zard-Kuh
+Shah Alborz
+Rimpfischhorn
+Grand Teton
+Mount Cook
+Aletschhorn
+Strahlhorn
+Fremont Peak
+Mount Warren
+Mount Sidley
+Mount Abbot
+Dent d'Hérens
+Mauna Loa
+Jbel Toubkal
+Mount Minto
+Breithorn
+Western Summit
+Jungfrau
+Bishorn
+Mount Helen
+El Mela
+Mount Quincy Adams
+Doublet Peak
+Turret Peak
+Mount Parnassus
+Mount Sacagawea
+Mount Dubois
+Mount Muhabura
+Kings Peak
+Aiguille Verte
+Mount Bangeta
+Mount Dickerson
+Jackson Peak
+Cilo Dağı
+Mount Woodrow Wilson
+Aiguilles du Diable
+Bastion Peak
+Aiguille Blanche de Peuterey
+Mönch
+Mount Febbas
+Barre des Écrins
+Mount Aragats
+Mount Cameroon
+Mount Kinabalu
+Grizzly Peak D
+Pollux
+Mount Wade
+Nairamdal Peak
+Mount Victoria
+Centennial Peak
+Gran Paradiso
+Ober Gabelhorn
+Piz Bernina
+Fiescherhorn
+Grünhorn
+Lauteraarhorn
+Aiguille du Géant
+Mount Silverthrone
+Mount Sniktau
+Azufral
+Allalinhorn
+Wind River Peak
+Latsga
+Weissmies
+Mount Waddington
+Mount Marcus Baker
+Conejos Peak
+Dent du Géant
+Red Slate Mountain
+Cloud Peak
+Wheeler Peak
+Lagginhorn
+Twilight Peak
+Francs Peak
+Mount Lahili
+Mount Walter
+Les Droites
+Piz Zupò
+Truchas Peak
+Fletschhorn
+Mount Albert Edward
+La Meije
+Wheeler Peak
+Mount Dana
+Acatenango
+Piz Roseg
+Piz Scerscen
+Eiger
+Mount Tochal
+Black Tooth Mountain
+Grand Cornier
+Mount Owen
+Ailefroide
+Mount Robson
+Descabezado Grande
+Yu Shan
+Mont Pelvoux
+Mount Julian
+Mount Khalatsa
+Ajusco
+Mount Erciyes
+Bomber Mountain
+Pic Sans Nom
+Ortler
+Piz Palü
+Middle Teton
+Aiguille d'Argentière
+Granite Peak
+Mount Gibbs
+Mount Crillon
+Mont Blanc de Cheilon
+Aiguille du Goûter
+Borah Peak
+Grande Casse
+Humphreys Peak
+Santa Fe Baldy
+Mount Baldwin
+Aiguille du Midi
+Mount Moran
+Monte Viso
+Sauyr Zhotasy
+Mount Saramati
+Nesthorn
+Cerro Chirripó
+Aiguille des Glaciers
+South Teton
+Mount Kerinci
+Grossglockner
+Pigne d'Arolla
+Mount Erebus
+Mont Pourri
+Mount Fuji
+Wildspitze
+Greenhorn Mountain
+Volcán de Fuego
+Mount Villard
+Teewinot Mountain
+Aiguille du Dru
+Aoraki
+Mount Cook
+Pointe de Charbonnel
+Piz Morteratsch
+Sawtooth Mountain
+Mount Davis
+Mount Morrison
+Mount Taibai
+Aiguille de la Grande Sassière
+Lanín
+Mount Adams
+Mount Columbia
+Mount Adams
+Teepe Pillar
+Weißkugel
+Minarets
+Mount Huntington
+Mount Rinjani
+Cerro del Potosí
+Diamond Peak
+Teide
+Asperity Mountain
+Cerro de la Viga
+Delano Peak
+Sahand
+Monte San Lorenzo
+Wetterhorn
+Mount Valhalla
+Dent Parrachée
+Gunnbjørn
+North Twin Peak
+Monte Disgrazia
+Semeru
+Les Bans
+Cloudveil Dome
+Thor Peak
+Medicine Bow Peak
+Hyndman Peak
+Mount Clemenceau
+Mount Frakes
+Grande Motte
+Sierra Blanca
+Pointe de la Fournache
+Buck Mountain
+Mount Nebo
+Mount Charleston
+Hintere Schwärze
+Nez Perce Peak
+Mount Alberta
+Mount Assiniboine
+Tödi
+Mount Forbes
+Lautaro
+Dôme de la Sache
+Castle Peak
+Dôme de l'Arpont
+Dôme de Chasseforêt
+Makra Peak
+Sierra Velluda
+Grand Roc Noir
+Mount Timpanogos
+Mount Alvand
+Dôme des Nants
+Ryan Peak
+South Twin Peak
+Olan
+Aiguille de Péclet
+Presanella
+Mount Steere
+Monarch Mountain
+Monte Leone
+Mont Turia
+Mount Temple
+Disappointment Peak
+Mount Woodring
+Aiguille de Polset
+Snow Dome
+Aiguilles d'Arves
+Mount Ellen
+Mont de Gébroulaz
+Mount San Gorgonio
+Mount Kitchener
+Zuckerhütl
+Mount Wister
+Mount Saskatchewan
+Mount Tasman
+Mount Hungabee
+Mount Athabasca
+Tronador
+Mount Saint John
+Thabana Ntlenyana
+Pointes du Châtelard
+Mulhacén
+Mount Berlin
+Mount Pennell
+Volcán Barú
+Roc des Saints Pères
+Mount Brazeau
+Mount Nyiragongo
+Ruby Dome
+Roche de la Muzelle
+Mount Victoria
+Abajo Peak
+Eagle Peak
+Doane Peak
+Ranger Peak
+Mount Takahe
+Cerro de la Muerte
+Furgghorn
+Mafadi
+Mount Andromeda
+Boulder Mountain
+Mount Joffre
+Hilgard Peak
+Static Peak
+Thousand Lake Mountain
+Pointe de la Sana
+Eagles Rest Peak
+Irazú Volcano
+Mount Hood
+Verpeilspitze
+Deltaform Mountain
+Mount Lefroy
+Pointe de l'Échelle
+Pointe du Bouchet
+Mount Fitzgerald
+Bellecôte
+Crazy Peak
+Emi Koussi
+Piz Linard
+Mount Woolley
+Aneto
+Lone Mountain
+Fluchthorn
+Grand Bec
+Rockchuck Peak
+Pico Veleta
+Mount Hector
+Piz Platta
+Telescope Peak
+Champagne Castle
+Cerro Chaltén
+Mount Spurr
+Pointe du Vallonnet
+Mammoth Mountain
+Fründenhorn
+Pointe Renod
+Traverse Peak
+Mount Edith Cavell
+Dôme des Sonnailles
+Valvelspitze
+Mount Etna
+Mount Agepsta
+Mount Munday
+Pointe de Claret
+Monte Perdido
+Electric Peak
+Marmolada
+Mount Saskatchewan
+Cerro Fábrega
+Ward Mountain
+Pointe de Méan Martin
+Dôme de Polset
+Cathedral Peak
+Raynolds Peak
+Rolling Thunder Mountain
+Mount Hampton
+Dôme des Pichères
+Grand Roc
+Giant's Castle
+Sunwapta Peak
+Piz Buin
+Mount Ball
+Piz Badile
+Ağ Dağ
+San Jacinto Peak
+Didi Abuli
+Silberhorn
+Bivouac Peak
+Mount Wilbur
+Monte Argentera
+Mount Rose
+Mount Samsari
+Roche Chevrière
+Habicht
+Thompson Peak
+Mount Chephren
+Pointe de Thorens
+Mount Cramer
+Toussidé
+Antelao
+Mont Pelve
+Mount Stanley Baldwin
+Sandia Crest
+Épaule du Bouchet
+Mount Smythe
+Wildstrubel
+Williams Peak
+Mount Hope
+Titlis
+Owl Peak
+Mount Mackenzie King
+Pointe des Buffettes
+Lisenser Spitze
+Mount Terror
+Aiguille Rouge
+Monte Civetta
+Symmetry Spire
+Glacier Peak
+Pointe du Dard
+Mount Binalud
+Pointe de la Réchasse
+Mount Jefferson
+Mount Jefferson
+Dreiländerspitze
+Mount Kita
+Mount Hotaka
+Mount Cleveland
+Ainodake
+Lassen Peak
+Mount Galatea
+Rendezvous Mountain
+Saviers Peak
+Mount Yari
+Kendrick Peak
+Kendrick Peak
+Parícutin
+Mount Aylmer
+South Sister
+Stanley Peak
+Jøkulkyrkja
+Pica d'Estats
+Phan Xi Păng
+Mount Arakawa
+Gray Peak
+Mount Heyburn
+Mount Washburn
+Mount Collie
+Mount Siple
+Pirchinassi
+Mount Redoubt
+Mount Babel
+Mount Emei
+Pico Duarte
+Trapper Peak
+Storm Mountain
+Mount Blackmore
+Mount Stimson
+Mol Len
+Qurnat as Sawdā’
+Mount Richardson
+Kintla Peak
+Mount Moulton
+Smoky Dome
+North Sister
+Piton des Neiges
+Mount San Antonio
+Mount Ontake
+Mount Jackson
+Middle Sister
+Mount Wutai
+Mount Nyamuragira
+Haleakala
+Crowfoot Mountain
+Mount Chester
+Mount Siyeh
+Mount Merritt
+Cerro de Coxóm
+Parseierspitze
+Mount Senjō
+Mount Aspiring
+Tititea
+Kinnerly Peak
+Mount Agung
+Mount McArthur
+Mount Norikura
+Tsiteli Khati
+Mount Tate
+Mount Tahat
+Sapitwa
+Ben Macdhui
+The Fortress
+Tre Cime di Lavaredo
+Pizzo Centrale
+Cascade Mountain
+Copahue
+Mount Girouard
+Pico da Neblina
+Mount Whyte
+Miranjani
+Forellen Peak
+Mount Andrus
+Mount Niblock
+Pico 31 de Março
+Keele Peak
+Mount Odin
+Schilthorn
+Mount Tallac
+Steens Mountain
+Mount Inglismaldie
+Mount Ramelau
+Zugspitze
+Slide Mountain
+Little Alberta
+Mount Arfak
+Iron Mountain
+Apo
+Fossil Mountain
+Coma Pedrosa
+Going to the Sun Mountain
+Fishers Peak
+Pilot Mountain
+Uri Rotstock
+Musala
+Mount Pulag
+Mount Olympus
+Vihren
+Mount Gould
+Corno Grande
+Mount Blakiston
+Puigmal
+Kutelo
+Chutine Peak
+Malka Musala
+Rising Wolf Mountain
+Bonanza Peak
+Mount McLoughlin
+Pic de Sanfonts
+Pico da Bandeira
+Collarada
+Banski Suhodol
+Boardman Peak
+Mount Wrightson
+Lembert Dome
+Sacajawea Peak
+Mount Stuart
+Mount Fisht
+Mount Silverthrone
+Mount Baden-Powell
+Triglav
+Mount Saint Nicholas
+Irechek
+Polezhan
+Mount Tabayoc
+Mount Wilbur
+Pico do Fogo
+Kamenitsa
+Mount Fernow
+Mount Hermon
+Mount Deakin
+Mount Cory
+Mount Thielsen
+Pedra da Mina
+Mount Ruapehu
+Copper Mountain
+Mount Lemmon
+Maiella
+Pico das Agulhas Negras
+Deno
+Hayes Volcano
+Mount Edziza
+Canigou
+Mount Weaver
+Buckner Mountain
+Mount Longonot
+Seven Fingered Jack
+Mount Nirvana
+Chief Mountain
+Lincoln Peak
+Castle Mountain
+Pyramid Mountain
+Pico Naiguata
+Avila
+Mount Bachelor
+Mount Korab
+Yalovarnika
+Gazey
+Mount Sir James MacBrien
+Kaymakchal
+Mount Olympus
+Todorka
+Mawson Peak
+Fairview Mountain
+Mount Baekdu
+Škrlatica
+Monte Roraima
+Heavens Peak
+Mount Spickard
+Banderishki Chukar
+Mount Melbourne
+Cerro El Pital
+Mount Redoubt
+Dzhengal
+Malyovitsa
+Pizzo di Claro
+Mount Morning
+Phu Xai Lai Leng
+Serles
+Watzmann
+Boston Peak
+Schiahorn
+Grotto Mountain
+Mount Haku
+Eldorado Peak
+Anaimudi
+Maja Jezerce
+Half Dome
+Mount Louis
+Mount Discovery
+Pic de la Selle
+Mount Garibaldi
+Bashliyski Chukar
+Pedra do Sino
+Guadalupe Peak
+Gjeravica
+Großer Krottenkopf
+Pic del Port Vell
+Gerlachov Peak
+Mount Michelson
+Torre Cerredo
+Mount St. Piran
+Mount Meager
+Mount Trus Madi
+Meesapulimala
+Doddabetta
+Piton de la Fournaise
+Mount Crean
+Cardinal Peak
+Barbeau Peak
+Pelister Peak
+Mount Abao
+Pico Almanzor
+Mount Currie
+Pizzo Molare
+Mount Tavkvetili
+Mount Tambuyukon
+Argonaut Peak
+Doi Inthanon
+Pic dels Aspres
+Ledyanaya
+Aguja Saint Exupery
+Mount St. Helens
+Big Hatchet Peak
+Moldoveanu Peak
+Mount Vineuo
+Negoiu Peak
+Vistea Mare
+Pidurutalagala
+Mount Norquay
+Hualalai
+Mount Yesenin
+Parangu Mare
+Mount Taranaki
+Egmont
+Garfield Peak
+Mount Joern
+Mount Veniaminof
+Omu Peak
+Rysy
+Mount Tymfi
+Monte Velino
+Monte Vettore
+Špik
+Luna Peak
+Galdhøpiggen
+Kanlaon
+Glittertind
+El Capitan
+Shimbiris
+Mayon
+Monte Gorzano
+Mount Psiloritis
+Mount Pachnes
+Lefka Ori
+Sulphur Mountain
+Sunset Crater
+Cima del Redentore
+Sibillini Mountains
+Triple Divide Peak
+Blackcomb Peak
+Monte Binga
+Mount Olympus
+Peñalara
+Mesa de los Tres Reyes
+Mount Daniel
+Mount Murud
+Mocho
+Choshuenco
+Ha Ling Peak
+Store Skagastølstind
+Hajla
+Le Tabor
+Kirigalpottha
+Maglić
+Emory Peak
+Mount Cayley
+Mount Galwey
+Botev Peak
+Mount Mulu
+Mount Deception
+Mount Aix
+Mount Karthala
+Signal Mountain
+Mount Pico
+Grimming
+Monte Sirente
+Mount Blum
+Mount Popomanaseu
+Monte Priora
+Mount Prophet
+Mount Griggs
+Mount Makarakomburu
+Lalla Khedidja
+Lavender Peak
+Mount Sir Allan MacNab
+Murree
+Cherni Vrah
+Druesberg
+Ineu Peak
+Mount Huye
+Bikku Bitti
+Blue Mountains
+Mount Dietz
+Sri Pada Mountain
+Mount John Laurie
+Red Butte
+Čvrsnica
+Mount Kosciuszko
+Camoghe
+Commonwealth Mountain
+Mount Chiginagak
+Monte Terminillo
+Slavyanka
+Mount Oxford
+Nunavut
+Mount Townsend
+Black Elk Peak
+Golden Hinde
+Mount Twynam
+Elkhorn Mountain
+Mount Baldy
+Golyam Perelik
+Shiprock
+Mount Tahan
+Mount Korbu
+Mount Yong Belar
+Doi Chiang Dao
+Galunggung
+Levski Peak
+Monte Cimone
+Mount Hua
+Mount Zulia
+Carruthers Peak
+Crna Glava
+Mount Colonel Foster
+Roche à Perdrix
+Kodaikanal
+Pilatus
+Strmenica
+Phu Soi Dao
+Eagle Peak
+Öræfajökull
+Mount Benum
+Mogotón
+Kebnekaise
+Rambler Peak
+Mount McBride
+Phou Khe
+Schneeberg
+Mount Tate
+Bjelašnica
+Kings Peak
+Hoverla
+Monte Miletto
+Lytton Mountain
+Mount Katmai
+Mount Dimlang
+Mount Celeste
+Mount Mitchell
+Namunukula
+Pico do Barbado
+Mount Batu Brinchang
+Doi Mae Tho
+Clingmans Dome
+Mount Heng
+Shanxi
+Kopaonik
+Alpe di Succiso
+Kom
+Polar Bear Peak
+Mount Asgard
+Mount Le Conte
+Serra da Estrela
+Mount Bogong
+Mount Ishizuchi
+Doi Phu Kha
+Pizzo Carbonara
+Topo de Coroa
+Mount Tongariro
+Iceberg Peak
+Pico Turquino
+El Piveto Mountain
+Qiajivik Mountain
+Monte Tamaro
+Montalto
+Aspromonte
+Ciucas Peak
+Chionistra
+Hallasan
+Jabal Bil Ays
+Mullayanagiri
+Helvetia Tinde
+Botte Donato
+Mount Kirigamine
+Mount Washington
+Mount Jiri
+Troglav
+Mont Ventoux
+Vesper Peak
+Baba Budangiri
+Mount Narodnaya
+Kudremukh
+Orjen
+Iskhodnaya
+Mount George V
+Rugged Mountain
+Agastya Mala
+Trident Volcano
+Mount Martin
+Knuckles
+Pico Ruivo
+Pico das Torres
+Mont Ross
+Cucurbata Mare
+Crown Mountain
+Loser
+Punta La Marmora
+Cerro La Campana
+Gora Nevskaya
+Cerro de la Silla
+Pico do Arieiro
+Biligiriranga Hills
+Monte Maggiorasca
+Rigi
+Goru
+Blokhin Peak
+Velliangiri Mountains
+Penteleu
+Mount Veve
+Mount Adams
+Pik Sovetskoy Gvardii
+Mount Api
+Lovćen
+Tadiandamol
+Mount Rogers
+Doi Phi Pan Nam
+Mount Wilson
+Mount Jefferson
+Monte Amiata
+Daisen
+The Horn
+Mount Batur
+Kumara Parvata
+Pushpagiri
+Mount Lowe
+Boulder Peak
+Doi Luang
+Mitre Peak
+Arma Konda
+Deomali
+Mount Caubvik
+Kalsubai
+Peak 5390
+Yamantau
+Mount Monroe
+Mount Madison
+Mount Krebs
+Mount Marcy
+Trebević
+Mount Bartle Frere
+Rocca Busambra
+Velky Rozsutec
+Brahmagiri
+Mount Katahdin
+Sněžka
+Sirumalai
+Mount Lafayette
+Mount Washington
+Mount Benarat
+Wai'ale'ale
+Salher
+Cirque Mountain
+Algonquin Peak
+Mount Lincoln
+Superstition Mountain
+Mount Tai
+Jabel Yibir
+Madikeri
+Mount Popa
+Askja
+Monte Boglia
+Song Shan
+Mount Haystack
+Mount Skylight
+Pico de Malpaso
+Javaleon
+Mount Nuang
+Hekla
+Mount Pinatubo
+Whiteface Mountain
+Spruce Knob
+Dix Mountain
+Gray Peak
+Iroquois Peak
+Lyaskovets Peak
+Mount Olympus
+Basin Mountain
+La Grande Soufrière
+Monte Penice
+Mount Seymour
+Himavad Gopalaswamy Betta
+Snæfellsjökull
+Gothics
+Mount Colden
+Mount Kalourat
+Ngarutjaranya
+Cypress Mountain
+Taramati
+Harishchandragad
+Tukgahgo Mountain
+Giant Mountain
+Nippletop
+Pikui
+Santanoni Peak
+Mount Redfield
+Raireshwar
+Wright Peak
+Taburno Camposauro
+Saddleback Mountain
+Parasnath
+Panther Peak
+Dhupgarh
+Table Top Mountain
+Rocky Peak Ridge
+Ben Nevis
+Kodachadri
+Macomb Mountain
+Mount Jiuhua
+Armstrong Mountain
+Hough Peak
+Mount Aniakchak
+Mount Mansfield
+Cerro de Punta
+Seward Mountain
+Mount Marshall
+Allen Mountain
+Mount Bassie
+Ben Macdui
+Mount Kanaga
+Sinhagad
+Mount Heng
+Hunan
+Braeriach
+Big Slide Mountain
+Esther Mountain
+Rajabasa
+Mount Vesuvius
+Upper Wolfjaw
+Mount Ophir
+Bailadila
+Lower Wolfjaw
+Mount Wellington
+Mount Si
+Street Mountain
+Phelps Mountain
+Mount Qingcheng
+Detunata
+Mount Donna Buang
+Kīlauea
+Camel's Hump
+Cannon Mountain
+The Priest
+Aonach Beag
+Grouse Mountain
+Kaʻala
+Mount Jerai
+Mount Gozaisho
+Mount Meron
+Mount Fromme
+Doi Ian
+Mount Diablo
+Mount Hombori
+Lochnagar
+Bidean nam Bian
+Monte Musinè
+Brocken
+Victoria Peak
+Gora Sovetskaya
+Kayser Mountain
+Mount Juneau
+Snowdon
+Table Mountain
+Flattop Mountain
+Uummannaq
+White Butte
+Hogback Mountain
+Liathach
+Saka Haphong
+Corrán Tuathail
+Mount Ramon
+Girnar
+Mount Zagora
+Buachaille Etive Mor
+Munboksan
+Kékes
+Mount Belumut
+Old Rag Mountain
+Sgurr Dearg
+Mount Sizer
+Mount Valin
+Hyangnosan
+Scafell Pike
+Mount Edgecumbe
+Grand Bonhomme
+North Mountain
+Catskills
+Doli Gutta
+Mount Monadnock
+Mount Pirongia
+Tai Mo Shan
+Chimneytop
+Helvellyn
+Mount Gimie
+El Cerro del Aripo
+El Tucuche
+Lantau Peak
+Betlingchhip
+Kaimondake volcano
+San Salvatore
+Pantokrator
+Edinburgh Peak
+Cadair Idris
+Pen y Fan
+Baekunsan
+Mount Gerizim
+Sunset Peak
+Mahuli
+Mount Taylor
+Slieve Donard
+Tinakula
+Mount Saint Catherine
+Mount Magazine
+Hoemunsan
+Bukhansan
+Baegundae Peak
+Piton de la Petite Rivière Noire
+Pieter Both
+Mount Carleton
+The Cheviot
+Le Pouce
+Mount Santubong
+Gros Morne
+Clisham
+Mount Tamalpais
+Mission Peak
+Gyemyeongsan
+Mount Boucherie
+Daeunsan
+Mount Dobong
+Mount Lofty
+Ben Cleuch
+Corps de Garde
+Gaseopsan
+Mount Dick
+Pu‘u ‘Ō‘ō
+Signal de Botrange
+Ishpatina Ridge
+Galgisan
+Delphi
+Qalorujoorneq
+Lion's Head
+Steling
+Maple Mountain
+Kinder Scout
+Masaya Volcano
+Mount D'Urville
+Moel Eilio
+High Willhays
+Snaefell
+Beinn Mhòr
+Mount Bibele
+Munsusan
+Ulsan
+Mount Takao
+Sikjangsan
+Forbordsfjellet
+Gwanggyosan
+Mount Pond
+Mount Tabor
+Monte Conero
+Gyeryongsan
+Mount Honey
+Le Morne Brabant
+Rempart Mountain
+Montagne du Rempart
+Palasip Qaqqaa
+Præstefjeldet
+Namamsan
+Taum Sauk Mountain
+Great Mell Fell
+Geomdansan
+Seongnam
+Yeonhwasan
+Heukseongsan
+Avala
+Little Si
+Mount Ramsay
+Mount Keira
+Blue Mountain
+Muryongsan
+Dongdaesan
+Diamond Hill
+Gibraltar
+Pic Paradis
+Havsula
+Storm King Mountain
+Gyeyangsan
+Mount Galloway
+Pawala Valley Ridge
+Loughrigg Fell
+Mount Kinka
+Gifu
+Vaalserberg
+Mount Bates
+Suur Munamägi
+Gaiziņkalns
+Mutla Ridge
+Aukštojas
+Kruopinė
+Juozapinė
+Morne du Vitet
+Qixia Mountain
+Hwajangsan
+Potolaka
+Putuo Shan
+Jerimoth Hill
+Mount Ngerchelchuus
+Mount Royal
+Diamond Head
+Yeomposan
+Hamwolsan
+Great Blue Hill
+Alto de Coloane
+Bukit Timah Hill
+Himmelbjerget
+Les Platons
+Aborrebjerg
+Māngere Mountain
+Britton Hill
+Qurayn Abu al Bawl
+Command Ridge
+Mount Wycheproof
+Hoge Blekker
+Mount Tenpō
+Tianzhong Mountain
+Alabama
+Alaska
+Arizona
+Arkansas
+California
+Colorado
+Connecticut
+Delaware
+Florida
+Georgia
+Hawaii
+Idaho
+Illinois
+Indiana
+Iowa
+Kansas
+Kentucky
+Louisiana
+Maine
+Maryland
+Massachusetts
+Michigan
+Minnesota
+Mississippi
+Missouri
+Montana
+Nebraska
+Nevada
+New Hampshire
+New Jersey
+New Mexico
+New York
+North Carolina
+North Dakota
+Ohio
+Oklahoma
+Oregon
+Pennsylvania
+Rhode Island
+South Carolina
+South Dakota
+Tennessee
+Texas
+Utah
+Vermont
+Virginia
+Washington
+West Virginia
+Wisconsin
+Wyoming
+Paris
+Marseille
+Lyon
+Toulouse
+Nice
+Nantes
+Montpellier
+Strasbourg
+Bordeaux
+Lille
+Rennes
+Reims
+Toulon
+Saint-Étienne
+Le Havre
+Grenoble
+Dijon
+Angers
+Saint-Denis
+Villeurbanne
+London
+Birmingham
+Manchester
+Liverpool
+Leeds
+Sheffield
+Teesside
+Bristol
+Bournemouth
+Poole
+Bournemouth and Poole
+Stoke-on-Trent
+Leicester
+Wirral
+Coventry
+Nottingham
+Bradford
+Newcastle
+Bolton
+Brighton
+Hove
+Brighton and Hove
+Plymouth
+Hull
+Yokohama
+Osaka
+Nagoya
+Sapporo
+Fukuoka
+Kawasaki
+Kobe
+Kyoto
+Saitama
+Hiroshima
+Sendai
+Chiba
+Kitakyushu
+Setagaya
+Sakai
+Niigata
+Nerima
+Kumamoto
+Sagamihara
+Okayama
+Kanagawa
+Osaka
+Aichi
+Hokkaido
+Fukuoka
+Kanagawa
+Hyōgo
+Kyoto
+Saitama
+Hiroshima
+Miyagi
+Chiba
+Fukuoka
+Tokyo
+Osaka
+Niigata
+Tokyo
+Kumamoto
+Kanagawa
+Okayama
+Shanghai
+Beijing
+Guangzhou
+Shenzhen
+Chengdu
+Tianjin
+Chongqing
+Nanjing
+Wuhan
+Xi'an
+Hangzhou
+Shenyang
+Dongguan
+Foshan
+Harbin
+Dalian
+Qingdao
+Zhengzhou
+Jinan
+Changsha
+Kunming
+Changchun
+Ürümqi
+Shantou†
+Suzho
+Hefei
+Shijiazhuang
+Ningbo
+Taiyuan
+Nanning
+Xiamen
+Fuzhou
+Wenzhou
+Changzhou
+Nanchang
+Tangshan
+Guiyang
+Wuxi
+Lanzhou
+Zhongshan
+Handan
+Weifang
+Huai'an
+Zibo
+Shaoxing
+Yantai
+Huizhou
+Luoyang
+Nantong
+Baotou
+Liuzhou
+Guangdong
+Guangdong
+Sichuan
+Jiangsu
+Hubei
+Shaanxi
+Zhejiang
+Liaoning
+Guangdong
+Heilongjiang
+Liaoning
+Shandong
+Henan
+Shandong
+Hunan
+Yunnan
+Jilin
+Xinjiang
+Guangdong
+Jiangsu
+Anhui
+Hebei
+Zhejiang
+Shanxi
+Guangxi
+Fujian
+Zhejiang
+Jiangsu
+Jiangxi
+Hebei
+Guizhou
+Jiangsu
+Gansu
+Guangdong
+Hebei
+Shandong
+Jiangsu
+Shandong
+Zhejiang
+Shandong
+Guangdong
+Henan
+Jiangsu
+Inner Mongolia
+Guangxi
+Berlin
+Hamburg
+Munich
+München
+Cologne
+Köln
+Frankfurt
+Frankfurt am Main
+Stuttgart
+Düsseldorf
+Leipzig
+Dortmund
+Essen
+Bremen
+Dresden
+Hanover
+Hannover
+Nuremberg
+Nürnberg
+Duisburg
+Bochum
+Wuppertal
+Bielefeld
+Bonn
+Münster
+Bavaria
+North Rhine-Westphalia
+Hesse
+Baden-Württemberg
+Saxony
+Bremen
+Lower Saxony
+Barcelona
+Valencia
+Sagunto
+Seville
+Bilbao
+Málaga
+Oviedo–Gijón–Avilés
+Alicante–Elche
+Elda
+Las Palmas
+Zaragoza
+Murcia–Orihuela
+Santa Cruz de Tenerife–La Laguna
+Granada
+Palma
+Vigo
+Cartagena
+Cádiz
+San Sebastián
+A Coruña–Oleiros–Arteixo
+Valladolid
+Avenida 9 De Julio
+Bahnhofstrasse
+Baldwin Street
+Beale Street
+Boulevard Saint-Germain
+The Bund
+Chandni Chowk
+Federation Square
+Fifth Avenue
+George Square
+Grafton Street
+The Grand Place
+The Hard
+Hollywood Boulevard
+Hyde Park
+Jemaa El-Fnaa
+Lombard Street
+Long Street
+Piazza San Marco
+Marienplatz
+Plaza Mayor
+Motomachi
+Naghsh-E Jahan Square
+Nathan Road
+Piazza Navona
+Bourbon Street
+Nevsky Prospekt
+Orchard Road
+Plaza Vieja
+Rue Saint-Paul
+St Peter's Square
+La Rambla
+Rideau Canal Skateway
+Red Square
+Robson Street
+Rothschild Boulevard
+The Royal Mile
+The Shambles
+Shibuya Station Crossing
+Piazza Della Signoria
+Stephansplatz
+The Street Called Straight
+Tahrir Square
+Tiananmen Square
+Trafalgar Square
+Unter Den Linden
+Via Appia Antica
+Victoria Square
+Western Wall Plaza
+Zócalo
+Plaza De La Constitución
+Afghanistan
+Cultural Landscape and Archaeological Remains of the Bamiyan Valley
+Minaret and Archaeological Remains of Jām
+Albania
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Butrint
+Historic Centres of Berat and Gjirokastër
+Natural and Cultural Heritage of the Ohrid region
+Algeria
+Al Qal’a of Beni Hammad
+Djémila
+Kasbah of Algiers
+M’Zab Valley
+Tassili-n-Ajjer
+Timgad
+Tipasa
+Andorra
+Madriu-Perafita-Claror Valley
+Angola
+Mbanza Kongo
+Antigua and Barbuda
+Antigua Naval Dockyard and Related Archaeological Sites
+Argentina
+Architectural Work of Le Corbusier
+Cueva de las Manos
+Iguaçu National Park
+Ischigualasto Natural Parks
+Talampaya Natural Parks
+Jesuit Block and Estancias of Córdoba
+Jesuit Missions of the Guaranis: San Ignacio Mini
+Los Alerces National Park
+Los Glaciares National Park
+Qhapaq Ñan
+Quebrada de Humahuaca
+Valdés Peninsula
+Armenia
+Cathedral and Churches of Ejmiatsin and the Archaeological Site of Zvartnots
+Monastery of Geghard and the Upper Azat Valley
+Monasteries of Haghpat and Sanahin
+Australia
+Australian Convict Sites
+Brickendon and Woolmers Estates
+Cascades Female Factory
+Coal Mines Historic Site
+Cockatoo Island Convict Site
+Darlington Probation Station
+Fremantle Prison
+Hyde Park Barracks
+Kingston and Arthur’s Vale Historic Area
+Old Government House and Domain
+Old Great North Road
+Port Arthur Historic Site
+Australian Fossil Mammal Sites
+Naracoorte
+Riversleigh
+Budj Bim Cultural Landscape
+Fraser Island
+Gondwana Rainforests of Australia
+Great Barrier Reef
+Greater Blue Mountains Area
+Heard and McDonald Islands
+Kakadu National Park
+Lord Howe Island Group
+Macquarie Island
+Ningaloo Coast
+Purnululu National Park
+Royal Exhibition Building and Carlton Gardens
+Shark Bay
+Sydney Opera House
+Tasmanian Wilderness
+Uluṟu-Kata Tjuta National Park
+Wet Tropics of Queensland
+Willandra Lakes Region
+Austria
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+City of Graz–Historic Centre and Schloss Eggenberg
+Fertö Cultural Landscape
+Neusiedlersee Cultural Landscape
+Frontiers of the Roman Empir
+The Great Spa Towns of Europe
+Hallstatt-Dachstein Cultural Landscape
+Salzkammergut Cultural Landscape
+Historic Centre of Salzburg
+Historic Centre of Vienna
+Palace and Gardens of Schönbrunn
+Prehistoric Pile Dwellings Around the Alps
+Semmering Railway
+Wachau Cultural Landscape
+Azerbaijan
+Gobustan Rock Art Cultural Landscape
+Historic Centre of Sheki with the Khan’s Palace
+Walled City of Baku with the Shirvanshah’s Palace and Maiden Tower
+Bahrain
+Dilmun Burial Mounds
+Pearling
+Qal’at al-Bahrain–Ancient Harbour and Capital of Dilmun
+Bangladesh
+Historic Mosque City of Bagerhat
+Ruins of the Buddhist Vihara at Paharpur
+The Sundarbans
+Barbados
+Historic Bridgetown and Its Garrison
+Belarus
+Architectural
+Belovezhskaya Forest
+Mir Castle Complex
+Struve Geodetic Arc
+Belgium
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Belfries of Belgium
+Town Hall
+Cathedral of Our Lady
+City Hall
+City Hall
+Old Market Hall
+City Hall
+City Hall
+City Hall and Belfry
+City Hall
+Gembloux Belfry
+Cloth Hall
+Former City and Cloth Hall
+Kortrijk Belfry
+St. Peter’s Church
+Lier Belfry
+Former Town Hall
+St. Rumbold’s Cathedral
+Old Cloth Hall
+City Hall
+Mons Belfry
+Namur Belfry
+Market Hall
+Town Hall
+Market Hall
+City Hall
+Cloth Hall and Aldermen’s Chamber
+St. Germanus Church
+Thuin Belfry
+Basilica of Our Lady
+Tournai Belfry
+City Hall
+Cloth Hall
+St. Leonard’s Church
+Colonies of Benevolence
+The Great Spa Towns of Europe
+Historic Centre of Brugge
+La Grand-Place
+Flemish Béguinages
+Major Mining Sites of Wallonia
+Blegny-Mine
+Le Bois du Cazier
+Bois-du-Luc Mining Site
+Grand Hornu
+Major Town Houses of the Architect Victor Horta
+Neolithic Flint Mines at Spiennes
+Notre-Dame Cathedral in Tournai
+Plantin-Moretus House
+Stoclet House
+Belize
+Belize Barrier Reef Reserve System
+Benin
+Royal Palaces of Abomey
+W-Arly-Pendjari Complex
+Bolivia
+City of Potosí
+Fuerte de Samaipata
+Historic City of Sucre
+Jesuit Missions of the Chiquitos
+Noel Kempff Mercado National Park
+Qhapaq Ñan
+Tiwanaku: Spiritual and Political Centre of the Tiwanaku Culture
+Bosnia and Herzegovina
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Stećci Medieval Tombstones Graveyards
+Botswana
+Okavango Delta
+Tsodilo
+Brazil
+Atlantic Forest South-East Reserves
+Brasília
+Brazilian Atlantic Islands: Fernando de Noronha and Atol das Rocas Reserves
+Central Amazon Conservation Complex
+Amanã Sustainable Development Reserve
+Anavilhanas Ecological Station
+Demonstration area of Mamairauá Sustainable Development Reserve
+Jaú National Park
+Cerrado Protected Areas: Chapada dos Veadeiros and Emas National Parks
+Discovery Coast Atlantic Forest Reserves
+Historic Centre of Diamantina
+Historic Centre of Goiás
+Historic Centre of Olinda
+Historic Centre of Salvador de Bahia
+Historic Centre of São Luís
+Historic Town of Ouro Prêto
+Iguaçu National Park
+Jesuit Missions of the Guaranis: Ruins of Sao Miguel das Missoes
+Pampulha Modern Ensemble
+Pantanal Conservation Area
+Paraty and Ilha Grande
+Rio de Janeiro: Carioca Landscapes Between the Mountain and the Sea
+Sanctuary of Bom Jesus do Congonhas
+São Francisco Square in the Town of São Cristóvão
+Serra da Capivara National Park
+Sítio Roberto Burle Marx
+Valongo Wharf Archaeological Site
+Bulgaria
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Ancient City of Nesebŭr
+Boyana Church
+Madara Rider
+Pirin National Park
+Rila Monastery
+Rock-Hewn Churches of Ivanovo
+Srebarna Nature Reserve
+Thracian Tomb of Kazanlak
+Thracian Tomb of Sveshtari
+Burkina Faso
+Ancient Ferrous Metallurgy Sites of Burkina Faso
+Ruins of Loropéni
+W-Arly-Pendjari Complex
+Cabo Verde
+Cidade Velha
+Cambodia
+Angkor
+Temple of Preah Vihear
+Temple Zone of Sambor Prei Kuk
+Cameroon
+Dja Faunal Reserve
+Sangha Trinational
+Dzanga-Ndoki National Park
+Lobéké National Park
+Nouabalé-Ndoki National Park
+Canada
+Canadian Rocky Mountain Parks
+Mount Assiniboine
+Banff National Park
+Burgess Shale Fossil Site
+Hamber Provincial Park
+Jasper National Park
+Kootenay National Park
+Mount Robson
+Yoho National Park
+Dinosaur Provincial Park
+Gros Morne National Park
+Head-Smashed-In Buffalo Jump
+Historic District of Old Québec
+Joggins Fossil Cliffs
+Kluane National Park and Reserve
+L’Anse aux Meadows National Historic Site
+Landscape of Grand Pré
+Miguasha National Park
+Mistaken Point
+Nahanni National Park
+Old Town Lunenburg
+Pimachiowin Aki
+Red Bay Basque Whaling Station
+Rideau Canal
+SGang Gwaay
+Tatshenshini-Alsek Wilderness Provincial Park
+Waterton Glacier International Peace Park
+Writing-on-Stone
+Áísínai’pi
+Wood Buffalo National Park
+Central African Republic
+Manovo-Gounda St. Floris National Park
+Sangha Trinational
+Dzanga-Ndoki National Park
+Lobéké National Park
+Nouabalé-Ndoki National Park
+Chad
+Ennedi Massif: Natural and Cultural Landscape
+Lakes of Ounianga
+Chile
+Churches of Chiloé
+Easter Island
+Historic Quarter of the Seaport City of Valparaíso
+Humberstone and Santa Laura Saltpeter Works
+Qhapaq Ñan
+Settlement and Artificial Mummification of the Chinchorro Culture in the Arica and Parinacota Region
+Sewell Mining Town
+China
+Ancient Building Complex in the Wudang Mountains
+Ancient City of Ping Yao
+Ancient Villages in Southern Anhui: Xidi and Hongcun
+Archaeological Ruins of Liangzhu City
+Capital Cities and Tombs of the Ancient Koguryo Kingdom
+Chengjiang Fossil Site
+China Danxia
+Classical Gardens of Suzhou
+Cultural Landscape of Honghe Hani Rice Terraces
+Dazu Rock Carvings
+Fanjingshan
+Fujian Tulou
+Grand Canal
+Great Wall of China
+Historic Centre of Macau
+Historic Ensemble of the Potala Palace
+Historic Monuments of Dengfeng in “The Centre of Heaven and Earth”
+Huanglong Scenic and Historic Interest Area
+Hubei Shennongjia
+Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang
+Jiuzhaigou Valley Scenic and Historic Interest Area
+Kaiping Diaolou and Villages
+Kulangsu
+Longmen Grottoes
+Lushan National Park
+Mausoleum of the First Qin Emperor
+Migratory Bird Sanctuaries along the Coast of Yellow Sea–Bohai Gulf of China
+Mogao Caves
+Mount Emei Scenic Area
+Mount Huangshan
+Mount Qingcheng and the Dujiangyan Irrigation System
+Mount Sanqingshan National Park
+Mount Taishan
+Mount Wutai
+Mount Wuyi
+Mountain Resort and Its Outlying Temples
+Old Town of Lijiang
+Peking Man Site at Zhoukoudian
+Qinghai Hoh Xil
+Quanzhou: Emporium of the World in Song-Yuan China
+Sichuan Giant Panda Sanctuaries: Wolong
+Silk Roads: the Routes Network of Chang’an-Tianshan Corridor
+Site of Xanadu
+South China Karst
+Guilin Karst
+Huanjiang Karst
+Jinfoshan Karst
+Libo Karst
+Shibing Karst
+Shilin Karst
+Wulong Karst
+Summer Palace
+Temple and Cemetery of Confucius and the Kong Family Mansion in Qufu
+Temple of Heaven: An Imperial Sacrificial Altar in Beijing
+Three Parallel Rivers of Yunnan Protected Areas
+Mekong River
+Salween River
+Yangtze River
+Tusi Sites
+West Lake Cultural Landscape of Hangzhou
+Wulingyuan Scenic and Historic Interest Area
+Xinjiang Tianshan
+Yinxu
+Yungang Grottoes
+Zuojiang Huashan Rock Art Cultural Landscape
+Colombia
+Chiribiquete National Park
+Coffee Cultural Landscape of Colombia
+Historic Centre of Santa Cruz de Mompox
+Los Katíos National Park
+Malpelo Fauna and Flora Sanctuary
+National Archeological Park of Tierradentro
+Port
+Qhapaq Ñan
+San Augustín Archeological Park
+Democratic Republic of the Congo
+Garamba National Park
+Kahuzi-Biega National Park
+Okapi Wildlife Reserve
+Salonga National Park
+Virunga National Park
+Costa Rica
+Area de Conservación Guanacaste
+Cocos Island National Park
+Cordillera de Talamanca
+Precolumbian Chiefdom Settlements with Stone Spheres of the Diquís
+Côte d’Ivoire
+Historic Town of Grand-Bassam
+Komoé National Park
+Mount Nimba Strict Nature Reserve
+Parc National de Taï
+Sudanese-Style Mosques in Northern Côte d’Ivoire
+Croatia
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+The Cathedral of St. James in Šibenik
+Episcopal Complex of the Euphrasian Basillica in the Historic Centre of Poreč
+Historic City of Trogir
+Historical Complex of Split
+Old City of Dubrovnik
+Palace of Diocletian
+Plitvice Lakes National Park
+Stari Grad Plain
+Venetian Works of Defence Between the 16th and 17th Centuries: Stato da Terra–Western Stato da Mar
+Cuba
+Alejandro de Humboldt National Park
+Archeological Landscape of the First Coffee Plantations in the South-East of Cuba
+Desembarco de Granma National Park
+Historic Centre of Camagüey
+Old Havana and Its Fortification System
+San Pedro de la Roca Castle
+Trinidad and the Valley de los Ingenios
+Urban Historic Centre of Cienfuegos
+Viñales Valley
+Cyprus
+Choirokotia
+Painted Churches in the Troodos Region
+Paphos
+Czech Republic
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Erzgebirge Mining Region
+Krušnohoří Mining Region
+Gardens and Castle at Kroměříž
+The Great Spa Towns of Europe
+Historic Centre of C̆eský Krumlov
+Historic Centre of Prague
+Historic Centre of Telč
+Holašovice Historic Village
+Holy Trinity Column in Olomouc
+Jewish Quarter and St. Procopius Basilica in Třebíč
+Kutná Hora: Historical Town Centre with the Church of St. Barbara and the Cathedral of Our Lady at Sedlec
+Lednice-Valtice Cultural Landscape
+Litomyšl Castle
+Pilgrimage Church of St. John of Nepomuk at Zelená Hora
+Tugendhat Villa in Brno
+Denmark
+Aasivissuit-Nipisat. Inuit Hunting Ground between Ice and Sea
+Christiansfeld
+Ilulissat Icefjord
+Jelling Mounds
+Kronborg Cathedral
+Kujataa Greenland: Norse and Inuit Farming at the Edge of the Ice Cap
+Par Force Hunting Landscape in North Zealand
+Roskilde Cathedral
+Stevns
+Wadden Sea
+Dominica
+Morne Trois Pitons National Park
+Dominican Republic
+Colonial City of Santo Domingo
+Ecuador
+City of Quito
+Galápagos Islands
+Historic Centre of Santa Ana de los Ríos de Cuenca
+Qhapaq Ñan
+Sangay National Park
+Egypt
+Memphis and Its Necropolis
+Abū Ruwaysh
+Abū Ṣir
+Dahshūr
+Memphis
+Pyramids of Giza
+Ṣaqqārah
+Nubian Monuments from Abu Simbel to Philae
+Abu Simbel
+Luxor
+Philae
+Saint Catherine’s Area
+Ancient Thebes with Its Necropolis
+Karnak
+Thebes
+Valley of the Kings
+Valley of the Queens
+Wadi Al-Hitan
+El Salvador
+Joya de Cerén Archeological Site
+Eritrea
+Asmara: A Modernist African City
+Estonia
+Historic Centre of Tallinn
+Struve Geodetic Arc
+Ethiopia
+Aksum
+Fasil Ghebbi
+Harar Jugol
+Konso Cultural Landscape
+Lower Valley of the Awash River
+Lower Valley of Omo
+Rock-Hewn Churches
+Simien National Park
+Tiya
+Fiji
+Levuka Historical Port Town
+Finland
+Bronze Age Burial Site of Sammallahdenmäki
+Fortress of Suomenlinna
+High Coast Archipelago
+Kvarken Archipelago
+Old Rauma
+Petäjävesi Old Church
+Struve Geodetic Arc
+Verla Groundwood and Board Mill
+France
+Abbey Church of Saint-Savin sur Gartempe
+Amiens Cathedral
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Arles
+Belfries in France
+Abbeville Belfry
+City Hall
+Amiens Belfry
+City Hall
+City Hall
+City Hall
+Bergues Belfry
+Bèthune Belfry
+City Hall
+City Hall
+St. Martin’s Church
+City Hall
+City Hall
+Tourist Center
+City Hall
+St. Eligius Church
+Gravelines Belfry
+City Hall
+City Hall
+City Hall
+City Gate
+Rue Belfry
+Saint-Riquier Belfry
+Bordeaux
+Bourges Cathedral
+Cathedral of Notre-Dame
+The Causses and the Cévennes
+Causses
+Cévennes National Park
+Chaîne des Puys–Limagne Fault Tectonic Arena
+Champagne Hillsides
+Chartres Cathedral
+Chauvet-Pont-d’Arc
+Cistercian Abbey of Fontenay
+Climats
+Cordouan Lighthouse
+Episcopal City of Albi
+Fortifications of Vauban
+French Austral Lands and Seas
+The Great Spa Towns of Europe
+Gulf of Porto: Calanche of Piano
+Historic Centre of Avignon
+Historic Fortified City of Carcassonne
+Historic Site of Lyons
+Jurisdiction of Saint Emilion
+Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems
+Le Havre
+Loire Valley between Sully-sur-Loire and Chalonnes
+Midi Canal
+Mont-Saint-Michel and Its Bay
+Nice
+Nord-Pas de Calais Mining Basin
+Palace and Park of Fontainebleau
+Palace and Park of Versailles
+Paris
+Pitons
+Place Stanislas
+Pont du Gard
+Prehistoric Pile Dwellings of the Alps
+Prehistoric Sites and Decorated Caves of the Vézère Valley
+Eyzies-de-Tayac Caves
+Lascaux Grotto
+Provins
+Pyrénées: Mont Perdu
+Roman Theatre and Its Surroundings and the “Triumphal Arch” of Orange
+Routes of Santiago de Compostela in France
+Strasbourg
+Taputapuātea
+Vézelay
+Gabon
+Ecosystem and Relict Cultural Landscape of Lopé-Okanda
+Ivindo National Park
+Gambia
+Kunta Kinteh Island and Related Sites
+Stone Circles of Senegambia
+Georgia
+Bagrati Cathedral and Gelati Monastery
+Colchic Rainforests and Wetlands
+Gelati Monastery
+Historical Monuments of Mtskheta
+Upper Svaneti
+Germany
+Aachen Cathedral
+Palatine Chapel
+Abbey and Altenmünster of Lorsch
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Archaeological Border complex of Hedeby and the Danevirke
+Bauhaus and Its Sites in Weimar
+Bergpark Wilhelmshöhe
+Berlin Modernism Housing Estates
+Carolingian Westwork and Civitas Corvey
+Castles of Augustusburg and Falkenlust at Brühl
+Caves and Ice Age Art in the Swabian Jura
+Classical Weimar
+Cologne Cathedral
+Erzgebirge Mining Region
+Krušnohoří Mining Region
+Fagus Factory in Alfeld
+Frontiers of the Roman Empire
+Frontiers of the Roman Empire
+Garden Kingdom of Dessau-Wörlitz
+The Great Spa Towns of Europe
+Hanseatic City of Lübeck
+Historic Centres of Stralsund and Wismar
+Historic Town of Goslar
+Luther Memorials in Eisleben and Wittenberg
+Margravial Opera House Bayreuth
+Mathildenhöhe Darmstadt
+Maulbronn Monastery Complex
+Messel Pit Fossil Sites
+Mines of Rammelsburg
+Monastic Island of Reichenau
+Museum Island
+Muskauer Park
+Naumburg Cathedral
+Old Town of Quedlinburg
+Old Town of Regensburg with Stadtamhof
+Palaces and Parks of Potsdam and Berlin
+Pilgrimage Church of Wies
+Prehistoric Pile Dwellings Around the Alps
+Roman Monuments Cathedral of St. Peter and Church of Our Lady in Trier
+ShUM Sites of Speyer
+Speicherstadt and Kontorhaus District with Chilehaus
+Speyer Cathedral
+St. Mary’s Cathedral and St. Michael’s Church at Hildesheim
+Town of Bamberg
+Town Hall and Roland on the Marketplace of Bremen
+Upper Middle Rhine Valley
+Völklingen Ironworks
+Wadden Sea
+Wartburg Castle
+Water Management System of Augsburg
+Würzburg with the Court Gardens and Residence Square
+Zollverein Coal Mine Industrial Complex in Essen
+Ghana
+Asante Traditional Buildings
+Forts and Castles
+Greece
+Acropolis
+Archaeological Site of Aigai
+Archaeological Site of Delphi
+Archaeological Sites at Mycenae and Tiryns
+Archeological Site of Mystras
+Archeological Site of Olympia
+Archeological Site of Philippi
+Delos
+Historic Centre
+Medieval City of Rhodes
+Metéora
+Monasteries of Daphni
+Mount Athos
+Old Town of Corfu
+Paleochristian and Byzantine Monuments of Thessalonika
+Pythagoreion and Heraion of Sámos
+Sanctuary of Asklepios at Epidaurus
+Temple of Apollo Epicurius at Bassae
+Guatemala
+Antigua Guatemala
+Archaeological Park and Ruins of Quirigua
+Tikal National Park
+Guinea
+Mount Nimba Strict Nature Reserve
+Haiti
+National History Park: Citadel
+Honduras
+Maya Site of Copán
+Río Plátano Biosphere Reserve
+Hungary
+Aggtelek Caves
+Budapest
+Early Christian Necropolis of Pécs
+Fertö Cultural Landscape
+Neusiedlersee Cultural Landscape
+Neusiedler Lake
+Hortobágy National Park: the Puszta
+Millenary Benedictine Abbey of Pannonhalma and Its Natural Environment
+Old Village of Hollókő and Its Surroundings
+Tokaj Wine Region Historic Cultural Region
+Iceland
+Surtsey
+Thingvellir National Park
+Vatnajökull National Park
+India
+Agra Fort
+Ajanta Caves
+Archaeological Site of Nalanda Mahavihara
+Buddhist Monuments at Sanchi
+Champaner-Pavagadh Archaeological Park
+Chhatrapati Shivaji Terminus
+Churches and Convents of Goa
+Dholavira: a Harappan City
+Elephanta Caves
+Ellora Caves
+Fatehpur Sikri
+Great Himalayan National Park Conservation Area
+Great Living Chola Temples
+Group of Monuments at Hampi
+Group of Monuments at Pattadakal
+Hill Forts of Rajasthan
+Historic City of Ahmadabad
+Humayun’s Tomb
+Jaipur City
+The Jantar Mantar
+Kakatiya Rudreshwara
+Kaziranga National Park
+Keoladeo Ghana National Park
+Khajuraho Group of Monuments
+Khangchendzonga National Park
+Maha Bodhi Temple at Bodh Gaya
+Mamallapuram Group of Monuments
+Manas Wildlife Sanctuary
+Mountain Railways of India
+Darjeeling Himalayan Railway
+Kalka Shimla Railway
+Nilgiri Mountain Railway
+Nanda Devi and Valley of Flowers National Parks
+Quṭb Minar and Its Monuments
+Rani-ki-Vav
+Red Fort Complex
+Rock Shelters of Bhimbetka
+Sun Temple
+Sundarbans National Park
+Taj Mahal
+Victorian Gothic and Art Deco Ensembles of Mumbai
+Western Ghats
+Indonesia
+Borobudur Temple Compounds
+Cultural Landscape of Bali Province: the Subak System as a Manifestation of the Tri Hita Karana Philosophy
+Komodo National Park
+Lorentz National Park
+Ombilin Coal Mining Heritage of Sawahlunto
+Prambanan Temple Compounds
+Sangiran Early Man Site
+Tropical Rainforest Heritage of Sumatra
+Ujung Kulon National Park
+Iran
+Armenian Monastic Ensembles of Iran
+Chapel of Dzordzor
+St. Stepanos Monastery
+St. Thaddeus Monastery
+Bam and Its Cultural Landscape
+Bisotun
+Cultural Landscape of Hawraman
+Uramanat
+Cultural Landscape of Maymand
+Golestan Palace
+Gonbad-e Qābūs
+Historic City of Yazd
+Hyrcanian Forests
+Lūt Desert
+Masjed-e Jāmeʿ of Eṣfahān
+Meidan Emam
+Pasargadae
+Persepolis
+The Persian Garden
+The Persian Qanāt
+Sassanid Archaeological Landscape of Fārs Region
+Shahr-e Sokhta
+Sheikh Safi al-din Khānegāh and Shrine Ensemble in Ardabīl
+Shūshtar Historical Hydraulic System
+Solṭānīyeh
+Susa
+Tabrīz Historical Bazaar Complex
+Takht-e Soleymān
+Tchoghā Zanbīl
+Trans-Iranian Railway
+Iraq
+Ahwar of Southern Iraq: Refuge of Biodiversity and the Relict Landscape of the Mesopotamian Cities
+Arbīl citadel
+Ashur
+Babylon
+Hatra
+Sāmarrā Achaeological City
+Israel
+Bahāʾī Holy Places in Haifa and Western Galilee
+Biblical Tells: Megiddo
+Caves of Maresha and Bet-Guvrin in the Judean Lowlands as a Microcosm of the Land of the Caves
+Incense Route: Desert Cities in the Negev
+Avdat
+Haluza
+Mamshit
+Shivta
+Old City of ʿAkko
+Masada
+Necropolis at Bet Sheʿarim
+The White City of Tel Aviv
+Italy
+18th-Century Royal Palace at Caserta with the Park
+Aeolian Islands
+Amalfi Coast
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Arab-Norman Palermo and the Cathedral Churches of Cefalù and Monreale
+Archaeological Area and the Patriarchal Basilica of Aquileia
+Archaeological Area of Agrigento
+Archaeological Areas of Herculaneum
+Assisi
+Botanical Garden
+Castel del Monte
+Cathedral
+Church and Dominican Convent of Santa Maria delle Grazie with The Last Supper by Leonardo da Vinci
+Cilento and Vallo di Diano National Park with the Archeological Sites of Paestum and Velia and the Certosa di Padula
+City of Verona
+City of Vicenza and the Palladian Villas of the Veneto
+Crespi d’Adda
+Dolomites
+Early Christian Monuments of Ravenna
+Archiepiscopal Chapel
+Arian Baptistery
+Basilica of Sant’Apollinare in Classe
+Basilica of Sant’Apollinare Nuovo
+Church of San Vitale
+Mausoleum of Galla Placidia
+Mausoleum of Theodoric
+Neonian Baptistery
+Etruscan Necropolises of Cerveteri and Tarquinia
+Ferrara
+Genoa: Le Strade Nuove and the System of the Palazzi dei Rolli
+The Great Spa Towns of Europe
+Hadrian’s Villa
+Historic Centre of Florence
+Historic Centre of Naples
+Historic Centre of Pienza
+Historic Centre of Rome: the Properties of the Holy See in That City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura
+Historic Centre of San Gimignano
+Historic Centre of Siena
+Historic Centre of Urbino
+Late Baroque Towns of the Val di Noto
+Caltagirone
+Catania
+Militello Val di Catania
+Modica
+Noto
+Palazzolo
+Ragusa
+Scicli
+Le Colline del Prosecco di Conegliano e Valdobbiadene
+Longobards in Italy: Places of the Power
+Mantua and Sabbioneta
+Medici Villas and Gardens in Tuscany
+Monte San Giorgio
+Mount Etna
+Padua’s 14th-Century Fresco Cycles
+Piazza del Duomo
+The Porticoes of Bologna
+Portovenere
+Prehistoric Pile Dwellings Around the Alps
+Residences of the Royal House of Savoy
+Rhaetian Railway in the Albula Landscapes
+Bernina Landscapes
+Rock Drawings in Valcamonica
+Sacri Monti of Piedmont and Lombardy
+Belmonte
+Crea
+Domodossola
+Ghiffa
+Oropa
+Ossuccio
+Valperga
+Varallo
+Varese
+The Sassi and the Park of the Rupestrian Churches of Matera
+Su Nuraxi di Barumini
+Syracuse and the Rocky Necropolis of Pantalica
+Trulli of Alberobello
+Val d’Orcia
+Venetian Works of Defence Between the 16th and 17th Centuries: Stato da Terra–Western Stato da Mar
+Venice and Its Lagoon
+Villa d’Este
+Villa Romana del Casale
+Vineyard Landscape of Piedmont: Langhe-Roero and Monferrato
+Jamaica
+Blue and John Crow Mountains
+Japan
+Amami-Oshima Island
+Buddhist Monuments of the Hōryū-ji Area
+Fujisan
+Gusuku Sites and Related Properties of the Kingdom of Ryukyu
+Hidden Christian Sites in the Nagasaki Region
+Himeji-jo
+Hiraizumi: Temples
+Hiroshima Peace Memorial
+Historic Monuments of Ancient Kyōto
+Historic Monuments of Ancient Nara
+Historic Villages of Shirakawa-go and Gokayama
+Itsukushima Shinto Shrine
+Iwami Ginzan Silver Mine and Its Cultural Landscape
+Jomon Prehistoric Sites in Northern Japan
+Mozu-Furuichi Kofun Group: Mounded Tombs of Ancient Japan
+Ogasawara Islands
+Sacred Island of Okinoshima and Associated Sites in the Munakata Region
+Sacred Sites and Pilgrimage Routes in the Kii Mountain Range
+Koyasan
+Kumano Sanzan
+Yoshino and Omine
+Shirakami-Sanchi
+Shiretoko
+Shrines and Temples of Nikkō
+Sites of Japan’s Meiji Industrial Revolution: Iron and Steel
+Tomioka Silk Mill and Related Sites
+Yakushima
+Jordan
+Al-Salt
+Baptism Site “Bethany Beyond the Jordan”
+Petra
+Quseir Amra
+Um er-Rasas
+Wadi Rum Protected Area
+Kazakhstan
+Mausoleum of Khoja Ahmed Yasawi
+Petroglyphs Within the Archaeological Landscape of Tamgaly
+Saryarka: Steppe and Lakes of Northern Kazakhstan
+Silk Roads: the Routes Network of Chang’an-Tianshan Corridor
+Western Tien Shan
+Kenya
+Fort Jesus
+Kenya Lake System in the Great Rift Valley
+Lake Turkana National Parks
+Lamu Old Town
+Mount Kenya National Park
+Mount Kenya Natural Forest
+Sacred Mijikenda Kaya Forests
+Thimlich Ohinga Archaeological Site
+Kiribati
+Phoenix Islands Protected Area
+North Korea
+Complex of Koguryo Tombs
+Historic Monuments and Sites of Kaesŏng
+South Korea
+Baekje Historic Areas
+Archaeological Site in Gwanbuk-ri
+Archaeological Site in Wanggung-ri
+Busosanseong Fortress
+Gongsanseong Fortress and Royal Tombs
+Jeongnimsa Temple Site
+Mireuksa Temple Site in Iksan
+Naseong City Wall
+Royal Tombs in Neungsan-ri
+Changdeokgung Palace Complex
+Getbol
+Gochang
+Gyeongju Historic Areas
+Haeinsa Temple Janggyeong Panjeon
+Historic Villages of Korea: Hahoe and Yangdong
+Hwaseong Fortress
+Jeju Volcanic Island and Lava Tubes
+Jongmyo Shrine
+Namhansanseong
+Royal Tombs of the Joseon Dynasty
+Sansa
+Seokguram Grotto and Bulguksa Temple
+Seowon
+Kyrgyzstan
+Silk Roads: the Routes Network of Chang’an-Tianshan Corridor
+Sulaiman: Too Sacred Mountain
+Laos
+Megalithic Jar Sites in Xiengkhuang
+Town of Louangphrabang
+Vat Phou and Associated Ancient Settlements Within the Champasak Cultural Landscape
+Latvia
+Historic Centre of Riga
+Struve Geodetic Arc
+Lebanon
+Anjar
+Baalbeck
+Byblos
+Ouadi Qadisha
+Tyre
+Lesotho
+Maloti-Drakensberg Park
+Libya
+Archaeological Site of Cyrene
+Archaeological Site of Leptis Magna
+Archaeological Site of Sabratha
+Old Town of Ghadamis
+Rock-Art Sites of Tadrart Acacus
+Lithuania
+Curonian Spit
+Historic Centre of Vilnius
+Kernavė Archaeological Site
+Struve Geodetic Arc
+Luxembourg
+City of Luxembourg Old Quarters and Fortifications
+Madagascar
+Rainforests of the Atsinanana
+Royal Hill of Ambohimanga
+Tsingy de Bemaraha Strict Nature Reserve
+Malawi
+Chongoni Rock-Art Area
+Lake Malawi National Park
+Malaysia
+Archaeological Heritage of the Lenggong Valley
+Gunung Mulu National Park
+Kinabalu Park
+Melaka and George Town
+Mali
+Cliff of Bandiagara
+Old Towns of Djenné
+Timbuktu
+Tomb of Askia
+Malta
+City of Valletta
+Ħal Saflieni Hypogeum
+Megalithic Temples of Malta
+Ġgantija
+Ħaġar Qim
+Mnajdra
+Skorba
+Ta’ Ħaġrat
+Tarxien
+Marshall Islands
+Bikini Atoll Nuclear Test Site
+Mauritania
+Ancient Ksour of Ouadane
+Banc d’Arguin National Park
+Mauritius
+Aapravasi Ghat
+Le Morne Cultural Landscape
+Mexico
+Agave Landscape and Ancient Industrial Facilities of Tequila
+Ancient Maya City and Protected Tropical Forests of Calakmul
+Aqueduct of Padre Tembleque Hydraulic System
+Archaeological Monuments of Xochicalco
+Archaeological Zone of Paquimé: Casas Grandes
+Archipiélago de Revillagigedo
+Camino Real de Tierra Adentro
+Central University City Campus of National Autonomous University of Mexico
+Earliest 16th-Century Monasteries on the Slopes of Popocatepetl
+El Pinacate and Gran Desierto de Altar Biosphere Reserve
+El Tajin
+Franciscan Missions in the Sierra Gorda of Querétaro
+Historic Centre of Mexico City and Xochimilco
+Historic Centre of Morelia
+Historic Centre of Oaxaca and Archaeological Site of Monte Albán
+Historic Centre of Puebla
+Historic Centre of Zacatecas
+Historic Fortified Town of Campeche
+Historic Monuments of Querétaro
+Historic Monuments Zone of Tlacotalpan
+Historic Town of Guanajuato and Adjacent Mines
+Hospicio Cabañas
+Islands and Protected Areas of the Gulf of California
+Luis Barragán House and Studio
+Monarch Butterfly Biosphere Reserve
+Pre-Hispanic City and National Park of Palenque
+Pre-Hispanic City of Chichén Itzá
+Pre-Hispanic City of Teotihuacán
+Pre-Hispanic Town of Uxmal
+Prehistoric Caves of Yagul and Mitla in the Central Valley of Oaxaca
+Protective Town of San Miguel and the Sanctuary of Jesús Nazareno de Atotonilco
+Rock Paintings of the Sierra de San Francisco
+Sian Ka’an
+Tehuacán-Cuicatlán Valley: Originary Habitat of Mesoamerica
+Whale Sanctuary of El Vizcaino
+Micronesia
+Nan Madol: Ceremonial Centre of Eastern Micronesia
+Moldova
+Struve Geodetic Arc
+Mongolia
+Great Burkhan Khaldun Mountain and Its Surrounding Sacred Landscape
+Landscapes of Dauria
+Orkhon Valley Cultural Landscape
+Petroglyphic Complexes of the Mongolian Altai
+Uvs Nuur Basin
+Montenegro
+Durmitor National Park
+Natural and Culturo-Historical Region of Kotor
+Venetian Works of Defence between the 16th and 17th Centuries: Stato da Terra–Western Stato da Mar
+Morocco
+Archaeological Site of Volubilis
+Historic City of Meknès
+Ksar of Ait-Ben-Haddou
+Medina of Essaouira
+Medina of Fez
+Medina of Marrakech
+Medina of Tétouan
+Portuguese City of Mazagan
+Rabat
+Mozambique
+Island of Mozambique
+Myanmar
+Bagan
+Pyu Ancient Cities
+Beikthano
+Halin
+Sri Ksetra
+Namibia
+Namib Sand Sea
+Nepal
+Chitwan National Park
+Kathmandu Valley
+Lumbini
+Sagarmatha National Park
+The Netherlands
+Colonies of Benevolence
+Defence Line of Amsterdam
+Droogmakerij de Beemster
+Dutch Water Defence Lines
+Frontiers of the Roman Empire
+Historic Area of Willemstad
+Ir. D.F. Woudagemaal
+Mill Network at Kinderdijk-Elshout
+Rietveld Schröder House
+Schokland and Surroundings
+Seventeenth-Century Canal Ring Area of Amsterdam Inside the Singelgracht
+Van Nellefabriek
+Wadden Sea
+New Zealand
+New Zealand Sub-Antarctic Islands
+Antipodes Islands
+Auckland Islands
+Bounty Islands
+Campbell Island
+Snares Islands
+Te Wahipounamu
+Tongariro National Park
+Nicaragua
+León Cathedral
+Ruins of León Viejo
+Niger
+Air and Ténéré Natural Reserves
+Historic Centre of Agadez
+W-Arly-Pendjari Complex
+W National Park of Niger
+Nigeria
+Osun-Osogbo Sacred Grove
+Sukur Cultural Landscape
+North Macedonia
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Natural and Cultural Heritage of the Ohrid Region
+Norway
+Bryggen
+Rjukan-Notodden Industrial Heritage Site
+Rock Art of Alta
+Røros Mining Town and the Circumference
+Struve Geodetic Arc
+Urnes Stave Church
+Vegaøyan: The Vega Archipelago
+West Norwegian Fjords: Geirangerfjord and Nærøyfjord
+Oman
+Aflaj Irrigation Systems of Oman
+Ancient City of Qalhat
+Archaeological Sites of Bat
+Bahla Fort
+Land of Frankincense
+Pakistan
+Archaeological Ruins at Mohenjo-daro
+Buddhist Ruins of Takht-i-Bahi and Neighbouring City Remains at Sahr-i-Bahlol
+Fort and Shālīmār Gardens in Lahore
+Historical Monuments at Makli
+Rohtas Fort
+Taxila
+Palau
+Rock Islands Southern Lagoon
+Palestine
+Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route
+Palestine: Land of Olives and Vines
+Panama
+Archaeological Site of Panamá Viejo and Historic District of Panamá
+Coiba National Park
+Darién National Park
+Fortifications on the Caribbean Side of Panama: Portobelo-San Lorenzo
+Papua New Guinea
+Kuk Early Agricultural Site
+Paraguay
+Jesuit Missions of La Santísima Trinidad de Paraná and Jesús de Tavarangue
+Peru
+Chan Chan Archaeological Zone
+Chankillo Archaeoastronomical Complex
+Chavín
+City of Cuzco
+Historic Centre of Arequipa
+Historic Centre of Lima
+Historic Sanctuary of Machu Picchu
+Huascarán National Park
+Lines and Geoglyphs of Nazca and Pampas de Jumana
+Manú National Park
+Qhapaq Ñan
+Rio Abiseo National Park
+Sacred City of Caral-Supe
+Philippines
+Baroque Churches of the Philippines
+Church of the Immaculate Conception of San Agustín
+Church of Nuestra Señora de la Asuncion
+Church of San Agustín
+Church of Santo Tomas de Villanueva
+Historic Town of Vigan
+Mount Hamiguitan Range Wildlife Sanctuary
+Puerto-Princesa Subterranean River National Park
+Rice Terraces of the Philippine Cordilleras
+Tubbataha Reefs Natural Park
+Poland
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Auschwitz-Birkenau
+Belovezhskaya Forest
+Castle of the Teutonic Order in Malbork
+Centennial Hall
+Churches of Peace in Jawor and Świdnica
+Historic Centre of Kraków
+Historic Centre of Warsaw
+Kalwaria Zebrzydowska: the Mannerist Architectural and Park Landscape Complex and Pilgrimage Park
+Krzemionki Prehistoric Striped Flint Mining Region
+Medieval Town of Toruń
+Muskauer Park
+Old City of Zamość
+Tarnowskie Góry Lead-Silver-Zinc Mine and Its Underground Water Management System
+Wieliczka and Bochnia Royal Salt Mines
+Wooden Churches of Southern Małopolska
+Wooden Tserkvas of the Carpathian Region in Poland and Ukraine
+Portugal
+Alto Douro Wine Region
+Central Zone of the Town of Angra do Heroismo in the Azores
+Convent of Christ in Tomar
+Cultural Landscape of Sintra
+Garrison Border Town of Elvas and Its Fortifications
+Historic Centre of Évora
+Historic Centre of Guimarães
+Historic Center of Oporto
+Landscape of Pico Island Vineyard Culture
+Laurisilva of Madeira
+Monastery of Alcobaça
+Monastery of Batalha
+Monastery of the Hieronymites and Tower of Belém in Lisbon
+Prehistoric Rock Art Sites in the Côa Valley and Siega Verde
+Royal Building of Mafra
+Sanctuary of Bom Jesus do Monte in Braga
+University of Coimbra: Alta and Sofia
+Qatar
+Al-Zubarah Archaeological Site
+Romania
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Churches of Moldavia
+Dacian Fortresses of the Orastie Mountains
+Danube Delta
+Historic Centre of Sighișoara
+Monastery of Horezu
+Roșia Montană Mining Landscape
+Villages with Fortified Churches in Transylvania
+Wooden Churches of Maramureş
+Russia
+Architectural Ensemble of the Trinity Sergius Lavra in Sergiev Posad
+Assumption Cathedral and Monastery of the Town-Island of Sviyazhsk
+Bolgar Historical and Archaeological Complex
+Central Sikhote-Alin
+Church of the Ascension
+Churches of the Pskov School of Architecture
+Citadel
+Cultural and Historic Ensemble of the Solovets Islands
+Curonian Spit
+Ensemble of the Ferapontov Monastery
+Ensemble of the Novodevichy Convent
+Golden Mountains of Altai
+Historic and Architectural Complex of the Kazan Kremlin
+Historic Centre of St. Petersburg
+Historic Centre of Yaroslavl
+Historic Monuments of Novgorod and Surroundings
+Kizhi Pogost
+The Kremlin and Red Square
+Lake Baikal
+Landscapes of Dauria
+Lena Pillars Nature Park
+Natural System of Wrangel Island Reserve
+Petroglyphs of Lake Onega and the White Sea
+Putorana Plateau
+Struve Geodetic Arc
+Uvs Nuur Basin
+Virgin Komi Forests
+Volcanoes of Kamchatka
+Western Caucasus
+White Monuments of Vladimir and Suzdal
+Saint Kitts and Nevis
+Brimstone Hill Fortress National Park
+Saint Lucia
+Pitons Management System
+San Marino
+Historic Centre of San Marino City
+Saudi Arabia
+Al-Ahsa Oasis
+Al-Hijr Archaeological Site
+Al-Turaif District inAl-Dirʿiyyah
+Ḥimā Cultural Area
+Historic Jeddah
+Rock Art in the Hail Region of Saudi Arabia
+Senegal
+Bassari Country: Bassari
+Djoudj National Bird Sanctuary
+Island of Gorée
+Island of Saint-Louis
+Niokolo-Koba National Park
+Saloum Delta
+Stone Circles of Senegambia
+Serbia
+Gamzigrad-Romuliana
+Medieval Monuments in Kosovo
+Stari Ras and Sopocani
+Studenica Monastery
+Seychelles
+Aldabra Atoll
+Vallée de Mai Nature Reserve
+Singapore
+Singapore Botanic Gardens
+Slovakia
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Bardejov Town Conservation Reserve
+Caves of Aggtelek Karst and Slovak Karst
+Frontiers of the Roman Empire
+Historic Town of Banská Štiavnica and the Technical Monuments in Its Vicinity
+Levoča
+Vlkolínec
+Wooden Churches of the Slovak Part of the Carpathian Mountain Area
+Slovenia
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Heritage of Mercury: Almadén
+Prehistoric Pile Dwellings Around the Alps
+Škocjan Caves
+The Works of Jože Plečnik in Ljubljana
+Solomon Islands
+East Rennell Island
+South Africa
+Barberton Makhonjwa Mountains
+Cape Floral Region Protected Areas
+Fossil Hominid Sites of South Africa
+Sterkfontein
+Swartkrans
+iSimangaliso Wetland Park
+Khomani Cultural Landscape
+Maloti-Drakensberg Park
+Mapungubwe Cultural Landscape
+Richtersveld Cultural and Botanical Landscape
+Robben Island
+Vredefort Dome
+Spain
+Alhambra
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Antequera Dolmens Site
+Aranjuez Cultural Landscape
+Archaeological Ensemble of Mérida
+Archaeological Ensemble of Tárraco
+Archaeological Site of Atapuerca
+Burgos Cathedral
+Caliphate City of Medina Azahara
+Catalan Romanesque Churches of the Vall de Boí
+Cathedral
+Cave of Altamira and Paleolithic Cave Art of Northern Spain
+Cultural Landscape of the Serra de Tramuntana
+Doñana National Park
+Garajonay National Park
+Heritage of Mercury: Almadén and Idrija
+Historic Centre of Córdoba
+Historic City of Toledo
+Historic Walled Town of Cuenca
+Ibiza
+La Lonja de la Seda de Valencia
+Las Médulas
+Monastery and Site of the Escurial
+Monuments of Oviedo and the Kingdom of the Asturias
+Mudejar Architecture of Aragon
+Old City of Salamanca
+Old Town of Ávila with Its Extra-Muros Churches
+Old Town of Cáceres
+Old Town of Santiago de Compostela
+Old Town of Segovia and Its Aqueduct
+Palau de la Música Catalana and Hospital de Sant Pau
+Palmeral of Elche
+Paseo del Prado and Buen Retiro
+Poblet Monastery
+Prehistoric Rock Art Sites in the Côa Valley and Siega Verde
+Pyrénées: Mont Perdu
+Renaissance Monumental Ensembles of Úbeda and Baeza
+Risco Caido and the Sacred Mountains of Gran Canaria Cultural Landscape
+Rock Art of the Mediterranean Basin on the Iberian Peninsula
+Roman Walls of Lugo
+Routes of Santiago de Compostela: Camino Francés and Routes of Northern Spain
+Royal Monastery of Santa María de Guadalupe
+San Cristóbal de La Laguna
+San Millán Yuso and Suso Monasteries
+Teide National Park
+Tower of Hercules
+University and Historic Precinct of Alcalá de Henares
+Vizcaya Bridge
+Works of Antoni Gaudí
+Sri Lanka
+Ancient City of Polonnaruwa
+Ancient City of Sigiriya
+Central Highlands of Sri Lanka
+Horton Plains National Park
+Knuckles Conservation Forest
+Peak Wilderness Protected Area
+Golden Temple of Dambulla
+Old Town of Galle and Its Fortifications
+Sacred City of Anuradhapura
+Sacred City of Kandy
+Sinharaja Forest Reserve
+Sudan
+Archaeological Sites of the Island of Meroe
+Gebel Barkal and the Sites of the Napatan Region
+Sanganeb Marine National Park and Dungonab Bay–Mukkawar Island Marine National Park
+Suriname
+Historic Centre of Paramaribo
+Sweden
+Agricultural Landscape of Southern Öland
+Birka and Hovgården
+Church Town of Gammelstad
+Decorated Farmhouses of Hälsingland
+Engelsberg Ironworks
+Grimeton Radio Station
+Hanseatic Town of Visby
+Laponian Area
+Mining Area of the Great Copper Mountain in Falun
+Naval Port of Karlskrona
+Rock Carvings in Tanum
+Royal Domain of Drottningholm
+Skogskyrkogården
+Struve Geodetic Arc
+Switzerland
+Abbey of St. Gall
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Benedictine Convent of St. John at Müstair
+La Chaux-de-Fonds
+Lavaux
+Monte San Giorgio
+Old City of Berne
+Prehistoric Pile Dwellings Around the Alps
+Swiss Alps Jungfrau-Aletsch
+Swiss Tectonic Arena Sardona
+Three Castles
+Syria
+Ancient City of Aleppo
+Ancient City of Bosra
+Ancient City of Damascus
+Ancient Villages of Northern Syria
+Crac des Chevaliers and Qal’at Salah El-Din
+Site of Palmyra
+Tajikistan
+Proto-urban Site of Sarazm
+Tajik National Park
+Tanzania
+Kilimanjaro National Park
+Kondoa Rock-Art Sites
+Ngorongoro Conservation Area
+Ruins of Kilwa Kisiwani and Ruins of Songo Mnara
+Selous Game Reserve
+Serengeti National Park
+Stone Town of Zanzibar
+Thailand
+Ban Chiang Archaeological Site
+Dong Phayayen–Khao Yai Forest Complex
+Historic City of Ayutthaya
+Historic Town of Sukhothai and Associated Historic Towns
+Kaeng Krachan Forest Complex
+Thungyai-Huai Kha Khaeng Wildlife Sanctuaries
+Togo
+Koutammakou
+Tunisia
+Amphitheatre of El Jem
+Archaeological Site of Carthage
+City of Sousse
+City of Tunis
+Ichkeul National Park
+Kairouan
+Punic Town of Kerkuane and Its Necropolis
+Thugga
+Turkey
+Ancient City of Pergamum and Its Multi-Layered Cultural Landscape
+Aphrodisias
+Archaeological Site of Ani
+Archaeological Site of Troy
+Arslantepe Mound
+Bursa and Cumalikizik: the Birth of the Ottoman Empire
+City of Safranbolu
+Diyarbakir Fortress and Hevsel Gardens Cultural Landscape
+Ephesus
+Göbekli Tepe
+Göreme National Park and the Rock Sites of Cappadocia
+Great Mosque and Hospital of Divriği
+Hattusha: the Hittite Capital
+Hierapolis-Pamukkale
+Historic Areas of Istanbul
+Mosque of Selim and Its Social Complex
+Nemrut Dağ
+Neolithic Site of Çatalhöyük
+Xanthos-Letoon
+Turkmenistan
+Kunya-Ugench
+Parthian Fortresses of Nisa
+State Historical and Cultural Park “Ancient Merv”
+Uganda
+Bwindi Impenetrable National Park
+Rwenzori Mountains National Park
+Tombs of Buganda Kings of Kasubi
+Ukraine
+Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe
+Ancient City of Tauric Chersonese and Its Chora
+Historic Centre of Lviv
+Kiev: St. Sophia Cathedral and Related Monastic Buildings
+Residence of Bukovinian and Dalmatian Metropolitans
+Struve Geodetic Arc
+Wooden Tserkvas of the Carpathian Region in Poland and Ukraine
+United Arab Emirates
+Cultural Sites of Al-Ain
+United Kingdom
+Blaenavon Industrial Landscape
+Blenheim Palace
+Canterbury Cathedral
+Castles and Town Walls of King Edward in Gwynedd
+City of Bath
+Cornwall and West Devon Mining Landscape
+Derwent Valley Mills
+Dorset and East Devon Coast
+Durham Castle and Cathedral
+Old and New Towns of Edinburgh
+English Lake District
+The Forth Bridge
+Giant’s Causeway
+Gorham’s Cave Complex
+Gough and Inaccessible Islands
+The Great Spa Towns of Europe
+Heart of Neolithic Orkney
+Maes Howe
+Skara Brae
+Stones of Stenness and Ring of Brodgar
+Henderson Island
+Historic Town of Saint George
+Ironbridge Gorge
+Jodrell Bank Observatory
+Liverpool: Maritime Mercantile City
+Maritime Greenwich
+New Lanark
+Palace of Westminster and Westminster Abbey
+Pontcysyllte Aqueduct and Canal
+Royal Botanic Gardens
+Saint Kilda
+Saltaire
+The Slate Landscape of Northwest Wales
+Stonehenge
+Studley Royal Park Including the Ruins of Fountains Abbey
+Tower of London
+United States of America
+The 20th-Century Architecture of Frank Lloyd Wright
+Cahokia Mounds State Historic Site
+Carlsbad Caverns National Park
+Chaco Culture National Historical Park
+Everglades National Park
+Grand Canyon National Park
+Great Smoky Mountains National Park
+Hawaii Volcanoes National Park
+Independence Hall
+La Fortaleza and San Juan National Historic Site in Puerto Rico
+Mammoth Cave National Park
+Mesa Verde National Park
+Monticello and the University of Virginia in Charlottesville
+Monumental Earthworks of Poverty Point
+Olympic National Park
+Papahānaumokuākea
+Redwood National and State Parks
+San Antonio Missions
+Statue of Liberty
+Taos Pueblo
+Waterton Glacier International Peace Park
+Yellowstone National Park
+Yosemite National Park
+Uruguay
+Church of Atlántida: The Work of Engineer Eladio Dieste
+Fray Bentos Industrial Landscape
+Historic Quarter of Colonia del Sacramento
+Uzbekistan
+Historic Centre of Bukhara
+Historic Centre of Shakhrisyabz
+Itchan Kala
+Samarkand: Crossroads of Cultures
+Vanuatu
+Chief Roi Mata’s Domain
+Vatican City
+Vatican City
+Venezuela
+Canaima National Park
+Ciudad Universitaria de Caracas
+Coro and Its Port
+Vietnam
+Central Sector of the Imperial Citadel of Thang Long
+Citadel of Ho Dynasty
+Complex of Hué Monuments
+Ha Long Bay
+Hoi An Ancient Town
+My Son Sanctuary
+Phong Nha–Ke Bang National Park
+Trang An Landscape Complex
+Yemen
+Historic Town of Zabīd
+Old City of Sana’a
+Old Walled City of Shibam
+Socotra Archipelago
+Zambia
+Mosi-oa-Tunya Falls
+Zimbabwe
+Great Zimbabwe National Monument
+Khami Ruins National Monument
+Mana Pools National Park
+Matobo Hills
+Mosi-oa-Tunya Falls
+Victoria Falls

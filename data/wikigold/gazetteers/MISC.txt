@@ -184,6 +184,8 @@ Zaïrean
 Zambian
 Zimbabwean
 European
+Republicans
+Democrats
 Afghan Afghani
 Albanian Lek
 Algerian Dinar
@@ -398,7 +400,7 @@ Zimbabwe Dollar
 The Godfather 
 The Dark Knight 
 The Godfather Part II 
-12 Angry Men 
+ Angry Men 
 Schindler's List 
 The Lord of the Rings: The Return of the King 
 Pulp Fiction 
@@ -423,7 +425,7 @@ Interstellar
 Life Is Beautiful 
 The Green Mile 
 Star Wars: Episode IV - A New Hope 
-Terminator 2: Judgment Day 
+Judgment Day 
 Back to the Future 
 Spirited Away 
 The Pianist 
@@ -477,7 +479,7 @@ Princess Mononoke
 Good Will Hunting 
 Once Upon a Time in America 
 Your Name. 
-3 Idiots 
+ Idiots 
 Singin' in the Rain 
 High and Low 
 Requiem for a Dream 
@@ -485,7 +487,7 @@ Capernaum
 Toy Story 3 
 Star Wars: Episode VI - Return of the Jedi 
 Come and See 
-2001: A Space Odyssey 
+A Space Odyssey 
 Eternal Sunshine of the Spotless Mind 
 The Hunt 
 Reservoir Dogs 
@@ -516,7 +518,7 @@ Taxi Driver
 Snatch 
 Bicycle Thieves 
 Like Stars on Earth 
-1917 
+ 
 Dangal 
 Downfall 
 Top Gun: Maverick 
@@ -575,7 +577,7 @@ The Gold Rush
 Blade Runner 
 Klaus 
 Harry Potter and the Deathly Hallows: Part 2 
-12 Years a Slave 
+ Years a Slave 
 Before Sunrise 
 The Grand Budapest Hotel 
 Ben-Hur 
@@ -669,3 +671,1684 @@ Cold War
 World War
 Wordl War I
 World War II
+Tenentismo
+Khmer Issarak
+Cultural Revolution
+Donglin
+May Fourth Movement
+Tianshidao
+Cuban Independence Movement
+Catholic Emancipation
+Chartism
+Digger movement
+Fifth Monarchy Men
+Guild Socialism
+Leveler movement
+Luddite movement
+Eritrean People’s Liberation Front
+Fennoman movement
+sansculotte
+Pan-Germanism
+Young Germany
+Chipko movement
+noncooperation movement
+Red Shirt movement
+Salt March
+Irredentist movement
+Risorgimento
+Young Italy
+Mau Mau
+March First Movement
+narodnichestvo
+Kwangju Uprising
+Jasmine Revolution
+Pan-Turanianism
+abolitionism
+American civil rights movement
+Anti-Masonic Movement
+Antirent War
+black nationalism
+Black Panther Party
+club movement
+Coxey’s Army
+Granger movement
+Greenback movement
+hippie movement
+Homestead Movement
+militia movement
+Populist Movement
+Regulators of North Carolina
+Seattle WTO protests of 1999
+Sons of Liberty
+Students for a Democratic Society
+Tea Party movement
+temperance movement
+Young America Movement
+animal rights movement
+antiglobalization
+Arab Spring
+gay rights movement
+Indigenismo
+Pan-Scandinavianism
+Pan-Slavism
+women’s movement
+African Beach Games
+African Francophone Games for the Handicapped
+African Martial Arts Games
+Africa Military Games
+African Para Games
+African Youth Games
+AGBU Games
+AGBU European Games
+AGBU South American Games
+Alice Springs Masters Games
+All-Africa University Games
+All-China Games
+Alps-Adriatic Summer Youth Games
+Alps-Adriatic Winter Youth Games
+Arab School Games
+Arab University Games
+Arab University Games for Beach Sports
+Arafura Games
+Arctic Winter Games
+Armenian Students Sports Games
+Arnold Sports Festival
+ASEAN Autism Games
+ASEAN Civil servant Games
+ASEAN Deaf Games
+ASEAN Para Games
+ASEAN School Games
+ASEAN University Games
+Asem Youth Games
+Asian Beach Games
+Asian Games
+Asian Indoor Games
+Asian Indoor-Martial Arts Games
+Asian Martial Arts Games
+WMAGC
+Asian Para Games
+Asian Transplant Games
+Asian Winter Games
+Asian Youth Games
+Asian Youth Para Games
+Asia Pacific Deaf Games
+Asia Pacific Masters Games
+Asia Pacific Outgames
+Asia Pacific University Games
+Asia Pacific Youth Games
+Asia Sports Festival
+Asian University Games
+Ataturk Dam International Watersports Games
+Atlantic Watersports Games
+AUSC Region 5 Youth Games
+Aurora Games
+Australasian Police and Emergency Services Games
+Australasian Public Sector Games
+Australia Games
+Australia Beach Games
+Australia Deaf Games
+Australia Police Winter Games
+Australian Masters Games
+Australian Youth Olympic Festival
+Balkan Games
+Baltic Games
+Baltic Sea Games
+Baltic Sea Youth Games
+Bangladesh Games
+Batang Pinoy
+Black Sea Games
+BIMP-EAGA Friendship Games
+Andina Binational Andean Integration Games
+Binational Games of Araucanía
+Para Binational Games of Araucanía
+BOLESWA Intervarsity Games
+Bolivarian Games
+Bolivarian Beach Games
+Bolivarian Youth Games
+Botswana Games
+Bridge Olympiad
+British Transplant Games
+Jogos Abertos Brasileiros
+JABs
+Jogos Escolares Brasileiros
+Jogos Universitários Brasileiros
+JUBs
+Jogos Universitários Praia Brasileiros
+BSME games
+Can-Am Police-Fire Games
+Canada Summer Games
+Canada Winter Games
+Canada Deaf Games
+Canterbury Centennial Games
+CANUSA Games
+Caribbean Games
+CARIFTA Games
+Central African Games
+Central American and Caribbean Games
+Central American and Caribbean Beach Games
+Central American and Caribbean Junior Games
+Central American Games
+Central American Para Games
+Central Asian Games
+Central Asian Para Games
+Collegiate Nationals
+Chess Olympiads
+Children of Asia Games
+Winter Children of Asia Games
+China National Youth Games
+Chinese Transplant Games
+CIS Games
+Citizens Sports Games
+Commonwealth Games
+Commonwealth Paraplegic Games
+Commonwealth Winter Games
+Commonwealth Youth Games
+Community Games
+Cook Islands Games
+Cook Islands Beach Games
+Cook Islands University Games
+Counter Olympics
+Country Senior High Schools Carnival
+World Summer Corporate Games
+World Winter Corporate Games
+Costarican University Games
+JUNCOS
+CPISRA World Games
+CPLP Games
+CSIT World Sports Games
+CUCSA Games
+Summer Deaflympics
+Winter Deaflympics
+Deaf Sports Carnivals
+Défi sportif
+Dod Warrior Games
+East African Community Games
+East African Military Games
+East African Military Community Games
+East African Schools Games
+Eastern Africa University Games
+East Asian Games
+East Asian Youth Games
+Eastern European Transplant Games
+eGames
+Elderly Sports and Fitness Conference of People's Republic of China
+Esports Games of the Future
+EuroGames
+European Championships
+European Games
+European Company Sports Games of Summer
+European Company Sports Games of Winter
+European Heart Transplant Games
+Lung Transplant Games
+European Maccabi Games
+European Martial Arts Games
+European Masters Games
+European Para Championships
+European Para Games
+European Para Youth Games
+European Para Winter Youth Games
+European Police and Fire Games
+European Sports Festival
+European Transplant and Dialysis Games
+European Universities Games
+European Winter Games
+European Youth Olympic Festival
+European Youth Olympic Winter Festival
+Extremity Games
+Far Eastern Championship Games
+Federal Youth Games of Olympics
+Federal Youth Games of Paralympics
+FESPIC Games
+FESPIC Youth Games
+Festival of Empire
+FIA Motorsport Games
+FICEP-FISEC Games
+Fiji Games
+FIS Games
+FISU America Games
+FISU World University Summer Games
+Summer Universiade
+FISU World University Winter Games
+Winter Universiade
+Friendship Games
+Friendship Military Spartakiads of Summer
+Friendship Military Spartakiads of Winter
+FSM games
+Federated States of Micronesia Games
+Games of the New Emerging Forces
+GANEFO
+Asian Games of the New Emerging Forces
+Asian GANEFO
+Games of the Small States of Europe
+Gascoyne Games
+Gay Games
+GCC Games
+GCC Beach Games
+GCC Women's Games
+GCC Youth Games
+GCC Martial Arts and Indoor Games
+Georgian Universiade
+German Combat Games
+Global Esports Games
+Summer Goodwill Games
+Winter Goodwill Games
+Gorge Games
+Winter Gorge Games
+Gratitude Games
+Summer Gravity Games
+Winter Gravity Games
+Gravity Games H2O
+Hapoel Games
+Highland Games
+Hong Kong Games
+Huntsman World Senior Games
+IBSA World Games
+IBSA World Youth Games
+Iceland Winter Games
+Indian Ocean Island Games
+Indian Ocean Youth and Sport Commission Games
+Indian Rim Asian University Games
+Indigenous Nationals
+Inter-Allied Games
+International Army Games
+International Children's Games
+International Children's Winter Games
+Invictus Games
+ISF Educational Games
+ISF European Schools Games
+ISF Gymnasiade School Summer Games
+ISF Gymnasiade School Winter Games
+ISF Pan American Schools Games
+ISF Universal Teacher Games
+ISF World Cool Games
+ISF World School Beach Games
+ISF World School Combat Games
+ISF World School Games U15
+ISF World School E-Sports Games
+ISF World School Inclusive Games
+Inter-High School Championships of Japan
+International University Beach Games
+International ASA Games
+International ASA Winter Games
+International Festival of Martial Arts Pearl of Kyrgyzstan
+International Issyk-Kul Sports Games
+International Law Enforcement Games
+International Workers' Olympiads of Summer
+International Workers' Olympiads of Winter
+International Youth Games
+Islamic Games
+Islamic Solidarity Games
+Island Games
+IWAS World Games
+IWAS World Winter Games
+IWAS Youth World Games
+ISAF World Sailing Games
+JCC Maccabi Youth Games
+Jeux de la Francophonie
+Jeux des îles
+Jeux Mondiaux De La Paix
+Jogos Sul-Americanos Escolares
+Jubilee Games
+Juegos Deportivos de Universidades Centro America
+Juegos Deportivos Escolares Nacionales de Peru
+Juegos Universitarios Argentinos
+Juegos Universitarios Nacionales de Nicaragua
+Juegos Evita
+Junior Pan American Games
+Khelo India Para Games
+Khelo India School Games
+Khelo India University Games
+Khelo India Winter Games
+Khelo India Youth Games
+Kingdom Games
+Korean National Youth Sports Festival
+Korean National Para Games
+Korean National Sports Festival
+Korean National Winter Para Games
+Korean National Winter Sports Festival
+Korean National Youth Para Games
+Las Justas
+Lakota Nation Invitational
+Latin American Games
+Latin American Transplant Games
+Liberty Bell Classic
+Lithuanian National Olympics
+Lusophony Games
+Luso-Brazilian Sports Games
+Macau Games
+Maccabiah Games
+Maccabiah Winter Games
+Maccabi Youth Games
+Manea Games
+Masters Indigenous Games
+Mediterranean Games
+Mediterranean Beach Games
+MED Senior Games
+Micronesian Games
+Middle East/Mediterranean Scholar-Athlete Games
+CISM World Solidarity Games
+Military Winter World Games
+Military World Games
+Military World Cadet Games
+Mind Sports Olympiad
+Move United Junior Nationals
+MTC Youth Games
+Naadam
+National Biennual Games of Singapore
+National Community Games of Singapore
+"National Games of the People's Republic
+of China"
+National Para Games of China
+National Winter Games of China
+National Games of Chile
+National Games of Colombia
+Paranational Games of Colombia
+National Sports Games of Sea and Beach of Colombia
+National Games of Costa Rica
+Paranational Games of Costa Rica
+National Games of India
+National Winter Games of India
+National Games of Nepal
+National Games of Pakistan
+National Games of Taiwan
+National Games of Uruguay
+National Games of Venezuela
+National Para Games of Venezuela
+National Deaf Games of Singapore
+National Disabled Games of Taiwan
+National Youth Games of Nigeria
+National High School Games
+National Indigenous Games of Taiwan
+National Intellectual Games
+National Intercity Games of the People's Republic of China
+National Intercollegiate Athletic Games
+National Intercollegiate Deaf Athletic Games
+National Children and Youth Olympiad of Mexico
+National Paralympic Week
+National Peasants' Games
+National Red Games
+National School Games of Singapore
+National Sports Festival of Japan
+National Sports Week
+National Sports Winter Festival of Japan
+National Sports Tournament for the Disabled of Japan
+National High School Student Sports Games of the People's Republic of China
+National University Student Sports Games of the People's Republic of China
+National Universiade
+National Student Sports Games of the People's Republic of China
+National Student Sports Games of the People's Republic of China
+National Traditional Games of Ethnic Minorities of the People's Republic of China
+National Youth Olympics of Cross Country Races of Polish
+National Youth Olympics of Indoor Sports of Polish
+National Youth Olympics of Mental Sports of Polish
+National Youth Olympics of Summer Sports of Polish
+National Youth Olympics of Winter Sports of Polish
+Nauru National Games
+New Zealand Deaf Games
+New Zealand Games
+New Zealand Masters Games
+New Zealand University Games
+New Zealand Winter Games
+Nigerian National Sports Festival
+Nigerian University Games
+Nitro World Games
+Hot Wheels Nitro Junior Games
+Nordic Games
+North American Indigenous Games
+North American Outgames
+North Queensland Games
+Summer Olympic Games
+Winter Olympic Games
+Olympic Virtual Sports Festival
+Pacific Games
+Pacific Mini Games
+Pacific Ocean Games
+Pacific School Games
+Palarong Pambansa
+Pan American Games
+Pan American Deaf Youth Games
+Winter Pan American Games
+Pan American Games for Patients with Asthma
+Pan American Games for the Blind
+Pan American Games for the Deaf
+Pan American Maccabi Games
+Pan American Martial Arts Games
+Pan American Masters Games
+Pan American Sports Festival
+Pan American Wheelchair Games
+Pan Arab Games
+Pan Arab Games for the Handicapped
+Pan-Armenian Summer Games
+Pan-Armenian Winter Games
+Pan Pacific Masters Games
+Paralympic Games
+Paralympic Winter Games
+Parapan American Games
+Youth Parapan American Games
+PCU Games
+People's Olympiad
+Philippine National Games
+Philippine University Games
+Punjab Games
+Qeltic Games
+Red Sport International of Summer
+Red Sport International of Winter
+Respublika Universiade
+Reykjavik International Games
+SARPCCO Games
+Saudi Games
+SAUSSA Games
+SELL Student Games
+SELL Student Winter Games
+Senior Olympics
+Senior Winter Olympics
+Seven Universities Athletic Meet
+Sky Games
+South American Games
+South American Beach Games
+South American Deaf Games
+South American Masters Games
+South American Para Games
+South American University Games
+South American Youth Games
+South Asian Games
+South Asian Beach Games
+South Asian Winter Games
+South Australian Masters Games
+South Pacific Games
+South Pacific Masters Games
+Southeast Asian Games
+Summer Spartakiad
+Winter Spartakiad
+Summer Spartakiad of the Peoples of the USSR
+Winter Spartakiad of the Peoples of the USSR
+Special Olympics National Summer Games in New Zealand
+Special Olympics National Winter Games in New Zealand
+Special Olympics USA
+Special Olympics Summer World Games
+Special Olympics Winter World Games
+Asia Pacific Summer Special Olympic Games
+European Summer Special Olympic Games
+Special Olympics Pan African Games
+SportAccord World Mind Games
+Somaliland Regional Games
+South African Games
+Shanghai International Games
+Singapore University Games
+Sri Lanka University Games
+State Games of America
+Starty nadezhd
+Sukma Games
+Para Sukma Games
+Swedish Games
+TAFISA World Martial Arts Festival
+TAFISA World Sport for All Games
+TAFISA European Sport for All Games
+Tailteann Games
+Thailand National Games
+Thailand National Youth Games
+Thailand Sports University Games
+The Norway Championships Week of Summer
+NM Week
+The Norway Championships Week of Winter
+Asia Pride Games
+The Straits Games
+The Finnish Championships Week
+SM-viikko
+The Swedish Championships Week of Summer
+The Swedish Championships Week of Winter
+The World Children's Winners Games
+Transplant Games of America
+Tras-Andean Games
+Trasandina Youth Sports Games
+Trinidad and Tobago Beach Games
+Trisome Games
+Euro Trisome Games
+Tropic Cup Games
+Turkic International Youth Festivals
+Turkic Universiade
+Tuvalu Games
+U.S. Olympic Festival
+UK School Games
+UniSport Nationals
+United World Games
+USA Masters Games
+USIP World Police Games
+Vietnam National Games
+Virtus Americas Regional Games
+Virtus European Games
+Virtus Global Games
+Virtus Oceania Asia Games
+West Asian Games
+West Asian Para Games
+West African Games
+West African University Games
+Western Canada Summer Games
+Western Asiatic Games
+Women's Islamic Games
+Women's Olympiad
+Women's World Games
+World Abilitysport Games
+World Air Games
+World Artistic Games
+World Beach Games
+World Bridge Games
+World Combat Games
+World Company Sports Games
+World Cyber Games
+World Dancesport Games
+World Deaf Youth Games
+World Dwarf Games
+World Equestrian Games
+World Eskimo Indian Olympics
+World e-Sports Games
+World Ex-servicemen's Wheelchair Games
+World Firefighters Games
+World Festival of Youth and Students
+World Games
+World Indigenous Games
+World Lithuanians Games
+World Martial Arts Games
+World Masters Games
+Winter World Masters Games
+World Medical and Health Games
+World Mind Sports Games
+World Nature Games
+World Nomad Games
+World OutGames
+World Police and Fire Games
+World Polonia Games of Summer
+World Polonia Games of Winter
+World Roller Games
+World Scholar-Athlete Games
+World Surfing Games
+World Transplant Summer Games
+World Transplant Winter Games
+World Urban Games
+World Youth Games
+X Games
+Winter X Games
+Summer X Games Asia
+Winter X Games Asia
+Summer X Games Europe
+Winter X Games Europe
+X Games Latin America
+X Games Oceania
+Youth Centennial Games
+Summer Youth Olympic Games
+Winter Youth Olympic Games
+Youth World Games
+Zimbabwe National Youth Games
+Zimbabwe National Youth And Paralympic Games
+Battle of Zama
+Battle of Marathon
+Battle of Thermopylae
+Battle of Plataea
+Greco-Persian Wars
+Battle of Nemea
+Battle of Leuctra
+Battle of Chaeronea
+Battle of the Hydaspes
+Battle of Cynoscephalae
+Battle of Pydna
+Battle of Carrhae
+Battle of Cunaxa
+Battle of the Granicus
+Battle of Issus
+Battle of Gaugamela
+Battle of the Trebbia River
+Second Punic War
+Battle of Trasimene
+Battle of Cannae
+Battle of Arausio
+Battle of Pharsalus
+Battle of Thapsus
+Battle of Munda
+Battle of Mursa
+Battle of Adrianople
+Battle of the Catalaunian Plains
+Battle of Kadesh
+Battle of the Pyramids
+French Revolutionary wars
+Battles of El-Alamein
+Battle of Adwa
+Battle of the Three Kings
+Battle of Blood River
+Battles of Isandlwana and Rorke’s Drift
+Battles of Taraori
+Battles of Panipat
+Battle of Talikota
+Battle of Tukaroi
+Battle of Gogunda
+Battle of Bahadurpur
+Battle of Samugarh
+Battle of Deorai
+Battle of Jajau
+Battle of Karnal
+Battle of Wandiwash
+Seven Years’ War
+Battle of Barari Ghat
+Battle of Baksar
+Battle of Firoz Shah
+First Sikh War
+Battle of Sobraon
+Battle of Nahāvand
+Battle of Dandānqān
+Battle of al-Qādisiyyah
+Battle of Karbalāʾ
+Battle of Ḥaṭṭīn
+Battle of Arsūf
+Battle of Sekigahara
+Battle of Okinawa
+Battle of Ngasaunggyan
+Battle of Nong Sa Rai
+Battle of Miāni
+Battle of Gujrat
+Battle of Badr
+Battle of the Ditch
+Battle of ad-Dirʿīyah
+Battle of Al-Mulaydah
+Battle of Ṣiffīn
+Battle of ʿAyn Jālūt
+Battle of Kadesh
+Battle of Poson
+Battle of Manzikert
+Battle of Myriocephalon
+Battle of Ankara
+Battle of Chāldirān
+Battle of Nizip
+Battle of Dien Bien Phu
+first Indochina War
+Tet Offensive
+Vietnam War
+Siege of Vienna
+Battle of Wagram
+Napoleonic Wars
+Battle of Königgrätz
+Seven Weeks’ War
+Battle of the Maritsa River
+Battle of Kosovo
+Battle of Nicopolis
+Battle of Varna
+Battle of Kosovo
+Battle of Zenta
+Battle of Drăgăşani
+War of Greek Independence
+Battle of the Golden Spurs
+Franco-Flemish War
+Battle of Ramillies
+War of the Spanish Succession
+Battle of Oudenaarde
+Battle of Malplaquet
+Battle of Fontenoy
+Battle of Fleurus
+Battle of Waterloo
+First Battle of Ypres
+Battle of Ypres
+Third Battle of Ypres
+Battle of White Mountain
+Thirty Years’ War
+Battle of Austerlitz
+Battle of Maldon
+Battle of Hastings
+Battle of Dupplin Moor
+Battle of Neville’s Cross
+First Battle of St. Albans
+Wars of the Roses
+Second Battle of St. Albans
+Battle of Towton
+Battle of Tewkesbury
+Battle of Barnet
+Battle of Bosworth Field
+Battle of Flodden
+Battle of Newburn
+Bishops’ Wars
+Battle of Edgehill
+English Civil Wars
+Battle of Marston Moor
+Battle of Naseby
+Battle of Sedgemoor
+Battle of Tours
+Battle of Muret
+Battle of Bouvines
+Battle of Crécy
+Hundred Years’ War
+Battle of Poitiers
+Battle of Agincourt
+Battle of Formigny
+Battle of Castillon
+Battle of Rocroi
+Battle of the Dunes
+Franco-Spanish War
+Battles of Mars-la-Tour and Gravelotte
+Franco-German War
+Battle of Sedan
+First Battle of the Marne
+Battle of Verdun
+First Battle of the Somme
+Battle of Cambrai
+Second Battle of the Somme
+Second Battle of the Marne
+Battles of the Meuse-Argonne
+Normandy Invasion
+Battle of Breitenfeld
+Battle of Lützen
+Battle of Nördlingen
+Battle of Wittstock
+Battle of Blenheim
+Battle of Ulm
+Battle of Jena
+Battle of Dresden
+Battle of Leipzig
+Battle of Mohács
+Battle of the Boyne
+Battle of Taginae
+Battle of Mons Lactarius
+Battle of Campaldino
+Battle of Marignano
+Battle of Pavia
+Battle of Lodi
+Battle of Marengo
+Battle of Custoza
+first War of Italian Independence
+Battle of Magenta
+second War of Italian Independence
+Battle of Solferino
+Battle of Custoza
+Battles of the Isonzo
+Battle of Caporetto
+Battle of Tannenberg
+Battle of Beresteczko
+Battle of Tannenberg
+Battle of the Neva
+Battle of Kulikovo
+Battle of the Vorskla River
+Battle of the Ugra
+Battle of Poltava
+Second Northern War
+Battle of Eylau
+Battle of Friedland
+Battle of Borodino
+Siege of Leningrad
+Battle of Stalingrad
+Battle of Kursk
+Battle of Bannockburn
+Battle of Halidon Hill
+Battle of Dunbar
+Battle of Culloden
+Forty-five Rebellion
+Battle of Alarcos
+Battle of Las Navas de Tolosa
+Battle of Río Salado
+Battle of Vitoria
+Battle of Morgarten
+Battle of Sempach
+Battle of Näfels
+Battle of Morat
+Battle of the Alma
+Crimean War
+Siege of Sevastopol
+Battle of Balaklava
+Battle of Quebec
+Battle of Quebec
+American Revolution
+Battle of the Thames
+War of 1812
+Battle of Châteauguay
+Battle of Crysler’s Farm
+Battle of Chippewa
+Battle of Lundy’s Lane
+Battle of Buena Vista
+Mexican-American War
+Battle of Cerro Gordo
+Battle of Contreras
+Battle of Puebla
+Battle of Celaya
+Mexican Revolution
+Battle of the Monongahel
+Battles of Lexington and Concord
+Battle of Ticonderoga
+Battle of Bunker Hill
+Battle of Moore’s Creek Bridge
+Battle of Long Island
+Battle of White Plains
+Battles of Trenton and Princeton
+Battle of Oriskany
+Battle of Bennington
+Battles of Saratoga
+Battle of the Brandywine
+Battle of Germantown
+Battle of Monmouth
+Battle of Camden
+Battle of Kings Mountain
+Battle of Cowpens
+Battle of Guilford Courthouse
+Battle of Eutaw Springs
+St. Clair’s Defeat
+Battle of Fallen Timbers
+Battle of Tippecanoe
+Battle of Queenston Heights
+Battle of New Orleans
+Battle of San Jacinto
+Texas Revolution
+Battle of Palo Alto
+Battles of Bull Run
+American Civil War
+Battle of Wilson’s Creek
+Battle of Fort Henry
+Battle of Fort Donelson
+Battle of Pea Ridge
+Battle of Seven Pines
+Seven Days’ Battles
+Battle of Antietam
+Battle of Corinth
+Battle of Perryville
+Battle of Fredericksburg
+Battle of Stones River
+Battle of Chancellorsville
+Battle of Big Black River
+Battle of Gettysburg
+Battle of Chickamauga Creek
+Battle of Chattanooga
+Battle of Lookout Mountain
+Battle of the Wilderness
+Battle of Spotsylvania Court House
+Battle of Cold Harbor
+Battle of Monocacy
+Battle of Mobile Bay
+Battle of Nashville
+Battle of the Little Bighorn
+First Battle of Cepeda
+Second Battle of Cepeda
+Battle of Pavón
+Battle of Chacabuco
+Battle of Maipú
+Battle of Boyacá
+Battle of Pichincha
+Battle of Ayacucho
+Battle of Carabobo
+Governor General’s Literary Awards
+Griffin Poetry Prize
+Scotiabank Giller Prize
+Canadian-American Challenge Cup
+Mao Dun Literature Prize
+Legion of Honour
+Prix Femina
+Prix Goncourt
+Prix Renaudot
+Croix de Guerre
+Legion of Honour
+Büchner Prize
+Iron Cross
+Crossword Book Awards
+Jnanpith Award
+IMPAC Dublin Literary Award
+Bagutta Prize
+Strega Prize
+P.C. Hooft Prize
+Abel Prize
+Nobel Peace Prize
+Praemium Imperiale
+Order of the Chrysanthemum
+Order of the Paulownia Sun
+Order of the Rising Sun
+Akutagawa Prize
+Naoki Prize
+Tanizaki Prize
+Order of the Paulownia Sun
+Order of the Rising Sun
+Order of Lenin
+Big Book Prize
+Pushkin Prize
+Cervantes Prize
+Planeta Prize
+Nobel Prize
+Astrid Lindgren Memorial Award
+Nobel Prize
+Turner Prize
+George Cross
+The Most Ancient and Most Noble Order of the Thistle
+The Most Distinguished Order of Saint Michael and Saint George
+The Most Excellent Order of the British Empire
+The Most Honourable Order of the Bath
+The Most Noble Order of the Garter
+Order of the Companions of Honour
+Order of Merit
+O.M.
+Royal Victorian Order
+Baileys Women’s Prize for Fiction
+Booker Prize
+Caine Prize
+Commonwealth Book Prize
+Costa Book Award
+Frank O’Connor Short Story Award
+Newdigate Prize
+Distinguished Service Order
+George Cross
+The Most Excellent Order of the British Empire
+The Most Honourable Order of the Bath
+Victoria Cross
+Copley Medal
+Curtis Cup
+Davis Cup
+Ryder Cup
+Pritzker Prize
+Medal for Merit
+Presidential Medal of Freedom
+Spingarn Medal
+Academy Award
+Emmy Award
+Golden Globe Award
+Tony Awards
+Bollingen Prize
+Caldecott Medal
+Frost Medal
+National Book Award
+Nebula Award
+Neustadt Prize
+Newbery Medal
+PEN Award
+Faulkner Award
+Nabokov Award
+Pulitzer Prize
+Ruth Lilly Poetry Prize
+Peabody Award
+Pulitzer Prize
+Medal of Honor
+Legion of Merit
+Presidential Medal of Freedom
+Purple Heart
+Grammy Award
+Pulitzer Prize
+Templeton Prize
+Draper Prize
+America’s Cup
+Canadian-American Challenge Cup
+Curtis Cup
+Davis Cup
+Gold Cup
+Golden Gloves
+Heisman Trophy
+Presidential Medal of Freedom
+Ryder Cup
+Stanley Cup
+Hugo Award
+Nordic Council Literature Prize
+Fields Medal
+Turing Award
+African Cup of Nations
+Cricket World Cup
+Rugby Union World Cup
+Women’s World Cup
+Trojan War
+First Messenian War
+Lelantine War
+Lelantine War
+Second Messenian War
+Greco-Persian Wars
+Peloponnesian War
+Lamian War
+First Punic War
+Second Punic War
+Third Punic War
+Gallic Wars
+Jinshin-no-ran
+Norman Conquest
+Crusades
+Gempei War
+Barons’ War
+Hundred Years’ War
+War of the Eight Saints
+Hundred Years’ War
+Thirteen Years’ War
+Wars of the Roses
+Ōnin War
+Count’s War
+Araucanian Wars
+Livonian War
+Eighty Years’ War
+War of the Three Henrys
+Eighty Years’ War
+Kalmar War
+Thirty Years’ War
+Powhatan War
+Bishops’ Wars
+English Civil Wars
+First Northern War
+War of Devolution
+King Philip’s War
+War of the Grand Alliance
+King William’s War
+Second Northern War
+War of the Spanish Succession
+War of the Emboabas
+Carnatic Wars
+Queen Anne’s War
+Yamasee War
+War of the Polish Succession
+War of Jenkins’ Ear
+War of the Austrian Succession
+King George’s War
+French and Indian War
+Silesian Wars
+Seven Years’ War
+Lord Dunmore’s War
+Rohilla War
+American Revolution
+First Maratha War
+War of the Bavarian Succession
+Cape Frontier Wars
+French Revolution
+French revolutionary wars
+Cape Frontier Wars
+French revolutionary wars
+War of the Oranges
+Tripolitan War
+Second Maratha War
+Third Maratha War
+Napoleonic Wars
+Black War
+Peninsular War
+War of 1812
+Creek War
+War of Greek Independence
+Padri War
+Naning War
+Pastry War
+Mexican-American War
+Crimean War
+Bleeding Kansas
+American Civil War
+War of the Triple Alliance
+Seven Weeks’ War
+Selangor Civil War
+Franco-German War
+Acehnese War
+Red River Indian War
+Serbo-Turkish War
+Anglo-Zulu War
+War of the Pacific
+Gun War
+Sino-French War
+Serbo-Bulgarian War
+Sino-Japanese War
+Spanish-American War
+Philippine-American War
+South African War
+The War of a Thousand Days
+Acehnese War
+Philippine-American War
+South African War
+The War of a Thousand Days
+Boxer Rebellion
+Moro Wars
+Russo-Japanese War
+Pig War
+Mexican Revolution
+Italo-Turkish War
+World War I
+Baltic War of Liberation
+Russian Civil War
+Russo-Polish War
+Rif War
+Chaco War
+Italo-Ethiopian War
+Spanish Civil War
+Sino-Japanese War
+Phony War
+Russo-Finnish War
+World War II
+Greek Civil War
+Arab-Israeli wars
+Korean War
+Algerian War
+Vietnam War
+Six-Day War
+War of Attrition
+Yom Kippur War
+Dirty War
+Afghan War
+Iran-Iraq War
+Falkland Islands War
+Persian Gulf War
+Bosnian conflict
+Kosovo conflict
+Afghanistan War
+Iraq War
+Syrian Civil War
+The Birth of a Nation
+Intolerance
+Tarzan of the Apes
+The Cabinet of Dr. Caligari
+The Kid
+Safety Last!
+Greed
+The Thief of Bagdad
+Battleship Potemkin
+Ben-Hur
+The Big Parade
+The Gold Rush
+The Phantom of the Opera
+The Son of the Sheik
+The General
+The Jazz Singer
+Metropolis
+Napoléon
+Wings
+The Circus
+The Crowd
+La Passion de Jeanne d’Arc
+All Quiet on the Western Front
+Cimarron
+City Lights
+Dr. Jekyll and Mr. Hyde
+Dracula
+Frankenstein
+The Front Page
+Little Caesar
+M
+The Public Enemy
+Freaks
+Grand Hotel
+I Am a Fugitive from a Chain Gang
+The Mummy
+Scarface: The Shame of a Nation
+Cavalcade
+Dinner at Eight
+Duck Soup
+nd Street
+The Invisible Man
+King Kong
+She Done Him Wrong
+Sons of the Desert
+Babes in Toyland
+It Happened One Night
+The Thin Man
+Anna Karenina
+Bride of Frankenstein
+The Informer
+Mutiny on the Bounty
+A Night at the Opera
+The 39 Steps
+Top Hat
+After the Thin Man
+The Charge of the Light Brigade
+Fury
+The Great Ziegfeld
+Mr. Deeds Goes to Town
+Modern Times
+The Petrified Forest
+San Francisco
+Swing Time
+The Awful Truth
+Grand Illusion
+The Life of Émile Zola
+Lost Horizon
+The Prisoner of Zenda
+Snow White and the Seven Dwarfs
+The Adventures of Robin Hood
+Angels with Dirty Faces
+Bringing Up Baby
+Jezebel
+The Lady Vanishes
+You Can’t Take It with You
+Beau Geste
+Dark Victory
+Drums Along the Mohawk
+The Four Feathers
+Gone with the Wind
+Goodbye, Mr. Chips
+Gunga Din
+The Hound of the Baskervilles
+The Hunchback of Notre Dame
+Mr. Smith Goes to Washington
+Ninotchka
+The Roaring Twenties
+Son of Frankenstein
+Stagecoach
+The Wizard of Oz
+Wuthering Heights
+The Bank Dick
+Fantasia
+The Grapes of Wrath
+The Great Dictator
+His Girl Friday
+Northwest Passage
+The Philadelphia Story
+Pinocchio
+Rebecca
+Citizen Kane
+The Devil and Daniel Webster
+Dumbo
+Here Comes Mr. Jordan
+High Sierra
+How Green Was My Valley
+The Maltese Falcon
+Meet John Doe
+Penny Serenade
+Sergeant York
+Sullivan’s Travels
+The Wolf Man
+Bambi
+Casablanca
+Cat People
+In Which We Serve
+The Magnificent Ambersons
+Mrs. Miniver
+Now, Voyager
+The Pride of the Yankees
+Road to Morocco
+Saboteur
+To Be or Not to Be
+Yankee Doodle Dandy
+For Whom the Bell Tolls
+The Life and Death of Colonel Blimp
+The Ox-Bow Incident
+Shadow of a Doubt
+Double Indemnity
+Gaslight
+Going My Way
+Henry V
+Laura
+Meet Me in St. Louis
+Murder, My Sweet
+The Scarlet Claw
+Thirty Seconds over Tokyo
+To Have and Have Not
+The Uninvited
+And Then There Were None
+Brief Encounter
+Dead of Night
+Detour
+The Lost Weekend
+Open City
+They Were Expendable
+The Best Years of Our Lives
+The Big Sleep
+The Blue Dahlia
+Great Expectations
+It’s a Wonderful Life
+The Killers
+My Darling Clementine
+The Postman Always Rings Twice
+Song of the South
+Body and Soul
+Brute Force
+A Double Life
+Gentleman’s Agreement
+Kiss of Death
+The Lady from Shanghai
+Life with Father
+Miracle on 34th Street
+Out of the Past
+The Big Clock
+Fort Apache
+Hamlet
+Key Largo
+Mr. Blandings Builds His Dream House
+Oliver Twist
+Red River
+The Red Shoes
+Scott of the Antarctic
+Sorry, Wrong Number
+Treasure of the Sierra Madre
+Adam’s Rib
+All the King’s Men
+Champion
+The Heiress
+Kind Hearts and Coronets
+On the Town
+Sands of Iwo Jima
+The Set-Up
+Twelve O’Clock High
+White Heat
+All About Eve
+The Asphalt Jungle
+Born Yesterday
+Cinderella
+D.O.A.
+Father of the Bride
+The Gunfighter
+Harvey
+No Way Out
+Sunset Boulevard
+The African Queen
+Alice in Wonderland
+An American in Paris
+A Christmas Carol
+The Day the Earth Stood Still
+Detective Story
+The Lavender Hill Mob
+A Place in the Sun
+Strangers on a Train
+A Streetcar Named Desire
+The Thing from Another World
+The Bad and the Beautiful
+The Greatest Show on Earth
+High Noon
+Limelight
+Moulin Rouge
+The Quiet Man
+Scaramouche
+Singin’ in the Rain
+The Big Heat
+From Here to Eternity
+House of Wax
+Mogambo
+Roman Holiday
+Shane
+Stalag 17
+The Wages of Fear
+The Wild One
+The Caine Mutiny
+Dial M for Murder
+Godzilla
+On the Waterfront
+Rear Window
+Riot in Cell Block 11
+Seven Brides for Seven Brothers
+Seven Samurai
+A Star Is Born
+,000 Leagues Under the Sea
+Bad Day at Black Rock
+Blackboard Jungle
+The Dam Busters
+The Desperate Hours
+Les Diaboliques
+East of Eden
+Guys and Dolls
+Lady and the Tramp
+The Ladykillers
+The Man with the Golden Arm
+Marty
+Mister Roberts
+The Night of the Hunter
+Oklahoma!
+Rebel Without a Cause
+The Seven Year Itch
+Summertime
+Anastasia
+Attack!
+Forbidden Planet
+Friendly Persuasion
+Giant
+Invasion of the Body Snatchers
+The Killing
+The King and I
+Lust for Life
+The Man Who Knew Too Much
+The Searchers
+The Abominable Snowman
+Desk Set
+A Face in the Crowd
+Gunfight at the O.K. Corral
+The Incredible Shrinking Man
+Jailhouse Rock
+The Seventh Seal
+Sweet Smell of Success
+ Angry Men
+Wild Strawberries
+Witness for the Prosecution
+The Blob
+The Defiant Ones
+The Fly
+Gigi
+Horror of Dracula
+The Horse’s Mouth
+House on Haunted Hill
+A Night to Remember
+Some Came Running
+Thunder Road
+Touch of Evil
+Vertigo
+The Vikings
+The Young Lions
+Anatomy of a Murder
+Ben-Hur
+The Diary of Anne Frank
+The 400 Blows
+The Hound of the Baskervilles
+Journey to the Center of the Earth
+North by Northwest
+On the Beach
+Pillow Talk
+Rio Bravo
+Some Like It Hot
+The Alamo
+The Apartment
+La dolce vita
+Elmer Gantry
+The Entertainer
+Inherit the Wind
+The League of Gentlemen
+The Magnificent Seven
+Ocean’s Eleven
+Peeping Tom
+Psycho
+Saturday Night and Sunday Morning
+Spartacus
+Swiss Family Robinson
+The Time Machine
+Two Women
+Village of the Damned
+Breakfast at Tiffany’s
+El Cid
+The Day the Earth Caught Fire
+The Guns of Navarone
+The Hustler
+The Innocents
+Judgment at Nuremberg
+Jules and Jim
+The Misfits
+Mysterious Island
+One-Eyed Jacks
+One Hundred and One Dalmatians
+One, Two, Three
+A Raisin in the Sun
+Splendor in the Grass
+A Taste of Honey
+Viridiana
+West Side Story
+Whistle Down the Wind
+Yojimbo
+Billy Budd
+Birdman of Alcatraz
+Cape Fear
+The Counterfeit Traitor
+Days of Wine and Roses
+How the West Was Won
+Knife in the Water
+Lolita
+The Loneliness of the Long Distance Runner
+Lonely Are the Brave
+The Longest Day
+The Man Who Shot Liberty Valance
+The Manchurian Candidate
+The Miracle Worker
+The Music Man
+Mutiny on the Bounty
+The Phantom of the Opera
+Requiem for a Heavyweight
+Ride the High Country
+To Kill a Mockingbird
+What Ever Happened to Baby Jane?
+The Wonderful World of the Brothers Grimm
+ Days at Peking
+The Birds
+Charade
+Cleopatra
+From Russia with Love
+The Great Escape
+The Haunting
+Hud
+It’s a Mad, Mad, Mad, Mad World
+Jason and the Argonauts
+Lilies of the Field
+Lord of the Flies
+The Nutty Professor
+The Pink Panther
+This Sporting Life
+Tom Jones
+The Americanization of Emily
+Becket
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+Fail Safe
+The Fall of the Roman Empire
+First Men in the Moon
+A Fistful of Dollars
+Goldfinger
+A Hard Day’s Night
+The Incredible Mr. Limpet
+The Killers
+Marriage, Italian Style
+Mary Poppins
+The Masque of the Red Death
+My Fair Lady
+The Night of the Iguana
+Robin and the Seven Hoods
+Seven Days in May
+A Shot in the Dark
+The Train
+The Umbrellas of Cherbourg
+Zulu
+Doctor Zhivago
+For a Few Dollars More
+The Hill
+In Harm’s Way
+The Ipcress File
+It Happened Here
+The Knack... and How to Get It
+Morituri
+The Pawnbroker
+Repulsion
+The Sound of Music
+The Spy Who Came In from the Cold
+Thunderball
+Von Ryan’s Express
+Alfie
+The Battle of Algiers
+Blow-Up
+Fahrenheit 451
+Fantastic Voyage
+The Fortune Cookie
+The Ghost and Mr. Chicken
+The Good, the Bad, and the Ugly
+Harper
+Khartoum
+A Man for All Seasons
+The Naked Prey
+Our Man Flint
+The Professionals
+The Quiller Memorandum
+The Russians Are Coming, the Russians Are Coming
+The Sand Pebbles
+Seconds
+The Silencers
+Torn Curtain
+Who’s Afraid of Virginia Woolf?
+Belle de jour
+Bonnie and Clyde
+Camelot
+Casino Royale
+Cool Hand Luke
+The Dirty Dozen
+The Graduate
+Hombre
+In Cold Blood
+In the Heat of the Night
+The Jungle Book
+Point Blank
+To Sir, with Love
+Tony Rome
+Two for the Road
+You Only Live Twice
+Bullitt
+Charly
+Chitty Chitty Bang Bang
+Coogan’s Bluff
+The Detective
+Faces
+Funny Girl
+The Lion in Winter
+The Love Bug
+Madigan
+Night of the Living Dead
+The Odd Couple
+Oliver!
+Once upon a Time in the West
+Planet of the Apes
+The Producers
+Romeo and Juliet
+Rosemary’s Baby
+The Stalking Moon
+The Swimmer
+Targets
+The Thomas Crown Affair
+: A Space Odyssey
+Where Eagles Dare
+Will Penny
+Witchfinder General
+Yellow Submarine
+Battle of Britain
+Bob & Carol & Ted & Alice
+A Boy Named Charlie Brown
+The Bridge at Remagen
+Butch Cassidy and the Sundance Kid
+Easy Rider
+The Italian Job
+Medium Cool
+Midnight Cowboy
+On Her Majesty’s Secret Service
+Take the Money and Run
+True Grit
+The Wild Bunch
+Patton
+The French Connection
+The Godfather
+The Sting
+The Godfather, Part II
+One Flew over the Cuckoo’s Nest
+Rocky
+Annie Hall
+Star Wars
+The Deer Hunter
+Kramer vs. Kramer
+Ordinary People
+Body Heat
+Chariots of Fire
+Gandhi
+Terms of Endearment
+Amadeus
+Out of Africa
+Platoon
+The Last Emperor
+Rain Man
+Driving Miss Daisy
+Dances with Wolves
+The Silence of the Lambs
+Twin Peaks: Fire Walk with Me
+Unforgiven
+Schindler’s List
+Forrest Gump
+Braveheart
+The English Patient
+Titanic
+Shakespeare in Love
+American Beauty
+Gladiator
+A Beautiful Mind
+Chicago
+The Lord of the Rings: The Return of the King
+The Incredibles
+Million Dollar Baby
+Crash
+The Departed
+No Country for Old Men
+Slumdog Millionaire
+The Hurt Locker
+Inception
+The King’s Speech
+The Artist
+Argo
+12 Years a Slave
+Birdman or (The Unexpected Virtue of Ignorance)

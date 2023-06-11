@@ -1,7 +1,7 @@
 # miner/trainers/ner_trainer.py
 
 import logging
-from typing import Literal
+from typing import Optional, Dict, Literal
 
 import wandb
 import numpy as np
@@ -10,6 +10,8 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from torch.optim import SGD, Adam, lr_scheduler
+from seqeval.metrics import f1_score
+from seqeval.scheme import IOB2
 
 from miner.modules import NER
 from miner.optimizer import SAM
@@ -176,8 +178,11 @@ class NER_Trainer():
     def __init__(
         self, ner: NER, lr: float, patience: int, min_delta: float,
         epochs: int, max_length: int, device: Literal["cpu", "cuda"],
-        accumulation_steps: int, ner_path: str, momentum: float, clip: float
+        accumulation_steps: int, ner_path: str, momentum: float,sam: bool,
+        optimizer: Literal["Adam", "SGD"],idx2label: Dict[int, str],
+        clip: Optional[float]=None
     ):
+        self.sam = sam
         self.path = ner_path
         self.device = device
         self.ner = ner
@@ -185,14 +190,33 @@ class NER_Trainer():
         self.accumulation_steps = accumulation_steps
         self.max_length = max_length
         self.clip = clip
-        base_optimizer = SGD
-        # self.optimizer = SAM(ner.parameters(), base_optimizer, lr=lr)
-        self.optimizer= SAM(
-            ner.parameters(),
-            base_optimizer,
-            lr=lr,
-            momentum=momentum
-        )
+        self.idx2label = idx2label
+        self.O = [k for k, v in idx2label.items() if v == "O"][0]
+        if optimizer == "SGD":
+            if sam:
+                self.optimizer= SAM(
+                    ner.parameters(),
+                    SGD,
+                    lr=lr,
+                    momentum=momentum
+                )
+            else:
+                self.optimizer = SGD(
+                    ner.parameters(),
+                    lr=lr,
+                    momentum=momentum
+                )
+        else:
+            if sam:
+                self.optimizer = SAM(
+                    ner.parameters(),
+                    Adam,
+                    lr=lr
+                )
+            else: self.optimizer = Adam(
+                ner.parameters(),
+                lr=lr
+            )
         self.lrs = LRScheduler(
             optimizer=self.optimizer,
             patience=patience,
@@ -218,22 +242,49 @@ class NER_Trainer():
             y_list.append(y)                                                # Save the targets
             if ((idx + 1) % self.accumulation_steps == 0) \
             or ((idx + 1) == len(train_dataloader)):
-                nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
-                self.optimizer.first_step(zero_grad=True)                   # First step
-                for i in range(len(y_list)):
-                    loss = (
-                        self.ner(x_list[i], y_list[i])
-                        / self.accumulation_steps
-                    )
-                    loss.backward()
-                nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
-                self.optimizer.second_step(zero_grad=True)                  # Second step
-                x_list, y_list = [], []                                     # Clear
+                if self.clip is not None:
+                    nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
+                if self.sam:
+                    self.optimizer.first_step(zero_grad=True)                   # First step
+                    for i in range(len(y_list)):
+                        loss = (
+                            self.ner(x_list[i], y_list[i])
+                            / self.accumulation_steps
+                        )
+                        loss.backward()
+                    if self.clip is not None:
+                        nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
+                    self.optimizer.second_step(zero_grad=True)                  # Second step
+                    x_list, y_list = [], []                                     # Clear
+                elif not self.sam:
+                    self.optimizer.step()
             idx += 1
         train_loss = np.mean(losses)
         return train_loss
 
-    def train(self, train_dataloader: DataLoader):
+    @torch.no_grad()
+    def _validate(self, val_dataloader: DataLoader):
+        logging.info("Validating...")
+        torch.set_printoptions(profile="full")
+        self.ner.eval()
+        y_true = []
+        y_pred = []
+        for x, y in val_dataloader:
+            result = self.ner.viterbi_decode(x)
+            y_pred.extend(result)
+            y_true.extend(y.tolist())
+        for i, y in enumerate(y_pred):
+            for j, _ in enumerate(y):
+                y_pred[i][j] = self.idx2label[y_pred[i][j]]
+                y_true[i][j] = self.idx2label[y_true[i][j]]
+            y_true[i] = y_true[i][:len(y_pred[i])]
+            y_true[i][-1] = self.idx2label[self.O] # Replace the </s> tagged with PAD by an O for proper alignement
+        return f1_score(y_true, y_pred, mode="strict", scheme=IOB2)
+
+    def train(
+        self, train_dataloader: DataLoader,
+        val_dataloader: Optional[DataLoader]=None, wandb_: bool=False
+    ):
         """Trains the named entity recognizer and saves the best one at the end
         of each epoch.
 
@@ -244,18 +295,20 @@ class NER_Trainer():
         """
         best_loss = 1e100
         train_loss = 0.0
+        f1 = 0.0
         try:
             for epoch in tqdm(range(self.epochs)):
+                lr = self.lrs.optimizer.param_groups[0]["lr"]
                 train_loss = self._fit(train_dataloader=train_dataloader,)
-                wandb.log({"train_loss": train_loss})
-                self.lrs()
-                self.early_stopping(train_loss)
-                if self.early_stopping.early_stop:
-                    break
+                if val_dataloader is not None:
+                    f1 = self._validate(val_dataloader)
+                if wandb_:
+                    wandb.log({"lr": lr, "train_loss": train_loss, "f1": f1})
                 logging.info(
                     f"Epoch: {epoch + 1}\n"
-                    + f"LR: {self.lrs.optimizer.param_groups[0]['lr']}\n"
+                    + f"LR: {lr}\n"
                     + f"Train Loss: {train_loss}\n"
+                    + f"F1: {f1}"
                 )
                 if train_loss <= best_loss:
                     torch.save({
@@ -264,6 +317,10 @@ class NER_Trainer():
                         "loss": train_loss,
                     }, self.path)
                     best_loss = train_loss
+                self.lrs()
+                self.early_stopping(train_loss)
+                if self.early_stopping.early_stop:
+                    break
         except KeyboardInterrupt:
             logging.warning("Exiting from training early.")
             if train_loss <= best_loss:

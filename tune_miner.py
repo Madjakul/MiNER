@@ -27,11 +27,10 @@ if __name__=="__main__":
     max_length = 512
     epochs = 100
     ner_path = "./tmp/ner.pt"
-    lm_path = "roberta-base"
-    labels_path = "./data/labels.txt"
-    train_corpus_path = "./data/bc5cdr/cdr_val.conll"
-    val_corpus_path = "./data/bc5cdr/cdr_train.conll"
-    test_corpus_path ="./data/bc5cdr/cdr_test.conll"
+    lm_path = "./tmp/lm"
+    labels_path = "./data/bc5cdr/labels.txt"
+    train_corpus_path = "./data/bc5cdr/distant/cdr_dev.conll"
+    val_corpus_path = "./data/bc5cdr/gold/cdr_test.conll"
 
     with wandb.init(project="miner", entity="madjakul", name="bc5cdr_tuning"):
         config = wandb.config
@@ -68,7 +67,7 @@ if __name__=="__main__":
         val_dataloader = DataLoader(
             val_dataset,
             batch_size=4,
-            shuffle=True
+            shuffle=False
         )
 
         logging.info(f"Building the NER with {train_dataset.label2idx}")
@@ -79,7 +78,10 @@ if __name__=="__main__":
             num_labels=len(labels) + 1,
             padding_idx=len(labels),
             device=DEVICE,
-            dropout=config.dropout
+            dropout=config.dropout,
+            partial=True,
+            corrected_loss=True,
+            gamma=config.gamma
         ).to(DEVICE)
 
         logging.info("Training...")
@@ -94,8 +96,15 @@ if __name__=="__main__":
             accumulation_steps=4,
             ner_path=ner_path,
             momentum=config.momentum,
-            clip=config.clip
+            clip=config.clip,
+            optimizer=config.optimizer,
+            sam=bool(config.sam),
+            idx2label = {v: k for k, v in val_dataset.label2idx.items()}
         )
-        trainer.train(train_dataloader, val_dataloader)
+        trainer.train(
+            train_dataloader=train_dataloader,
+            val_dataloader=val_dataloader,
+            wandb_=True
+        )
         logging.info("--- Done ---\n\n")
 

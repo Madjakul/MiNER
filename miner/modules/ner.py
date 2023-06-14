@@ -1,5 +1,6 @@
 # miner/modules/ner.py
 
+import logging
 from typing import Optional, Literal, Dict
 
 import torch
@@ -49,11 +50,12 @@ class NER(nn.Module):
     def __init__(
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
         padding_idx: int, max_length: int, device: Literal["cpu", "cuda"],
-        dropout: float=0.3, partial=False, corrected_loss: Optional[bool]=None,
+        dropout: float=0.2, partial=False, corrected_loss: Optional[bool]=None,
         gamma: Optional[float]=None
     ):
         super(NER, self).__init__()
         self.device = device
+        logging.info(f"Loading LM checkpoint from {lm_path}")
         if lang == "fr":
             self.transformer = CamembertModel.from_pretrained(lm_path)
         elif max_length > 512:

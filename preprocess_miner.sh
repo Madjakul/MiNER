@@ -1,10 +1,10 @@
 #!/bin/bash
 
 LANG="en"
-# CORPUS_PATH="./data/ncbi_disease/ncbi_dev_corpus.txt"
-# CONLL_PATH="./data/ncbi_disease/distant/ncbi_dev.conll"
-# GAZETTEERS_PATH="./data/ncbi_disease/gazetteers/"
-# UNK_GAZETTEERS_PATH="./data/ncbi_disease/gazetteers/UNK_dev.txt"
+CORPUS_PATH="./data/ncbi_disease/ncbi_train_corpus.txt"
+CONLL_PATH="./data/ncbi_disease/distant/ncbi_train.conll"
+GAZETTEERS_PATH="./data/ncbi_disease/gazetteers/"
+UNK_GAZETTEERS_PATH="./data/ncbi_disease/gazetteers/UNK.txt"
 
 # -----------------------------------------------------------------------------
 

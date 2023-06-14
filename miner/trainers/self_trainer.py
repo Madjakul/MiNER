@@ -1,80 +1,20 @@
-# miner/trainers/ner_trainer.py
+# miner/trainers/self_trainer.py
 
+import copy
 import logging
-from typing import Optional, Dict, Literal
+from typing import Union, Optional, Literal, Dict
 
 import wandb
+import torch
 import numpy as np
 from tqdm import tqdm
-import torch
-import torch.nn as nn
-from torch.utils.data import DataLoader
-from torch.optim import SGD, Adam, lr_scheduler
-from seqeval.metrics import f1_score
 from seqeval.scheme import IOB2
+from seqeval.metrics import f1_score
+from torch.utils.data import DataLoader
+from torch.optim import Adam, lr_scheduler
 
 from miner.modules import NER
 from miner.optimizer import SAM
-
-
-class EarlyStopping():
-    """Early stoppping to stop the training when the loss does not improve
-    after certain epochs.
-
-    Parameters
-    ----------
-    patience: ``int``
-        How many epochs to wait before stopping when loss is not improving.
-    min_delta: ``int``
-        Minimum difference between new loss and old loss for new loss to be
-        considered as an improvement.
-
-    Attributes
-    ----------
-    patience: ``int``
-        How many epochs to wait before stopping when loss is not improving.
-    min_delta: ``int``
-        Minimum difference between new loss and old loss for new loss to be
-        considered as an improvement.
-    counter: ``int``
-        Number of epochs without any loss improvement, to wait before early
-        stopping.
-    best_loss: ``float``
-        Last iteration loss.
-    early_stop: ``bool``
-        Set to ``True`` if the loss is not improving above `min_delta value
-        after `patience` epochs.
-
-    References
-    ----------
-    ..  Sovit Ranjan RathSovit Ranjan Rath et al. 2021. Using learning rate
-        scheduler and early stopping with pytorch. (October 2021). Retrieved
-        November 21, 2022 from
-        https://debuggercafe.com/using-learning-rate-scheduler-and-early-stopping-with-pytorch/
-    """
-
-    def __init__(self, patience: int, min_delta: float):
-        self.patience = patience
-        self.min_delta = min_delta
-        self.counter = 0
-        self.best_loss = None
-        self.early_stop = False
-
-    def __call__(self, loss: float):
-        if self.best_loss is None:
-            self.best_loss = loss
-        elif self.best_loss - loss > self.min_delta:
-            self.counter = 0
-            self.best_loss = min(self.best_loss, loss)
-        elif self.best_loss - loss <= self.min_delta:
-            self.best_loss = min(self.best_loss, loss)
-            self.counter +=1
-            logging.info(
-                f"Early stoppping counter {self.counter} of {self.patience}."
-            )
-            if self.counter >= self.patience:
-                logging.info("Early stopping.")
-                self.early_stop = True
 
 
 class LRScheduler():
@@ -111,19 +51,19 @@ class LRScheduler():
         https://debuggercafe.com/using-learning-rate-scheduler-and-early-stopping-with-pytorch/
     """
 
-    def __init__(self, optimizer: SAM, patience: int, factor: float):
+    def __init__(self, optimizer: Union[SAM, Adam], epochs: int):
         self.optimizer = optimizer
-        self.lr_scheduler = lr_scheduler.StepLR(
+        self.lr_scheduler = lr_scheduler.LinearLR(
             optimizer=optimizer,
-            step_size=patience,
-            gamma=factor,
+            start_factor=0.1,
+            total_iters=epochs // 4
         )
 
     def __call__(self):
         self.lr_scheduler.step()
 
 
-class NER_Trainer():
+class SelfTrainer():
     """Named entity recognizer's trainer. Train and validate on given train and
     validation datasets. Learning is automatically reduced upon hitting a
     plateau. Stops the training early if needed. The model with the lowest
@@ -175,74 +115,61 @@ class NER_Trainer():
     """
 
     def __init__(
-        self, ner: NER, lr: float, patience: int, min_delta: float,
-        epochs: int, max_length: int, device: Literal["cpu", "cuda"],
-        accumulation_steps: int, ner_path: str, momentum: float,sam: bool,
-        optimizer: Literal["Adam", "SGD"],idx2label: Dict[int, str],
-        clip: Optional[float]=None
+        self, ner: NER, lr: float, train_dataloader: DataLoader, epochs: int,
+        batch_size: int, max_length: int, device: Literal["cpu", "cuda"],
+        accumulation_steps: int, ner_path: str, sam: bool,
+        idx2label: Dict[int, str],
     ):
         self.sam = sam
         self.path = ner_path
         self.device = device
+        self.batch_size = batch_size
         self.ner = ner
+        self._ner = copy.deepcopy(self.ner)
         self.epochs = epochs
         self.accumulation_steps = accumulation_steps
         self.max_length = max_length
-        self.clip = clip
         self.idx2label = idx2label
         self.O = [k for k, v in idx2label.items() if v == "O"][0]
-        if optimizer == "SGD":
-            if sam:
-                self.optimizer= SAM(
-                    ner.parameters(),
-                    SGD,
-                    lr=lr,
-                    momentum=momentum
-                )
-            else:
-                self.optimizer = SGD(
-                    ner.parameters(),
-                    lr=lr,
-                    momentum=momentum
-                )
-        else:
-            if sam:
-                self.optimizer = SAM(
-                    ner.parameters(),
-                    Adam,
-                    lr=lr
-                )
-            else: self.optimizer = Adam(
+        self.pad = [k for k, v in idx2label.items() if v == "PAD"][0]
+        if sam:
+            self.optimizer = SAM(
                 ner.parameters(),
+                Adam,
                 lr=lr
+            )
+        else:
+            self.optimizer = Adam(
+                ner.parameters(),
+                lr=lr,
+                betas=(0.9, 0.98),
+                eps=0.9
             )
         self.lrs = LRScheduler(
             optimizer=self.optimizer,
-            patience=patience*2,
-            factor=0.4
-        )
-        self.early_stopping = EarlyStopping(
-            patience=patience,
-            min_delta=min_delta
+            epochs=epochs
         )
 
     def _fit(self, train_dataloader: DataLoader):
         logging.info("Training...")
-        self.ner.train()
         losses = []
         x_list, y_list = [], []
         idx = 0
-        for x, y in tqdm(train_dataloader):
+        for x, _ in tqdm(train_dataloader):
+            self.ner.train()
             self.ner.zero_grad()
-            loss = self.ner(x, y) / self.accumulation_steps
+            self._ner.eval()
+            with torch.no_grad():
+                _y = self._ner.viterbi_decode(x)
+            _y = [s + [self.pad] * (self.max_length - len(s)) for s in _y]
+            _y = torch.LongTensor(_y).to(self.device)
+            loss = self.ner(x, _y) / self.accumulation_steps
             losses.append(loss.item())                                      # Only the first loss is saved for statistics
             loss.backward()
             x_list.append(x)                                                # Save the inputs
-            y_list.append(y)                                                # Save the targets
+            y_list.append(_y)                                                # Save the targets
             if ((idx + 1) % self.accumulation_steps == 0) \
             or ((idx + 1) == len(train_dataloader)):
-                if self.clip is not None:
-                    nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
                 if self.sam:
                     self.optimizer.first_step(zero_grad=True)                   # First step
                     for i in range(len(y_list)):
@@ -251,8 +178,6 @@ class NER_Trainer():
                             / self.accumulation_steps
                         )
                         loss.backward()
-                    if self.clip is not None:
-                        nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
                     self.optimizer.second_step(zero_grad=True)                  # Second step
                     x_list, y_list = [], []                                     # Clear
                 elif not self.sam:
@@ -314,12 +239,10 @@ class NER_Trainer():
                         "model_state_dict": self.ner.state_dict(),
                         "optimizer_state_dict": self.optimizer.state_dict(),
                         "loss": train_loss,
-                    }, self.path)
+                    }, "./tmp/ner_.pt")
                     best_loss = train_loss
                 self.lrs()
-                self.early_stopping(train_loss)
-                if self.early_stopping.early_stop:
-                    break
+                self._ner = copy.deepcopy(self.ner)
         except KeyboardInterrupt:
             logging.warning("Exiting from training early.")
             if train_loss <= best_loss:
@@ -327,7 +250,7 @@ class NER_Trainer():
                     "model_state_dict": self.ner.state_dict(),
                     "optimizer_state_dict": self.optimizer.state_dict(),
                     "loss": train_loss,
-                }, self.path)
+                }, "./tmp/ner_.pt")
 
     def save(self, path: str):
         """Saves the model to designated path.

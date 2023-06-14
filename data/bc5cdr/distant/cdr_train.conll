@@ -16,7 +16,7 @@ the	O
 decrease	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -73,7 +73,7 @@ not	O
 affect	B-UNK
 either	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 or	O
 heart	B-UNK
 rate	I-UNK
@@ -314,7 +314,7 @@ was	O
 administered	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 to	O
 36	O
@@ -374,7 +374,7 @@ a	O
 mg	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 bolus	B-UNK
 dose	B-UNK
@@ -407,10 +407,10 @@ first	O
 fasciculation	B-DISEASE
 ,	O
 twitch	O
-suppression	B-UNK
+suppression	O
 and	O
 tetanus	B-DISEASE
-suppression	B-UNK
+suppression	O
 were	O
 inversely	O
 related	B-UNK
@@ -503,7 +503,7 @@ capable	O
 of	O
 penetrating	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -603,7 +603,7 @@ these	O
 ,	O
 in	O
 an	O
-attempt	B-UNK
+attempt	O
 to	O
 induce	B-UNK
 glomerular	B-UNK
@@ -700,7 +700,7 @@ significant	B-UNK
 changes	B-UNK
 in	O
 effective	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 plasma	B-UNK
 flow	B-UNK
 (	O
@@ -742,7 +742,7 @@ also	O
 caused	B-UNK
 proteinuria	B-DISEASE
 and	O
-systolic	B-UNK
+systolic	O
 hypertension	B-DISEASE
 in	O
 absence	B-UNK
@@ -799,7 +799,7 @@ further	O
 rise	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 in	O
 li	B-CHEMICAL
 -	O
@@ -829,8 +829,8 @@ associated	B-UNK
 with	O
 proteinuria	B-DISEASE
 and	O
-arterial	B-UNK
-systolic	B-UNK
+arterial	O
+systolic	O
 hypertension	B-DISEASE
 .	O
 in	O
@@ -853,7 +853,7 @@ corresponding	B-UNK
 fall	O
 in	O
 effective	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 plasma	B-UNK
 flow	B-UNK
 ,	O
@@ -1012,7 +1012,7 @@ last	O
 weeks	B-UNK
 .	O
 the	O
-disease	B-UNK
+disease	B-DISEASE
 activity	B-UNK
 was	O
 primarily	B-UNK
@@ -1391,7 +1391,7 @@ and	O
 audiologic	B-UNK
 studies	B-UNK
 disclosed	O
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 in	O
 7	O
 more	O
@@ -1792,7 +1792,7 @@ caa	B-DISEASE
 after	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 administration	B-UNK
 does	O
@@ -1991,7 +1991,7 @@ a	O
 patient	B-UNK
 who	O
 developed	B-UNK
-acute	I-UNK
+acute	B-UNK
 hepatitis	B-DISEASE
 with	O
 extensive	B-UNK
@@ -2069,7 +2069,7 @@ several	O
 benzodiazepines	B-CHEMICAL
 .	O
 
-arterial	B-UNK
+arterial	O
 hypertension	B-DISEASE
 as	O
 a	O
@@ -2087,7 +2087,7 @@ with	O
 cushing	O
 '	O
 s	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 treated	B-UNK
 on	O
 a	O
@@ -2121,7 +2121,7 @@ therapy	B-UNK
 yet	O
 continuous	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 monitoring	B-UNK
 demonstrated	B-UNK
 hypertension	B-DISEASE
@@ -2182,7 +2182,7 @@ raised	B-UNK
 with	O
 a	O
 concomitant	B-UNK
-suppression	B-UNK
+suppression	O
 of	O
 renin	B-UNK
 levels	B-UNK
@@ -2247,7 +2247,7 @@ fibrinolysis	B-UNK
 by	O
 injection	B-UNK
 of	O
-thrombin	B-UNK
+thrombin	B-CHEMICAL
 and	O
 tranexamic	B-CHEMICAL
 acid	I-CHEMICAL
@@ -2291,7 +2291,7 @@ angiotensin	B-CHEMICAL
 converting	B-UNK
 enzyme	I-UNK
 (	O
-ace	O
+ace	B-UNK
 )	O
 ,	O
 reduced	B-UNK
@@ -2380,7 +2380,7 @@ in	O
 animals	B-UNK
 which	O
 received	B-UNK
-thrombin	B-UNK
+thrombin	B-CHEMICAL
 and	O
 amca	B-CHEMICAL
 alone	O
@@ -2451,7 +2451,7 @@ after	O
 an	O
 injection	B-UNK
 of	O
-thrombin	B-UNK
+thrombin	B-CHEMICAL
 ,	O
 thereby	O
 diminishing	O
@@ -2542,9 +2542,9 @@ induced	B-UNK
 reductions	B-UNK
 in	O
 mean	B-UNK
-arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+arterial	I-UNK
+blood	I-UNK
+pressure	I-UNK
 (	O
 bp	B-UNK
 )	O
@@ -2575,8 +2575,8 @@ in	O
 heart	B-UNK
 rate	I-UNK
 and	O
-cardiac	B-UNK
-output	I-UNK
+cardiac	B-DISEASE
+output	I-DISEASE
 ;	O
 rebound	O
 hypertension	B-DISEASE
@@ -2601,7 +2601,7 @@ of	O
 these	O
 findings	B-UNK
 .	O
-arterial	B-UNK
+arterial	O
 po2	O
 decreased	B-UNK
 in	O
@@ -2915,7 +2915,7 @@ during	O
 minute	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 infusions	B-UNK
 of	O
@@ -2927,7 +2927,7 @@ natriuretic	I-CHEMICAL
 factor	I-CHEMICAL
 .	O
 mean	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 (	O
 as	O
@@ -3165,7 +3165,7 @@ min	B-UNK
 .	O
 steady	O
 state	B-UNK
-arterial	B-UNK
+arterial	O
 plasma	B-UNK
 concentrations	I-UNK
 of	O
@@ -3640,7 +3640,7 @@ reporting	O
 one	O
 or	O
 more	O
-dysfunctions	B-UNK
+dysfunctions	O
 .	O
 impotence	B-DISEASE
 was	O
@@ -3736,7 +3736,7 @@ or	O
 cancer	B-DISEASE
 of	O
 the	O
-renal	B-UNK
+renal	B-DISEASE
 pelvis	O
 ,	O
 ureter	B-DISEASE
@@ -3892,8 +3892,8 @@ clinical	B-UNK
 hemolysis	B-DISEASE
 .	O
 her	O
-red	B-UNK
-blood	B-UNK
+red	O
+blood	O
 cells	B-UNK
 (	O
 rbcs	B-UNK
@@ -4176,7 +4176,7 @@ addition	O
 analyses	B-UNK
 of	O
 a	O
-blood	B-UNK
+blood	O
 sample	B-UNK
 revealed	B-UNK
 unusually	B-UNK
@@ -4279,7 +4279,7 @@ drugs	B-UNK
 indicating	B-UNK
 that	O
 their	O
-metabolism	B-UNK
+metabolism	B-DISEASE
 is	O
 under	O
 the	O
@@ -4359,8 +4359,8 @@ patients	B-UNK
 triazolam	B-CHEMICAL
 -	O
 induced	B-UNK
-brief	B-UNK
-episodes	I-UNK
+brief	B-DISEASE
+episodes	B-UNK
 of	O
 secondary	B-UNK
 mania	B-DISEASE
@@ -4375,8 +4375,8 @@ of	O
 triazolam	B-CHEMICAL
 repeatedly	B-UNK
 induced	B-UNK
-brief	B-UNK
-episodes	I-UNK
+brief	B-DISEASE
+episodes	B-UNK
 of	O
 mania	B-DISEASE
 in	O
@@ -4485,7 +4485,7 @@ pronounced	B-UNK
 rigidity	B-DISEASE
 recorded	B-UNK
 as	O
-tonic	B-UNK
+tonic	B-DISEASE
 activity	B-UNK
 in	O
 the	O
@@ -4971,7 +4971,7 @@ setting	B-UNK
 of	O
 reduced	B-UNK
 effective	B-UNK
-arterial	B-UNK
+arterial	O
 volume	B-UNK
 ,	O
 may	O
@@ -5003,7 +5003,7 @@ a	O
 patient	B-UNK
 with	O
 sinuatrial	O
-disease	B-UNK
+disease	B-DISEASE
 and	O
 implanted	B-UNK
 pacemaker	B-UNK
@@ -5102,7 +5102,7 @@ induced	B-UNK
 renal	B-DISEASE
 insufficiency	I-DISEASE
 :	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 on	O
 rechallenge	O
 .	O
@@ -5136,7 +5136,7 @@ therapy	B-UNK
 prompt	B-UNK
 restoration	O
 of	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 followed	B-UNK
 drug	B-UNK
@@ -5176,7 +5176,7 @@ the	O
 maintenance	O
 of	O
 renal	B-DISEASE
-blood	B-UNK
+blood	O
 flow	B-UNK
 when	O
 circulating	O
@@ -5556,7 +5556,7 @@ placebo	B-UNK
 group	B-UNK
 and	O
 remained	B-UNK
-unchanged	B-UNK
+unchanged	I-UNK
 in	O
 the	O
 timolol	B-CHEMICAL
@@ -5610,7 +5610,7 @@ its	O
 metabolites	B-UNK
 in	O
 the	O
-blood	B-UNK
+blood	O
 plasma	B-UNK
 of	O
 nonlactating	O
@@ -5794,7 +5794,7 @@ weeks	B-UNK
 prepartum	O
 .	O
 
-diseases	B-UNK
+diseases	B-DISEASE
 of	O
 peripheral	B-UNK
 nerves	O
@@ -5813,7 +5813,7 @@ diagnoses	B-UNK
 of	O
 peripheral	B-UNK
 nerve	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 excluding	O
 its	O
 primary	B-UNK
@@ -5861,7 +5861,7 @@ presentation	B-UNK
 guillain	O
 -	O
 barr	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 was	O
 the	O
 commonest	B-UNK
@@ -6028,7 +6028,7 @@ and	O
 safety	B-UNK
 of	O
 dothiepin	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 in	O
 the	O
 treatment	B-UNK
@@ -6099,7 +6099,7 @@ and	O
 severity	B-UNK
 of	O
 blurred	O
-vision	B-UNK
+vision	B-DISEASE
 ,	O
 dry	B-DISEASE
 mouth	I-DISEASE
@@ -6519,7 +6519,7 @@ and	O
 also	O
 in	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 ,	O
 aspirin	B-CHEMICAL
 did	O
@@ -6620,9 +6620,9 @@ on	O
 heart	B-UNK
 rate	I-UNK
 and	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 was	O
 compared	B-UNK
 in	O
@@ -6660,9 +6660,9 @@ and	O
 the	O
 decrease	B-UNK
 in	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 after	O
 nitroglycerin	B-CHEMICAL
 were	O
@@ -6689,9 +6689,9 @@ a	O
 greater	B-UNK
 decrease	B-UNK
 in	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 occurred	B-UNK
 in	O
 the	O
@@ -6814,7 +6814,7 @@ gland	B-UNK
 weight	B-UNK
 ,	O
 intracellular	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 (	O
 prl	B-UNK
 )	O
@@ -7025,7 +7025,7 @@ control	B-UNK
 mechanisms	B-UNK
 .	O
 
-triamterene	B-UNK
+triamterene	B-CHEMICAL
 nephrolithiasis	B-DISEASE
 complicating	B-UNK
 dyazide	O
@@ -7034,7 +7034,7 @@ therapy	B-UNK
 a	O
 case	B-UNK
 of	O
-triamterene	B-UNK
+triamterene	B-CHEMICAL
 nephrolithiasis	B-DISEASE
 is	O
 reported	B-UNK
@@ -7062,7 +7062,7 @@ found	B-UNK
 to	O
 contain	O
 a	O
-triamterene	B-UNK
+triamterene	B-CHEMICAL
 metabolite	B-UNK
 admixed	O
 with	O
@@ -7129,7 +7129,7 @@ possible	B-UNK
 involvement	B-UNK
 of	O
 energy	B-UNK
-metabolism	B-UNK
+metabolism	B-DISEASE
 was	O
 suggested	B-UNK
 previously	B-UNK
@@ -7340,7 +7340,7 @@ greatest	B-UNK
 sensitivities	B-UNK
 for	O
 these	O
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 occurred	B-UNK
 from	O
 2	O
@@ -7420,7 +7420,7 @@ causes	B-UNK
 for	O
 developing	B-UNK
 this	O
-disease	B-UNK
+disease	B-DISEASE
 .	O
 this	O
 patient	B-UNK
@@ -7455,7 +7455,7 @@ completion	O
 of	O
 therapy	B-UNK
 .	O
-renal	B-UNK
+renal	B-DISEASE
 biopsy	B-UNK
 revealed	B-UNK
 severe	B-UNK
@@ -7590,7 +7590,7 @@ kg	B-UNK
 and	O
 24	O
 hour	B-UNK
-urine	B-UNK
+urine	B-DISEASE
 samples	B-UNK
 were	O
 obtained	B-UNK
@@ -7730,7 +7730,7 @@ does	O
 not	O
 impair	O
 its	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 -	O
 releasing	B-UNK
 action	B-UNK
@@ -7758,7 +7758,7 @@ the	O
 secretory	B-UNK
 rate	B-UNK
 of	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 (	O
 prl	B-UNK
 )	O
@@ -7799,7 +7799,7 @@ and	O
 the	O
 other	O
 at	B-DISEASE
-daytime	B-UNK
+daytime	O
 ,	O
 when	O
 awake	O
@@ -7824,7 +7824,7 @@ orally	B-UNK
 2	O
 hours	B-UNK
 before	O
-blood	B-UNK
+blood	O
 collection	O
 .	O
 plasma	B-UNK
@@ -7863,7 +7863,7 @@ secretion	B-UNK
 acting	B-UNK
 preferentially	O
 on	O
-tonic	B-UNK
+tonic	B-DISEASE
 secretion	B-UNK
 as	O
 pulse	B-UNK
@@ -8123,7 +8123,7 @@ intravenous	B-UNK
 steroids	B-CHEMICAL
 and	O
 diphenhydramine	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 .	O
 
 effect	B-UNK
@@ -8472,7 +8472,7 @@ movement	B-UNK
 .	O
 
 epidural	B-UNK
-blood	B-UNK
+blood	O
 flow	B-UNK
 during	O
 prostaglandin	B-CHEMICAL
@@ -8501,7 +8501,7 @@ induced	B-UNK
 hypotension	B-DISEASE
 on	O
 epidural	B-UNK
-blood	B-UNK
+blood	O
 flow	B-UNK
 (	O
 ebf	O
@@ -8588,9 +8588,9 @@ to	O
 maintain	B-UNK
 the	O
 mean	B-UNK
-arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+arterial	I-UNK
+blood	I-UNK
+pressure	I-UNK
 (	O
 map	B-UNK
 )	O
@@ -9148,7 +9148,7 @@ yr	O
 old	B-UNK
 man	I-UNK
 developed	B-UNK
-acute	I-UNK
+acute	B-UNK
 hepatitis	B-DISEASE
 shortly	O
 after	O
@@ -9246,7 +9246,7 @@ effects	I-UNK
 of	O
 antipsychotics	B-CHEMICAL
 often	O
-lead	B-UNK
+lead	B-CHEMICAL
 to	O
 noncompliance	O
 .	O
@@ -9262,7 +9262,7 @@ about	O
 adverse	B-UNK
 effects	I-UNK
 and	O
-attempt	B-UNK
+attempt	O
 to	O
 choose	O
 medications	B-UNK
@@ -9430,7 +9430,7 @@ are	O
 most	O
 likely	B-UNK
 to	O
-lead	B-UNK
+lead	B-CHEMICAL
 to	O
 the	O
 individual	B-UNK
@@ -9633,7 +9633,7 @@ time	B-UNK
 aptt	O
 )	O
 ,	O
-prothrombin	B-UNK
+prothrombin	B-CHEMICAL
 time	B-UNK
 (	O
 pt	O
@@ -9677,7 +9677,7 @@ plus	O
 vinorelbine	B-CHEMICAL
 in	O
 nonsmall	B-UNK
-cell	I-UNK
+cell	B-UNK
 lung	B-DISEASE
 carcinoma	B-DISEASE
 patients	B-UNK
@@ -9705,8 +9705,8 @@ the	O
 prevalence	B-UNK
 of	O
 nonsmall	B-UNK
-cell	I-UNK
-lung	B-UNK
+cell	B-UNK
+lung	B-DISEASE
 carcinoma	B-DISEASE
 (	O
 nsclc	B-DISEASE
@@ -9903,7 +9903,7 @@ three	O
 courses	B-UNK
 unless	O
 progressive	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 was	O
 detected	B-UNK
 .	O
@@ -10164,10 +10164,10 @@ the	O
 prophylactic	B-UNK
 use	B-UNK
 of	O
-granulocyte	B-UNK
+granulocyte	O
 -	O
-colony	B-UNK
-stimulating	B-UNK
+colony	O
+stimulating	O
 factor	B-UNK
 should	O
 be	O
@@ -11310,7 +11310,7 @@ products	B-UNK
 bladder	B-UNK
 retention	B-UNK
 of	O
-urine	B-UNK
+urine	B-DISEASE
 as	O
 a	O
 result	B-UNK
@@ -11416,7 +11416,7 @@ bladder	I-DISEASE
 retention	B-UNK
 leading	B-UNK
 to	O
-renal	B-UNK
+renal	B-DISEASE
 pelvocalyceal	O
 dilatation	B-DISEASE
 mimicking	O
@@ -11592,7 +11592,7 @@ confirmed	B-UNK
 by	O
 transmission	B-UNK
 electron	B-UNK
-microscopy	I-UNK
+microscopy	B-UNK
 .	O
 after	O
 35	O
@@ -11604,7 +11604,7 @@ tg	B-DISEASE
 haart	B-UNK
 cohort	B-UNK
 ,	O
-left	B-UNK
+left	O
 ventricular	O
 mass	B-UNK
 increased	B-UNK
@@ -11895,7 +11895,7 @@ g20210a	O
 mutation	B-UNK
 in	O
 the	O
-prothrombin	B-UNK
+prothrombin	B-CHEMICAL
 gene	B-UNK
 was	O
 conducted	O
@@ -12561,7 +12561,7 @@ angioplasty	O
 ,	O
 with	O
 complete	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 during	O
 the	O
 follow	B-UNK
@@ -12623,7 +12623,7 @@ patients	B-UNK
 developed	I-UNK
 jaundice	B-DISEASE
 following	B-UNK
-treatment	B-UNK
+treatment	I-UNK
 with	O
 ticlopidine	B-CHEMICAL
 and	O
@@ -12663,7 +12663,7 @@ course	B-UNK
 ,	O
 but	O
 complete	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 was	O
 observed	B-UNK
 in	O
@@ -12750,13 +12750,13 @@ should	O
 be	O
 monitored	B-UNK
 with	O
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 along	O
 with	O
 complete	B-UNK
-blood	B-UNK
+blood	O
 cell	B-UNK
 counts	B-UNK
 .	O
@@ -12821,7 +12821,7 @@ early	B-UNK
 phase	B-UNK
 of	O
 the	O
-disease	B-UNK
+disease	B-DISEASE
 .	O
 the	O
 molecular	B-UNK
@@ -12846,7 +12846,7 @@ limiting	B-UNK
 constituent	O
 of	O
 collecting	O
-duct	B-UNK
+duct	O
 sodium	B-CHEMICAL
 transport	B-UNK
 is	O
@@ -13205,7 +13205,7 @@ mg	B-UNK
 was	O
 administered	B-UNK
 .	O
-blood	B-UNK
+blood	O
 was	O
 collected	B-UNK
 from	O
@@ -13629,7 +13629,7 @@ i	O
 .	O
 c	B-UNK
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 injection	B-UNK
@@ -13643,7 +13643,7 @@ and	O
 bradycardia	B-DISEASE
 and	O
 stimulates	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 and	O
 thyrotropin	B-CHEMICAL
 secretion	B-UNK
@@ -13678,7 +13678,7 @@ i	O
 .	O
 c	B-UNK
 .	O
-v	B-UNK
+v	O
 .	O
 injections	B-UNK
 of	O
@@ -13761,7 +13761,7 @@ black	O
 and	O
 -	O
 white	B-UNK
-compartment	B-UNK
+compartment	O
 test	B-UNK
 ,	O
 and	O
@@ -13805,7 +13805,7 @@ forced	O
 swimming	O
 test	B-UNK
 and	O
-tail	B-UNK
+tail	O
 suspension	B-UNK
 test	B-UNK
 .	O
@@ -13835,7 +13835,7 @@ ng	O
 /	O
 mouse	B-UNK
 ,	O
-water	B-UNK
+water	B-CHEMICAL
 intake	B-UNK
 at	B-DISEASE
 doses	B-UNK
@@ -14067,7 +14067,7 @@ pain	B-DISEASE
 sensitivity	B-UNK
 in	O
 the	O
-skin	B-UNK
+skin	B-DISEASE
 surrounding	B-UNK
 tissue	B-UNK
 injury	B-UNK
@@ -14150,8 +14150,8 @@ states	B-UNK
 .	O
 using	O
 functional	B-UNK
-magnetic	O
-resonance	B-UNK
+magnetic	I-UNK
+resonance	I-UNK
 imaging	B-UNK
 (	O
 fmri	O
@@ -14634,7 +14634,7 @@ then	O
 very	O
 rapidly	B-UNK
 developed	B-UNK
-acute	I-UNK
+acute	B-UNK
 onset	B-UNK
 of	O
 severe	B-UNK
@@ -14767,7 +14767,7 @@ reactions	B-UNK
 in	O
 volunteer	B-UNK
 apheresis	O
-blood	B-UNK
+blood	O
 donors	O
 .	O
 
@@ -14779,7 +14779,7 @@ sirolimus	B-CHEMICAL
 in	O
 renal	B-DISEASE
 transplant	B-UNK
-recipients	I-UNK
+recipients	B-UNK
 .	O
 sirolimus	B-CHEMICAL
 (	O
@@ -14879,7 +14879,7 @@ s	I-DISEASE
 sarcoma	I-DISEASE
 ,	O
 four	O
-skin	B-UNK
+skin	B-DISEASE
 cancers	B-DISEASE
 ,	O
 one	O
@@ -14887,7 +14887,7 @@ intestinal	B-UNK
 tumors	B-DISEASE
 ,	O
 one	O
-renal	B-UNK
+renal	B-DISEASE
 cell	B-UNK
 carsinom	O
 )	O
@@ -15010,7 +15010,7 @@ of	O
 patients	B-UNK
 proteinuria	B-DISEASE
 remained	B-UNK
-unchanged	B-UNK
+unchanged	I-UNK
 ,	O
 whereas	O
 it	O
@@ -15271,7 +15271,7 @@ in	O
 vitro	B-UNK
 characterization	O
 of	O
-parasympathetic	B-UNK
+parasympathetic	O
 and	O
 sympathetic	B-UNK
 responses	B-UNK
@@ -15490,7 +15490,7 @@ selective	B-UNK
 )	O
 antagonized	O
 the	O
-tonic	B-UNK
+tonic	B-DISEASE
 component	B-UNK
 of	O
 the	O
@@ -15513,7 +15513,7 @@ component	B-UNK
 damp	I-CHEMICAL
 inhibited	B-UNK
 the	O
-tonic	B-UNK
+tonic	B-DISEASE
 contractions	B-UNK
 in	O
 controls	B-UNK
@@ -15556,7 +15556,7 @@ damp	I-CHEMICAL
 antagonism	B-UNK
 on	O
 the	O
-tonic	B-UNK
+tonic	B-DISEASE
 component	B-UNK
 was	O
 much	O
@@ -15581,7 +15581,7 @@ decreased	B-UNK
 -	O
 -	O
 the	O
-tonic	B-UNK
+tonic	B-DISEASE
 responses	B-UNK
 at	B-DISEASE
 high	B-UNK
@@ -16135,7 +16135,7 @@ use	B-UNK
 was	O
 associated	B-UNK
 with	O
-daytime	B-UNK
+daytime	O
 and	O
 night	O
 -	O
@@ -16255,7 +16255,7 @@ korea	O
 in	O
 a	O
 suicide	B-DISEASE
-attempt	B-UNK
+attempt	O
 .	O
 she	O
 was	O
@@ -16822,7 +16822,7 @@ infertility	B-DISEASE
 clinic	O
 for	O
 blurred	O
-vision	B-UNK
+vision	B-DISEASE
 .	O
 intervention	O
 (	O
@@ -17003,8 +17003,8 @@ darkness	O
 during	O
 a	O
 functional	B-UNK
-magnetic	O
-resonance	B-UNK
+magnetic	I-UNK
+resonance	I-UNK
 imaging	B-UNK
 (	O
 fmri	O
@@ -17023,7 +17023,7 @@ oculography	O
 nin	O
 correlated	B-UNK
 with	O
-blood	B-UNK
+blood	O
 oxygen	B-CHEMICAL
 level	B-UNK
 -	O
@@ -17715,7 +17715,7 @@ the	O
 literature	B-UNK
 but	O
 no	O
-systematic	B-UNK
+systematic	O
 study	B-UNK
 from	O
 a	O
@@ -17952,8 +17952,8 @@ as	O
 measured	B-UNK
 by	O
 functional	B-UNK
-magnetic	O
-resonance	B-UNK
+magnetic	I-UNK
+resonance	I-UNK
 imaging	B-UNK
 (	O
 fmri	O
@@ -18105,7 +18105,7 @@ bilateral	B-UNK
 frontal	B-UNK
 regions	B-UNK
 ,	O
-left	B-UNK
+left	O
 temporal	B-UNK
 ,	O
 right	B-UNK
@@ -18137,7 +18137,7 @@ cortex	B-UNK
 acc	O
 )	O
 and	O
-left	B-UNK
+left	O
 posterior	O
 cingulated	O
 cortex	B-UNK
@@ -18159,17 +18159,17 @@ medial	B-UNK
 frontal	B-UNK
 gyrus	B-UNK
 ,	O
-left	B-UNK
+left	O
 parahippocampal	O
 gyrus	B-UNK
 ,	O
-left	B-UNK
+left	O
 dorsal	B-UNK
 cingulate	O
 gyrus	B-UNK
 ,	O
 and	O
-left	B-UNK
+left	O
 caudate	O
 .	O
 these	O
@@ -18223,7 +18223,7 @@ argatroban	B-CHEMICAL
 in	O
 a	O
 cardiac	B-UNK
-transplant	O
+transplant	I-UNK
 patient	B-UNK
 with	O
 a	O
@@ -18240,7 +18240,7 @@ thrombosis	B-DISEASE
 background	O
 :	O
 direct	B-UNK
-thrombin	B-UNK
+thrombin	B-CHEMICAL
 inhibitors	B-UNK
 (	O
 dtis	O
@@ -18319,8 +18319,8 @@ support	B-UNK
 55	O
 units	O
 of	O
-red	B-UNK
-blood	B-UNK
+red	O
+blood	O
 cells	B-UNK
 ,	O
 42	O
@@ -18551,7 +18551,7 @@ magnitude	O
 ,	O
 profile	B-UNK
 ,	O
-prognosis	B-UNK
+prognosis	O
 ,	O
 and	O
 predictors	O
@@ -18857,7 +18857,7 @@ and	O
 less	O
 elevation	B-UNK
 of	O
-liver	B-UNK
+liver	B-DISEASE
 enzymes	B-UNK
 .	O
 the	O
@@ -18958,7 +18958,7 @@ of	O
 alf	B-DISEASE
 at	B-DISEASE
 our	O
-center	B-UNK
+center	O
 and	O
 had	O
 a	O
@@ -19150,7 +19150,7 @@ included	B-UNK
 posterior	O
 reversible	B-UNK
 leukoencephalopathy	B-DISEASE
-syndrome	B-UNK
+syndrome	B-DISEASE
 (	O
 n	B-UNK
 =	O
@@ -19227,7 +19227,7 @@ prompt	B-UNK
 treatment	B-UNK
 to	O
 limit	B-UNK
-permanent	O
+permanent	B-UNK
 damage	B-UNK
 .	O
 
@@ -19332,7 +19332,7 @@ with	O
 advanced	B-UNK
 age	B-UNK
 ,	O
-renal	B-UNK
+renal	B-DISEASE
 and	O
 kidney	B-DISEASE
 disease	I-DISEASE
@@ -19455,8 +19455,8 @@ age	B-UNK
 ,	O
 hepatic	B-UNK
 and	O
-renal	B-UNK
-dysfunctions	B-UNK
+renal	B-DISEASE
+dysfunctions	O
 .	O
 
 effects	B-UNK
@@ -19509,7 +19509,7 @@ administration	B-UNK
 of	O
 a	O
 neurotensin	B-CHEMICAL
-analog	B-UNK
+analog	O
 could	O
 produce	B-UNK
 antiparkinsonian	O
@@ -19757,7 +19757,7 @@ shunt	B-UNK
 (	O
 qs	O
 /	O
-qt	B-UNK
+qt	O
 )	O
 were	O
 investigated	B-UNK
@@ -19773,9 +19773,9 @@ infusion	B-UNK
 that	O
 decreased	B-UNK
 mean	B-UNK
-arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+arterial	I-UNK
+blood	I-UNK
+pressure	I-UNK
 40	O
 -	O
 50	O
@@ -19800,8 +19800,8 @@ than	O
 ,	O
 decreased	B-UNK
 arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+blood	I-UNK
+pressure	I-UNK
 ,	O
 but	O
 did	O
@@ -19811,8 +19811,8 @@ alter	O
 heart	B-UNK
 rate	I-UNK
 ,	O
-cardiac	B-UNK
-output	I-UNK
+cardiac	B-DISEASE
+output	I-DISEASE
 ,	O
 systemic	B-UNK
 vascular	I-UNK
@@ -19821,7 +19821,7 @@ resistance	B-UNK
 or	O
 qs	O
 /	O
-qt	B-UNK
+qt	O
 .	O
 ten	B-DISEASE
 cm	B-DISEASE
@@ -19836,8 +19836,8 @@ further	O
 decrease	B-UNK
 in	O
 arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+blood	I-UNK
+pressure	I-UNK
 and	O
 significantly	B-UNK
 increased	I-UNK
@@ -19845,12 +19845,12 @@ heart	B-UNK
 rate	I-UNK
 and	O
 decreased	B-UNK
-cardiac	B-UNK
-output	I-UNK
+cardiac	B-DISEASE
+output	I-DISEASE
 and	O
 qs	O
 /	O
-qt	B-UNK
+qt	O
 .	O
 nitroprusside	B-CHEMICAL
 caused	B-UNK
@@ -19858,8 +19858,8 @@ significant	B-UNK
 decreases	I-UNK
 in	O
 arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+blood	I-UNK
+pressure	I-UNK
 and	O
 systemic	B-UNK
 vascular	I-UNK
@@ -19874,12 +19874,12 @@ but	O
 did	O
 not	O
 change	B-UNK
-cardiac	B-UNK
-output	I-UNK
+cardiac	B-DISEASE
+output	I-DISEASE
 or	O
 qs	O
 /	O
-qt	B-UNK
+qt	O
 .	O
 five	O
 cm	B-DISEASE
@@ -19907,16 +19907,16 @@ h2o	B-CHEMICAL
 cpap	O
 decreased	B-UNK
 arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+blood	I-UNK
+pressure	I-UNK
 ,	O
-cardiac	B-UNK
-output	I-UNK
+cardiac	B-DISEASE
+output	I-DISEASE
 ,	O
 and	O
 qs	O
 /	O
-qt	B-UNK
+qt	O
 .	O
 these	O
 data	B-UNK
@@ -19928,9 +19928,9 @@ rates	B-UNK
 that	O
 decrease	B-UNK
 mean	B-UNK
-arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+arterial	I-UNK
+blood	I-UNK
+pressure	I-UNK
 by	O
 40	O
 -	O
@@ -19945,7 +19945,7 @@ output	I-DISEASE
 or	O
 qs	O
 /	O
-qt	B-UNK
+qt	O
 .	O
 during	O
 nitroprusside	B-CHEMICAL
@@ -19976,15 +19976,15 @@ while	O
 decreasing	B-UNK
 qs	O
 /	O
-qt	B-UNK
+qt	O
 ,	O
 produce	B-UNK
 marked	B-UNK
 decreases	B-UNK
 in	O
 arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+blood	I-UNK
+pressure	I-UNK
 and	O
 cardiac	B-DISEASE
 output	I-DISEASE
@@ -19993,7 +19993,7 @@ output	I-DISEASE
 mediation	O
 of	O
 enhanced	B-UNK
-reflex	B-UNK
+reflex	B-DISEASE
 vagal	O
 bradycardia	B-DISEASE
 by	O
@@ -20017,12 +20017,12 @@ mg	B-UNK
 kg	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 decreased	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -20041,7 +20041,7 @@ mg	B-UNK
 kg	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 in	O
@@ -20054,7 +20054,7 @@ dogs	B-UNK
 in	O
 addition	O
 ,	O
-reflex	B-UNK
+reflex	B-DISEASE
 bradycardia	B-DISEASE
 caused	B-UNK
 by	O
@@ -20078,12 +20078,12 @@ no	O
 effect	B-UNK
 on	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 heart	B-UNK
 rate	I-UNK
 or	O
-reflex	B-UNK
+reflex	B-DISEASE
 responses	B-UNK
 to	O
 norepinephrine	B-CHEMICAL
@@ -20132,7 +20132,7 @@ l	B-CHEMICAL
 dopa	I-CHEMICAL
 on	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -20153,7 +20153,7 @@ caused	B-UNK
 an	O
 elevation	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -20182,7 +20182,7 @@ addition	O
 to	O
 decreasing	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -20197,12 +20197,12 @@ mg	B-UNK
 kg	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 decreased	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -20222,7 +20222,7 @@ l	B-CHEMICAL
 -	I-CHEMICAL
 dopa	I-CHEMICAL
 enhances	O
-reflex	B-UNK
+reflex	B-DISEASE
 bradycardia	B-DISEASE
 through	O
 central	B-UNK
@@ -20294,7 +20294,7 @@ high	B-UNK
 -	O
 grade	B-UNK
 coronary	B-UNK
-arterial	B-UNK
+arterial	O
 narrowing	O
 ,	O
 acute	B-DISEASE
@@ -20488,7 +20488,7 @@ been	O
 excluded	O
 .	O
 
-rabbit	B-UNK
+rabbit	O
 syndrome	B-DISEASE
 ,	O
 antidepressant	B-CHEMICAL
@@ -20502,7 +20502,7 @@ scan	O
 findings	B-UNK
 .	O
 the	O
-rabbit	B-UNK
+rabbit	O
 syndrome	B-DISEASE
 is	O
 an	O
@@ -20534,7 +20534,7 @@ reported	B-UNK
 case	B-UNK
 of	O
 this	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 in	O
 conjunction	O
 with	O
@@ -20565,8 +20565,8 @@ normal	B-UNK
 perfusion	B-UNK
 when	O
 the	O
-rabbit	B-UNK
-syndrome	B-UNK
+rabbit	O
+syndrome	B-DISEASE
 resolved	B-UNK
 .	O
 
@@ -20885,7 +20885,7 @@ after	O
 the	O
 recovery	B-UNK
 period	B-UNK
-following	B-UNK
+following	I-UNK
 analgesic	B-UNK
 treatment	I-UNK
 .	O
@@ -20992,7 +20992,7 @@ damage	B-UNK
 to	O
 the	O
 inner	O
-medulla	B-UNK
+medulla	O
 .	O
 
 less	O
@@ -21030,8 +21030,8 @@ day	B-UNK
 schedule	B-UNK
 have	O
 lower	B-UNK
-urine	B-UNK
-volumes	B-UNK
+urine	B-DISEASE
+volumes	O
 than	O
 do	O
 patients	B-UNK
@@ -21096,8 +21096,8 @@ were	O
 associated	B-UNK
 with	O
 higher	B-UNK
-urine	B-UNK
-volumes	B-UNK
+urine	B-DISEASE
+volumes	O
 .	O
 the	O
 dosing	B-UNK
@@ -21124,7 +21124,7 @@ clearance	B-UNK
 .	O
 conclusions	O
 :	O
-urine	B-UNK
+urine	B-DISEASE
 volume	B-UNK
 can	O
 be	O
@@ -21584,7 +21584,7 @@ downstream	O
 to	O
 significant	B-UNK
 coronary	B-UNK
-arterial	B-UNK
+arterial	O
 stenosis	B-DISEASE
 in	O
 the	O
@@ -21775,7 +21775,7 @@ a	O
 non	B-UNK
 -	O
 steroidal	O
-anti	B-UNK
+anti	O
 -	O
 inflammatory	B-UNK
 derivative	B-UNK
@@ -21790,9 +21790,9 @@ well	O
 tolerated	B-UNK
 ,	O
 asymptomatic	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 of	O
-liver	B-UNK
+liver	B-DISEASE
 function	B-UNK
 have	O
 been	O
@@ -21823,7 +21823,7 @@ with	O
 diclofenac	B-CHEMICAL
 sodium	B-CHEMICAL
 which	O
-progressed	B-UNK
+progressed	O
 despite	B-UNK
 the	O
 withdrawal	B-UNK
@@ -21914,7 +21914,7 @@ and	O
 intramuscular	B-UNK
 routes	O
 .	O
-intracranial	B-UNK
+intracranial	O
 aneurysms	B-DISEASE
 or	O
 arteriovenous	B-DISEASE
@@ -22025,7 +22025,7 @@ is	O
 frequently	B-UNK
 associated	B-UNK
 with	O
-intracranial	B-UNK
+intracranial	O
 aneurysms	B-DISEASE
 and	O
 arteriovenous	B-DISEASE
@@ -22085,7 +22085,7 @@ sulfonylurea	O
 ,	O
 only	O
 two	O
-brief	B-UNK
+brief	B-DISEASE
 reports	B-UNK
 of	O
 hepatotoxicity	B-DISEASE
@@ -22104,7 +22104,7 @@ acute	B-UNK
 hepatitis	B-DISEASE
 -	O
 like	B-UNK
-syndrome	I-UNK
+syndrome	B-DISEASE
 soon	O
 after	O
 initiation	O
@@ -22173,7 +22173,7 @@ some	O
 persons	O
 .	O
 
-systolic	B-UNK
+systolic	O
 pressure	B-UNK
 variation	O
 is	O
@@ -22192,7 +22192,7 @@ ventilated	B-UNK
 dogs	B-UNK
 .	O
 the	O
-systolic	B-UNK
+systolic	O
 pressure	B-UNK
 variation	O
 (	O
@@ -22211,9 +22211,9 @@ minimal	B-UNK
 values	B-UNK
 of	O
 the	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 (	O
 sbp	B-UNK
 )	O
@@ -22222,7 +22222,7 @@ one	O
 positive	B-UNK
 -	O
 pressure	B-UNK
-breath	B-UNK
+breath	O
 ,	O
 was	O
 studied	B-UNK
@@ -22234,7 +22234,7 @@ to	O
 hypotension	B-DISEASE
 .	O
 mean	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 was	O
 decreased	B-UNK
@@ -22276,8 +22276,8 @@ hem	O
 induced	B-UNK
 hypotension	B-DISEASE
 the	O
-cardiac	B-UNK
-output	I-UNK
+cardiac	B-DISEASE
+output	I-DISEASE
 was	O
 significantly	B-UNK
 lower	B-UNK
@@ -22303,7 +22303,7 @@ venous	B-UNK
 pulmonary	B-UNK
 capillary	B-UNK
 wedge	O
-pressures	B-UNK
+pressures	O
 ,	O
 and	O
 heart	B-UNK
@@ -22323,7 +22323,7 @@ respiratory	B-UNK
 changes	B-UNK
 in	O
 the	O
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 waveform	O
 enabled	O
@@ -22395,7 +22395,7 @@ sbp	B-UNK
 after	O
 a	O
 mechanical	B-UNK
-breath	B-UNK
+breath	O
 ,	O
 was	O
 20	O
@@ -22471,7 +22471,7 @@ thus	O
 more	O
 important	B-UNK
 during	O
-absolute	B-UNK
+absolute	O
 hypovolemia	B-DISEASE
 than	O
 during	O
@@ -22482,7 +22482,7 @@ hypotension	B-DISEASE
 drug	B-UNK
 -	O
 induced	B-UNK
-arterial	B-UNK
+arterial	O
 spasm	B-DISEASE
 relieved	O
 by	O
@@ -22493,7 +22493,7 @@ report	I-UNK
 .	O
 following	B-UNK
 major	B-UNK
-intracranial	B-UNK
+intracranial	O
 surgery	B-UNK
 in	O
 a	O
@@ -22564,10 +22564,10 @@ successful	O
 .	O
 
 cerebral	B-UNK
-blood	B-UNK
+blood	O
 flow	B-UNK
 and	O
-metabolism	B-UNK
+metabolism	B-DISEASE
 during	O
 isoflurane	B-CHEMICAL
 -	O
@@ -22583,7 +22583,7 @@ cerebral	B-UNK
 aneurysms	B-DISEASE
 .	O
 cerebral	B-UNK
-blood	B-UNK
+blood	O
 flow	B-UNK
 and	O
 cerebral	B-UNK
@@ -22640,7 +22640,7 @@ xenon	B-CHEMICAL
 133	I-CHEMICAL
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 anaesthesia	O
 was	O
@@ -22889,7 +22889,7 @@ cisplatin	B-CHEMICAL
 -	O
 induced	B-UNK
 impaired	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 .	O
 this	O
@@ -22929,7 +22929,7 @@ this	O
 patient	B-UNK
 during	O
 partial	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 resulted	B-UNK
 in	O
 fatal	B-UNK
@@ -23019,7 +23019,7 @@ treatment	B-UNK
 with	O
 sulphasalazine	B-CHEMICAL
 throughout	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 ,	O
 were	O
 found	B-UNK
@@ -23032,7 +23032,7 @@ anomalies	O
 in	O
 the	O
 singleton	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 ,	O
 the	O
 mother	O
@@ -23042,7 +23042,7 @@ colitis	I-DISEASE
 ,	O
 and	O
 the	O
-infant	B-UNK
+infant	B-DISEASE
 ,	O
 a	O
 male	B-UNK
@@ -23061,7 +23061,7 @@ defect	I-DISEASE
 in	O
 the	O
 twin	B-UNK
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 ,	O
 the	O
 mother	O
@@ -23080,7 +23080,7 @@ female	B-UNK
 ,	O
 had	O
 a	O
-left	B-UNK
+left	O
 potter	O
 -	O
 type	B-UNK
@@ -23090,7 +23090,7 @@ kidney	I-DISEASE
 and	O
 a	O
 rudimentary	O
-left	B-UNK
+left	O
 uterine	B-UNK
 cornu	O
 .	O
@@ -23161,7 +23161,7 @@ occlusive	O
 disease	B-DISEASE
 of	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 with	O
 fatal	B-UNK
 outcome	B-UNK
@@ -23192,7 +23192,7 @@ death	B-DISEASE
 at	B-DISEASE
 autopsy	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 was	O
 enlarged	O
 and	O
@@ -23374,10 +23374,10 @@ without	O
 clear	B-UNK
 intraventricular	B-UNK
 conduction	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 .	O
 his	O
-bundle	B-UNK
+bundle	O
 recordings	B-UNK
 showed	B-UNK
 an	O
@@ -23410,7 +23410,7 @@ amiodarone	B-CHEMICAL
 discontinuation	B-UNK
 ,	O
 his	O
-bundle	B-UNK
+bundle	O
 electrograms	O
 showed	B-UNK
 atrial	B-DISEASE
@@ -23557,7 +23557,7 @@ the	O
 maintenance	O
 of	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 during	O
 halothane	B-CHEMICAL
 anesthesia	B-UNK
@@ -23655,7 +23655,7 @@ initial	B-UNK
 decrease	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 from	O
 86	O
 torr	O
@@ -23682,7 +23682,7 @@ progressive	B-UNK
 increase	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 to	O
 61	O
 torr	O
@@ -23703,7 +23703,7 @@ of	O
 snp	B-CHEMICAL
 ,	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 in	O
 the	O
 control	B-UNK
@@ -23739,7 +23739,7 @@ partial	B-UNK
 recovery	B-UNK
 of	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 during	O
 snp	B-CHEMICAL
 infusion	B-UNK
@@ -23751,7 +23751,7 @@ snp	B-CHEMICAL
 rebound	O
 of	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 can	O
 be	O
 completely	B-UNK
@@ -24390,9 +24390,9 @@ adenocarcinoma	B-DISEASE
 .	O
 he	O
 developed	B-UNK
-acute	I-UNK
-neurologic	B-UNK
-symptoms	I-UNK
+acute	B-UNK
+neurologic	B-DISEASE
+symptoms	B-UNK
 of	O
 mental	B-UNK
 confusion	B-DISEASE
@@ -24573,7 +24573,7 @@ its	O
 10	O
 -	O
 keto	O
-analogue	B-UNK
+analogue	O
 oxcarbazepine	B-CHEMICAL
 among	O
 six	O
@@ -24840,7 +24840,7 @@ history	B-UNK
 ,	O
 together	O
 with	O
-skin	B-UNK
+skin	B-DISEASE
 tests	B-UNK
 ,	O
 rast	O
@@ -24852,7 +24852,7 @@ test	B-UNK
 and	O
 controlled	B-UNK
 challenge	B-UNK
-tests	B-UNK
+tests	I-UNK
 ,	O
 was	O
 used	O
@@ -24933,7 +24933,7 @@ done	O
 .	O
 when	O
 both	O
-skin	B-UNK
+skin	B-DISEASE
 test	B-UNK
 and	O
 rast	O
@@ -24950,7 +24950,7 @@ placebo	B-UNK
 -	O
 controlled	B-UNK
 challenge	B-UNK
-tests	B-UNK
+tests	I-UNK
 were	O
 done	O
 to	O
@@ -25028,7 +25028,7 @@ all	O
 the	O
 patients	B-UNK
 were	O
-skin	B-UNK
+skin	B-DISEASE
 test	B-UNK
 negative	B-UNK
 to	O
@@ -25058,7 +25058,7 @@ of	O
 to	O
 pg	B-CHEMICAL
 .	O
-skin	B-UNK
+skin	B-DISEASE
 tests	B-UNK
 with	O
 ax	B-CHEMICAL
@@ -25110,7 +25110,7 @@ to	O
 bpo	O
 .	O
 challenge	B-UNK
-tests	B-UNK
+tests	I-UNK
 with	O
 ax	B-CHEMICAL
 were	O
@@ -25142,7 +25142,7 @@ cases	B-UNK
 %	O
 )	O
 both	O
-skin	B-UNK
+skin	B-DISEASE
 test	B-UNK
 and	O
 rast	O
@@ -25291,10 +25291,10 @@ is	O
 eliminated	O
 independently	B-UNK
 of	O
-renal	B-UNK
+renal	B-DISEASE
 or	O
 hepatic	B-UNK
-function	B-UNK
+function	I-UNK
 ,	O
 has	O
 also	O
@@ -25702,7 +25702,7 @@ that	O
 pretreatment	B-UNK
 of	O
 the	O
-sections	B-UNK
+sections	O
 with	O
 heparitinase	O
 abolished	B-UNK
@@ -26065,7 +26065,7 @@ plasma	B-UNK
 and	O
 in	O
 the	O
-urine	B-UNK
+urine	B-DISEASE
 of	O
 the	O
 rats	B-UNK
@@ -26696,7 +26696,7 @@ response	B-UNK
 seven	B-UNK
 had	O
 stable	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 ,	O
 none	O
 had	O
@@ -26925,7 +26925,7 @@ large	B-UNK
 volume	B-UNK
 of	O
 hypotonic	O
-urine	B-UNK
+urine	B-DISEASE
 with	O
 low	B-UNK
 ionic	O
@@ -27205,7 +27205,7 @@ an	O
 increase	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 accompanied	O
 by	O
@@ -27361,7 +27361,7 @@ and	O
 histopathologic	O
 examination	B-UNK
 of	O
-renal	B-UNK
+renal	B-DISEASE
 allografts	O
 treated	B-UNK
 with	O
@@ -27382,12 +27382,12 @@ clinically	B-UNK
 and	O
 pathologically	O
 analyzed	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 allografts	O
 from	O
 1	O
 9	O
-renal	B-UNK
+renal	B-DISEASE
 transplant	B-UNK
 patients	I-UNK
 treated	B-UNK
@@ -27407,7 +27407,7 @@ methods	B-UNK
 twenty	O
 -	O
 six	O
-renal	B-UNK
+renal	B-DISEASE
 allograft	B-UNK
 biopsy	B-UNK
 specimens	I-UNK
@@ -27694,11 +27694,11 @@ a	O
 condition	B-UNK
 which	O
 may	O
-lead	B-UNK
+lead	B-CHEMICAL
 to	O
 deterioration	B-UNK
 of	O
-renal	B-UNK
+renal	B-DISEASE
 allograft	B-UNK
 function	B-UNK
 .	O
@@ -27840,7 +27840,7 @@ i	O
 .	O
 c	B-UNK
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 was	O
@@ -28015,7 +28015,7 @@ processes	B-UNK
 angioedema	B-DISEASE
 due	O
 to	O
-ace	O
+ace	B-UNK
 inhibitors	B-UNK
 :	O
 common	B-UNK
@@ -28034,7 +28034,7 @@ angiotensin	B-CHEMICAL
 converting	B-UNK
 enzyme	I-UNK
 (	O
-ace	O
+ace	B-UNK
 )	O
 inhibitor	B-UNK
 treatment	B-UNK
@@ -28899,8 +28899,8 @@ study	B-UNK
 of	O
 278	O
 consecutive	B-UNK
-renal	B-UNK
-specimens	B-UNK
+renal	B-DISEASE
+specimens	O
 .	O
 background	O
 :	O
@@ -28910,7 +28910,7 @@ has	O
 been	O
 found	B-UNK
 between	O
-transplant	O
+transplant	B-UNK
 glomerulopathy	O
 (	O
 tg	B-DISEASE
@@ -28953,8 +28953,8 @@ we	O
 examined	B-UNK
 278	O
 consecutive	B-UNK
-renal	B-UNK
-specimens	B-UNK
+renal	B-DISEASE
+specimens	O
 (	O
 from	O
 135	O
@@ -28973,7 +28973,7 @@ ptcr	B-UNK
 in	O
 addition	O
 to	O
-renal	B-UNK
+renal	B-DISEASE
 allografts	O
 with	O
 tg	B-DISEASE
@@ -29004,7 +29004,7 @@ biopsies	B-UNK
 .	O
 native	B-UNK
 kidney	B-UNK
-specimens	B-UNK
+specimens	O
 included	B-UNK
 a	O
 wide	O
@@ -29046,7 +29046,7 @@ tg	B-DISEASE
 ,	O
 in	O
 7	O
-transplant	O
+transplant	B-UNK
 biopsy	B-UNK
 specimens	I-UNK
 without	O
@@ -29218,7 +29218,7 @@ targeting	O
 sigma1	B-UNK
 receptors	B-UNK
 produce	B-UNK
-anti	B-UNK
+anti	O
 -	O
 cocaine	B-CHEMICAL
 effects	B-UNK
@@ -29549,7 +29549,7 @@ the	O
 hypothesis	O
 that	O
 the	O
-anti	B-UNK
+anti	O
 -	O
 cocaine	B-CHEMICAL
 effects	B-UNK
@@ -29649,8 +29649,8 @@ associated	B-UNK
 with	O
 increases	B-UNK
 in	O
-qt	B-UNK
-interval	I-UNK
+qt	B-DISEASE
+interval	I-DISEASE
 and	O
 monophasic	O
 action	B-UNK
@@ -29845,7 +29845,7 @@ concentration	B-UNK
 in	O
 man	B-UNK
 causing	B-UNK
-qt	B-UNK
+qt	O
 effects	B-UNK
 .	O
 for	O
@@ -29961,7 +29961,7 @@ girl	B-UNK
 with	O
 recurrent	B-UNK
 acute	B-UNK
-lymphoblastic	B-UNK
+lymphoblastic	O
 leucemia	O
 and	O
 a	O
@@ -29971,7 +29971,7 @@ year	B-UNK
 old	I-UNK
 man	B-UNK
 with	O
-lymphoblastic	B-UNK
+lymphoblastic	O
 lymphoma	B-DISEASE
 .	O
 the	O
@@ -30319,7 +30319,7 @@ a	O
 -	O
 mm	B-UNK
 visual	B-UNK
-analog	B-UNK
+analog	O
 scale	B-UNK
 .	O
 results	B-UNK
@@ -30614,7 +30614,7 @@ marrow	I-UNK
 recovery	B-UNK
 and	O
 peripheral	B-UNK
-blood	B-UNK
+blood	O
 recovery	B-UNK
 were	O
 complete	B-UNK
@@ -30630,7 +30630,7 @@ after	O
 treatment	B-UNK
 ,	O
 and	O
-blood	B-UNK
+blood	O
 transfusion	B-UNK
 or	O
 other	O
@@ -30792,7 +30792,7 @@ or	O
 neostigmine	B-CHEMICAL
 via	O
 timed	O
-tail	B-UNK
+tail	O
 vein	O
 infusion	B-UNK
 ,	O
@@ -30908,7 +30908,7 @@ mm	B-UNK
 kcl	O
 increased	B-UNK
 ach	B-CHEMICAL
-output	B-UNK
+output	O
 in	O
 both	O
 lines	B-UNK
@@ -31081,7 +31081,7 @@ progressive	B-UNK
 increase	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 renal	B-DISEASE
 injury	I-DISEASE
@@ -31271,8 +31271,8 @@ of	O
 gestation	O
 had	O
 elevated	B-UNK
-blood	B-UNK
-pressures	B-UNK
+blood	O
+pressures	O
 at	B-DISEASE
 6	O
 months	B-UNK
@@ -31596,7 +31596,7 @@ contraception	O
 had	O
 no	O
 recent	B-UNK
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 or	O
 menopausal	O
 symptoms	B-UNK
@@ -31755,7 +31755,7 @@ the	O
 thickening	O
 of	O
 the	O
-skin	B-UNK
+skin	B-DISEASE
 ,	O
 coarsening	O
 of	O
@@ -31793,7 +31793,7 @@ insulin	B-CHEMICAL
 -	O
 like	B-UNK
 growth	B-UNK
-factor	I-UNK
+factor	B-UNK
 levels	B-UNK
 .	O
 we	O
@@ -31888,7 +31888,7 @@ biopsy	B-UNK
 -	O
 proven	O
 prostatic	O
-adenocarcinoma	B-UNK
+adenocarcinoma	B-DISEASE
 [	O
 26	O
 with	O
@@ -31990,16 +31990,16 @@ stage	B-UNK
 d2	B-UNK
 -	O
 3	O
-disease	B-UNK
+disease	B-DISEASE
 ,	O
 abnormal	B-UNK
 hemoglobin	B-UNK
 level	B-UNK
 or	O
-renal	B-UNK
+renal	B-DISEASE
 and	O
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 that	O
 were	O
@@ -32396,7 +32396,7 @@ coccidioidomycosis	B-DISEASE
 .	O
 his	O
 echocardiographic	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 and	O
 heart	B-DISEASE
 failure	I-DISEASE
@@ -32445,7 +32445,7 @@ its	O
 use	B-UNK
 for	O
 nocturnal	B-UNK
-leg	B-UNK
+leg	B-DISEASE
 cramps	B-DISEASE
 due	O
 to	O
@@ -32462,11 +32462,11 @@ available	B-UNK
 in	O
 beverages	B-UNK
 including	B-UNK
-tonic	B-UNK
-water	B-UNK
+tonic	B-DISEASE
+water	B-CHEMICAL
 and	O
 bitter	O
-lemon	O
+lemon	B-UNK
 .	O
 numerous	O
 anecdotal	O
@@ -32701,7 +32701,7 @@ maleate	I-CHEMICAL
 +	O
 -	O
 mk801	B-CHEMICAL
-hydrogen	B-UNK
+hydrogen	B-CHEMICAL
 maleate	O
 )	O
 (	O
@@ -32984,7 +32984,7 @@ respectively	O
 ,	O
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 hemodynamic	B-UNK
 variability	B-UNK
@@ -33033,14 +33033,14 @@ standard	B-UNK
 deviation	B-UNK
 of	O
 mean	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 as	O
 a	O
 measure	B-UNK
 of	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 variability	B-UNK
 and	O
 the	O
@@ -33112,7 +33112,7 @@ standard	B-UNK
 deviation	B-UNK
 of	O
 mean	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 .	O
 sdrr	O
@@ -33817,7 +33817,7 @@ suggest	B-UNK
 that	O
 situations	O
 causing	B-UNK
-gallbladder	B-UNK
+gallbladder	B-DISEASE
 dysfunction	B-UNK
 ,	O
 such	O
@@ -33994,7 +33994,7 @@ the	O
 drug	B-UNK
 in	O
 the	O
-blood	B-UNK
+blood	O
 stream	O
 ,	O
 inactivating	O
@@ -34166,7 +34166,7 @@ markers	B-UNK
 of	O
 fibrinolysis	B-UNK
 ,	O
-thrombin	B-UNK
+thrombin	B-CHEMICAL
 -	O
 activatable	O
 fibrinolysis	B-UNK
@@ -34437,8 +34437,8 @@ without	O
 concomitant	B-UNK
 use	B-UNK
 of	O
-qt	B-UNK
-interval	I-UNK
+qt	B-DISEASE
+interval	I-DISEASE
 -	O
 prolonging	O
 drug	B-UNK
@@ -34454,8 +34454,8 @@ without	O
 concomitant	B-UNK
 use	B-UNK
 of	O
-qt	B-UNK
-interval	I-UNK
+qt	B-DISEASE
+interval	I-DISEASE
 -	O
 prolonging	O
 drugs	B-UNK
@@ -34492,8 +34492,8 @@ fungal	B-DISEASE
 infection	I-DISEASE
 .	O
 her	O
-qt	B-UNK
-interval	I-UNK
+qt	B-DISEASE
+interval	I-DISEASE
 returned	B-UNK
 to	O
 normal	B-UNK
@@ -34536,8 +34536,8 @@ ketoconazole	B-CHEMICAL
 alone	O
 may	O
 prolong	O
-qt	B-UNK
-interval	I-UNK
+qt	B-DISEASE
+interval	I-DISEASE
 and	O
 induce	B-UNK
 tdp	B-DISEASE
@@ -35009,7 +35009,7 @@ low	B-UNK
 back	O
 and	O
 right	B-UNK
-leg	B-UNK
+leg	B-DISEASE
 pain	B-DISEASE
 was	O
 scheduled	O
@@ -35136,7 +35136,7 @@ especially	B-UNK
 in	O
 the	O
 right	B-UNK
-leg	B-UNK
+leg	B-DISEASE
 .	O
 she	O
 was	O
@@ -35202,7 +35202,7 @@ and	O
 continued	B-UNK
 vigilance	B-UNK
 for	O
-neurologic	B-UNK
+neurologic	B-DISEASE
 deterioration	B-UNK
 after	O
 epidural	B-UNK
@@ -35422,9 +35422,9 @@ diabetes	B-DISEASE
 cholesterol	B-CHEMICAL
 level	B-UNK
 ,	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 or	O
 alcohol	B-CHEMICAL
@@ -35508,7 +35508,7 @@ protein	B-UNK
 kinase	B-UNK
 .	O
 sirolimus	B-CHEMICAL
-represents	B-UNK
+represents	O
 a	O
 major	B-UNK
 therapeutic	B-UNK
@@ -35518,7 +35518,7 @@ the	O
 prevention	O
 of	O
 acute	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 allograft	B-UNK
 rejection	B-UNK
 and	O
@@ -35536,9 +35536,9 @@ glomerulonephritis	B-DISEASE
 ,	O
 autoimmunity	O
 ,	O
-cystic	B-UNK
-renal	B-UNK
-diseases	B-UNK
+cystic	O
+renal	B-DISEASE
+diseases	B-DISEASE
 and	O
 renal	B-DISEASE
 cancer	I-DISEASE
@@ -35553,7 +35553,7 @@ not	O
 share	O
 the	O
 vasomotor	O
-renal	B-UNK
+renal	B-DISEASE
 adverse	B-UNK
 effects	I-UNK
 exhibited	B-UNK
@@ -35678,10 +35678,10 @@ may	O
 be	O
 due	O
 to	O
-suppression	B-UNK
+suppression	O
 of	O
 compensatory	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 cell	B-UNK
 proliferation	I-UNK
 and	O
@@ -35730,7 +35730,7 @@ monitoring	B-UNK
 of	O
 proteinuria	B-DISEASE
 and	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 ,	O
 use	B-UNK
@@ -35990,7 +35990,7 @@ of	O
 cardiac	B-UNK
 sympathetic	B-UNK
 tone	B-UNK
-represents	B-UNK
+represents	O
 an	O
 important	B-UNK
 strategy	B-UNK
@@ -36324,7 +36324,7 @@ cochlea	O
 does	O
 smoking	B-CHEMICAL
 during	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 affect	B-UNK
 the	O
 amplitudes	O
@@ -36353,7 +36353,7 @@ influence	B-UNK
 of	O
 smoking	B-CHEMICAL
 during	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 on	O
 the	O
 developing	B-UNK
@@ -36428,7 +36428,7 @@ mothers	O
 reported	B-UNK
 smoking	B-CHEMICAL
 during	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 (	O
 n	B-UNK
 =	O
@@ -36657,7 +36657,7 @@ acuity	B-UNK
 neuroinflammation	O
 and	O
 behavioral	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 after	O
 neonatal	B-UNK
 terbutaline	B-CHEMICAL
@@ -37187,7 +37187,7 @@ mg	B-UNK
 frequency	B-UNK
 of	O
 generalized	B-UNK
-tonic	B-UNK
+tonic	B-DISEASE
 -	O
 clonic	O
 seizures	B-DISEASE
@@ -37985,13 +37985,13 @@ two	O
 achieved	B-UNK
 a	O
 complete	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 and	O
 one	O
 achieved	B-UNK
 a	O
 partial	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 for	O
 an	O
 overall	B-UNK
@@ -38020,7 +38020,7 @@ interval	I-UNK
 .	O
 eleven	O
 patients	B-UNK
-progressed	B-UNK
+progressed	O
 during	O
 therapy	B-UNK
 .	O
@@ -38232,7 +38232,7 @@ lipid	B-UNK
 peroxidation	B-UNK
 ,	O
 endogenous	B-UNK
-antioxidants	B-UNK
+antioxidants	B-CHEMICAL
 and	O
 membrane	B-UNK
 bound	O
@@ -38422,7 +38422,7 @@ body	B-DISEASE
 weight	I-DISEASE
 ,	O
 endogenous	B-UNK
-antioxidants	B-UNK
+antioxidants	B-CHEMICAL
 ,	O
 na	B-CHEMICAL
 +	O
@@ -38572,7 +38572,7 @@ and	O
 the	O
 results	B-UNK
 of	O
-thyroid	B-UNK
+thyroid	B-DISEASE
 function	B-UNK
 tests	I-UNK
 were	O
@@ -39150,7 +39150,7 @@ iv	B-UNK
 to	O
 restore	O
 mean	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 (	O
 map	B-UNK
@@ -39170,8 +39170,8 @@ volume	B-UNK
 sv	O
 )	O
 ,	O
-cardiac	B-UNK
-output	I-UNK
+cardiac	B-DISEASE
+output	I-DISEASE
 (	O
 co	B-CHEMICAL
 )	O
@@ -39700,7 +39700,7 @@ disorders	B-UNK
 late	B-UNK
 recovery	B-UNK
 of	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 in	O
 a	O
@@ -39749,7 +39749,7 @@ months	B-UNK
 ,	O
 her	O
 urinary	B-UNK
-output	B-UNK
+output	O
 rose	O
 above	O
 500	O
@@ -39791,7 +39791,7 @@ oliguria	B-DISEASE
 ,	O
 recovery	B-UNK
 of	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 can	O
 be	O
@@ -40341,7 +40341,7 @@ oncology	O
 report	B-UNK
 .	O
 the	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 of	O
 74	O
@@ -40352,7 +40352,7 @@ mesenchymal	O
 tumors	B-DISEASE
 in	O
 complete	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 and	O
 who	O
 have	O
@@ -40455,7 +40455,7 @@ head	B-UNK
 and	O
 neck	O
 .	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 was	O
 investigated	B-UNK
@@ -40501,7 +40501,7 @@ patients	B-UNK
 )	O
 had	O
 normal	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 tests	B-UNK
 ,	O
 whereas	O
@@ -40513,7 +40513,7 @@ patients	B-UNK
 )	O
 had	O
 renal	B-DISEASE
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 .	O
 two	O
 subsets	O
@@ -40548,7 +40548,7 @@ in	O
 fanconi	O
 '	O
 s	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 (	O
 tdfs	O
 )	O
@@ -40863,14 +40863,14 @@ sch	B-CHEMICAL
 the	O
 selective	B-UNK
 d2	B-UNK
-antagonist	I-UNK
+antagonist	B-UNK
 raclopride	B-CHEMICAL
 and	O
 the	O
 d1	B-UNK
 /	O
 d2	B-UNK
-antagonist	I-UNK
+antagonist	B-UNK
 fluphenazine	B-CHEMICAL
 .	O
 pretreatment	B-UNK
@@ -41054,7 +41054,7 @@ of	O
 000	O
 in	O
 the	O
-prophylaxis	B-UNK
+prophylaxis	O
 group	B-UNK
 ,	O
 making	O
@@ -41071,7 +41071,7 @@ times	B-UNK
 higher	B-UNK
 than	O
 after	O
-prophylaxis	B-UNK
+prophylaxis	O
 .	O
 therefore	O
 ,	O
@@ -41079,7 +41079,7 @@ certain	B-UNK
 limitations	O
 for	O
 malaria	B-DISEASE
-prophylaxis	B-UNK
+prophylaxis	O
 and	O
 treatment	B-UNK
 with	O
@@ -41178,7 +41178,7 @@ standard	B-UNK
 lidocaine	B-CHEMICAL
 in	O
 one	O
-femoral	O
+femoral	B-UNK
 area	B-UNK
 and	O
 buffered	O
@@ -41186,7 +41186,7 @@ lidocaine	B-CHEMICAL
 in	O
 the	O
 opposite	O
-femoral	O
+femoral	B-UNK
 area	B-UNK
 .	O
 the	O
@@ -41656,7 +41656,7 @@ mg	B-UNK
 kg	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 or	O
@@ -41668,14 +41668,14 @@ mg	B-UNK
 kg	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 .	O
 baseline	B-UNK
 circumflex	O
 coronary	B-UNK
-blood	B-UNK
+blood	O
 flows	O
 did	O
 not	O
@@ -41689,7 +41689,7 @@ dipyridamole	B-CHEMICAL
 significantly	B-UNK
 increased	I-UNK
 coronary	B-UNK
-blood	B-UNK
+blood	O
 flow	B-UNK
 before	O
 and	O
@@ -41704,7 +41704,7 @@ mm	B-UNK
 kg	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 pentoxifylline	B-CHEMICAL
 (	O
@@ -41731,7 +41731,7 @@ hyperemia	B-DISEASE
 while	O
 peak	B-UNK
 coronary	B-UNK
-blood	B-UNK
+blood	O
 flow	B-UNK
 was	O
 significantly	B-UNK
@@ -42312,7 +42312,7 @@ micrograms	B-UNK
 /	O
 dl	O
 .	O
-suppression	B-UNK
+suppression	O
 of	O
 ircrf	B-UNK
 secretion	B-UNK
@@ -42543,7 +42543,7 @@ by	O
 haloperidol	B-CHEMICAL
 .	O
 
-intracranial	B-UNK
+intracranial	O
 pressure	B-UNK
 increases	B-UNK
 during	O
@@ -42552,7 +42552,7 @@ alfentanil	B-CHEMICAL
 induced	B-UNK
 rigidity	B-DISEASE
 .	O
-intracranial	B-UNK
+intracranial	O
 pressure	B-UNK
 (	O
 icp	O
@@ -42570,7 +42570,7 @@ rats	B-UNK
 ten	B-DISEASE
 rats	B-UNK
 had	O
-arterial	B-UNK
+arterial	O
 ,	O
 central	B-UNK
 venous	B-UNK
@@ -43210,7 +43210,7 @@ hearing	B-UNK
 aids	B-DISEASE
 because	O
 of	O
-permanent	O
+permanent	B-UNK
 disability	O
 .	O
 since	O
@@ -43342,7 +43342,7 @@ in	O
 those	O
 without	O
 audiogram	O
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 .	O
 with	O
 mild	B-UNK
@@ -43375,7 +43375,7 @@ four	O
 weeks	B-UNK
 .	O
 moderate	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 require	B-UNK
 a	O
 reduction	B-UNK
@@ -43541,14 +43541,14 @@ feet	O
 the	O
 duration	B-UNK
 of	O
-morning	B-UNK
+morning	O
 stiffness	O
 and	O
 the	O
 circumference	O
 of	O
 the	O
-left	B-UNK
+left	O
 knee	O
 .	O
 the	O
@@ -43560,7 +43560,7 @@ effect	B-UNK
 was	O
 fecal	O
 occult	O
-blood	B-UNK
+blood	O
 (	O
 25	O
 %	O
@@ -43912,7 +43912,7 @@ nasal	B-UNK
 congestants	O
 ,	O
 and	O
-cold	B-UNK
+cold	B-DISEASE
 preparations	B-UNK
 .	O
 its	O
@@ -43992,8 +43992,8 @@ and	O
 results	B-UNK
 of	O
 biochemical	B-UNK
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 remained	B-UNK
 normal	B-UNK
@@ -44015,7 +44015,7 @@ degree	B-UNK
 in	O
 eight	O
 .	O
-liver	B-UNK
+liver	B-DISEASE
 biopsies	B-UNK
 should	O
 be	O
@@ -44075,11 +44075,11 @@ mothers	O
 ingested	O
 lithium	B-CHEMICAL
 during	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 .	O
 in	O
 one	O
-infant	B-UNK
+infant	B-DISEASE
 ,	O
 ebstein	B-DISEASE
 '	I-DISEASE
@@ -44095,7 +44095,7 @@ identified	B-UNK
 in	O
 the	O
 other	O
-infant	B-UNK
+infant	B-DISEASE
 cross	B-UNK
 -	O
 sectional	B-UNK
@@ -44382,7 +44382,7 @@ antitumor	B-UNK
 activity	I-UNK
 in	O
 l1210	O
-leukemia	B-UNK
+leukemia	B-DISEASE
 and	O
 in	O
 ehrlich	O
@@ -44392,7 +44392,7 @@ tumor	B-DISEASE
 
 intra	B-UNK
 -	O
-arterial	B-UNK
+arterial	O
 bcnu	B-CHEMICAL
 chemotherapy	B-UNK
 for	O
@@ -44434,7 +44434,7 @@ nitrosourea	I-CHEMICAL
 ,	O
 intra	B-UNK
 -	O
-arterial	B-UNK
+arterial	O
 administration	B-UNK
 should	O
 provide	B-UNK
@@ -44637,7 +44637,7 @@ courses	B-UNK
 of	O
 intra	B-UNK
 -	O
-arterial	B-UNK
+arterial	O
 bcnu	B-CHEMICAL
 therapy	B-UNK
 .	O
@@ -44693,7 +44693,7 @@ been	O
 unilateral	O
 loss	B-UNK
 of	O
-vision	B-UNK
+vision	B-DISEASE
 secondary	B-UNK
 to	O
 a	O
@@ -44718,7 +44718,7 @@ lowered	B-UNK
 .	O
 
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 response	B-UNK
 to	O
 chronic	B-UNK
@@ -44821,7 +44821,7 @@ noradrenaline	B-CHEMICAL
 concentration	B-UNK
 -	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 effect	B-UNK
 curve	B-UNK
 towards	O
@@ -45027,7 +45027,7 @@ of	O
 13	O
 patients	B-UNK
 without	O
-liver	B-UNK
+liver	B-DISEASE
 or	O
 kidney	B-DISEASE
 disease	I-DISEASE
@@ -45060,7 +45060,7 @@ development	B-UNK
 of	O
 clear	B-UNK
 cell	B-UNK
-adenocarcinoma	B-UNK
+adenocarcinoma	B-DISEASE
 in	O
 des	B-CHEMICAL
 -	O
@@ -45074,7 +45074,7 @@ cases	B-UNK
 of	O
 clear	B-UNK
 cell	B-UNK
-adenocarcinoma	B-UNK
+adenocarcinoma	B-DISEASE
 of	O
 the	O
 vagina	B-DISEASE
@@ -45194,7 +45194,7 @@ specimen	O
 phenobarbitone	B-CHEMICAL
 -	O
 induced	B-UNK
-enlargement	B-UNK
+enlargement	O
 of	O
 the	O
 liver	B-DISEASE
@@ -45218,7 +45218,7 @@ severe	B-UNK
 cirrhosis	B-DISEASE
 of	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 (	O
 defined	O
 as	O
@@ -45226,7 +45226,7 @@ a	O
 shrunken	O
 finely	O
 nodular	O
-liver	B-UNK
+liver	B-DISEASE
 with	O
 micronodular	O
 histology	B-UNK
@@ -45304,10 +45304,10 @@ the	O
 phenobarbitone	B-CHEMICAL
 -	O
 induced	B-UNK
-enlargement	B-UNK
+enlargement	O
 of	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 .	O
 at	B-DISEASE
 this	O
@@ -45353,7 +45353,7 @@ a	O
 mean	B-UNK
 maximum	B-UNK
 relative	B-UNK
-liver	B-UNK
+liver	B-DISEASE
 weight	B-UNK
 increase	B-UNK
 47	O
@@ -45397,7 +45397,7 @@ diabetes	B-DISEASE
 insipidus	O
 -	O
 like	B-UNK
-syndrome	I-UNK
+syndrome	B-DISEASE
 by	O
 amiloride	B-CHEMICAL
 in	O
@@ -45427,10 +45427,10 @@ brain	B-UNK
 ,	O
 kidney	B-UNK
 ,	O
-thyroid	B-UNK
+thyroid	B-DISEASE
 and	O
-red	B-UNK
-blood	B-UNK
+red	O
+blood	O
 cells	B-UNK
 was	O
 investigated	B-UNK
@@ -45487,8 +45487,8 @@ lithium	B-CHEMICAL
 content	B-UNK
 of	O
 the	O
-renal	B-UNK
-medulla	B-UNK
+renal	B-DISEASE
+medulla	O
 but	O
 not	O
 in	O
@@ -45552,7 +45552,7 @@ diabetes	B-DISEASE
 insipidus	O
 -	O
 like	B-UNK
-syndrome	I-UNK
+syndrome	B-DISEASE
 by	O
 amiloride	B-CHEMICAL
 was	O
@@ -45569,14 +45569,14 @@ lithium	B-CHEMICAL
 concentration	B-UNK
 in	O
 the	O
-renal	B-UNK
-medulla	B-UNK
+renal	B-DISEASE
+medulla	O
 and	O
 its	O
 levels	B-UNK
 in	O
 the	O
-blood	B-UNK
+blood	O
 and	O
 an	O
 elevation	B-UNK
@@ -45763,7 +45763,7 @@ reactions	B-UNK
 (	O
 21	O
 %	O
-v	B-UNK
+v	O
 .	O
 0	O
 %	O
@@ -45871,7 +45871,7 @@ hypercholesterolemia	B-DISEASE
 and	O
 increase	B-UNK
 in	O
-blood	B-UNK
+blood	O
 nitrogen	B-CHEMICAL
 urea	B-CHEMICAL
 ,	O
@@ -45954,7 +45954,7 @@ dysfunction	I-DISEASE
 .	O
 in	O
 an	O
-attempt	B-UNK
+attempt	O
 to	O
 determine	B-UNK
 whether	O
@@ -46161,13 +46161,13 @@ long	B-UNK
 term	B-UNK
 effects	B-UNK
 of	O
-somatostatin	B-UNK
-analog	B-UNK
+somatostatin	B-CHEMICAL
+analog	O
 (	O
 octreotide	B-CHEMICAL
 )	O
 on	O
-gallbladder	B-UNK
+gallbladder	B-DISEASE
 function	B-UNK
 and	O
 gallstone	O
@@ -46183,7 +46183,7 @@ reports	B-UNK
 the	O
 changes	B-UNK
 in	O
-gallbladder	B-UNK
+gallbladder	B-DISEASE
 function	B-UNK
 examined	B-UNK
 by	O
@@ -46201,8 +46201,8 @@ sc	B-UNK
 injection	B-UNK
 of	O
 the	O
-somatostatin	B-UNK
-analog	B-UNK
+somatostatin	B-CHEMICAL
+analog	O
 octreotide	B-CHEMICAL
 in	O
 dosages	O
@@ -46245,7 +46245,7 @@ gallstones	B-DISEASE
 and	O
 1	O
 developed	B-UNK
-acute	I-UNK
+acute	B-UNK
 cholecystitis	B-DISEASE
 requiring	B-UNK
 surgery	B-UNK
@@ -46258,8 +46258,8 @@ patients	B-UNK
 examined	B-UNK
 acutely	O
 ,	O
-gallbladder	B-UNK
-contractility	I-UNK
+gallbladder	B-DISEASE
+contractility	B-UNK
 was	O
 inhibited	B-UNK
 after	O
@@ -46278,8 +46278,8 @@ for	O
 24	O
 weeks	B-UNK
 ,	O
-gallbladder	B-UNK
-contractility	I-UNK
+gallbladder	B-DISEASE
+contractility	B-UNK
 remained	B-UNK
 depressed	B-DISEASE
 throughout	O
@@ -46302,8 +46302,8 @@ had	O
 return	O
 of	O
 normal	B-UNK
-gallbladder	B-UNK
-contractility	I-UNK
+gallbladder	B-DISEASE
+contractility	B-UNK
 within	O
 1	O
 month	B-UNK
@@ -46321,9 +46321,9 @@ gallstones	B-DISEASE
 during	O
 treatment	B-UNK
 ,	O
-gallbladder	B-UNK
-contractility	I-UNK
-normalized	B-UNK
+gallbladder	B-DISEASE
+contractility	B-UNK
+normalized	O
 in	O
 5	O
 patients	B-UNK
@@ -46363,10 +46363,10 @@ results	B-UNK
 suggest	B-UNK
 that	O
 the	O
-suppression	B-UNK
+suppression	O
 of	O
-gallbladder	B-UNK
-contractility	I-UNK
+gallbladder	B-DISEASE
+contractility	B-UNK
 is	O
 the	O
 cause	B-UNK
@@ -46375,7 +46375,7 @@ the	O
 successive	B-UNK
 formation	B-UNK
 of	O
-bile	B-UNK
+bile	O
 sludge	O
 ,	O
 gallstones	B-DISEASE
@@ -46400,7 +46400,7 @@ follow	B-UNK
 the	O
 changes	B-UNK
 of	O
-gallbladder	B-UNK
+gallbladder	B-DISEASE
 function	B-UNK
 during	O
 long	B-UNK
@@ -46607,7 +46607,7 @@ structural	B-UNK
 elements	B-CHEMICAL
 of	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 -	O
@@ -46882,7 +46882,7 @@ have	O
 substantially	B-UNK
 improved	B-UNK
 visual	B-UNK
-prognosis	B-UNK
+prognosis	O
 in	O
 endophthalmitis	B-DISEASE
 ,	O
@@ -46906,7 +46906,7 @@ amikacin	B-CHEMICAL
 retinal	B-UNK
 toxicity	B-DISEASE
 following	B-UNK
-treatment	B-UNK
+treatment	I-UNK
 with	O
 amikacin	B-CHEMICAL
 and	O
@@ -47232,7 +47232,7 @@ one	O
 severely	B-UNK
 affected	B-UNK
 worker	O
-liver	B-UNK
+liver	B-DISEASE
 biopsy	B-UNK
 and	O
 immunohistochemical	B-UNK
@@ -47264,7 +47264,7 @@ that	O
 react	O
 with	O
 human	B-UNK
-liver	B-UNK
+liver	B-DISEASE
 cytochrome	B-UNK
 -	O
 p450	B-UNK
@@ -47396,7 +47396,7 @@ that	O
 trifluoroacetyl	O
 -	O
 altered	B-UNK
-liver	B-UNK
+liver	B-DISEASE
 proteins	B-UNK
 are	O
 involved	B-UNK
@@ -47683,7 +47683,7 @@ l4	O
 dermatomes	O
 of	O
 the	O
-leg	B-UNK
+leg	B-DISEASE
 which	O
 had	O
 been	O
@@ -47855,7 +47855,7 @@ postoperatively	B-UNK
 he	O
 developed	B-UNK
 a	O
-brief	B-UNK
+brief	B-DISEASE
 self	O
 -	O
 limited	B-UNK
@@ -47922,7 +47922,7 @@ pca	O
 even	O
 for	O
 a	O
-brief	B-UNK
+brief	B-DISEASE
 postoperative	B-UNK
 analgesia	B-UNK
 should	O
@@ -47937,12 +47937,12 @@ acute	B-UNK
 -	O
 onset	B-UNK
 vanishing	B-UNK
-bile	B-UNK
-duct	B-UNK
+bile	I-UNK
+duct	I-UNK
 and	O
 stevens	O
 -	O
-johnson	B-UNK
+johnson	O
 syndromes	O
 in	O
 a	O
@@ -47950,9 +47950,9 @@ child	O
 .	O
 acute	B-UNK
 vanishing	B-UNK
-bile	B-UNK
-duct	B-UNK
-syndrome	B-UNK
+bile	I-UNK
+duct	I-UNK
+syndrome	B-DISEASE
 is	O
 a	O
 rare	B-UNK
@@ -48032,15 +48032,15 @@ healthy	B-UNK
 child	O
 who	O
 developed	B-UNK
-acute	I-UNK
+acute	B-UNK
 ,	O
 severe	B-UNK
 ,	O
 rapidly	B-UNK
 progressive	B-UNK
 vanishing	B-UNK
-bile	B-UNK
-duct	B-UNK
+bile	I-UNK
+duct	I-UNK
 syndrome	B-DISEASE
 shortly	O
 after	O
@@ -48095,9 +48095,9 @@ drug	B-UNK
 -	O
 related	B-UNK
 vanishing	B-UNK
-bile	B-UNK
-duct	B-UNK
-syndrome	B-UNK
+bile	I-UNK
+duct	I-UNK
+syndrome	B-DISEASE
 in	O
 the	O
 pediatric	B-UNK
@@ -48119,8 +48119,8 @@ johnson	I-DISEASE
 syndrome	I-DISEASE
 and	O
 vanishing	B-UNK
-bile	B-UNK
-duct	B-UNK
+bile	I-UNK
+duct	I-UNK
 syndrome	B-DISEASE
 .	O
 
@@ -48338,7 +48338,7 @@ of	O
 appetite	B-CHEMICAL
 suppressants	I-CHEMICAL
 may	O
-lead	B-UNK
+lead	B-CHEMICAL
 to	O
 a	O
 high	B-UNK
@@ -48379,7 +48379,7 @@ to	O
 be	O
 occasional	O
 movement	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 during	O
 intoxications	O
 with	O
@@ -48427,7 +48427,7 @@ addition	O
 ,	O
 minor	B-UNK
 eeg	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 occurred	B-UNK
 .	O
 possible	B-UNK
@@ -48939,7 +48939,7 @@ structural	B-UNK
 perturbation	O
 of	O
 red	B-UNK
-cell	B-UNK
+cell	I-UNK
 membrane	B-UNK
 ,	O
 leading	B-UNK
@@ -49164,9 +49164,9 @@ l	B-CHEMICAL
 name	I-CHEMICAL
 ,	O
 the	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 (	O
 sbp	B-UNK
 )	O
@@ -49228,7 +49228,7 @@ na	B-CHEMICAL
 the	O
 vmax	O
 remained	B-UNK
-unchanged	B-UNK
+unchanged	I-UNK
 ,	O
 however	O
 the	O
@@ -49356,7 +49356,7 @@ after	O
 recovery	B-UNK
 of	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 to	O
 control	B-UNK
 values	I-UNK
@@ -49370,7 +49370,7 @@ from	O
 cardiac	B-UNK
 cells	B-UNK
 was	O
-normalized	B-UNK
+normalized	O
 ,	O
 as	O
 revealed	B-UNK
@@ -49492,7 +49492,7 @@ without	O
 affecting	B-UNK
 baseline	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -49542,7 +49542,7 @@ reduced	B-UNK
 by	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 domperidone	B-CHEMICAL
 (	O
@@ -49584,9 +49584,9 @@ induced	B-UNK
 maximal	B-UNK
 increase	B-UNK
 in	O
-left	B-UNK
+left	O
 ventricular	O
-systolic	B-UNK
+systolic	O
 pressure	B-UNK
 was	O
 significantly	B-UNK
@@ -49608,9 +49608,9 @@ isoproterenol	B-CHEMICAL
 induced	B-UNK
 increase	B-UNK
 in	O
-left	B-UNK
+left	O
 ventricular	O
-systolic	B-UNK
+systolic	O
 pressure	B-UNK
 was	O
 enhanced	B-UNK
@@ -49712,14 +49712,14 @@ and	O
 ultrasound	B-UNK
 production	B-UNK
 in	O
-infant	B-UNK
+infant	B-DISEASE
 rats	B-UNK
 .	O
 under	O
 controlled	B-UNK
 conditions	B-UNK
 ,	O
-infant	B-UNK
+infant	B-DISEASE
 rats	B-UNK
 emit	O
 ultrasonic	O
@@ -50001,7 +50001,7 @@ by	O
 an	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 infusion	B-UNK
 of	O
@@ -50348,9 +50348,9 @@ of	O
 a	O
 living	O
 donor	B-UNK
-renal	B-UNK
-transplant	I-UNK
-recipient	I-UNK
+renal	B-DISEASE
+transplant	B-UNK
+recipient	B-UNK
 who	O
 developed	B-UNK
 cyclosporine	B-CHEMICAL
@@ -50386,7 +50386,7 @@ agent	I-UNK
 resulted	B-UNK
 in	O
 the	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 of	O
 tma	B-DISEASE
 and	O
@@ -50395,7 +50395,7 @@ subsequent	B-UNK
 loss	B-UNK
 of	O
 the	O
-renal	B-UNK
+renal	B-DISEASE
 allograft	B-UNK
 .	O
 patients	B-UNK
@@ -50490,7 +50490,7 @@ diuretics	B-CHEMICAL
 due	O
 to	O
 severe	B-UNK
-systolic	B-UNK
+systolic	O
 dysfunction	B-UNK
 losartan	B-CHEMICAL
 was	O
@@ -50565,7 +50565,7 @@ episodes	B-UNK
 ,	O
 his	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 diminished	B-UNK
 but	O
 no	O
@@ -50660,7 +50660,7 @@ in	O
 patients	B-UNK
 with	O
 renovascular	O
-disease	B-UNK
+disease	B-DISEASE
 and	O
 should	O
 be	O
@@ -50694,7 +50694,7 @@ nephrotoxicity	B-DISEASE
 amiodarone	B-CHEMICAL
 -	O
 induced	B-UNK
-lung	B-UNK
+lung	B-DISEASE
 toxicity	B-DISEASE
 and	O
 doxorubicin	B-CHEMICAL
@@ -50771,7 +50771,7 @@ ami	B-CHEMICAL
 )	O
 -	O
 induced	B-UNK
-lung	B-UNK
+lung	B-DISEASE
 toxicity	B-DISEASE
 ,	O
 and	O
@@ -50964,8 +50964,8 @@ kidney	B-UNK
 ,	O
 heart	B-UNK
 and	O
-lung	B-UNK
-sections	B-UNK
+lung	B-DISEASE
+sections	O
 revealed	B-UNK
 moderate	B-UNK
 to	O
@@ -51086,7 +51086,7 @@ to	O
 both	O
 inhibition	B-UNK
 of	O
-metabolism	B-UNK
+metabolism	B-DISEASE
 and	O
 /	O
 or	O
@@ -51137,7 +51137,7 @@ apoptotic	B-UNK
 death	B-DISEASE
 in	O
 the	O
-lung	B-UNK
+lung	B-DISEASE
 tissue	B-UNK
 .	O
 taken	B-UNK
@@ -51712,9 +51712,9 @@ motor	B-UNK
 symptoms	B-UNK
 .	O
 cranial	B-UNK
-magnetic	O
-resonance	B-UNK
-imaging	B-UNK
+magnetic	B-UNK
+resonance	I-UNK
+imaging	I-UNK
 and	O
 extensive	B-UNK
 laboratory	B-UNK
@@ -51729,7 +51729,7 @@ the	O
 brain	B-UNK
 and	O
 metabolic	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 .	O
 an	O
 electroencephalogram	O
@@ -52151,11 +52151,11 @@ hematoma	B-DISEASE
 volume	B-UNK
 .	O
 the	O
-blood	B-UNK
+blood	O
 amounts	B-UNK
 and	O
 hematoma	B-DISEASE
-volumes	B-UNK
+volumes	O
 were	O
 significantly	B-UNK
 correlated	B-UNK
@@ -52745,7 +52745,7 @@ outcome	B-UNK
 ketoconazole	B-CHEMICAL
 -	O
 induced	B-UNK
-neurologic	B-UNK
+neurologic	B-DISEASE
 sequelae	B-UNK
 .	O
 a	O
@@ -52859,14 +52859,14 @@ facial	B-UNK
 mucosa	B-UNK
 increases	B-UNK
 intracranial	B-UNK
-blood	B-UNK
-flow	B-UNK
+blood	I-UNK
+flow	I-UNK
 through	O
 a	O
 trigemino	O
 -	O
-parasympathetic	B-UNK
-reflex	B-UNK
+parasympathetic	O
+reflex	B-DISEASE
 -	O
 -	O
 an	O
@@ -52874,7 +52874,7 @@ experimental	B-UNK
 model	B-UNK
 for	O
 vascular	B-UNK
-dysfunctions	B-UNK
+dysfunctions	O
 in	O
 cluster	B-DISEASE
 headache	I-DISEASE
@@ -52886,11 +52886,11 @@ characterized	B-UNK
 by	O
 typical	B-UNK
 autonomic	B-UNK
-dysfunctions	B-UNK
+dysfunctions	O
 including	B-UNK
 facial	B-UNK
 and	O
-intracranial	B-UNK
+intracranial	O
 vascular	B-UNK
 disturbances	B-UNK
 .	O
@@ -52900,7 +52900,7 @@ trigeminal	O
 and	O
 the	O
 cranial	B-UNK
-parasympathetic	B-UNK
+parasympathetic	O
 systems	B-UNK
 may	O
 be	O
@@ -52908,7 +52908,7 @@ involved	B-UNK
 in	O
 mediating	O
 these	O
-dysfunctions	B-UNK
+dysfunctions	O
 .	O
 an	O
 experimental	B-UNK
@@ -52925,8 +52925,8 @@ in	O
 lacrimation	O
 and	O
 intracranial	B-UNK
-blood	B-UNK
-flow	B-UNK
+blood	I-UNK
+flow	I-UNK
 following	B-UNK
 noxious	B-UNK
 chemical	B-UNK
@@ -52935,12 +52935,12 @@ of	O
 facial	B-UNK
 mucosa	B-UNK
 .	O
-blood	B-UNK
+blood	O
 flow	B-UNK
 was	O
 monitored	B-UNK
 in	O
-arteries	B-UNK
+arteries	O
 of	O
 the	O
 exposed	B-UNK
@@ -52977,7 +52977,7 @@ in	O
 dural	O
 and	O
 cortical	B-UNK
-blood	B-UNK
+blood	O
 flow	B-UNK
 and	O
 provoked	B-UNK
@@ -53007,7 +53007,7 @@ evoked	B-UNK
 increases	B-UNK
 in	O
 dural	O
-blood	B-UNK
+blood	O
 flow	B-UNK
 were	O
 also	O
@@ -53071,19 +53071,19 @@ facial	B-UNK
 mucosa	B-UNK
 increases	B-UNK
 intracranial	B-UNK
-blood	B-UNK
-flow	B-UNK
+blood	I-UNK
+flow	I-UNK
 and	O
 lacrimation	O
 via	O
 a	O
 trigemino	O
 -	O
-parasympathetic	B-UNK
-reflex	B-UNK
+parasympathetic	O
+reflex	B-DISEASE
 .	O
 the	O
-blood	B-UNK
+blood	O
 flow	B-UNK
 responses	B-UNK
 seem	O
@@ -53687,8 +53687,8 @@ intensive	O
 corticosteroid	O
 therapy	B-UNK
 ,	O
-renal	B-UNK
-function	I-UNK
+renal	B-DISEASE
+function	B-UNK
 remained	I-UNK
 impaired	B-UNK
 .	O
@@ -53714,7 +53714,7 @@ are	O
 at	B-DISEASE
 risk	B-UNK
 for	O
-permanent	O
+permanent	B-UNK
 renal	B-DISEASE
 injury	I-DISEASE
 .	O
@@ -53731,7 +53731,7 @@ encephalopathy	B-DISEASE
 is	O
 a	O
 rare	B-UNK
-syndrome	B-UNK
+syndrome	B-DISEASE
 that	O
 may	O
 manifest	O
@@ -54136,7 +54136,7 @@ though	O
 very	O
 rare	B-UNK
 ,	O
-represents	B-UNK
+represents	O
 one	O
 more	O
 reason	O
@@ -54734,7 +54734,7 @@ comparisons	B-UNK
 exist	O
 of	O
 the	O
-renal	B-UNK
+renal	B-DISEASE
 tolerability	B-UNK
 of	O
 the	O
@@ -55749,16 +55749,16 @@ patients	B-UNK
 .	O
 hbsag	B-CHEMICAL
 ,	O
-anti	B-UNK
+anti	O
 -	O
 hbs	O
 ,	O
-anti	B-UNK
+anti	O
 -	O
 hbc	O
 ,	O
 and	O
-anti	B-UNK
+anti	O
 -	O
 hiv	O
 1	O
@@ -56139,7 +56139,7 @@ of	O
 capsaicin	B-CHEMICAL
 in	O
 the	O
-tail	B-UNK
+tail	O
 of	O
 gonadally	O
 intact	B-UNK
@@ -56149,7 +56149,7 @@ rats	B-UNK
 following	B-UNK
 which	O
 the	O
-tail	B-UNK
+tail	O
 was	O
 immersed	O
 in	O
@@ -56160,7 +56160,7 @@ thermal	B-UNK
 stimulus	B-UNK
 ,	O
 and	O
-tail	B-UNK
+tail	O
 -	O
 withdrawal	B-UNK
 latencies	O
@@ -56182,8 +56182,8 @@ the	O
 hotplate	O
 and	O
 warm	O
-water	B-UNK
-tail	B-UNK
+water	B-CHEMICAL
+tail	O
 -	O
 withdrawal	B-UNK
 procedures	B-UNK
@@ -56310,8 +56310,8 @@ long	B-UNK
 -	O
 term	B-UNK
 cardiac	B-UNK
-transplant	B-UNK
-patients	I-UNK
+transplant	I-UNK
+patients	B-UNK
 .	O
 calcineurin	B-UNK
 -	O
@@ -56352,8 +56352,8 @@ has	O
 been	O
 reported	B-UNK
 following	B-UNK
-renal	I-UNK
-transplantation	I-UNK
+renal	B-DISEASE
+transplantation	B-UNK
 .	O
 in	O
 cardiac	B-UNK
@@ -56377,8 +56377,8 @@ long	B-UNK
 -	O
 term	B-UNK
 cardiac	B-UNK
-transplant	B-UNK
-patients	I-UNK
+transplant	I-UNK
+patients	B-UNK
 were	O
 switched	O
 from	O
@@ -56509,7 +56509,7 @@ without	O
 proteinuria	B-DISEASE
 had	O
 increased	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 (	O
 median	B-UNK
@@ -56539,7 +56539,7 @@ grade	B-UNK
 proteinuria	B-DISEASE
 showed	B-UNK
 decreased	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 at	B-DISEASE
 the	O
@@ -56573,8 +56573,8 @@ may	O
 develop	B-UNK
 in	O
 cardiac	B-UNK
-transplant	B-UNK
-patients	I-UNK
+transplant	I-UNK
+patients	B-UNK
 after	O
 switch	O
 to	O
@@ -57030,9 +57030,9 @@ everolimus	B-CHEMICAL
 in	O
 a	O
 pediatric	B-UNK
-renal	B-UNK
-transplant	I-UNK
-recipient	I-UNK
+renal	B-DISEASE
+transplant	B-UNK
+recipient	B-UNK
 -	O
 -	O
 case	B-UNK
@@ -57099,9 +57099,9 @@ yr	O
 -	O
 old	B-UNK
 male	I-UNK
-renal	B-UNK
-transplant	I-UNK
-recipient	I-UNK
+renal	B-DISEASE
+transplant	B-UNK
+recipient	B-UNK
 with	O
 right	B-UNK
 bn	O
@@ -57185,12 +57185,12 @@ pergolide	B-CHEMICAL
 .	O
 course	B-UNK
 following	B-UNK
-treatment	B-UNK
+treatment	I-UNK
 modifications	O
 .	O
-valvular	B-UNK
+valvular	O
 heart	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 have	O
 been	O
 reported	B-UNK
@@ -57216,7 +57216,7 @@ and	O
 severity	B-UNK
 of	O
 these	O
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 vary	O
 from	O
 study	B-UNK
@@ -57243,7 +57243,7 @@ frequency	B-UNK
 and	O
 severity	B-UNK
 of	O
-valvular	B-UNK
+valvular	O
 heart	B-UNK
 abnormality	O
 and	O
@@ -57338,7 +57338,7 @@ to	O
 controls	B-UNK
 ,	O
 aortic	B-UNK
-regurgitation	B-UNK
+regurgitation	B-DISEASE
 (	O
 or	O
 :	O
@@ -57412,7 +57412,7 @@ and	O
 the	O
 sum	O
 of	O
-regurgitation	B-UNK
+regurgitation	B-DISEASE
 grades	O
 (	O
 n	B-UNK
@@ -57464,8 +57464,8 @@ a	O
 restrictive	O
 pattern	B-UNK
 of	O
-valvular	B-UNK
-regurgitation	B-UNK
+valvular	O
+regurgitation	B-DISEASE
 ,	O
 suggestive	O
 of	O
@@ -57584,7 +57584,7 @@ function	B-UNK
 background	O
 :	O
 papaverine	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 is	O
 a	O
 direct	B-UNK
@@ -57762,7 +57762,7 @@ ii	B-UNK
 /	O
 iii	B-UNK
 -	O
-v	B-UNK
+v	O
 completely	B-UNK
 disappeared	O
 within	O
@@ -58100,7 +58100,7 @@ enac	O
 and	O
 to	O
 mediate	O
-renal	B-UNK
+renal	B-DISEASE
 fibrosis	B-DISEASE
 following	B-UNK
 mineralocorticoid	O
@@ -58435,7 +58435,7 @@ were	O
 not	O
 protected	O
 against	O
-renal	B-UNK
+renal	B-DISEASE
 fibrosis	B-DISEASE
 during	O
 experimental	B-UNK
@@ -58562,9 +58562,9 @@ cm	B-DISEASE
 readily	O
 detectable	O
 on	O
-magnetic	O
-resonance	B-UNK
-imaging	B-UNK
+magnetic	B-UNK
+resonance	I-UNK
+imaging	I-UNK
 under	O
 prolonged	B-UNK
 co	B-CHEMICAL
@@ -58590,9 +58590,9 @@ administration	B-UNK
 of	O
 sirolimus	B-CHEMICAL
 to	O
-renal	B-UNK
+renal	B-DISEASE
 transplant	B-UNK
-recipients	I-UNK
+recipients	B-UNK
 .	O
 background	O
 :	O
@@ -58700,7 +58700,7 @@ at	B-DISEASE
 the	O
 washington	O
 hospital	B-UNK
-center	B-UNK
+center	O
 between	O
 1999	O
 -	O
@@ -58727,7 +58727,7 @@ proteinuria	B-DISEASE
 was	O
 assessed	B-UNK
 on	O
-morning	B-UNK
+morning	O
 urine	B-DISEASE
 samples	B-UNK
 by	O
@@ -58735,7 +58735,7 @@ turbidometric	O
 measurement	B-UNK
 or	O
 random	O
-urine	B-UNK
+urine	B-DISEASE
 protein	B-UNK
 :	O
 creatinine	B-CHEMICAL
@@ -58881,7 +58881,7 @@ an	O
 unpredictable	O
 subset	O
 of	O
-renal	B-UNK
+renal	B-DISEASE
 allograft	B-UNK
 recipients	B-UNK
 .	O
@@ -59162,7 +59162,7 @@ findings	B-UNK
 indicate	B-UNK
 that	O
 the	O
-metabolism	B-UNK
+metabolism	B-DISEASE
 ,	O
 neurocognitive	B-UNK
 effects	B-UNK
@@ -59241,7 +59241,7 @@ determine	B-UNK
 the	O
 effect	B-UNK
 of	O
-morning	B-UNK
+morning	O
 -	O
 dosed	O
 modafinil	B-CHEMICAL
@@ -59285,7 +59285,7 @@ n	B-UNK
 10	O
 )	O
 every	O
-morning	B-UNK
+morning	O
 at	B-DISEASE
 7	O
 :	O
@@ -59512,7 +59512,7 @@ was	O
 associated	B-UNK
 with	O
 increased	B-UNK
-daytime	B-UNK
+daytime	O
 sleep	B-UNK
 latency	I-UNK
 ,	O
@@ -59537,7 +59537,7 @@ sleepiness	I-DISEASE
 .	O
 conclusions	O
 :	O
-morning	B-UNK
+morning	O
 -	O
 dosed	O
 modafinil	B-CHEMICAL
@@ -59694,7 +59694,7 @@ mean	B-UNK
 positive	B-UNK
 and	O
 negative	B-UNK
-syndrome	B-UNK
+syndrome	B-DISEASE
 scale	B-UNK
 total	B-UNK
 score	B-UNK
@@ -59809,7 +59809,7 @@ the	O
 positive	B-UNK
 and	O
 negative	B-UNK
-syndrome	B-UNK
+syndrome	B-DISEASE
 scale	B-UNK
 positive	B-UNK
 subscale	B-UNK
@@ -60085,7 +60085,7 @@ tracers	O
 possible	B-UNK
 effects	B-UNK
 of	O
-ace	O
+ace	B-UNK
 inhibition	B-UNK
 were	O
 tested	B-UNK
@@ -60171,9 +60171,9 @@ a	O
 -	O
 actinin	O
 remained	B-UNK
-unchanged	B-UNK
+unchanged	I-UNK
 .	O
-ace	O
+ace	B-UNK
 inhibition	B-UNK
 had	O
 no	O
@@ -60470,7 +60470,7 @@ perception	O
 angiosarcoma	B-DISEASE
 of	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 associated	B-UNK
 with	O
 diethylstilbestrol	B-CHEMICAL
@@ -60497,7 +60497,7 @@ a	O
 well	O
 -	O
 differentiated	O
-adenocarcinoma	B-UNK
+adenocarcinoma	B-DISEASE
 of	O
 the	O
 liver	B-DISEASE
@@ -60515,7 +60515,7 @@ within	O
 pulmonary	B-UNK
 and	O
 renal	B-DISEASE
-arteries	B-UNK
+arteries	O
 .	O
 the	O
 possibility	O
@@ -60636,9 +60636,9 @@ dex	B-CHEMICAL
 .	O
 4	O
 .	O
-systolic	B-UNK
-blood	B-UNK
-pressures	B-UNK
+systolic	O
+blood	O
+pressures	O
 (	O
 sbp	B-UNK
 )	O
@@ -61053,7 +61053,7 @@ induced	B-UNK
 hepatic	B-DISEASE
 failure	I-DISEASE
 necessitating	O
-liver	B-UNK
+liver	B-DISEASE
 transplantation	B-UNK
 .	O
 abstract	B-UNK
@@ -61093,14 +61093,14 @@ been	O
 widely	B-UNK
 published	B-UNK
 with	O
-ezetimibe	B-UNK
+ezetimibe	B-CHEMICAL
 or	O
 the	O
 combination	B-UNK
 agent	B-UNK
 simvastatin	B-CHEMICAL
 -	O
-ezetimibe	B-UNK
+ezetimibe	B-CHEMICAL
 .	O
 we	O
 describe	O
@@ -61135,7 +61135,7 @@ simvastatin	B-CHEMICAL
 10	O
 mg	B-UNK
 -	O
-ezetimibe	B-UNK
+ezetimibe	B-CHEMICAL
 40	O
 mg	B-UNK
 /	O
@@ -61230,7 +61230,7 @@ toxicity	B-DISEASE
 .	O
 she	O
 underwent	B-UNK
-liver	B-UNK
+liver	B-DISEASE
 transplantation	B-UNK
 with	O
 an	O
@@ -61277,7 +61277,7 @@ in	O
 the	O
 intestine	O
 and	O
-liver	B-UNK
+liver	B-DISEASE
 and	O
 may	O
 have	O
@@ -61319,7 +61319,7 @@ failure	I-DISEASE
 that	O
 resulted	B-UNK
 in	O
-liver	B-UNK
+liver	B-DISEASE
 transplantation	B-UNK
 .	O
 we	O
@@ -61355,7 +61355,7 @@ hepatotoxicity	B-DISEASE
 with	O
 simvastatin	B-CHEMICAL
 -	O
-ezetimibe	B-UNK
+ezetimibe	B-CHEMICAL
 especially	B-UNK
 in	O
 elderly	B-UNK
@@ -61585,7 +61585,7 @@ radiographic	O
 and	O
 clinical	B-UNK
 findings	B-UNK
-lead	B-UNK
+lead	B-CHEMICAL
 to	O
 a	O
 diagnosis	B-UNK
@@ -61692,7 +61692,7 @@ case	B-UNK
 of	O
 thyrotoxicosis	B-DISEASE
 in	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 .	O
 eating	B-DISEASE
 disorders	I-DISEASE
@@ -61752,7 +61752,7 @@ with	O
 eating	B-DISEASE
 disorders	I-DISEASE
 in	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 ,	O
 including	B-UNK
 prolonged	B-UNK
@@ -62080,7 +62080,7 @@ for	O
 albuminuria	B-DISEASE
 ,	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 and	O
 plasma	B-UNK
@@ -62122,8 +62122,8 @@ that	O
 enalapril	B-CHEMICAL
 reduced	B-UNK
 arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+blood	I-UNK
+pressure	I-UNK
 (	O
 101	O
 +	O
@@ -62260,7 +62260,7 @@ enalapril	B-CHEMICAL
 treatment	B-UNK
 reduced	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 without	O
 reducing	B-UNK
 albuminuria	B-DISEASE
@@ -62775,7 +62775,7 @@ reduction	B-UNK
 of	O
 an	O
 isolated	B-UNK
-fracture	B-UNK
+fracture	B-DISEASE
 or	O
 dislocation	O
 in	O
@@ -62788,13 +62788,13 @@ level	B-UNK
 -	O
 i	O
 trauma	B-DISEASE
-center	B-UNK
+center	O
 were	O
 prospectively	B-UNK
 evaluated	B-UNK
 .	O
 ketamine	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 was	O
 administered	B-UNK
 intravenously	B-UNK
@@ -62908,7 +62908,7 @@ to	O
 manipulation	O
 of	O
 the	O
-fracture	B-UNK
+fracture	B-DISEASE
 or	O
 dislocation	O
 was	O
@@ -62991,11 +62991,11 @@ or	O
 no	O
 pain	B-DISEASE
 during	O
-fracture	B-UNK
+fracture	B-DISEASE
 reduction	B-UNK
 .	O
 adequate	B-UNK
-fracture	B-UNK
+fracture	B-DISEASE
 reduction	B-UNK
 was	O
 obtained	B-UNK
@@ -63058,7 +63058,7 @@ the	O
 patients	B-UNK
 .	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 heart	B-UNK
 rate	I-UNK
@@ -63204,7 +63204,7 @@ chronic	B-UNK
 immunosuppressive	B-UNK
 therapy	B-UNK
 for	O
-rheumatologic	B-UNK
+rheumatologic	O
 disorders	B-UNK
 .	O
 the	O
@@ -63239,8 +63239,8 @@ ag	O
 positive	B-UNK
 patients	B-UNK
 with	O
-rheumatologic	B-UNK
-disease	B-UNK
+rheumatologic	O
+disease	B-DISEASE
 .	O
 from	O
 june	O
@@ -63255,7 +63255,7 @@ ag	O
 positive	B-UNK
 patients	B-UNK
 with	O
-rheumatologic	B-UNK
+rheumatologic	O
 diseases	B-DISEASE
 ,	O
 who	O
@@ -63272,8 +63272,8 @@ were	O
 retrospectively	B-UNK
 assessed	B-UNK
 .	O
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 ,	O
 hepatitis	B-DISEASE
@@ -63374,8 +63374,8 @@ patients	B-UNK
 .	O
 baseline	B-UNK
 ,	O
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 were	O
 elevated	B-UNK
@@ -63422,7 +63422,7 @@ minimal	B-UNK
 changes	B-UNK
 in	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 biopsy	B-UNK
 in	O
 both	O
@@ -63433,7 +63433,7 @@ after	O
 treatment	B-UNK
 their	O
 tests	B-UNK
-normalized	B-UNK
+normalized	O
 and	O
 during	O
 follow	B-UNK
@@ -63446,8 +63446,8 @@ the	O
 patients	B-UNK
 had	O
 abnormal	B-UNK
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 .	O
 in	O
@@ -63466,7 +63466,7 @@ baseline	B-UNK
 two	O
 of	O
 these	O
-normalized	B-UNK
+normalized	O
 and	O
 the	O
 others	O
@@ -64217,7 +64217,7 @@ was	O
 associated	B-UNK
 with	O
 selective	B-UNK
-systolic	B-UNK
+systolic	O
 orthostatic	B-DISEASE
 hypotension	I-DISEASE
 which	O
@@ -64234,7 +64234,7 @@ effect	B-UNK
 on	O
 postural	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 was	O
 not	O
 the	O
@@ -64327,7 +64327,7 @@ head	B-UNK
 up	O
 tilt	O
 caused	B-UNK
-systolic	B-UNK
+systolic	O
 orthostatic	B-DISEASE
 hypotension	I-DISEASE
 which	O
@@ -64349,8 +64349,8 @@ lost	O
 consciousness	B-UNK
 with	O
 unrecordable	O
-blood	B-UNK
-pressures	B-UNK
+blood	O
+pressures	O
 .	O
 a	O
 lesser	B-UNK
@@ -64390,11 +64390,11 @@ significantly	B-UNK
 reduced	B-UNK
 the	O
 supine	B-UNK
-systolic	B-UNK
+systolic	O
 and	O
 diastolic	B-UNK
-blood	B-UNK
-pressures	B-UNK
+blood	O
+pressures	O
 consistent	B-UNK
 with	O
 a	O
@@ -64490,7 +64490,7 @@ clinical	B-UNK
 pain	B-DISEASE
 conditions	B-UNK
 .	O
-systematic	B-UNK
+systematic	O
 investigations	B-UNK
 of	O
 the	O
@@ -64816,7 +64816,7 @@ hypertension	B-DISEASE
 with	O
 an	O
 occluded	O
-renal	B-UNK
+renal	B-DISEASE
 artery	B-UNK
 to	O
 a	O
@@ -64828,16 +64828,16 @@ developed	B-UNK
 sudden	B-UNK
 deterioration	B-UNK
 of	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 following	B-UNK
-treatment	B-UNK
+treatment	I-UNK
 with	O
 captopril	B-CHEMICAL
 .	O
 his	O
-renal	B-UNK
-function	I-UNK
+renal	B-DISEASE
+function	B-UNK
 remained	I-UNK
 impaired	B-UNK
 but	O
@@ -64889,7 +64889,7 @@ glomerular	B-UNK
 arterioles	O
 following	B-UNK
 chronic	B-UNK
-ace	O
+ace	B-UNK
 inhibition	B-UNK
 .	O
 
@@ -64965,8 +64965,8 @@ the	O
 human	B-UNK
 jaw	B-DISEASE
 -	O
-stretch	B-UNK
-reflex	B-UNK
+stretch	O
+reflex	B-DISEASE
 .	O
 the	O
 pathophysiology	O
@@ -65016,7 +65016,7 @@ the	O
 human	B-UNK
 jaw	B-DISEASE
 -	O
-stretch	B-UNK
+stretch	O
 reflex	B-DISEASE
 and	O
 whether	O
@@ -65031,7 +65031,7 @@ and	O
 velocity	O
 of	O
 the	O
-stretch	B-UNK
+stretch	O
 .	O
 capsaicin	B-CHEMICAL
 (	O
@@ -65068,7 +65068,7 @@ temporalis	O
 muscles	O
 by	O
 a	O
-stretch	B-UNK
+stretch	O
 device	O
 with	O
 different	B-UNK
@@ -65085,8 +65085,8 @@ the	O
 pain	B-DISEASE
 .	O
 the	O
-normalized	B-UNK
-reflex	B-UNK
+normalized	O
+reflex	B-DISEASE
 amplitude	B-UNK
 increased	B-UNK
 with	O
@@ -65111,8 +65111,8 @@ given	B-UNK
 velocity	O
 .	O
 the	O
-normalized	B-UNK
-reflex	B-UNK
+normalized	O
+reflex	B-DISEASE
 amplitude	B-UNK
 was	O
 significantly	B-UNK
@@ -65419,12 +65419,12 @@ uses	I-CHEMICAL
 disulfiram	B-CHEMICAL
 -	O
 like	B-UNK
-syndrome	I-UNK
+syndrome	B-DISEASE
 after	O
 hydrogen	B-CHEMICAL
 cyanamide	B-CHEMICAL
 professional	O
-skin	B-UNK
+skin	B-DISEASE
 exposure	B-UNK
 :	O
 two	O
@@ -65434,7 +65434,7 @@ in	O
 france	O
 .	O
 hydrogen	B-CHEMICAL
-cyanamide	B-UNK
+cyanamide	B-CHEMICAL
 is	O
 a	O
 plant	O
@@ -65454,7 +65454,7 @@ trees	O
 contact	O
 with	O
 the	O
-skin	B-UNK
+skin	B-DISEASE
 can	O
 result	B-UNK
 in	O
@@ -65471,7 +65471,7 @@ and	O
 can	O
 induce	B-UNK
 acetaldehyde	B-CHEMICAL
-syndrome	B-UNK
+syndrome	B-DISEASE
 in	O
 case	B-UNK
 of	O
@@ -65493,12 +65493,12 @@ a	O
 disulfiram	B-CHEMICAL
 -	O
 like	B-UNK
-syndrome	I-UNK
+syndrome	B-DISEASE
 following	B-UNK
 occupational	O
 exposure	B-UNK
 to	O
-hydrogen	B-UNK
+hydrogen	B-CHEMICAL
 cyanamide	B-CHEMICAL
 .	O
 the	O
@@ -65519,7 +65519,7 @@ dormex	O
 which	O
 contains	O
 hydrogen	B-CHEMICAL
-cyanamide	B-UNK
+cyanamide	B-CHEMICAL
 ,	O
 without	O
 protection	B-UNK
@@ -65596,14 +65596,14 @@ developed	B-UNK
 disulfiram	B-CHEMICAL
 -	O
 like	B-UNK
-syndrome	I-UNK
+syndrome	B-DISEASE
 with	O
 flushing	B-DISEASE
 ,	O
 tachycardia	B-DISEASE
 ,	O
 and	O
-arterial	B-UNK
+arterial	O
 hypotension	B-DISEASE
 after	O
 consuming	O
@@ -65982,7 +65982,7 @@ nephritis	I-DISEASE
 in	O
 a	O
 cadaveric	O
-renal	B-UNK
+renal	B-DISEASE
 allograft	B-UNK
 .	O
 ranitidine	B-CHEMICAL
@@ -65994,7 +65994,7 @@ preventing	B-UNK
 peptic	O
 ulceration	O
 after	O
-renal	B-UNK
+renal	B-DISEASE
 transplantation	B-UNK
 .	O
 this	O
@@ -66017,7 +66017,7 @@ no	O
 similar	B-UNK
 reports	B-UNK
 with	O
-renal	B-UNK
+renal	B-DISEASE
 transplantation	B-UNK
 .	O
 we	O
@@ -66033,11 +66033,11 @@ interstitial	B-DISEASE
 nephritis	I-DISEASE
 in	O
 a	O
-recipient	O
+recipient	B-UNK
 of	O
 a	O
 cadaveric	O
-renal	B-UNK
+renal	B-DISEASE
 allograft	B-UNK
 presenting	B-UNK
 with	O
@@ -66066,7 +66066,7 @@ infiltration	O
 of	O
 the	O
 interstitial	B-UNK
-compartment	B-UNK
+compartment	O
 .	O
 allograft	B-UNK
 function	B-UNK
@@ -66151,7 +66151,7 @@ mg	B-UNK
 m2	B-UNK
 which	O
 apparently	B-UNK
-represents	B-UNK
+represents	O
 late	B-UNK
 ,	O
 late	B-UNK
@@ -66204,7 +66204,7 @@ acetazolamide	B-CHEMICAL
 %	O
 )	O
 developed	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 calculi	B-DISEASE
 .	O
 extracorporeal	O
@@ -66212,7 +66212,7 @@ lithotripsy	O
 successfully	B-UNK
 removed	B-UNK
 a	O
-renal	B-UNK
+renal	B-DISEASE
 calculus	O
 in	O
 one	O
@@ -66230,8 +66230,8 @@ permitting	O
 continued	B-UNK
 treatment	B-UNK
 .	O
-renal	B-UNK
-function	I-UNK
+renal	B-DISEASE
+function	B-UNK
 remained	I-UNK
 normal	B-UNK
 in	O
@@ -66755,7 +66755,7 @@ animals	B-UNK
 that	O
 died	B-UNK
 revealed	B-UNK
-liver	B-UNK
+liver	B-DISEASE
 and	O
 kidney	B-UNK
 toxicity	B-DISEASE
@@ -66802,7 +66802,7 @@ cn	B-UNK
 poisoning	B-DISEASE
 unless	O
 the	O
-anti	B-UNK
+anti	O
 -	O
 cn	B-UNK
 characteristics	B-UNK
@@ -66836,7 +66836,7 @@ tonotopic	B-UNK
 organization	B-UNK
 is	O
 an	O
-essential	O
+essential	B-UNK
 feature	O
 of	O
 the	O
@@ -66996,7 +66996,7 @@ region	B-UNK
 of	O
 cortex	B-UNK
 that	O
-represents	B-UNK
+represents	O
 the	O
 low	B-UNK
 frequencies	B-UNK
@@ -67181,7 +67181,7 @@ in	O
 44	O
 patients	B-UNK
 with	O
-obstructive	B-UNK
+obstructive	O
 lung	B-DISEASE
 disease	I-DISEASE
 after	O
@@ -67556,7 +67556,7 @@ of	O
 health	B-UNK
 clinical	B-UNK
 research	B-UNK
-center	B-UNK
+center	O
 .	O
 patients	B-UNK
 :	O
@@ -67756,7 +67756,7 @@ ventricular	O
 tachycardias	O
 .	O
 both	O
-anti	B-UNK
+anti	O
 -	O
 arrhythmic	O
 efficacy	B-UNK
@@ -67961,12 +67961,12 @@ microangiopathies	O
 were	O
 observed	B-UNK
 in	O
-arterial	B-UNK
+arterial	O
 vessels	B-UNK
 .	O
-blood	B-UNK
+blood	O
 and	O
-urine	B-UNK
+urine	B-DISEASE
 cultures	B-UNK
 did	O
 not	O
@@ -68009,9 +68009,9 @@ simvastatin	B-CHEMICAL
 -	O
 induced	B-UNK
 bilateral	B-UNK
-leg	B-UNK
-compartment	B-UNK
-syndrome	B-UNK
+leg	B-DISEASE
+compartment	O
+syndrome	B-DISEASE
 and	O
 myonecrosis	O
 associated	B-UNK
@@ -68034,8 +68034,8 @@ presented	B-UNK
 with	O
 bilateral	B-UNK
 leg	B-DISEASE
-compartment	B-UNK
-syndrome	B-UNK
+compartment	O
+syndrome	B-DISEASE
 and	O
 myonecrosis	O
 .	O
@@ -68084,8 +68084,8 @@ arteriopathic	O
 patients	B-UNK
 .	O
 
-bile	B-UNK
-duct	B-UNK
+bile	O
+duct	O
 hamartoma	B-DISEASE
 occurring	B-UNK
 in	O
@@ -68103,8 +68103,8 @@ report	B-UNK
 a	O
 case	B-UNK
 of	O
-bile	B-UNK
-duct	B-UNK
+bile	O
+duct	O
 hamartoma	B-DISEASE
 which	O
 developed	B-UNK
@@ -68138,7 +68138,7 @@ ultrasound	B-UNK
 examination	B-UNK
 of	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 .	O
 if	O
 the	O
@@ -68225,7 +68225,7 @@ by	O
 a	O
 benign	O
 cholestatic	B-UNK
-syndrome	B-UNK
+syndrome	B-DISEASE
 .	O
 the	O
 association	B-UNK
@@ -68274,7 +68274,7 @@ major	B-UNK
 role	B-UNK
 .	O
 
-intracranial	B-UNK
+intracranial	O
 aneurysms	B-DISEASE
 and	O
 cocaine	B-DISEASE
@@ -68567,7 +68567,7 @@ aggressive	O
 management	B-UNK
 .	O
 
-anti	B-UNK
+anti	O
 -	O
 epileptic	B-DISEASE
 drugs	B-UNK
@@ -68598,10 +68598,10 @@ vigabatrin	B-CHEMICAL
 despite	B-UNK
 the	O
 underlying	B-UNK
-diseases	B-UNK
+diseases	B-DISEASE
 ,	O
 the	O
-prognosis	B-UNK
+prognosis	O
 for	O
 drug	B-UNK
 -	O
@@ -68880,7 +68880,7 @@ seventh	O
 patient	B-UNK
 ,	O
 a	O
-permanent	O
+permanent	B-UNK
 ventricular	O
 pacemaker	B-UNK
 was	O
@@ -68914,7 +68914,7 @@ prolonged	B-UNK
 q	O
 -	O
 t	B-UNK
-syndrome	B-UNK
+syndrome	B-DISEASE
 with	O
 polymorphous	O
 ventricular	B-DISEASE
@@ -68932,7 +68932,7 @@ in	O
 disruption	O
 of	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -68947,7 +68947,7 @@ account	O
 for	O
 disruption	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -68982,7 +68982,7 @@ in	O
 disruption	O
 of	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -68993,7 +68993,7 @@ hypertension	B-DISEASE
 permeability	B-UNK
 of	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -69033,7 +69033,7 @@ microm	O
 phenylephrine	B-CHEMICAL
 infusion	B-UNK
 increased	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 ,	O
 arteriolar	B-UNK
@@ -69058,7 +69058,7 @@ that	O
 disruption	O
 of	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -69091,7 +69091,7 @@ by	O
 carcinogens	B-CHEMICAL
 in	O
 rat	B-UNK
-liver	B-UNK
+liver	B-DISEASE
 .	O
 to	O
 test	B-UNK
@@ -69203,7 +69203,7 @@ initiated	B-UNK
 hepatocytes	B-UNK
 in	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 were	O
 assayed	O
 as	O
@@ -69338,7 +69338,7 @@ were	O
 substituted	O
 by	O
 the	O
-analogue	B-UNK
+analogue	O
 ,	O
 indicating	B-UNK
 that	O
@@ -69430,16 +69430,16 @@ dna	B-UNK
 withdrawal	B-UNK
 -	O
 emergent	B-UNK
-rabbit	B-UNK
-syndrome	B-UNK
+rabbit	O
+syndrome	B-DISEASE
 during	O
 dose	B-UNK
 reduction	B-UNK
 of	O
 risperidone	B-CHEMICAL
 .	O
-rabbit	B-UNK
-syndrome	B-UNK
+rabbit	O
+syndrome	B-DISEASE
 (	O
 rs	B-UNK
 )	O
@@ -69656,11 +69656,11 @@ are	O
 discussed	B-UNK
 .	O
 
-remission	B-UNK
+remission	B-DISEASE
 induction	B-UNK
 of	O
-meningeal	B-UNK
-leukemia	B-UNK
+meningeal	O
+leukemia	B-DISEASE
 with	O
 high	B-UNK
 -	O
@@ -69676,8 +69676,8 @@ lymphoblastic	I-DISEASE
 leukemia	I-DISEASE
 who	O
 developed	B-UNK
-meningeal	B-UNK
-disease	B-UNK
+meningeal	O
+disease	B-DISEASE
 were	O
 treated	B-UNK
 with	O
@@ -69877,7 +69877,7 @@ and	O
 obtained	B-UNK
 a	O
 partial	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 .	O
 the	O
 most	O
@@ -69924,7 +69924,7 @@ induction	B-UNK
 of	O
 remission	B-DISEASE
 after	O
-meningeal	B-UNK
+meningeal	O
 relapse	O
 in	O
 acute	B-DISEASE
@@ -70220,7 +70220,7 @@ to	O
 standard	B-UNK
 12	O
 -	O
-lead	B-UNK
+lead	B-CHEMICAL
 ecg	B-UNK
 ,	O
 for	O
@@ -70611,7 +70611,7 @@ patients	B-UNK
 and	O
 that	O
 their	O
-liver	B-UNK
+liver	B-DISEASE
 function	B-UNK
 should	O
 be	O
@@ -70984,7 +70984,7 @@ for	O
 month	B-UNK
 until	O
 his	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 recovered	B-UNK
 .	O
@@ -71005,7 +71005,7 @@ drugs	B-UNK
 that	O
 inhibit	B-UNK
 simvastatin	B-CHEMICAL
-metabolism	B-UNK
+metabolism	B-DISEASE
 .	O
 simvastatin	B-CHEMICAL
 is	O
@@ -71202,7 +71202,7 @@ intravenous	B-UNK
 (	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 infusion	B-UNK
@@ -71472,7 +71472,7 @@ approach	B-UNK
 in	O
 metastatic	B-UNK
 nonsmall	B-UNK
-cell	I-UNK
+cell	B-UNK
 lung	B-DISEASE
 carcinoma	B-DISEASE
 .	O
@@ -71492,8 +71492,8 @@ survival	B-UNK
 in	O
 advanced	B-UNK
 nonsmall	B-UNK
-cell	I-UNK
-lung	B-UNK
+cell	B-UNK
+lung	B-DISEASE
 carcinoma	B-DISEASE
 (	O
 nsclc	B-DISEASE
@@ -71516,7 +71516,7 @@ the	O
 treatment	B-UNK
 of	O
 this	O
-disease	B-UNK
+disease	B-DISEASE
 .	O
 methods	B-UNK
 :	O
@@ -71940,7 +71940,7 @@ adverse	B-UNK
 reactions	B-UNK
 of	O
 aponidine	O
-hydrochloride	B-UNK
+hydrochloride	O
 ophthalmic	B-UNK
 solution	B-UNK
 .	O
@@ -71974,7 +71974,7 @@ examinations	B-UNK
 ,	O
 including	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 pulse	B-UNK
 rate	B-UNK
@@ -71997,7 +71997,7 @@ tear	B-UNK
 secretion	B-UNK
 and	O
 margin	O
-reflex	B-UNK
+reflex	B-DISEASE
 distance	B-UNK
 of	O
 both	O
@@ -72059,9 +72059,9 @@ apraclonidine	B-CHEMICAL
 .	O
 decreases	B-UNK
 in	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 were	O
 statistically	B-UNK
 ,	O
@@ -72077,7 +72077,7 @@ changes	B-UNK
 in	O
 diastolic	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 pulse	B-UNK
 rate	B-UNK
@@ -72234,7 +72234,7 @@ as	O
 a	O
 frontal	B-UNK
 lobe	I-UNK
-syndrome	B-UNK
+syndrome	B-DISEASE
 .	O
 brain	B-UNK
 ct	B-UNK
@@ -72275,7 +72275,7 @@ result	B-UNK
 in	O
 organic	B-UNK
 personality	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 in	O
 the	O
 residual	B-UNK
@@ -72611,7 +72611,7 @@ of	O
 calcitonin	B-CHEMICAL
 into	O
 several	O
-hypothalamic	B-UNK
+hypothalamic	O
 sites	B-UNK
 and	O
 into	O
@@ -72682,7 +72682,7 @@ activity	B-UNK
 .	O
 
 fatal	B-UNK
-intracranial	B-UNK
+intracranial	O
 bleeding	B-DISEASE
 associated	B-UNK
 with	O
@@ -72797,7 +72797,7 @@ of	O
 massive	B-UNK
 rhabdomyolysis	B-DISEASE
 following	B-UNK
-molindone	B-UNK
+molindone	B-CHEMICAL
 administration	B-UNK
 .	O
 rhabdomyolysis	B-DISEASE
@@ -72849,13 +72849,13 @@ acute	B-DISEASE
 renal	I-DISEASE
 failure	I-DISEASE
 following	B-UNK
-molindone	B-UNK
+molindone	B-CHEMICAL
 administration	B-UNK
 .	O
 physicians	O
 who	O
 prescribe	O
-molindone	B-UNK
+molindone	B-CHEMICAL
 should	O
 be	O
 aware	B-UNK
@@ -73112,7 +73112,7 @@ mutants	B-UNK
 in	O
 distinct	B-UNK
 peripheral	B-UNK
-blood	B-UNK
+blood	O
 leukocyte	O
 compartments	O
 of	O
@@ -73549,7 +73549,7 @@ the	O
 rise	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 became	O
 less	O
 marked	B-UNK
@@ -73565,7 +73565,7 @@ administered	B-UNK
 and	O
 the	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 at	B-DISEASE
 convulsions	B-DISEASE
 decreased	B-UNK
@@ -73604,9 +73604,9 @@ concentrations	B-UNK
 measured	B-UNK
 when	O
 the	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 became	O
 70	O
 mmhg	O
@@ -73714,7 +73714,7 @@ circulatory	O
 depression	B-DISEASE
 .	O
 
-anti	B-UNK
+anti	O
 -	O
 oxidant	B-UNK
 effects	B-UNK
@@ -73839,7 +73839,7 @@ rats	B-UNK
 thereby	O
 reducing	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 .	O
 2	O
 .	O
@@ -73868,7 +73868,7 @@ water	I-CHEMICAL
 )	O
 or	O
 tap	O
-water	B-UNK
+water	B-CHEMICAL
 for	O
 15	O
 days	B-UNK
@@ -73911,9 +73911,9 @@ for	O
 13	O
 days	B-UNK
 .	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 (	O
 sbp	B-UNK
 )	O
@@ -73924,7 +73924,7 @@ alternate	B-UNK
 days	B-UNK
 using	O
 the	O
-tail	B-UNK
+tail	O
 -	O
 cuff	O
 method	B-UNK
@@ -74272,7 +74272,7 @@ studies	B-UNK
 showed	I-UNK
 a	O
 rapid	B-UNK
-blood	B-UNK
+blood	O
 clearance	B-UNK
 via	O
 the	O
@@ -74378,7 +74378,7 @@ haloperidol	B-CHEMICAL
 for	O
 psychosis	B-DISEASE
 and	O
-disruptive	B-UNK
+disruptive	B-DISEASE
 behaviors	B-UNK
 in	O
 alzheimer	B-DISEASE
@@ -74414,7 +74414,7 @@ treatment	B-UNK
 of	O
 psychosis	B-DISEASE
 and	O
-disruptive	B-UNK
+disruptive	B-DISEASE
 behaviors	B-UNK
 in	O
 patients	B-UNK
@@ -74567,7 +74567,7 @@ for	O
 scores	B-UNK
 on	O
 the	O
-brief	B-UNK
+brief	B-DISEASE
 psychiatric	B-DISEASE
 rating	B-UNK
 scale	B-UNK
@@ -74760,16 +74760,16 @@ patients	B-UNK
 with	O
 psychosis	B-DISEASE
 and	O
-disruptive	B-UNK
+disruptive	B-DISEASE
 behaviors	B-UNK
 .	O
 
 individual	B-UNK
 differences	B-UNK
 in	O
-renal	B-UNK
+renal	B-DISEASE
 ace	B-UNK
-activity	I-UNK
+activity	B-UNK
 in	O
 healthy	B-UNK
 rats	B-UNK
@@ -74794,13 +74794,13 @@ angiotensin	B-CHEMICAL
 converting	B-UNK
 enzyme	I-UNK
 (	O
-ace	O
+ace	B-UNK
 )	O
 levels	B-UNK
 ,	O
 related	B-UNK
 to	O
-ace	O
+ace	B-UNK
 (	O
 i	O
 /	O
@@ -74811,8 +74811,8 @@ genotype	O
 are	O
 associated	B-UNK
 with	O
-renal	B-UNK
-prognosis	B-UNK
+renal	B-DISEASE
+prognosis	O
 .	O
 this	O
 raises	O
@@ -74824,11 +74824,11 @@ differences	B-UNK
 in	O
 renal	B-DISEASE
 ace	B-UNK
-activity	I-UNK
+activity	B-UNK
 are	O
 involved	B-UNK
 in	O
-renal	B-UNK
+renal	B-DISEASE
 susceptibility	B-UNK
 to	O
 inflicted	O
@@ -74844,7 +74844,7 @@ effect	B-UNK
 of	O
 renal	B-DISEASE
 ace	B-UNK
-activity	I-UNK
+activity	B-UNK
 for	O
 the	O
 severity	B-UNK
@@ -74863,9 +74863,9 @@ rats	B-UNK
 .	O
 methods	B-UNK
 :	O
-renal	B-UNK
+renal	B-DISEASE
 ace	B-UNK
-activity	I-UNK
+activity	B-UNK
 (	O
 hip	O
 -	O
@@ -74880,7 +74880,7 @@ homogenates	O
 was	O
 determined	B-UNK
 by	O
-renal	B-UNK
+renal	B-DISEASE
 biopsy	B-UNK
 in	O
 27	O
@@ -74911,7 +74911,7 @@ intravenously	B-UNK
 (	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 n	B-UNK
@@ -74923,7 +74923,7 @@ controls	B-UNK
 saline	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 n	B-UNK
 =	O
@@ -74969,8 +74969,8 @@ focal	B-UNK
 glomerulosclerosis	B-DISEASE
 .	O
 baseline	B-UNK
-renal	B-UNK
-ace	O
+renal	B-DISEASE
+ace	B-UNK
 positively	B-UNK
 correlated	B-UNK
 with	O
@@ -74995,7 +74995,7 @@ p	B-UNK
 01	O
 )	O
 ,	O
-renal	B-UNK
+renal	B-DISEASE
 interstitial	B-UNK
 alpha	B-UNK
 -	O
@@ -75087,8 +75087,8 @@ p	B-UNK
 )	O
 .	O
 baseline	B-UNK
-renal	B-UNK
-ace	O
+renal	B-DISEASE
+ace	B-UNK
 did	O
 not	O
 correlate	B-UNK
@@ -75112,7 +75112,7 @@ no	O
 predictive	B-UNK
 values	B-UNK
 for	O
-renal	B-UNK
+renal	B-DISEASE
 parameters	B-UNK
 were	O
 observed	B-UNK
@@ -75122,9 +75122,9 @@ conclusion	O
 individual	B-UNK
 differences	B-UNK
 in	O
-renal	B-UNK
+renal	B-DISEASE
 ace	B-UNK
-activity	I-UNK
+activity	B-UNK
 predict	B-UNK
 the	O
 severity	B-UNK
@@ -75147,9 +75147,9 @@ assumption	O
 that	O
 differences	B-UNK
 in	O
-renal	B-UNK
+renal	B-DISEASE
 ace	B-UNK
-activity	I-UNK
+activity	B-UNK
 predispose	O
 to	O
 a	O
@@ -75214,7 +75214,7 @@ with	O
 confirmed	B-UNK
 initial	B-UNK
 normal	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 and	O
 treated	B-UNK
@@ -75747,7 +75747,7 @@ for	O
 days	B-UNK
 )	O
 .	O
-blood	B-UNK
+blood	O
 samples	B-UNK
 were	O
 obtained	B-UNK
@@ -75845,7 +75845,7 @@ reported	B-UNK
 adverse	B-UNK
 events	I-UNK
 following	B-UNK
-treatment	B-UNK
+treatment	I-UNK
 with	O
 desipramine	B-CHEMICAL
 alone	O
@@ -76310,7 +76310,7 @@ corticoid	O
 clinical	B-UNK
 examinations	B-UNK
 and	O
-skin	B-UNK
+skin	B-DISEASE
 ,	O
 oral	B-UNK
 and	O
@@ -76330,7 +76330,7 @@ the	O
 two	O
 patients	B-UNK
 ,	O
-skin	B-UNK
+skin	B-DISEASE
 and	O
 elisa	B-UNK
 tests	B-UNK
@@ -76621,8 +76621,8 @@ previously	B-UNK
 
 haemolytic	B-UNK
 -	O
-uraemic	B-UNK
-syndrome	B-UNK
+uraemic	O
+syndrome	B-DISEASE
 after	O
 treatment	B-UNK
 with	O
@@ -76642,7 +76642,7 @@ developed	B-UNK
 the	O
 haemolytic	B-UNK
 -	O
-uraemic	B-UNK
+uraemic	O
 syndrome	B-DISEASE
 after	O
 treatment	B-UNK
@@ -76683,7 +76683,7 @@ of	O
 the	O
 haemolytic	B-UNK
 -	O
-uraemic	B-UNK
+uraemic	O
 syndrome	B-DISEASE
 is	O
 not	O
@@ -76712,8 +76712,8 @@ in	O
 the	O
 haemolytic	B-UNK
 -	O
-uraemic	B-UNK
-syndrome	B-UNK
+uraemic	O
+syndrome	B-DISEASE
 suggest	B-UNK
 a	O
 possible	B-UNK
@@ -76728,8 +76728,8 @@ of	O
 the	O
 haemolytic	B-UNK
 -	O
-uraemic	B-UNK
-syndrome	B-UNK
+uraemic	O
+syndrome	B-DISEASE
 .	O
 
 risk	B-UNK
@@ -76921,10 +76921,10 @@ with	O
 serum	B-UNK
 concentrations	B-UNK
 and	O
-renal	B-UNK
+renal	B-DISEASE
 and	O
 hepatic	B-UNK
-function	B-UNK
+function	I-UNK
 in	O
 36	O
 patients	B-UNK
@@ -76953,7 +76953,7 @@ these	O
 patients	B-UNK
 had	O
 both	O
-renal	B-UNK
+renal	B-DISEASE
 and	O
 liver	B-DISEASE
 dysfunction	B-UNK
@@ -77033,7 +77033,7 @@ that	O
 cimetidine	B-CHEMICAL
 passes	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -77081,7 +77081,7 @@ those	O
 with	O
 both	O
 severe	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 and	O
 hepatic	B-UNK
 dysfunction	B-UNK
@@ -77142,7 +77142,7 @@ a	O
 key	O
 role	B-UNK
 in	O
-bile	B-UNK
+bile	O
 formation	B-UNK
 .	O
 although	O
@@ -77168,7 +77168,7 @@ freeze	O
 -	O
 fracture	B-DISEASE
 electron	B-UNK
-microscopy	I-UNK
+microscopy	B-UNK
 have	O
 produced	B-UNK
 limited	B-UNK
@@ -77222,8 +77222,8 @@ and	O
 extrahepatic	O
 cholestasis	B-DISEASE
 by	O
-bile	B-UNK
-duct	B-UNK
+bile	O
+duct	O
 ligation	O
 (	O
 bdl	O
@@ -77274,7 +77274,7 @@ zo	O
 colocalized	O
 to	O
 outline	O
-bile	B-UNK
+bile	O
 canaliculi	O
 in	O
 a	O
@@ -77296,7 +77296,7 @@ discontinuous	O
 ,	O
 outlining	O
 the	O
-bile	B-UNK
+bile	O
 canaliculi	O
 after	O
 bdl	O
@@ -77375,7 +77375,7 @@ occurs	B-UNK
 heterogenously	O
 in	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 lobule	O
 after	O
 bdl	O
@@ -77738,7 +77738,7 @@ angiotensin	B-CHEMICAL
 converting	B-UNK
 enzyme	I-UNK
 (	O
-ace	O
+ace	B-UNK
 )	O
 inhibitors	B-UNK
 into	O
@@ -78006,7 +78006,7 @@ in	O
 a	O
 reduction	B-UNK
 of	O
-red	B-UNK
+red	O
 cells	B-UNK
 and	O
 an	O
@@ -78293,7 +78293,7 @@ to	O
 78	O
 mm	B-UNK
 (	O
-lna	B-UNK
+lna	O
 )	O
 ,	O
 23	O
@@ -78323,7 +78323,7 @@ to	O
 675	O
 mm	B-UNK
 (	O
-lna	B-UNK
+lna	O
 +	O
 lca	B-UNK
 )	O
@@ -78355,9 +78355,9 @@ to	O
 6	O
 mm	B-UNK
 (	O
-lna	B-UNK
+lna	O
 +	O
-hca	B-UNK
+hca	O
 )	O
 .	O
 at	B-DISEASE
@@ -78440,12 +78440,12 @@ verapamil	B-CHEMICAL
 was	O
 potentiated	O
 by	O
-lna	B-UNK
+lna	O
 ,	O
 lca	B-UNK
 ,	O
 and	O
-hca	B-UNK
+hca	O
 .	O
 independent	B-UNK
 but	O
@@ -78486,21 +78486,21 @@ of	O
 inhibitory	B-UNK
 potency	B-UNK
 :	O
-lna	B-UNK
+lna	O
 >	O
 lca	B-UNK
 >	O
-hca	B-UNK
+hca	O
 >	O
 n	B-UNK
 ,	O
 resulting	B-UNK
-lna	B-UNK
+lna	O
 +	O
-hca	B-UNK
+hca	O
 similar	B-UNK
 to	O
-lna	B-UNK
+lna	O
 .	O
 the	O
 [	O
@@ -78520,19 +78520,19 @@ potentiated	O
 with	O
 the	O
 order	O
-lna	B-UNK
+lna	O
 =	O
-lna	B-UNK
+lna	O
 +	O
 lca	B-UNK
 =	O
-lna	B-UNK
+lna	O
 +	O
-hca	B-UNK
+hca	O
 =	O
 lca	B-UNK
 >	O
-hca	B-UNK
+hca	O
 =	O
 n	B-UNK
 .	O
@@ -78585,7 +78585,7 @@ was	O
 more	O
 pronounced	B-UNK
 at	B-DISEASE
-lna	B-UNK
+lna	O
 than	O
 at	B-DISEASE
 lca	B-UNK
@@ -78785,7 +78785,7 @@ in	O
 the	O
 kidneys	B-UNK
 and	O
-liver	B-UNK
+liver	B-DISEASE
 were	O
 significantly	B-UNK
 higher	B-UNK
@@ -78877,7 +78877,7 @@ induced	B-UNK
 encephalopathy	B-DISEASE
 :	O
 magnetic	O
-resonance	B-UNK
+resonance	O
 findings	B-UNK
 on	O
 diffusion	B-UNK
@@ -78997,9 +78997,9 @@ organs	B-UNK
 .	O
 initial	B-UNK
 brain	B-UNK
-magnetic	O
-resonance	B-UNK
-imaging	B-UNK
+magnetic	B-UNK
+resonance	I-UNK
+imaging	I-UNK
 (	O
 mri	O
 )	O
@@ -79159,7 +79159,7 @@ pons	O
 8	O
 )	O
 ,	O
-medulla	B-UNK
+medulla	O
 (	O
 1	O
 /	O
@@ -79294,7 +79294,7 @@ effects	B-UNK
 of	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 infusions	B-UNK
 of	O
@@ -79322,7 +79322,7 @@ a	O
 continuous	B-UNK
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 infusion	B-UNK
 of	O
@@ -79359,7 +79359,7 @@ the	O
 -	O
 h	B-CHEMICAL
 period	B-UNK
-following	B-UNK
+following	I-UNK
 upper	B-UNK
 abdominal	B-UNK
 surgery	B-UNK
@@ -79394,7 +79394,7 @@ ambulatory	B-UNK
 monitor	B-UNK
 .	O
 both	O
-obstructive	B-UNK
+obstructive	O
 (	O
 p	B-UNK
 less	O
@@ -79461,7 +79461,7 @@ group	B-UNK
 .	O
 
 magnetic	O
-resonance	B-UNK
+resonance	O
 volumetry	O
 of	O
 the	O
@@ -79629,7 +79629,7 @@ used	O
 to	O
 compare	O
 cerebellar	B-UNK
-volumes	B-UNK
+volumes	O
 .	O
 using	O
 linear	O
@@ -79854,7 +79854,7 @@ dox	B-CHEMICAL
 ,	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 ,	O
 weekly	B-UNK
@@ -80012,7 +80012,7 @@ ed	B-DISEASE
 and	O
 end	B-UNK
 -	O
-systolic	B-UNK
+systolic	O
 (	O
 es	O
 )	O
@@ -80046,7 +80046,7 @@ p	B-UNK
 these	O
 parameters	B-UNK
 remained	B-UNK
-unchanged	B-UNK
+unchanged	I-UNK
 in	O
 controls	B-UNK
 .	O
@@ -80199,7 +80199,7 @@ mass	B-UNK
 and	O
 ck	O
 remained	B-UNK
-unchanged	B-UNK
+unchanged	I-UNK
 in	O
 dox	B-CHEMICAL
 rats	B-UNK
@@ -80383,7 +80383,7 @@ calcineurin	B-UNK
 inhibitor	B-UNK
 induced	B-UNK
 pain	B-DISEASE
-syndrome	B-UNK
+syndrome	B-DISEASE
 (	O
 cips	O
 )	O
@@ -80453,9 +80453,9 @@ the	O
 foot	B-UNK
 bones	O
 .	O
-magnetic	O
-resonance	B-UNK
-imaging	B-UNK
+magnetic	B-UNK
+resonance	I-UNK
+imaging	I-UNK
 demonstrated	B-UNK
 bone	B-UNK
 marrow	I-UNK
@@ -80471,7 +80471,7 @@ not	O
 explained	O
 by	O
 other	O
-diseases	B-UNK
+diseases	B-DISEASE
 causing	B-UNK
 foot	B-UNK
 pain	B-DISEASE
@@ -80560,9 +80560,9 @@ its	O
 typical	B-UNK
 presentation	B-UNK
 ,	O
-magnetic	O
-resonance	B-UNK
-imaging	B-UNK
+magnetic	B-UNK
+resonance	I-UNK
+imaging	I-UNK
 and	O
 bone	B-UNK
 scans	B-UNK
@@ -80571,7 +80571,7 @@ incorrect	O
 diagnosis	B-UNK
 of	O
 the	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 will	O
 lead	B-CHEMICAL
 to	O
@@ -80982,7 +80982,7 @@ effects	B-UNK
 .	O
 the	O
 full	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 of	O
 subacute	O
 myelo	O
@@ -81228,8 +81228,8 @@ ml	B-UNK
 )	O
 only	O
 evoked	B-UNK
-brief	B-UNK
-episodes	I-UNK
+brief	B-DISEASE
+episodes	B-UNK
 of	O
 jerk	O
 -	O
@@ -81664,7 +81664,7 @@ and	O
 transmission	B-UNK
 -	O
 electron	B-UNK
-microscopy	I-UNK
+microscopy	B-UNK
 (	O
 tem	O
 )	O
@@ -81696,7 +81696,7 @@ hours	B-UNK
 after	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 injection	B-UNK
 of	O
@@ -81717,7 +81717,7 @@ extensive	B-UNK
 elastolysis	O
 in	O
 the	O
-arterial	B-UNK
+arterial	O
 wall	O
 of	O
 d	B-CHEMICAL
@@ -82019,7 +82019,7 @@ thirteen	B-UNK
 patients	B-UNK
 with	O
 acute	B-UNK
-leukemia	B-UNK
+leukemia	B-DISEASE
 were	O
 treated	B-UNK
 with	O
@@ -82202,7 +82202,7 @@ antibacterial	B-UNK
 medication	B-UNK
 use	B-UNK
 during	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 and	O
 risk	B-UNK
 of	O
@@ -82305,7 +82305,7 @@ antibacterials	O
 1	O
 month	B-UNK
 before	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 through	O
 the	O
 end	B-UNK
@@ -82348,7 +82348,7 @@ of	O
 antibacterials	O
 increased	B-UNK
 during	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 ,	O
 peaking	O
 during	O
@@ -82730,7 +82730,7 @@ agents	I-CHEMICAL
 azathioprine	B-CHEMICAL
 (	O
 purine	B-CHEMICAL
-analogue	B-UNK
+analogue	O
 )	O
 ,	O
 and	O
@@ -82738,7 +82738,7 @@ methotrexate	B-CHEMICAL
 (	O
 folic	B-CHEMICAL
 acid	I-CHEMICAL
-analogue	B-UNK
+analogue	O
 )	O
 .	O
 there	O
@@ -82940,7 +82940,7 @@ patients	B-UNK
 with	O
 severe	B-UNK
 progressive	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 or	O
 life	B-UNK
 -	O
@@ -83042,8 +83042,8 @@ all	O
 patients	B-UNK
 .	O
 biochemical	B-UNK
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 indicated	B-UNK
 hepatocellular	B-UNK
@@ -83430,7 +83430,7 @@ and	O
 had	O
 stage	B-UNK
 iv	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 .	O
 treatment	B-UNK
 ,	O
@@ -83589,8 +83589,8 @@ had	O
 no	O
 change	B-UNK
 and	O
-disease	B-UNK
-progressed	B-UNK
+disease	B-DISEASE
+progressed	O
 in	O
 two	O
 .	O
@@ -83785,7 +83785,7 @@ risk	B-UNK
 and	O
 six	O
 had	O
-renal	B-UNK
+renal	B-DISEASE
 and	O
 /	O
 or	O
@@ -83846,7 +83846,7 @@ transient	B-UNK
 noncumulative	O
 granulocytopenia	O
 .	O
-granulocyte	B-UNK
+granulocyte	O
 nadir	O
 was	O
 on	O
@@ -84581,7 +84581,7 @@ recurrent	B-UNK
 glioblastomas	O
 in	O
 his	O
-left	B-UNK
+left	O
 temporal	B-UNK
 lobe	O
 .	O
@@ -84678,10 +84678,10 @@ atrophy	I-DISEASE
 occurred	B-UNK
 and	O
 the	O
-vision	B-UNK
+vision	B-DISEASE
 in	O
 his	O
-left	B-UNK
+left	O
 eye	B-UNK
 was	O
 lost	O
@@ -84733,7 +84733,7 @@ study	B-UNK
 of	O
 the	O
 amsacrine	B-CHEMICAL
-analogue	B-UNK
+analogue	O
 ci	O
 -	O
 921	O
@@ -84887,7 +84887,7 @@ carcinoma	B-DISEASE
 11	O
 )	O
 ,	O
-adenocarcinoma	B-UNK
+adenocarcinoma	B-DISEASE
 (	O
 1	O
 )	O
@@ -85186,11 +85186,11 @@ of	O
 frataxin	O
 ,	O
 an	O
-essential	O
+essential	B-UNK
 mitochondrial	B-UNK
 protein	B-UNK
 with	O
-anti	B-UNK
+anti	O
 -	O
 oxidant	B-UNK
 and	O
@@ -85223,7 +85223,7 @@ sensory	B-UNK
 neurons	B-UNK
 through	O
 its	O
-anti	B-UNK
+anti	O
 -	O
 oxidant	B-UNK
 and	O
@@ -85273,7 +85273,7 @@ prevention	O
 in	O
 non	B-UNK
 -	O
-valvular	B-UNK
+valvular	O
 atrial	B-DISEASE
 fibrillation	I-DISEASE
 .	O
@@ -85351,7 +85351,7 @@ ximelagatran	B-CHEMICAL
 an	O
 oral	B-UNK
 direct	B-UNK
-thrombin	B-UNK
+thrombin	B-CHEMICAL
 inhibitor	B-UNK
 ,	O
 was	O
@@ -85380,8 +85380,8 @@ withdrawn	O
 because	O
 of	O
 abnormal	B-UNK
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 .	O
 the	O
@@ -85471,7 +85471,7 @@ with	O
 the	O
 risk	B-UNK
 of	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 after	O
 electrical	B-UNK
 cardioversion	O
@@ -85484,7 +85484,7 @@ for	O
 the	O
 exclusion	O
 of	O
-left	B-UNK
+left	O
 atrial	B-UNK
 appendage	O
 are	O
@@ -85523,7 +85523,7 @@ acute	B-UNK
 t	B-UNK
 -	O
 lymphocytic	O
-leukemia	B-UNK
+leukemia	B-DISEASE
 in	O
 relapse	O
 .	O
@@ -85598,7 +85598,7 @@ be	O
 confined	O
 strictly	O
 to	O
-suppression	B-UNK
+suppression	O
 of	O
 normal	B-UNK
 t	B-UNK
@@ -85662,7 +85662,7 @@ model	I-UNK
 in	O
 which	O
 these	O
-blood	B-UNK
+blood	O
 dyscrasias	O
 can	O
 be	O
@@ -85790,7 +85790,7 @@ cephalosporin	O
 ,	O
 the	O
 hematologic	B-UNK
-syndrome	B-UNK
+syndrome	B-DISEASE
 was	O
 reproduced	O
 in	O
@@ -85852,7 +85852,7 @@ of	O
 decline	O
 in	O
 red	B-UNK
-cell	B-UNK
+cell	I-UNK
 mass	B-UNK
 parameters	B-UNK
 of	O
@@ -85867,7 +85867,7 @@ component	B-UNK
 complicated	O
 the	O
 red	B-UNK
-cell	B-UNK
+cell	I-UNK
 production	B-UNK
 problem	B-UNK
 and	O
@@ -85903,7 +85903,7 @@ the	O
 cephalosporin	O
 -	O
 induced	B-UNK
-blood	B-UNK
+blood	O
 dyscrasias	O
 described	B-UNK
 in	O
@@ -85966,7 +85966,7 @@ pharmacologic	B-UNK
 doses	B-UNK
 of	O
 pyridoxine	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 led	B-UNK
 to	O
 a	O
@@ -86023,7 +86023,7 @@ of	O
 pyridoxal	B-CHEMICAL
 in	O
 the	O
-blood	B-UNK
+blood	O
 was	O
 normal	B-UNK
 during	O
@@ -86437,7 +86437,7 @@ within	O
 months	B-UNK
 ,	O
 and	O
-liver	B-UNK
+liver	B-DISEASE
 tests	B-UNK
 returned	B-UNK
 to	O
@@ -86860,7 +86860,7 @@ had	O
 sulfasalazine	B-CHEMICAL
 -	O
 induced	B-UNK
-lupus	B-UNK
+lupus	B-DISEASE
 ,	O
 which	O
 manifested	O
@@ -86942,7 +86942,7 @@ general	B-UNK
 rule	O
 not	O
 to	O
-attempt	B-UNK
+attempt	O
 to	O
 titrate	O
 carbidopa	B-CHEMICAL
@@ -87731,7 +87731,7 @@ was	O
 added	O
 because	O
 of	O
-de	O
+de	B-UNK
 nova	O
 hepatitis	B-DISEASE
 b	I-DISEASE
@@ -87775,7 +87775,7 @@ of	O
 late	B-UNK
 post	B-UNK
 -	O
-transplant	O
+transplant	B-UNK
 renal	B-DISEASE
 acidosis	B-DISEASE
 and	O
@@ -87997,7 +87997,7 @@ i	O
 .	O
 c	B-UNK
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 and	O
@@ -88177,7 +88177,7 @@ i	O
 .	O
 c	B-UNK
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 could	O
@@ -88301,7 +88301,7 @@ platypnea	O
 orthodeoxia	O
 -	O
 like	B-UNK
-syndrome	I-UNK
+syndrome	B-DISEASE
 induced	B-UNK
 by	O
 propafenone	B-CHEMICAL
@@ -88355,7 +88355,7 @@ right	B-UNK
 -	O
 to	O
 -	O
-left	B-UNK
+left	O
 interatrial	O
 shunting	O
 with	O
@@ -88368,7 +88368,7 @@ cyanosis	B-DISEASE
 this	O
 shunt	B-UNK
 of	O
-blood	B-UNK
+blood	O
 via	O
 a	O
 patent	B-DISEASE
@@ -88434,7 +88434,7 @@ a	O
 decrease	B-UNK
 in	O
 the	O
-left	B-UNK
+left	O
 one	O
 with	O
 a	O
@@ -88453,7 +88453,7 @@ right	B-UNK
 -	O
 to	O
 -	O
-left	B-UNK
+left	O
 shunting	O
 .	O
 in	O
@@ -88701,7 +88701,7 @@ chemotherapy	B-UNK
 regimen	B-UNK
 for	O
 metastatic	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 .	O
 patients	B-UNK
 received	I-UNK
@@ -88965,7 +88965,7 @@ induced	B-UNK
 femoral	B-UNK
 nerve	I-UNK
 palsy	B-DISEASE
-represents	B-UNK
+represents	O
 the	O
 most	O
 common	B-UNK
@@ -89144,7 +89144,7 @@ regimen	B-UNK
 components	B-UNK
 of	O
 lemon	B-UNK
-essential	I-UNK
+essential	B-UNK
 oil	O
 attenuate	B-UNK
 dementia	B-DISEASE
@@ -89153,7 +89153,7 @@ by	O
 scopolamine	B-CHEMICAL
 .	O
 the	O
-anti	B-UNK
+anti	O
 -	O
 dementia	B-DISEASE
 effects	B-UNK
@@ -89188,7 +89188,7 @@ ofh	O
 .	O
 these	O
 lemon	B-UNK
-essential	I-UNK
+essential	B-UNK
 oils	B-CHEMICAL
 showed	B-UNK
 strong	B-UNK
@@ -89292,7 +89292,7 @@ that	O
 these	O
 two	O
 lemon	B-UNK
-essential	I-UNK
+essential	B-UNK
 oil	O
 components	B-UNK
 could	O
@@ -89670,7 +89670,7 @@ identified	B-UNK
 and	O
 resolved	B-UNK
 .	O
-thyroid	B-UNK
+thyroid	B-DISEASE
 disorders	B-UNK
 ,	O
 illicit	O
@@ -89731,9 +89731,9 @@ fingers	O
 and	O
 foot	B-UNK
 .	O
-thyroid	B-UNK
+thyroid	B-DISEASE
 -	O
-stimulating	B-UNK
+stimulating	O
 hormone	B-UNK
 ,	O
 magnesium	B-CHEMICAL
@@ -89746,7 +89746,7 @@ within	O
 normal	B-UNK
 limits	B-UNK
 ,	O
-urine	B-UNK
+urine	B-DISEASE
 drug	B-UNK
 screen	O
 was	O
@@ -89986,7 +89986,7 @@ often	O
 ingested	O
 drugs	B-UNK
 during	O
-pregnancy	B-UNK
+pregnancy	B-DISEASE
 .	O
 unlike	O
 general	B-UNK
@@ -90721,7 +90721,7 @@ to	O
 examine	O
 further	O
 the	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 ,	O
 including	B-UNK
@@ -90903,7 +90903,7 @@ cortex	B-UNK
 stained	B-UNK
 with	O
 sirius	O
-red	B-UNK
+red	O
 .	O
 results	B-UNK
 :	O
@@ -90937,7 +90937,7 @@ whereas	O
 the	O
 gfr	O
 remained	B-UNK
-unchanged	B-UNK
+unchanged	I-UNK
 in	O
 the	O
 group	B-UNK
@@ -91173,9 +91173,9 @@ assessed	B-UNK
 in	O
 vivo	B-UNK
 by	O
-magnetic	O
-resonance	B-UNK
-imaging	B-UNK
+magnetic	B-UNK
+resonance	I-UNK
+imaging	I-UNK
 .	O
 motor	B-UNK
 behavior	B-UNK
@@ -91202,7 +91202,7 @@ exhibited	B-UNK
 evidence	B-UNK
 of	O
 impaired	B-UNK
-blood	B-UNK
+blood	O
 clotting	O
 and	O
 hemodilution	O
@@ -91301,7 +91301,7 @@ coma	B-DISEASE
 metabolic	B-DISEASE
 acidosis	I-DISEASE
 ,	O
-renal	B-UNK
+renal	B-DISEASE
 and	O
 hepatic	B-DISEASE
 failure	I-DISEASE
@@ -91504,8 +91504,8 @@ the	O
 results	B-UNK
 of	O
 serum	B-UNK
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 suggested	B-UNK
 hepatocellular	B-UNK
@@ -91534,7 +91534,7 @@ histological	B-UNK
 examination	B-UNK
 of	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 often	O
 showed	B-UNK
 evidence	B-UNK
@@ -91577,8 +91577,8 @@ with	O
 the	O
 results	B-UNK
 of	O
-liver	B-UNK
-function	I-UNK
+liver	B-DISEASE
+function	B-UNK
 tests	I-UNK
 returning	O
 to	O
@@ -91660,7 +91660,7 @@ haemodilution	B-DISEASE
 on	O
 human	B-UNK
 hepatic	B-UNK
-function	B-UNK
+function	I-UNK
 .	O
 combined	B-UNK
 effects	B-UNK
@@ -91678,7 +91678,7 @@ and	O
 haemodilution	B-DISEASE
 on	O
 hepatic	B-UNK
-function	B-UNK
+function	I-UNK
 were	O
 studied	B-UNK
 in	O
@@ -91758,7 +91758,7 @@ approximately	B-UNK
 1000	O
 ml	B-UNK
 of	O
-blood	B-UNK
+blood	O
 and	O
 replacing	O
 it	O
@@ -91794,9 +91794,9 @@ pge1	B-CHEMICAL
 to	O
 maintain	B-UNK
 mean	B-UNK
-arterial	B-UNK
-blood	B-UNK
-pressure	B-UNK
+arterial	I-UNK
+blood	I-UNK
+pressure	I-UNK
 at	B-DISEASE
 55	O
 mmhg	O
@@ -91806,7 +91806,7 @@ min	B-UNK
 .	O
 measurements	B-UNK
 included	B-UNK
-arterial	B-UNK
+arterial	O
 ketone	O
 body	B-UNK
 ratio	B-UNK
@@ -91824,15 +91824,15 @@ hydroxybutyrate	I-CHEMICAL
 and	O
 clinical	B-UNK
 hepatic	B-UNK
-function	B-UNK
+function	I-UNK
 parameters	B-UNK
 .	O
 akbr	O
 and	O
 biological	B-UNK
 hepatic	B-UNK
-function	B-UNK
-tests	I-UNK
+function	I-UNK
+tests	B-UNK
 showed	B-UNK
 no	O
 change	B-UNK
@@ -91931,7 +91931,7 @@ cause	B-UNK
 impairment	B-UNK
 of	O
 hepatic	B-UNK
-function	B-UNK
+function	I-UNK
 .	O
 
 levodopa	B-CHEMICAL
@@ -92137,7 +92137,7 @@ of	O
 bone	B-UNK
 marrow	I-UNK
 mononuclear	B-UNK
-cells	B-UNK
+cells	I-UNK
 (	O
 bmcs	O
 )	O
@@ -92490,9 +92490,9 @@ also	O
 showed	B-UNK
 declines	O
 in	O
-left	B-UNK
+left	O
 ventricular	O
-systolic	B-UNK
+systolic	O
 pressure	B-UNK
 ,	O
 maximum	B-UNK
@@ -92501,14 +92501,14 @@ minimum	O
 rate	B-UNK
 of	O
 developed	B-UNK
-left	B-UNK
+left	O
 ventricular	O
 pressure	B-UNK
 ,	O
 and	O
 elevation	B-UNK
 of	O
-left	B-UNK
+left	O
 ventricular	O
 end	B-UNK
 -	O
@@ -93313,7 +93313,7 @@ induced	B-UNK
 toxic	B-DISEASE
 hepatitis	I-DISEASE
 .	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 of	O
 hepatitis	B-DISEASE
 attack	B-UNK
@@ -93642,7 +93642,7 @@ higher	B-UNK
 doses	B-UNK
 of	O
 loop	O
-diuretics	B-UNK
+diuretics	B-CHEMICAL
 ,	O
 and	O
 were	O
@@ -93653,7 +93653,7 @@ be	O
 treated	B-UNK
 with	O
 thiazide	O
-diuretics	B-UNK
+diuretics	B-CHEMICAL
 than	O
 controls	B-UNK
 .	O
@@ -93704,7 +93704,7 @@ esrd	B-DISEASE
 )	O
 after	O
 orthotopic	O
-liver	B-UNK
+liver	B-DISEASE
 transplantation	B-UNK
 (	O
 oltx	O
@@ -93740,7 +93740,7 @@ their	O
 use	B-UNK
 in	O
 orthotopic	O
-liver	B-UNK
+liver	B-DISEASE
 transplantation	B-UNK
 (	O
 oltx	O
@@ -94229,7 +94229,7 @@ intravenous	B-UNK
 nimodipine	B-CHEMICAL
 on	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 and	O
 outcome	B-UNK
 after	O
@@ -94260,7 +94260,7 @@ induced	B-UNK
 reduction	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 (	O
 bp	B-UNK
 )	O
@@ -94422,7 +94422,7 @@ statistically	B-UNK
 significant	I-UNK
 reduction	B-UNK
 in	O
-systolic	B-UNK
+systolic	O
 bp	B-UNK
 (	O
 sbp	B-UNK
@@ -94656,8 +94656,8 @@ nimodipine	B-CHEMICAL
 .	O
 
 transient	B-UNK
-neurologic	B-UNK
-symptoms	I-UNK
+neurologic	B-DISEASE
+symptoms	B-UNK
 after	O
 spinal	B-UNK
 anesthesia	B-UNK
@@ -94680,8 +94680,8 @@ evidence	B-UNK
 suggests	B-UNK
 that	O
 transient	B-UNK
-neurologic	B-UNK
-symptoms	I-UNK
+neurologic	B-DISEASE
+symptoms	B-UNK
 (	O
 tnss	B-DISEASE
 )	O
@@ -95218,7 +95218,7 @@ in	O
 an	O
 apparent	B-UNK
 suicide	B-DISEASE
-attempt	B-UNK
+attempt	O
 .	O
 after	O
 the	O
@@ -95331,12 +95331,12 @@ effect	B-UNK
 of	O
 nifedipine	B-CHEMICAL
 on	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 in	O
-liver	B-UNK
+liver	B-DISEASE
 transplant	B-UNK
-recipients	I-UNK
+recipients	B-UNK
 receiving	B-UNK
 tacrolimus	B-CHEMICAL
 .	O
@@ -95345,12 +95345,12 @@ effect	B-UNK
 of	O
 nifedipine	B-CHEMICAL
 on	O
-renal	B-UNK
+renal	B-DISEASE
 function	B-UNK
 in	O
-liver	B-UNK
+liver	B-DISEASE
 transplant	B-UNK
-recipients	I-UNK
+recipients	B-UNK
 who	O
 were	O
 receiving	B-UNK
@@ -95402,7 +95402,7 @@ nifedipine	B-CHEMICAL
 the	O
 time	B-UNK
 from	O
-transplant	O
+transplant	B-UNK
 to	O
 baseline	B-UNK
 was	O
@@ -95446,9 +95446,9 @@ associated	B-UNK
 with	O
 tacrolimus	B-CHEMICAL
 in	O
-liver	B-UNK
+liver	B-DISEASE
 transplant	B-UNK
-recipients	I-UNK
+recipients	B-UNK
 should	O
 be	O
 an	O
@@ -95466,8 +95466,8 @@ this	O
 population	B-UNK
 .	O
 
-sinus	B-UNK
-arrest	I-UNK
+sinus	B-DISEASE
+arrest	I-DISEASE
 associated	B-UNK
 with	O
 continuous	B-UNK
@@ -95500,7 +95500,7 @@ year	B-UNK
 old	B-UNK
 man	I-UNK
 with	O
-leukemia	B-UNK
+leukemia	B-DISEASE
 and	O
 no	O
 history	B-UNK
@@ -95510,12 +95510,12 @@ disease	I-DISEASE
 developed	B-UNK
 recurrent	B-UNK
 ,	O
-brief	B-UNK
-episodes	I-UNK
+brief	B-DISEASE
+episodes	B-UNK
 of	O
 apparent	B-UNK
-sinus	B-UNK
-arrest	I-UNK
+sinus	B-DISEASE
+arrest	I-DISEASE
 while	O
 receiving	B-UNK
 continuous	B-UNK
@@ -95555,8 +95555,8 @@ first	O
 reported	B-UNK
 case	B-UNK
 of	O
-sinus	B-UNK
-arrest	I-UNK
+sinus	B-DISEASE
+arrest	I-DISEASE
 associated	B-UNK
 with	O
 continuous	B-UNK
@@ -95568,8 +95568,8 @@ cimetidine	B-CHEMICAL
 composition	O
 of	O
 gall	B-UNK
-bladder	I-UNK
-stones	B-UNK
+bladder	B-DISEASE
+stones	I-DISEASE
 associated	B-UNK
 with	O
 octreotide	B-CHEMICAL
@@ -95590,8 +95590,8 @@ acromegaly	B-DISEASE
 ,	O
 induces	B-UNK
 gall	B-UNK
-bladder	I-UNK
-stones	B-UNK
+bladder	B-DISEASE
+stones	I-DISEASE
 in	O
 13	O
 -	O
@@ -95606,7 +95606,7 @@ of	O
 stone	O
 composition	O
 is	O
-essential	O
+essential	B-UNK
 for	O
 studies	B-UNK
 of	O
@@ -95673,7 +95673,7 @@ tomography	B-UNK
 of	O
 the	O
 gall	B-UNK
-bladder	I-UNK
+bladder	B-UNK
 showed	B-UNK
 that	O
 eight	O
@@ -95703,8 +95703,8 @@ stones	B-UNK
 )	O
 .	O
 gall	B-UNK
-bladder	I-UNK
-bile	B-UNK
+bladder	B-UNK
+bile	O
 was	O
 obtained	B-UNK
 by	O
@@ -95723,7 +95723,7 @@ six	O
 patients	B-UNK
 had	O
 supersaturated	O
-bile	B-UNK
+bile	O
 (	O
 mean	B-UNK
 (	O
@@ -95778,7 +95778,7 @@ in	O
 four	O
 ,	O
 the	O
-bile	B-UNK
+bile	O
 contained	O
 cholesterol	B-CHEMICAL
 microcrystals	O
@@ -95804,8 +95804,8 @@ two	O
 had	O
 a	O
 blocked	B-UNK
-cystic	B-UNK
-duct	B-UNK
+cystic	O
+duct	O
 and	O
 were	O
 not	O
@@ -95912,7 +95912,7 @@ with	O
 spontaneous	B-UNK
 gall	B-UNK
 stone	I-UNK
-disease	B-UNK
+disease	B-DISEASE
 ,	O
 at	B-DISEASE
 presentation	B-UNK
@@ -95922,8 +95922,8 @@ will	O
 have	O
 a	O
 blocked	B-UNK
-cystic	B-UNK
-duct	B-UNK
+cystic	O
+duct	O
 and	O
 some	O
 gall	B-UNK
@@ -95980,7 +95980,7 @@ briefly	O
 discussed	B-UNK
 .	O
 
-neurologic	B-UNK
+neurologic	B-DISEASE
 effects	B-UNK
 of	O
 subarachnoid	B-UNK
@@ -96011,7 +96011,7 @@ was	O
 to	O
 evaluate	O
 the	O
-neurologic	B-UNK
+neurologic	B-DISEASE
 consequences	B-UNK
 of	O
 deliberate	O
@@ -96019,7 +96019,7 @@ subarachnoid	B-UNK
 injection	B-UNK
 of	O
 large	B-UNK
-volumes	B-UNK
+volumes	O
 of	O
 2	B-CHEMICAL
 -	I-CHEMICAL
@@ -96348,7 +96348,7 @@ effects	B-UNK
 were	O
 observed	B-UNK
 .	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 was	O
 studied	B-UNK
 in	O
@@ -96393,7 +96393,7 @@ primary	B-UNK
 and	O
 59	O
 recurrent	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 .	O
 of	O
 the	O
@@ -96438,7 +96438,7 @@ t1	O
 tumors	B-DISEASE
 while	O
 five	O
-progressed	B-UNK
+progressed	O
 to	O
 more	O
 highly	B-UNK
@@ -96451,7 +96451,7 @@ that	O
 were	O
 free	B-UNK
 of	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 during	O
 the	O
 first	O
@@ -96495,7 +96495,7 @@ only	O
 presented	B-UNK
 with	O
 further	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 once	O
 the	O
 instillations	O
@@ -96561,7 +96561,7 @@ studies	B-UNK
 have	O
 stressed	O
 the	O
-renal	B-UNK
+renal	B-DISEASE
 sparing	B-UNK
 features	B-UNK
 of	O
@@ -96574,7 +96574,7 @@ lack	O
 of	O
 interference	O
 with	O
-renal	B-UNK
+renal	B-DISEASE
 prostacyclin	O
 synthesis	B-UNK
 .	O
@@ -96783,7 +96783,7 @@ after	O
 delivery	O
 of	O
 the	O
-infant	B-UNK
+infant	B-DISEASE
 ,	O
 there	O
 should	O
@@ -96879,13 +96879,13 @@ after	O
 treatment	B-UNK
 ,	O
 serum	B-UNK
-prolactin	I-UNK
+prolactin	B-CHEMICAL
 levels	B-UNK
 decreased	B-UNK
 markedly	B-UNK
 .	O
 electron	B-UNK
-microscopy	I-UNK
+microscopy	B-UNK
 disclosed	O
 many	O
 secretory	B-UNK
@@ -96934,7 +96934,7 @@ suggest	B-UNK
 that	O
 lowered	B-UNK
 serum	B-UNK
-prolactin	I-UNK
+prolactin	B-CHEMICAL
 levels	B-UNK
 in	O
 the	O
@@ -96966,7 +96966,7 @@ after	O
 injection	B-UNK
 ,	O
 serum	B-UNK
-prolactin	I-UNK
+prolactin	B-CHEMICAL
 levels	B-UNK
 were	O
 still	O
@@ -97088,7 +97088,7 @@ a	O
 disturbance	B-UNK
 of	O
 the	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 secretion	B-UNK
 .	O
 
@@ -97113,8 +97113,8 @@ mechanism	B-UNK
 of	O
 action	B-UNK
 .	O
-liver	B-UNK
-enlargement	B-UNK
+liver	B-DISEASE
+enlargement	O
 and	O
 muscle	B-UNK
 wastage	O
@@ -97131,7 +97131,7 @@ prednisolone	B-CHEMICAL
 .	O
 in	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 both	O
 the	O
 content	B-UNK
@@ -97182,7 +97182,7 @@ rna	I-UNK
 synthesis	B-UNK
 in	O
 the	O
-liver	B-UNK
+liver	B-DISEASE
 and	O
 depress	O
 such	O
@@ -97220,7 +97220,7 @@ and	O
 death	B-DISEASE
 .	O
 midazolam	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 is	O
 commonly	B-UNK
 used	O
@@ -97383,7 +97383,7 @@ considered	B-UNK
 to	O
 have	O
 a	O
-renal	B-UNK
+renal	B-DISEASE
 state	B-UNK
 sufficiently	O
 severe	B-UNK
@@ -98307,7 +98307,7 @@ sufficient	O
 to	O
 reduce	B-UNK
 mean	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 from	O
 107	O
@@ -98336,7 +98336,7 @@ for	O
 60	O
 minutes	B-UNK
 .	O
-left	B-UNK
+left	O
 ventricular	O
 filling	O
 pressure	B-UNK
@@ -98403,7 +98403,7 @@ re	O
 -	O
 elevate	O
 mean	B-UNK
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 to	O
 106	O
@@ -98426,7 +98426,7 @@ for	O
 minutes	B-UNK
 ,	O
 increased	B-UNK
-left	B-UNK
+left	O
 ventricular	O
 filling	O
 pressure	B-UNK
@@ -98541,7 +98541,7 @@ cacl	B-CHEMICAL
 )	O
 -	O
 induced	B-UNK
-arterial	B-UNK
+arterial	O
 injury	B-UNK
 and	O
 to	O
@@ -98996,7 +98996,7 @@ were	O
 changed	B-UNK
 ,	O
 and	O
-hemodynamics	B-UNK
+hemodynamics	O
 stabilized	O
 at	B-DISEASE
 lower	B-UNK
@@ -99438,7 +99438,7 @@ and	O
 upregulation	O
 of	O
 intrarenal	B-UNK
-angiotensinogen	I-UNK
+angiotensinogen	B-CHEMICAL
 in	O
 dahl	O
 salt	B-CHEMICAL
@@ -99447,7 +99447,7 @@ sensitive	B-UNK
 rats	B-UNK
 .	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 (	O
 bp	B-UNK
 )	O
@@ -99509,7 +99509,7 @@ male	B-UNK
 ds	B-UNK
 ,	O
 intrarenal	B-UNK
-angiotensinogen	I-UNK
+angiotensinogen	B-CHEMICAL
 expression	B-UNK
 is	O
 increased	B-UNK
@@ -99545,7 +99545,7 @@ induced	B-UNK
 upregulation	O
 of	O
 intrarenal	B-UNK
-angiotensinogen	I-UNK
+angiotensinogen	B-CHEMICAL
 mediated	B-UNK
 by	O
 testosterone	B-CHEMICAL
@@ -99576,7 +99576,7 @@ higher	B-UNK
 levels	B-UNK
 of	O
 intrarenal	B-UNK
-angiotensinogen	I-UNK
+angiotensinogen	B-CHEMICAL
 mrna	B-UNK
 than	O
 females	O
@@ -99587,9 +99587,9 @@ for	O
 4	O
 wk	O
 increased	B-UNK
-renal	B-UNK
+renal	B-DISEASE
 cortical	B-UNK
-angiotensinogen	B-UNK
+angiotensinogen	B-CHEMICAL
 mrna	B-UNK
 and	O
 protein	B-UNK
@@ -99613,7 +99613,7 @@ no	O
 effect	B-UNK
 on	O
 intrarenal	B-UNK
-angiotensinogen	I-UNK
+angiotensinogen	B-CHEMICAL
 expression	B-UNK
 on	O
 either	O
@@ -99678,7 +99678,7 @@ injury	I-DISEASE
 and	O
 upregulation	O
 of	O
-renal	B-UNK
+renal	B-DISEASE
 angiotensinogen	B-CHEMICAL
 associated	B-UNK
 with	O
@@ -99978,7 +99978,7 @@ target	B-UNK
 of	O
 rapamycin	B-CHEMICAL
 (	O
-mtor	B-UNK
+mtor	O
 )	O
 inhibitors	B-UNK
 ,	O
@@ -99986,9 +99986,9 @@ especially	B-UNK
 sirolimus	B-CHEMICAL
 ,	O
 in	O
-renal	B-UNK
+renal	B-DISEASE
 transplant	B-UNK
-recipients	I-UNK
+recipients	B-UNK
 with	O
 chronic	B-UNK
 allograft	B-UNK
@@ -100066,7 +100066,7 @@ have	O
 been	O
 related	B-UNK
 to	O
-mtor	B-UNK
+mtor	O
 inhibition	B-UNK
 in	O
 some	O
@@ -100091,14 +100091,14 @@ and	O
 the	O
 significance	B-UNK
 of	O
-mtor	B-UNK
+mtor	O
 blockade	B-UNK
 -	O
 induced	B-UNK
 proteinuria	B-DISEASE
 .	O
 
-hypothalamic	B-UNK
+hypothalamic	O
 prolactin	B-CHEMICAL
 receptor	B-UNK
 messenger	O
@@ -100249,7 +100249,7 @@ r	B-UNK
 and	O
 components	B-UNK
 of	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 '	O
 s	O
 signaling	B-UNK
@@ -100269,7 +100269,7 @@ expression	B-UNK
 and	O
 sensitivity	B-UNK
 to	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 ,	O
 we	O
 next	O
@@ -100518,7 +100518,7 @@ mice	B-UNK
 furthermore	O
 ,	O
 peripheral	B-UNK
-blood	B-UNK
+blood	O
 monocytes	O
 isolated	B-UNK
 from	O
@@ -100860,7 +100860,7 @@ cells	I-UNK
 that	O
 form	B-UNK
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -101039,7 +101039,7 @@ in	O
 brain	B-UNK
 and	O
 liver	B-DISEASE
-sections	B-UNK
+sections	O
 of	O
 tr	O
 (	O
@@ -101145,8 +101145,8 @@ pgp	B-UNK
 was	O
 observed	B-UNK
 in	O
-liver	B-UNK
-sections	B-UNK
+liver	B-DISEASE
+sections	O
 .	O
 a	O
 comparable	B-UNK
@@ -101521,7 +101521,7 @@ chromosomes	O
 10	O
 and	O
 18	O
-progressed	B-UNK
+progressed	O
 to	O
 the	O
 most	O
@@ -101595,7 +101595,7 @@ by	O
 pilocarpine	B-CHEMICAL
 .	O
 mitochondrial	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 have	O
 been	O
 associated	B-UNK
@@ -101667,7 +101667,7 @@ be	O
 sufficient	O
 to	O
 provoke	O
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 in	O
 mtdna	B-UNK
 and	O
@@ -101794,7 +101794,7 @@ although	O
 evidences	O
 of	O
 mitochondrial	B-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 were	O
 found	B-UNK
 in	O
@@ -101860,8 +101860,8 @@ problem	B-UNK
 in	O
 patients	B-UNK
 following	B-UNK
-renal	I-UNK
-transplantation	I-UNK
+renal	B-DISEASE
+transplantation	B-UNK
 .	O
 in	O
 postrenal	O
@@ -101891,7 +101891,7 @@ in	O
 a	O
 population	B-UNK
 of	O
-renal	B-UNK
+renal	B-DISEASE
 transplantation	B-UNK
 recipients	B-UNK
 and	O
@@ -101943,7 +101943,7 @@ the	O
 slides	O
 of	O
 all	O
-transplant	O
+transplant	B-UNK
 biopsies	B-UNK
 (	O
 n	B-UNK
@@ -102068,8 +102068,8 @@ syndrome	I-DISEASE
 in	O
 patients	B-UNK
 following	B-UNK
-renal	I-UNK
-transplantation	I-UNK
+renal	B-DISEASE
+transplantation	B-UNK
 is	O
 recurrence	B-DISEASE
 of	O
@@ -102147,9 +102147,9 @@ literature	B-UNK
 
 severe	B-UNK
 reversible	B-UNK
-left	B-UNK
+left	O
 ventricular	O
-systolic	B-UNK
+systolic	O
 and	O
 diastolic	B-UNK
 dysfunction	B-UNK
@@ -102230,9 +102230,9 @@ profound	B-UNK
 albeit	O
 transient	B-UNK
 ,	O
-left	B-UNK
+left	O
 ventricular	O
-systolic	B-UNK
+systolic	O
 and	O
 diastolic	B-UNK
 dysfunction	B-UNK
@@ -102529,7 +102529,7 @@ to	O
 )	O
 .	O
 the	O
-absolute	B-UNK
+absolute	O
 risk	B-UNK
 for	O
 bladder	B-DISEASE
@@ -102712,16 +102712,16 @@ apart	O
 thirty	B-UNK
 milliliters	O
 of	O
-blood	B-UNK
+blood	O
 was	O
 obtained	B-UNK
 for	O
 isolation	O
 of	O
 peripheral	B-UNK
-blood	B-UNK
+blood	O
 mononuclear	B-UNK
-cells	B-UNK
+cells	I-UNK
 after	O
 each	O
 treatment	B-UNK
@@ -102735,7 +102735,7 @@ was	O
 assessed	B-UNK
 in	O
 mononuclear	B-UNK
-cells	B-UNK
+cells	I-UNK
 incubated	B-UNK
 with	O
 l	B-CHEMICAL
@@ -102857,9 +102857,9 @@ p	B-UNK
 05	O
 )	O
 .	O
-systolic	B-UNK
+systolic	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 was	O
 elevated	B-UNK
 by	O
@@ -102877,7 +102877,7 @@ arginine	I-CHEMICAL
 transport	B-UNK
 into	O
 mononuclear	B-UNK
-cells	B-UNK
+cells	I-UNK
 (	O
 placebo	B-UNK
 vs	B-UNK
@@ -102995,12 +102995,12 @@ induced	B-UNK
 increases	B-UNK
 in	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 are	O
 not	O
 associated	B-UNK
 with	O
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 in	O
 the	O
 l	B-CHEMICAL
@@ -103023,8 +103023,8 @@ induced	B-UNK
 neurotoxicity	B-DISEASE
 in	O
 organ	B-UNK
-transplant	B-UNK
-patients	I-UNK
+transplant	I-UNK
+patients	B-UNK
 .	O
 our	O
 objective	B-UNK
@@ -103048,12 +103048,12 @@ dw	O
 imaging	B-UNK
 in	O
 organ	B-UNK
-transplant	B-UNK
-patients	I-UNK
+transplant	I-UNK
+patients	B-UNK
 who	O
 developed	B-UNK
-neurologic	B-UNK
-symptoms	I-UNK
+neurologic	B-DISEASE
+symptoms	B-UNK
 during	O
 tacrolimus	B-CHEMICAL
 therapy	B-UNK
@@ -103072,13 +103072,13 @@ performed	B-UNK
 in	O
 14	O
 organ	B-UNK
-transplant	B-UNK
-patients	I-UNK
-receiving	B-UNK
+transplant	I-UNK
+patients	B-UNK
+receiving	I-UNK
 tacrolimus	B-CHEMICAL
 who	O
 developed	B-UNK
-neurologic	B-UNK
+neurologic	B-DISEASE
 complications	B-UNK
 .	O
 in	O
@@ -103176,7 +103176,7 @@ patients	B-UNK
 with	O
 white	B-UNK
 matter	I-UNK
-abnormalities	B-UNK
+abnormalities	B-DISEASE
 ,	O
 4	O
 patients	B-UNK
@@ -103288,8 +103288,8 @@ after	O
 administration	B-UNK
 of	O
 a	O
-somatostatin	B-UNK
-analogue	B-UNK
+somatostatin	B-CHEMICAL
+analogue	O
 ,	O
 octreotide	B-CHEMICAL
 ,	O
@@ -103930,7 +103930,7 @@ fk506	B-CHEMICAL
 led	B-UNK
 to	O
 rapid	B-UNK
-recurrence	B-UNK
+recurrence	B-DISEASE
 of	O
 maha	B-DISEASE
 .	O
@@ -104187,7 +104187,7 @@ the	O
 effect	B-UNK
 of	O
 amantadine	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 ,	O
 injected	B-UNK
 i	O
@@ -104341,7 +104341,7 @@ drug	B-UNK
 -	O
 free	B-UNK
 period	B-UNK
-following	B-UNK
+following	I-UNK
 the	O
 fourth	B-UNK
 amantadine	B-CHEMICAL
@@ -104377,7 +104377,7 @@ balb	O
 c	B-UNK
 mice	B-UNK
 where	O
-suppression	B-UNK
+suppression	O
 of	O
 motility	B-UNK
 occurred	B-UNK
@@ -104509,7 +104509,7 @@ rate	B-UNK
 and	O
 /	O
 or	O
-metabolism	B-UNK
+metabolism	B-DISEASE
 by	O
 monoamine	B-CHEMICAL
 oxidase	I-CHEMICAL
@@ -104867,7 +104867,7 @@ than	O
 that	O
 of	O
 the	O
-left	B-UNK
+left	O
 coronary	B-UNK
 artery	I-UNK
 .	O
@@ -104887,7 +104887,7 @@ than	O
 that	O
 of	O
 the	O
-left	B-UNK
+left	O
 coronary	B-UNK
 artery	I-UNK
 .	O
@@ -104936,7 +104936,7 @@ of	O
 the	O
 other	O
 coronary	B-UNK
-arteries	B-UNK
+arteries	O
 .	O
 
 dobutamine	B-CHEMICAL
@@ -105165,7 +105165,7 @@ subjects	B-UNK
 end	B-UNK
 -	O
 systolic	B-UNK
-left	B-UNK
+left	I-UNK
 ventricular	I-UNK
 posterior	I-UNK
 wall	I-UNK
@@ -105173,10 +105173,10 @@ dimension	O
 and	O
 percent	B-UNK
 of	O
-left	B-UNK
-ventricular	I-UNK
-posterior	I-UNK
-wall	I-UNK
+left	O
+ventricular	O
+posterior	O
+wall	O
 thickening	O
 in	O
 doxorubicin	B-CHEMICAL
@@ -105202,7 +105202,7 @@ stimulation	B-UNK
 end	B-UNK
 -	O
 systolic	B-UNK
-left	B-UNK
+left	I-UNK
 ventricular	I-UNK
 posterior	I-UNK
 wall	I-UNK
@@ -105250,7 +105250,7 @@ than	O
 end	B-UNK
 -	O
 systolic	B-UNK
-left	B-UNK
+left	I-UNK
 ventricular	I-UNK
 posterior	I-UNK
 wall	I-UNK
@@ -105442,7 +105442,7 @@ when	O
 ph	O
 and	O
 partial	B-UNK
-pressures	B-UNK
+pressures	O
 of	O
 oxygen	B-CHEMICAL
 (	O
@@ -105661,7 +105661,7 @@ concentrations	B-UNK
 in	O
 serum	B-UNK
 and	O
-urine	B-UNK
+urine	B-DISEASE
 on	O
 day	B-UNK
 1	O
@@ -105729,7 +105729,7 @@ hospital	B-UNK
 admission	B-UNK
 ,	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 of	O
 the	O
 intubated	O
@@ -105874,7 +105874,7 @@ respectively	O
 .	O
 the	O
 corresponding	B-UNK
-urine	B-UNK
+urine	B-DISEASE
 concentrations	B-UNK
 amounted	O
 to	O
@@ -105941,7 +105941,7 @@ carbachol	B-CHEMICAL
 in	O
 plasma	B-UNK
 and	O
-urine	B-UNK
+urine	B-DISEASE
 has	O
 been	O
 developed	B-UNK
@@ -106278,7 +106278,7 @@ h	B-CHEMICAL
 and	O
 had	O
 no	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 or	O
 need	B-UNK
 for	O
@@ -106399,7 +106399,7 @@ or	O
 001	O
 )	O
 .	O
-recurrence	B-UNK
+recurrence	B-DISEASE
 rates	B-UNK
 were	O
 31	O
@@ -106573,7 +106573,7 @@ primarily	B-UNK
 affecting	B-UNK
 the	O
 small	B-UNK
-arteries	B-UNK
+arteries	O
 ,	O
 arterioles	O
 ,	O
@@ -106598,7 +106598,7 @@ the	O
 onset	B-UNK
 of	O
 this	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 ,	O
 the	O
 thrombotic	B-DISEASE
@@ -106622,12 +106622,12 @@ delayed	B-UNK
 or	O
 missed	O
 if	O
-renal	B-UNK
+renal	B-DISEASE
 tissue	B-UNK
 or	O
 the	O
 peripheral	B-UNK
-blood	B-UNK
+blood	O
 smear	O
 is	O
 not	O
@@ -106673,7 +106673,7 @@ paediatric	B-UNK
 t	B-UNK
 -	O
 cell	B-UNK
-lymphoblastic	B-UNK
+lymphoblastic	O
 leukaemia	O
 and	O
 lymphoma	B-DISEASE
@@ -106789,7 +106789,7 @@ seven	B-UNK
 went	O
 into	O
 complete	B-UNK
-remission	B-UNK
+remission	B-DISEASE
 after	O
 one	O
 or	O
@@ -106834,7 +106834,7 @@ the	O
 -	O
 week	B-UNK
 sulphasalazine	B-CHEMICAL
-syndrome	B-UNK
+syndrome	B-DISEASE
 strikes	O
 again	O
 .	O
@@ -106924,7 +106924,7 @@ with	O
 the	O
 presence	O
 of	O
-anti	B-UNK
+anti	O
 -	O
 nuclear	B-UNK
 autoantibodies	B-UNK
@@ -107024,7 +107024,7 @@ called	O
 -	O
 week	B-UNK
 sulphasalazine	B-CHEMICAL
-syndrome	B-UNK
+syndrome	B-DISEASE
 "	O
 ,	O
 a	O
@@ -107065,7 +107065,7 @@ release	B-UNK
 formulation	O
 of	O
 bupropion	B-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 ,	O
 was	O
 recently	B-UNK
@@ -108032,7 +108032,7 @@ of	O
 anthracyclines	B-CHEMICAL
 ,	O
 and	O
-left	B-UNK
+left	O
 -	O
 sided	O
 chest	B-UNK
@@ -108323,7 +108323,7 @@ treatment	B-UNK
 of	O
 peptic	B-DISEASE
 ulcer	I-DISEASE
-disease	B-UNK
+disease	B-DISEASE
 ,	O
 reflux	B-DISEASE
 esophagitis	B-DISEASE
@@ -108390,7 +108390,7 @@ lethargy	B-DISEASE
 and	O
 shortness	O
 of	O
-breath	B-UNK
+breath	O
 2	O
 days	B-UNK
 after	O
@@ -108602,7 +108602,7 @@ with	O
 earlier	B-UNK
 stages	B-UNK
 of	O
-disease	B-UNK
+disease	B-DISEASE
 .	O
 of	O
 those	O
@@ -108848,7 +108848,7 @@ of	O
 vascular	B-UNK
 endothelial	B-UNK
 growth	B-UNK
-factor	I-UNK
+factor	B-UNK
 and	O
 angiopoetin	O
 -	O
@@ -109305,7 +109305,7 @@ kg	B-UNK
 1	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 ;	O
 10	O
@@ -109318,7 +109318,7 @@ i	O
 .	O
 c	B-UNK
 .	O
-v	B-UNK
+v	O
 .	O
 )	O
 was	O
@@ -109342,7 +109342,7 @@ abdominal	B-UNK
 -	O
 constriction	B-DISEASE
 ,	O
-tail	B-UNK
+tail	O
 -	O
 flick	O
 and	O
@@ -109447,7 +109447,7 @@ methylhistamine	O
 ,	O
 the	O
 d2	B-UNK
-antagonist	I-UNK
+antagonist	B-UNK
 quinpirole	B-CHEMICAL
 ,	O
 the	O
@@ -109474,7 +109474,7 @@ diethylamino	I-CHEMICAL
 )	I-CHEMICAL
 ethyl	I-CHEMICAL
 ester	I-CHEMICAL
-hydrochloride	B-UNK
+hydrochloride	O
 ,	O
 the	O
 5	B-CHEMICAL
@@ -109625,7 +109625,7 @@ by	O
 functional	B-UNK
 studies	B-UNK
 (	O
-rabbit	B-UNK
+rabbit	O
 vas	O
 deferens	O
 for	O
@@ -109673,7 +109673,7 @@ the	O
 antinociception	B-UNK
 and	O
 the	O
-anti	B-UNK
+anti	O
 -	O
 amnesic	O
 effect	B-UNK
@@ -109790,7 +109790,7 @@ hyperbaric	O
 oxygen	B-CHEMICAL
 at	B-DISEASE
 an	O
-absolute	B-UNK
+absolute	O
 pressure	B-UNK
 of	O
 2	O
@@ -110255,7 +110255,7 @@ has	O
 shown	B-UNK
 antioxidant	B-UNK
 ,	O
-anti	B-UNK
+anti	O
 -	O
 inflammatory	B-UNK
 and	O
@@ -110895,7 +110895,7 @@ selected	B-UNK
 label	B-UNK
 -	O
 restricted	B-UNK
-diseases	B-UNK
+diseases	B-DISEASE
 .	O
 methods	B-UNK
 :	O
@@ -111321,7 +111321,7 @@ worsening	O
 of	O
 their	O
 overall	B-UNK
-disease	B-UNK
+disease	B-DISEASE
 condition	B-UNK
 during	O
 the	O
@@ -111695,7 +111695,7 @@ propylthiouracil	B-CHEMICAL
 in	O
 whom	O
 a	O
-syndrome	B-UNK
+syndrome	B-DISEASE
 of	O
 pericarditis	B-DISEASE
 ,	O
@@ -111802,7 +111802,7 @@ reports	B-UNK
 of	O
 pericarditis	B-DISEASE
 in	O
-anti	B-UNK
+anti	O
 -	O
 mpo	O
 panca	O
@@ -112224,7 +112224,7 @@ mmse	O
 )	O
 ;	O
 and	O
-arterial	B-UNK
+arterial	O
 pressure	B-UNK
 were	O
 recorded	B-UNK
@@ -112530,7 +112530,7 @@ and	O
 were	O
 screened	O
 for	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 on	O
 the	O
 basis	B-UNK
@@ -112560,7 +112560,7 @@ abnormal	B-UNK
 first	O
 results	B-UNK
 .	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 results	B-UNK
 were	O
 compared	B-UNK
@@ -112580,8 +112580,8 @@ with	O
 erectile	B-DISEASE
 dysfunction	I-DISEASE
 and	O
-systematic	B-UNK
-prolactin	B-UNK
+systematic	O
+prolactin	B-CHEMICAL
 determination	B-UNK
 .	O
 main	B-UNK
@@ -112690,7 +112690,7 @@ to	O
 result	B-UNK
 from	O
 nonorganic	O
-hypothalamic	B-UNK
+hypothalamic	O
 dysfunction	B-UNK
 because	O
 of	O
@@ -112727,7 +112727,7 @@ androgen	B-UNK
 therapy	B-UNK
 ,	O
 normal	B-UNK
-morning	B-UNK
+morning	O
 or	O
 nocturnal	B-UNK
 erections	O
@@ -112779,7 +112779,7 @@ by	O
 androgen	B-UNK
 therapy	B-UNK
 .	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 exceeded	O
 20	O
 ng	O
@@ -112820,7 +112820,7 @@ last	O
 decades	O
 (	O
 overall	B-UNK
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 greater	B-UNK
 than	O
 20	O
@@ -112857,7 +112857,7 @@ effective	B-UNK
 in	O
 cases	B-UNK
 with	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 greater	B-UNK
 than	O
 35	O
@@ -112878,7 +112878,7 @@ of	O
 22	O
 cases	B-UNK
 with	O
-prolactin	B-UNK
+prolactin	B-CHEMICAL
 between	O
 20	O
 and	O
@@ -113383,7 +113383,7 @@ comparison	B-UNK
 of	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 glycopyrrolate	B-CHEMICAL
 and	O
@@ -113427,7 +113427,7 @@ kg	B-UNK
 1	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 immediately	B-UNK
 before	O
@@ -113548,7 +113548,7 @@ kg	B-UNK
 1	O
 i	O
 .	O
-v	B-UNK
+v	O
 .	O
 should	O
 immediately	B-UNK
@@ -113977,7 +113977,7 @@ seven	B-UNK
 days	B-UNK
 .	O
 flestolol	B-CHEMICAL
-blood	B-UNK
+blood	O
 concentrations	B-UNK
 increased	B-UNK
 linearly	O
@@ -113989,7 +113989,7 @@ good	B-UNK
 correlation	B-UNK
 exists	O
 between	O
-blood	B-UNK
+blood	O
 concentrations	B-UNK
 of	O
 flestolol	B-CHEMICAL
@@ -114163,12 +114163,12 @@ inhibitor	B-UNK
 enalapril	B-CHEMICAL
 on	O
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 ,	O
 albuminuria	B-DISEASE
 ,	O
 renal	B-DISEASE
-hemodynamics	B-UNK
+hemodynamics	O
 ,	O
 and	O
 morphology	B-UNK
@@ -114196,7 +114196,7 @@ after	O
 clipping	O
 of	O
 one	O
-renal	B-UNK
+renal	B-DISEASE
 artery	B-UNK
 ,	O
 hypertensive	B-DISEASE
@@ -114273,8 +114273,8 @@ weeks	B-UNK
 of	O
 treatment	B-UNK
 ,	O
-renal	B-UNK
-hemodynamics	B-UNK
+renal	B-DISEASE
+hemodynamics	O
 (	O
 glomerular	B-UNK
 filtration	I-UNK
@@ -114291,7 +114291,7 @@ the	O
 anesthetized	B-UNK
 rats	B-UNK
 .	O
-renal	B-UNK
+renal	B-DISEASE
 tissue	B-UNK
 was	O
 obtained	B-UNK
@@ -114309,7 +114309,7 @@ not	O
 nitrendipine	B-CHEMICAL
 reduced	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 significantly	B-UNK
 .	O
 after	O
@@ -114329,7 +114329,7 @@ the	O
 studied	B-UNK
 groups	B-UNK
 .	O
-renal	B-UNK
+renal	B-DISEASE
 plasma	B-UNK
 flow	B-UNK
 increased	B-UNK
@@ -114688,9 +114688,9 @@ more	O
 easily	B-UNK
 with	O
 the	O
-disease	B-UNK
+disease	B-DISEASE
 and	O
-lead	B-UNK
+lead	B-CHEMICAL
 a	O
 more	O
 normal	B-UNK
@@ -114786,7 +114786,7 @@ denervation	O
 signified	O
 a	O
 poor	B-UNK
-prognosis	B-UNK
+prognosis	O
 ,	O
 with	O
 only	O
@@ -114902,7 +114902,7 @@ do	O
 not	O
 penetrate	O
 the	O
-blood	B-UNK
+blood	O
 -	O
 brain	B-UNK
 barrier	B-UNK
@@ -115197,7 +115197,7 @@ cnp	O
 )	O
 in	O
 rat	B-UNK
-blood	B-UNK
+blood	O
 vessels	B-UNK
 .	O
 in	O
@@ -115366,7 +115366,7 @@ fk	B-CHEMICAL
 may	O
 increase	B-UNK
 blood	B-UNK
-pressure	B-UNK
+pressure	I-UNK
 not	O
 only	O
 by	O
@@ -115447,7 +115447,7 @@ the	O
 information	B-UNK
 about	O
 suicidal	O
-attempt	B-UNK
+attempt	O
 by	O
 op	O
 compound	B-UNK
@@ -116248,10 +116248,10 @@ appropriate	B-UNK
 nucleoside	O
 or	O
 nucleotide	B-UNK
-analogue	B-UNK
+analogue	O
 for	O
 antiviral	B-UNK
-prophylaxis	B-UNK
+prophylaxis	O
 during	O
 ct	B-UNK
 and	O
@@ -116693,7 +116693,7 @@ and	O
 seconds	O
 on	O
 the	O
-left	B-UNK
+left	O
 abdominal	B-UNK
 site	B-UNK
 .	O
@@ -116734,7 +116734,7 @@ paper	B-UNK
 .	O
 the	O
 visual	B-UNK
-analog	B-UNK
+analog	O
 scale	B-UNK
 (	O
 vas	O
@@ -117283,7 +117283,7 @@ and	O
 %	O
 w	O
 /	O
-v	B-UNK
+v	O
 cellulose	B-CHEMICAL
 ,	O
 10	O
@@ -117303,7 +117303,7 @@ a	O
 %	O
 w	O
 /	O
-v	B-UNK
+v	O
 aqueous	O
 suspension	B-UNK
 of	O
@@ -117375,7 +117375,7 @@ microscopic	B-UNK
 examination	B-UNK
 of	O
 kidney	B-UNK
-sections	B-UNK
+sections	O
 .	O
 the	O
 results	B-UNK
@@ -118685,7 +118685,7 @@ upon	O
 conducting	O
 psychopharmacological	O
 challenge	B-UNK
-tests	B-UNK
+tests	I-UNK
 in	O
 rodents	O
 .	O

@@ -1,4 +1,4 @@
-10p Deletion Syndrome 
+10p Deletion Syndrome
 13q deletion syndrome
 15q24 Microdeletion
 16p11.2 Deletion Syndrome
@@ -335,7 +335,7 @@ Acute coronary syndrome
 Acute erythroleukemia
 Acute fatty liver of pregnancy
 Acute febrile neutrophilic dermatosis
-Acute flaccid myelitis 
+Acute flaccid myelitis
 Acute granulocytic leukemia
 Acute inflammatory demyelinating polyneuropathy
 Acute kidney failure
@@ -431,7 +431,7 @@ Adult Fanconi Syndrome
 Adult Hodgkin Lymphoma
 Adult Reye Syndrome
 Adult Still's disease
-Adult attention-deficit/hyperactivity disorder 
+Adult attention-deficit/hyperactivity disorder
 Adult granulosa cell tumor of the ovary
 Adult i Blood Group with Congenital Cataract
 Adult-onset citrullinemia type 2
@@ -449,7 +449,7 @@ African Lymphoma
 African Swine Fever
 Agammaglobulinemia
 Aganglionosis
-Age spots 
+Age spots
 Age-Related Hearing Impairment 1
 Age-related macular degeneration
 Agenesis of Cerebellar Vermis
@@ -649,7 +649,7 @@ Amyotrophic Lateral Sclerosis 8
 Amyotrophic Lateral Sclerosis 9
 Amyotrophic Lateral Sclerosis With Polyglucosan Bodies
 Amyotrophic lateral sclerosis
-Amyotrophic lateral sclerosis 
+Amyotrophic lateral sclerosis
 Amyotrophic lateral sclerosis 1
 Amyotrophy
 Anal Atresia
@@ -770,7 +770,7 @@ Anterior polar cataract 2
 Anterior segment mesenchymal dysgenesis
 Anterior spinal artery stroke
 Anterior vaginal prolapse
-Anterior vaginal prolapse 
+Anterior vaginal prolapse
 Anthracosilicosis
 Anthracosis
 Anthrax
@@ -991,7 +991,7 @@ Atkin syndrome
 Atlanto-Axial Fusion
 Atonic Cerebral Palsy
 Atonic-Astatic Syndrome of Foerster
-Atopic dermatitis 
+Atopic dermatitis
 Atresia of small intestine
 Atrial Cardiomyopathy with Heart Block
 Atrial Fibrillation
@@ -1012,7 +1012,7 @@ Atrial Tachyarrhythmia with Short PR Interval
 Atrial fibrillation
 Atrial flutter
 Atrial myxoma
-Atrial septal defect 
+Atrial septal defect
 Atrial septal defect 2
 Atrial tachycardia
 Atrichia with Papular Lesions
@@ -1024,7 +1024,7 @@ Atrioventricular Dissociation
 Atrioventricular Septal Defect
 Atrioventricular Septal Defect with Blepharophimosis and Anal and Radial Defects
 Atrioventricular canal defect
-Atrioventricular nodal reentry tachycardia 
+Atrioventricular nodal reentry tachycardia
 Atrioventricular septal defect
 Atrophia Maculosa Varioliformis Cutis
 Atrophic Vaginitis
@@ -1088,7 +1088,7 @@ Autosomal dominant diffuse Lewy body disease
 Autosomal dominant radial ray hypoplasia syndrome
 Autosomal dominant restless legs syndrome
 Autosomal recessive nonsyndromic congenital nuclear cataract
-Avascular necrosis 
+Avascular necrosis
 Avian Leukosis
 Avitaminosis
 Avoidant Restrictive Food Intake Disorder
@@ -1267,7 +1267,7 @@ Becker Nevus Syndrome
 Beckwith-Wiedemann Syndrome
 Bed-wetting
 Bedbugs
-Bedsores 
+Bedsores
 Bee sting
 Beemer Ertbruggen syndrome
 Behavior Disorders
@@ -1288,9 +1288,9 @@ Benign essential blepharospasm
 Benign migratory glossitis
 Benign non-infected urachal cyst
 Benign paroxysmal positional vertigo
-Benign paroxysmal positional vertigo 
+Benign paroxysmal positional vertigo
 Benign peripheral nerve tumor
-Benign prostatic hyperplasia 
+Benign prostatic hyperplasia
 Berger's disease
 Beriberi
 Berk-Tabatznik syndrome
@@ -1417,7 +1417,7 @@ Blood Loss
 Blood Platelet Disorders
 Blood Protein Disorders
 Blood Transfusion Associated Adverse Reactions
-Blood in urine 
+Blood in urine
 Blood-Borne Infections
 Bloom Syndrome
 Blount disease
@@ -1518,7 +1518,7 @@ Brachytelephalangic Chondrodysplasia Punctata
 Brachytelephalangy characteristic facies Kallmann
 Bradycardia
 Bradycardia-tachycardia syndrome
-Brain AVM 
+Brain AVM
 Brain Abscess
 Brain Anomalies
 Brain Concussion
@@ -1623,7 +1623,7 @@ Brunner Syndrome
 Brunoni syndrome
 Bruton type agammaglobulinemia
 Bruxism
-Bruxism 
+Bruxism
 Bubble boy disease
 Budd-Chiari Syndrome
 Buerger's disease
@@ -1756,7 +1756,7 @@ CLEFT PALATE
 CLL
 CM
 COACH syndrome
-COD 
+COD
 CODAS syndrome
 COENZYME Q10 DEFICIENCY
 COGNITIVE FUNCTION 1
@@ -1838,7 +1838,7 @@ CREATINE PHOSPHOKINASE
 CREST Syndrome
 CRF
 CRPS
-CSF leak 
+CSF leak
 CSNB1C
 CTCL
 CTNL1
@@ -2229,7 +2229,7 @@ Chloracne
 Chlorpropamide-Alcohol Flushing
 Choanal Atresia
 Cholangiocarcinoma
-Cholangiocarcinoma 
+Cholangiocarcinoma
 Cholangitis
 Cholecystitis
 Cholecystolithiasis
@@ -2379,7 +2379,7 @@ Chromosome 7 ring syndrome
 Chromosome 8
 Chromosome 8 deletion
 Chromosome 8 ring
-Chromosome 8p deletion syndrome 
+Chromosome 8p deletion syndrome
 Chromosome 9
 Chromosome 9 Ring
 Chromosome 9 inversion or duplication
@@ -2835,7 +2835,7 @@ Coronary microvascular disease
 Coronary-Subclavian Steal Syndrome
 Coronaviridae Infections
 Coronavirus Infections
-Coronavirus disease 2019 
+Coronavirus disease 2019
 Corpse Dismemberment
 Corpus Callosum
 Corpus callosum agenesis neuronopathy
@@ -2844,7 +2844,7 @@ Cortical Defects
 Cortical Dysplasia of Taylor without Balloon Cells
 Cortical Dysplasia-Focal Epilepsy Syndrome
 Corticobasal Degeneration
-Corticobasal degeneration 
+Corticobasal degeneration
 Corticosteroid-Binding Globulin
 Corticosteroid-Binding Globulin Deficiency
 Cortisone reductase deficiency
@@ -2985,7 +2985,7 @@ Cyclic neutropenia
 Cyclic vomiting syndrome
 Cyclodialysis Clefts
 Cyclosporiasis
-Cyclothymia 
+Cyclothymia
 Cyclothymic Disorder
 Cyclothymic disorder
 Cyprus facial neuromusculoskeletal syndrome
@@ -3142,7 +3142,7 @@ Deep Vein Thromboses
 Deep Vein Thrombosis
 Deep Venous Thromboses
 Deep Venous Thrombosis
-Deep vein thrombosis 
+Deep vein thrombosis
 Deficiency Diseases
 Deficiency of interleukin-1 receptor antagonist
 Deficient color vision
@@ -3215,7 +3215,7 @@ Dependence
 Dependent Personality Disorder
 Depersonalization-derealization disorder
 Depression
-Depression 
+Depression
 Depressive Disorder
 Depressive Disorders
 Depressive Neurosis
@@ -3263,7 +3263,7 @@ Dextrocardia
 DiGeorge Anomaly
 DiGeorge Sequence
 DiGeorge Syndrome
-DiGeorge syndrome 
+DiGeorge syndrome
 Diabetes
 Diabetes Complication
 Diabetes Complications
@@ -3287,7 +3287,7 @@ Diabetic Retinopathy
 Diabetic coma
 Diabetic hypoglycemia
 Diabetic ketoacidosis
-Diabetic nephropathy 
+Diabetic nephropathy
 Diabetic neuropathy
 Diabetic retinopathy
 Diabulimia
@@ -3443,7 +3443,7 @@ Drug Hypersensitivity Syndrome
 Drug Metabolism
 Drug Overdose
 Drug Resistant Epilepsy
-Drug addiction 
+Drug addiction
 Drug allergy
 Drug-Related Side Effects and Adverse Reactions
 Drusen
@@ -3456,7 +3456,7 @@ Dry skin
 Dry socket
 Duane Retraction Syndrome
 Dubowitz syndrome
-Ductal carcinoma in situ 
+Ductal carcinoma in situ
 Ductus Arteriosus
 Duker Weiss Siber syndrome
 Dumping Syndrome
@@ -3600,7 +3600,7 @@ Ear Deformities
 Ear Diseases
 Ear Neoplasms
 Ear infection
-Ear infection 
+Ear infection
 Earache
 Eardrum
 Early Infantile Autism
@@ -3752,11 +3752,11 @@ Endotoxin Hyporesponsiveness
 Endplate Acetylcholinesterase Deficiency
 Enhanced S-Cone Syndrome
 Enlarged breasts in men
-Enlarged breasts in men 
+Enlarged breasts in men
 Enlarged heart
 Enlarged liver
 Enlarged prostate
-Enlarged spleen 
+Enlarged spleen
 Enlarged thyroid
 Enophthalmos
 Enoplida Infections
@@ -4298,7 +4298,7 @@ Focal Segmental Glomerulosclerosis 5
 Focal cortical dysplasia of Taylor
 Focal facial dermal dysplasia type 2
 Focal sclerosis with hyalinosis
-Focal segmental glomerulosclerosis 
+Focal segmental glomerulosclerosis
 Focal segmental glomerulosclerosis 1
 Foix Chavany Marie syndrome
 Folate Malabsorption
@@ -4507,14 +4507,14 @@ Gastroenteritis
 Gastroesophageal Reflux
 Gastroesophageal Reflux Disease
 Gastroesophageal reflux disease
-Gastroesophageal reflux disease 
+Gastroesophageal reflux disease
 Gastrointestinal Diseases
 Gastrointestinal Hemorrhage
 Gastrointestinal Neoplasms
 Gastrointestinal Stromal Tumors
 Gastrointestinal anthrax
 Gastrointestinal bleeding
-Gastrointestinal stromal tumor 
+Gastrointestinal stromal tumor
 Gastroparesis
 Gastroschisis
 Gaucher Disease
@@ -4584,7 +4584,7 @@ Giant Platelet Syndrome with Thrombocytopenia
 Giant cell arteritis
 Giant lymph node hyperplasia
 Giant mammary hamartoma
-Giardia infection 
+Giardia infection
 Giardiasis
 Gigantiform Cementoma
 Gigantism
@@ -4792,7 +4792,7 @@ Gynecomastia
 Gyrate Atrophy
 H. pylori infection
 H1N1 flu
-H1N1 flu 
+H1N1 flu
 H1N1v flu
 H3N2v flu
 HAIR-AN syndrome
@@ -4943,7 +4943,7 @@ Hantavirus Infections
 Hantavirus Pulmonary Syndrome
 Hantavirus pulmonary syndrome
 Hapnes Boman Skeie syndrome
-Happy puppet syndrome 
+Happy puppet syndrome
 Hardening of the arteries
 Harderoporphyria
 Hardikar syndrome
@@ -5064,7 +5064,7 @@ Hemolytic Anemia with Thermal Sensitivity of Red Cells
 Hemolytic Poikilocytic Anemia due to Reduced Ankyrin Binding Sites
 Hemolytic Transfusion Reaction
 Hemolytic Transfusion Reactions
-Hemolytic uremic syndrome 
+Hemolytic uremic syndrome
 Hemolytic-Uremic Syndrome
 Hemoperitoneum
 Hemophagocytic Lymphohistiocytosis
@@ -5204,7 +5204,7 @@ Hidradenitis suppurativa
 Hidrocystoma
 High Pressure Neurological Syndrome
 High blood pressure
-High blood pressure 
+High blood pressure
 High blood pressure in children
 High cholesterol
 High serum cholesterol
@@ -5254,7 +5254,7 @@ Hodgkin Disease
 Hodgkin Lymphoma
 Hodgkin disease
 Hodgkin's disease
-Hodgkin's lymphoma 
+Hodgkin's lymphoma
 Holocarboxylase Synthetase Deficiency
 Holoprosencephaly
 Holoprosencephaly 10
@@ -5458,7 +5458,7 @@ Hypertensive Retinopathy
 Hyperthermia
 Hyperthermia of Anesthesia
 Hyperthyroidism
-Hyperthyroidism 
+Hyperthyroidism
 Hyperthyroxinemia
 Hyperthyroxinemia due to Decreased Peripheral Conversion of T4
 Hypertrichosis
@@ -5561,7 +5561,7 @@ Hypothalamic Neoplasms
 Hypothalamic hamartomas
 Hypothermia
 Hypothyroidism
-Hypothyroidism 
+Hypothyroidism
 Hypothyroidism cleft palate
 Hypotonia
 Hypotonia-Cystinuria Syndrome
@@ -5699,7 +5699,7 @@ Idiopathic toe walking
 Idiopathic ventricular fibrillation
 IgA Deficiency
 IgA Vasculitis
-IgA nephropathy 
+IgA nephropathy
 IgA vasculitis
 IgG Deficiency
 Ige Responsiveness
@@ -5724,7 +5724,7 @@ Immune Reconstitution Inflammatory Syndrome
 Immune System Diseases
 Immune dysfunction with T-cell inactivation due to calcium entry defect 1
 Immune dysfunction with T-cell inactivation due to calcium entry defect 2
-Immune thrombocytopenia 
+Immune thrombocytopenia
 Immune thrombocytopenic purpura
 Immuno-hemolytic anemia
 Immunoblastic Lymphadenopathy
@@ -5821,13 +5821,13 @@ Inflammatory Bowel Disease 8
 Inflammatory Bowel Disease 9
 Inflammatory Bowel Diseases
 Inflammatory Breast Neoplasms
-Inflammatory bowel disease 
+Inflammatory bowel disease
 Inflammatory breast cancer
 Inflammed gallbladder
 Inflammed pancreas
 Inflammed pericardium
 Influenza
-Influenza 
+Influenza
 Influenza in Birds
 Infratentorial Neoplasms
 Infundibulopelvic dysgenesis
@@ -5979,7 +5979,7 @@ Isolated diffuse mesangial sclerosis
 Isolated left subclavian artery
 Isosporiasis
 Isotretinoin embryopathy like syndrome
-Itchy skin 
+Itchy skin
 JANSEN-DE VRIES SYNDROME
 Jackson-Weiss syndrome
 Jacobs syndrome
@@ -6381,7 +6381,7 @@ Laurence Prosser Rocker syndrome
 Laurence-Moon Syndrome
 Laurin-Sandrow syndrome
 Lazy Leukocyte Syndrome
-Lazy eye 
+Lazy eye
 Le Marec Bracq Picaud syndrome
 Lead Poisoning
 Lead poisoning
@@ -6430,7 +6430,7 @@ Leigh Syndrome due to Mitochondrial Complex III Deficiency
 Leigh Syndrome due to Mitochondrial Complex IV Deficiency
 Leigh Syndrome due to Mitochondrial Complex V Deficiency
 Leigh necrotizing encephalopathy due to pyruvate carboxylase deficiency
-Leigh syndrome 
+Leigh syndrome
 Leiomyoma
 Leiomyoma of vulva and esophagus
 Leiomyomatosis
@@ -6591,7 +6591,7 @@ Liver failure
 Liver hemangioma
 Liver spots
 Lobomycosis
-Lobular carcinoma in situ 
+Lobular carcinoma in situ
 Localized scleroderma
 Locked-In Syndrome
 Lockjaw
@@ -6629,7 +6629,7 @@ Low Back Pain
 Low Back Pains
 Low Molecular Weight Proteinuria with Hypercalciuria and Nephrocalcinosis
 Low Tension Glaucoma
-Low blood pressure 
+Low blood pressure
 Low blood sugar
 Low body temperature
 Low platelet count
@@ -6716,7 +6716,7 @@ Lymphoproliferative Syndrome
 Lynch Lee Murday syndrome
 Lynch Syndrome II
 Lynch syndrome
-Lynch syndrome I 
+Lynch syndrome I
 Lyngstadaas syndrome
 Lysine Intolerance
 Lysine Malabsorption Syndrome
@@ -6784,21 +6784,21 @@ MIRROR MOVEMENTS 2
 MIRROR MOVEMENTS 3
 MITOCHONDRIAL COMPLEX III DEFICIENCY
 MITOCHONDRIAL COMPLEX V  DEFICIENCY
-MITOCHONDRIAL DNA DEPLETION SYNDROME 1 
+MITOCHONDRIAL DNA DEPLETION SYNDROME 1
 MITOCHONDRIAL DNA DEPLETION SYNDROME 11
-MITOCHONDRIAL DNA DEPLETION SYNDROME 12A 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 12B 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 13 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 14 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 15 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 2 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 3 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 4A 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 4B 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 5 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 7 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 8A 
-MITOCHONDRIAL DNA DEPLETION SYNDROME 9 
+MITOCHONDRIAL DNA DEPLETION SYNDROME 12A
+MITOCHONDRIAL DNA DEPLETION SYNDROME 12B
+MITOCHONDRIAL DNA DEPLETION SYNDROME 13
+MITOCHONDRIAL DNA DEPLETION SYNDROME 14
+MITOCHONDRIAL DNA DEPLETION SYNDROME 15
+MITOCHONDRIAL DNA DEPLETION SYNDROME 2
+MITOCHONDRIAL DNA DEPLETION SYNDROME 3
+MITOCHONDRIAL DNA DEPLETION SYNDROME 4A
+MITOCHONDRIAL DNA DEPLETION SYNDROME 4B
+MITOCHONDRIAL DNA DEPLETION SYNDROME 5
+MITOCHONDRIAL DNA DEPLETION SYNDROME 7
+MITOCHONDRIAL DNA DEPLETION SYNDROME 8A
+MITOCHONDRIAL DNA DEPLETION SYNDROME 9
 MITOCHONDRIAL PYRUVATE CARRIER DEFICIENCY
 MITOCHONDRIAL SHORT-CHAIN ENOYL-CoA HYDRATASE 1 DEFICIENCY
 MITRAL VALVE PROLAPSE 1
@@ -6832,7 +6832,7 @@ MULTIPLE PTERYGIUM SYNDROME
 MULTIPLE SYNOSTOSES SYNDROME 1
 MUSCLE HYPERTROPHY
 MUSCULAR DYSTROPHY
-MUSCULAR DYSTROPHY-DYSTROGLYCANOPATHY 
+MUSCULAR DYSTROPHY-DYSTROGLYCANOPATHY
 MYCOBACTERIUM TUBERCULOSIS
 MYD88 Deficiency
 MYELOID TUMOR SUPPRESSOR
@@ -6995,7 +6995,7 @@ Marie Unna Hereditary Hypotrichosis 1
 Marie Unna congenital hypotrichosis
 Marijuana Abuse
 Marijuana Use
-Marinesco-Sjogren-like syndrome 
+Marinesco-Sjogren-like syndrome
 Marles Greenberg Persaud syndrome
 Maroteaux Fonfria syndrome
 Marsden syndrome
@@ -7058,7 +7058,7 @@ Medial epicondylitis
 Medial tibial stress syndrome
 Median Arcuate Ligament Syndrome
 Median Neuropathy
-Median arcuate ligament syndrome 
+Median arcuate ligament syndrome
 Median cleft lip
 Median-Ulnar Nerve Communications
 Mediastinal Cyst
@@ -7133,7 +7133,7 @@ Meniscus tear
 Menkes Kinky Hair Syndrome
 Menopause
 Menorrhagia
-Menorrhagia 
+Menorrhagia
 Menstrual bleeding
 Menstrual cramps
 Menstruation Disturbances
@@ -7316,7 +7316,7 @@ Mild Cognitive Impairment
 Mild Cognitive Impairments
 Mild Neurocognitive Disorder
 Mild Neurocognitive Disorders
-Mild cognitive impairment 
+Mild cognitive impairment
 Milia
 Miliaria
 Milk Hypersensitivity
@@ -7324,7 +7324,7 @@ Milk Sickness
 Milk allergy
 Milk intolerance
 Miller Fisher Syndrome
-Miller-McKusick-Malvaux-Syndrome 
+Miller-McKusick-Malvaux-Syndrome
 Milner Khallouf Gibson syndrome
 Mineralocorticoid Deficiency
 Mineralocorticoid Excess Syndrome
@@ -7393,7 +7393,7 @@ Monkey Diseases
 Monkeypox
 Mono
 Monoclonal Gammopathy of Undetermined Significance
-Monoclonal gammopathy of undetermined significance 
+Monoclonal gammopathy of undetermined significance
 Monocyte Chemotactic Disorder
 Monocyte Esterase Deficiency
 Mononegavirales Infections
@@ -7514,10 +7514,10 @@ Multiple myeloma
 Multiple pterygium syndrome
 Multiple sclerosis
 Multiple synostoses syndrome 2
-Multiple system atrophy 
+Multiple system atrophy
 Multiple system atrophy  with orthostatic hypotension
 Multisystem Atrophy
-Multisystem inflammatory syndrome in children 
+Multisystem inflammatory syndrome in children
 Mumps
 Munchausen Syndrome
 Munchausen Syndrome by Proxy
@@ -7899,7 +7899,7 @@ Neurocutaneous melanosis
 Neurocysticercosis
 Neurocytoma
 Neurodegeneration Due To Cerebral Folate Transport Deficiency
-Neurodegeneration with brain iron accumulation 
+Neurodegeneration with brain iron accumulation
 Neurodegenerative Disease
 Neurodegenerative Diseases
 Neurodegenerative Disorder
@@ -8086,7 +8086,7 @@ Obesity
 Obesity Hypoventilation Syndrome
 Obesophobia
 Obsessive-Compulsive Disorder
-Obsessive-compulsive disorder 
+Obsessive-compulsive disorder
 Obstetric Labor
 Obstetric Labor Complications
 Obstetric cholestasis
@@ -8204,7 +8204,7 @@ Opitz-Kaveggia syndrome
 Opium Dependence
 Opportunistic Infection
 Opportunistic Infections
-Oppositional defiant disorder 
+Oppositional defiant disorder
 Opsismodysplasia
 Opsoclonus-Myoclonus Syndrome
 Optic Atrophies
@@ -8292,7 +8292,7 @@ Orthomyxoviridae Infections
 Orthorexia Nervosa
 Orthostatic Hypotensive Disorder
 Orthostatic Intolerance
-Orthostatic hypotension 
+Orthostatic hypotension
 Osebold Skeletal Dysplasia Osteolysis Syndrome
 Oslam syndrome
 Osler-rendu-weber syndrome 2
@@ -8450,25 +8450,25 @@ PERIODIC FEVER
 PERIODIC LIMB MOVEMENTS IN SLEEP
 PERIPHERAL NEUROPATHY
 PERIPHERAL NEUROPATHY WITH VARIABLE SPASTICITY
-PEROXISOME BIOGENESIS DISORDER 10A 
+PEROXISOME BIOGENESIS DISORDER 10A
 PEROXISOME BIOGENESIS DISORDER 10B
-PEROXISOME BIOGENESIS DISORDER 11A 
+PEROXISOME BIOGENESIS DISORDER 11A
 PEROXISOME BIOGENESIS DISORDER 11B
-PEROXISOME BIOGENESIS DISORDER 12A 
-PEROXISOME BIOGENESIS DISORDER 13A 
+PEROXISOME BIOGENESIS DISORDER 12A
+PEROXISOME BIOGENESIS DISORDER 13A
 PEROXISOME BIOGENESIS DISORDER 14B
-PEROXISOME BIOGENESIS DISORDER 2A 
+PEROXISOME BIOGENESIS DISORDER 2A
 PEROXISOME BIOGENESIS DISORDER 2B
-PEROXISOME BIOGENESIS DISORDER 3A 
-PEROXISOME BIOGENESIS DISORDER 4A 
+PEROXISOME BIOGENESIS DISORDER 3A
+PEROXISOME BIOGENESIS DISORDER 4A
 PEROXISOME BIOGENESIS DISORDER 4B
-PEROXISOME BIOGENESIS DISORDER 5A 
+PEROXISOME BIOGENESIS DISORDER 5A
 PEROXISOME BIOGENESIS DISORDER 5B
-PEROXISOME BIOGENESIS DISORDER 6A 
+PEROXISOME BIOGENESIS DISORDER 6A
 PEROXISOME BIOGENESIS DISORDER 6B
-PEROXISOME BIOGENESIS DISORDER 7A 
+PEROXISOME BIOGENESIS DISORDER 7A
 PEROXISOME BIOGENESIS DISORDER 7B
-PEROXISOME BIOGENESIS DISORDER 8A 
+PEROXISOME BIOGENESIS DISORDER 8A
 PEROXISOME BIOGENESIS DISORDER 8B
 PEROXISOME BIOGENESIS DISORDER 9B
 PERRAULT SYNDROME 3
@@ -8539,7 +8539,7 @@ Pain
 Pain Insensitivity
 Paine syndrome
 Painful bladder syndrome
-Painful intercourse 
+Painful intercourse
 Painful periods
 Palant cleft palate syndrome
 Palatal Neoplasms
@@ -8729,7 +8729,7 @@ Patellofemoral Pain Syndrome
 Patellofemoral pain syndrome
 Patent Ductus Arteriosus and Bicuspid Aortic Valve with Hand Anomalies
 Patent Ductus Venosus
-Patent ductus arteriosus 
+Patent ductus arteriosus
 Patent foramen ovale
 Pathologic Processes
 Pathological Conditions
@@ -8780,7 +8780,7 @@ Pelvic Organ Prolapse
 Pelvic Pain
 Pelvic Pains
 Pelvic dysplasia arthrogryposis of lower limbs
-Pelvic inflammatory disease 
+Pelvic inflammatory disease
 Pelvic lipomatosis
 Pelvic organ prolapse
 Pelvic pain
@@ -8853,7 +8853,7 @@ Peripheral Nervous System Diseases
 Peripheral Nervous System Neoplasms
 Peripheral Neuropathy
 Peripheral Vascular Diseases
-Peripheral artery disease 
+Peripheral artery disease
 Peripheral nerve injuries
 Peripheral nerve tumors
 Peripheral neuropathy
@@ -8891,7 +8891,7 @@ Persistent Mullerian duct syndrome
 Persistent Polyclonal B-Cell Lymphocytosis
 Persistent Vegetative State
 Persistent depressive disorder
-Persistent post-concussive symptoms 
+Persistent post-concussive symptoms
 Personality Disorders
 Personality disorder
 Personality disorders
@@ -8928,7 +8928,7 @@ Phenacetin O-Deethylase
 Phencyclidine Abuse
 Phenol sulfotransferase deficiency
 Phenylketonuria
-Phenylketonuria 
+Phenylketonuria
 Phenylketonurias
 Pheochromocytoma
 Pheochromocytoma Islet Cell Tumor Syndrome
@@ -8991,7 +8991,7 @@ Pinealoma
 Pineoblastoma
 Pinguecula
 Pinheiro Freire-Maia Miranda syndrome
-Pink eye 
+Pink eye
 Pinta
 Pinworm infection
 Piriformis Muscle Syndrome
@@ -9104,7 +9104,7 @@ Polycystic kidney disease
 Polycystic kidneys
 Polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy
 Polycystic liver disease
-Polycystic ovary syndrome 
+Polycystic ovary syndrome
 Polycythemia
 Polycythemia Vera
 Polycythemia vera
@@ -9181,7 +9181,7 @@ Post-cardiac injury syndrome
 Post-chemotherapy cognitive impairment
 Post-concussion syndrome
 Post-polio syndrome
-Post-traumatic stress disorder 
+Post-traumatic stress disorder
 Post-vasectomy pain syndrome
 Postaxial Oligodactyly
 Postcholecystectomy Syndrome
@@ -9193,7 +9193,7 @@ Posterior column ataxia
 Posterior column ataxia with retinitis pigmentosa
 Posterior cortical atrophy
 Posterior prolapse
-Posterior vaginal prolapse 
+Posterior vaginal prolapse
 Postgastrectomy Syndromes
 Postherpetic neuralgia
 Postmastectomy Angiosarcoma
@@ -9283,11 +9283,11 @@ Premature birth
 Premature ejaculation
 Premature ovarian failure
 Premature puberty
-Premature ventricular contractions 
+Premature ventricular contractions
 Premenstrual Dysphoric Disorder
 Premenstrual Syndrome
 Premenstrual syndrome
-Premenstrual syndrome 
+Premenstrual syndrome
 Prenatal Bowing
 Prenatal Cortical Hyperostosis
 Prenatal Exposure Delayed Effects
@@ -9328,7 +9328,7 @@ Primary granulocytic sarcoma
 Primary hyperoxaluria type 1
 Primary hyperoxaluria type 2
 Primary immunodeficiency
-Primary lateral sclerosis 
+Primary lateral sclerosis
 Primary lateral sclerosis juvenile
 Primary malignant melanoma of the cervix
 Primary orthostatic tremor
@@ -9463,7 +9463,7 @@ Pseudopseudohypoparathyroidism
 Pseudorabies
 Pseudotrisomy 13 syndrome
 Pseudotumor Cerebri
-Pseudotumor cerebri 
+Pseudotumor cerebri
 Pseudouridinuria and Mental Defect
 Pseudovaginal Perineoscrotal Hypospadias
 Pseudoxanthoma Elasticum
@@ -9497,7 +9497,7 @@ Ptosis vocal cord paralysis
 Puberty
 Pubic Bone Dysplasia
 Pubic Symphysis Diastasis
-Pubic lice 
+Pubic lice
 Pudendal Neuralgia
 Puerperal Disorders
 Puerperal Infection
@@ -9820,7 +9820,7 @@ Respiratory Tract Fistula
 Respiratory Tract Infections
 Respiratory Tract Neoplasms
 Respiratory Underresponsiveness to Hypoxia and Hypercapnia
-Respiratory syncytial virus 
+Respiratory syncytial virus
 Respirovirus Infections
 Restless Leg Syndrome
 Restless Legs
@@ -9996,7 +9996,7 @@ Ring Chromosomes
 Ring chromosome 4 syndrome
 Ring dermoid of cornea
 Ringing in the ear
-Ringworm 
+Ringworm
 Ringworm of the foot
 Rippling muscle disease
 Road rage
@@ -10051,7 +10051,7 @@ Rumination syndrome
 Runner's knee
 Rupture
 Ruptured disk
-Ruptured eardrum 
+Ruptured eardrum
 Ruptured spleen
 Russell-Silver Syndrome
 Ruvalcaba Churesigaew Myhre syndrome
@@ -10302,7 +10302,7 @@ Scurvy
 SeSAME syndrome
 Sea-Blue Histiocyte Syndrome
 Seasonal Affective Disorder
-Seasonal affective disorder 
+Seasonal affective disorder
 Seasonal allergy
 Seaver Cassidy syndrome
 Sebaceous Gland Diseases
@@ -10392,7 +10392,7 @@ Severe Fever with Thrombocytopenia Syndrome
 Severe Mental Disorder
 Severe Mental Disorders
 Severe acute respiratory syndrome
-Severe acute respiratory syndrome 
+Severe acute respiratory syndrome
 Severe brain injury
 Severe combined immunodeficiency
 Severe combined immunodeficiency due to adenosine deaminase deficiency
@@ -10414,7 +10414,7 @@ Sexual and Gender Disorders
 Sexual dysfunction
 Sexual obsession
 Sexually Transmitted Diseases
-Sexually transmitted diseases 
+Sexually transmitted diseases
 Sezary Syndrome
 Shaken Baby Syndrome
 Shaken baby syndrome
@@ -10562,7 +10562,7 @@ Sleep apnea
 Sleep apnea in children
 Sleep disorders
 Sleep terrors
-Sleep terrors 
+Sleep terrors
 Sleep-Wake Transition Disorders
 Sleepiness
 Sleeplessness
@@ -10580,8 +10580,8 @@ Small Fiber Neuropathy
 Small bowel bacterial overgrowth
 Small bowel cancer
 Small bowel prolapse
-Small bowel prolapse 
-Small intestinal bacterial overgrowth 
+Small bowel prolapse
+Small intestinal bacterial overgrowth
 Small intestine prolapse
 Small vessel disease
 Smallpox
@@ -10599,7 +10599,7 @@ Snoring
 Snowflake vitreoretinal degeneration
 Snyder Robinson syndrome
 Social Communication Disorder
-Social anxiety disorder 
+Social anxiety disorder
 Sodium Channel Myotonia
 Soft Tissue Infection
 Soft Tissue Infections
@@ -10737,7 +10737,7 @@ Spinal Neoplasms
 Spinal Osteochondrosis
 Spinal Osteophytosis
 Spinal Stenosis
-Spinal arteriovenous malformation 
+Spinal arteriovenous malformation
 Spinal cord injury
 Spinal cord tumor
 Spinal curvature
@@ -10846,7 +10846,7 @@ Spongiform Encephalopathy with Neuropsychiatric Features
 Spontaneous Perforation
 Spontaneous Subarachnoid Hemorrhage
 Spontaneous Subarachnoid Hemorrhages
-Spontaneous coronary artery dissection 
+Spontaneous coronary artery dissection
 Sporotrichosis
 Spotted Fever Group Rickettsiosis
 Sprained ankle
@@ -10955,7 +10955,7 @@ Stupor
 Sturge-Weber Syndrome
 Stuttering
 Stuve-Wiedemann syndrome
-Stye 
+Stye
 Subacute Combined Degeneration
 Subacute Combined Neuropathy Degeneration
 Subacute Sclerosing Panencephalitis
@@ -10965,7 +10965,7 @@ Subarachnoid Hemorrhages
 Subarachnoid hemorrhage
 Subclavian Steal Syndrome
 Subclinical Status Epilepticus
-Subconjunctival hemorrhage 
+Subconjunctival hemorrhage
 Subcortical Band Heterotopia
 Subcortical Infarction
 Subcortical Infarctions
@@ -10995,7 +10995,7 @@ Sudden Infant Death
 Sudden Infant Death with Dysgenesis of the Testes Syndrome
 Sudden Unexpected Death in Epilepsy
 Sudden cardiac arrest
-Sudden infant death syndrome 
+Sudden infant death syndrome
 Sudden unexpected nocturnal death syndrome
 Suicide
 Suicide and suicidal thoughts
@@ -11077,7 +11077,7 @@ Synpolydactyly With Foot Anomalies
 Synucleinopathies
 Syphilis
 Syphilitic aseptic meningitis
-Syphilitic myelopathy 
+Syphilitic myelopathy
 Syringoma
 Syringomas
 Syringomyelia
@@ -11416,7 +11416,7 @@ Tongue Diseases
 Tongue Neoplasms
 Tongue cancer
 Tongue tie
-Tongue-tie 
+Tongue-tie
 Tonic
 Tonic Pupil
 Tonic-clonic seizure
@@ -11460,7 +11460,7 @@ Torus Palatinus and Torus Mandibularis
 Total Hypotrichosis
 Total Vocal Cord Paralysis
 Total anomalous pulmonary venous connection
-Total anomalous pulmonary venous return 
+Total anomalous pulmonary venous return
 Tourette Syndrome
 Tourette syndrome
 Townes-Brocks syndrome
@@ -11472,7 +11472,7 @@ Toxic epidermal necrolysis
 Toxic hepatitis
 Toxic shock syndrome
 Toxicity
-Toxocara canis infection 
+Toxocara canis infection
 Toxocariasis
 Toxoplasmosis
 Tracheal Diseases
@@ -11510,7 +11510,7 @@ Transient antero-apical dyskinesia
 Transient bullous dermolysis of the newborn
 Transient erythroblastopenia of childhood
 Transient global amnesia
-Transient ischemic attack 
+Transient ischemic attack
 Translocation
 Transposition of Great Vessels
 Transposition of great vessels
@@ -11562,7 +11562,7 @@ Trichothiodystrophy
 Trichothiodystrophy Syndromes
 Trichothiodystrophy with Sun Sensitivity
 Trichotillomania
-Trichotillomania 
+Trichotillomania
 Trichuriasis
 Tricuspid Atresia
 Tricuspid Valve Insufficiency
@@ -11752,7 +11752,7 @@ Urinary Tract Infection
 Urinary Tract Infections
 Urinary incontinence
 Urinary tract infection
-Urinary tract infection 
+Urinary tract infection
 Urination Disorders
 Urine
 Urine color
@@ -11926,7 +11926,7 @@ Ventricular Septal Rupture
 Ventricular extrasystoles perodactyly Robin sequence
 Ventricular fibrillation
 Ventricular premature contraction
-Ventricular septal defect 
+Ventricular septal defect
 Ventricular tachycardia
 Ventriculomegaly With Defects Of The Radius And Kidney
 Venular Insufficiency
@@ -11960,7 +11960,7 @@ Vibrio vulnificus infection
 Viljoen Kallis Voges syndrome
 Vipoma
 Viral Zoonoses
-Viral gastroenteritis 
+Viral gastroenteritis
 Viral hemorrhagic fevers
 Viremia
 Virilism

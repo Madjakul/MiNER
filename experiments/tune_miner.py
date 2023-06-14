@@ -20,7 +20,7 @@ if torch.cuda.is_available():
 else: DEVICE = "cpu"
 
 
-if __name__=="__main__":
+def tune_miner():
     logging.info("=== Training ===")
 
     lang = "en"

@@ -432,7 +432,7 @@ Bakersfield
 Bakoye River
 Baku
 Baldwin Street
-Balearic 
+Balearic
 Bali Sea
 Balsas River
 Baltic Sea
@@ -470,7 +470,7 @@ Barbourville
 Barcelona
 Bardejov Town Conservation Reserve
 Bardstown
-Barents Sea 
+Barents Sea
 Barnstable
 Baroque Churches of the Philippines
 Barre
@@ -651,7 +651,6 @@ Bivouac Peak
 Bjelašnica
 Black Elk Peak
 Black River
-Black River 
 Black Sea
 Black Tooth Mountain
 Black Volta River
@@ -688,7 +687,7 @@ Bogda Feng
 Bogota
 Bohai Bay
 Bohai Sea
-Bohol Sea 
+Bohol Sea
 Bois-du-Luc Mining Site
 Boise
 Boise River
@@ -1400,7 +1399,7 @@ Dena
 Denali
 Denison
 Denmark
-Denmark Strait 
+Denmark Strait
 Dennis
 Deno
 Dent Blanche
@@ -1621,7 +1620,7 @@ Elizabeth City
 Elizabethton
 Elizabethtown
 Elk City
-Elk River 
+Elk River
 Elkhart
 Elkhorn Mountain
 Elkins
@@ -1736,7 +1735,7 @@ Fishers Island Sound
 Fishers Peak
 Fitchburg
 Fitzgerald
-Fitzroy River 
+Fitzroy River
 Flagstaff
 Flanders Bay
 Flathead River
@@ -1990,7 +1989,7 @@ Grand Hornu
 Grand Island
 Grand Junction
 Grand Rapids
-Grand River 
+Grand River
 Grand Roc
 Grand Roc Noir
 Grand Teton
@@ -2030,7 +2029,6 @@ Greece
 Greeley
 Green Bay
 Green River
-Green River 
 Greenbelt
 Greeneville
 Greenfield
@@ -2091,7 +2089,7 @@ Gulf of Asinara
 Gulf of Bothnia
 Gulf of Burgas
 Gulf of Cagliari
-Gulf of California 
+Gulf of California
 Gulf of Carpentaria
 Gulf of Corcovado
 Gulf of Corinth
@@ -2101,7 +2099,7 @@ Gulf of Finland
 Gulf of Fonseca
 Gulf of Gabès
 Gulf of Genoa
-Gulf of Gonâve 
+Gulf of Gonâve
 Gulf of Guayaquil
 Gulf of Guinea
 Gulf of Gökova
@@ -2111,7 +2109,7 @@ Gulf of Kutch
 Gulf of Lion
 Gulf of Maine
 Gulf of Mannar
-Gulf of Martaban 
+Gulf of Martaban
 Gulf of Mexico
 Gulf of Naples
 Gulf of Nicoya
@@ -2186,7 +2184,7 @@ Hammond
 Hammondsport
 Hampton
 Hamwolsan
-Han River 
+Han River
 Hanalei
 Hancock
 Handan
@@ -2348,7 +2346,7 @@ Hualalai
 Hualca Hualca
 Huallaga River
 Huandoy
-Huang He 
+Huang He
 Huanglong Scenic and Historic Interest Area
 Huanjiang Karst
 Huascarán National Park
@@ -2411,7 +2409,7 @@ Idaho Falls
 Iguazu Falls
 Iguaçu National Park
 Iguaçu River
-Ili 
+Ili
 Ili River
 Ilion
 Illampu
@@ -2458,7 +2456,6 @@ Irazú Volcano
 Irechek
 Ireland
 Irish Sea
-Irish Sea 
 Irminger Sea
 Iroise Sea
 Iron Mountain
@@ -2509,7 +2506,7 @@ Jakarta
 Jamaica
 Jamaica Bay
 James Bay
-James River 
+James River
 Jamestown
 Janesville
 Janga
@@ -2536,7 +2533,7 @@ Jeongnimsa Temple Site
 Jequitinhonha River
 Jerimoth Hill
 Jersey City
-Jerusalem 
+Jerusalem
 Jesuit Block and Estancias of Córdoba
 Jesuit Missions of La Santísima Trinidad de Paraná
 Jesuit Missions of the Chiquitos
@@ -2996,7 +2993,7 @@ Lima
 Limpopo River
 Lincoln
 Lincoln Peak
-Lincoln Sea 
+Lincoln Sea
 Lines and Geoglyphs of Nazca and Pampas de Jumana
 Link Sar
 Linth River
@@ -3013,7 +3010,7 @@ Little Alberta
 Little Bear Peak
 Little Belt
 Little Falls
-Little Missouri River 
+Little Missouri River
 Little Rock
 Little Si
 Little Tennessee River
@@ -3126,7 +3123,7 @@ Lynn
 Lyon
 Lyskamm
 Lytton Mountain
-Lågen 
+Lågen
 Līṭanī River
 Lūt Desert
 L’Anse aux Meadows National Historic Site
@@ -4021,7 +4018,6 @@ Muztagh Ata
 Muztagh Tower
 My Son Sanctuary
 Myanmar
-Myanmar 
 Myrtle Beach
 Myrtoan Sea
 Mystic
@@ -5008,16 +5004,16 @@ Risco Caido
 Rising Wolf Mountain
 Ritacuba Blanco
 River Aire
-River Avon 
+River Avon
 River Bann
 River Barrow
 River Blackwater
 River Boyne
 River Clwyd
 River Clyde
-River Dee 
+River Dee
 River Derwent
-River Don 
+River Don
 River Eden
 River Erne
 River Ettrick
@@ -5034,7 +5030,7 @@ River Medway
 River Mersey
 River Mourne
 River Nen
-River Ouse 
+River Ouse
 River Ribble
 River Severn
 River Shannon
@@ -5205,7 +5201,6 @@ Saint Charles
 Saint Clair River
 Saint Cloud
 Saint Croix River
-Saint Croix River 
 Saint Francis River
 Saint George
 Saint George's
@@ -5401,7 +5396,7 @@ Sea of Marmara
 Sea of Okhotsk
 Sea of Sardinia
 Sea of Zanj
-Sea of the Hebrides 
+Sea of the Hebrides
 Sea of Åland
 Searcy
 Seaside
@@ -5671,7 +5666,7 @@ St. Germanus Church
 St. Leonard’s Church
 St. Mark's Square
 St. Martin’s Church
-St. Mary’s Cathedral 
+St. Mary’s Cathedral
 St. Michael’s Church
 St. Peter's Basilica
 St. Peter’s Church
@@ -5764,7 +5759,7 @@ Sun Temple
 Sun Valley
 Sunbury
 Sundarbans National Park
-Sungari 
+Sungari
 Sunlight Peak
 Sunnyvale
 Sunset Crater
@@ -6192,7 +6187,7 @@ Urubamba River
 Uruguay
 Uruguay River
 Ushba
-Ussuri 
+Ussuri
 Ussuri River
 Usumacinta River
 Utah
@@ -6326,7 +6321,7 @@ Wager Bay
 Wahiawa
 Wahpeton
 Wai'ale'ale
-Waiau River 
+Waiau River
 Waihau Bay
 Waikato River
 Wailua River
@@ -6447,7 +6442,7 @@ White Monuments of Vladimir and Suzdal
 White Mountain Peak
 White Nile River
 White Plains
-White River 
+White River
 White Sea
 White Springs
 White Sulphur Springs
@@ -6551,7 +6546,6 @@ Yampa River
 Yamuna River
 Yangon River
 Yangtze River
-Yangtze River 
 Yankton
 Yantai
 Yaounde

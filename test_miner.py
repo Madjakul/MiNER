@@ -5,7 +5,7 @@ import argparse
 
 import torch
 from torch.utils.data import DataLoader
-from seqeval.metrics import classification_report
+from seqeval.metrics import classification_report, f1_score, precision_score, recall_score
 from seqeval.scheme import IOB2
 
 from miner.utils import logging_config
@@ -93,4 +93,7 @@ if __name__=="__main__":
             y_true[i] = y_true[i][:len(y_pred[i])]
             y_true[i][-1] = idx2label[test_dataset.label2idx["O"]] # Replace the </s> tagged with PAD by an O for proper alignement
     logging.warning(classification_report(y_true, y_pred, mode="strict", scheme=IOB2))
+    logging.warning(precision_score(y_true, y_pred, mode="strict", scheme=IOB2))
+    logging.warning(recall_score(y_true, y_pred, mode="strict", scheme=IOB2))
+    logging.warning(f1_score(y_true, y_pred, mode="strict", scheme=IOB2))
 

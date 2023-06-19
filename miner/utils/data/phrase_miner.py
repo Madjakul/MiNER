@@ -2,6 +2,7 @@
 
 import re
 import logging
+import warnings
 from typing import Literal,List, Dict
 from collections import defaultdict
 
@@ -11,6 +12,10 @@ from spacy.tokens.span import Span
 from spacy.tokens.token import Token
 
 import miner.utils.data.preprocessing as pp
+
+
+warnings.filterwarnings("ignore")
+
 
 class PhraseMiner():
     """Abstract class wrapping **SpaCy** functions for tokenization and entity
@@ -68,7 +73,7 @@ class PhraseMiner():
         for n in self.n_grams:
             self.n_grams[n] = { # type: ignore
                 span: freq \
-                    for span, freq in self.n_grams[n].items() if freq >= 3
+                    for span, freq in self.n_grams[n].items() if freq >= 5
             }
 
     def _update_frequencies(self, n: int, span: str, freq: int):
@@ -108,8 +113,8 @@ class PhraseMiner():
             https://arxiv.org/abs/2206.13748
         """
         for text in corpus:
-            escaped_text = pp.escape(text).lower()
-            doc = self.nlp(escaped_text)
+            # escaped_text = pp.escape(text).lower()
+            doc = self.nlp(text)
             # doc = pp.tokenize(self.nlp, text)
             b_idx = -1
             for idx, token in enumerate(doc):
@@ -154,19 +159,19 @@ class PhraseMiner():
         for label, entries in gazetteers.items():
             logging.info(f"Adding {len(entries)} entries to {label}")
             for entry in entries:
-                escaped_text = pp.escape(entry).lower()
-                # pattern = self.nlp(escaped_text)
+                # escaped_text = pp.escape(entry)
+                pattern = self.nlp(entry)
                 # if len(pattern) > 1: # If there are more than one token in the entry
-                #     patterns.append({
-                #         "label": label,
-                #         "pattern": [{"LOWER": token.text} for token in pattern]
-                #     })
-                # else:
-                #     print(pattern.text)
                 patterns.append({
                     "label": label,
-                    "pattern": escaped_text
+                    "pattern": [{"lower": token.text} for token in pattern]
                 })
+                # else:
+                #     # print(pattern.text)
+                #     patterns.append({
+                #         "label": label,
+                #         "pattern": escaped_text
+                #     })
         self.ruler.add_patterns(patterns)
 
     def dump(self, corpus: List[str], path: str):
@@ -181,7 +186,7 @@ class PhraseMiner():
         """
         with open(path, "w", encoding="utf-8") as f:
             for text in corpus:
-                doc = self.nlp(pp.escape(text).lower())
+                doc = self.nlp(text)
                 for token in doc:
                     if token.ent_iob_ == "O":
                         f.write(

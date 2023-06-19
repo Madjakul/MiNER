@@ -1,10 +1,11 @@
 #!/bin/bash
 
 LANG="en"
-CORPUS_PATH="./data/ncbi_disease/ncbi_train_corpus.txt"
-CONLL_PATH="./data/ncbi_disease/distant/ncbi_train.conll"
-GAZETTEERS_PATH="./data/ncbi_disease/gazetteers/"
-UNK_GAZETTEERS_PATH="./data/ncbi_disease/gazetteers/UNK.txt"
+LABEL_COMPLETION=1
+CORPUS_PATH="./data/bc5cdr/cdr_dev_corpus.txt"
+CONLL_PATH="./data/bc5cdr/distant/cdr_dev.conll"
+GAZETTEERS_PATH="./data/bc5cdr/gazetteers/"
+UNK_GAZETTEERS_PATH="./data/bc5cdr/gazetteers/UNK.txt"
 
 # -----------------------------------------------------------------------------
 
@@ -16,6 +17,7 @@ mkdir tmp logs
 echo ${green}=== Mining Phrases ===${reset}
 python3 preprocess_miner.py \
     --lang ${LANG:-"en"} \
+    --label_completion ${LABEL_COMPLETION:-1} \
     --corpus_path ${CORPUS_PATH:-"./data/bc5cdr/cdr_train_corpus.txt"} \
     --conll_path ${CONLL_PATH:-"./data/bc5cdr/distant/cdr_train.conll"} \
     --gazetteers_path ${GAZETTEERS_PATH:-"./data/bc5cdr/gazetteers/"} \

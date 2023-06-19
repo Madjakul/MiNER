@@ -1,4 +1,4 @@
-Daniel	I-PER
+Daniel	B-PER
 Claudiu	I-PER
 Prodan	I-PER
 (	O
@@ -9592,4 +9592,3 @@ a	O
 Russian	B-MISC
 singer	O
 .	O
-

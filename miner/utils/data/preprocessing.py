@@ -154,10 +154,10 @@ def load_gazetteers(path: str):
     return gazetteers
 
 def escape(text: str):
-    escaped_text = re.sub(
-        r"([^A-Za-zÀ-ÖØ-öø-ÿ0-9\s])", r" \1 ", text
-    )
+    pattern = re.compile(r"([^\w+])", re.UNICODE)
+    escaped_text = re.sub(pattern, r" \1 ", text)
     escaped_text = re.sub(r"\s+", " ", escaped_text)
+    escaped_text = re.sub(r"\s$", "", escaped_text)
     return escaped_text
 
 def read_conll(path: str):

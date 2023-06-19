@@ -1,8 +1,11 @@
 18th-Century Royal Palace
 A Coruña–Oleiros–Arteixo
+Aabenraa County
+Aabenraa County and Sønderbor County
 Aachen Cathedral
 Aapravasi Ghat
 Aare River
+Aarhus
 Aasivissuit-Nipisat
 Abajo Peak
 Abakan River
@@ -39,6 +42,7 @@ Ada
 Adams
 Adda River
 Addis Ababa
+Adelaide
 Adelaide River
 Adige River
 Adour River
@@ -117,6 +121,7 @@ Alejandro de Humboldt National Park
 Aletschhorn
 Alexander City
 Alexandria
+Alfred Hershey
 Algeria
 Algiers
 Algonquin Peak
@@ -204,6 +209,7 @@ Andalusia
 Andaman Sea
 Anderson
 Andersonville
+Andhra Pradesh
 Andorra
 Andorra la Vella
 Andover
@@ -323,6 +329,7 @@ Arinos River
 Arizona
 Arkadelphia
 Arkansas
+Arkansas All-American Defensive
 Arkansas City
 Arkansas Post
 Arkansas River
@@ -369,6 +376,7 @@ Athens
 Athol
 Atlanta
 Atlantic City
+Atlantic City 's
 Atlantic Forest South-East Reserves
 Atlantic Ocean
 Atmore
@@ -388,6 +396,7 @@ Ausangate
 Auschwitz-Birkenau
 Austin
 Australia
+Australia First
 Australia and Eurasia
 Australian Convict Sites
 Australian Fossil Mammal Sites
@@ -404,6 +413,7 @@ Azad Kuh
 Azerbaijan
 Azufral
 Ağ Dağ
+B&SR
 Baalbeck
 Baba Budangiri
 Babis Mta
@@ -433,6 +443,7 @@ Bakoye River
 Baku
 Baldwin Street
 Balearic
+Bali
 Bali Sea
 Balsas River
 Baltic Sea
@@ -452,6 +463,7 @@ Bandon Bay
 Banff National Park
 Bangkok
 Bangladesh
+Bangladesh Liberation War
 Bangor
 Bangui
 Bani River
@@ -473,6 +485,7 @@ Bardstown
 Barents Sea
 Barnstable
 Baroque Churches of the Philippines
+Barrack Street
 Barre
 Barre des Écrins
 Barrington
@@ -486,6 +499,7 @@ Basilica of Our Lady
 Basilica of Sant’Apollinare Nuovo
 Basilica of Sant’Apollinare in Classe
 Basin Mountain
+Basingstoke and Alton Light Railway
 Bassae
 Bassari Country
 Basseterre
@@ -679,6 +693,7 @@ Blue and John Crow Mountains
 Bluefield
 Blytheville
 Boardman Peak
+Bobby Morris Playfield
 Boca Raton
 Bochum
 Boeuf River
@@ -717,6 +732,7 @@ Bosna River
 Bosnia and Herzegovina
 Bossier City
 Boston
+Boston Braves
 Boston Peak
 Botanical Garden
 Boteti River
@@ -775,6 +791,10 @@ Brickendon and Woolmers Estates
 Bridgeport
 Bridgeton
 Bridgetown
+Bridgton
+Bridgton Hinkleys
+Bridgton Junction
+Bridgton Junction and
 Brigham City
 Brighton
 Brighton and Hove
@@ -785,6 +805,7 @@ Bristol Bay
 Britton Hill
 Broad Peak
 Broad River
+Broadway Playfield
 Brocken
 Brockton
 Bronx
@@ -848,6 +869,7 @@ Cagayan River
 Cahokia
 Cahokia Mounds State Historic Site
 Cairo
+Cal Anderson Park
 Calais
 Caldwell
 Caledon River
@@ -915,6 +937,7 @@ Carson City
 Carson River
 Cartagena
 Carthage
+Cary
 Casa Grande
 Casamance River
 Cascade Mountain
@@ -954,6 +977,7 @@ Celebes Sea
 Celtic Sea
 Centennial Hall
 Centennial Peak
+Centennial Tower
 Central African Republic
 Central Amazon Conservation Complex
 Central City
@@ -985,6 +1009,7 @@ Chacaltaya
 Chachakumani
 Chachani
 Chad
+Chad Edward Gaudin
 Chadron
 Chagres River
 Challenger Point
@@ -1125,6 +1150,7 @@ Cilo Dağı
 Cima del Redentore
 Cimarron River
 Cincinnati
+Circuit Park Zandvoort
 Cirque Mountain
 Cistercian Abbey of Fontenay
 Citadel
@@ -1149,6 +1175,7 @@ Ciudad Universitaria de Caracas
 Clanton
 Claremont
 Claremore
+Clarence Dock
 Clarence River
 Clarion River
 Clark Fork
@@ -1164,6 +1191,7 @@ Clearwater
 Cleburne
 Cleveland
 Cleveland Heights
+Cliddesden
 Cliff of Bandiagara
 Cliffs of Moher
 Clifton
@@ -1233,6 +1261,7 @@ Congo
 Congo River
 Conneaut
 Connecticut
+Connecticut Classic Lotto
 Connecticut River
 Connersville
 Convent of Christ in Tomar
@@ -1271,6 +1300,7 @@ Cortez
 Cortland
 Corvallis
 Corydon
+Cosham
 Cosmonauts Sea
 Costa Mesa
 Costa Rica
@@ -1341,6 +1371,7 @@ Dakhlet Nouadhibou
 Dal River
 Dalian
 Dallas
+Dallas Morning News
 Dalton
 Daly City
 Daly River
@@ -1385,6 +1416,7 @@ Delano Peak
 Delaware
 Delaware Bay
 Delaware River
+Delaware Water Gap Jazz Festival
 Delicate Arch
 Delos
 Delphi
@@ -1400,6 +1432,7 @@ Denali
 Denison
 Denmark
 Denmark Strait
+Denmark and South Jutland
 Dennis
 Deno
 Dent Blanche
@@ -1446,10 +1479,12 @@ Dilmun Burial Mounds
 Dindaw Razi
 Dinder River
 Dinosaur Provincial Park
+Diocese of Sioux City
 Diran
 Disappointment Peak
 Discovery Coast Atlantic Forest Reserves
 Distaghil Sar
+Divar Island
 Dix Mountain
 Dix River
 Dixon
@@ -1516,6 +1551,7 @@ Dubrovnik City Walls
 Dubuque
 Dufourspitze
 Duisburg
+Dulles Toll Road
 Duluth
 Dunagiri
 Dunajec River
@@ -1529,6 +1565,8 @@ Durham
 Durham Castle and Cathedral
 Durmitor National Park
 Dushanbe
+Dutch
+Dutch East Indies
 Dutch Water Defence Lines
 Duxbury
 Dwangwa River
@@ -1551,17 +1589,21 @@ East Aurora
 East Chicago
 East China Sea
 East Cleveland
+East Denny Way and Nagle Place
 East Greenwich
 East Hampton
 East Hartford
 East Haven
+East Java
 East Lansing
 East Liverpool
 East Moline
 East Orange
+East Perth
 East Point
 East Providence
 East Rennell Island
+East Riding of Yorkshire
 East Saint Louis
 East Siberian Sea
 East Timor
@@ -1577,6 +1619,7 @@ Eau Claire
 Ebro River
 Ecorse
 Ecuador
+Edaville Railroad
 Edenton
 Edgartown
 Edinburg
@@ -1617,6 +1660,7 @@ Elephanta Caves
 Elgin
 Elizabeth
 Elizabeth City
+Elizabeth Cronmiller
 Elizabethton
 Elizabethtown
 Elk City
@@ -1644,6 +1688,7 @@ Emporia
 Ems River
 Enfield
 Engelsberg Ironworks
+England
 Englewood
 English Channel
 English Lake District
@@ -1691,6 +1736,7 @@ Eyzies-de-Tayac Caves
 Fagus Factory in Alfeld
 Fairbanks
 Fairfax
+Fairfax County
 Fairfield
 Fairhaven
 Fairmont
@@ -1757,6 +1803,8 @@ Fond du Lac
 Fontana
 Forbordsfjellet
 Forcados River
+Ford County
+Ford County 's
 Forellen Peak
 Forest Hills
 Former City and Cloth Hall
@@ -1796,6 +1844,7 @@ Frankfort
 Frankfurt
 Frankfurt am Main
 Franklin
+Franklin and Megantic Railway
 Fraser Island
 Fraser River
 Fray Bentos Industrial Landscape
@@ -1804,6 +1853,7 @@ Fredericksburg
 Fredonia
 Freeport
 Freetown
+Fremantle Dockers
 Fremantle Prison
 Fremont
 Fremont Peak
@@ -1917,6 +1967,7 @@ Giant's Causeway
 Giant’s Causeway
 Gibraltar
 Gibraltar Nature Reserve
+Gibson City
 Gifu
 Gila Bend
 Gila River
@@ -1941,6 +1992,7 @@ Globe
 Glomma
 Gloucester
 Gloversville
+Goa
 Goascorán River
 Gochang
 Going to the Sun Mountain
@@ -2180,6 +2232,7 @@ Hamber Provincial Park
 Hamburg
 Hamden
 Hamilton
+Hamilton Field
 Hammond
 Hammondsport
 Hampton
@@ -2187,6 +2240,8 @@ Hamwolsan
 Han River
 Hanalei
 Hancock
+Hancock Brook
+Hancock Pond
 Handan
 Handies Peak
 Hangzhou
@@ -2211,6 +2266,7 @@ Harmony
 Harpers Ferry
 Harrisburg
 Harrison
+Harrison and Bridgton Junction
 Harrodsburg
 Hartford
 Hartsville
@@ -2231,6 +2287,8 @@ Hawaii Volcanoes National Park
 Hawaiʻi Volcanoes National Park
 Hawke's Bay
 Hawkesbury River
+Hay Street
+Hay Street for
 Hayes River
 Hayes Volcano
 Hays
@@ -2288,6 +2346,7 @@ Hingham
 Hintere Schwärze
 Hinton
 Hiraizumi
+Hiram
 Hiroshima
 Hiroshima Peace Memorial
 Hiroshima Peace Memorial Park
@@ -2338,6 +2397,7 @@ Houlton
 Houma
 Housatonic River
 Houston
+Houston Post
 Hove
 Hoverla
 Huai River
@@ -2498,6 +2558,7 @@ Jabel Yibir
 Jackson
 Jackson Peak
 Jacksonville
+Jacksonville Suns
 Jacuí River
 Jade Dragon Snow Mountain
 Jaguaribe River
@@ -2633,6 +2694,7 @@ Kanlaon
 Kansas
 Kansas City
 Kansas River
+Kanye West 's
 Kapaa
 Kapuas River
 Kara Sea
@@ -2675,6 +2737,7 @@ Kennebunkport
 Kennewick
 Kenosha
 Kent
+Kent Brewster
 Kentucky
 Kentucky River
 Kenya
@@ -2711,6 +2774,7 @@ Killeen
 Kinabalu Park
 Kinabatangan River
 Kinder Scout
+King County
 King Haakon VII Sea
 King Peak
 Kingman
@@ -2992,7 +3056,10 @@ Lilongwe
 Lima
 Limpopo River
 Lincoln
+Lincoln Park
 Lincoln Peak
+Lincoln Reservoir Park
+Lincoln Reservoir and Bobby Morris Playfield
 Lincoln Sea
 Lines and Geoglyphs of Nazca and Pampas de Jumana
 Link Sar
@@ -3048,6 +3115,7 @@ Lone Mountain
 Long Beach
 Long Beach Bay
 Long Branch
+Long Island
 Long Island Sound
 Long Street
 Longmen Grottoes
@@ -3139,6 +3207,7 @@ Macomb
 Macomb Mountain
 Macon
 Macquarie Island
+Macuata West Indian Communal Constituency for
 Madagascar
 Madara Rider
 Madeira River
@@ -3166,6 +3235,7 @@ Maiden Tower
 Maiella
 Main River
 Maine
+Maine Central Railroad
 Maine River
 Maipo
 Maitengwe River
@@ -3364,6 +3434,7 @@ Mexico
 Mexico City
 Miami
 Miami Beach
+Miami Vice
 Mianzimu
 Michigan
 Michigan City
@@ -3416,6 +3487,7 @@ Mishawaka
 Mission
 Mission Peak
 Mississippi
+Mississippi Avenue
 Mississippi River
 Missoula
 Missouri
@@ -3472,6 +3544,7 @@ Monroe
 Monroeville
 Monrovia
 Mons Belfry
+Monson Railroad and
 Mont Blanc
 Mont Blanc de Cheilon
 Mont Blanc de Courmayeur
@@ -3991,6 +4064,7 @@ Munboksan
 Muncie
 Mundelein
 Munich
+Munich Olympics
 Munsusan
 Murat River
 Murchison River
@@ -4077,6 +4151,7 @@ Naseong City Wall
 Nashua
 Nashville
 Nassau
+Nassau County
 Natchez
 Natchitoches
 Nathan Road
@@ -4201,6 +4276,7 @@ Niger
 Niger River
 Nigeria
 Niigata
+Nikki Beach
 Nile River
 Niles
 Nilgiri Mountain Railway
@@ -4225,6 +4301,7 @@ Norman
 Norman River
 Norris
 Norristown
+North 's
 North Adams
 North America
 North Canadian River
@@ -4248,6 +4325,8 @@ North Platte River
 North Rhine-Westphalia
 North Sea
 North Sea Harbor
+North Shields and
+North Shore of Oahu
 North Sister
 North Twin Peak
 North Water Polynya
@@ -4306,12 +4385,14 @@ Ocoee River
 Oconto
 Oder River
 Odessa
+Odessa American
 Ogasawara Islands
 Ogden
 Ogdensburg
 Ogooué River
 Ohio
 Ohio River
+Ohio Senate
 Ohře River
 Oil City
 Oise River
@@ -4334,6 +4415,7 @@ Old City of Sana’a
 Old City of Zamość
 Old City of ʿAkko
 Old Cloth Hall
+Old Goa
 Old Government House and Domain
 Old Great North Road
 Old Havana and Its Fortification System
@@ -4402,6 +4484,7 @@ Osaka Bay
 Osawatomie
 Osceola
 Oshkosh
+Osijek-Baranja County
 Oskaloosa
 Oslo
 Ossining
@@ -4412,6 +4495,7 @@ Oti River
 Ottawa
 Ottawa River
 Otter Creek
+Ottoman Empire
 Ottumwa
 Ou River
 Ouachita River
@@ -4586,6 +4670,7 @@ Periyar River
 Perry
 Persepolis
 Persian Gulf
+Perth
 Perth Amboy
 Peru
 Pescara River
@@ -4787,6 +4872,7 @@ Port of Spain
 Portage
 Portales
 Portland
+Portland and Ogdensburg Railroad
 Portneuf River
 Porto Novo
 Portovenere
@@ -4927,8 +5013,12 @@ Ras Dashen
 Raton
 Ravi River
 Rawlins
+Raymond E. Feist
 Raynolds Peak
 Reading
+Reading Festival
+Reading Railroad
+Reading Road
 Recoleta Cemetery
 Red Bay Basque Whaling Station
 Red Bluff
@@ -5028,6 +5118,7 @@ River Lune
 River Medina
 River Medway
 River Mersey
+River Mersey and
 River Mourne
 River Nen
 River Ouse
@@ -5098,6 +5189,7 @@ Rohtas Fort
 Rokel River
 Rolla
 Rolling Thunder Mountain
+Roman Catholic Diocese of Sioux City
 Roman Walls of Lugo
 Romania
 Rome
@@ -5147,6 +5239,7 @@ Rupert River
 Rupestrian Churches of Matera
 Rupnarayan River
 Russia
+Russian Empire and
 Ruston
 Rutherford
 Rutland
@@ -5173,8 +5266,10 @@ Sabine River
 Sacabaya
 Sacajawea Peak
 Saco
+Saco River
 Sacramento
 Sacramento River
+Sacramento River Cats
 Sacred City of Anuradhapura
 Sacred City of Caral-Supe
 Sacred City of Kandy
@@ -5244,6 +5339,7 @@ Salina
 Salinas
 Saline River
 Salisbury
+Salisbury Dock
 Salish Sea
 Sallisaw
 Salmon River
@@ -5273,6 +5369,7 @@ San Felipe
 San Fernando
 San Francisco
 San Francisco Bay
+San Francisco Bay Area
 San Gabriel
 San Jacinto Peak
 San Joaquin River
@@ -5385,6 +5482,7 @@ Schwarze Elster River
 Scicli
 Scioto River
 Scotia Sea
+Scotland
 Scottsboro
 Scottsdale
 Scranton
@@ -5413,6 +5511,7 @@ Selma
 Selous Game Reserve
 Semeru
 Seminole
+Seminole County Sheriff Don Eslinger
 Semliki River
 Semmering Railway
 Sendai
@@ -5456,6 +5555,7 @@ Shanxi
 Shaoxing
 Sharavati River
 Shark Bay
+Shark Island
 Sharon
 Shashi River
 Shawnee
@@ -5608,16 +5708,23 @@ Sonora River
 Souris River
 Sous River
 South Africa
+South African
 South America
+South Australia
+South Beach and
 South Bend
+South Bridgton
 South Carolina
 South Charleston
 South China Karst
 South China Sea
 South Dakota
+South East of Deccan Plateau
 South Euboean Gulf
 South Hadley
 South Holland
+South Jutland
+South Jutland County
 South Kingstown
 South Korea
 South Kvarken
@@ -5637,6 +5744,7 @@ Southington
 Southold Bay
 Space Needle
 Spain
+Spanish Empire
 Spanish Fork
 Spanish Steps
 Spantik
@@ -5664,6 +5772,7 @@ St Peter's Square
 St. Eligius Church
 St. Germanus Church
 St. Leonard’s Church
+St. Louis
 St. Mark's Square
 St. Martin’s Church
 St. Mary’s Cathedral
@@ -5743,6 +5852,7 @@ Sudan
 Sudanese-Style Mosques
 Sudbury
 Suffolk
+Suffolk County
 Sugarloaf Mountain
 Sukur Cultural Landscape
 Sulaiman
@@ -5793,6 +5903,7 @@ Swiss Alps Jungfrau-Aletsch
 Swiss Tectonic Arena Sardona
 Switzerland
 Swāt River
+Sydney
 Sydney Harbour Bridge
 Sydney Opera House
 Sylacauga
@@ -5869,6 +5980,7 @@ Tarrytown
 Tarxien
 Tashkent
 Tasman Sea
+Tasmania
 Tasmanian Wilderness
 Tassili-n-Ajjer
 Tatakooti Peak
@@ -5914,7 +6026,10 @@ Teton River
 Tewksbury
 Texarkana
 Texas
+Texas All-State
 Texas City
+Texas Coach Darrell Royal
+Texas Longhorn
 Tha River
 Thabana Ntlenyana
 Thailand
@@ -5928,6 +6043,8 @@ The Bund
 The Cathedral of St. James in Šibenik
 The Causses and the Cévennes
 The Cheviot
+The City Of Hayward
+The Clarence Dock
 The Crown
 The Dalles
 The Forth Bridge
@@ -5939,13 +6056,17 @@ The Hard
 The Hollywood Sign
 The Horn
 The Irish Sea
+The Island
+The Island of Divar
 The Jantar Mantar
+The Konkan Railway
 The Kremlin and Red Square
 The Las Vegas Strip
 The London Eye
 The Meeting of the Waters
 The Metropolitan Museum of Art
 The Netherlands
+The Netherlands East Indies
 The Northwest Passages
 The Persian Garden
 The Persian Qanāt
@@ -5955,6 +6076,7 @@ The Royal Mile
 The Sassi and the Park
 The Shambles
 The Shard
+The Shark Island Challenge
 The Slate Landscape of Northwest Wales
 The Street Called Straight
 The Sundarbans
@@ -6072,6 +6194,7 @@ Town of Louangphrabang
 Towson
 Towy River
 Toyama Bay
+Trafalgar Dock
 Trafalgar Square
 Trang An Landscape Complex
 Trans-Iranian Railway
@@ -6143,6 +6266,11 @@ Tyre
 Tyrrhenian Sea
 Täschhorn
 Tödi
+U.S.
+U.S. Olympic
+UK
+UK Indie Chart
+US Navy
 Ubangi River
 Ubinas
 Ucayali River
@@ -6222,6 +6350,7 @@ Valvelspitze
 Van Buren
 Van Nellefabriek
 Vancouver
+Vancouver Canucks
 Vandalia
 Vanuatu
 Varallo
@@ -6332,6 +6461,7 @@ Wainganga River
 Wairau River
 Waitaki River
 Wakasa Bay
+Wales
 Walhonding River
 Walla Walla
 Walled City of Baku
@@ -6353,6 +6483,8 @@ Wartburg Castle
 Warwick
 Washington
 Washington D.C.
+Washington Dulles International Airport
+Washington Metro
 Washington Monument
 Washita River
 Waterbury
@@ -6362,6 +6494,7 @@ Waterloo
 Waterton Glacier International Peace Park
 Watertown
 Waterville
+Waterville and Farmington Railway
 Watervliet
 Watkins Glen
 Watts
@@ -6390,6 +6523,7 @@ Wellesley
 Wellfleet
 Wellington
 Wellsburg
+Welsh Highland Railway
 Wenatchee
 Wenzhou
 Werra River
@@ -6400,8 +6534,11 @@ West Bridgewater
 West Chester
 West Covina
 West Des Moines
+West Germany
 West Hartford
 West Haven
+West Jersey
+West Jersey Road
 West Lafayette
 West Lake Cultural Landscape
 West Memphis
@@ -6412,6 +6549,8 @@ West Palm Beach
 West Philippine Sea
 West Plains
 West Point
+West Seattle
+West Sebago
 West Seneca
 West Springfield
 West Virginia
@@ -6433,6 +6572,7 @@ Wetterhorn
 Wetterhorn Peak
 Wewoka
 Weymouth
+Whale Beach
 Whale Sanctuary of El Vizcaino
 Wheaton
 Wheeler Peak
@@ -6495,6 +6635,7 @@ Winston-Salem
 Winter Haven
 Winter Park
 Wirral
+Wiscasset
 Wisconsin
 Wisconsin Dells
 Wisconsin River
@@ -6602,6 +6743,7 @@ Yǒngsan River
 Zagreb
 Zambezi River
 Zambia
+Zandvoort
 Zanesville
 Zaragoza
 Zard-Kuh
@@ -6628,6 +6770,7 @@ iSimangaliso Wetland Park
 Ġgantija
 Ħal Saflieni Hypogeum
 Ħaġar Qim
+Šibenik-Knin County
 Škocjan Caves
 Škrlatica
 Špik

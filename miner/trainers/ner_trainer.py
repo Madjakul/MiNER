@@ -10,8 +10,8 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from torch.optim import SGD, Adam, lr_scheduler
-from seqeval.metrics import f1_score
 from seqeval.scheme import IOB2
+from seqeval.metrics import f1_score, precision_score, recall_score
 
 from miner.modules import NER
 from miner.optimizer import SAM
@@ -115,7 +115,7 @@ class LRScheduler():
         self.optimizer = optimizer
         self.lr_scheduler = lr_scheduler.StepLR(
             optimizer=optimizer,
-            step_size=patience,
+            step_size=patience*2,
             gamma=factor,
         )
 
@@ -218,7 +218,7 @@ class NER_Trainer():
             )
         self.lrs = LRScheduler(
             optimizer=self.optimizer,
-            patience=patience*2,
+            patience=patience,
             factor=0.4
         )
         self.early_stopping = EarlyStopping(
@@ -275,10 +275,16 @@ class NER_Trainer():
         for i, y in enumerate(y_pred):
             for j, _ in enumerate(y):
                 y_pred[i][j] = self.idx2label[y_pred[i][j]]
+                if y_pred[i][j] == "PAD": y_pred[i][j] = "O"
                 y_true[i][j] = self.idx2label[y_true[i][j]]
             y_true[i] = y_true[i][:len(y_pred[i])]
             y_true[i][-1] = self.idx2label[self.O] # Replace the </s> tagged with PAD by an O for proper alignement
-        return f1_score(y_true, y_pred, mode="strict", scheme=IOB2)
+        metrics = {
+            "f1": f1_score(y_true, y_pred, mode="strict", scheme=IOB2),
+            "p": precision_score(y_true, y_pred, mode="strict", scheme=IOB2),
+            "r": recall_score(y_true, y_pred, mode="strict", scheme=IOB2)
+        }
+        return metrics
 
     def train(
         self, train_dataloader: DataLoader,
@@ -300,9 +306,11 @@ class NER_Trainer():
                 lr = self.lrs.optimizer.param_groups[0]["lr"]
                 train_loss = self._fit(train_dataloader=train_dataloader)
                 if val_dataloader is not None:
-                    f1 = self._validate(val_dataloader)
-                if wandb_:
-                    wandb.log({"lr": lr, "train_loss": train_loss, "f1": f1})
+                    metrics = self._validate(val_dataloader)
+                    f1 = metrics["f1"]
+                    if wandb_:
+                        logs = {"lr": lr, "train_loss": train_loss, **metrics}
+                        wandb.log(logs)
                 logging.info(
                     f"Epoch: {epoch + 1}\n"
                     + f"LR: {lr}\n"

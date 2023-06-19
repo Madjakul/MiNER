@@ -57,6 +57,7 @@ Abdülcelil Levnî
 Abdülhak Hâmid
 Abe Fortas
 Abe Kōbō
+Abe Lyman
 Abe Reles
 Abe Silverstein
 Abebe Bikila
@@ -102,6 +103,7 @@ Abūʾ l-Wafāʾ
 Abūʾl-Aʿlā Mawdūdī
 Achille Castiglioni
 Achilles Painter
+Ackerman
 Ad Reinhardt
 Ada Clare
 Ada Everleigh
@@ -141,6 +143,7 @@ Adele
 Adelina Patti
 Adeline Dutton Train Whitney
 Adeline Genée
+Adelson
 Adenet le Roi
 Adolf Dygasiński
 Adolf Eichmann
@@ -179,6 +182,7 @@ Adriaan Willaert
 Adriaen Brouwer
 Adriaen van Ostade
 Adriaen van de Velde
+Adrian Barich
 Adrian Peterson
 Adriano Banchieri
 Adrien-Marie Legendre
@@ -196,6 +200,8 @@ Afanasy Afanasyevich Fet
 Affonso Reidy
 Afonso Henriques de Lima Barreto
 Agathias
+Agenor Poletti
+Ages
 Agnes Arber
 Agnes Martin
 Agnes Moorehead
@@ -327,8 +333,10 @@ Albert Verwey
 Albert Wallace Hull
 Albert Wendt
 Albert William Stevens
+Albert Wren
 Albert of Saxony
 Albert-Alexandre Glatigny
+Alberta
 Alberta Hunter
 Albertina Rasch
 Albertina Walker
@@ -428,8 +436,10 @@ Alex Katz
 Alex Mashinsky
 Alex North
 Alex Rodriguez
+Alexander
 Alexander Agassiz
 Alexander Agricola
+Alexander Altmann
 Alexander Bain
 Alexander Barclay
 Alexander Brome
@@ -601,6 +611,7 @@ Alla Nazimova
 Allaert van Everdingen
 Allan Bloom
 Allan Cunningham
+Allan Holdsworth
 Allan King
 Allan MacLeod Cormack
 Allan Ramsay
@@ -628,6 +639,7 @@ Alphonse Pyrame de Candolle
 Alphonse de Lamartine
 Alphonse-Eugène Beau de Rochas
 Altichiero
+Alto
 Alton B. Parker
 Alton Nehemiah Ellis
 Alun Lewis
@@ -690,6 +702,7 @@ Anacreon
 Anastase Dragomir
 Anastasia Robinson
 Anastasius Grün
+Anastasiya Vertinskaya
 Anatol Josepho
 Anatole Le Braz
 Anatoly Kharlampiyev
@@ -698,6 +711,7 @@ Anatoly Vasilyevich Lunacharsky
 Anaxagoras
 Anaximander
 Anaximenes of Miletus
+Andaya
 Anders Celsius
 Anders Fogh Rasmussen
 Anders Jonas Ångström
@@ -738,6 +752,7 @@ Andreina Pagnani
 Andrej Kiska
 Andres Pastrana Arango
 Andres Serrano
+Andrew
 Andrew Baxter
 Andrew Bird
 Andrew Clarke
@@ -771,6 +786,7 @@ Andriyan Grigoryevich Nikolayev
 Andronicus of Rhodes
 Andrzej Panufnik
 Andrzej Wajda
+András
 André Antoine
 André Breton
 André Campra
@@ -819,12 +835,17 @@ Aneirin
 Ang Lee
 Ange-Jacques Gabriel
 Angel de Saavedra Ramírez de Baquendano, duque de Rivas
+Angela
 Angela Bassett
+Angela Carder
 Angela Davis
 Angela Gheorghiu
 Angela Lansbury
+Angela Stoner
 Angelica Kauffmann
+Angelina
 Angelina Jolie
+Angelo
 Angelos Sikelianós
 Angelus Silesius
 Angie Elisabeth Brooks-Randolph
@@ -971,6 +992,7 @@ Anton Raphael Mengs
 Anton Rubinstein
 Anton Webern
 Anton Wildgans
+Anton Wolfgang
 Antonello da Messina
 Antoni Gaudí
 Antoni Lange
@@ -1052,6 +1074,7 @@ Arden Bement
 Ardito Desio
 Aretha Franklin
 Ari Up
+Aria
 Ariana Grande
 Arianna Huffington
 Aristarkh Vasilyevich Lentulov
@@ -1125,6 +1148,7 @@ Arthur Emmons Raymond
 Arthur Erickson
 Arthur F. Bentley
 Arthur Fadden
+Arthur Farrell
 Arthur Fry
 Arthur G. Dove
 Arthur Griffith
@@ -1287,6 +1311,8 @@ Bahāʾ ad-dīn Muḥammad ibn Ḥusayn al-ʿĀmilī
 Bahāʾ al-Dīn Muḥammad ibn Ḥusayn al-ʿĀmilī
 Bahāʾ al-Dīn Zuhayr
 Bai Juyi
+Bailey
+Bakken
 Baldassare Franceschini
 Baldassare Galuppi
 Baldassare Longhena
@@ -1297,6 +1323,7 @@ Baltasar de Echave Orio
 Balthasar Neumann
 Balthazar de Beaujoyeulx
 Balthus
+Baltimore Colts
 Baltzar von Platen
 Ban Shigeru
 Ban Zhao
@@ -1307,6 +1334,8 @@ Banū Mūsā brothers
 Baptiste
 Bar Hebraeus
 Barack Obama
+Baranowski
+Barbara
 Barbara Christian
 Barbara Kingsolver
 Barbara Kruger
@@ -1328,6 +1357,7 @@ Barnes Wallis
 Barnett Newman
 Barney Ewell
 Barney McKenna
+Baron
 Baron Victor Horta
 Barrington Levy
 Barry Bonds
@@ -1336,6 +1366,7 @@ Barry Harris
 Barry Humphries
 Barry Levinson
 Barry Llewellyn
+Barry Longyear
 Barry Manilow
 Barry Sanders
 Barry White
@@ -1359,19 +1390,25 @@ Bartolomé de Medina
 Basavan
 Bashar al-Assad
 Bashō
+Basil
 Basil Rathbone
 Basil Spence
+Basque
 Basílio da Gama
 Batata
 Battista Guarini
+Battles
 Baz Luhrmann
 Beatrice Lillie
 Beatrice Webb
+Beauford
 Beaumont Newhall
 Beck
 Bedřich Smetana
+Behe
 Behzād
 Bei Dao
+Bela Fleck
 Bela Lugosi
 Bela Schick
 Bella Abzug
@@ -1382,6 +1419,7 @@ Belle Boyd
 Belle Starr
 Bellecour
 Belva Ann Lockwood
+Ben
 Ben Affleck
 Ben B. Lindsey
 Ben Bernanke
@@ -1442,6 +1480,7 @@ Benjamin-Louis-Eulalie de Bonneville
 Bennett Cerf
 Bennie Oosterbaan
 Benny Friedman
+Benny Lee Boynton
 Benny Rebel
 Benoit Mandelbrot
 Benozzo Gozzoli
@@ -1451,6 +1490,7 @@ Benoît-Constant Coquelin
 Benvenuto Garofalo
 Beppe Grillo
 Berenice Abbott
+Beretta
 Berlin Painter
 Bern Dibner
 Bernadino Luini
@@ -1514,6 +1554,7 @@ Berthe Morisot
 Bertholet Flémalle
 Bertil Ohlin
 Bertolt Brecht
+Bertram
 Bertram Borden Boltwood
 Bertram N. Brockhouse
 Bertram Ross
@@ -1537,9 +1578,11 @@ Betty Cuthbert
 Betty Friedan
 Betty Grable
 Betty Hutton
+Betty Uber
 Betty White
 Beulah Louise Henry
 Beverley McLachlin
+Beverly Hills
 Beverly Sills
 Beyoncé
 Bezerra da Silva
@@ -1564,6 +1607,7 @@ Bidú Sayão
 Big Bill Broonzy
 Big Joe Turner
 Big Mama Thornton
+Bilka
 Bill Bixby
 Bill Bradley
 Bill Brandt
@@ -1594,11 +1638,13 @@ Bill Willis
 Bill Withers
 Billie Eilish
 Billie Holiday
+Billy
 Billy Bob Thornton
 Billy Bragg
 Billy Bremner
 Billy Collins
 Billy Crystal
+Billy Daniels
 Billy Eckstine
 Billy Guy
 Billy Hughes
@@ -1628,6 +1674,7 @@ Bjarne Stroustrup
 Bjarni Vigfússon Thórarensen
 Björk
 Bjørnstjerne Martinius Bjørnson
+Blackburn
 Blaise Cendrars
 Blaise Pascal
 Blake Edwards
@@ -1679,12 +1726,14 @@ Bobby Jones
 Bobby Locke
 Bobby McFerrin
 Bobby Moore
+Bobby Morris
 Bobby Ray Murcer
 Bobby Robson
 Bobby Short
 Bobby Vinton
 Bobby Womack
 Bobby ‘Blue’ Bland
+Bobick
 Bodil Ipsen
 Bohuslav Martinů
 Bola Ahmed Tinubu
@@ -1713,21 +1762,27 @@ Boris Stechkin
 Boris Vasilevich Shchukin
 Boris Viktorovich Savinkov
 Boris Yeltsin
+Boston
 Boston Strangler
+Bower
 Boxcar Willie
+Brabant
 Brad Delp
+Brad Hardie
 Brad Paisley
 Brad Pitt
 Bradley Walker Tomlin
 Brahmagupta
 Bramantino
 Bran Ferren
+Brandon Chik
 Brandy
 Brassaï
 Brenda Fassie
 Brenda Lee
 Brendan Eich
 Brendan Gill
+Brende Mendelssohn
 Bret Harte
 Brett Favre
 Brett Whiteley
@@ -1749,10 +1804,13 @@ Brian Wilson
 Brice Marden
 Bridget Riley
 Brigitte Bardot
+Britain
 Britney Schmidt
 Britney Spears
+Brittany
 Brittney Griner
 Brock Peters
+Brody
 Bronislava Nijinska
 Bronislaw Komorowski
 Bronko Nagurski
@@ -1774,6 +1832,7 @@ Bruce Paltrow
 Bruce Smith
 Bruce Springsteen
 Bruce Willis
+Bruno
 Bruno Bettelheim
 Bruno Hauptmann
 Bruno Lüdke
@@ -1796,11 +1855,15 @@ Buddy Holly
 Buenaventura Carles Aribau
 Buffy Sainte-Marie
 Bugsy Siegel
+Bullock
+Bullocks
+Bunny Johnson
 Bunsei
 Burgess Meredith
 Burhanuddin Rabbani
 Burl Ives
 Burna Boy
+Burns
 Burt Glinn
 Burt Lancaster
 Burt Reynolds
@@ -1827,6 +1890,7 @@ Börje Ekholm
 Bābā Ṭāher ʿOryān
 C Vijayakumar
 C. Day-Lewis
+C. H. Douglas
 C. Kumar N. Patel
 C. Lloyd Morgan
 C. Louis Leipoldt
@@ -1840,6 +1904,8 @@ C.P. Snow
 C.S. Venkatakrishnan
 C.T.R. Wilson
 Cab Calloway
+Caba
+Cabral
 Caedmon
 Caetano Veloso
 Caetano da Costa Alegre
@@ -1864,15 +1930,20 @@ Camille Pissarro
 Camille Saint-Saëns
 Camillo Golgi
 Camilo Pessanha
+Campbell
 Can Themba
 Canaletto
+Candace Savage
 Candice Bergen
+Candie Payne
 Candrakirti
 Cantinflas
+Canto
 Cao Zhi
 Cap Anson
 Captain Beefheart
 Caravaggio
+Carder
 Carel Fabritius
 Carel van Mander
 Caresse Crosby
@@ -1898,6 +1969,7 @@ Carl Gardner
 Carl Gustaf Patrik de Laval
 Carl Gustaf af Leopold
 Carl Gustav Hempel
+Carl Heinrich Georg
 Carl Heinrich Graun
 Carl Hubbell
 Carl I. Hovland
@@ -1938,6 +2010,7 @@ Carlo Caproli
 Carlo Carrà
 Carlo Cattaneo
 Carlo Cignani
+Carlo Citrone
 Carlo Crivelli
 Carlo Dolci
 Carlo Fontana
@@ -1960,6 +2033,7 @@ Carlos Mérida
 Carlos P. Garcia
 Carlos P. Romulo
 Carlos Salinas
+Carlos Santana
 Carlos Saura
 Carlos Surinach
 Carlos Torres Vila
@@ -1968,6 +2042,7 @@ Carlton E. Morse
 Carlton E. Watkins
 Carlton Fisk
 Carmelo Anthony
+Carmen Cavallaro
 Carmen Herrera
 Carmen McRae
 Carmen Miranda
@@ -1996,6 +2071,8 @@ Carrie Mae Weems
 Carrie Underwood
 Carroll O’Connor
 Carsten Niebuhr
+Carter
+Carter Anthony Beauford
 Cary Grant
 Caryl Chessman
 Caryl Churchill
@@ -2007,6 +2084,7 @@ Caspar de Crayer
 Cass Gilbert
 Cassandra Wilson
 Cassiano Ricardo
+Castro
 Cate Blanchett
 Catfish Hunter
 Catharine A. MacKinnon
@@ -2019,6 +2097,7 @@ Catherine Zeta-Jones
 Catulle Mendès
 Catullus
 Cavaliere D’Arpino
+Cavallaro
 Cearbhall Ó Dálaigh
 Cecco Angiolieri
 Cecil B. DeMille
@@ -2037,6 +2116,7 @@ Celia Laighton Thaxter
 Cem Karaca
 Cen Shen
 Cennino Cennini
+Centers
 Cesar Gaviria
 Cesar Pelli
 Cesar Romero
@@ -2049,11 +2129,14 @@ Chadwick Boseman
 Chaim Grade
 Chaim Soutine
 Chaka Khan
+Chancellor
 Chandidas
 Chandrasekhara Venkata Raman
 Chang Sŭng-Ŏp
+Charalambos
 Charlayne Hunter-Gault
 Charlemagne
+Charles
 Charles A. Dana
 Charles Ainslie Crichton
 Charles Albert Bender
@@ -2247,6 +2330,7 @@ Charley Paddock
 Charley Patton
 Charlie Booth
 Charlie Chaplin
+Charlie Gaudion
 Charlie Kaufman
 Charlie Louvin
 Charlie Parker
@@ -2286,6 +2370,7 @@ Chester Greenwood
 Chester Harding
 Chester Moor Hall
 Chet Baker
+Chiang Mai
 Chick Corea
 Chick Evans
 Chico Carrasquel
@@ -2307,7 +2392,9 @@ Chris Connor
 Chris Cornell
 Chris Kempczinski
 Chris Matthews
+Chris Paciello
 Chris Paul
+Chris Penley
 Chris Rock
 Chris Stapleton
 Chris Watson
@@ -2316,6 +2403,7 @@ Chrissy Amphlett
 Christa Corrigan McAuliffe
 Christabel Harriette Pankhurst
 Christer Fuglesang
+Christi
 Christiaan Huygens
 Christian Bale
 Christian Doppler
@@ -2355,6 +2443,7 @@ Christopher Cockerell
 Christopher Columbus
 Christopher Gist
 Christopher Hansteen
+Christopher Herrold
 Christopher Hinton, Baron Hinton of Bankside
 Christopher Hitchens
 Christopher Lee
@@ -2363,6 +2452,7 @@ Christopher Marlowe
 Christopher Morley
 Christopher Nolan
 Christopher Okigbo
+Christopher Penley
 Christopher Plummer
 Christopher Polhem
 Christopher Reeve
@@ -2382,6 +2472,7 @@ Chuck Close
 Chuck Hull
 Chuck Jones
 Chuck Robbins
+Chuck Wepner
 Chŏng Sŏn
 Chŏng To-Jŏn
 Ch’oe Kyŏng
@@ -2395,8 +2486,10 @@ Cindy Sherman
 Cino da Pistoia
 Cintio Vitier
 Ciro Ferri
+Citrone
 Claire Bloom
 Claire Danes
+Claire Keim
 Claire Trevor
 Clara Bow
 Clara Butt
@@ -2481,6 +2574,7 @@ Clément Marot
 Clément Pansaers
 Coenraad Johannes van Houten
 Cole Porter
+Coleman
 Colette
 Colin Farrell
 Colin Firth
@@ -2494,7 +2588,15 @@ Colleen Dewhurst
 Colleen Hoover
 Colleen Moore
 Colley Cibber
+Collingwood
+Collins Ave
 Colluthus of Lycopolis
+Colonel
+Colonel Baltasar
+Colonel Cornelio Zelaya
+Colonel Emmett
+Colonel Meredith H.
+Colonel Thomas
 Common
 Compay Segundo
 Conan O’Brien
@@ -2521,6 +2623,7 @@ Constantine P. Cavafy
 Constantine the Great
 Cool Papa Bell
 Corazon Aquino
+Corey Partridge
 Corinna
 Corneille de Lyon
 Cornel West
@@ -2535,6 +2638,7 @@ Cornelius Vermuyden
 Cornelius Whitehouse
 Cornell Capa
 Cornell MacNeil
+Coronado
 Corradino D'Ascanio
 Corrado Alvaro
 Corrado Gini
@@ -2546,6 +2650,7 @@ Costache Caragiale
 Countee Cullen
 Courtney Love
 Coventry Patmore
+Cowley
 Crates of Mallus
 Crates of Thebes
 Cristiano Ronaldo
@@ -2553,6 +2658,7 @@ Cristina Fernandez de Kirchner
 Cristina Peri Rossi
 Cristóbal de Morales
 Cristóbal de Villalpando
+Crown Pacific
 Crystal Eastman
 Ctesibius of Alexandria
 Curt Flood
@@ -2576,6 +2682,7 @@ Cyril Cusack
 Cyril Duquet
 Cyril Meir Scott
 Cyril Ramaphosa
+Czar
 Czesław Miłosz
 Cândido Rondon
 Cécile Chaminade
@@ -2595,6 +2702,7 @@ Dadasaheb Phalke
 Dafydd Nanmor
 Dafydd ab Edmwnd
 Dafydd ap Gwilym
+Dagger
 Dai Ailian
 Dai Jin
 Dai Zhen
@@ -2608,10 +2716,12 @@ Dallán Forgaill
 Damascius
 Dambisa Moyo
 Dambudzo Marechera
+Damian
 Damon Albarn
 Damon Runyon
 Dan Andersson
 Dan Fogelberg
+Dan Haren
 Dan Kiley
 Dan Leno
 Dan Marino
@@ -2624,6 +2734,7 @@ Dana Reeve
 Dana S. Scott
 Dana Stewart Scott
 Danica McKellar
+Daniel
 Daniel Bell
 Daniel Bernoulli
 Daniel Berrigan
@@ -2631,6 +2742,7 @@ Daniel Boone
 Daniel C. Dennett
 Daniel C. Tsui
 Daniel Chodowiecki
+Daniel Claudiu Prodan
 Daniel Cowan Jackling
 Daniel Craig
 Daniel David Palmer
@@ -2653,6 +2765,7 @@ Daniel Ortega
 Daniel Pollen
 Daniel Radcliffe
 Daniel Saul Goldin
+Daniel Segal
 Daniel Zhang
 Daniel arap Moi
 Daniel-François-Esprit Auber
@@ -2660,6 +2773,7 @@ Daniele Crespi
 Daniele da Volterra
 Danielle Steel
 Danielle de Niese
+Daniels
 Danilo Medina
 Daniël Heinsius
 Dankmar Adler
@@ -2673,6 +2787,7 @@ Dante
 Dante Alighieri
 Dante Bert Joseph Lavelli
 Dante Gabriel Rossetti
+Danvers
 Daqīqī
 Dario Fo
 Darius Adamczyk
@@ -2682,9 +2797,12 @@ Darren Woods
 Darryl Floyd Stingley
 Dasvant
 Daulat
+Dave
 Dave Brubeck
+Dave Buchanan
 Dave Calhoun
 Dave Chappelle
+Dave Colclough
 Dave Duerson
 Dave Fleischer
 Dave Lewis
@@ -2693,6 +2811,7 @@ Dave McNally
 Dave Van Ronk
 Dave Wottle
 Dave the Potter
+Davenport
 David
 David Adjaye
 David Albert DeBusschere
@@ -2709,6 +2828,7 @@ David Boggs
 David Bohm
 David Bowie
 David Brewster
+David Brin
 David Brooks
 David Bryant Mumford
 David Butler
@@ -2730,6 +2850,7 @@ David Douglas Duncan
 David Duchovny
 David Edelstein
 David Edward Hughes
+David Ferrier
 David Fincher
 David Friedrich Strauss
 David Frost
@@ -2747,6 +2868,7 @@ David Hockney
 David Hume
 David I. McKay
 David Ignatow
+David Irving
 David J. Brewer
 David J. Gingery
 David J. Gross
@@ -2795,6 +2917,7 @@ David Wilkinson
 David Wineland
 David al-Mukammas
 Davidson Nicol
+Davis
 Davy Jones
 Davíð Stefánsson
 Dawn
@@ -2802,6 +2925,7 @@ Dawn French
 Dawn Upshaw
 Dawon Kahng
 Daymond John
+De
 Deacon Jones
 Dean Kamen
 Deanna Durbin
@@ -2823,6 +2947,8 @@ Delmira Agustini
 Delmore Schwartz
 Delores Gray
 Delphine Seyrig
+Delwyn
+Demo
 Democritus
 Demyan Bedny
 Deng Xiaoping
@@ -2864,6 +2990,7 @@ Dezső Kosztolányi
 Dharmakirti
 Dhionísios, Count Solomós
 Diana Krall
+Diana Paxson
 Diana Rigg
 Diana Ross
 Diana Sands
@@ -2873,7 +3000,9 @@ Diane Keaton
 Diane Wakoski
 Diane di Prima
 Dicaearchus
+Dick Bumpas
 Dick Butkus
+Dick Cheney
 Dick Gregory
 Dick Lane
 Dick McGuire
@@ -2886,6 +3015,7 @@ Didier Drogba
 Diego Forlán
 Diego Maradona
 Diego Rivera
+Diego Silang
 Diego Velázquez
 Diego de Siloé
 Dieric Bouts
@@ -2945,6 +3075,7 @@ Doc Rivers
 Doc Watson
 Doctor Atl
 Doja Cat
+Dolby
 Dolf Luque
 Dolly Parton
 Dolph Schayes
@@ -3013,6 +3144,7 @@ Doris Leuthard
 Doris Troy
 Doris Ulmann
 Dorival Caymmi
+Dorothea
 Dorothea Jordan
 Dorothea Lange
 Dorothy Alexander
@@ -3031,6 +3163,8 @@ Dorothy Squire
 Dorothy Thompson
 Dosso Dossi
 Dottie Rambo
+Dou
+Doug Anthony
 Doug Flutie
 Doug Lowe
 Doug McMillon
@@ -3050,7 +3184,10 @@ Douglas William Freshfield
 Douglas William Jerrold
 Douglass C. North
 Douris
+Dozier
+Dr.
 Dr. Dre
+Dr. Verna
 Drake
 Drew Barrymore
 Drew Brees
@@ -3058,9 +3195,12 @@ Drew Pearson
 Droupadi Murmu
 Du Fu
 DuBose Heyward
+Duane Bobick
 Duane Michals
 Duarte Pacheco Pereira
+Dublin
 Duccio
+Duchin
 Dudley Allen Buck
 Dudley Fitts
 Dudley Moore
@@ -3078,6 +3218,7 @@ Dunkinfield Henry Scott
 Duro Ladipo
 Durriyyah Shafīq
 Dustin Hoffman
+Dustin Majewski
 Dusty Springfield
 Dutch Schultz
 Duygu Asena
@@ -3127,7 +3268,9 @@ Easley Blackwood
 Eaton Hodgkinson
 Eavan Boland
 Eben Fardd
+Eberhard Faber
 Ebrahim Alkazi
+Ed
 Ed Asner
 Ed Bastian
 Ed Bradley
@@ -3152,7 +3295,9 @@ Eddie Rabbitt
 Eddie Redmayne
 Eddie Tolan
 Eddie Vedder
+Eddy
 Eddy Arnold
+Eddy Duchin
 Eden Phillpotts
 Edgar A. Guest
 Edgar Allan Poe
@@ -3202,10 +3347,12 @@ Edna Purviance
 Edna St. Vincent Millay
 Edouard Vuillard
 Edsger Dijkstra
+Edson Vaz Musa
 Eduard Adolf Strasburger
 Eduard Devrient
 Eduard Friedrich Mörike
 Eduard Georgiyevich Bagritsky
+Eduard Hitzig
 Eduard Locher
 Eduard Robert Flegel
 Eduard Rüppell
@@ -3220,6 +3367,7 @@ Eduardo Torroja
 Eduardo Torroja y Miret
 Edvard Grieg
 Edvard Munch
+Edward
 Edward A. Calahan
 Edward Abel Killingsworth
 Edward Alleyn
@@ -3245,9 +3393,11 @@ Edward Durell Stone
 Edward Elgar
 Edward Emerson Barnard
 Edward Fairfax
+Edward Farr
 Edward Feigenbaum
 Edward FitzGerald
 Edward G. Robinson
+Edward George
 Edward German
 Edward Gibson
 Edward Godwin
@@ -3333,6 +3483,7 @@ Ehud Olmert
 Eileen Collins
 Eileen Farrell
 Eilhart von Oberg
+Ein Lied
 Einar Benediktsson
 Einar Hjörleifsson Kvaran
 Eino Leino
@@ -3368,6 +3519,7 @@ Eli Whitney
 Elia Kazan
 Elias Fries
 Elias Howe
+Elias Howell
 Eliel Saarinen
 Elihu Thomson
 Elihu Vedder
@@ -3443,6 +3595,7 @@ Elliott Carter
 Elliott Jaques
 Ellis Rabb
 Ellsworth Kelly
+Elm
 Elmer Ambrose Sperry
 Elmer Davis
 Elmer Eric Schattschneider
@@ -3464,6 +3617,7 @@ Elvis Presley
 Elwood Haynes
 Ely Moore
 Emanuel  Swedenborg
+Emanuel Bunzel
 Emanuel Geibel
 Emanuel Gottlieb Leutze
 Emanuel Schikaneder
@@ -3474,6 +3628,7 @@ Emeric Pressburger
 Emeril Lagasse
 Emil Artin
 Emil Devrient
+Emil Du
 Emil Erlenmeyer
 Emil František Burian
 Emil Jannings
@@ -3481,6 +3636,7 @@ Emil Nolde
 Emil Poulsen
 Emil Steinbach
 Emil Strub
+Emil Touma
 Emil Waldteufel
 Emil Zátopek
 Emil von Škoda
@@ -3541,6 +3697,7 @@ Enid Blyton
 Ennio Flaiano
 Enoch Herbert Crowder
 Enos Bradsher Slaughter
+Enrico
 Enrico Barone
 Enrico Betti
 Enrico Bombieri
@@ -3564,6 +3721,7 @@ Ercole de’ Roberti
 Erhard Kietz
 Eric A. Cornell
 Eric Bentley
+Eric Butler
 Eric Cantona
 Eric Clapton
 Eric Dickerson
@@ -3675,8 +3833,10 @@ Esaias van de Velde
 Esperanza Spalding
 Estanislao del Campo
 Esteban Echeverría
+Esteban Loaiza
 Esteban Manuel de Villegas
 Estelle Bennett
+Esther Friesner
 Esther Hobart McQuigg Slack Morris
 Esther Takeuchi
 Esther Williams
@@ -3752,6 +3912,7 @@ Evan Greenberg
 Evan S. Connell
 Evan Williams
 Evangelista Torricelli
+Evans Jr.
 Eve Arden
 Eve Arnold
 Eveline M. Burns
@@ -3796,6 +3957,8 @@ Faith Ringgold
 Fakhr al-Dīn al-Rāzī
 Fakhruddin Ali Ahmed
 Falco
+Falcon
+Falls
 Fannie Merritt Farmer
 Fanny Abington
 Fanny Blankers-Koen
@@ -3805,6 +3968,7 @@ Fanny Kemble
 Fanny Lewald
 Fanny Lily Gypsy Davenport
 Fanny Mendelssohn
+Fares
 Farinelli
 Farrah Fawcett
 Farrukh Beg
@@ -3910,6 +4074,7 @@ Finn Ronne
 Fiona Apple
 Fiorentino Rosso
 Fitz-Greene Halleck
+Flanders Fields
 Flann O’Brien
 Flavien Ranaivo
 Flavius Cresconius Corippus
@@ -3918,6 +4083,7 @@ Flemming Flindt
 Fletcher Christian
 Fleur Adcock
 Fleury
+Flex
 Flip Wilson
 Flora Nwapa
 Flora Robson
@@ -3941,13 +4107,17 @@ Floyd Paxton
 Floyd Tillman
 Folquet de Marseille
 Fons Rademakers
+Forbes
 Ford Madox Brown
+Forrest
 Forrest Bess
 Forrest Parry
+Fr Francisco Sousa
 Fra Angelico
 Fra Bartolommeo
 Fra Filippo Lippi
 Fra Giovanni Giocondo
+Franc
 Franc Trkman
 France Prešeren
 Frances Ann Denny Drake
@@ -3991,6 +4161,7 @@ Francis Beaufort
 Francis Beaumont
 Francis Bebey
 Francis Bell
+Francis Crick
 Francis Drake
 Francis Edward Younghusband
 Francis Ford Coppola
@@ -4055,6 +4226,7 @@ Francois Hollande
 Francois Mitterrand
 Francois Quesnay
 Franjo Tudman
+Frank
 Frank Albert Fetter
 Frank Appel
 Frank Baldwin Jewett
@@ -4065,6 +4237,7 @@ Frank Borzage
 Frank Bridge
 Frank Bunker Gilbreth
 Frank Capra
+Frank Catalano
 Frank Conrad
 Frank Costello
 Frank Craven
@@ -4081,6 +4254,7 @@ Frank J. Goodnow
 Frank J. Sprague
 Frank James
 Frank Johnson, Jr.
+Frank Kelly Freas
 Frank Kobina Parkes
 Frank Launder
 Frank Leslie
@@ -4103,6 +4277,7 @@ Frank Stella
 Frank Whittle
 Frank William Taussig
 Frank Zamboni
+Frankfurt
 Frankie Avalon
 Frankie Laine
 Frankie Manning
@@ -4178,6 +4353,8 @@ François-Joseph Talma
 François-Noël Babeuf
 Françoise Hardy
 Frauenlob
+Frazier
+Freas
 Fred Allen
 Fred Astaire
 Fred Gwynne
@@ -4219,6 +4396,7 @@ Frederick Douglass
 Frederick Emmons Terman
 Frederick Forsyth
 Frederick Gilmer Bonfils
+Frederick H. Collier
 Frederick H. Evans
 Frederick Handley Page
 Frederick Jelinek
@@ -4253,6 +4431,7 @@ Frida Kahlo
 Fridrikh Markovich Ermler
 Fridtjof Nansen
 Friederich Konrad Hornemann
+Friedrich
 Friedrich Adolf Trendelenburg
 Friedrich Albert Lange
 Friedrich Bergius
@@ -4275,6 +4454,7 @@ Friedrich Nietzsche
 Friedrich Rudolf, Freiherr (baron) von Canitz
 Friedrich Rückert
 Friedrich Schiller
+Friedrich Schlegel
 Friedrich Schleiermacher
 Friedrich Schmiedl
 Friedrich Soennecken
@@ -4290,6 +4470,7 @@ Friedrich von Matthisson
 Friedrich von Wieser
 Frigyes Riesz
 Frits Zernike
+Fritsch
 Fritz A. Breuhaus
 Fritz Haber
 Fritz Klatte
@@ -4310,6 +4491,7 @@ Frédéric Bazille
 Frédéric Chopin
 Frédéric Mistral
 Fuad Masum
+Fuhrer
 Fujio Masuoka
 Fujita Tsuguji
 Fujiwara Nobuzane
@@ -4381,14 +4563,17 @@ Galileo
 Galileo Ferraris
 Galileo Galilei
 Galina Vishnevskaya
+Galway
 Galway Kinnell
 Gamal Abdel Nasser
 Gandhi
+Ganesh
 Gangubai Hangal
 Ganku
 Gao Qipei
 Garcia de Resende
 Garcilaso de la Vega
+Gare
 Garfield Edward John Barwick
 Gari Melchers
 Garo H. Armen
@@ -4400,8 +4585,10 @@ Garry Wills
 Garry Winogrand
 Garson Kanin
 Garth Brooks
+Gary
 Gary Carter
 Gary Cooper
+Gary Jones
 Gary Oldman
 Gary Payton
 Gary Player
@@ -4427,6 +4614,7 @@ Gaston Planté
 Gaston, duc d’Orléans
 Gaston-Albert-Célestin Lenôtre
 Gatemouth Brown
+Gaudin
 Gautama Buddha
 Gautier de Metz
 Gavin Ewart
@@ -4459,6 +4647,7 @@ Gennadios II Scholarios
 Gennady Mikhailovich Strekalov
 Gentile Bellini
 Gentile da Fabriano
+Geoff Smith
 Geoffrey Chaucer
 Geoffrey Grigson
 Geoffrey H. Hartman
@@ -4492,10 +4681,12 @@ Georg Wilhelm Friedrich Hegel
 Georg von Békésy
 Georg von Dollmann
 Georg von Peuerbach
+George
 George A. Akerlof
 George A. Miller
 George A. Romero
 George Abbott
+George Alan Thomas
 George Albert Jessel
 George Anderson McAfee
 George Anne Bellamy
@@ -4524,6 +4715,7 @@ George Canning
 George Carlin
 George Catlin
 George Cayley
+George Chaplin
 George Chapman
 George Clooney
 George Clyde Kell
@@ -4607,6 +4799,7 @@ George Malcolm White
 George Mallory
 George Mann MacBeth
 George Marsden Waterhouse
+George Melvin
 George Meredith
 George Michael
 George Michael Low
@@ -4638,6 +4831,7 @@ George Sandys
 George Santayana
 George Seferis
 George Seldes
+George Shearing
 George Shiras, Jr.
 George Sidney
 George Silk
@@ -4739,11 +4933,13 @@ Germain Boffrand
 Germain Sommeiller
 Germaine Greer
 Germaine Guèvremont
+Germaine de
 Germán Arciniegas
 Gerolamo Cardano
 Gerrit Achterberg
 Gerrit Dou
 Gerrit Thomas Rietveld
+Gerry Kelly
 Gerry Mulligan
 Gerry Rafferty
 Gersh Budker
@@ -4780,6 +4976,8 @@ Gian Giorgio Trissino
 Gian Lorenzo Bernini
 Gian Luigi Fieschi il Giovanne
 Gianantonio Guardi
+Gibson
+Gigi
 Gil Evans
 Gil Vicente
 Gilbert Ames Bliss
@@ -4926,6 +5124,7 @@ Gladys Knight
 Glauber Rocha
 Gleb Kotelnikov
 Gleb Lozino-Lozinskiy
+Glen Jakovich
 Glen Tetley
 Glenda Jackson
 Glenn Close
@@ -4942,6 +5141,7 @@ Gloria Steinem
 Gloria Swanson
 Gloria Vanderbilt
 Gnaeus Naevius
+Goan
 Gobind Singh
 Godfrey Harold Hardy
 Godfrey Kneller
@@ -4955,6 +5155,7 @@ Gong Xian
 Gong Zizhen
 Gongsun Long
 Gonzalo Pizarro
+Gonzalo Roig
 Gonzalo de Berceo
 Googoosh
 Goran Persson
@@ -5000,6 +5201,7 @@ Gracie Allen
 Gracie Fields
 Grafton Tyler Brown
 Graham Chapman
+Graham Dawson
 Graham Greene
 Graham Sutherland
 Graham Wallas
@@ -5007,15 +5209,18 @@ Grandma Moses
 Grant Achatz
 Grant McLennan
 Grant Wood
+Grantham
 Grantland Rice
 Granville Bantock
 Granville Woods
 Gratien Gélinas
+Gravel
 Greenleaf Whittier Pickard
 Greer Garson
 Greg Creed
 Greg Maddux
 Greg Norman
+Gregg Brandon
 Gregor Aichinger
 Gregor Mendel
 Gregori Aleksandrovich Margulis
@@ -5040,6 +5245,7 @@ Grigori Perelman
 Grigory Naumovich Chukhrai
 Grock
 Groucho Marx
+Grove
 Grover Cleveland
 Grover Cleveland Alexander
 Gu Kaizhi
@@ -5048,6 +5254,7 @@ Guanxiu
 Guarino Guarini
 Guerrilla Girls
 Guglielmo Marconi
+Guido
 Guido Cavalcanti
 Guido Gezelle
 Guido Gozzano
@@ -5090,6 +5297,7 @@ Gustaf Fredrik, Greve (count) Gyllenborg
 Gustaf Fröding
 Gustav Cassel
 Gustav Falke
+Gustav Fritsch
 Gustav Giemsa
 Gustav Guanella
 Gustav Hertz
@@ -5181,12 +5389,14 @@ Halide Edib Adıvar
 Halldór Laxness
 Halle Berry
 Hallgrímur Pétursson
+Halliburton
 Haluk Levent
 Hamid Karzai
 Hamilton Harty
 Hamilton Hume
 Hammer
 Hammād al-Rāwiyah
+Hampshire
 Han Feizi
 Han Gan
 Han Yongun
@@ -5209,6 +5419,7 @@ Hannes Alfvén
 Hannes Hafstein
 Hannes Kolehmainen
 Hanno
+Hans
 Hans Baldung
 Hans Beck
 Hans Berger
@@ -5249,11 +5460,15 @@ Hanya Holm
 Harald August Bohr
 Harald Kreutzberg
 Harald Lander
+Harbor
+Harcourt
 Hardy Cross
 Haribhadra
 Harishchandra
+Harlan Ellison
 Harlan Fiske Stone
 Harmon Killebrew
+Harold
 Harold Abrahams
 Harold Arlen
 Harold Brodkey
@@ -5291,6 +5506,7 @@ Harrison E. Salisbury
 Harrison Ford
 Harrison Grey Fiske
 Harrison Schmitt
+Harry
 Harry A. Blackmun
 Harry Atkinson
 Harry Belafonte
@@ -5300,6 +5516,7 @@ Harry Connick, Jr.
 Harry Coover
 Harry Crosby
 Harry Gordon Johnson
+Harry H. Laughlin
 Harry Hamilton Johnston
 Harry Houdini
 Harry Langdon
@@ -5335,10 +5552,14 @@ Haskell Brooks Curry
 Hassan Rouhani
 Hatano Seiichi
 Hattie McDaniel
+Hauser
 Havergal Brian
+Hawker
 Hawley Harvey Crippen
 Hayashi Razan
 Hayden Carruth
+Hayes
+Hayley
 He Hui
 He Yan
 Heath Ledger
@@ -5462,12 +5683,15 @@ Henri-Victor Regnault
 Henri-Émile Bazin
 Henric Laurenszoon Spieghel
 Henrietta Johnston
+Henriette Herz
 Henriette Sontag
 Henrik Arnold Wergeland
 Henrik Hertz
 Henrik Ibsen
 Henrik Stangerup
 Henrik Steffens
+Henrique
+Henrique Lopes de Mendonça
 Henriëtte Goverdina Anna Roland Holst–van der Schalk
 Henry Addington
 Henry Alfred Lytton
@@ -5582,6 +5806,7 @@ Heraclitus
 Herb Elliott
 Herb Reed
 Herb Ritts
+Herbert
 Herbert A. Hauptman
 Herbert A. Simon
 Herbert Austin, Baron Austin
@@ -5614,6 +5839,7 @@ Herman Haupt
 Herman Hollerith
 Herman Melville
 Herman Mudgett
+Herman Salling
 Herman Teirlinck
 Herman Van Rompuy
 Herman Wildenvey
@@ -5640,7 +5866,10 @@ Hermanus Johannes Aloysius Maria Schaepman
 Hermes Pan
 Hermesianax
 Herminie Cadolle
+Hermosa
+Hernandez
 Hernando de Soto
+Herndon
 Hernán Cortés
 Heron
 Heron of Alexandria
@@ -5648,6 +5877,8 @@ Hertha Marks Ayrton
 Hervey Allen
 Hervé Bazin
 Hesiod
+Hesse
+Heyden
 Heywood Broun
 Hideo Shima
 Hidetaka Miyazaki
@@ -5681,7 +5912,9 @@ Hiëronymus Bosch
 Hjálmar Jónsson
 Ho Ching
 Hoagy Carmichael
+Hogan
 Hokusai
+Holderness
 Holger Henrik Herholdt Drachmann
 Holmes Rolston III
 Homai Vyarawalla
@@ -5722,13 +5955,16 @@ Hovannes Adamian
 Howard Hanson
 Howard Hathaway Aiken
 Howard Hawks
+Howard Hendrix
 Howard Keel
 Howard Leslie Morrison
 Howard Lindsay
 Howard Moss
 Howard Nemerov
 Howard Stern
+Howe
 Howell E. Jackson
+Howie Payne
 Howlin’ Wolf
 Hoyt Wayne Axton
 Hoyt Wilhelm
@@ -5782,6 +6018,7 @@ Hugo von Hofmannsthal
 Hugo von Mohl
 Hui Shi
 Huizong
+Humberstone
 Humberto Fernández-Morán
 Humberto Solás Borrego
 Hume Cronyn
@@ -5871,6 +6108,7 @@ Il Romanino
 Il Sodoma
 Ilan Ramon
 Iliya Abu Madi
+Ilona
 Ilse Aichinger
 Ilse Bing
 Ilse Koch
@@ -5886,7 +6124,9 @@ Imperio Argentina
 Imre Madách
 Imruʾ al-Qays
 Ina Donna Coolbrith
+Indra
 Inga Nielsen
+Ingall
 Ingeborg Bachmann
 Inger Christensen
 Ingmar Bergman
@@ -5906,6 +6146,7 @@ Ira Remsen
 Ira Van Gieson
 Irena Kirszenstein-Szewińska
 Irene Dunne
+Irene Radford
 Irene Rice Pereira
 Irene Rich
 Irene Worth
@@ -5980,6 +6221,7 @@ Ivan Albright
 Ivan Alekseyevich Bunin
 Ivan Bella
 Ivan Cankar
+Ivan Capelli
 Ivan Edward Sutherland
 Ivan Elmanov
 Ivan Feodorovich
@@ -6009,6 +6251,7 @@ Ivo Josipovic
 Ivor Cutler
 Ivor John Allchurch
 Ivor Novello
+Ivy
 Iván Duque Márquez
 Iwan Baan
 Iwan Serrurier
@@ -6042,6 +6285,7 @@ J.M.W. Turner
 J.R.R. Tolkien
 J.V. Cunningham
 Jacinda Ardern
+Jack
 Jack Albertson
 Jack Arnold
 Jack Benny
@@ -6056,6 +6300,7 @@ Jack Kerouac
 Jack Kilby
 Jack Klugman
 Jack Lemmon
+Jack Lesmana
 Jack Levine
 Jack Lovelock
 Jack Ludwig
@@ -6136,6 +6381,7 @@ Jacques Jasmin
 Jacques Lowe
 Jacques Maritain
 Jacques Marquette
+Jacques Necker
 Jacques Offenbach
 Jacques Peletier
 Jacques Piccard
@@ -6176,6 +6422,7 @@ Jakob Steiner
 Jakob Thorarensen
 Jalal Talabani
 Jamaica Kincaid
+James
 James (“Whitey”) Bulger
 James A. Garfield
 James A. Lovell, Jr.
@@ -6411,6 +6658,8 @@ Janis Joplin
 Janko Král′
 Janos Ader
 Janowitz, Morris
+Jared
+Jared Leto
 Jarkko Oikarinen
 Jaromir Weinberger
 Jaroslav Seifert
@@ -6422,6 +6671,7 @@ Jason Momoa
 Jason Robards
 Jasper Heywood
 Jasper Johns
+Java
 Javed Iqbal
 Javier Bardem
 Jay Leno
@@ -6579,10 +6829,12 @@ Jeane Kirkpatrick
 Jeanne Eagels
 Jeanne Gang
 Jeanne Moreau
+Jeanne Robinson
 Jeannette Leonard Gilder
 Jeannette Rankin
 Jedediah Strong Smith
 Jef Raskin
+Jeff Beck
 Jeff Bridges
 Jeff Buckley
 Jeff Clarke
@@ -6632,6 +6884,7 @@ Jerry Lee Lewis
 Jerry Lewis
 Jerry Lucas
 Jerry Orbach
+Jerry Quarry
 Jerry Reed
 Jerry Rice
 Jerry Ross
@@ -6653,6 +6906,7 @@ Jessie Daniel Ames
 Jessie Redmon Fauset
 Jessie Tarbox Beals
 Jet Li
+Jews
 Ji Kang
 Jia Xian
 Jian Zhou
@@ -6742,6 +6996,7 @@ Jodie Foster
 Joe Adonis
 Joe Arroyo
 Joe Biden
+Joe Blanton
 Joe Clark
 Joe Cocker
 Joe DiMaggio
@@ -6856,11 +7111,13 @@ Johannes Stark
 Johannes V. Jensen
 Johannes Vermeer
 Johannes de Klerk
+John
 John "Jack" Higson Cover Jr.
 John A. Kaneb
 John A. Macdonald
 John A. Pople
 John Abbott
+John Abercrombie
 John Adams
 John Addington Symonds
 John Aitken
@@ -6920,6 +7177,7 @@ John Cena
 John Chalkhill
 John Christopher Pepusch
 John Ciardi
+John Citrone
 John Clare
 John Cleese
 John Cleveland
@@ -7013,6 +7271,7 @@ John Gower
 John Greaves
 John Greenleaf Whittier
 John Gregory Dunne
+John Greiner
 John Grierson
 John Griggs Thompson
 John Gunther
@@ -7167,6 +7426,7 @@ John Phillips
 John Philoponus
 John Playfair
 John Polkinghorne
+John Popper
 John Quidor
 John Quincy Adams
 John R. Commons
@@ -7314,6 +7574,7 @@ Jonathan Wolfe Miller
 Jonathan Wolken
 Jones Very
 Joni Mitchell
+Joong
 Joos van Cleve
 Joost Bürgi
 Joost van den Vondel
@@ -7324,6 +7585,7 @@ Jorge Guillén
 Jorge Isaacs
 Jorge Luis Borges
 Jorge Manrique
+Jorge Nunez
 Jorge Rafael Videla
 Jorge Rebelo
 Jorge Sampaio
@@ -7343,6 +7605,7 @@ Josef Ressel
 Josef Stefan
 Josef Weinheber
 Josef von Sternberg
+Josefa Gabriela
 Josep Maria Sert
 Joseph A. Colombo, Sr.
 Joseph A. Schumpeter
@@ -7458,6 +7721,7 @@ Josephine Jacobsen
 Josephine Preston Peabody
 Josephine Sophia White Griffing
 Josephine St. Pierre Ruffin
+Josh Abraham
 Josh Billings
 Josh Gibson
 Josh Groban
@@ -7471,6 +7735,7 @@ Josip Belušić
 Josquin des Prez
 Joss Whedon
 Josuah Sylvester
+José
 José Asunción Silva
 José Carreras
 José Clemente Orozco
@@ -7496,6 +7761,7 @@ José María Eguren
 José Mujica
 José Mutis
 José P. Laurel
+José Pedro
 José Pedro Crisólogo Mármol
 José Quintero
 José Rubén Romero
@@ -7669,6 +7935,7 @@ Juris Varlejs Hartmanis
 Jussi Björling
 Juste-Aurèle Meissonier
 Justin Bieber
+Justin Broadrick
 Justin Fashanu
 Justin Hinds
 Justin Timberlake
@@ -7716,11 +7983,13 @@ Kaikhosru Shapurji Sorabji
 Kakinomoto Hitomaro
 Kaká
 Kalidasa
+Kallie
 Kalpana Chawla
 Kamau Brathwaite
 Kamo Chōmei
 Kamo Mabuchi
 Kampan
+Kang
 Kanye West
 Kanō Eitoku
 Kanō Masanobu
@@ -7755,6 +8024,7 @@ Karl Christian Friedrich Krause
 Karl Drais
 Karl Ernst
 Karl Ferdinand Braun
+Karl Friedrich Otto Westphal
 Karl Friedrich Philipp von Martius
 Karl Friedrich Schinkel
 Karl Georg Christian von Staudt
@@ -7768,6 +8038,7 @@ Karl Jatho
 Karl Kautsky
 Karl Klaus von der Decken
 Karl Kraus
+Karl Langdon
 Karl Ludwig von Knebel
 Karl Malden
 Karl Manne Georg Siegbahn
@@ -7795,6 +8066,7 @@ Karl von Piloty
 Karl von Reichenbach
 Karl-Hermann Geib
 Karlheinz Stockhausen
+Karmali
 Karol Szymanowski
 Karolos Papoulias
 Karrie Webb
@@ -7853,6 +8125,7 @@ Ke Huy Quan
 Keanu Reeves
 Kees A. Schouhamer Immink
 Kees van Dongen
+Keim
 Keith Castellain Douglas
 Keith Floyd
 Keith Haring
@@ -7863,6 +8136,7 @@ Keith Sinclair
 Keith Urban
 Kelly Clarkson
 Kelly Johnson
+Kelly Slater
 Kelsey Grammer
 Kemalpaşazâde
 Ken Annakin
@@ -7871,6 +8145,7 @@ Ken Caminiti
 Ken Griffey, Jr.
 Ken Kutaragi
 Ken Loach
+Ken Norton
 Ken Russell
 Kenenisa Bekele
 Kenneth Anger
@@ -7890,6 +8165,7 @@ Kenneth Patchen
 Kenneth Rexroth
 Kenneth Slessor
 Kenneth Wartinbee Spence
+Kennett
 Kenny Chesney
 Kenny Dorham
 Kenny Rankin
@@ -7906,6 +8182,7 @@ Kermit Roosevelt
 Kerry James Marshall
 Keshab Chunder Sen
 Kevin Costner
+Kevin Drake
 Kevin Durant
 Kevin Garnett
 Kevin Roche
@@ -7926,6 +8203,7 @@ Kid Curry
 Kid Ory
 Kidinnu
 Kiefer Sutherland
+Kiki Cuyler
 Kikutake Kiyonori
 Kilian Ignaz Dientzenhofer
 Kim Bailie
@@ -7939,6 +8217,7 @@ Kim Jong-il
 Kim Jong-un
 Kim Novak
 Kim Young-sam
+Kinda
 King Arthur
 King Charles
 King Sunny Ade
@@ -7971,6 +8250,7 @@ Klaus Iohannis
 Klaus Kinski
 Klaus Thorvald Rifbjerg
 Klaus von Klitzing
+Klein
 Kleitias
 Kleophrades Painter
 Knud Rasmussen
@@ -7984,10 +8264,12 @@ Kobe Bryant
 Kodaira Kunihiko
 Kofi Awoonor
 Koiso Kuniaki
+Kojima Minoru
 Kola Ogunmola
 Komitas
 Komparu Zempō
 Komparu Zenchiku
+Konami
 Kondraty Fyodorovich Ryleyev
 Konosuke Matsushita
 Konrad Dannenberg
@@ -8009,7 +8291,9 @@ Konstantin Stepanovich Melnikov
 Konstantin Tsiolkovsky
 Konstantinos Karamanlis
 Konstantinos Stephanopoulos
+Konstanty
 Korney Ivanovich Chukovsky
+Kory Lichtensteiger
 Kose Kanaoka
 Koshiba Masatoshi
 Kostas Paskalis
@@ -8056,6 +8340,7 @@ L.L. Thurstone
 L.S. Lowry
 L.S. Vygotsky
 LL Cool J
+La
 La India
 LaDainian Tomlinson
 LaVern Baker
@@ -8064,6 +8349,7 @@ Lachlan Murdoch
 Ladislas Starevich
 Lady Gaga
 Lady Grizel Baillie
+Lafayette
 Lafayette Curry Baker
 Lafcadio Hearn
 Lajos Gulācsy
@@ -8074,6 +8360,8 @@ Lalla Ded
 Lalo Guerrero
 Lana Del Ray
 Lana Turner
+Lancashire
+Landes
 Landon Donovan
 Langston Hughes
 Laozi
@@ -8086,7 +8374,9 @@ Larry David Norman
 Larry Doby
 Larry Ellison
 Larry Fondren
+Larry Holmes
 Larry King
+Larry Middleton
 Larry Page
 Larry Rivers
 Larry Sanger
@@ -8104,6 +8394,7 @@ Lasse Hessel
 Lasse Virén
 Lata Mangeshkar
 Lau Kar-leung
+Laura
 Laura Bassi
 Laura Branigan
 Laura Chinchilla
@@ -8118,6 +8409,7 @@ Laura Villela Sabia
 Laura Wheeler Waring
 Laura de Force Gordon
 Laurel Blair Salton Clark
+Laurel Hollow
 Lauren Bacall
 Laurence Binyon
 Laurence E. Myers
@@ -8156,6 +8448,7 @@ Laxman Narasimhan
 Layne Thomas Staley
 Le Corbusier
 Le Nain brothers
+Le Roi
 LeAnn Rimes
 LeBron James
 Lea Michele
@@ -8173,6 +8466,7 @@ Lee Harvey Oswald
 Lee Hazlewood
 Lee Kernaghan
 Lee Krasner
+Lee Martindale
 Lee Marvin
 Lee Miller
 Lee Myung-bak
@@ -8185,6 +8479,7 @@ Lee Ufan
 Lee de Forest
 Lefty Frizzell
 Lefty Grove
+Leicester
 Leif Eriksson
 Leigh Hunt
 Lekain
@@ -8280,6 +8575,7 @@ Leslie Lamport
 Leslie Marmon Silko
 Leslie Stephen
 Leslie Valiant
+Lessing
 Lester B. Pearson
 Lester Flatt
 Lester Halbert Germer
@@ -8321,6 +8617,7 @@ León Febres Cordero
 León Felipe
 León de Greiff
 Leônidas
+Li
 Li Ao
 Li Bai
 Li Chunfeng
@@ -8347,6 +8644,7 @@ Liang Shuming
 Liberale da Verona
 Liberty Hyde Bailey
 Libéral Bruant
+Liebe
 Liezi
 Lil Wayne
 Liliencron, Freiherr (baron) von Detlev
@@ -8399,6 +8697,7 @@ Little Eva
 Little Richard
 Little Walter
 Little Willie John
+Liu
 Liu Hui
 Liu Songnian
 Liu Xiang
@@ -8425,12 +8724,15 @@ Lois Weber
 Lola Beltrán
 Lon Chaney
 Long John Baldry
+Longhorn
+Longwood
 Lonne Elder III
 Lonnie Johnson
 Lope de Aguirre
 Lope de Vega
 Lord Frederick North
 Lord Pretender
+Lord Stanley
 Lorenzino de’ Medici
 Lorenzo Costa
 Lorenzo Da Ponte
@@ -8444,19 +8746,23 @@ Loretta Young
 Lori Greiner
 Lorna Simpson
 Lorraine Hunt Lieberson
+Los
 Lothar Matthäus
 Lotta Crabtree
 Lotte Jacobi
 Lotte Lehmann
 Lotte Lenya
+Lotto
 Lou Boudreau
 Lou Brock
 Lou Costello
 Lou Gehrig
 Lou Groza
+Lou Piniella
 Lou Rawls
 Lou Reed
 Louella Parsons
+Louis
 Louis Althusser
 Louis Aragon
 Louis Armstrong
@@ -8622,6 +8928,7 @@ Ludwig Wittgenstein
 Ludwig van Beethoven
 Ludwig, Ritter von Köchel
 Ludwik Łazarz Zamenhof
+Luigi
 Luigi Albertini
 Luigi Amedeo Giuseppe Maria Ferdinando Francesco, duque d’Abruzzi
 Luigi Boccherini
@@ -8684,6 +8991,7 @@ Lyonel Feininger
 Lysis of Tarentum
 Lyubov Sergeyevna Popova
 Lyudmila Markovna Gurchenko
+László
 László Bárdossy
 László Bíró
 László Moholy-Nagy
@@ -8757,7 +9065,9 @@ Mahmoud Abbas
 Mahmoud Ahmadinejad
 Mahmoud Darwish
 Mai Zetterling
+Maine
 Maironis
+Maitz
 Maki Fumihiko
 Mal Whitfield
 Malcolm Fraser
@@ -8777,6 +9087,7 @@ Manfred Lachs
 Mani Kaul
 Mani Ratnam
 Manikkavachakar
+Manila
 Manny Ramirez
 Manoel de Oliveira
 Manohar
@@ -8791,6 +9102,7 @@ Manuel Lopes
 Manuel Machado
 Manuel Maria Barbosa du Bocage
 Manuel Philes
+Manuel Ramos
 Manuel Roxas
 Manuel Scorza
 Manuel Sepúlveda Rojas
@@ -8803,7 +9115,9 @@ Manuel Álvarez Bravo
 Manute Bol
 Manṣūr
 Mao Zedong
+Mara
 Marais Viljoen
+Maranville
 Marc Allégret
 Marc Andreessen
 Marc Anthony
@@ -8848,6 +9162,7 @@ Marco da Gagliano
 Marco van Basten
 Marcos Pontes
 Marcos de Niza
+Marcus
 Marcus Aurelius Olympius Nemesianus
 Marcus Junius Brutus
 Marcus Manilius
@@ -9014,6 +9329,7 @@ Marsden Hartley
 Marsilio Ficino
 Marsyas Painter
 Marta
+Martha
 Martha Carey Thomas
 Martha Clarke
 Martha Coolidge
@@ -9053,6 +9369,7 @@ Martín Dihigo
 Marvin Gaye
 Marvin Hamlisch
 Marvin Minsky
+Mary
 Mary Anderson
 Mary Ann Dyke Duff
 Mary Anthony
@@ -9121,6 +9438,7 @@ Matt Damon
 Matt Drudge
 Matt Lauer
 Matt Stone
+Matt Wachter
 Matteo Carnelivari
 Matteo Maria Boiardo, conte di Scandiano
 Matteo Renzi
@@ -9142,6 +9460,7 @@ Matthias Grünewald
 Matthias Jacob Schleiden
 Matthias de L’Obel
 Matthäus Daniel Pöppelmann
+Mattias Noren
 Mattias van den Gheyn
 Matvey Fyodorovich Kazakov
 Maud Wood Park
@@ -9183,6 +9502,7 @@ Mauro
 Maury Wills
 Maurycy Mochnacki
 Mavis Staples
+Max
 Max Abramovitz
 Max Beckmann
 Max Berg
@@ -9190,6 +9510,7 @@ Max Bielschowsky
 Max Black
 Max Born
 Max Bruch
+Max Carey
 Max Dehn
 Max Devrient
 Max Dupain
@@ -9284,6 +9605,7 @@ Melvin Tolson
 Melvin Van Peebles
 Menaechmus
 Mencius
+Mendelssohn
 Menedemus of Eretria
 Menelaus of Alexandria
 Menghistu Lemma
@@ -9309,11 +9631,14 @@ Mervyn LeRoy
 Mervyn Peake
 Meryl Streep
 Meseret Defar
+Metheny
 Metrocles
 Metta Victoria Fuller Victor
+Meyer
 Meyer Lansky
 Mi Fu
 Mia Hamm
+Michael
 Michael A.E. Dummett
 Michael Anthony Bilandic
 Michael B. Jordan
@@ -9324,6 +9649,7 @@ Michael Bruce
 Michael Bublé
 Michael Cacoyannis
 Michael Caine
+Michael Capponi
 Michael Choniates
 Michael Collins
 Michael Constantine Psellus
@@ -9337,6 +9663,7 @@ Michael Essien
 Michael Faraday
 Michael Francis Atiyah
 Michael Fried
+Michael Gaudion
 Michael Gough
 Michael Grandage
 Michael Graves
@@ -9357,6 +9684,7 @@ Michael Kidd
 Michael Landon
 Michael Latham Powell
 Michael Leonidas Dertouzos
+Michael Lynch
 Michael Madhusudan Datta
 Michael Mann
 Michael Melvill
@@ -9382,6 +9710,7 @@ Michael Strahan
 Michael Tippett
 Michael Vick
 Michael Waterson
+Michael Whelan
 Michael Wigglesworth
 Michael William Balfe
 Michael Winner
@@ -9420,6 +9749,7 @@ Michelle Yeoh
 Michelozzo
 Micheál MacLiammóir
 Michiel Janszoon van Mierevelt
+Mick Colliss
 Mick Jagger
 Mickey Mantle
 Mickey Rooney
@@ -9436,6 +9766,7 @@ Miguel Gila
 Miguel Hernández
 Miguel Nicolelis
 Miguel Torga
+Miguel Vicos
 Miguel de Cervantes
 Miguel de Unamuno
 Miguel de la Madrid
@@ -9448,12 +9779,14 @@ Mihály Vörösmarty
 Mikaela Shiffrin
 Mike Ditka
 Mike Douglas
+Mike Jittlov
 Mike Leigh
 Mike Moore
 Mike Nichols
 Mike Schmidt
 Mike Singletary
 Mike Smith
+Mike Stewart
 Mike Tyson
 Mike Wallace
 Mike Webster
@@ -9493,6 +9826,7 @@ Millard Drexler
 Millard Fillmore
 Miller Reese Hutchison
 Millicent Garrett Fawcett
+Mills
 Milorad Miskovitch
 Milos Zeman
 Milovan Djilas
@@ -9511,6 +9845,7 @@ Min Aung Hlaing
 Min Chueh Chang
 Mina Loy
 Minamoto Shitagō
+Mines
 Minggantu
 Minna Everleigh
 Minnie Maddern Fiske
@@ -9532,6 +9867,7 @@ Mississippi John Hurt
 Missy Elliott
 Mistinguett
 Mitch McConnell
+Mitchell Rawlins
 Miura Baien
 Miyagawa Chōshun
 Miyamoto Musashi
@@ -9570,8 +9906,10 @@ Montdory
 Montgolfier brothers
 Montgomery C. Meigs
 Montgomery Clift
+Montreal Crystals
 Montserrat Caballé
 Moon Jae-in
+Moore
 Mordecai Ardon
 Mordecai Meirowitz
 Morelly
@@ -9581,6 +9919,7 @@ Mori Shigefumi
 Morimura Yasumasa
 Moritz Benedikt Cantor
 Moritz Hauptmann
+Moritz Heinrich Romberg
 Moritz Karl Wilhelm Anton, Graf (count) von Strachwitz
 Moritz Lazarus
 Moritz Leuenberger
@@ -9611,6 +9950,7 @@ Moshe Landau
 Moshe Safdie
 Moss Hart
 Motorins
+Mott
 Mountifort Longfield
 Moyshe Leyb Halpern
 Mozart
@@ -9634,11 +9974,13 @@ Muhammad al-Fazari
 Muhammad ibn Musa al-Khwarizmi
 Muhammad ibn Zakarīya Rāzi
 Muhammadu Buhari
+Muhammed Ali
 Muhammed Rafi
 Mukai Chiaki
 Mukai Kyorai
 Mukesh Ambani
 Mulalo Doyoyo
+Mullen
 Mullā Ṣadrā
 Mungo Park
 Muqi Fachang
@@ -9703,6 +10045,7 @@ Napoleon
 Napoleon III
 Narcis Monturiol i Estarriol
 Narcisse-Virgile Diaz de la Peña
+Narve
 Nas
 Naseeruddin Shah
 Nasir Aminuddin Dagar
@@ -9765,8 +10108,11 @@ Nelson Riddle
 Nestor Genko
 Nestor Kirchner
 Nestor Makhno
+Nettie Stoner
 Nevill F. Mott
 Neville Chamberlain
+Newell
+Newell H. Beaty
 Newton Wesley Rowell
 Neymar
 Neẓāmī
@@ -9806,6 +10152,7 @@ Nicholas of Autrecourt
 Nicholas of Cusa
 Nicias
 Nick Ashford
+Nick Barkow
 Nick Cave
 Nick Drake
 Nick Holonyak
@@ -9857,6 +10204,7 @@ Niels Gade
 Niels Henrik Abel
 Nigel Barnard Hawthorne
 Nijo Yoshimoto
+Nikita
 Nikki Giovanni
 Niklaus E. Wirth
 Niklaus Manuel
@@ -9916,6 +10264,7 @@ Nishiyama Sōin
 Nizār Qabbānī
 Noah H. Swayne
 Noam Chomsky
+Nobel
 Noble Sissle
 Nobutoshi Kihara
 Noel Coward
@@ -9955,16 +10304,20 @@ Norman Morrice
 Norman Robert Campbell
 Norman Shaw
 Norman Wilkinson
+Norte
 Notorious B.I.G.
 Noureddine Morceli
 Nouriel Roubini
+Nova Scotia
 Novalis
 Noël Coward
 Ntozake Shange
 Nucky Johnson
+Nueva Segovia
 Numenius of Apamea
 Nunnally Johnson
 Nuno Gonçalves
+Nusa
 Nusrat Fateh Ali Khan
 Népomucène Lemercier
 Nérée Beauchemin
@@ -10004,6 +10357,7 @@ Ole Bull
 Ole Evinrude
 Ole Kirk Christiansen
 Ole-Johan Dahl
+Oleg
 Oleg Konstantinovich Popov
 Oleg Losev
 Oleg Nikolayevich Yefremov
@@ -10054,8 +10408,10 @@ Oprah Winfrey
 Oralia Domínguez
 Orazio Gentileschi
 Orazio Vecchi
+Orders
 Orest Adamovich Kiprensky
 Orhan Veli Kanık
+Oriente
 Orlando Gibbons
 Orlando Hernández
 Orlando di Lasso
@@ -10134,6 +10490,7 @@ Oumou Sangaré
 Ousmane Sembène
 Ousmane Socé
 Ouyang Xiu
+Overland
 Ovid Densușianu
 Owain Cyfeiliog
 Owen Chamberlain
@@ -10186,10 +10543,12 @@ Pare Lorentz
 Paris Bordone
 Park Geun hye
 Park In-Bee
+Parker
 Parmenides
 Parmigianino
 Parrhasius
 Parthenius of Nicaea
+Partido
 Pascal Couchepin
 Pascual Jordan
 Pat Boone
@@ -10330,6 +10689,7 @@ Pauline Johnson
 Pauline Julien
 Pauline Oliveros
 Pauline Viardot
+Paulo
 Paulo Mendes da Rocha
 Paulus Potter
 Pavel Alekseyevich Cherenkov
@@ -10343,6 +10703,8 @@ Pavel Sergeevich Aleksandrov
 Pavel Stepanovich Mochalov
 Pavel Sukhoi
 Pavel Yablochkov
+Paxton
+Payne
 Pearl Bailey
 Pearl Lang
 Pearl Primus
@@ -10370,12 +10732,14 @@ Peggy Whitson
 Pehr Victor Edman
 Peider Lansel
 Pekka Lundmark
+Pela
 Pelham Humfrey
 Pellegrino Matteucci
 Pellegrino Tibaldi
 Pelé
 Pencho Petkov Slaveykov
 Peng Lifa
+Penley
 Penny Marshall
 Penélope Cruz
 Per Daniel Amadeus Atterbom
@@ -10392,6 +10756,7 @@ Percy Zell Michener
 Peregrinus Proteus
 Peretz Markish
 Perle Mesta
+Perry
 Perry Como
 Persius
 Perugino
@@ -10414,6 +10779,7 @@ Peter Brook
 Peter Carl Goldmark
 Peter Cooper Hewitt
 Peter Cornelius
+Peter Costello
 Peter Davis
 Peter Eisenman
 Peter Finch
@@ -10442,6 +10808,7 @@ Peter Martins
 Peter Maxwell Davies
 Peter Mennin
 Peter Naur
+Peter Newman
 Peter Orszag
 Peter O’Toole
 Peter Paul Rubens
@@ -10461,12 +10828,14 @@ Peter Strawson
 Peter Tosh
 Peter Ustinov
 Peter V. Daniel
+Peter Vlahos
 Peter W. Thomson
 Peter Warlock
 Peter Weir
 Peter Yates
 Peter Zumthor
 Peter von Cornelius
+Petersburg
 Petko Rachev Slaveykov
 Petr Bezruč
 Petr Parléř
@@ -10520,6 +10889,7 @@ Philip P. Barbour
 Philip Pearlstein
 Philip Powell
 Philip Seymour Hoffman
+Philip Sheridan
 Philip Sidney
 Philip Speakman Webb
 Philip W. Anderson
@@ -10541,7 +10911,9 @@ Philips Koninck
 Philips Wouwerman
 Philips van Marnix, heer (lord) van Sint Aldegonde
 Philitas of Cos
+Phillip
 Phillip Garth Law
+Phillip Joseph Garrigan
 Phillis Wheatley
 Philo Farnsworth
 Philodemus
@@ -10553,6 +10925,8 @@ Phoolan Devi
 Phylicia Rashad
 Phyllis Diller
 Phyllis McGinley
+Picard
+Piedade
 Pier Leone Ghezzi
 Pier Luigi Nervi
 Pier Paolo Pasolini
@@ -10598,6 +10972,7 @@ Pierre Vernier
 Pierre de Brazza
 Pierre de Fermat
 Pierre de La Rue
+Pierre de Marca
 Pierre de Marivaux
 Pierre de Ronsard
 Pierre-Auguste Renoir
@@ -10665,6 +11040,8 @@ Pisanello
 Plato
 Plutarch of Athens
 Plácido Domingo
+Poker
+Poles
 Politian
 Pollaiuolo brothers
 Poly Styrene
@@ -10675,6 +11052,7 @@ Pontus de Tyard
 Pope John Paul II
 Pordenone
 Porphyry
+Porter
 Porter Wagoner
 Poseidonius
 Potter Stewart
@@ -10691,6 +11069,7 @@ Priscilla Kemble
 Prithviraj Kapoor
 Priyanka Chopra
 Proclus
+Prodan
 Professor Longhair
 Prospero Alpini
 Protagoras
@@ -10703,6 +11082,7 @@ Publius Cornelius Lentulus
 Publius Valerius Cato
 Pudge Heffelfinger
 Purandaradasa
+Putnam
 Pyotr Ilyich Klimuk
 Pyotr Ilyich Tchaikovsky
 Pyotr Kapitsa
@@ -10722,6 +11102,7 @@ Qian Xuesen
 Qin Jiushao
 Qiu Ying
 Qu Yuan
+Quebec
 Queen Latifah
 Queen Victoria
 Quentin Massys
@@ -10757,6 +11138,7 @@ Rafael Reyes
 Raghubir Singh
 Raghunatha Shiromani
 Ragnar Frisch
+Rahel Levin
 Raimund Johann Abraham
 Rain
 Rainer Werner Fassbinder
@@ -10825,6 +11207,7 @@ Randy Moss
 Randy Newman
 Randy Pausch
 Randy Weston
+Rankin
 Ransom Eli Olds
 Raoul Dufy
 Raoul Pugno
@@ -10836,9 +11219,12 @@ Rasmus Lerdorf
 Raul Alfonsin
 Raul Castro
 Raul Julia
+Raven
 Ravi Shankar
 Ravi Varma
 Ravidas
+Rawlins
+Ray
 Ray Charles
 Ray Dandridge
 Ray Dolby
@@ -10927,6 +11313,7 @@ René-Louis Baire
 René-Robert Cavelier, sieur (lord) de La Salle
 Renée Fleming
 Renée Vivien
+Reston
 Reverend Dr Robert Stirling
 Rex Ernest Warner
 Rex Harrison
@@ -10952,6 +11339,7 @@ Riccardo Giacconi
 Rich Ashburn
 Rich Barton
 Rich Lesser
+Richard
 Richard A. Loeb
 Richard Aldington
 Richard Anuszkiewicz
@@ -11084,6 +11472,7 @@ Ridley Scott
 Rigo Tovar
 Rihanna
 Rikard Nordraak
+Rimington
 Ring Lardner
 Ringo Starr
 Rinus Michels
@@ -11096,6 +11485,7 @@ Rita Reys
 Ritchie Valens
 Rivaldo
 Roald Amundsen
+Rob Broadfield
 Rob Halford
 Robert A. Dahl
 Robert A. Heinlein
@@ -11335,12 +11725,15 @@ Roberto Matta
 Roberto Omegna
 Roberto Rossellini
 Roberto Valero
+Roberts
 Robin Gibb
 Robin Milner
 Robin Roberts
 Robin Williams
 Robin Zeng
+Robinson
 Robinson Jeffers
+Robyn Spencer
 Rock Hudson
 Rockwell Kent
 Rocío Dúrcal
@@ -11359,6 +11752,7 @@ Rodrigo Duterte
 Rodrigo Gil de Hontañón
 Roemer Visscher
 Rogelio Salmona
+Roger
 Roger Angell
 Roger B. Chaffee
 Roger B. Myerson
@@ -11395,6 +11789,7 @@ Roland Dickey Jr.
 Roland Moreno
 Roland Petit
 Roland, baron von Eötvös
+Rolf Schübel
 Romaine Goddard Brooks
 Roman Herzog
 Roman Polanski
@@ -11416,6 +11811,7 @@ Ronald Neame
 Ronald Price Hickman
 Ronald Reagan
 Ronaldo
+Ronan Gaughan
 Ronnie Drew
 Ronnie Gene Dunn
 Ronnie Hilton
@@ -11451,6 +11847,7 @@ Rosella Hightower
 Rosemary Clooney
 Rosie O’Donnell
 Rosika Schwimmer
+Ross
 Ross Bleckner
 Ross Edwin Barbour
 Ross Granville Harrison
@@ -11486,6 +11883,8 @@ Roy W. Howard
 Roy Ward Baker
 Royal Earl House
 RuPaul
+Ruairi Cavanagh
+Ruairi Ferrie
 Ruan Ji
 Rube Foster
 Rubem Braga
@@ -11516,6 +11915,7 @@ Rudolf Ludwig Mössbauer
 Rudolf Nureyev
 Rudolf Otto
 Rudolf Schuster
+Rudolf Virchow
 Rudolf von Ems
 Rudolph Ganz
 Rudolph Jacob Camerarius
@@ -11527,6 +11927,8 @@ Rufino Tamayo
 Rufus Wheeler Peckham
 Ruggero Giuseppe Boscovich
 Ruggero Leoncavallo
+Ruhlen
+Rui Gomez Pereira
 Rui Ribeiro Couto
 Rui de Noronha
 Rune Elmqvist
@@ -11576,6 +11978,7 @@ S.R. Srinivasa Varadhan
 S.S. Rajamouli
 S.S. Van Dine
 SZA
+Sabre
 Sacagawea
 Sacha Baron Cohen
 Sacha Distel
@@ -11584,6 +11987,7 @@ Sachin Dev Burman
 Saddam Hussein
 Sade
 Sadeq Khalkhali
+Saffron Walden
 Safra Catz
 Saigyō
 Saint Andrey Rublyov
@@ -11593,6 +11997,7 @@ Saint-John Perse
 Sakai Hōitsu
 Sakakura Junzō
 Saki
+Sal
 Salah Abu Seif
 Salam Fayyad
 Salif Keita
@@ -11611,6 +12016,8 @@ Salomon Maimon
 Salomon Sulzer
 Salomon de Brosse
 Salomon van Ruysdael
+Salta
+Salvado Luria
 Salvador Dalí
 Salvator Rosa
 Salvatore Licitra
@@ -11699,10 +12106,14 @@ Sandra Day O’Connor
 Sandra Oh
 Sandro Botticelli
 Sandro Penna
+Sandy
 Sandy Denny
 Sandy Koufax
+Sanford
 Sanford Meisner
 Sangallo family
+Sant
+Santa
 Santi Santamaría
 Santiago Calatrava
 Sanāʾī
@@ -11738,6 +12149,8 @@ Sarvepalli Radhakrishnan
 Sassetta
 Satchel Paige
 Satoshi Kon
+Sattler
+Saturnino Castro
 Satya Nadella
 Satyajit Ray
 Satyendra Nath Bose
@@ -11753,8 +12166,13 @@ Sawa Homare
 Sayyid Shaykh bin Ahmad al-Hadi
 Saʿdī
 Scarlett Johansson
+Schelling
+Schlegel
+Schloss
+Schools
 Scipione Ferro
 Scipione Pulzone
+Scott
 Scott A. Jones
 Scott Carpenter
 Scott Joplin
@@ -11764,9 +12182,11 @@ Scott Morrison
 Scottie Pippen
 Screaming Lord Sutch
 Scylax of Caryanda
+Se
 Seamus Heaney
 Sean Connery
 Sean O'Kelly
+Sean Payne
 Sean Penn
 Sean Sherman
 Sebastian Brant
@@ -11840,6 +12260,9 @@ Shabana Rehman
 Shah Rukh Khan
 Shai Agassi
 Shakira
+Shanahan
+Shane
+Shane Healy
 Shania Twain
 Shankar Dayal Sharma
 Shankara
@@ -11861,6 +12284,7 @@ Shelley Winters
 Shelly-Ann Fraser-Pryce
 Shen Kuo
 Shen Zhou
+Sherman
 Sherman Alexie
 Sherman Minton
 Sherrie Levine
@@ -11991,6 +12415,7 @@ Sivaji Ganesan
 Siôn Cent
 Skeeter Davis
 Sky Saxon
+Slavic
 Slavoj iek
 Slavoj Žižek
 Slavoljub Eduard Penkala
@@ -11999,6 +12424,7 @@ Slim Whitman
 Smith Thompson
 Smokey Joe Williams
 Smokey Robinson
+Snoke
 Snoop Dogg
 Snorri Sturluson
 Socrates
@@ -12006,17 +12432,21 @@ Sofonisba Anguissola
 Sofya Vasilyevna Kovalevskaya
 Soga Chokuan
 Soga Shōhaku
+Sojka
 Sojourner Truth
+Solo
 Solomon Burke
 Solomon Formstecher
 Solomon M. Mutswairo
 Solomon Tshekiso Plaatje
+Solon Bixler
 Somadeva
 Sonal Mansingh
 Sonia Delaunay
 Sonia Sanchez
 Sonia Sotomayor
 Sonja Henie
+Sonntag
 Sonny Bono
 Sonny Boy Williamson
 Sonny Terry
@@ -12041,6 +12471,7 @@ Spike Jonze
 Spike Lee
 Spike Milligan
 Spinello Aretino
+Sports
 Spyridon Louis
 Spéranza Calo-Séailles
 Squire Bancroft
@@ -12061,6 +12492,8 @@ St. John of the Cross
 St. Justin Martyr
 St. Paulinus of Nola
 St. Thomas Aquinas
+Stallion
+Stan
 Stan Jones
 Stan Kenton
 Stan Laurel
@@ -12074,6 +12507,7 @@ Stanisław Leśniewski
 Stanisław Przybyszewski
 Stanisław Wyspiański
 Stanisława Walasiewicz
+Stanley
 Stanley Baldwin
 Stanley Bruce
 Stanley Crouch
@@ -12088,7 +12522,9 @@ Stanley Mazor
 Stanley Spencer
 Stanley Tigerman
 Stanton Macdonald-Wright
+States
 Statius
+Steele
 Steele MacKaye
 Steen Steensen Blicher
 Stefan Banach
@@ -12138,6 +12574,7 @@ Stephen Wolfram
 Stephen Wozniak
 Sterling Brown
 Stesichorus
+Steve
 Steve Allen
 Steve Carell
 Steve Carlton
@@ -12168,6 +12605,7 @@ Steven Soderbergh
 Steven Spielberg
 Steven Tyler
 Steven Weinberg
+Stevenson
 Stevie Nicks
 Stevie Smith
 Stevie Wonder
@@ -12176,6 +12614,7 @@ Stilpōn
 Sting
 Stjepan Mesić
 Stojan Protić
+Stoloff
 Story Musgrave
 Straton of Lampsacus
 Stuart A. Roosa
@@ -12198,17 +12637,20 @@ Sumiyoshi Gukei
 Sun Ra
 Sundance Kid
 Sundar Pichai
+Sunderland
 Sunil Bharti Mittal
 Sunil Dutt
 Sunil Janah
 Sunita Williams
 Suo Masayuki
+Sur
 Suraiya
 Surdas
 Susan Athey
 Susan B. Anthony
 Susan Boyle
 Susan Faludi
+Susan Fennell
 Susan Helms
 Susan Sarandon
 Susan Stroman
@@ -12242,6 +12684,7 @@ Sylvia Field Porter
 Sylvia Plath
 Sylvia Townsend Warner
 Sylvie Kauffmann
+Syracuse
 Sámuel
 Sándor Csoóri
 Sándor Petőfi
@@ -12292,6 +12735,7 @@ Tanabe Hajime
 Tanaka Hisashige
 Tanaka Kakuei
 Tanaka Ōdō
+Tang
 Tang Yin
 Tang Zhongming
 Tange Kenzō
@@ -12311,10 +12755,12 @@ Taryn Simon
 Taslima Nasrin
 Tatsumi Kimishima
 Tatyana Kazankina
+Tavares Varela
 Tawakkul Karmān
 Tay Garnett
 Taylor Swift
 Tchicaya U Tam′si
+Teater
 Ted Bundy
 Ted Hoff
 Ted Hughes
@@ -12402,12 +12848,15 @@ Theophilus Ebenhaezer Donges
 Theophilus Van Kannel
 Theophrastus
 Theresa May
+Theriault
 Thespis
 Thierry Henry
+Thom
 Thom Browne
 Thom Gunn
 Thom Mayne
 Thom Yorke
+Thomas
 Thomas Adès
 Thomas Aloysius Dorgan
 Thomas Alva Edison
@@ -12560,6 +13009,7 @@ Thābit ibn Qurrah
 Tian Han
 Tiberio Fiorillo
 Tibor Déry
+Tice Jr.
 Tiger Woods
 Tilda Swinton
 Tillie Olsen
@@ -12570,6 +13020,7 @@ Tim Cook
 Tim Duncan
 Tim O’Brien
 Tim Russert
+Times
 Timi Yuro
 Timon of Phlius
 Timothy Dwight
@@ -12593,6 +13044,8 @@ Tjalling C. Koopmans
 Toba Sōjō
 Tobias Dantzig
 Tobias Smollett
+Toby
+Tod
 Tod Browning
 Todd Haynes
 Todd Matshikiza
@@ -12600,6 +13053,7 @@ Tojo Hideki
 Tokiwa Mitsunaga
 Tokushichi Mishima
 Tokyo Rose
+Tom
 Tom Brady
 Tom Brokaw
 Tom C. Clark
@@ -12623,6 +13077,7 @@ Tom Stoppard
 Tom T. Hall
 Tom Thomson
 Tom Watson
+Tom Whitecloud
 Tom Wolfe
 Tomas Tranströmer
 Tomaso Giovanni Albinoni
@@ -12639,11 +13094,14 @@ Tommy Flowers
 Tommy Johnson
 Tommy Lee Jones
 Tommy Makem
+Tommy Pooch
+Tomo
 Tomonaga Shin’ichirō
 Tomás Antônio Gonzaga
 Tomás Eloy Martínez
 Tomás Gutiérrez Alea
 Tomás Luis de Victoria
+Toni
 Toni Braxton
 Toni Collette
 Toni Stone
@@ -12659,6 +13117,7 @@ Tony Harrison
 Tony La Russa
 Tony Martin
 Tony Pastor
+Tony Pooley
 Tony Pérez
 Tony Randall
 Tony Richardson
@@ -12686,6 +13145,7 @@ Tracy Letts
 Traian Basescu
 Tran Duc Luong
 Trapp family
+Traynor
 Trevor Baylis
 Trevor Howard
 Trevor Nunn
@@ -12717,6 +13177,7 @@ Twyla Tharp
 Ty Cobb
 Tyagaraja
 Tyler Perry
+Tyne
 Tyrone Davis
 Tyrone Guthrie
 Tyrone Power
@@ -12844,12 +13305,15 @@ Victor Schoelcher
 Victor Sjöstrom
 Victor Sjöström
 Victor Vasarely
+Victor Wooten
 Victor-Henri Rochefort
 Victoria Beckham
 Victoria Woodhull
 Victoria de los Ángeles
+Victorian
 Vidkun Quisling
 Vidyapati
+Vigan
 Viggo Hørup
 Vijay Anand
 Vikram Sarabhai
@@ -12905,6 +13369,7 @@ Virgilio Piñera
 Virginia Apgar
 Virginia E. Johnson
 Virginia Louisa Minor
+Virrey de Lima
 Vita Sackville-West
 Vitale da Bologna
 Vitaly Abalakov
@@ -13046,6 +13511,7 @@ Walther Gerlach
 Walther von der Vogelweide
 Walton Musser
 Wanda Jackson
+Wang
 Wang Bi
 Wang Ching-wei
 Wang Chong
@@ -13075,6 +13541,7 @@ Washington Augustus Roebling
 Wassily Kandinsky
 Wassily Leontief
 Watanabe Kazan
+Watson
 Watsuji Tetsurō
 Wawrzyniec Goślicki
 Waylon Jennings
@@ -13087,8 +13554,11 @@ Wayne Thiebaud
 Wee Kim Wee
 Wee Willie Keeler
 Weegee
+Weeks
 Weetman Dickinson Pearson, 1st Viscount Cowdray
 Wei Mengbian
+Weise
+Wellesley Tudor
 Wen Tingyun
 Wen Zhengming
 Wenceslas Cobergher
@@ -13113,11 +13583,14 @@ Wesley Snipes
 Wespazjan Kochowski
 West Hughes Humphreys
 Westbrook Pegler
+Wha Gives
 Whitcomb Judson
 Whitey Ford
+Whitley
 Whitney Houston
 Whittaker Chambers
 Whoopi Goldberg
+Widner
 Wifredo Lam
 Wilczek, Frank
 Wiley B. Rutledge, Jr.
@@ -13167,6 +13640,7 @@ Willard Frank Libby
 Willard Harrison Bennett
 Willard Van Orman Quine
 Willebrord van Roijen Snell
+Willem
 Willem Barents
 Willem Bilderdijk
 Willem Claeszoon Heda
@@ -13182,6 +13656,8 @@ Willem Schouten
 Willem de Kooning
 Willem de Sitter
 Willem van de Velde the Elder
+Willett Brook
+William
 William A. Anders
 William A. Brady
 William A. Fowler
@@ -13302,6 +13778,7 @@ William Henry Perkin
 William Henry Preece
 William Henry Webb
 William Henry West Betty
+William Herbert
 William Hewlett
 William Hodge
 William Hogarth
@@ -13350,6 +13827,7 @@ William Lloyd Garrison
 William Lyon Mackenzie
 William Lyon Mackenzie King
 William Magear Tweed
+William Mailes
 William Martin Conway
 William Massey
 William McDougall
@@ -13413,6 +13891,7 @@ William Somerville
 William Soutar
 William Spratling
 William Stafford
+William Stanley
 William Stanley Jevons
 William Starling Sullivant
 William Sterndale Bennett
@@ -13495,6 +13974,7 @@ Wojciech Bogusławski
 Wole Soyinka
 Wolf Blitzer
 Wolf Huber
+Wolfe
 Wolfgang Amadeus Mozart
 Wolfgang Beltracchi
 Wolfgang Fortner
@@ -13512,6 +13992,7 @@ Woody Harrelson
 Woody Herman
 Woody Strode
 Worthington Whittredge
+Wright
 Wright Morris
 Wright brothers
 Wu Changshuo
@@ -13529,6 +14010,7 @@ Wynonna Judd
 Wyomia Tyus
 Władysław Broniewski
 Władysław Orkan
+Xanthos
 Xavi
 Xavier Zubiri
 Xenocrates
@@ -13683,6 +14165,7 @@ Zillur RahmanF
 Zinaida Nikolayevna Gippius
 Zine al-Abidine Ben Ali
 Zinedine Zidane
+Zion
 Zisi
 Ziya Gökalp
 Zodiac killer

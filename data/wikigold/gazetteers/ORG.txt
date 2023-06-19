@@ -1,7 +1,10 @@
 20th Century Fox Film Corporation
 350.org
+3AW
 3Com
 3M Company
+6PR
+A-League
 A.G. Edwards
 AABB
 AACE International
@@ -16,6 +19,7 @@ ACM
 ACT Manufacturing
 ADC Telecommunications
 AEG AG
+AFL
 AFLAC Incorporated
 AFS-USA
 AGCO
@@ -87,6 +91,7 @@ Agilent Technologies
 Agnes Scott College
 Agway
 Air Canada
+Air Division
 Air France
 Air India
 Air New Zealand Limited
@@ -128,6 +133,7 @@ Alliant Energy
 Allied Waste Industries
 AlliedSignal
 Allmerica Financial
+Allsvenskan
 Altria Group
 Aluminum Company of America
 Alzheimer's Association
@@ -147,6 +153,7 @@ American Bird Conservancy
 American Brain Tumor Association
 American Broadcasting Company
 American Civil Liberties Union
+American College of Obstetricians and Gynecologists
 American Diabetes Association
 American Eagle Outfitters
 American Electric Power Company
@@ -158,6 +165,7 @@ American Foundation for Suicide Prevention
 American Friends Service Committee
 American Fur Company
 American Greetings
+American Hot Rod Association
 American Indian College Fund
 American Institute of Aeronautics and Astronautics
 American Institute of Certified Public Accountants
@@ -169,12 +177,14 @@ American Kidney Fund
 American Labor Party
 American Liver Foundation
 American Lung Association
+American Mathematical Society
 American Medical Informatics Association
 American Near East Refugee Aid
 American Power Conversion
 American Psychological Association
 American Red Cross
 American Rivers
+American Scientific Affiliation 's Perspectives
 American Society for Quality
 American Society of Civil Engineers
 American Standard Companies
@@ -223,6 +233,7 @@ Arcelor Mittal
 ArcelorMittal
 Arch Coal
 Archer Daniels Midland Company
+Arena Racing USA
 Arizona State University
 Arkansas Best
 Arkansas State University
@@ -238,6 +249,7 @@ Ashland
 Asia Foundation
 Asia Society
 Asian Development Bank
+Asian Le Mans Series
 Assam People's Council
 Association for Computing Machinery
 Association for Law, Property and Society
@@ -261,8 +273,10 @@ Augustana College
 Austin College
 Australian Democratic Labor Party
 Australian Democrats
+Australian Football League
 Australian Labor Party
 Australian National University
+Austrian Football Bundesliga
 Autism Society of America
 AutoNation
 AutoZone
@@ -274,10 +288,14 @@ Avery Dennison
 Avista
 Avnet
 Avon Products
+Azerbaijan Premier League
 B.F. Goodrich Company
+B1 League
 BAE Systems
 BASF Aktiengesellschaft
 BB&T
+BBC Radio
+BBL
 BBVA SA
 BHP
 BHP Billiton
@@ -288,8 +306,12 @@ BMW
 BNP Paribas
 BP
 BP PLC
+BPL
 BRC
 Babson College
+Back Door
+Badminton Canada 's Hall of Fame
+Badminton World Federation
 Bahujan Samaj Party
 Bajaj Allianz General Insurance
 Baker Hughes Incorporated
@@ -298,6 +320,7 @@ Baltimore and Ohio Railroad
 Banco Bilbao Vizcaya Argentaria
 Banco Santander, SA
 Banco do Brasil
+Bangladesh Premier League
 Bank One
 Bank Street College of Education
 Bank for International Settlements
@@ -314,6 +337,7 @@ Barclays PLC
 Bard College
 Barnard College
 Barnes & Noble
+Basketball Bundesliga
 Basque Nationalist Party
 Bates College
 Bath & Body Works, Inc.
@@ -328,6 +352,8 @@ Beazer Homes USA
 Beckman Coulter
 Becton, Dickinson and Company
 Bed Bath & Beyond
+Belarusian Premier League
+Belgian Pro League
 Belk
 Bell Laboratories
 Bell Microproducts
@@ -345,11 +371,13 @@ Beretta SpA
 Berkshire Hathaway
 Berlingske
 Best Buy
+Besta deild karla
 Bethlehem Steel
 Bethlehem Steel Corporation
 Beverly Enterprises
 Bharatiya Janata Party
 Bharti Enterprises
+Big Bash League
 Big Lots
 Biju Janata Dal
 Biograph Company
@@ -357,6 +385,7 @@ Bishop’s University
 Black Entertainment Television
 Black Hills
 Blackstone Group
+Blancpain GT Series Sprint Cup
 Bloc Québécois
 Bob Woodruff Family Foundation
 Boeing
@@ -381,6 +410,7 @@ Bowling Green State University
 Boys & Girls Clubs of America
 Brain & Behavior Research Foundation
 Brandeis University
+Brasileirão
 Brazilian Democratic Movement, Party of the
 Brazilian Social Democratic Party
 Bread for the World Institute
@@ -392,20 +422,27 @@ Brinker International
 Bristol-Myers Squibb Company
 British Airways PLC
 British American Tobacco PLC
+British Commonwealth of Nations
+British Computer Society
 British Leyland Motor Corporation, Ltd.
 British South Africa Company
 British Steel Corporation PLC
+British Touring Car Championship
 Broadwing
+Brooklyn Institute of Arts and Sciences
 Brown Shoe Company
 Brown University
 Brown-Forman
 Brunswick
 Brussels Airlines
+Brussels Stock Exchange
 Bryn Mawr College
 Bucknell University
 Budget Group
 Bulgarian Agrarian National Union
+Bulgarian First League
 Bull Moose Party
+Bundesliga
 Burlington Coat Factory Warehouse
 Burlington Industries
 Burlington Northern Santa Fe
@@ -415,6 +452,7 @@ Burlington Worldwide
 Butler University
 C. H. Robinson Worldwide
 CARE USA
+CBA
 CBRL Group
 CBS Corporation
 CBV
@@ -424,6 +462,7 @@ CDW Computer Centers
 CEDARS
 CFA
 CFA Institute
+CFL
 CGMA
 CH2M Hill
 CIAAW
@@ -440,7 +479,9 @@ CNF
 COPS
 CPA
 CPA Canada
+CPL
 CSK Auto
+CSL
 CSX
 CSX Corporation
 CVS
@@ -457,9 +498,13 @@ Calpine
 Campbell Soup
 Campbell Soup Company
 Campbell University
+Campeonato Brasileiro Série A
+Campeonato Nacional de Liga de Primera División
+Campeonato Nacional de Liga de Segunda División
 Canada Company
 Canadian Alliance
 Canadian Broadcasting Corporation
+Canadian Football League
 Canadian Imperial Bank of Commerce
 Canadian Pacific Railway Ltd.
 Cancer Research Institute
@@ -469,8 +514,10 @@ Canonical
 Capital One Financial
 Cardinal Health
 Caremark Rx
+Caribbean Premier League
 Carleton College
 Carlisle
+Carnegie Institution of Washington
 Carnegie Mellon University
 Carpenter Technology
 Carrefour SA
@@ -478,6 +525,7 @@ Case Western Reserve University
 Casey's General Stores
 Cassella Farbewerke Mainkur Aktiengesellschaft
 Castleton State College
+Categoria Primera A
 Caterpillar
 Caterpillar Inc.
 Catholic Medical Mission Board
@@ -504,6 +552,10 @@ Ceridian
 Certified Financial Planner Board of Standards
 Champion Enterprises
 Champion International Corporation
+Championnat de France de football
+Championnat de France de football de Ligue 2
+Championnat de France de rugby à XV
+Championnat de France de rugby à XV de 2e division
 Charles Schwab
 Charles University
 Charming Shoppes
@@ -529,7 +581,10 @@ Children Incorporated
 Children International
 Children's Defense Fund
 Children's Health Fund
+Chilean Primera Division
+Chinese Basketball Association
 Chinese Communist Party
+Chinese Football Association Super League
 Chiquita Brands International
 Chiquita Brands International, Inc.
 Christian Democratic People's Party
@@ -585,6 +640,7 @@ Columbia Pictures Entertainment, Inc.
 Columbia University
 Comcast
 Comdisco
+Come
 Comerica
 Comfort Systems USA
 Comic Relief
@@ -615,6 +671,8 @@ ConAgra Foods
 Concerns of Police Survivors
 Concord EFS
 Conectiv
+Confederate
+Confederates
 Congress of the People
 Connecticut College
 Conoco
@@ -639,11 +697,14 @@ Cooper Cameron
 Cooper Industries Ltd
 Cooper Tire & Rubber
 Cooper Union
+Copa Truck
 Corn Products International
 Cornell University
 Corning
+Coronado Unified School District
 Corriere della Sera
 Costco Wholesale
+Council for European Security and Cooperation
 Countrywide Credit Industries
 Covenant House & Affiliates
 Coventry Health Care
@@ -653,6 +714,8 @@ Cranbrook Academy of Art
 Crane
 Credit Suisse
 Creighton University
+Crescent City High School
+Croatian First Football League
 Croatian Peasant Party
 Crohn's & Colitis Foundation
 Crompton
@@ -660,10 +723,14 @@ Crown Cork & Seal
 Cummins
 CureSearch for Children's Cancer
 Currier & Ives
+Cypriot First Division
 Cytec Industries
+Czech First League
 D&K Healthcare Resources
 D.R. Horton
+D1 Grand Prix
 DC Comics
+DEL
 DIMON Incorporated
 DPL
 DQE
@@ -682,6 +749,7 @@ Dalhousie University
 Dana
 Dana-Farber Cancer Institute
 Danaher
+Danish Superliga
 Darden Restaurants
 Dark Horse Comics
 Dartmouth College
@@ -724,7 +792,9 @@ Detroit Free Press
 Deutsche Bahn AG
 Deutsche Bank
 Deutsche Bank AG
+Deutsche Eishockey Liga
 Deutsche Post
+Deutsche Tourenwagen Masters
 Devon Energy
 Di Giorgio
 Diabetes Action Research and Education Foundation
@@ -743,6 +813,7 @@ Direct Relief & Direct Relief Foundation
 Disney Company
 Dixiecrat
 Doctors Without Borders USA
+Dolan DNA Learning Center
 Dole Food Company
 Dollar General
 Dollar Tree Stores
@@ -776,6 +847,9 @@ E*Trade Group
 E.I. Du Pont de Nemours and Company
 E.W. Scripps Company
 EAI
+EFL Championship
+EFL League One
+EFL League Two
 EGL
 EMC
 EOG Resources
@@ -799,8 +873,12 @@ Eaton
 Echostar Communications
 Ecolab
 Economic Freedom Fighters
+Ecuadorian Serie A
 Edinboro University of Pennsylvania
 Edison International
+Eerste Divisie
+Egyptian Premier League
+Ekstraklasa
 El Al Israel Airlines
 El Comercio
 El Paso
@@ -810,6 +888,7 @@ Electronic Arts, Inc.
 Electronic Data Systems
 Elf Aquitaine
 Eli Lilly and Company
+Eliteserien
 Elizabeth Glaser Pediatric AIDS Foundation
 Ellevate Network
 Elmira College
@@ -825,6 +904,9 @@ Energizer Holdings
 Energy East
 Engelhard
 EngenderHealth
+English Football League Championship
+English Football League One
+English Football League Two
 Eni
 Enron
 Entergy
@@ -840,13 +922,17 @@ Equifax
 Equitable Resources
 Equity Office Properties Trust
 Equity Residential Properties Trust
+Eredivisie
 Ericsson
 Erie Railroad Company
 Ernst & Young
 Estee Lauder Companies
 Etsy
+EuroLeague
+Euronext
 European Alliance for Innovation
 European Bank for Reconstruction and Development
+European Le Mans Series
 European Liberal Democrat and Reform Party
 European People's Party
 European People’s Party
@@ -861,8 +947,11 @@ Exxon Mobil Corporation
 ExxonMobil
 EyeMail Inc.
 FDP. The Liberals
+FIA
+FIA World Endurance Championship
 FICPI
 FIDF
+FIM
 FINCA International
 FIT
 FMC
@@ -874,6 +963,9 @@ Fairchild Semiconductor Corporation
 Fairchild Semiconductor International
 Fairfield University
 Fairleigh Dickinson University
+Fairmont State College
+Fairmont State Normal School
+Fairmont State Teachers College
 Falange
 Family Dollar Stores
 Fannie Mae
@@ -893,6 +985,7 @@ Felcor Lodging Trust
 Fenty Beauty
 Ferris State University
 Ferro
+Ffestiniog Railway Company
 Fianna Fáil
 Fiat
 Fiat SpA
@@ -912,6 +1005,7 @@ First National Bank of Boston
 First National Bank of Chicago
 First National Bank of Minneapolis
 First National of Nebraska
+First Professional Football League
 First Tennessee National
 FirstCity
 FirstEnergy
@@ -935,11 +1029,15 @@ Food Bank For New York City
 Food for the Hungry
 Foot Locker
 Footstar
+Force Players
 Ford
 Ford Motor Co
 Ford Motor Company
 Fordham University
 Forest Laboratories
+Formula D
+Formula E
+Formula One
 Fort Hays State University
 Fort Valley State University
 Fortune Brands
@@ -975,7 +1073,11 @@ Fuji Bank
 Fujitsu Limited
 Furman University
 Furniture Brands International
+Fußball-Bundesliga
+Fédération Internationale de Motocyclisme
+Fédération Internationale de l'Automobile
 Fòs Feminista
+Fórmula Truck
 GAP
 GATX
 GLAAD
@@ -1009,6 +1111,7 @@ Genuity
 Genzyme
 George Mason University
 George Philip and Son
+George Washington University Hospital
 Georgetown University
 Georgia Gulf
 Georgia Institute of Technology
@@ -1016,9 +1119,11 @@ Georgia State University
 Georgia-Pacific
 German National People's Party
 German People's Party
+German Touring Car Masters
 Gettysburg College
 Ghadr
 Ghent University
+Gigi
 Gillette Company
 Girls Incorporated
 GiveDirectly
@@ -1033,6 +1138,7 @@ Goldman Sachs Group
 Goldman, Sachs
 Golkar
 Gonzaga University
+Good Day
 Good360
 Goodrich
 Goodwill Industries International
@@ -1046,6 +1152,7 @@ Grameen Bank
 Grameen Foundation USA
 Grand Trunk Railway
 Grand Valley State University
+Grand-Am Road Racing
 Granite Construction Incorporated
 Granma
 Graybar Electric Company
@@ -1073,6 +1180,7 @@ Guttmacher Institute
 H&R Block
 H.B. Fuller Company
 H.J. Heinz Company
+HBL
 HBO
 HCA
 HCL Technologies
@@ -1084,6 +1192,7 @@ Halliburton
 Hamilton College
 Hammer Films
 Hampton University
+Handball-Bundesliga
 Harley-Davidson
 Harman International Industries
 Harrah's Entertainment
@@ -1100,6 +1209,7 @@ Health Net
 HealthRight International
 Healthsouth
 Hearing Health Foundation
+Hebrew University
 Hebrew university
 Heinz Company
 Helen Keller International
@@ -1139,6 +1249,7 @@ House of India
 Household International
 Hovnanian Enterprises
 Howard University
+Howe 's Brigade of Couch 's Division
 Hub Group
 Hubbell
 Hudson’s Bay Company
@@ -1177,6 +1288,7 @@ IFIP
 IFMA
 IFR
 IFSMA
+IHRA
 IIA
 IIBA
 IKON Office Solutions
@@ -1184,16 +1296,21 @@ IMA
 IMC Global
 IMS Group
 IMS Health
+IMSA
 IMarEST
 IMechE
 INCOSE
+INDYCAR
 ING Group NV
 IOSH
+IPL
 IPS
 IRSE
 ISA
 ISACA
+ISBL
 ISCoS
+ISL
 ISSA
 IStructE
 IT Group
@@ -1217,6 +1334,8 @@ Independent Television
 Indian Airlines
 Indian National Congress
 Indian National Lok Dal
+Indian Premier League
+Indian Super League
 Indiana State University
 Indiana University
 Indiana University of Pennsylvania
@@ -1248,6 +1367,7 @@ Institutional Revolutionary Party
 Integrated Electrical Services
 Intel
 Intel Corporation
+Intelligence Community
 Inter-American Development Bank
 Interfaith Alliance Foundation
 International Association for Bridge and Structural Engineering
@@ -1263,6 +1383,7 @@ International Association of Medical Colleges
 International Association of Privacy Professionals
 International Association of Professional Translators and Interpreters
 International Astronomical Union
+International Badminton Federation
 International Bank for Economic Cooperation
 International Bank for Reconstruction and Development
 International Business Machines
@@ -1279,6 +1400,7 @@ International Federation of Robotics
 International Federation of Shipmasters' Associations
 International Federation of Translators
 International Flavors & Fragrances
+International Hot Rod Association
 International Institute of Business Analysis
 International Investment Bank
 International Medical
@@ -1304,6 +1426,8 @@ Ishikawajima-Harima Heavy Industries Company, Ltd.
 Islamic Development Bank
 Islamic Salvation Front
 Israel Labour Party
+Israeli Basketball Premier League
+Israeli Premier League
 Italian Democratic Socialist Party
 Italian Liberal Party
 Italian Popular Party
@@ -1319,6 +1443,9 @@ J.C. Penney Corporation, Inc.
 J.C. Penny
 J.Crew
 J.P. Morgan Chase &
+J1 League
+J2 League
+J3 League
 JDRF International
 JDS Uniphase
 JP Morgan Chase
@@ -1331,6 +1458,7 @@ Jammu and Kashmir National Conference
 Janata Dal
 Jane Goodall Institute
 Japan Airlines
+Japan Automobile Federation
 Japan Railways Group
 Japanese Communist Party
 Jefferies Group
@@ -1350,9 +1478,12 @@ Journal de Genève
 Juilliard School
 Junior Achievement USA
 Justice and Development Party
+K League
 K-Mart
 K9s For Warriors
 KB Home
+KBO League
+KHL
 KLA-Tencor
 KLM
 KPMG Consulting
@@ -1364,6 +1495,7 @@ Kansas State University
 Kaplan
 Kawasaki Heavy Industries, Ltd.
 Kawasaki Steel Corporation
+Kazakhstan Premier League
 Kean University
 Keiō University
 Kellogg Company
@@ -1379,6 +1511,7 @@ Kerr-McGee
 KeyCorp
 KeySpan
 Khmer Rouge
+Killing Joke
 Kimball International
 Kimberly-Clark
 Kindred Healthcare
@@ -1391,6 +1524,8 @@ Koch Industries
 Kodak
 Kohl's
 Komsomolskaya Pravda
+Kontinental Hockey League
+Korea Baseball Organization League
 Korean Workers' Party
 Kraft Foods Inc.
 Kroger
@@ -1400,14 +1535,20 @@ Kuvempu University
 Kyoto University
 L-3 Communications Holdings
 LASA
+LKL
+LMP
+LNB Pro A
+LNB Pro B
 LSI Logic
 La Granja De San Ildefonso
+La Liga
 La Prensa
 La Presse
 La Salle University
 La Stampa
 La Vanguardia Española
 La-Z-Boy
+LaLiga2
 Labour Party
 Lafayette College
 Lam Research
@@ -1427,9 +1568,13 @@ Le Figaro
 Le Journal des Débats
 Le Monde
 Le Parisien
+League of Ireland Premier Division
 Lear
 Learning Ally
 Left Party
+Lega Italiana Calcio Professionistico
+Lega Nazionale Professionisti B
+Lega Nazionale Professionisti Serie A
 Legal Momentum
 Legg Mason
 Leggett & Platt
@@ -1454,12 +1599,24 @@ Liberal Republican Party
 Liberal-Democratic Party of Japan
 Libertarian Party
 Liberty Party
+Lietuvos krepšinio lyga
+Liga ACB
+Liga I
+Liga MX
+Liga Mexicana del Pacífico
+Liga Profesional de Fútbol
+Liga de la Asociación de Clubs de Baloncesto
 Liggett Group Inc.
+Ligue 1
+Ligue 2
+Ligue Nationale de Basket Pro A
+Liiga
 Likud
 Lincoln National
 Lincoln University
 Linens 'n Things
 LinkedIn
+Linkin Park
 Lithia Motors
 Litton Industries, Inc.
 Liz Claiborne
@@ -1481,6 +1638,7 @@ Louisiana State University
 Louisiana-Pacific
 Lowe's Companies
 Loyola University Chicago
+Lucas Oil Off-Road Racing
 Lucent Technologies
 Lufthansa
 Lupus Research Alliance
@@ -1490,6 +1648,7 @@ Lyondell Chemical Company
 L’Osservatore Romano
 M & T Bank
 M.D.C. Holdings
+MAAA
 MAP International
 MAZON: A Jewish Response to Hunger
 MBNA
@@ -1498,6 +1657,8 @@ MGA Entertainment
 MGIC Investment
 MGM Mirage
 MHA
+MLB
+MLS
 MPS Group
 MTV
 Macmillan Publishers Ltd.
@@ -1505,7 +1666,10 @@ Macy’s
 Magellan Health Services
 Mail-Well
 Main National University of San Marcos of Lima
+Maine Central Railroad Mountain Division
 Mainichi shimbun
+Major League Baseball
+Major League Soccer
 Manchester University
 Mandalay Resort Group
 Manor Care
@@ -1522,6 +1686,7 @@ Markel
 Marks & Spencer
 Marks & Spencer PLC
 Marquette University
+Marriott Hotel
 Marriott International
 Marsh & McLennan Companies
 Marsh Supermarkets
@@ -1561,6 +1726,7 @@ Memorial Sloan Kettering Cancer Center
 Memorial University of Newfoundland
 Mennonite Central Committee U.S
 Mental Health America
+Mercedes College
 Merck &
 Mercury General
 Mercy
@@ -1573,6 +1739,8 @@ Metaldyne
 Metals USA
 Metris Companies
 Metro-Goldwyn-Mayer, Inc.
+Mexican Baseball League
+Mexican Pacific League
 Mexicana Airlines
 MiG
 Miami University
@@ -1610,6 +1778,7 @@ Mizraḥi
 Mobil Corporation
 Moderate Party
 Mohawk Industries
+Moldovan Super Liga
 Molex Incorporated
 Monsanto Company
 Monster
@@ -1624,6 +1793,7 @@ Morris Animal Foundation
 Moscow State University
 Mossy Oak
 Motion Picture Patents Company
+MotoGP
 Motorola
 Motorola, Inc.
 Motown
@@ -1641,20 +1811,30 @@ NACE International, corrosion control industry association
 NAMI
 NAP
 NARAL Pro-Choice America Foundation
+NASCAR
+NBA
 NBC Universal
 NBCUniversal
+NCAA
 NCOA
 NCR
 NCR Corporation
 NCSEA
 NEC Corporation
+NFL
+NHL
+NHRA
 NKK Corporation
+NL
+NPB
 NRDC
+NRL
 NRW.BANK
 NSTAR
 NTL Incorporated
 NVIDIA Corporation
 NVR
+NYSE
 Nabisco
 Nabors Industries
 Nacco Industries
@@ -1665,10 +1845,12 @@ National 4-H Council
 National Action Bloc
 National Action Party
 National Alliance
+National Association for Stock Car Auto Racing
 National Association of Parliamentarians
 National Audubon Society
 National Autonomous University of Mexico
 National Awakening Party
+National Basketball Association
 National Bloc
 National Breast Cancer Coalition Fund
 National Broadcasting Co., Inc.
@@ -1682,13 +1864,17 @@ National Defense University
 National Democratic Party of Germany
 National Enquirer
 National Federation of the Blind
+National Football League
 National Forest Foundation
 National Front
 National Fuel Gas Company
 National Hemophilia Foundation
+National Hockey League
+National Hot Rod Association
 National Intergroup, Inc.
 National Jewish Health
 National Kidney Foundation
+National League
 National Liberal Party
 National Liberation Front
 National Military Family Association
@@ -1698,9 +1884,11 @@ National Park Trust
 National Party
 National Psoriasis Foundation
 National Republican Party
+National Rugby League
 National Rural Utilities Cooperative Finance
 National Semiconductor
 National Service Industries
+National Soccer League
 National University of Ireland
 National Westminster Bank
 National Wildlife Federation
@@ -1713,6 +1901,7 @@ Nature Conservancy
 Navistar International
 Navistar International Corporation
 Neiman Marcus
+Nemzeti Bajnokság I
 Nestlé SA
 Netflix, Inc.
 Netscape Communications Corp.
@@ -1746,12 +1935,14 @@ News of the World
 Newsday
 Nextel Communications
 NiSource
+Nicholson 's Broadcasting Service Pty Ltd
 Nicor
 Nike
 Nike, Inc.
 Nikkatsu Motion Picture Company
 Nintendo
 Nippon Hoso Kyokai
+Nippon Professional Baseball
 Nippon Steel Corporation
 Nippon Telegraph and Telephone Corporation
 Nissan Motor Co., Ltd.
@@ -1789,6 +1980,7 @@ O Estado de S. Paulo
 OGE Energy
 OM Group
 ONEOK
+Oakland Athletics of Major League Baseball
 Oath
 Oberlin College
 Occidental College
@@ -1874,6 +2066,7 @@ Pearl S. Buck International
 Pechiney
 Peking University
 Penguin Random House
+Peninsula Hotel
 Penn Traffic
 Pennsylvania Railroad Company
 Pennzoil Company
@@ -1892,6 +2085,8 @@ Performance Food Group
 Perini
 PerkinElmer
 Perot Systems
+Persian Gulf Pro League
+Perth Glory
 PetSmart Charities
 Petco Animal Supplies
 Peter Kiewit Sons'
@@ -1930,7 +2125,6 @@ Polo Ralph Lauren
 PolyOne
 Pontifical Gregorian University
 Popolare
-Popular
 Popular Movement for the Liberation of Angola
 Popular Party
 Popular Republican Movement
@@ -1944,10 +2138,14 @@ Pravda
 Praxair
 Precision Castparts
 Premcor
+Premier League
+Premiership Rugby
 Prevent Blindness
 Prevent Cancer Foundation
 Pride International
 Primedia
+Primeira Liga
+Primera Categoría Serie A
 Princeton University
 Principal Financial Group
 Pro-Fac Cooperative
@@ -1998,7 +2196,9 @@ RGS Energy Group
 RICS
 RJR Nabisco, Inc.
 RKO Radio Pictures, Inc.
+RPL
 RPM
+RVSL
 Radical Civic Union
 Radical-Socialist Party
 Radio Shack
@@ -2068,8 +2268,11 @@ Royal Dutch Shell
 Royal Dutch Shell PLC
 Royal Institution of Chartered Surveyors
 Ruddick
+Rugby Pro D2
 Russell, Majors and Waddell
+Russian Premier League
 Russian Social-Democratic Workers' Party
+Russian Volleyball Super League
 Russian-American Company
 Rutgers, The State University of New Jersey
 Ryanair
@@ -2085,6 +2288,7 @@ SBC Communications
 SC Johnson
 SCI Systems Onc
 SGI
+SHL
 SHRM
 SI
 SLM
@@ -2092,6 +2296,7 @@ SME
 SMS
 SOS Children's Villages
 SPEI
+SPL
 SPX
 SSPC
 STC
@@ -2124,6 +2329,7 @@ Sara Lee
 Sara Lee Corporation
 Sarah Lawrence College
 Sarekat Islam
+Saudi Professional League
 Save the Children
 Save the Redwoods League
 Scana
@@ -2136,6 +2342,7 @@ School of Nisibis
 Science Applications Intl.
 Scientific-Atlanta
 Scottish National Party
+Scottish Premiership
 Scotts Company
 SeaWorld
 Seaboard
@@ -2148,15 +2355,20 @@ Sega Corporation
 Semper Fi & America's Fund
 Sempra Energy
 Sequa
-Service
+Serbian SuperLiga
+Serie A
+Serie B
+Serie C
 ServiceMaster Co
 Seton Hall University
+Seventeenth Air Force
 Shas
 Shaw Group
 Sherwin-Williams Company
 Shintōhō Motion Picture Company
 Shiromani Akali Dal
 Shopko Stores
+Shrine Auditorium
 Shōchiku Co., Ltd.
 Siebel Systems
 Siemens
@@ -2175,7 +2387,9 @@ Singer Company
 Singtel
 Sinhala Maha Sabha
 Sinn Féin
+Sixteenth Air Force
 Slippery Rock University of Pennsylvania
+Slovak Super Liga
 Smith & Wesson
 Smith College
 Smith International
@@ -2210,6 +2424,7 @@ Sonoco Products
 Sony Corporation
 Sotheby’s
 South African Party
+South African Premier Division
 South Carolina State University
 South Dakota State University
 SouthTrust
@@ -2229,6 +2444,7 @@ Southwest Airlines Co.
 Southwest Gas
 Southworth & Hawes
 Sovereign Bancorp
+Spanish Air Force
 Spartan Stores
 Spelman College
 Spherion
@@ -2263,6 +2479,7 @@ Steuben Glass Company
 Stewart & Stevenson Services
 Stewart Information Services
 Stilwell Financial
+Stock Car Brasil
 Storage Technology
 Strategic Management Society
 Stryker
@@ -2279,14 +2496,21 @@ SunTrust Banks
 Sunoco
 Sunoco, Inc.
 Sunshine Foundation
+Super GT
+Super League
+Super League Greece
+Super Rugby
+Supercars Championship
 Supervalu
 Svensk Filmindustri
 Svenska Dagbladet
 Swarthmore College
+Swedish Hockey League
 Swift Transportation
 Swiss Bank Corporation
 Swiss International Air Lines
 Swiss People's Party
+Swiss Super League
 Symbol Technologies
 Synovus Financial
 Syntel
@@ -2296,6 +2520,7 @@ Systemax
 Süddeutsche Zeitung
 T Rowe Price
 TAPS
+TC 2000 Championship
 TCL Corporation
 TECO Energy
 TJX Companies
@@ -2348,17 +2573,23 @@ The AES
 The Allstate
 The Alpine Group
 The Atlanta Journal-Constitution
+The Australian League of Rights
+The Badminton Hall of Fame
 The Baltimore Sun
+The Banbury Center
 The Bank of New York Company
 The Bank of New York Company, Inc.
 The Bear Stearns Companies
 The Black & Decker
 The Boeing Company
 The Boston Globe
+The Brain Injury Rehabilitation Trust
+The British Columbia Institute of Technology
 The Bulletin
 The Catholic University of America
 The Chartered Institute of Marketing
 The Chase Manhattan Corporation
+The Christian Democratic Party of Timor
 The Christian Science Monitor
 The Chronicle of Higher Education
 The Citadel
@@ -2366,17 +2597,19 @@ The City University of New York
 The Clorox
 The Coca-Cola Company
 The Commercial Appeal
+The Cornish Colony Museum
 The Courier-Journal
 The Daily Telegraph
 The Des Moines Register
 The Deseret News
+The Disabilities Trust
+The Emil Touma Institute for Palestinian Studies
+The Fairfax Connector
 The George Washington University
 The Globe and Mail
 The Goodyear Tire & Rubber Company
 The Guardian
 The Hebrew University of Jerusalem
-The Hill
-The Hindu
 The Hunger Project
 The Independent
 The Jerusalem Post
@@ -2385,6 +2618,7 @@ The LTV
 The Liberator
 The Lubrizol
 The MONY Group
+The Mad Capsule Markets
 The May Department Stores Company
 The McGraw-Hill Companies
 The Men's Wearhouse
@@ -2403,7 +2637,6 @@ The Salvation Army
 The Scotsman
 The ServiceMaster Company
 The Signal Companies, Inc.
-The Standard
 The Stars and Stripes
 The Statesman
 The Straits Times
@@ -2413,6 +2646,7 @@ The Times
 The Times of India
 The Toronto Star
 The Travelers Companies
+The Triffids
 The Wall Street Journal
 The Washington Post
 The Y
@@ -2426,6 +2660,8 @@ Tiffany & Co
 Timken Company
 Toho Motion Picture Company
 Toll Brothers
+Top 14
+Top Race V6
 Torchmark
 Toro Company
 Toshiba Corporation
@@ -2457,6 +2693,8 @@ Tufts University
 Tulane University
 Tunnel to Towers Foundation
 Tupolev
+Turismo Carretera
+Turkish Süper Lig
 Tuskegee University
 Twitter
 Tyson Foods
@@ -2464,6 +2702,7 @@ Tōei Company, Ltd.
 Tōkai Bank Ltd.
 U.S. Bancorp
 U.S. Industries
+UAE Pro League
 UAL
 UBS
 UBS AG
@@ -2472,17 +2711,22 @@ UGI
 ULI
 UMCOR
 UNITA
+UPL
 URS
 US Airways
 US Airways Group
 US Oncology
+USA Badminton Hall of Fame and
 USA Interactive
 USA Today
 USFreighways
 USG
+USL
+USL Championship
 UST
 USX Corporation
 UUSC
+Ukrainian Premier League
 Unbound
 Unified Communist Party of Nepal
 Unified Western Grocers
@@ -2509,6 +2753,8 @@ United Methodist Committee on Relief
 United Parcel Service
 United Party
 United Rentals
+United Rugby Championship
+United States Air Forces
 United States Fund for UNICEF
 United States Steel Corporation
 United Stationers
@@ -2551,6 +2797,7 @@ University of Cambridge
 University of Central Florida
 University of Central Oklahoma
 University of Chicago
+University of Chichester
 University of Cincinnati
 University of Cologne
 University of Colorado
@@ -2602,6 +2849,7 @@ University of Mississippi
 University of Missouri
 University of Montana
 University of Montreal
+University of Mostar 's Medical Faculty
 University of Mumbai
 University of Munich
 University of Nantes
@@ -2622,6 +2870,7 @@ University of Oregon
 University of Oxford
 University of Padua
 University of Paris
+University of Peking
 University of Pennsylvania
 University of Perugia
 University of Pittsburgh
@@ -2646,6 +2895,7 @@ University of Strasbourg
 University of Sydney
 University of Tennessee
 University of Texas
+University of Texas Austin
 University of Tokyo
 University of Toledo
 University of Toronto
@@ -2661,6 +2911,7 @@ University of Virginia
 University of Washington
 University of Waterloo
 University of Western Ontario
+University of Westminster
 University of Wisconsin
 University of Wyoming
 University of Würzburg
@@ -2687,6 +2938,7 @@ Varco International
 Varig
 Vassar College
 Vectren
+Veikkausliiga
 Veritas Software
 Verizon Communications
 Viacom
@@ -2695,6 +2947,7 @@ ViacomCBS
 Viad
 Viasystems Group
 Villanova University
+Virgin Records
 Virginia Commonwealth University
 Virginia State University
 Virginia Tech
@@ -2707,17 +2960,22 @@ Volt Information Sciences
 Volvo Aktiebolaget
 Vulcan
 Vulcan Materials Company
+Vyšejšaja Liha
 Völkischer Beobachter
 W.R. Berkley
 W.R. Grace & Co
 W.R. Grace & Co.
 W.W. Grainger
 WACS
+WAFL
 WEF
 WESCO International
 WFEO
 WGL Holdings
+WNBA
+WPL
 WPS Resources
+WRC
 WWE
 Wachovia
 Wafd
@@ -2746,6 +3004,7 @@ Water Environment Federation
 Water.org
 Waterkeeper Alliance
 Watsco
+Watson School of Biological Sciences
 Wayne State University
 Weatherford International
 Weber State University
@@ -2759,16 +3018,19 @@ Wendy's International
 Werner Enterprises
 Wesleyan University
 West Chester University of Pennsylvania
+West Coast Eagles
 West Liberty University
 West Virginia University
 WestPoint Stevens
 Western Air Lines, Inc.
 Western Digital
 Western Electric Company Inc.
+Western Force
 Western Gas Resources
 Western Illinois University
 Western Kentucky University
 Western Michigan University
+Western Reds Rugby League & West Coast Eagles AFL
 Western State Colorado University
 Western Union Corporation
 Western Washington University
@@ -2796,6 +3058,8 @@ Winona State University
 Wisconsin Energy
 Wm Wrigley Jr Company
 Women for Women International
+Women's National Basketball Association
+Women's Premier League
 Woolworth Co.
 Workingmen's Party
 World Association of Chefs Societies
@@ -2805,7 +3069,9 @@ World Federation of Engineering Organizations
 World Federation of Neurosurgical Societies
 World Fuel Services
 World Neighbors
+World Rally Championship
 World Resources Institute
+World Touring Car Cup
 World Vision
 WorldCom
 Worthington Industries

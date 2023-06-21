@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # LANG="en"
-# TEST_CORPUS_PATH=""
-# LABELS_PATH=""
-LM_PATH="./tmp/cdr_lm"
-# MAX_LENGTH=0
+# TEST_CORPUS_PATH="./data/wikigold/gold/wiki_test.conll"
+# LABELS_PATH="./data/wikigold/labels.txt"
+# LM_PATH="./tmp/wiki_lm"
+# MAX_LENGTH=512
 # NER_BATCH_SIZE=0
-# NER_PATH=""
+NER_PATH="./tmp/cdr_ner.pt"
 # CORRECTED_LOSS=
 # GAMMA=
 
@@ -24,8 +24,8 @@ python3 test_miner.py \
     --labels_path ${LABELS_PATH:-"./data/bc5cdr/labels.txt"} \
     --lm_path ${LM_PATH:-"roberta-base"} \
     --max_length ${MAX_LENGTH:-256} \
-    --ner_batch_size ${NER_BATCH_SIZE:-4} \
+    --ner_batch_size ${NER_BATCH_SIZE:-16} \
     --ner_path ${NER_PATH:-"./tmp/cdr_ner.pt"} \
-    --corrected_loss ${CORRECTED_LOSS:-1} \
-    --gamma ${GAMMA:-0.75}
+    --corrected_loss ${CORRECTED_LOSS:-0} \
+    --gamma ${GAMMA:-1.0}
 echo ${green}--- Done ---${reset}

@@ -56,7 +56,7 @@ if __name__=="__main__":
     )
     test_dataloader = DataLoader(
         test_dataset,
-        batch_size=4,
+        batch_size=1,
         shuffle=False
     )
     logging.info("Building the test dataloader...")
@@ -67,8 +67,7 @@ if __name__=="__main__":
         lang=args.lang,
         max_length=args.max_length,
         lm_path=args.lm_path,
-        num_labels=len(labels) + 1,
-        padding_idx=test_dataset.label2idx["PAD"],
+        num_labels=len(labels),
         device=DEVICE,
         partial=True,
         dropout=0.1,
@@ -82,16 +81,25 @@ if __name__=="__main__":
     y_true = []
     y_pred = []
     with torch.no_grad():
-        for x, y in test_dataloader:
-            result = ner.viterbi_decode(x)
-            y_pred.extend(result)
-            y_true.extend(y.tolist())
-        for i, y in enumerate(y_pred):
-            for j, _ in enumerate(y):
-                y_pred[i][j] = idx2label[y_pred[i][j]]
-                y_true[i][j] = idx2label[y_true[i][j]]
-            y_true[i] = y_true[i][:len(y_pred[i])]
-            y_true[i][-1] = idx2label[test_dataset.label2idx["O"]] # Replace the </s> tagged with PAD by an O for proper alignement
+        for x, y, word_ids in test_dataloader:
+            result = ner.viterbi_decode(x)[0]
+            y_ = y.tolist()[0]
+            local_y_true = []
+            local_y_pred = []
+            last = -100
+            for idx, word_id in enumerate(word_ids[0]):
+                if idx == 0:
+                    local_y_true.append(idx2label[y_[idx]])
+                    local_y_pred.append(idx2label[result[idx]])
+                    continue
+                elif last != word_id:
+                    local_y_true.append(idx2label[y_[idx]])
+                    local_y_pred.append(idx2label[result[idx]])
+                last = word_id
+                if last == -1:
+                    break
+            y_pred.append(local_y_pred)
+            y_true.append(local_y_true)
     logging.warning(classification_report(y_true, y_pred, mode="strict", scheme=IOB2))
     logging.warning(precision_score(y_true, y_pred, mode="strict", scheme=IOB2))
     logging.warning(recall_score(y_true, y_pred, mode="strict", scheme=IOB2))

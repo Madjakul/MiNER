@@ -3,11 +3,11 @@
 # LANG="en"
 TRAIN_CORPUS_PATH="./data/wikigold/wiki_train_corpus.txt"
 VAL_CORPUS_PATH="./data/wikigold/wiki_dev_corpus.txt"
-# MAX_LENGTH=0
+MAX_LENGTH=512
 LM_PATH="./tmp/wiki_lm"
 # SEED=0
 # MLM_PROBABILITY=0.0
-# LM_TRAIN_BATCH_SIZE=0
+LM_TRAIN_BATCH_SIZE=1
 # LM_EPOCHS=0
 # LM_ACCUMULATION_STEPS=0
 

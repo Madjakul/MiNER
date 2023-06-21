@@ -115,7 +115,7 @@ class LRScheduler():
         self.optimizer = optimizer
         self.lr_scheduler = lr_scheduler.StepLR(
             optimizer=optimizer,
-            step_size=patience*2,
+            step_size=patience,
             gamma=factor,
         )
 
@@ -232,7 +232,7 @@ class NER_Trainer():
         losses = []
         x_list, y_list = [], []
         idx = 0
-        for x, y in tqdm(train_dataloader):
+        for x, y, _ in tqdm(train_dataloader):
             self.ner.zero_grad()
             loss = self.ner(x, y) / self.accumulation_steps
             losses.append(loss.item())                                      # Only the first loss is saved for statistics
@@ -268,14 +268,13 @@ class NER_Trainer():
         self.ner.eval()
         y_true = []
         y_pred = []
-        for x, y in val_dataloader:
+        for x, y, z in val_dataloader:
             result = self.ner.viterbi_decode(x)
             y_pred.extend(result)
             y_true.extend(y.tolist())
         for i, y in enumerate(y_pred):
             for j, _ in enumerate(y):
                 y_pred[i][j] = self.idx2label[y_pred[i][j]]
-                if y_pred[i][j] == "PAD": y_pred[i][j] = "O"
                 y_true[i][j] = self.idx2label[y_true[i][j]]
             y_true[i] = y_true[i][:len(y_pred[i])]
             y_true[i][-1] = self.idx2label[self.O] # Replace the </s> tagged with PAD by an O for proper alignement
@@ -325,9 +324,9 @@ class NER_Trainer():
                     }, self.path)
                     best_loss = train_loss
                 self.lrs()
-                self.early_stopping(train_loss)
-                if self.early_stopping.early_stop:
-                    break
+                # self.early_stopping(train_loss)
+                # if self.early_stopping.early_stop:
+                #     break
         except KeyboardInterrupt:
             logging.warning("Exiting from training early.")
             if train_loss <= best_loss:

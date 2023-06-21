@@ -114,7 +114,7 @@ class PartialCRF(BaseCRF):
         # Add end transition score
         stops = alpha + self.end_transitions.view(1, num_tags)
 
-        return log_sum_exp(stops) * 1e-2 # (batch_size,)
+        return log_sum_exp(stops) # (batch_size,)
 
     def _numerator_score(
         self, emissions: torch.Tensor, mask: torch.Tensor,
@@ -187,7 +187,7 @@ class PartialCRF(BaseCRF):
         end_transitions[(end_transitions == 0)] = IMPOSSIBLE_SCORE
         stops = alpha + end_transitions
 
-        return log_sum_exp(stops) * 1e-2 # (batch_size,)
+        return log_sum_exp(stops) # (batch_size,)
 
     def _forward_algorithm(
         self, emissions: torch.Tensor, mask: torch.Tensor,

@@ -12,10 +12,8 @@ from miner.trainers import NER_Trainer
 from miner.utils.data import NER_Dataset
 from miner.utils.data import preprocessing as pp
 
-
 GAMMA = [
-    0.5, 0.55, 0.6, 0.65, 0.7,
-    0.75, 0.8, 0.85, 0.9, 0.95, 1.0
+    1.0
 ]
 COLUMNS = ["gamma", "precision", "recall", "f1"]
 DATA = []
@@ -32,9 +30,9 @@ def benchmark_gamma():
     logging.info("=== Training ===")
 
     lang = "en"
-    batch_size = 8
+    batch_size = 16
     max_length = 256
-    epochs = 50
+    epochs = 20
     ner_path = "./tmp/cdr-dev_gamma-ner.pt"
     lm_path = "./tmp/cdr_lm"
     labels_path = "./data/bc5cdr/labels.txt"
@@ -45,9 +43,8 @@ def benchmark_gamma():
         with wandb.init(
             project="miner",
             entity="madjakul",
-            name=f"bc5cdr-benchmark_gamma-{g}"
+            name=f"bc5cdr_gamma-{g}"
         ):
-            config = wandb.config
             logging.info(f"Loading labels from {labels_path}")
             with open(labels_path, "r", encoding="utf-8") as f:
                 labels = f.read().splitlines()
@@ -89,8 +86,7 @@ def benchmark_gamma():
                 lang=lang,
                 max_length=max_length,
                 lm_path=lm_path,
-                num_labels=len(labels) + 1,
-                padding_idx=len(labels),
+                num_labels=len(labels),
                 device=DEVICE,
                 dropout=0.1,
                 partial=True,
@@ -101,16 +97,16 @@ def benchmark_gamma():
             logging.info("Training...")
             trainer = NER_Trainer(
                 ner=ner,
-                lr=0.05,
+                lr=0.005,
                 patience=5,
-                min_delta=0.001,
+                min_delta=0.005,
                 epochs=epochs,
                 max_length=max_length,
                 device=DEVICE,
-                accumulation_steps=16 // batch_size,
+                accumulation_steps=1,
                 ner_path=ner_path,
-                momentum=0.7,
-                clip=4.0,
+                momentum=0.9,
+                clip=5.0,
                 optimizer="SGD",
                 sam=True,
                 idx2label = {v: k for k, v in val_dataset.label2idx.items()}

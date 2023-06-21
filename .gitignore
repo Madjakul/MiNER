@@ -131,3 +131,7 @@ wandb/
 
 # Weight and Biases
 wandb/
+
+#Misc
+tmp/
+logs/

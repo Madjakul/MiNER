@@ -1,11 +1,11 @@
 #!/bin/bash
 
 LANG="en"
-LABEL_COMPLETION=1
-CORPUS_PATH="./data/bc5cdr/cdr_dev_corpus.txt"
-CONLL_PATH="./data/bc5cdr/distant/cdr_dev.conll"
-GAZETTEERS_PATH="./data/bc5cdr/gazetteers/"
-UNK_GAZETTEERS_PATH="./data/bc5cdr/gazetteers/UNK.txt"
+LABEL_COMPLETION=0
+# CORPUS_PATH="./data/wikigold/wiki_train_corpus.txt"
+# CONLL_PATH="./data/wikigold/distant/wiki_train.conll"
+# GAZETTEERS_PATH="./data/wikigold/gazetteers/"
+# UNK_GAZETTEERS_PATH="./data/wikigold/gazetteers/UNK.txt"
 
 # -----------------------------------------------------------------------------
 

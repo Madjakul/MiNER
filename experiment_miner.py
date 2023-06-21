@@ -1,8 +1,5 @@
 # experiment_miner.py
 
-import argparse
-import logging
-
 from miner.utils import logging_config
 from experiments import benchmark_kb, benchmark_gamma
 

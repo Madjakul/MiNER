@@ -49,8 +49,8 @@ class NER(nn.Module):
 
     def __init__(
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
-        padding_idx: int, max_length: int, device: Literal["cpu", "cuda"],
-        dropout: float=0.2, partial=False, corrected_loss: Optional[bool]=None,
+        max_length: int, device: Literal["cpu", "cuda"], dropout: float=0.2,
+        partial=False, corrected_loss: Optional[bool]=None,
         gamma: Optional[float]=None
     ):
         super(NER, self).__init__()
@@ -67,14 +67,12 @@ class NER(nn.Module):
         if partial:
             self.crf = PartialCRF(          # (batch_size, max_length)
                 num_tags=num_labels,
-                padding_idx=padding_idx,
                 corrected_loss=corrected_loss,
                 gamma=gamma
             )
         else:
             self.crf = CRF(
                 num_tags=num_labels,
-                padding_idx=padding_idx,
                 corrected_loss=corrected_loss,
                 gamma=gamma
             )

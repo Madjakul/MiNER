@@ -2,6 +2,7 @@
 
 from typing import Literal, Union, Optional, List, Dict
 
+import numpy as np
 import torch
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
@@ -55,7 +56,7 @@ class NER_Dataset(Dataset):
         self.iterable_corpus = iterable_corpus
         self.iterable_labels = iterable_labels
         self.label2idx = {label: idx for idx, label in enumerate(labels)}
-        self.label2idx["PAD"] = len(self.label2idx)
+        # self.label2idx["PAD"] = len(self.label2idx)
         self.label2idx["B-UNK"] = -1
         self.label2idx["I-UNK"] = -1
         if lang == "fr":
@@ -75,6 +76,7 @@ class NER_Dataset(Dataset):
             )
         self.max_length = max_length
         self.device = device
+        self.word_ids = []
         self.inputs, self.outputs = self._compute_dataset()
 
     def __call__(self, inputs: List[str]):
@@ -84,7 +86,9 @@ class NER_Dataset(Dataset):
     def __getitem__(self, idx):
         x = self.inputs[idx]
         y = torch.LongTensor(self.outputs[idx]).to(self.device)
-        return x, y
+        z = np.nan_to_num(np.array(self.word_ids[idx], dtype=np.float32), nan=-1)
+        z = torch.LongTensor(z)
+        return x, y, z
 
     def __len__(self):
         if self.inputs is None:
@@ -121,12 +125,13 @@ class NER_Dataset(Dataset):
         self, inputs: Dict[str, torch.Tensor], labels: List[int]
     ):
         word_ids = inputs.word_ids()                    # type: ignore
+        self.word_ids.append(word_ids)
         label_ids = []
         for idx, word_idx in enumerate(word_ids):
             if idx == 0:
                 label_ids.append(self.label2idx["O"])
             elif word_idx is None:
-                label_ids.append(self.label2idx["PAD"])
+                label_ids.append(self.label2idx["O"])
             elif word_idx != previous_word_idx:         # type: ignore
                 label_ids.append(labels[word_idx])
             else:

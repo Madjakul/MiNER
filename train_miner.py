@@ -29,11 +29,6 @@ if __name__=="__main__":
         default="./data/bc5cdr/cdr_train.conll"
     )
     parser.add_argument(
-        "--gazetteers_path",
-        type=str,
-        default="./data/gazetteers/"
-    )
-    parser.add_argument(
         "--labels_path",
         type=str,
         default="./data/labels.txt"
@@ -86,8 +81,7 @@ if __name__=="__main__":
         lang=args.lang,
         max_length=args.max_length,
         lm_path=args.lm_path,
-        num_labels=len(labels) + 1,
-        padding_idx=len(labels),
+        num_labels=len(labels),
         device=DEVICE,
         partial=True,
         corrected_loss=bool(args.corrected_loss),

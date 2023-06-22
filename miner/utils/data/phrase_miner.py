@@ -52,13 +52,13 @@ class PhraseMiner():
     def __is_beginning(self, token: Token):
         if token.ent_iob_ == "O" and token.text.lower() not in pp.STOP_WORDS_EN \
                 and token.text.lower() not in pp.STOP_WORDS_EN \
-                and not token.is_punct and not token.is_digit:
+                and token not in pp.PUNCT and not token.is_digit:
             return True
         return False
 
     def __is_ending(self, token: Token):
         if token.ent_iob_ != "O" or token.text.lower() in pp.STOP_WORDS_EN \
-                or token.text.lower() in pp.STOP_WORDS_FR or token.is_punct \
+                or token.text.lower() in pp.STOP_WORDS_FR or token in pp.PUNCT \
                 or token.is_digit:
             return True
         return False
@@ -73,7 +73,7 @@ class PhraseMiner():
         for n in self.n_grams:
             self.n_grams[n] = { # type: ignore
                 span: freq \
-                    for span, freq in self.n_grams[n].items() if freq >= 4
+                    for span, freq in self.n_grams[n].items() if freq >= 3
             }
 
     def _update_frequencies(self, n: int, span: str, freq: int):

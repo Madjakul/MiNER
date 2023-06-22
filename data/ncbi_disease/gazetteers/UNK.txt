@@ -1,385 +1,243 @@
-Germline
-mutations
-inherited
-breast
-BRCA1
-protein
-encodes
-sequence
-homology
-biochemical
-family
-motif
-secretory
-pathway
-previously
-described
-suppressor
-gene
-products
-carriers
-HRAS1
-variable
-number
-repeat
-chromosome
-suggests
-genetic
-repeats
-possible
-rare
-alleles
-increased
-risk
-types
-susceptibility
-hereditary
-based
-common
-P
-associated
-allele
-known
-novel
-encoding
-large
-CpG
-n
-trinucleotide
-expansion
+malaria
+arthritis
+polyps
+dystonia
+visual
+cardiomyopathy
+colon
+attenuated
+anomalies
+neoplasms
+hair
+death
+infections
+heart
+adrenal
+metabolic
+myotonia
+dysfunction
+cognitive
+macular
+glycerol
+galactose
+meningococcal
+state
+diseases
+infection
+hypoplasia
+xanthomatosis
+autoimmune
+peroxisomal
+disomy
+cholesteryl
+cerebellar
 untranslated
-region
-kinase
-patient
-tissues
-data
-levels
-DMPK
-mRNA
-rich
-transcription
-genes
-genomic
-sequences
-mouse
-identified
-significant
-predicted
-PCR
-analysis
-human
-including
-skeletal
-muscle
-RB1
-promoter
-sporadic
-polymorphism
-previous
-studies
-new
-resulting
-different
-exons
-mutation
-patients
-overall
-small
-point
-II
-complement
-C2
-deficiency
-specific
-substitutions
-Arg
-cause
-null
-major
-molecular
-basis
-missense
-highly
-conserved
-nucleotide
-T
-linked
-haplotype
-mutant
-product
-early
-provide
-models
-factor
-type
-heterozygous
-transition
-second
-substitution
-terminal
-domain
-containing
-cells
-recombinant
-expressing
-normal
-single
-band
-domains
-codon
-defective
-control
-cell
-WASP
-members
-G
-binding
-expression
-dominant
-forms
-provides
-mechanism
-cellular
-abnormalities
-contains
-proteins
-involved
-frequent
-adult
-male
-system
-acids
-located
-function
-phenotype
-form
-peripheral
-frequently
-clinical
-age
-primary
-locus
-mechanisms
-dependent
-apoptosis
-independent
-critical
-development
-key
-functional
-vitro
-defined
-fusion
-line
-following
-mice
-nuclear
-suggest
-BRCA2
-individuals
-somatic
-found
-familial
-low
-recently
-develop
-deletion
-coding
-lines
-germ
-heteroduplex
-intron
-direct
-sequencing
-premature
-termination
-seven
-frameshift
-nonsense
-splice
-site
-intragenic
-alterations
-detected
-linkage
-present
-study
-detection
-multiple
-cases
-onset
-and/or
-distinct
-screening
-reported
-DNA
-extensive
-hybridization
-length
-revealed
-codons
-showed
-variants
-base
-deletions
-phenotypic
-features
-CAG
-HD
-size
-chromosomes
-assays
-findings
-polymorphisms
-symptoms
-classical
-Jewish
-autosomal
-activity
-bp
-origin
-changes
-cDNA
-chromosomal
-homolog
-ATM
-transcript
-situ
-mutated
-polymorphic
-structure
-samples
-milk
-women
-concentration
-relatively
-CTG
-expressed
-results
-loss
-disorder
-developed
-deficient
-embryos
-exhibit
-reduced
-decreased
-p53
-growth
-HDL
-high
-density
-reverse
-Japanese
-CHD
-additional
-observed
-marker
-PAX6
-overexpression
-causes
-severe
-caused
-homozygous
 transgenic
-carrying
-phenotypes
-transcriptional
-defects
-enzyme
-phosphate
-galactosemia
-studied
-compound
-allelic
-GALT
-role
-regulation
-adjacent
-exon
-detectable
-VHL
-strong
-Genetic
-families
-population
-defect
-complete
-variant
-alternative
-related
-Western
-instability
-nucleotides
-CoA
-markers
-ND
-PAX3
-FKHR
-fibroblasts
-translocation
-vector
-induced
-dehydrogenase
-causing
-G6PD
-blood
-segregation
-sperm
-derived
-therapy
-serum
-receptor
-carrier
-frequency
-cycle
-radiation
-thymocytes
-level
+malignant
+tightly
+lymphoproliferative
+confidence
+neurodegenerative
+anomaly
+chronic
+white
+acyl
+assignment
+lip
+possibility
+compatible
+active
+combination
+counseling
+diabetes
+density
+messenger
+animal
+spondylitis
+reading
+variable
 stage
-VLCAD
-Molecular
-C7
-C6
-DPC4
-colorectal
-DCC
-III
-mild
-affected
-hamartomas
-Malaga
-change
-history
-Duarte
-LA
-collagen
-sites
-bone
-dysplasia
-SJS
-WT1
-C9
-DMAHP
-VEGF
-Sp1
-GALC
-strand conformation
-conformation polymorphism
-polymerase chain
-chain reaction
-Type II
+proportion
+degeneration
+zinc
+vision
+phosphatase
+correlated
+coa
+anemia
+failure
+nt
+contribute
+tumour
+palate
+localization
+account
+transfer
+finger
+carcinoma
+leukodystrophy
+investigate
+panel
+means
+prenatal
+man
+boy
+rate
+confirmed
+symptoms
+scores
+led
+der
+regulation
+pathogenesis
+status
+gastric
+impaired
+lipoprotein
+liver
+alpha
+disease
+instability
+cancers
+subunit
+evaluation
+occurrence
+cholesterol
+obtained
+fever
+screen
+series
+general
+radiation
+adrenoleukodystrophy
+metabolism
+signs
+15q11
+implications
+retinal
+q13
+hemolytic
+failed
+growth
+maps
+color
+comparison
+characteristic
+phenotypic
+strong
+trinucleotide
+manifestations
+vwf
+congenital
+cancer
+tissue
+child
+examination
+late
+identical
+disorders
+abnormalities
+tumors
+encoded
+chromosomal
+founder
+syndrome
+analysis
+maximum
+interval
+ratio
+frameshift
+structure
+cleft
+isolation
+detect
+incidence
+cardiac
+oxidation
+predicted
+tumor
+regions
+majority
+amplification
+formation
+blood
+mutation
+accumulation
+friedreich ataxia
+prostate cancer
+ataxia telangiectasia
+kniest dysplasia
+myotonic dystrophy
+denys drash syndrome
+prader willi syndrome
+ionizing radiation
+familial mediterranean fever
+van der woude syndrome
+ankylosing spondylitis
+pelizaeus merzbacher disease
+wiskott aldrich syndrome
+von willebrand disease
+von willebrand factor
+hearing loss
+pendred syndrome
+mental retardation
+duchenne muscular dystrophy
+machado joseph disease
+wilson disease
+tay sachs disease
+metachromatic leukodystrophy
+phenylalanine hydroxylase
+polymerase chain reaction
+adenomatous polyposis coli
+diastrophic dysplasia
+gel electrophoresis
+renal cell carcinoma
+cerebrotendinous xanthomatosis
 amino acid
-missense mutations
-gene product
-von Willebrand
-human chromosome
-BRCA1 mutations
-Ashkenazi Jewish
-ATM protein
-WASP gene
-protein kinase
-protein gene
-> T
-blot analysis
-renal cell carcinomas
+beta catenin
+tumour suppressor
+huntington disease
+breast cancer
+color vision
+reading frame
+ovarian cancer
+muscular dystrophy
+mg dl
+lesch nyhan
+somatic cell hybrids
+amino acids
+becker muscular dystrophy
+glucose 6 phosphate dehydrogenase
+von hippel lindau
+hemolytic anemia
+familial adenomatous polyposis
+norrie disease
+emery dreifuss muscular dystrophy
+cholesteryl ester transfer protein
+wild type
+ashkenazi jewish
+autosomal dominant
+messenger rna
+lod score
+rt pcr
+southern blot
+autosomal recessive
+gastric cancer
+colorectal cancer
+base pair
+prenatal diagnosis
+tay sachs
+zinc finger
+linkage disequilibrium
+wilms tumor
+cell lines
+lesch nyhan syndrome
+fragile x syndrome
+lod scores
+animal model
+15q11 q13
+restriction fragment length
+ovarian cancers
+tumor suppressor
+prader willi
+pax3 fkhr

@@ -24,4 +24,4 @@ source activate miner
 
 mkdir logs tmp
 
-wandb run agent
+./train_miner.sh

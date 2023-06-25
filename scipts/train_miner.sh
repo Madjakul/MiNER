@@ -43,7 +43,7 @@ python3 train_miner.py \
     --ner_path ${NER_PATH:-"./tmp/cdr_ner.pt"} \
     --min_delta ${MIN_DELTA:-0.005} \
     --corrected_loss ${CORRECTED_LOSS:-1} \
-    --gamma ${GAMMA:-0.75} \
+    --gamma ${GAMMA:-1.0} \
     --optimizer ${OPTIMIZER:-"SGD"} \
     --sam ${SAM:-1} \
     --dropout ${DROPOUT:-0.1} \

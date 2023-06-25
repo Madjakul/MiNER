@@ -59,8 +59,13 @@ class TransformerTrainer():
         self.lm_path = lm_path
         self.training_args = TrainingArguments(
             output_dir=lm_path,
+            overwrite_output_dir=True,
+            do_train=True,
             do_eval=True,
             evaluation_strategy="epoch",
+            warmup_ratio=0.06,
+            learning_rate=5e-4,
+            eval_accumulation_steps=gradient_accumulation_steps,
             per_device_train_batch_size=per_device_train_batch_size,
             per_device_eval_batch_size=per_device_eval_batch_size,
             gradient_accumulation_steps=gradient_accumulation_steps,
@@ -68,11 +73,13 @@ class TransformerTrainer():
             logging_strategy="epoch",
             save_strategy="epoch",
             seed=seed,
+            data_seed=seed,
             load_best_model_at_end=True,
             greater_is_better=False,
             log_level="error",
-            report_to=None,
-            save_total_limit=2
+            report_to="none",
+            fp16_full_eval=True,
+            save_total_limit=1
         )
         self.trainer = Trainer(
             model=lm.model,

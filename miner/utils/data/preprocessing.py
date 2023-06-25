@@ -118,7 +118,7 @@ yet you your yours yourself yourselves
 """.split()
 )
 
-PUNCT = set("?!:;,.(){}/\\|".split())
+PUNCT = set("? ! : ; , . (  ) {  } /\ \ |".split())
 
 contractions = ["n't", "'d", "'ll", "'m", "'re", "'s", "'ve"]
 STOP_WORDS_EN.update(contractions)

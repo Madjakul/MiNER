@@ -7,6 +7,10 @@ from miner.utils.crf_utils import (
     UNLABELED_INDEX,
     create_possible_tag_masks,
 )
+from miner.utils.arg_parse import (
+    PreprocessArgParse,
+    PretrainArgParse
+)
 
 
 __all__ = [
@@ -15,5 +19,7 @@ __all__ = [
     "logging_config",
     "create_possible_tag_masks",
     "log_sum_exp",
+    "PreprocessArgParse",
+    "PretrainArgParse"
 ]
 

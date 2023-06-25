@@ -1,11 +1,10 @@
 # pretrain_miner.py
 
 import logging
-import argparse
 
 import torch
 
-from miner.utils import logging_config
+from miner.utils import PretrainArgParse, logging_config
 from miner.trainers import TransformerTrainer
 from miner.utils.data import TransformerDataset
 from miner.modules import RoBERTa, CamemBERT, Longformer
@@ -19,30 +18,7 @@ else: DEVICE = "cpu"
 
 
 if __name__=="__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--lang",
-        type=str,
-        help="Language of the corpus {'en', 'fr'}"
-    )
-    parser.add_argument(
-        "--train_corpus_path",
-        type=str,
-        default="./data/bc5cdr/cdr_train.conll"
-    )
-    parser.add_argument(
-        "--val_corpus_path",
-        type=str,
-        default="./data/bc5cdr/cdr_val.conll"
-    )
-    parser.add_argument("--max_length", type=int, default=256)
-    parser.add_argument("--lm_path", type=str, default="./tmp/lm")
-    parser.add_argument("--seed", type=int, default=8)
-    parser.add_argument("--mlm_probability", type=float, default=0.15)
-    parser.add_argument("--lm_train_batch_size", type=int, default=4)
-    parser.add_argument("--lm_epochs", type=int, default=50)
-    parser.add_argument("--lm_accumulation_steps", type=int, default=16)
-    args = parser.parse_args()
+    args = PretrainArgParse.parse_known_args()
 
     logging.info("=== Pretraining ===")
 

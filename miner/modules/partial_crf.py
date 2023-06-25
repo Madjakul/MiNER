@@ -71,7 +71,8 @@ class PartialCRF(BaseCRF):
                 nl = (1 - (-nll).exp())
                 nl = nl + (nl < 1e-4).to(nl).detach() * (1e-4 - nl).detach()
                 nlu = - nl.log()
-            return torch.sum(nll * self.gamma + nlu * (1 - self.gamma))
+            # return torch.sum(nll * self.gamma + nlu * (1 - self.gamma))
+            return torch.sum(nll + nlu)
         return torch.sum(nll * self.gamma)
 
     def _denominator_score(

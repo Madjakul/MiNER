@@ -1,9 +1,8 @@
 # preprocess_miner.py
 
 import logging
-import argparse
 
-from miner.utils import logging_config
+from miner.utils import PreprocessArgParse, logging_config
 from miner.utils.data import PhraseMiner
 from miner.utils.data import preprocessing as pp
 
@@ -12,36 +11,8 @@ logging_config()
 
 
 if __name__=="__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--lang",
-        type=str,
-        help="Language of the corpus {'en', 'fr'}"
-    )
-    parser.add_argument(
-        "--corpus_path",
-        type=str,
-        help="Path to the raw corpus."
-    )
-    parser.add_argument(
-        "--conll_path",
-        type=str,
-        help="Path and name of the conll distant training data."
-    )
-    parser.add_argument(
-        "--gazetteers_path",
-        type=str,
-        help="Path to the dictionaries"
-    )
-    parser.add_argument(
-        "--unk_gazetteers_path",
-        type=str,
-        help="Path and name to the file containing the mined entities."
-    )
-    parser.add_argument("--label_completion", type=int)
-    args = parser.parse_args()
-
-    logging.info("=== Mining Phrases ===")
+    args = PreprocessArgParse.parse_known_args()
+    logging.info("=== Preprocessing Miner ===")
 
     logging.info(f"Reading training data from {args.corpus_path}")
     with open(args.corpus_path, "r", encoding="utf-8") as f:
@@ -52,7 +23,8 @@ if __name__=="__main__":
     phrase_miner = PhraseMiner(lang=args.lang)
     gazetteers = pp.load_gazetteers(args.gazetteers_path)
     phrase_miner.compute_patterns(gazetteers)
-    if bool(args.label_completion):
+
+    if args.label_completion:
         logging.info("Mining phrases...")
         unk_gazetteers = phrase_miner.get_unk_gazetteers(
             corpus=corpus
@@ -62,6 +34,7 @@ if __name__=="__main__":
         with open(args.unk_gazetteers_path, "w", encoding="utf-8") as f:
             [f.write(f"{gazet}\n") for gazet in unk_gazetteers]
         phrase_miner.compute_patterns({"UNK": unk_gazetteers})
+
     logging.info(f"Dumping training data to {args.conll_path}")
     phrase_miner.dump(corpus, args.conll_path)
     logging.info("--- Done ---\n\n")

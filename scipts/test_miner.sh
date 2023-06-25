@@ -24,7 +24,7 @@ python3 test_miner.py \
     --labels_path ${LABELS_PATH:-"./data/bc5cdr/labels.txt"} \
     --lm_path ${LM_PATH:-"roberta-base"} \
     --max_length ${MAX_LENGTH:-256} \
-    --ner_batch_size ${NER_BATCH_SIZE:-16} \
+    --ner_batch_size ${NER_BATCH_SIZE:-32} \
     --ner_path ${NER_PATH:-"./tmp/cdr_ner.pt"} \
     --corrected_loss ${CORRECTED_LOSS:-0} \
     --gamma ${GAMMA:-1.0}

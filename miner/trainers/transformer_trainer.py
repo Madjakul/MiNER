@@ -54,7 +54,7 @@ class TransformerTrainer():
         self, lm: Union[RoBERTa, CamemBERT, Longformer], lm_path: str,
         lm_dataset: TransformerDataset, per_device_train_batch_size: int,
         seed: int, per_device_eval_batch_size: int, num_train_epochs: int,
-        gradient_accumulation_steps: int
+        gradient_accumulation_steps: int, wandb: bool
     ):
         self.lm_path = lm_path
         self.training_args = TrainingArguments(
@@ -77,7 +77,7 @@ class TransformerTrainer():
             load_best_model_at_end=True,
             greater_is_better=False,
             log_level="error",
-            report_to="none",
+            report_to="wandb" if wandb else "none",
             fp16_full_eval=True,
             save_total_limit=1
         )

@@ -50,12 +50,11 @@ class BaseCRF(nn.Module):
     """
     def __init__(
         self, num_tags: int, padding_idx: Optional[int]=None,
-        corrected_loss: Optional[bool]=None, gamma: Optional[float]=None
+        corrected_loss: Optional[bool]=None
     ):
         super().__init__()
         self.corrected_loss = \
             False if corrected_loss is None else corrected_loss
-        self.gamma = 1.0 if gamma is None else gamma
         self.num_tags = num_tags
         self.start_transitions = nn.Parameter(torch.randn(num_tags))
         self.end_transitions = nn.Parameter(torch.randn(num_tags))

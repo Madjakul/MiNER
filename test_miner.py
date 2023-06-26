@@ -72,7 +72,6 @@ if __name__=="__main__":
         partial=True,
         dropout=0.1,
         corrected_loss=bool(args.corrected_loss),
-        gamma=args.gamma
     ).to(DEVICE)
     ner.load_state_dict(torch.load(args.ner_path)["model_state_dict"])
     ner.eval()

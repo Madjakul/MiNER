@@ -3,6 +3,7 @@
 import logging
 
 import torch
+import torch.backends.cudnn
 
 from miner.utils import PretrainArgParse, logging_config
 from miner.trainers import TransformerTrainer
@@ -15,14 +16,17 @@ if torch.cuda.is_available():
     DEVICE = "cuda"
     torch.cuda.empty_cache()
 else: DEVICE = "cpu"
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
 
 
 if __name__=="__main__":
     args = PretrainArgParse.parse_known_args()
-
-    logging.info("=== Pretraining ===")
-
     torch.manual_seed(args.seed)
+    torch.cuda.manual_seed(args.seed)
+
+    logging.info("=== Pretraining LM for MiNER ===")
+
 
     logging.info(f"Loading training data from {args.train_corpus_path}")
     with open(args.train_corpus_path, "r", encoding="utf-8") as f:
@@ -32,13 +36,13 @@ if __name__=="__main__":
         val_corpus = f.read().splitlines()
 
     if args.lang == "fr":
-        logging.info("using CamemBERT checkpoint as language model")
+        logging.info("Using CamemBERT checkpoint as language model")
         lm = CamemBERT(DEVICE)
     elif args.max_length > 512:
-        logging.info("using Longformer checkpoint as language model")
+        logging.info("Using Longformer checkpoint as language model")
         lm = Longformer(DEVICE)
     else:
-        logging.info("using  RoBERTa checkpoint as language model")
+        logging.info("Using  RoBERTa checkpoint as language model")
         lm = RoBERTa(DEVICE)
 
     logging.info("Building the dataset...")
@@ -51,7 +55,7 @@ if __name__=="__main__":
     )
     lm_dataset.add_vocab(train_corpus, lm)
 
-    logging.info("Training...")
+    logging.info("*** Training ***")
     lm_trainer = TransformerTrainer(
         lm=lm,
         lm_path=args.lm_path,
@@ -61,7 +65,8 @@ if __name__=="__main__":
         per_device_eval_batch_size=args.lm_train_batch_size,
         num_train_epochs=args.lm_epochs,
         gradient_accumulation_steps=args.lm_accumulation_steps,
+        wandb=args.wandb
     )
     lm_trainer.train()
-    logging.info("--- Done ---\n\n")
+    logging.info("=== Done ===\n\n")
 

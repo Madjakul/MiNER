@@ -1,5 +1,11 @@
 #!/bin/bash
 
+PROJECT_ROOT=$(dirname "$(readlink -f "$0")")/..    # Do not modify
+DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
+
+
+# ************************* Customizable Arguments ****************************
+
 # LANG="en"
 # TEST_CORPUS_PATH="./data/wikigold/gold/wiki_test.conll"
 # LABELS_PATH="./data/wikigold/labels.txt"

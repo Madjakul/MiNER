@@ -51,7 +51,6 @@ class NER(nn.Module):
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
         max_length: int, device: Literal["cpu", "cuda"], dropout: float=0.2,
         partial=False, corrected_loss: Optional[bool]=None,
-        gamma: Optional[float]=None
     ):
         super(NER, self).__init__()
         self.device = device
@@ -68,13 +67,11 @@ class NER(nn.Module):
             self.crf = PartialCRF(          # (batch_size, max_length)
                 num_tags=num_labels,
                 corrected_loss=corrected_loss,
-                gamma=gamma
             )
         else:
             self.crf = CRF(
                 num_tags=num_labels,
                 corrected_loss=corrected_loss,
-                gamma=gamma
             )
 
     def forward(

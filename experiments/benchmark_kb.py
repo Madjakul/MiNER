@@ -63,10 +63,8 @@ def benchmark_kb(wandb_: bool=False):
             )
             DATA.append([gold_conll, precision, recall, f1])
     if wandb_:
-        with wandb.init(
-            project="miner", entity="madjakul", name="benchmark_kb"
-        ):
-            table = wandb.Table(data=DATA, columns=COLUMNS)
-            wandb.log({"kb_benchmark": table})
+        wandb.init( project="miner", entity="madjakul", name="benchmark_kb"):
+        table = wandb.Table(data=DATA, columns=COLUMNS)
+        wandb.log({"kb_benchmark": table})
     logging.info("--- Done ---\n\n")
 

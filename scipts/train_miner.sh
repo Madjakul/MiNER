@@ -1,5 +1,11 @@
 #!/bin/bash
 
+PROJECT_ROOT=$(dirname "$(readlink -f "$0")")/..    # Do not modify
+DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
+
+
+# ************************* Customizable Arguments ****************************
+
 # LANG="en"
 # TRAIN_DATA_PATH="./data/wikigold/distant/wiki_train.conll"
 # LABELS_PATH="./data/wikigold/labels.txt"
@@ -12,40 +18,55 @@
 # PATIENCE=0
 # NER_EPOCHS=15
 # NER_ACCUMULATION_STEPS=1
-NER_PATH="./tmp/cdr_ner.pt"
-# MIN_DELTA=
-# CORRECTED_LOSS=
+# NER_PATH="./tmp/wiki_ner.pt"
 # DORPOUT=0.2
-# GAMMA=
 # SEED=0
 
-# -----------------------------------------------------------------------------
+# VAL_DATA_PATH="./data/wikigold/distant/wiki_train.conll"
+# SAM=1
+# CORRECTED_LOSS=1
+# WANDB=1
+
+# *****************************************************************************
 
 green=`tput setaf 2`
 reset=`tput sgr0`
 
 mkdir tmp logs
 
-echo ${green}=== Training ===${reset}
-python3 train_miner.py \
+cmd=( python3 train_miner.py \
     --lang ${LANG:-"en"} \
     --train_data_path ${TRAIN_DATA_PATH:-"./data/bc5cdr/distant/cdr_train.conll"} \
     --labels_path ${LABELS_PATH:-"./data/bc5cdr/labels.txt"} \
     --lm_path ${LM_PATH:-"roberta-base"} \
     --max_length ${MAX_LENGTH:-256} \
-    --ner_batch_size ${NER_BATCH_SIZE:-4} \
+    --ner_batch_size ${NER_BATCH_SIZE:-8} \
     --lr ${LR:-0.005} \
     --momentum ${MOMENTUM:-0.9} \
     --clip ${CLIP:-5.0} \
     --patience ${PATIENCE:-5} \
     --ner_epochs ${NER_EPOCHS:-20} \
-    --ner_accumulation_steps ${NER_ACCUMULATION_STEPS:-4} \
+    --ner_accumulation_steps ${NER_ACCUMULATION_STEPS:-2} \
     --ner_path ${NER_PATH:-"./tmp/cdr_ner.pt"} \
-    --min_delta ${MIN_DELTA:-0.005} \
-    --corrected_loss ${CORRECTED_LOSS:-1} \
-    --gamma ${GAMMA:-1.0} \
-    --optimizer ${OPTIMIZER:-"SGD"} \
-    --sam ${SAM:-1} \
     --dropout ${DROPOUT:-0.1} \
-    --seed ${SEED:-8}
-echo ${green}--- Done ---${reset}
+    --seed ${SEED:-8} )
+
+if [[ -v WANDB ]]; then
+    cmd+=( --wandb \
+        --project $PROJECT \
+        --entity $ENTITY )
+fi
+if [[ -v CORRECTED_LOSS ]]; then
+    cmd+=( --corrected_loss)
+fi
+if [[ -v SAM ]]; then
+    cmd+=( --sam )
+fi
+if [[ -v VAL_DATA_PATH ]]; then
+    cmd+=( --val_data_path $VAL_DATA_PATH )
+fi
+
+echo ${green}=== Training Miner ===${reset}
+"${cmd[@]}"
+echo ${green}=== Done ===${reset}
+

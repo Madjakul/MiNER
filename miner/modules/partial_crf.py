@@ -29,9 +29,9 @@ class PartialCRF(BaseCRF):
     """
     def __init__(
         self, num_tags: int, padding_idx: Optional[int]=None,
-        corrected_loss: Optional[bool]=None, gamma: Optional[float]=None
+        corrected_loss: Optional[bool]=None
     ):
-        super().__init__(num_tags, padding_idx, corrected_loss, gamma)
+        super().__init__(num_tags, padding_idx, corrected_loss)
 
     def _reset_parameters(self) -> None:
         nn.init.uniform_(self.start_transitions, -0.1, 0.1)
@@ -71,9 +71,8 @@ class PartialCRF(BaseCRF):
                 nl = (1 - (-nll).exp())
                 nl = nl + (nl < 1e-4).to(nl).detach() * (1e-4 - nl).detach()
                 nlu = - nl.log()
-            # return torch.sum(nll * self.gamma + nlu * (1 - self.gamma))
             return torch.sum(nll + nlu)
-        return torch.sum(nll * self.gamma)
+        return torch.sum(nll)
 
     def _denominator_score(
         self, emissions: torch.Tensor, mask: torch.Tensor

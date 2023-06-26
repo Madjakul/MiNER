@@ -9,7 +9,8 @@ from miner.utils.crf_utils import (
 )
 from miner.utils.arg_parse import (
     PreprocessArgParse,
-    PretrainArgParse
+    PretrainArgParse,
+    TrainArgParse,
 )
 
 
@@ -20,6 +21,7 @@ __all__ = [
     "create_possible_tag_masks",
     "log_sum_exp",
     "PreprocessArgParse",
-    "PretrainArgParse"
+    "PretrainArgParse",
+    "TrainArgParse",
 ]
 

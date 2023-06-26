@@ -26,6 +26,7 @@ cmd=( python3 preprocess_miner.py \
         --corpus_path ${CORPUS_PATH:-"$DATA_ROOT/bc5cdr/cdr_train_corpus.txt"} \
         --conll_path ${CONLL_PATH:-"$DATA_ROOT/bc5cdr/distant/cdr_train.conll"} \
         --gazetteers_path ${GAZETTEERS_PATH:-"$DATA_ROOT/bc5cdr/gazetteers/"} )
+
 if [[ -v LABEL_COMPLETION ]]; then
     echo ${green}=== ouais ouais ===${reset}
     cmd+=( --label_completion ${LABEL_COMPLETION} \
@@ -34,4 +35,4 @@ fi
 
 echo ${green}=== Preprocessing Miner ===${reset}
 "${cmd[@]}"
-echo ${green}--- Done ---${reset}
+echo ${green}=== Done ===${reset}

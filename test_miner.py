@@ -69,7 +69,6 @@ if __name__=="__main__":
         lm_path=args.lm_path,
         num_labels=len(labels),
         device=DEVICE,
-        partial=True,
         dropout=0.1,
         corrected_loss=bool(args.corrected_loss),
     ).to(DEVICE)

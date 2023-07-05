@@ -9,7 +9,6 @@ from transformers import (
     RobertaModel, CamembertModel, LongformerModel
 )
 
-from miner.modules.crf import CRF
 from miner.modules.partial_crf import PartialCRF
 
 
@@ -50,7 +49,7 @@ class NER(nn.Module):
     def __init__(
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
         max_length: int, device: Literal["cpu", "cuda"], dropout: float=0.2,
-        partial=False, corrected_loss: Optional[bool]=None,
+        corrected_loss: Optional[bool]=None,
     ):
         super(NER, self).__init__()
         self.device = device
@@ -63,16 +62,10 @@ class NER(nn.Module):
             self.transformer = RobertaModel.from_pretrained(lm_path)
         self.linear_dropout = nn.Dropout(dropout)
         self.fc = nn.Linear(768, num_labels)    # (batch_size, max_length, num_labels)
-        if partial:
-            self.crf = PartialCRF(          # (batch_size, max_length)
-                num_tags=num_labels,
-                corrected_loss=corrected_loss,
-            )
-        else:
-            self.crf = CRF(
-                num_tags=num_labels,
-                corrected_loss=corrected_loss,
-            )
+        self.crf = PartialCRF(          # (batch_size, max_length)
+            num_tags=num_labels,
+            corrected_loss=corrected_loss,
+        )
 
     def forward(
         self, inputs: Dict[str, torch.Tensor], outputs: torch.Tensor

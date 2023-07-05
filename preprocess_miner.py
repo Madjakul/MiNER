@@ -17,7 +17,7 @@ if __name__=="__main__":
     logging.info(f"Reading training data from {args.corpus_path}")
     with open(args.corpus_path, "r", encoding="utf-8") as f:
         corpus = f.read().splitlines()
-    corpus = [text for text in corpus]
+    # corpus = [text for text in corpus]
 
     logging.info(f"Loading gazetteers from {args.gazetteers_path}")
     phrase_miner = PhraseMiner(lang=args.lang)

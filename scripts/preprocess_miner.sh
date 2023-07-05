@@ -8,10 +8,10 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 
 # LANG="fr"
 # LABEL_COMPLETION=1
-# CORPUS_PATH="$DATA_ROOT/wikigold/wiki_train_corpus.txt"
-# CONLL_PATH="$DATA_ROOT/wikigold/distant/wiki_train.conll"
-# GAZETTEERS_PATH="$DATA_ROOT/wikigold/gazetteers/"
-# UNK_GAZETTEERS_PATH="$DATA_ROOT/wikigold/gazetteers/UNK.txt"
+CORPUS_PATH="$DATA_ROOT/ncbi_disease/ncbi_train_corpus.txt"
+CONLL_PATH="$DATA_ROOT/ncbi_disease/distant/ncbi_train.conll"
+GAZETTEERS_PATH="$DATA_ROOT/ncbi_disease/gazetteers/"
+# UNK_GAZETTEERS_PATH="$DATA_ROOT/ncbi_disease/gazetteers/UNK.txt"
 
 # *****************************************************************************
 
@@ -36,3 +36,4 @@ fi
 echo ${green}=== Preprocessing Miner ===${reset}
 "${cmd[@]}"
 echo ${green}=== Done ===${reset}
+

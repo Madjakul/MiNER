@@ -146,7 +146,7 @@ class NER_Trainer():
         self.lrs = LRScheduler(
             optimizer=self.optimizer,
             patience=patience,
-            factor=0.4
+            factor=0.1
         )
 
     def _fit(self, train_dataloader: DataLoader):

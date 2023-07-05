@@ -31,7 +31,7 @@ if __name__=="__main__":
         wandb.init(
             project=args.project,
             entity=args.entity,
-            name=f"""train_{args.ner_path}_bs{args.ner_batch_size}-""" \
+            name=f"""train{args.ner_path}_bs{args.ner_batch_size}-""" \
                 f"""lr{args.lr}-m{args.momentum}-c{args.clip}"""
         )
 
@@ -82,7 +82,6 @@ if __name__=="__main__":
         lm_path=args.lm_path,
         num_labels=len(labels),
         device=DEVICE,
-        partial=True,
         corrected_loss=args.corrected_loss,
         dropout=args.dropout,
     ).to(DEVICE)

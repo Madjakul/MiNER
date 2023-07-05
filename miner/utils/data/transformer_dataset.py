@@ -7,6 +7,7 @@ import torch
 import datasets
 from transformers import AutoTokenizer, DataCollatorForLanguageModeling
 
+from miner.utils.data import preprocessing as pp
 from miner.modules import CamemBERT, RoBERTa, Longformer
 
 
@@ -117,7 +118,7 @@ class TransformerDataset():
             pretrained language models. (2021). Retrieved April 24, 2023 from
             https://nlp.stanford.edu/~johnhew/vocab-expansion.html
         """
-        new_tokens = [token for text in corpus for token in text.split()]
+        new_tokens = [token for text in corpus for token in pp.escape(text).split()]
         new_tokens = set(new_tokens) - set(self.tokenizer.vocab.keys()) # New tokens don't already exist
         logging.info( f"Adding {len(new_tokens)} new tokens to the vocabulary")
         self.tokenizer.add_tokens(list(new_tokens))
@@ -126,7 +127,12 @@ class TransformerDataset():
         # Computing the distribution of the new embeddings
         params = lm.model.state_dict()
         # embeddings = params["transformer.wte.weight"]
-        embeddings = params["roberta.embeddings.word_embeddings.weight"]
+        if isinstance(lm, RoBERTa):
+            embeddings_key = "roberta.embeddings.word_embeddings.weight"
+            embeddings = params[embeddings_key]
+        elif isinstance(lm, Longformer):
+            embeddings_key = "longformer.embeddings.word_embeddings.weight"
+            embeddings = params[embeddings_key]
         pre_expansion_embeddings = embeddings[:-3, :]
         mu = torch.mean(pre_expansion_embeddings, dim=0)
         n = pre_expansion_embeddings.size()[0]
@@ -143,6 +149,6 @@ class TransformerDataset():
             dim=0
         )
         embeddings[-3:, :] = new_embeddings
-        params["roberta.embeddings.word_embeddings.weight"][-3:, :] = new_embeddings
+        params[embeddings_key][-3:, :] = new_embeddings
         lm.model.load_state_dict(params)
 

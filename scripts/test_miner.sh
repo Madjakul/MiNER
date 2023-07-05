@@ -35,3 +35,4 @@ python3 test_miner.py \
     --corrected_loss ${CORRECTED_LOSS:-0} \
     --gamma ${GAMMA:-1.0}
 echo ${green}--- Done ---${reset}
+

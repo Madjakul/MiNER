@@ -58,19 +58,16 @@ class TransformerDataset():
             logging.info(f"Using camembert-base tokenizer")
             self.tokenizer = AutoTokenizer.from_pretrained(
                 "camembert-base",
-                add_prefix_space=True
             )
         elif max_length > 512:
             logging.info(f"Using allenai/longformer-base-4096 tokenizer")
             self.tokenizer = AutoTokenizer.from_pretrained(
                 "allenai/longformer-base-4096",
-                add_prefix_space=True
             )
         else:
             logging.info(f"Using roberta-base tokenizer")
             self.tokenizer = AutoTokenizer.from_pretrained(
                 "roberta-base",
-                add_prefix_space=True
             )
         self._build_mlm_dataset()
         self.data_collator = DataCollatorForLanguageModeling(

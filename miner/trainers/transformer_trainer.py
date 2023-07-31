@@ -59,13 +59,13 @@ class TransformerTrainer():
         self.lm_path = lm_path
         self.training_args = TrainingArguments(
             output_dir=lm_path,
-            overwrite_output_dir=True,
-            do_train=True,
+            # overwrite_output_dir=True,
+            # do_train=True,
             do_eval=True,
             evaluation_strategy="epoch",
-            warmup_ratio=0.06,
-            learning_rate=5e-4,
-            eval_accumulation_steps=gradient_accumulation_steps,
+            # warmup_ratio=0.06,
+            # learning_rate=5e-10,
+            # eval_accumulation_steps=gradient_accumulation_steps,
             per_device_train_batch_size=per_device_train_batch_size,
             per_device_eval_batch_size=per_device_eval_batch_size,
             gradient_accumulation_steps=gradient_accumulation_steps,
@@ -73,10 +73,10 @@ class TransformerTrainer():
             logging_strategy="epoch",
             save_strategy="no",
             seed=seed,
-            data_seed=seed,
+            # data_seed=seed,
             log_level="error",
             report_to="wandb" if wandb else "none",
-            fp16_full_eval=True,
+            # fp16_full_eval=True,
             save_total_limit=1
         )
         self.trainer = Trainer(

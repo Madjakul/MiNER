@@ -1,7 +1,7 @@
 # miner/modules/ner.py
 
 import logging
-from typing import Optional, Literal, Dict
+from typing import Literal, Dict
 
 import torch
 import torch.nn as nn

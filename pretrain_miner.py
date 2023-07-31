@@ -53,7 +53,7 @@ if __name__=="__main__":
         max_length=args.max_length,
         mlm_probability=args.mlm_probability,
     )
-    lm_dataset.add_vocab(train_corpus, lm)
+    # lm_dataset.add_vocab(train_corpus, lm)
 
     logging.info("*** Training ***")
     lm_trainer = TransformerTrainer(

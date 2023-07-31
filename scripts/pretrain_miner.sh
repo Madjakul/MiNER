@@ -7,15 +7,15 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-TRAIN_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_train_corpus.txt"
-VAL_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_test_corpus.txt"
-MAX_LENGTH=512
-LM_PATH="./tmp/wiki_lm-512"
+# TRAIN_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_train_corpus.txt"
+# VAL_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_test_corpus.txt"
+# MAX_LENGTH=512
+# LM_PATH="./tmp/wiki_lm-512"
 # SEED=0
 # MLM_PROBABILITY=0.0
-LM_TRAIN_BATCH_SIZE=2
+# LM_TRAIN_BATCH_SIZE=2
 # LM_EPOCHS=0
-LM_ACCUMULATION_STEPS=8
+# LM_ACCUMULATION_STEPS=8
 
 WANDB=1
 
@@ -35,9 +35,9 @@ cmd=( python3 pretrain_miner.py \
     --lm_path ${LM_PATH:-"./tmp/cdr_lm-256"} \
     --seed ${SEED:-8} \
     --mlm_probability ${MLM_PROBABILITY:-0.15} \
-    --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-4} \
-    --lm_epochs ${LM_EPOCHS:-100} \
-    --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-8} )
+    --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-2} \
+    --lm_epochs ${LM_EPOCHS:-60} \
+    --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-16} )
 
 if [[ -v WANDB ]]; then
     cmd+=( --wandb )

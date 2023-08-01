@@ -48,7 +48,7 @@ class TransformerDataset():
 
     def __init__(
         self, lang: Literal["en", "fr"], train_corpus: List[str],
-        valid_corpus: List[str], max_length: int, mlm_probability: float=0.15
+        valid_corpus: List[str], max_length: int, mlm_probability: float
     ):
         self.mlm_ds = None
         self.max_length = max_length
@@ -91,7 +91,9 @@ class TransformerDataset():
             batch["text"],
             truncation=True,
             max_length=self.max_length,
-            return_special_tokens_mask=True
+            padding="max_length",
+            return_special_tokens_mask=True,
+            return_tensors="pt"
         )
 
     def add_vocab(

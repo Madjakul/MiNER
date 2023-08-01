@@ -34,9 +34,9 @@ cmd=( python3 pretrain_miner.py \
     --max_length ${MAX_LENGTH:-256} \
     --lm_path ${LM_PATH:-"./tmp/cdr_lm-256"} \
     --seed ${SEED:-8} \
-    --mlm_probability ${MLM_PROBABILITY:-0.15} \
+    --mlm_probability ${MLM_PROBABILITY:-0.2} \
     --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-2} \
-    --lm_epochs ${LM_EPOCHS:-60} \
+    --lm_epochs ${LM_EPOCHS:-10} \  # à supprimer
     --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-16} )
 
 if [[ -v WANDB ]]; then

@@ -9,10 +9,6 @@ from torch.utils.data import Dataset
 from transformers import AutoTokenizer
 
 
-UNLABELED_INDEX = -1
-IMPOSSIBLE_SCORE = -100
-
-
 class NER_Dataset(Dataset):
     """Custom Dataset taiking care of the training and the inference of the
     NER.
@@ -61,7 +57,6 @@ class NER_Dataset(Dataset):
         self.iterable_corpus = iterable_corpus
         self.iterable_labels = iterable_labels
         self.label2idx = {label: idx for idx, label in enumerate(labels)}
-        # self.label2idx["PAD"] = len(self.label2idx)
         self.label2idx["B-UNK"] = -1
         self.label2idx["I-UNK"] = -1
         if lang == "fr":
@@ -79,17 +74,13 @@ class NER_Dataset(Dataset):
         self.max_length = max_length
         self.device = device
         self.word_ids = []
-        self.inputs, self.outputs = self._compute_dataset()
+        self.inputs, self.outputs, self.masks = self._compute_dataset()
 
     def __getitem__(self, idx):
         x = self.inputs[idx]
-        y = torch.LongTensor(self.outputs[idx], device=self.device)
-        z = np.nan_to_num(
-            np.array(self.word_ids[idx], dtype=np.float32),
-            nan=-1
-        )
-        z = torch.LongTensor(z, device=self.device)
-        return x, y, z
+        y = self.outputs[idx]
+        mask = self.masks[idx]
+        return x, y, mask
 
     def __len__(self):
         if self.inputs is None:
@@ -112,15 +103,20 @@ class NER_Dataset(Dataset):
     def _compute_dataset(self):
         outputs = []
         inputs = []
+        masks = []
         for idx, text in enumerate(self.iterable_corpus):
             local_inputs = self._tokenize(text)
             local_outputs = [
                 self.label2idx[label] for label in self.iterable_labels[idx]    # type: ignore
             ]
-            local_outputs = self._align_labels(local_inputs, local_outputs)
+            local_outputs, local_mask = self._align_labels(local_inputs, local_outputs)
             inputs.append(local_inputs)
             outputs.append(local_outputs)
-        return inputs, outputs
+            masks.append(local_mask)
+        inputs = torch.Tensor(inputs, dtype=torch.float32, device=self.device)
+        outputs = torch.Tensor(outputs, dtype=torch.int64, device=self.device)
+        masks = torch.Tensor(masks, dtype=torch.uint8, device=self.device)
+        return inputs, outputs, masks
 
     def _align_labels(
         self, inputs: transformers.BatchEncoding, labels: List[int]
@@ -128,47 +124,18 @@ class NER_Dataset(Dataset):
         word_ids = inputs.word_ids()                    # type: ignore
         self.word_ids.append(word_ids)
         label_ids = []
+        local_mask = []
         previous_word_idx = -1
         for word_idx in word_ids:
             if word_idx is None:
-                label_ids.append(IMPOSSIBLE_SCORE)
+                label_ids.append(self.label2idx["O"])
+                local_mask.append(0)
             elif word_idx != previous_word_idx:         # type: ignore
                 label_ids.append(labels[word_idx])
+                local_mask.append(1)
             else:
-                label_ids.append(IMPOSSIBLE_SCORE)
+                label_ids.append(self.label2idx["O"])
+                local_mask.append(0)
             previous_word_idx = word_idx
-        return label_ids
-
-    @staticmethod
-    def create_possible_tag_masks(num_tags: int, tags: torch.ByteTensor):
-        """Transforms a vector of single integers representing the labels into a
-        multi-class binary matrix.
-
-        Parameters
-        ----------
-        num_tags: ``int``
-            Number of labels.
-        tags: ``torch.Tensor``
-            Vector of integers.
-
-        Returns
-        -------
-        masks: ``torch.Tensor``
-            Multi-class binary matrix.
-        """
-        copy_tags = tags.clone()
-        no_annotation_idx = (copy_tags == UNLABELED_INDEX)
-        copy_tags[copy_tags == UNLABELED_INDEX] = 0
-
-        tags_ = torch.unsqueeze(copy_tags, 2)
-        masks = torch.zeros(
-            tags_.size(0),
-            tags_.size(1),
-            num_tags,
-            dtype=torch.uint8,
-            device=tags.device
-        )
-        masks.scatter_(2, tags_, 1)
-        masks[no_annotation_idx] = 1
-        return masks
+        return label_ids, local_mask
 

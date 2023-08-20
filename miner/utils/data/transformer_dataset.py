@@ -123,31 +123,36 @@ class TransformerDataset():
         self.tokenizer.add_tokens(list(new_tokens))
         logging.info("Resizing the Language model")
         lm.model.resize_token_embeddings(len(self.tokenizer))
-        # # Computing the distribution of the new embeddings
-        # params = lm.model.state_dict()
-        # # embeddings = params["transformer.wte.weight"]
-        # if isinstance(lm, RoBERTa):
-        #     embeddings_key = "roberta.embeddings.word_embeddings.weight"
-        #     embeddings = params[embeddings_key]
-        # elif isinstance(lm, Longformer):
-        #     embeddings_key = "longformer.embeddings.word_embeddings.weight"
-        #     embeddings = params[embeddings_key]
-        # pre_expansion_embeddings = embeddings[:-3, :]
-        # mu = torch.mean(pre_expansion_embeddings, dim=0)
-        # n = pre_expansion_embeddings.size()[0]
-        # sigma = (
-        #     (pre_expansion_embeddings - mu).T @ (pre_expansion_embeddings - mu)
-        # ) / n
-        # dist = torch.distributions.multivariate_normal.MultivariateNormal(
-        #     mu,
-        #     covariance_matrix=1e-5*sigma
-        # )
-        # # Loading the new embeddings in the model
-        # new_embeddings = torch.stack(
-        #     tuple((dist.sample() for _ in range(3))),
-        #     dim=0
-        # )
-        # embeddings[-3:, :] = new_embeddings
-        # params[embeddings_key][-3:, :] = new_embeddings
-        # lm.model.load_state_dict(params)
+        # Computing the distribution of the new embeddings
+        params = lm.model.state_dict()
+        # embeddings = params["transformer.wte.weight"]
+        if isinstance(lm, RoBERTa):
+            embeddings_key = "roberta.embeddings.word_embeddings.weight"
+            embeddings = params[embeddings_key]
+        elif isinstance(lm, Longformer):
+            embeddings_key = "longformer.embeddings.word_embeddings.weight"
+            embeddings = params[embeddings_key]
+        elif isinstance(lm, CamemBERT):
+            embeddings_key = "camembert.embeddings.word_embeddings.weight"
+            embeddings = params[embeddings_key]
+        else:
+            raise ValueError(f"Unrecognized pre-trained model: {lm}")
+        pre_expansion_embeddings = embeddings[:-3, :]
+        mu = torch.mean(pre_expansion_embeddings, dim=0)
+        n = pre_expansion_embeddings.size()[0]
+        sigma = (
+            (pre_expansion_embeddings - mu).T @ (pre_expansion_embeddings - mu)
+        ) / n
+        dist = torch.distributions.multivariate_normal.MultivariateNormal(
+            mu,
+            covariance_matrix=1e-5*sigma
+        )
+        # Loading the new embeddings in the model
+        new_embeddings = torch.stack(
+            tuple((dist.sample() for _ in range(3))),
+            dim=0
+        )
+        embeddings[-3:, :] = new_embeddings
+        params[embeddings_key][-3:, :] = new_embeddings
+        lm.model.load_state_dict(params)
 

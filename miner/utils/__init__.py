@@ -1,7 +1,7 @@
 # miner/utils/__init__.py
 
 from miner.utils.logger import logging_config
-from miner.utils.math_utils import log_sum_exp
+from miner.utils.crf_utils import IMPOSSIBLE_SCORE, create_possible_tag_masks
 from miner.utils.arg_parse import (
     PreprocessArgParse,
     PretrainArgParse,
@@ -10,10 +10,11 @@ from miner.utils.arg_parse import (
 
 
 __all__ = [
-    "log_sum_exp",
+    "IMPOSSIBLE_SCORE",
     "PreprocessArgParse",
     "PretrainArgParse",
     "TrainArgParse",
-    "logging_config"
+    "logging_config",
+    "create_possible_tag_masks",
 ]
 

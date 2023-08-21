@@ -63,7 +63,7 @@ class PartialCRF(BaseCRF):
         # Start transition score and first emission
         first_possible_tag = possible_tags[0]
         alpha = self.start_transitions + emissions[0]                       # (batch_size, num_tags)
-        alpha[(first_possible_tag == 0)].fill_(IMPOSSIBLE_SCORE)
+        alpha[(first_possible_tag == 0)] = IMPOSSIBLE_SCORE
 
         for i in range(1, sequence_length):
             current_possible_tags = possible_tags[i-1]                      # (batch_size, num_tags)
@@ -71,19 +71,15 @@ class PartialCRF(BaseCRF):
 
             # Emissions scores
             emissions_score = emissions[i]
-            emissions_score[(next_possible_tags == 0)].fill_(IMPOSSIBLE_SCORE)
+            emissions_score[(next_possible_tags == 0)] = IMPOSSIBLE_SCORE
             emissions_score = emissions_score.view(batch_size, 1, num_tags)
 
             # Transition scores
             transition_scores = self.transitions.unsqueeze(0).expand(
                 batch_size, num_tags, num_tags
             ).clone()
-            transition_scores[(current_possible_tags == 0)].fill_(
-                IMPOSSIBLE_SCORE
-            )
-            transition_scores.transpose(1, 2)[(next_possible_tags == 0)].fill_(
-                IMPOSSIBLE_SCORE
-            )
+            transition_scores[(current_possible_tags == 0)] = IMPOSSIBLE_SCORE
+            transition_scores.transpose(1, 2)[(next_possible_tags == 0)] = IMPOSSIBLE_SCORE
 
             # Broadcast alpha
             broadcast_alpha = alpha.unsqueeze(2)
@@ -107,8 +103,9 @@ class PartialCRF(BaseCRF):
                 * sequence_length
             ]
         )
-        end_transitions[(end_transitions == 0)].fill_(IMPOSSIBLE_SCORE)
+        end_transitions[(end_transitions == 0)] = IMPOSSIBLE_SCORE
         stops = alpha + end_transitions                                     # (batch_size, num_tags)
+        print(stops)
         return torch.logsumexp(stops, 1)                                    # (batch_size,) # type: ignore
 
     def _denominator_score(
@@ -131,11 +128,11 @@ class PartialCRF(BaseCRF):
         torch.FloatTensor
             Log-partition score. (batch_size,)
         """
-        _, sequence_length, _ = emissions.data.shape
+        _, sequence_length, num_tags = emissions.data.shape
         emissions = emissions.transpose(0, 1).contiguous()                  # type: ignore
         mask = mask.float().transpose(0, 1).contiguous()                    # type: ignore
         # Start transition score and first emissions score
-        alpha = self.start_transitions.unsqueeze(0) + emissions[0]
+        alpha = self.start_transitions.view(1, num_tags) + emissions[0]
 
         for i in range(1, sequence_length):
             emissions_score = emissions[i].unsqueeze(1)                     # (batch_size, 1, num_tags)
@@ -202,6 +199,8 @@ class PartialCRF(BaseCRF):
         if loss_fn == "nll":
             gold_score = self._numerator_score(emissions, mask, possible_tags)  # (batch_size,) # type: ignore
             forward_score = self._denominator_score(emissions, mask)            # (batch_size,) # type: ignore
+            print(gold_score)
+            print(forward_score)
             nll = forward_score - gold_score                                    # (batch_size,)
             return torch.mean(nll)                                              # Mean instead of sum # type: ignore
         pred = self.marginal_probabilities(emissions, mask).transpose(0, 1)     # (batch_size, sequence_length, num_tags)

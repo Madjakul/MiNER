@@ -194,7 +194,7 @@ class BaseCRF(nn.Module):
 
     def viterbi_decode(
         self, emissions: torch.Tensor, mask: Optional[torch.ByteTensor]=None
-    ) -> List[int]:
+    ) -> List[List[int]]:
         """
         Dynamically computes the best sequence of tags.
 

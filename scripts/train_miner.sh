@@ -7,26 +7,26 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-TRAIN_DATA_PATH="./data/ncbi_disease/distant/ncbi_train.conll"
-LABELS_PATH="./data/ncbi_disease/labels.txt"
-LM_PATH="./tmp/ncbi_lm-128"
-MAX_LENGTH=128
-NER_BATCH_SIZE=32
+# TRAIN_DATA_PATH="./data/ncbi_disease/distant/ncbi_train.conll"
+# LABELS_PATH="./data/ncbi_disease/labels.txt"
+# LM_PATH="roberta-base"
+# MAX_LENGTH=128
+# NER_BATCH_SIZE=32
 # LR=0.0005
 # MOMENTUM=0.0
 # CLIP=
 # PATIENCE=5
 # NER_EPOCHS=15
 # NER_ACCUMULATION_STEPS=4
-NER_PATH="./tmp/ncbi_ner-128.pt"
+# NER_PATH="./tmp/ncbi_ner-128.pt"
 # DORPOUT=0.2
 # SEED=0
 
-VAL_DATA_PATH="./data/ncbi_disease/gold/ncbi_test.conll"
+VAL_DATA_PATH="./data/bc5cdr/gold/cdr_test.conll"
 SAM=1
 CORRECTED_LOSS=1
 
-WANDB=1
+# WANDB=
 
 # *****************************************************************************
 

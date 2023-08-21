@@ -61,15 +61,15 @@ class NER_Dataset(Dataset):
         self.label2idx["I-UNK"] = -1
         if lang == "fr":
             self.tokenizer = AutoTokenizer.from_pretrained(
-                "camembert-base",
+                "camembert-base",add_prefix_space=True
             )
         elif max_length > 512:
             self.tokenizer = AutoTokenizer.from_pretrained(
-                "allenai/longformer-base-4096",
+                "allenai/longformer-base-4096",add_prefix_space=True
             )
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(
-                "roberta-base",
+                "roberta-base",add_prefix_space=True
             )
         self.max_length = max_length
         self.device = device
@@ -96,9 +96,9 @@ class NER_Dataset(Dataset):
             max_length=self.max_length,
             padding="max_length",
             truncation=True,
-            return_tensors="pt"
+            return_tensors="pt",
         )
-        return inputs
+        return inputs.to(self.device)
 
     def _compute_dataset(self):
         outputs = []
@@ -113,9 +113,8 @@ class NER_Dataset(Dataset):
             inputs.append(local_inputs)
             outputs.append(local_outputs)
             masks.append(local_mask)
-        inputs = torch.Tensor(inputs, dtype=torch.float32, device=self.device)
-        outputs = torch.Tensor(outputs, dtype=torch.int64, device=self.device)
-        masks = torch.Tensor(masks, dtype=torch.uint8, device=self.device)
+        outputs = torch.tensor(outputs, dtype=torch.int64, device=self.device)
+        masks = torch.tensor(masks, dtype=torch.uint8, device=self.device)
         return inputs, outputs, masks
 
     def _align_labels(

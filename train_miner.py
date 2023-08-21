@@ -82,7 +82,6 @@ if __name__=="__main__":
         lm_path=args.lm_path,
         num_labels=len(labels),
         device=DEVICE,
-        corrected_loss=args.corrected_loss,
         dropout=args.dropout,
     ).to(DEVICE)
     logging.info("Training...")
@@ -100,9 +99,10 @@ if __name__=="__main__":
         sam=args.sam,
         idx2label = {v: k for k, v in train_dataset.label2idx.items()}
     )
-    if "val_dataloader" in locals():
-        trainer.train(train_dataloader, val_dataloader, wandb_=args.wandb)
-    else:
-        trainer.train(train_dataloader, wandb_=args.wandb_)
+    trainer.train(
+        train_dataloader,
+        val_dataloader=val_dataloader if "val_dataloader" in locals() else None,
+        wandb_=args.wandb
+    )
     logging.info("--- Done ---\n\n")
 

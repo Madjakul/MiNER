@@ -1,7 +1,7 @@
 # miner/modules/ner.py
 
 import logging
-from typing import Literal, Dict
+from typing import Optional, Literal, Dict
 
 import torch
 import torch.nn as nn
@@ -9,6 +9,7 @@ from transformers import (
     RobertaModel, CamembertModel, LongformerModel
 )
 
+from miner.modules.partial_crf import PartialCRF
 
 
 class NER(nn.Module):
@@ -47,7 +48,8 @@ class NER(nn.Module):
 
     def __init__(
         self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
-        max_length: int, device: Literal["cpu", "cuda"], dropout: float=0.2,
+        max_length: int, device: Literal["cpu", "cuda"], dropout: float,
+        q: Optional[float]=None, padding_idx: Optional[int]=None
     ):
         super(NER, self).__init__()
         self.device = device
@@ -60,9 +62,17 @@ class NER(nn.Module):
             self.transformer = RobertaModel.from_pretrained(lm_path)
         self.linear_dropout = nn.Dropout(dropout)
         self.fc = nn.Linear(768, num_labels)    # (batch_size, max_length, num_labels)
+        self.crf = PartialCRF(
+            num_tags=num_labels,
+            device=device,
+            q=q,
+            padding_idx=padding_idx
+        )
 
     def forward(
-        self, inputs: Dict[str, torch.Tensor], outputs: torch.Tensor
+        self, inputs: Dict[str, torch.Tensor], outputs: torch.LongTensor,
+        mask: Optional[torch.ByteTensor]=None,
+        loss_fn: Optional[Literal["nll", "c_nll", "gce"]]=None
     ):
         """Performs the forward pass.
 
@@ -80,10 +90,24 @@ class NER(nn.Module):
             Result of the negative log-likelihood performed over the
             inference's results, expressed as a rank 0 tensor.
         """
-        masks = inputs["attention_mask"].squeeze(1).to(self.device)
-        h = self.transformer(                                           # type: ignore
-            input_ids=inputs["input_ids"].squeeze(1).to(self.device),
-            attention_mask=masks
-        ).last_hidden_state.to(self.device)
+        h = self.transformer(**inputs).last_hidden_state
         logits = self.fc(self.linear_dropout(h))
+        loss = self.crf(
+            emissions=logits,
+            tags=outputs,
+            mask=mask,
+            loss_fn="nll" if loss_fn is None else loss_fn
+        )
+        return loss
+
+    def viterbi_decode(
+        self, inputs: Dict[str, torch.Tensor],
+        masks: Optional[torch.ByteTensor]=None
+    ):
+        """Pass
+        """
+        h = self.transformer(**inputs).last_hidden_state
+        logits = self.fc(self.linear_dropout(h))
+        outputs = self.crf.viterbi_decode(logits, masks)
+        return outputs
 

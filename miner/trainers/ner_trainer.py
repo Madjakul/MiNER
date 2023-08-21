@@ -155,9 +155,11 @@ class NER_Trainer():
         losses = []
         x_list, y_list = [], []
         idx = 0
-        for x, y, _ in tqdm(train_dataloader):
+        for x, y, mask in tqdm(train_dataloader):
             self.ner.zero_grad()
-            loss = self.ner(x, y) / self.accumulation_steps
+            x["input_ids"] = x["input_ids"].squeeze(1)
+            x["attention_mask"] = x["attention_mask"].squeeze(1)
+            loss = self.ner(x, y, mask=mask, loss_fn="nll") / self.accumulation_steps
             losses.append(loss.item())                                      # Only the first loss is saved for statistics
             loss.backward()
             x_list.append(x)                                                # Save the inputs
@@ -176,8 +178,8 @@ class NER_Trainer():
                         loss.backward()
                     if self.clip is not None:
                         nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
-                    self.optimizer.second_step(zero_grad=True)                  # Second step
-                    x_list, y_list = [], []                                     # Clear
+                    self.optimizer.second_step(zero_grad=True)                      # Second step
+                    x_list, y_list = [], []                                         # Clear
                 else:
                     self.optimizer.step()
             idx += 1
@@ -187,20 +189,18 @@ class NER_Trainer():
     @torch.no_grad()
     def _validate(self, val_dataloader: DataLoader):
         logging.info("Validating...")
-        torch.set_printoptions(profile="full")
         self.ner.eval()
         y_true = []
         y_pred = []
-        for x, y, _ in val_dataloader:
-            result = self.ner.viterbi_decode(x)
-            y_pred.extend(result)
-            y_true.extend(y.tolist())
+        for x, y, masks in val_dataloader:
+            x["input_ids"] = x["input_ids"].squeeze(1)
+            x["attention_mask"] = x["attention_mask"].squeeze(1)
+            result = self.ner.viterbi_decode(x, masks=masks)
+            y_pred.extend([[self.idx2label[tag] for tag in tag_seq] for tag_seq in result])
+            y_true.extend([[self.idx2label[tag] for tag in tag_seq[1:]] for tag_seq in y.tolist()])
         for i, y in enumerate(y_pred):
-            for j, _ in enumerate(y):
-                y_pred[i][j] = self.idx2label[y_pred[i][j]]
-                y_true[i][j] = self.idx2label[y_true[i][j]]
-            y_true[i] = y_true[i][:len(y_pred[i])]
-            y_true[i][-1] = self.idx2label[self.O] # Replace the </s> tagged with PAD by an O for proper alignement
+            y_true[i] = y_true[i][:len(y)]
+        print(y_pred, "\n\n")
         metrics = {
             "f1": f1_score(y_true, y_pred, mode="strict", scheme=IOB2),
             "p": precision_score(y_true, y_pred, mode="strict", scheme=IOB2),

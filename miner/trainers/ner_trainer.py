@@ -117,8 +117,8 @@ class NER_Trainer():
     def __init__(
         self, ner: NER, lr: float, patience: int, epochs: int, max_length: int,
         device: Literal["cpu", "cuda"], accumulation_steps: int, ner_path: str,
-        momentum: float,sam: bool, idx2label: Dict[int, str],
-        clip: float
+        momentum: float,sam: bool, idx2label: Dict[int, str], clip: float,
+        loss_fn: Optional[str]=None
     ):
         self.sam = sam
         self.path = ner_path
@@ -129,7 +129,7 @@ class NER_Trainer():
         self.max_length = max_length
         self.clip = clip
         self.idx2label = idx2label
-        self.O = [k for k, v in idx2label.items() if v == "O"][0]
+        self.loss_fn = "nll" if loss_fn is None else loss_fn
         if sam:
             self.optimizer= SAM(
                 ner.parameters(),
@@ -150,57 +150,63 @@ class NER_Trainer():
         )
 
     def _fit(self, train_dataloader: DataLoader):
-        logging.info("Training...")
         self.ner.train()
         losses = []
         x_list, y_list = [], []
-        idx = 0
-        for x, y, mask in tqdm(train_dataloader):
-            self.ner.zero_grad()
-            x["input_ids"] = x["input_ids"].squeeze(1)
-            x["attention_mask"] = x["attention_mask"].squeeze(1)
-            loss = self.ner(x, y, mask=mask, loss_fn="nll") / self.accumulation_steps
-            losses.append(loss.item())                                      # Only the first loss is saved for statistics
+        for idx, (x, y, _) in enumerate(tqdm(train_dataloader)):
+            self.optimizer.zero_grad()
+            x = {key: val.squeeze(1) for key, val in x.items()}
+            loss = (
+                self.ner(x, y, loss_fn=self.loss_fn)
+                / self.accumulation_steps
+            )
+            losses.append(loss.item())
             loss.backward()
-            x_list.append(x)                                                # Save the inputs
-            y_list.append(y)                                                # Save the targets
-            if ((idx + 1) % self.accumulation_steps == 0) \
-            or ((idx + 1) == len(train_dataloader)):
+            x_list.append(x)
+            y_list.append(y)
+            if (idx + 1) % self.accumulation_steps == 0 \
+                or (idx + 1) == len(train_dataloader):
                 if self.clip is not None:
-                    nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
+                    nn.utils.clip_grad_norm_(
+                        self.ner.parameters(),
+                        self.clip
+                    )
                 if self.sam:
-                    self.optimizer.first_step(zero_grad=True)                   # First step
+                    self.optimizer.first_step(zero_grad=True)
                     for i in range(len(y_list)):
                         loss = (
-                            self.ner(x_list[i], y_list[i])
+                            self.ner(x_list[i], y_list[i], loss_fn=self.loss_fn)
                             / self.accumulation_steps
                         )
                         loss.backward()
                     if self.clip is not None:
-                        nn.utils.clip_grad_norm_(self.ner.parameters(), self.clip)  # type: ignore
-                    self.optimizer.second_step(zero_grad=True)                      # Second step
-                    x_list, y_list = [], []                                         # Clear
+                        nn.utils.clip_grad_norm_(
+                            self.ner.parameters(),
+                            self.clip
+                        )
+                    self.optimizer.second_step(zero_grad=True)
+                    x_list, y_list = [], []
                 else:
                     self.optimizer.step()
-            idx += 1
-        train_loss = np.mean(losses)
-        return train_loss
+        return np.mean(losses)
 
     @torch.no_grad()
     def _validate(self, val_dataloader: DataLoader):
         logging.info("Validating...")
+        torch.set_printoptions(profile="full")
         self.ner.eval()
         y_true = []
         y_pred = []
-        for x, y, masks in val_dataloader:
-            x["input_ids"] = x["input_ids"].squeeze(1)
-            x["attention_mask"] = x["attention_mask"].squeeze(1)
-            result = self.ner.viterbi_decode(x, masks=masks)
-            y_pred.extend([[self.idx2label[tag] for tag in tag_seq] for tag_seq in result])
-            y_true.extend([[self.idx2label[tag] for tag in tag_seq[1:]] for tag_seq in y.tolist()])
+        for x, y, _ in val_dataloader:
+            x = {key: val.squeeze(1) for key, val in x.items()}
+            result = self.ner.viterbi_decode(x)
+            y_pred.extend(result)
+            y_true.extend(y.tolist())
         for i, y in enumerate(y_pred):
-            y_true[i] = y_true[i][:len(y)]
-        print(y_pred, "\n\n")
+            for j, _ in enumerate(y):
+                y_pred[i][j] = self.idx2label[y_pred[i][j]]
+                y_true[i][j] = self.idx2label[y_true[i][j]]
+            y_true[i] = y_true[i][:len(y_pred[i])]
         metrics = {
             "f1": f1_score(y_true, y_pred, mode="strict", scheme=IOB2),
             "p": precision_score(y_true, y_pred, mode="strict", scheme=IOB2),

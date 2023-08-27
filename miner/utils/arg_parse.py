@@ -177,11 +177,6 @@ class TrainArgParse():
             help="Gradient clipping norm."
         )
         parser.add_argument(
-            "--corrected_loss",
-            action="store_true",
-            help="Wether to use or not the corrected loss with nlu."
-        )
-        parser.add_argument(
             "--patience",
             type=int,
             help="Number of steps before actualising the learning rate."
@@ -201,6 +196,20 @@ class TrainArgParse():
             "--dropout",
             type=float,
             help="Dropout between pretrained LM and partial CRF."
+        )
+        parser.add_argument(
+            "--loss_fn",
+            type=str,
+            nargs="?",
+            const=None,
+            help="nll, c_nll or gce."
+        )
+        parser.add_argument(
+            "--q",
+            type=float,
+            nargs="?",
+            const=None,
+            help="q hyperparameter for GCE loss."
         )
         parser.add_argument(
             "--val_data_path",

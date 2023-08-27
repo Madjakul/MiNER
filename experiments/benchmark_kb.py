@@ -13,13 +13,13 @@ from miner.utils.data import preprocessing as pp
 
 GOLD_CONLL_LIST = [
     "./data/bc5cdr/gold/cdr_test.conll",
-    # "./data/ncbi_disease/gold/ncbi_test.conll",
-    # "./data/wikigold/gold/wiki_test.conll"
+    "./data/ncbi_disease/gold/ncbi_test.conll",
+    "./data/wikigold/gold/wiki_test.conll"
 ]
 DISTANT_CONLL_LIST = [
     "./data/bc5cdr/distant/cdr_test_autoner.conll",
-    # "./data/ncbi_disease/distant/ncbi_test.conll",
-    # "./data/wikigold/distant/wiki_test.conll"
+    "./data/ncbi_disease/distant/ncbi_test.conll",
+    "./data/wikigold/distant/wiki_test.conll"
 ]
 COLUMNS = ["dataset", "precision", "recall", "f1"]
 DATA = []

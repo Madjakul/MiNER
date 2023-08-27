@@ -13,7 +13,7 @@ class TransformerTrainer():
 
     Parameters
     ----------
-    lm: ``miner.modules.RoBERTa``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
+    lm: ``miner.modules.DeBERTaV2``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
         Language model checkpoint from **HuggingFace**.
     lm_path: ``str``
         Path to the local file that will contained the trained language model.
@@ -67,8 +67,8 @@ class TransformerTrainer():
             per_device_train_batch_size=per_device_train_batch_size,
             per_device_eval_batch_size=per_device_eval_batch_size,
             gradient_accumulation_steps=gradient_accumulation_steps,
-            max_steps=300,
-            num_train_epochs=300 / (
+            max_steps=900,
+            num_train_epochs=900 / (
                 len(lm_dataset.mlm_ds["train"]) / per_device_train_batch_size
             ),
             logging_strategy="epoch",

@@ -65,7 +65,7 @@ class TransformerDataset():
                 "allenai/longformer-base-4096",
             )
         else:
-            logging.info(f"Using roberta-base tokenizer")
+            logging.info(f"Using microsoft/deberta-v3-base tokenizer")
             self.tokenizer = AutoTokenizer.from_pretrained(
                 "roberta-base",
             )
@@ -108,7 +108,7 @@ class TransformerDataset():
         ----------
         corpus: ``list``
             List of tokens per document.
-        lm: ``miner.modules.RoBERTa``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
+        lm: ``miner.modules.DeBERTaV2``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
             Pretrained large language model.
 
         References

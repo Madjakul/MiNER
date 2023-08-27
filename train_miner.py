@@ -71,7 +71,7 @@ if __name__=="__main__":
         )
         val_dataloader = DataLoader(
             val_dataset,
-            batch_size=args.ner_batch_size,
+            batch_size=args.ner_batch_size * 2,
             shuffle=True
         )
 
@@ -83,6 +83,7 @@ if __name__=="__main__":
         num_labels=len(labels),
         device=DEVICE,
         dropout=args.dropout,
+        q=args.q
     ).to(DEVICE)
     logging.info("Training...")
     trainer = NER_Trainer(
@@ -97,7 +98,8 @@ if __name__=="__main__":
         ner_path=args.ner_path,
         clip=args.clip,
         sam=args.sam,
-        idx2label = {v: k for k, v in train_dataset.label2idx.items()}
+        idx2label = {v: k for k, v in train_dataset.label2idx.items()},
+        loss_fn=args.loss_fn
     )
     trainer.train(
         train_dataloader,

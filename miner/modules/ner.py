@@ -71,7 +71,6 @@ class NER(nn.Module):
 
     def forward(
         self, inputs: Dict[str, torch.Tensor], outputs: torch.LongTensor,
-        mask: Optional[torch.ByteTensor]=None,
         loss_fn: Optional[Literal["nll", "c_nll", "gce"]]=None
     ):
         """Performs the forward pass.
@@ -95,19 +94,21 @@ class NER(nn.Module):
         loss = self.crf(
             emissions=logits,
             tags=outputs,
-            mask=mask,
+            mask=inputs["attention_mask"],
             loss_fn="nll" if loss_fn is None else loss_fn
         )
         return loss
 
     def viterbi_decode(
         self, inputs: Dict[str, torch.Tensor],
-        masks: Optional[torch.ByteTensor]=None
     ):
         """Pass
         """
         h = self.transformer(**inputs).last_hidden_state
         logits = self.fc(self.linear_dropout(h))
-        outputs = self.crf.viterbi_decode(logits, masks)
+        outputs = self.crf.viterbi_decode(
+            logits,
+            mask=inputs["attention_mask"]
+        )
         return outputs
 

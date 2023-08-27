@@ -56,12 +56,12 @@ class BaseCRF(nn.Module):
         self.num_tags = num_tags
         self.start_transitions = nn.Parameter(
             nn.init.uniform_(
-                torch.empty(num_tags, device=self.device), -1.0, 1.0
+                torch.empty(num_tags, device=self.device), -0.1, 0.1
             )
         )
         self.end_transitions = nn.Parameter(
             nn.init.uniform_(
-                torch.randn(num_tags, device=self.device), -1.0, 1.0
+                torch.randn(num_tags, device=self.device), -0.1, 0.1
             )
         )
         init_transition = torch.empty(num_tags, num_tags, device=self.device)

@@ -2,7 +2,6 @@
 
 from typing import Literal, Union, Optional, List
 
-import numpy as np
 import torch
 import transformers
 from torch.utils.data import Dataset
@@ -61,15 +60,15 @@ class NER_Dataset(Dataset):
         self.label2idx["I-UNK"] = -1
         if lang == "fr":
             self.tokenizer = AutoTokenizer.from_pretrained(
-                "camembert-base",add_prefix_space=True
+                "camembert-base", add_prefix_space=True
             )
         elif max_length > 512:
             self.tokenizer = AutoTokenizer.from_pretrained(
-                "allenai/longformer-base-4096",add_prefix_space=True
+                "allenai/longformer-base-4096", add_prefix_space=True
             )
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(
-                "roberta-base",add_prefix_space=True
+                "roberta-base", add_prefix_space=True
             )
         self.max_length = max_length
         self.device = device
@@ -133,7 +132,7 @@ class NER_Dataset(Dataset):
                 label_ids.append(labels[word_idx])
                 local_mask.append(1)
             else:
-                label_ids.append(self.label2idx["O"])
+                label_ids.append(labels[word_idx])
                 local_mask.append(0)
             previous_word_idx = word_idx
         return label_ids, local_mask

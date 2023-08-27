@@ -105,7 +105,6 @@ class PartialCRF(BaseCRF):
         )
         end_transitions[(end_transitions == 0)] = IMPOSSIBLE_SCORE
         stops = alpha + end_transitions                                     # (batch_size, num_tags)
-        print(stops)
         return torch.logsumexp(stops, 1)                                    # (batch_size,) # type: ignore
 
     def _denominator_score(
@@ -192,21 +191,20 @@ class PartialCRF(BaseCRF):
                 with noise-robust learning and language model augmented
                 self-training." arXiv preprint arXiv:2109.05003 (2021).
         """
-        if mask is None:
-            mask = torch.ones_like(tags, dtype=torch.uint8, device=self.device) # type: ignore
+        # if mask is None:
+        #     mask = torch.ones_like(tags, dtype=torch.uint8, device=self.device) # type: ignore
         possible_tags = create_possible_tag_masks(self.num_tags, tags)          # (batch_size, sequence_length, num_tags)
         # If you want NLL
         if loss_fn == "nll":
             gold_score = self._numerator_score(emissions, mask, possible_tags)  # (batch_size,) # type: ignore
             forward_score = self._denominator_score(emissions, mask)            # (batch_size,) # type: ignore
-            print(gold_score)
-            print(forward_score)
             nll = forward_score - gold_score                                    # (batch_size,)
             return torch.mean(nll)                                              # Mean instead of sum # type: ignore
         pred = self.marginal_probabilities(emissions, mask).transpose(0, 1)     # (batch_size, sequence_length, num_tags)
         batch_size, sequence_length, num_tags = pred.shape
         p_mask = (
             mask.unsqueeze(2).expand(batch_size, sequence_length, num_tags)     # type: ignore
+            * possible_tags
             != 0.
         )
         # If you want corrected NLL
@@ -218,9 +216,9 @@ class PartialCRF(BaseCRF):
             nlu[torch.isnan(nlu) | torch.isinf(nlu)].fill_(1e-4)
             weights = []
             weights_bar = []
-            for sequence in pred:
-                p = torch.masked_select(pred, p_mask)                           # (possible_tags==1,)
-                hist = torch.histc(sequence, bins=20, min=0., max=1.)
+            for i, sequence in enumerate(pred):
+                p = torch.masked_select(sequence, p_mask[i])                    # (possible_tags==1,)
+                hist = torch.histc(p, bins=20, min=0., max=1.)
                 hist_mask = hist > 0
                 hist = hist[hist_mask]
                 max_weight = torch.max(hist)
@@ -233,9 +231,23 @@ class PartialCRF(BaseCRF):
             return torch.mean(c_nll)                                            # type: ignore
         # If you want GCE
         if loss_fn == "gce":
-            p = torch.masked_select(pred, p_mask)                               # (possible_tags==1,)
-            gce = (1 - p**self.q) / self.q
-            gce = torch.mean(gce)                                               # (loss.view(-1)*weights).sum() / weights.sum()
-            return gce                                                          # type: ignore
+            tau = 1 / num_tags
+            gce = []
+            for i, sequence in enumerate(pred):
+                p = torch.masked_select(sequence, p_mask[i])
+                weights = torch.where(p > tau, 1., 0.)
+                local_gce = ((1 - p**self.q) / self.q)
+                local_gce = ((weights * local_gce) + 1e-4).sum() / (weights + 1e-4).sum()
+                gce.append(local_gce)
+            gce = torch.stack(gce)
+            return torch.mean(gce)
+            # tau = 1 / num_tags
+            # p = torch.masked_select(pred, p_mask)                               # (possible_tags==1,)
+            # weights = torch.where(p >= tau , 1., 0.)
+            # gce = ((1 - p**self.q) / self.q)
+            # # print(gce)
+            # gce = (weights * gce).sum() / weights.sum()       # (loss.view(-1)*weights).sum() / weights.sum()
+            # # print(gce, "\n\n")
+            # return gce                                                         # type: ignore
         raise ValueError(f"Invalid loss function: {loss_fn}")
 

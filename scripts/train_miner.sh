@@ -9,24 +9,24 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # LANG="en"
 TRAIN_DATA_PATH="./data/ncbi_disease/distant/ncbi_train.conll"
 LABELS_PATH="./data/ncbi_disease/labels.txt"
-LM_PATH="./tmp/ncbi_lm-256"
+LM_PATH="roberta-base"
 MAX_LENGTH=256
-NER_BATCH_SIZE=8
+NER_BATCH_SIZE=4
 # LR=0.0005
 # MOMENTUM=0.0
 # CLIP=
 # PATIENCE=5
 # NER_EPOCHS=15
-NER_ACCUMULATION_STEPS=2
+NER_ACCUMULATION_STEPS=4
 NER_PATH="./tmp/ncbi_ner-256.pt"
 # DORPOUT=0.2
 # SEED=0
 
 VAL_DATA_PATH="./data/ncbi_disease/gold/ncbi_dev.conll"
 SAM=1
-# Q=0.6
-LOSS_FN="c_nll"
-WANDB=
+Q=0.3
+LOSS_FN="gce"
+# WANDB=
 
 # *****************************************************************************
 

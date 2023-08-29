@@ -231,23 +231,24 @@ class PartialCRF(BaseCRF):
             return torch.mean(c_nll)                                            # type: ignore
         # If you want GCE
         if loss_fn == "gce":
-            tau = 1 / num_tags
-            gce = []
-            for i, sequence in enumerate(pred):
-                p = torch.masked_select(sequence, p_mask[i])
-                weights = torch.where(p > tau, 1., 0.)
-                local_gce = ((1 - p**self.q) / self.q)
-                local_gce = ((weights * local_gce) + 1e-4).sum() / (weights + 1e-4).sum()
-                gce.append(local_gce)
-            gce = torch.stack(gce)
-            return torch.mean(gce)
             # tau = 1 / num_tags
-            # p = torch.masked_select(pred, p_mask)                               # (possible_tags==1,)
-            # weights = torch.where(p >= tau , 1., 0.)
-            # gce = ((1 - p**self.q) / self.q)
-            # # print(gce)
-            # gce = (weights * gce).sum() / weights.sum()       # (loss.view(-1)*weights).sum() / weights.sum()
-            # # print(gce, "\n\n")
-            # return gce                                                         # type: ignore
+            # gce = []
+            # for i, sequence in enumerate(pred):
+            #     p = torch.masked_select(sequence, p_mask[i])
+            #     weights = torch.where(p > tau, 1., 0.)
+            #     local_gce = ((1 - p**self.q) / self.q)
+            #     local_gce = ((weights * local_gce) + 1e-4).sum() / (weights + 1e-4).sum()
+            #     gce.append(local_gce)
+            # gce = torch.stack(gce)
+            # return torch.mean(gce)
+            # tau = 1 / num_tags
+            p = torch.masked_select(pred, p_mask)                               # (possible_tags==1,)
+            # weights = torch.where(p > tau , 1., 0.)
+            gce = ((1 - p**self.q) + 1e-4) / (self.q + 1e-4)
+            # print(gce)
+            # gce = ((weights * gce) + 1e-4).sum() / (weights + 1e-4).sum()     # (loss.view(-1)*weights).sum() / weights.sum()
+            gce = gce.sum()       # (loss.view(-1)*weights).sum() / weights.sum()
+            # print(gce, "\n\n")
+            return gce                                                          # type: ignore
         raise ValueError(f"Invalid loss function: {loss_fn}")
 

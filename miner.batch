@@ -24,4 +24,4 @@ source activate miner
 
 mkdir logs tmp
 
-./train_miner.sh
+./scripts/train_miner.sh

@@ -7,25 +7,24 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-TRAIN_DATA_PATH="./data/ncbi_disease/distant/ncbi_train.conll"
-LABELS_PATH="./data/ncbi_disease/labels.txt"
-LM_PATH="roberta-base"
-MAX_LENGTH=256
-NER_BATCH_SIZE=16
+TRAIN_DATA_PATH="$DATA_ROOT/wikigold/distant/wiki_train.conll"
+LABELS_PATH="$DATA_ROOT/wikigold/labels.txt"
+LM_PATH="$PROJECT_ROOT/tmp/wiki_lm-128"
+MAX_LENGTH=128
+NER_BATCH_SIZE=4
 # LR=0.0005
 # MOMENTUM=0.0
 # CLIP=
-# PATIENCE=5
-# NER_EPOCHS=15
-NER_ACCUMULATION_STEPS=
-NER_PATH="./tmp/ncbi_ner-256.pt"
+# PATIENCE=1
+NER_EPOCHS=10
+NER_PATH="$PROJECT_ROOT/tmp/wiki_ner-128.pt"
 # DORPOUT=0.2
-# SEED=0
+# SEED=1
 
-VAL_DATA_PATH="./data/ncbi_disease/gold/ncbi_dev.conll"
+VAL_DATA_PATH="$DATA_ROOT/wikigold/gold/wiki_dev.conll"
 SAM=1
-Q=0.1
-LOSS_FN="gce"
+# Q=0.3
+LOSS_FN="c_nll"
 WANDB=
 PROJECT="miner"
 ENTITY="madjakul"
@@ -40,18 +39,17 @@ mkdir tmp logs
 
 cmd=( python3 train_miner.py \
     --lang ${LANG:-"en"} \
-    --train_data_path ${TRAIN_DATA_PATH:-"./data/bc5cdr/distant/cdr_train.conll"} \
-    --labels_path ${LABELS_PATH:-"./data/bc5cdr/labels.txt"} \
-    --lm_path ${LM_PATH:-"./tmp/cdr_lm-512"} \
+    --train_data_path ${TRAIN_DATA_PATH:-"$DATA_ROOT/bc5cdr/distant/cdr_train.conll"} \
+    --labels_path ${LABELS_PATH:-"$DATA_ROOT/bc5cdr/labels.txt"} \
+    --lm_path ${LM_PATH:-"$PROJECT_ROOT/tmp/cdr_lm-512"} \
     --max_length ${MAX_LENGTH:-512} \
     --ner_batch_size ${NER_BATCH_SIZE:-4} \
     --lr ${LR:-0.005} \
     --momentum ${MOMENTUM:-0.9} \
     --clip ${CLIP:-5.0} \
-    --patience ${PATIENCE:-10} \
-    --ner_epochs ${NER_EPOCHS:-15} \
-    --ner_accumulation_steps ${NER_ACCUMULATION_STEPS:-2} \
-    --ner_path ${NER_PATH:-"./tmp/cdr_ner-512.pt"} \
+    --patience ${PATIENCE:-1} \
+    --ner_epochs ${NER_EPOCHS:-5} \
+    --ner_path ${NER_PATH:-"$PROJECT_ROOT/tmp/cdr_ner-512.pt"} \
     --dropout ${DROPOUT:-0.1} \
     --seed ${SEED:-8} )
 

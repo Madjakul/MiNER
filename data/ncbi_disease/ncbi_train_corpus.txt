@@ -816,7 +816,7 @@ Atypical or variant forms of well-known chondrodysplasias may pose diagnostic pr
 We report on a girl with clinical features suggesting diastrophic dysplasia but with unusual radiographic features including severe platyspondyly, wide metaphyses, and fibular overgrowth, which are partially reminiscent of metatropic dysplasia.
 The diagnosis was clarified by molecular analysis of the DTDST gene, which revealed homozygosity for a previously undescribed mutation leading to a Q454P substitution in the 10th transmembrane domain of the DTDST sulfate transporter.
 Molecular analysis may be of particular value in such atypical cases..
-The type of somatic mutation at APC in familial adenomatous polyposis is determined by the site of the germline mutation: a new facet to Knudson's ' two-hit ' hypothesis.
+The type of somatic mutation at APC in familial adenomatous polyposis is determined by the site of the germline mutation: a new facet to Knudson's' two-hit ' hypothesis.
 APC is often cited as a prime example of a tumor suppressor gene.
 Truncating germline and somatic mutations (or, infrequently, allelic loss) occur in tumors in FAP (familial adenomatous polyposis).
 Most sporadic colorectal cancers also have two APC mutations.
@@ -887,7 +887,7 @@ Furthermore, in contrast to the normal DMPK 3-UTR mRNA, a mutant DMPK 3-UTR mRNA
 Genetic analysis and the Cre-loxP system were used to clearly demonstrate that the myoblast fusion defect could be rescued by eliminating the expression of the mutant DMPK 3-UTR transcript.
 Characterization of spontaneous deletion events mapped the inhibitory effect to the (CTG) (n) expansion and/or the 3 end of the DMPK 3-UTR.
 These results provide evidence that the DM mutation acts in cis to reduce protein production (consistent with DMPK haploinsufficiency) and in trans as a riboregulator to inhibit myogenesis..
-Coats ' disease of the retina (unilateral retinal telangiectasis) caused by somatic mutation in the NDP gene: a role for norrin in retinal angiogenesis.
+Coats' disease of the retina (unilateral retinal telangiectasis) caused by somatic mutation in the NDP gene: a role for norrin in retinal angiogenesis.
 Coats disease is characterized by abnormal retinal vascular development (so-called retinal telangiectasis) which results in massive intraretinal and subretinal lipid accumulation (exudative retinal detachment).
 The classical form of Coats disease is almost invariably isolated, unilateral and seen in males.
 A female with a unilateral variant of Coats disease gave birth to a son affected by Norrie disease.
@@ -2246,7 +2246,7 @@ We have screened the remaining five families for point mutations.
 In one large family a single nucleotide (T) insertion into the donor splice site of exon C leads to two aberrantly spliced mRNAs both producing a premature stop codon.
 The mutation can be assayed easily by amplification and digestion with Msel.
 Our findings provide additional evidence for the pathogenetic role of CHM mutations and provide a diagnostic tool for one fifth of the worlds known CHM patients..
-Germline intronic and exonic mutations in the Wilms ' tumour gene (WT1) affecting urogenital development.
+Germline intronic and exonic mutations in the Wilms' tumour gene (WT1) affecting urogenital development.
 Denys-Drash syndrome is a rare human developmental disorder affecting the urogenital system and leading to renal failure, intersex disorders and Wilms tumour.
 In this report, four individuals with this syndrome are described carrying germline point mutations in the Wilms tumour suppressor gene, WT1.
 Three of these mutations were in the zinc finger domains of WT1.
@@ -2751,7 +2751,7 @@ The homozygous C2-deficient propositus and brother were HLA-A and B homozygous b
 Therefore, in this family, the C2o gene is linked with two distinct haplotypes HLA-A25, B18, Dw2, GLO1 and HLA-A25, B18, D unknown, GL02.
 These results could be explained by an ancestral recombinant event, which occurred between the C2o locus and HLA-D locus in which C2o segregated with HLA-B.
 This would suggest that the locus for the C2o gene maps between HLA-B and HLA-D on the sixth chromosome..
-Germline mutations in the Wilms ' tumor suppressor gene are associated with abnormal urogenital development in Denys-Drash syndrome.
+Germline mutations in the Wilms' tumor suppressor gene are associated with abnormal urogenital development in Denys-Drash syndrome.
 Denys-Drash syndrome is a rare human condition in which severe urogenital aberrations result in renal failure, pseudohermaphroditism, and Wilms tumor (nephroblastoma).
 To investigate its possible role, we have analyzed the coding exons of the Wilms tumor suppressor gene (WT1) for germline mutations.
 In ten independent cases of Denys-Drash syndrome, point mutations in the zinc finger domains of one WT1 gene copy were found.
@@ -4898,7 +4898,7 @@ A 5 bp deletion at codon 1309 reported to occur in 10-15% of unselected APC pati
 A further 3 new mutations and 1 familial mutation were located downstream from codon 1309, these individuals similarly being classed as phenotypically severe.
 In contrast all of the APC mutations detected in affected individuals with an average phenotype were located prior to codon 1309.
 The frequent association of a severe phenotype with fresh mutation may explain the apparent conflict of a high mutation rate (20-30%) in a condition, which on average, is lethal at a post-reproductive age..
-Mutations at the PAX6 locus are found in heterogeneous anterior segment malformations including Peters ' anomaly.
+Mutations at the PAX6 locus are found in heterogeneous anterior segment malformations including Peters' anomaly.
 Mutation or deletion of the PAX6 gene underlies many cases of aniridia.
 Three lines of evidence now converge to implicate PAX6 more widely in anterior segment malformations including Peters anomaly.
 First, a child with Peters anomaly is deleted for one copy of PAX6.

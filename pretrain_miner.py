@@ -53,6 +53,12 @@ if __name__=="__main__":
         max_length=args.max_length,
         mlm_probability=args.mlm_probability,
     )
+
+    # There is a silent bug on HuggingFace modifying the beavior of the
+    # tokenizers, upon using the ``add_vocab`` function.
+    # see: https://github.com/huggingface/transformers/pull/23909
+    # I don't know how token encoding impact the performances on a downstream
+    # task, therefor, won't use it for further pre-training.
     # lm_dataset.add_vocab(train_corpus, lm)
 
     logging.info("*** Training ***")
@@ -63,7 +69,7 @@ if __name__=="__main__":
         per_device_train_batch_size=args.lm_train_batch_size,
         seed=args.seed,
         per_device_eval_batch_size=args.lm_train_batch_size,
-        num_train_epochs=args.lm_epochs,
+        max_steps=args.max_steps,
         gradient_accumulation_steps=args.lm_accumulation_steps,
         wandb=args.wandb
     )

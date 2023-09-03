@@ -57,7 +57,7 @@ if __name__=="__main__":
         shuffle=True
     )
     if args.val_data_path is not None:
-        logging.info(f"Loading validation data from {args.train_data_path}")
+        logging.info(f"Loading validation data from {args.val_data_path}")
         val_corpus, val_labels = pp.read_conll(args.val_data_path)
 
         logging.info("Building the validation dataloader...")
@@ -85,7 +85,7 @@ if __name__=="__main__":
         dropout=args.dropout,
         q=args.q
     ).to(DEVICE)
-    logging.info("Training...")
+    logging.info("*** Training ***")
     trainer = NER_Trainer(
         ner=ner,
         lr=args.lr,
@@ -94,7 +94,6 @@ if __name__=="__main__":
         epochs=args.ner_epochs,
         max_length=args.max_length,
         device=DEVICE,
-        accumulation_steps=args.ner_accumulation_steps,
         ner_path=args.ner_path,
         clip=args.clip,
         sam=args.sam,

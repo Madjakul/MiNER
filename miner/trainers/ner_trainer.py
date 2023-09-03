@@ -116,7 +116,7 @@ class NER_Trainer():
 
     def __init__(
         self, ner: NER, lr: float, patience: int, epochs: int, max_length: int,
-        device: Literal["cpu", "cuda"], accumulation_steps: int, ner_path: str,
+        device: Literal["cpu", "cuda"], ner_path: str,
         momentum: float,sam: bool, idx2label: Dict[int, str], clip: float,
         loss_fn: Optional[str]=None
     ):
@@ -125,7 +125,6 @@ class NER_Trainer():
         self.device = device
         self.ner = ner
         self.epochs = epochs
-        self.accumulation_steps = accumulation_steps
         self.max_length = max_length
         self.clip = clip
         self.idx2label = idx2label
@@ -146,48 +145,30 @@ class NER_Trainer():
         self.lrs = LRScheduler(
             optimizer=self.optimizer,
             patience=patience,
-            factor=0.1
+            factor=0.6
         )
 
     def _fit(self, train_dataloader: DataLoader):
+        logging.info("Training...")
         self.ner.train()
         losses = []
-        x_list, y_list = [], []
-        for idx, (x, y, _) in enumerate(tqdm(train_dataloader)):
+        for x, y, _ in tqdm(train_dataloader):
             self.optimizer.zero_grad()
             x = {key: val.squeeze(1) for key, val in x.items()}
-            loss = (
-                self.ner(x, y, loss_fn=self.loss_fn)
-                / self.accumulation_steps
-            )
+            loss = self.ner(x, y, loss_fn=self.loss_fn)
             losses.append(loss.item())
             loss.backward()
-            x_list.append(x)
-            y_list.append(y)
-            if (idx + 1) % self.accumulation_steps == 0 \
-                or (idx + 1) == len(train_dataloader):
+            if self.sam:
+                self.optimizer.first_step(zero_grad=True)
+                loss = self.ner(x, y, loss_fn=self.loss_fn).backward()
                 if self.clip is not None:
                     nn.utils.clip_grad_norm_(
                         self.ner.parameters(),
                         self.clip
                     )
-                if self.sam:
-                    self.optimizer.first_step(zero_grad=True)
-                    for i in range(len(y_list)):
-                        loss = (
-                            self.ner(x_list[i], y_list[i], loss_fn=self.loss_fn)
-                            / self.accumulation_steps
-                        )
-                        loss.backward()
-                    if self.clip is not None:
-                        nn.utils.clip_grad_norm_(
-                            self.ner.parameters(),
-                            self.clip
-                        )
-                    self.optimizer.second_step(zero_grad=True)
-                    x_list, y_list = [], []
-                else:
-                    self.optimizer.step()
+                self.optimizer.second_step(zero_grad=True)
+            else:
+                self.optimizer.step()
         return np.mean(losses)
 
     @torch.no_grad()
@@ -197,7 +178,7 @@ class NER_Trainer():
         self.ner.eval()
         y_true = []
         y_pred = []
-        for x, y, _ in val_dataloader:
+        for x, y, _ in tqdm(val_dataloader):
             x = {key: val.squeeze(1) for key, val in x.items()}
             result = self.ner.viterbi_decode(x)
             y_pred.extend(result)

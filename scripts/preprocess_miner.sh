@@ -7,12 +7,12 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="fr"
-# LABEL_COMPLETION=1
-CORPUS_PATH="$DATA_ROOT/ncbi_disease/ncbi_train_corpus.txt"
-CONLL_PATH="$DATA_ROOT/ncbi_disease/distant/ncbi_train.conll"
-GAZETTEERS_PATH="$DATA_ROOT/ncbi_disease/gazetteers/"
-# UNK_GAZETTEERS_PATH="$DATA_ROOT/ncbi_disease/gazetteers/UNK.txt"
+# CORPUS_PATH="$DATA_ROOT/ncbi_disease/ncbi_train_corpus.txt"
+# CONLL_PATH="$DATA_ROOT/ncbi_disease/distant/ncbi_train.conll"
+# GAZETTEERS_PATH="$DATA_ROOT/ncbi_disease/gazetteers/"
 
+# UNK_GAZETTEERS_PATH="$DATA_ROOT/ncbi_disease/gazetteers/UNK.txt"
+# LABEL_COMPLETION=
 # *****************************************************************************
 
 
@@ -28,7 +28,6 @@ cmd=( python3 preprocess_miner.py \
         --gazetteers_path ${GAZETTEERS_PATH:-"$DATA_ROOT/bc5cdr/gazetteers/"} )
 
 if [[ -v LABEL_COMPLETION ]]; then
-    echo ${green}=== ouais ouais ===${reset}
     cmd+=( --label_completion ${LABEL_COMPLETION} \
         --unk_gazetteers_path ${UNK_GAZETTEERS_PATH:-"$DATA_ROOT/bc5cdr/gazetteers/UNK.txt"} )
 fi

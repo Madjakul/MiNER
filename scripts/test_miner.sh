@@ -7,14 +7,11 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-# TEST_CORPUS_PATH="./data/wikigold/gold/wiki_test.conll"
-# LABELS_PATH="./data/wikigold/labels.txt"
-# LM_PATH="./tmp/wiki_lm"
-# MAX_LENGTH=512
-# NER_BATCH_SIZE=0
-NER_PATH="./tmp/cdr_ner.pt"
-# CORRECTED_LOSS=
-# GAMMA=
+TEST_CORPUS_PATH="$DATA_ROOT/conll/gold/conll_test.conll"
+LABELS_PATH="$DATA_ROOT/conll/labels.txt"
+LM_PATH="$PROJECT_ROOT/tmp/conll_lm-128"
+MAX_LENGTH=128
+NER_PATH="$PROJECT_ROOT/tmp/conll_ner-128.pt"
 
 # -----------------------------------------------------------------------------
 
@@ -26,13 +23,10 @@ mkdir tmp logs
 echo ${green}=== Testing ===${reset}
 python3 test_miner.py \
     --lang ${LANG:-"en"} \
-    --test_corpus_path ${TEST_CORPUS_PATH:-"./data/bc5cdr/gold/cdr_test.conll"} \
-    --labels_path ${LABELS_PATH:-"./data/bc5cdr/labels.txt"} \
-    --lm_path ${LM_PATH:-"roberta-base"} \
-    --max_length ${MAX_LENGTH:-256} \
-    --ner_batch_size ${NER_BATCH_SIZE:-32} \
-    --ner_path ${NER_PATH:-"./tmp/cdr_ner.pt"} \
-    --corrected_loss ${CORRECTED_LOSS:-0} \
-    --gamma ${GAMMA:-1.0}
+    --test_corpus_path ${TEST_CORPUS_PATH:-"$DATA_ROOT/bc5cdr/gold/cdr_test.conll"} \
+    --labels_path ${LABELS_PATH:-"$DATA_ROOT/bc5cdr/labels.txt"} \
+    --lm_path ${LM_PATH:-"$PROJECT_ROOT/tmp/cdr_lm-512"} \
+    --max_length ${MAX_LENGTH:-512} \
+    --ner_path ${NER_PATH:-"$PROJECT_ROOT/tmp/cdr_ner-512.pt"} 
 echo ${green}--- Done ---${reset}
 

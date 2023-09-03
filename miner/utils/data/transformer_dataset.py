@@ -65,7 +65,7 @@ class TransformerDataset():
                 "allenai/longformer-base-4096",
             )
         else:
-            logging.info(f"Using microsoft/deberta-v3-base tokenizer")
+            logging.info(f"Using roberta-base tokenizer")
             self.tokenizer = AutoTokenizer.from_pretrained(
                 "roberta-base",
             )

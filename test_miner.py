@@ -5,6 +5,7 @@ import argparse
 
 import torch
 from torch.utils.data import DataLoader
+from tqdm import tqdm
 from seqeval.metrics import classification_report, f1_score, precision_score, recall_score
 from seqeval.scheme import IOB2
 
@@ -33,10 +34,9 @@ if __name__=="__main__":
     )
     parser.add_argument("--lm_path", type=str)
     parser.add_argument("--max_length", type=int)
-    parser.add_argument("--ner_batch_size", type=int)
     parser.add_argument("--ner_path", type=str)
-    parser.add_argument("--corrected_loss", type=int)
-    parser.add_argument("--gamma", type=float)
+    parser.add_argument("--q", type=float, default=0.1)
+    parser.add_argument("--dropout", type=float, default=0.1)
     args = parser.parse_args()
 
     logging.info("=== Testing ===")
@@ -69,8 +69,8 @@ if __name__=="__main__":
         lm_path=args.lm_path,
         num_labels=len(labels),
         device=DEVICE,
-        dropout=0.1,
-        corrected_loss=bool(args.corrected_loss),
+        dropout=args.dropout,
+        q=args.q
     ).to(DEVICE)
     ner.load_state_dict(torch.load(args.ner_path)["model_state_dict"])
     ner.eval()
@@ -79,23 +79,17 @@ if __name__=="__main__":
     y_true = []
     y_pred = []
     with torch.no_grad():
-        for x, y, word_ids in test_dataloader:
-            result = ner.viterbi_decode(x)[0]
-            y_ = y.tolist()[0]
-            local_y_true = []
-            local_y_pred = []
-            last = -100
-            for idx, word_id in enumerate(word_ids[0]):
-                if idx == 0:
-                    local_y_true.append(idx2label[y_[idx]])
-                    local_y_pred.append(idx2label[result[idx]])
+        for x, y, mask in tqdm(test_dataloader):
+            x = {key: val.squeeze(1) for key, val in x.items()}
+            local_y_pred_ = ner.viterbi_decode(x)[0]
+            local_y_true_ = y.tolist()[0][:len(local_y_pred_)]
+            local_mask_ = mask.tolist()[0][:(len(local_y_pred_))]
+            local_y_pred, local_y_true, local_mask = [], [], []
+            for idx, mask_value in enumerate(local_mask_):
+                if mask_value == 0:
                     continue
-                elif last != word_id:
-                    local_y_true.append(idx2label[y_[idx]])
-                    local_y_pred.append(idx2label[result[idx]])
-                last = word_id
-                if last == -1:
-                    break
+                local_y_pred.append(idx2label[local_y_pred_[idx]])
+                local_y_true.append(idx2label[local_y_true_[idx]])
             y_pred.append(local_y_pred)
             y_true.append(local_y_true)
     logging.warning(classification_report(y_true, y_pred, mode="strict", scheme=IOB2))

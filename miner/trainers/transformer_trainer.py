@@ -53,7 +53,7 @@ class TransformerTrainer():
     def __init__(
         self, lm: Union[RoBERTa, CamemBERT, Longformer], lm_path: str,
         lm_dataset: TransformerDataset, per_device_train_batch_size: int,
-        seed: int, per_device_eval_batch_size: int, num_train_epochs: int,
+        seed: int, per_device_eval_batch_size: int, max_steps: int,
         gradient_accumulation_steps: int, wandb: bool
     ):
         self.lm_path = lm_path
@@ -67,8 +67,8 @@ class TransformerTrainer():
             per_device_train_batch_size=per_device_train_batch_size,
             per_device_eval_batch_size=per_device_eval_batch_size,
             gradient_accumulation_steps=gradient_accumulation_steps,
-            max_steps=900,
-            num_train_epochs=900 / (
+            max_steps=max_steps,
+            num_train_epochs=max_steps/ (
                 len(lm_dataset.mlm_ds["train"]) / per_device_train_batch_size
             ),
             logging_strategy="epoch",

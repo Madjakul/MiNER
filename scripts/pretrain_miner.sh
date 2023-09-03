@@ -7,17 +7,18 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-TRAIN_CORPUS_PATH="$DATA_ROOT/ncbi_disease/ncbi_train_corpus.txt"
-VAL_CORPUS_PATH="$DATA_ROOT/ncbi_disease/ncbi_test_corpus.txt"
-MAX_LENGTH=256
-LM_PATH="./tmp/ncbi_lm-256"
+TRAIN_CORPUS_PATH="$DATA_ROOT/conll/conll_train_corpus.txt"
+VAL_CORPUS_PATH="$DATA_ROOT/conll/conll_test_corpus.txt"
+MAX_LENGTH=128
+LM_PATH="./tmp/conll_lm-128"
 # SEED=0
 # MLM_PROBABILITY=0.0
-LM_TRAIN_BATCH_SIZE=8
-# LM_EPOCHS=0
-LM_ACCUMULATION_STEPS=4
+LM_TRAIN_BATCH_SIZE=16
+# MAX_STEPS=0
+# LM_ACCUMULATION_STEPS=4
+MAX_STEPS=5000
 
-WANDB=1
+WANDB=
 
 # *****************************************************************************
 
@@ -34,10 +35,10 @@ cmd=( python3 pretrain_miner.py \
     --max_length ${MAX_LENGTH:-512} \
     --lm_path ${LM_PATH:-"./tmp/cdr_lm-512"} \
     --seed ${SEED:-8} \
-    --mlm_probability ${MLM_PROBABILITY:-0.2} \
-    --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-2} \
-    --lm_epochs ${LM_EPOCHS:-10} \  # à supprimer
-    --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-8} )
+    --mlm_probability ${MLM_PROBABILITY:-0.15} \
+    --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-4} \
+    --max_steps ${MAX_STEPS:-1000} \
+    --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-4} )
 
 if [[ -v WANDB ]]; then
     cmd+=( --wandb )

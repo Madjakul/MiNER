@@ -95,9 +95,9 @@ class PretrainArgParse():
             help="Train and eval batch size."
         )
         parser.add_argument(
-            "--lm_epochs",
+            "--max_steps",
             type=int,
-            help="Number of epochs to train."
+            help="Number of steps to train."
         )
         parser.add_argument(
             "--lm_accumulation_steps",
@@ -182,11 +182,6 @@ class TrainArgParse():
             help="Number of steps before actualising the learning rate."
         )
         parser.add_argument("--ner_epochs", type=int)
-        parser.add_argument(
-            "--ner_accumulation_steps",
-            type=int,
-            help="Gradient accumualtion steps."
-        )
         parser.add_argument(
             "--ner_path",
             type=str,

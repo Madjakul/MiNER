@@ -7,20 +7,20 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-# TRAIN_DATA_PATH="$DATA_ROOT/wikigold/distant/wiki_train.conll"
-# LABELS_PATH=""
-# LM_PATH="$PROJECT_ROOT/tmp/wiki_lm-128"
-# MAX_LENGTH=128
-# NER_BATCH_SIZE=4
-# ACCUMULATION_STEPS=8
+TRAIN_DATA_PATH="$DATA_ROOT/wikigold/distant/wiki_train.conll"
+LABELS_PATH="$DATA_ROOT/wikigold/labels.txt"
+LM_PATH="$PROJECT_ROOT/tmp/wiki_lm-128"
+MAX_LENGTH=128
+NER_BATCH_SIZE=16
+ACCUMULATION_STEPS=1
 # LR=0.0005
 # NER_EPOCHS=10
-# NER_PATH="$PROJECT_ROOT/tmp/wiki_ner-128.pt"
-# SMOOTH_NER_PATH=""
+NER_PATH="$PROJECT_ROOT/tmp/wiki_ner-128.pt"
+SMOOTH_NER_PATH="$PROJECT_ROOT/tmp/wiki_smooth-ner-128.pt"
 # DORPOUT=0.2
 # SEED=1
 
-# VAL_DATA_PATH="$DATA_ROOT/wikigold/gold/wiki_dev.conll"
+VAL_DATA_PATH="$DATA_ROOT/wikigold/gold/wiki_dev.conll"
 # WANDB=
 # PROJECT="miner"
 # ENTITY="madjakul"
@@ -36,7 +36,7 @@ mkdir tmp logs
 cmd=( python3 train_smooth_ner.py \
     --lang ${LANG:-"en"} \
     --train_data_path ${TRAIN_DATA_PATH:-"$DATA_ROOT/bc5cdr/distant/cdr_train.conll"} \
-    --labels_path ${LABELS_PATH:-"$DATA_ROOT/bc5cdr/distant/labels.txt"} \
+    --labels_path ${LABELS_PATH:-"$DATA_ROOT/bc5cdr/labels.txt"} \
     --lm_path ${LM_PATH:-"$PROJECT_ROOT/tmp/cdr_lm-512"} \
     --max_length ${MAX_LENGTH:-512} \
     --ner_batch_size ${NER_BATCH_SIZE:-4} \

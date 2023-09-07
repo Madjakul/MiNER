@@ -71,7 +71,7 @@ class PartialNERTrainer():
     """
 
     def __init__(
-        self, ner: PartialNER, lr: float, patience: int, epochs: int, max_length: int,
+        self, ner: PartialNER, lr: float, epochs: int, max_length: int,
         device: Literal["cpu", "cuda"], ner_path: str,
         momentum: float,sam: bool, idx2label: Dict[int, str], clip: float,
         loss_fn: Optional[str]=None
@@ -127,8 +127,10 @@ class PartialNERTrainer():
                 self.optimizer.step()
         return np.mean(losses)
 
+    @torch.no_grad()
     def _validate(self, val_dataloader: DataLoader):
         logging.info("Validating...")
+        self.ner.eval()
         y_true = []
         y_pred = []
         for x, y, _ in tqdm(val_dataloader):

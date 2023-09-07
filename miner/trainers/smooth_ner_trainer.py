@@ -71,11 +71,12 @@ class SmoothNERTrainer():
     @torch.inference_mode()
     def _validate(self, val_dataloader: DataLoader):
         logging.info("Validating...")
+        self.smooth_ner.eval()
         losses = []
         for x, y in tqdm(val_dataloader):
             x = {key: val.squeeze(1) for key, val in x.items()}
             loss = self.smooth_ner(x, y) / self.accumulation_steps
-            losses.append(loss)
+            losses.append(loss.item())
         return np.mean(losses)
 
     def save_model(self):

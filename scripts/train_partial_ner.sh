@@ -15,7 +15,6 @@ NER_BATCH_SIZE=4
 # LR=0.0005
 # MOMENTUM=0.0
 # CLIP=
-# PATIENCE=1
 NER_EPOCHS=10
 NER_PATH="$PROJECT_ROOT/tmp/wiki_ner-128.pt"
 # DORPOUT=0.2
@@ -25,9 +24,9 @@ VAL_DATA_PATH="$DATA_ROOT/wikigold/gold/wiki_dev.conll"
 SAM=1
 # Q=0.3
 LOSS_FN="c_nll"
-WANDB=
-PROJECT="miner"
-ENTITY="madjakul"
+# WANDB=
+# PROJECT="miner"
+# ENTITY="madjakul"
 
 # *****************************************************************************
 
@@ -37,7 +36,7 @@ reset=`tput sgr0`
 
 mkdir tmp logs
 
-cmd=( python3 train_patial_ner.py \
+cmd=( python3 train_partial_ner.py \
     --lang ${LANG:-"en"} \
     --train_data_path ${TRAIN_DATA_PATH:-"$DATA_ROOT/bc5cdr/distant/cdr_train.conll"} \
     --labels_path ${LABELS_PATH:-"$DATA_ROOT/bc5cdr/labels.txt"} \
@@ -47,7 +46,6 @@ cmd=( python3 train_patial_ner.py \
     --lr ${LR:-0.005} \
     --momentum ${MOMENTUM:-0.9} \
     --clip ${CLIP:-5.0} \
-    --patience ${PATIENCE:-1} \
     --ner_epochs ${NER_EPOCHS:-5} \
     --ner_path ${NER_PATH:-"$PROJECT_ROOT/tmp/cdr_ner-512.pt"} \
     --dropout ${DROPOUT:-0.1} \

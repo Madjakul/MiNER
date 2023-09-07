@@ -7,18 +7,18 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-TRAIN_CORPUS_PATH="$DATA_ROOT/conll/conll_train_corpus.txt"
-VAL_CORPUS_PATH="$DATA_ROOT/conll/conll_test_corpus.txt"
+TRAIN_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_train_corpus.txt"
+VAL_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_test_corpus.txt"
 MAX_LENGTH=128
-LM_PATH="./tmp/conll_lm-128"
+LM_PATH="./tmp/wiki_lm-128"
 # SEED=0
 # MLM_PROBABILITY=0.0
-LM_TRAIN_BATCH_SIZE=16
+LM_TRAIN_BATCH_SIZE=4
 # MAX_STEPS=0
 # LM_ACCUMULATION_STEPS=4
-MAX_STEPS=5000
+MAX_STEPS=1000
 
-WANDB=
+# WANDB=
 
 # *****************************************************************************
 

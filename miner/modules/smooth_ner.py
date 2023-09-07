@@ -50,9 +50,9 @@ class SmoothNER(nn.Module):
         Returns
         -------
         """
-        mask = inputs["attention_mask"].unsqueeze(1)
         h = self.transformer(**inputs).last_hidden_state
         logits = self.fc(self.linear_dropout(h))
+        mask = inputs["attention_mask"].unsqueeze(2).expand(logits.shape[0], logits.shape[1], logits.shape[2])
         log_p = F.log_softmax(logits, dim=2) * mask
         kl_loss = self.kl_loss(log_p, targets)
         return kl_loss

@@ -21,7 +21,7 @@ class SmoothNERDataset(Dataset):
 
     def __init__(
         self, partial_ner: PartialNER, corpus: List[List[str]],
-        max_length: int, lang: Optional[Literal["en", "fr"]]=None,
+        max_length: int, lang: Literal["en", "fr"],
         device: Optional[Literal["cpu", "cuda"]]="cpu"
     ):
         self.partial_ner = partial_ner
@@ -32,7 +32,7 @@ class SmoothNERDataset(Dataset):
             self.tokenizer = AutoTokenizer.from_pretrained(
                 "camembert-base", add_prefix_space=True
             )
-        elif max_length > 512 and lang=="en":
+        elif max_length > 512 and lang == "en":
             self.tokenizer = AutoTokenizer.from_pretrained(
                 "allenai/longformer-base-4096", add_prefix_space=True
             )
@@ -85,8 +85,9 @@ class SmoothNERDataset(Dataset):
                 deep embedding for clustering analysis." International
                 conference on machine learning. PMLR, 2016.
         """
-        mask = inputs["attention_mask"].unsqueeze(1)
-        p = self.partial_ner.marginal_probabilities(inputs) * mask
+        tmp_p = self.partial_ner.marginal_probabilities(inputs) # * mask
+        mask = inputs["attention_mask"].unsqueeze(2).expand(tmp_p.shape[0], tmp_p.shape[1], tmp_p.shape[2])
+        p = tmp_p * mask
         squared_p = p ** 2
         denominator = squared_p.sum(dim=1)
         enhanced_p = squared_p / denominator.unsqueeze(1)

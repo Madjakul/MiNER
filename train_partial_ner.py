@@ -90,7 +90,6 @@ if __name__=="__main__":
         ner=ner,
         lr=args.lr,
         momentum=args.momentum,
-        patience=args.patience,
         epochs=args.ner_epochs,
         max_length=args.max_length,
         device=DEVICE,

@@ -39,17 +39,16 @@ if __name__=="__main__":
     logging.info(f"Loading labels from {args.labels_path}")
     with open(args.labels_path, "r", encoding="utf-8") as f:
         labels = f.read().splitlines()
-    logging.info(f"Loading the NER from {args.ner_path}")
+    logging.info(f"Loading the partial NER from {args.partial_ner_path}")
     partial_ner = PartialNER(
-        lang=args.lang,
+        lang="en",
         max_length=args.max_length,
         lm_path=args.lm_path,
         num_labels=len(labels),
         device=DEVICE,
         dropout=args.dropout,
-        q=args.q
     ).to(DEVICE)
-    partial_ner.load_state_dict(torch.load(args.ner_path)["model_state_dict"])
+    partial_ner.load_state_dict(torch.load(args.partial_ner_path)["model_state_dict"])
     partial_ner.eval()
 
     logging.info(f"Loading training data from {args.train_data_path}")
@@ -57,7 +56,7 @@ if __name__=="__main__":
     logging.info("Building the training dataloader...")
     train_dataset = SmoothNERDataset(
         partial_ner=partial_ner,
-        lang=args.lang,
+        lang="en",
         device=DEVICE,
         max_length=args.max_length,
         corpus=train_corpus,
@@ -76,7 +75,7 @@ if __name__=="__main__":
         logging.info("Building the validation dataloader...")
         val_dataset = SmoothNERDataset(
             partial_ner=partial_ner,
-            lang=args.lang,
+            lang="en",
             device=DEVICE,
             max_length=args.max_length,
             corpus=val_corpus,
@@ -88,7 +87,7 @@ if __name__=="__main__":
         )
 
     smooth_ner = SmoothNER(
-        lang=args.lang,
+        lang="en",
         max_length=args.max_length,
         lm_path=args.lm_path,
         num_labels=len(labels),
@@ -104,7 +103,7 @@ if __name__=="__main__":
         accumulation_steps=args.accumulation_steps,
         max_length=args.max_length,
         device=DEVICE,
-        ner_path=args.ner_path,
+        ner_path=args.smooth_ner_path,
     )
     trainer(
         train_dataloader,

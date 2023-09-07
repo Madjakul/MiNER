@@ -176,11 +176,6 @@ class TrainPartialArgParse():
             type=float,
             help="Gradient clipping norm."
         )
-        parser.add_argument(
-            "--patience",
-            type=int,
-            help="Number of steps before actualising the learning rate."
-        )
         parser.add_argument("--ner_epochs", type=int)
         parser.add_argument(
             "--ner_path",
@@ -287,7 +282,7 @@ class TrainSmoothArgParse():
             help="Path to the trained partial named entity recognizer."
         )
         parser.add_argument(
-            "--smoooth_ner_path",
+            "--smooth_ner_path",
             type=str,
             help="Path to the trained smooth named entity recognizer."
         )

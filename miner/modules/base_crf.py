@@ -151,7 +151,8 @@ class BaseCRF(nn.Module):
         self, emissions: torch.FloatTensor,
         mask: Optional[torch.ByteTensor]=None
     ) -> torch.FloatTensor:
-        """Computes the probability of each token.
+        """Computes the marginal probability of each token to belong to a given
+        class.
 
         Parameters
         ----------

@@ -1,55 +1,49 @@
 # miner/utils/crf_utils.py
 
-from typing import List, Dict
+from typing import Union
 
-import torch
-from torch.nn.utils.rnn import pad_sequence
+from torch.optim import SGD, AdamW, lr_scheduler
+
+from miner.optimizer import SAM
 
 
-def select_values(
-    y_pred: List[List[int]], y_true: List[List[int]], mask: torch.ByteTensor,
-    idx2label: Dict[int, str], max_length: int
-):
-    padded_tensor = pad_sequence(
-        [torch.tensor(sublist) for sublist in y_pred],
-        batch_first=True,
-        padding_value=0
-    )
-    padded_y_pred = torch.zeros(
-        padded_tensor.size(0),
-        max_length,
-        dtype=torch.long
-    )
-    padded_y_pred[:, :padded_y_pred.size(1)] = padded_y_pred
+class LRScheduler():
+    """Learning rate scheduler. If the validation loss does not decrease for
+    the given number of `patience` epochs, then the learning rate will decrease
+    by a given `factor`.
 
-    padded_tensor = pad_sequence(
-        [torch.tensor(sublist) for sublist in y_true],
-        batch_first=True,
-        padding_value=0
-    )
-    padded_y_true = torch.zeros(
-        padded_tensor.size(0),
-        max_length,
-        dtype=torch.long
-    )
-    padded_y_true[:, :padded_y_true.size(1)] = padded_y_true
+    Parameters
+    ----------
+    optimizer: ``torch.optim.SGD``
+        The optimizer we are using.
+    patience: ``int``
+        How many epochs to wait before updating the learning rate.
+    factor: ``float``
+        Factor by which the learning rate should be updated.
 
-    selected_y_pred = torch.where(
-        mask==1,
-        padded_y_pred,
-        torch.neg(torch.ones_like(padded_y_pred))
-    )
-    selected_y_true = torch.where(
-        mask ==1,
-        padded_y_true,
-        torch.neg(torch.ones_like(padded_y_true))
-    )
+    Attributes
+    ----------
+    optimizer: ``miner.optimizer.SAM``
+        The optimizer we are using.
+    patience: ``int``
+        How many epochs to wait before updating the learning rate.
+    min_lr: ``float``
+        Last learning rate value to reduce to while updating.
+    factor: ``float``
+        Factor by which the learning rate should be updated.
+    lr_scheduler: ``torch.optim.lr_scheduler.ReduceLROnPlateau``
+    """
 
-    y_pred_ = [
-        [idx2label[j] for j in i if j != -1] for i in selected_y_pred.tolist()
-    ]
-    y_true_ = [
-        [idx2label[j] for j in i if j != -1] for i in selected_y_true.tolist()
-    ]
-    return y_pred_, y_true_
+    def __init__(
+        self, optimizer: Union[SGD, AdamW, SAM], patience: int, factor: float
+    ):
+        self.optimizer = optimizer
+        self.lr_scheduler = lr_scheduler.StepLR(
+            optimizer=optimizer,
+            step_size=patience,
+            gamma=factor,
+        )
+
+    def __call__(self):
+        self.lr_scheduler.step()
 

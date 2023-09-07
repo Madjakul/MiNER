@@ -21,7 +21,7 @@ reset=`tput sgr0`
 mkdir tmp logs
 
 echo ${green}=== Testing ===${reset}
-python3 test_miner.py \
+python3 test_partial_ner.py \
     --lang ${LANG:-"en"} \
     --test_corpus_path ${TEST_CORPUS_PATH:-"$DATA_ROOT/bc5cdr/gold/cdr_test.conll"} \
     --labels_path ${LABELS_PATH:-"$DATA_ROOT/bc5cdr/labels.txt"} \

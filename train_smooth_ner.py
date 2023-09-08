@@ -56,10 +56,10 @@ if __name__=="__main__":
     logging.info("Building the training dataloader...")
     train_dataset = SmoothNERDataset(
         partial_ner=partial_ner,
-        lang="en",
         device=DEVICE,
         max_length=args.max_length,
         corpus=train_corpus,
+        lm_path=args.lm_path # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     )
     train_dataloader = DataLoader(
         train_dataset,
@@ -75,10 +75,10 @@ if __name__=="__main__":
         logging.info("Building the validation dataloader...")
         val_dataset = SmoothNERDataset(
             partial_ner=partial_ner,
-            lang="en",
             device=DEVICE,
             max_length=args.max_length,
             corpus=val_corpus,
+            lm_path=args.lm_path
         )
         val_dataloader = DataLoader(
             val_dataset,
@@ -87,8 +87,6 @@ if __name__=="__main__":
         )
 
     smooth_ner = SmoothNER(
-        lang="en",
-        max_length=args.max_length,
         lm_path=args.lm_path,
         num_labels=len(labels),
         device=DEVICE,

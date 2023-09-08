@@ -6,7 +6,6 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 
 # ************************* Customizable Arguments ****************************
 
-# LANG="en"
 TRAIN_DATA_PATH="$DATA_ROOT/wikigold/distant/wiki_train.conll"
 LABELS_PATH="$DATA_ROOT/wikigold/labels.txt"
 LM_PATH="$PROJECT_ROOT/tmp/wiki_lm-128"
@@ -34,7 +33,6 @@ reset=`tput sgr0`
 mkdir tmp logs
 
 cmd=( python3 train_smooth_ner.py \
-    --lang ${LANG:-"en"} \
     --train_data_path ${TRAIN_DATA_PATH:-"$DATA_ROOT/bc5cdr/distant/cdr_train.conll"} \
     --labels_path ${LABELS_PATH:-"$DATA_ROOT/bc5cdr/labels.txt"} \
     --lm_path ${LM_PATH:-"$PROJECT_ROOT/tmp/cdr_lm-512"} \

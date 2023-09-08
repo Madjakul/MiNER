@@ -1,2 +1,0 @@
-# miner/modules/ner.py
-

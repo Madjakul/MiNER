@@ -57,10 +57,11 @@ class SmoothNERTrainer():
         losses = []
         step = 1
         self.smooth_ner.train()
-        for x, y in tqdm(train_dataloader):
+        for x, x_augmented, y in tqdm(train_dataloader):
             self.optimizer.zero_grad()
             x = {key: val.squeeze(1) for key, val in x.items()}
-            loss = self.smooth_ner(x, y) / self.accumulation_steps
+            x_augmented = {key: val.squeeze(1) for key, val in x_augmented.items()}
+            loss = self.smooth_ner(x, x_augmented, y) / self.accumulation_steps
             loss.backward()
             losses.append(loss.item())
             if step % self.accumulation_steps == 0:
@@ -73,9 +74,10 @@ class SmoothNERTrainer():
         logging.info("Validating...")
         self.smooth_ner.eval()
         losses = []
-        for x, y in tqdm(val_dataloader):
+        for x, x_augmented, y in tqdm(val_dataloader):
             x = {key: val.squeeze(1) for key, val in x.items()}
-            loss = self.smooth_ner(x, y) / self.accumulation_steps
+            x_augmented = {key: val.squeeze(1) for key, val in x_augmented.items()}
+            loss = self.smooth_ner(x, x_augmented, y) / self.accumulation_steps
             losses.append(loss.item())
         return np.mean(losses)
 

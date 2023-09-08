@@ -1,8 +1,9 @@
 # miner/utils/crf_utils.py
 
-from typing import Union
+from typing import List, Dict, Union
 
 from torch.optim import SGD, AdamW, lr_scheduler
+import transformers
 
 from miner.optimizer import SAM
 
@@ -46,4 +47,18 @@ class LRScheduler():
 
     def __call__(self):
         self.lr_scheduler.step()
+
+
+def align_labels(inputs: transformers.BatchEncoding, labels: List[int], idx2label: Dict[int, str]):
+        word_ids = inputs.word_ids()                    # type: ignore
+        label_ids = []
+        previous_word_idx = -1
+        # print(word_ids, "\n")
+        # print(labels, "\n")
+        for idx, word_idx in enumerate(word_ids):
+            if word_idx != previous_word_idx and word_idx is not None:         # type: ignore
+                label_ids.append(idx2label[labels[idx]])
+            previous_word_idx = word_idx
+        # print(label_ids, "\n\n\n")
+        return label_ids
 

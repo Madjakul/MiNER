@@ -240,7 +240,6 @@ class TrainSmoothArgParse():
     @classmethod
     def parse_known_args(cls):
         parser = argparse.ArgumentParser()
-        parser.add_argument("--lang", type=str, default="en")
         parser.add_argument(
             "--train_data_path",
             type=str,

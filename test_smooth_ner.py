@@ -73,7 +73,6 @@ if __name__=="__main__":
             local_y_pred = ner.decode(inputs)[0]
             local_y_pred = align_labels(inputs, local_y_pred, idx2label)
             y_pred.append(local_y_pred)
-            if len(local_y_pred) != len(tags):
     logging.warning(classification_report(test_labels, y_pred, mode="strict", scheme=IOB2))
     logging.warning(precision_score(test_labels, y_pred, mode="strict", scheme=IOB2))
     logging.warning(recall_score(test_labels, y_pred, mode="strict", scheme=IOB2))

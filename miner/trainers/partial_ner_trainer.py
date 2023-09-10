@@ -71,7 +71,7 @@ class PartialNERTrainer():
     """
 
     def __init__(
-        self, ner: PartialNER, lr: float, epochs: int, max_length: int,
+        self, ner: PartialNER, lr: float, epochs: int,
         device: Literal["cpu", "cuda"], ner_path: str,
         momentum: float,sam: bool, idx2label: Dict[int, str], clip: float,
         loss_fn: Optional[str]=None
@@ -81,7 +81,6 @@ class PartialNERTrainer():
         self.device = device
         self.ner = ner
         self.epochs = epochs
-        self.max_length = max_length
         self.clip = clip
         self.idx2label = idx2label
         self.loss_fn = "nll" if loss_fn is None else loss_fn
@@ -108,15 +107,16 @@ class PartialNERTrainer():
         logging.info("Training...")
         self.ner.train()
         losses = []
-        for x, y, _ in tqdm(train_dataloader):
+        for x, x_augmented, y in tqdm(train_dataloader):
             self.optimizer.zero_grad()
             x = {key: val.squeeze(1) for key, val in x.items()}
-            loss = self.ner(x, y, loss_fn=self.loss_fn)
+            x_augmented = {key: val.squeeze(1) for key, val in x_augmented.items()}
+            loss = self.ner(x, x_augmented, y, loss_fn=self.loss_fn)
             losses.append(loss.item())
             loss.backward()
             if self.sam:
                 self.optimizer.first_step(zero_grad=True)
-                loss = self.ner(x, y, loss_fn=self.loss_fn).backward()
+                loss = self.ner(x, x_augmented, y, loss_fn=self.loss_fn).backward()
                 if self.clip is not None:
                     nn.utils.clip_grad_norm_(
                         self.ner.parameters(),
@@ -133,7 +133,7 @@ class PartialNERTrainer():
         self.ner.eval()
         y_true = []
         y_pred = []
-        for x, y, _ in tqdm(val_dataloader):
+        for x, _, y in tqdm(val_dataloader):
             x = {key: val.squeeze(1) for key, val in x.items()}
             result = self.ner.viterbi_decode(x)
             y_pred.extend(result)

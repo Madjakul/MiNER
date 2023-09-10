@@ -44,12 +44,13 @@ if __name__=="__main__":
     train_corpus, train_labels = pp.read_conll(args.train_data_path)
     logging.info("Building the training dataloader...")
     train_dataset = PartialNERDataset(
-        lang=args.lang,
         device=DEVICE,
         max_length=args.max_length,
         iterable_corpus=train_corpus,
         labels=labels,
-        iterable_labels=train_labels
+        iterable_labels=train_labels,
+        lm_path=args.lm_path,
+        do_augment=True
     )
     train_dataloader = DataLoader(
         train_dataset,
@@ -62,12 +63,13 @@ if __name__=="__main__":
 
         logging.info("Building the validation dataloader...")
         val_dataset = PartialNERDataset(
-            lang=args.lang,
             device=DEVICE,
             max_length=args.max_length,
             iterable_corpus=val_corpus,
             labels=labels,
-            iterable_labels=val_labels
+            iterable_labels=val_labels,
+            lm_path=args.lm_path,
+            do_augment=False,
         )
         val_dataloader = DataLoader(
             val_dataset,
@@ -77,8 +79,6 @@ if __name__=="__main__":
 
     logging.info(f"Building the NER with {train_dataset.label2idx}")
     ner = PartialNER(
-        lang=args.lang,
-        max_length=args.max_length,
         lm_path=args.lm_path,
         num_labels=len(labels),
         device=DEVICE,
@@ -91,7 +91,6 @@ if __name__=="__main__":
         lr=args.lr,
         momentum=args.momentum,
         epochs=args.ner_epochs,
-        max_length=args.max_length,
         device=DEVICE,
         ner_path=args.ner_path,
         clip=args.clip,

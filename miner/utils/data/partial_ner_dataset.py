@@ -1,11 +1,13 @@
 # miner/utils/data/ner_dataset.py
 
-from typing import Literal, Union, Optional, List
+import math
+import random
+from typing import Literal, List
 
 import torch
 import transformers
 from torch.utils.data import Dataset
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer, RobertaForMaskedLM
 
 
 class PartialNERDataset(Dataset):
@@ -49,48 +51,41 @@ class PartialNERDataset(Dataset):
     """
 
     def __init__(
-        self, lang: Literal["en", "fr"], device: Literal["cpu", "cuda"],
+        self, device: Literal["cpu", "cuda"], do_augment: bool,
         max_length: int, iterable_corpus: List[str], labels: List[str],
-        iterable_labels: Optional[List[str]]=None
+        iterable_labels: List[str], lm_path: str
     ):
         self.iterable_corpus = iterable_corpus
         self.iterable_labels = iterable_labels
         self.label2idx = {label: idx for idx, label in enumerate(labels)}
         self.label2idx["B-UNK"] = -1
         self.label2idx["I-UNK"] = -1
-        if lang == "fr":
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                "camembert-base", add_prefix_space=True
-            )
-        elif max_length > 512:
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                "allenai/longformer-base-4096", add_prefix_space=True
-            )
-        else:
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                "roberta-base", add_prefix_space=True
-            )
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            "roberta-base", add_prefix_space=True
+        )
+        self.lm = RobertaForMaskedLM.from_pretrained(lm_path).to(device)
         self.max_length = max_length
         self.device = device
-        self.word_ids = []
-        self.inputs, self.outputs, self.masks = self._compute_dataset()
+        self.do_augment = do_augment
 
     def __getitem__(self, idx):
-        x = self.inputs[idx]
-        y = self.outputs[idx]
-        mask = self.masks[idx]
-        return x, y, mask
+        x = self.tokenize(idx)
+        y = torch.tensor(
+            self.align_labels(x, self.iterable_labels[idx]),
+            dtype=torch.int64,
+            device=self.device
+        )
+        if self.do_augment:
+            x_augmented = self.augmented_tokenize(x)
+            return x, x_augmented, y
+        return x, torch.empty((2, 3), dtype=torch.float), y
 
     def __len__(self):
-        if self.inputs is None:
-            return 0
-        return len(self.inputs)
+        return len(self.iterable_corpus)
 
-    def _tokenize(
-        self, pretokenized_text: Union[str, List[str], List[List[str]]]
-    ):
+    def tokenize(self, idx: int):
         inputs = self.tokenizer(
-            pretokenized_text,
+            self.iterable_corpus[idx],
             is_split_into_words=True,
             max_length=self.max_length,
             padding="max_length",
@@ -99,41 +94,41 @@ class PartialNERDataset(Dataset):
         )
         return inputs.to(self.device)
 
-    def _compute_dataset(self):
-        outputs = []
-        inputs = []
-        masks = []
-        for idx, text in enumerate(self.iterable_corpus):
-            local_inputs = self._tokenize(text)
-            local_outputs = [
-                self.label2idx[label] for label in self.iterable_labels[idx]    # type: ignore
-            ]
-            local_outputs, local_mask = self._align_labels(local_inputs, local_outputs)
-            inputs.append(local_inputs)
-            outputs.append(local_outputs)
-            masks.append(local_mask)
-        outputs = torch.tensor(outputs, dtype=torch.int64, device=self.device)
-        masks = torch.tensor(masks, dtype=torch.uint8, device=self.device)
-        return inputs, outputs, masks
+    def augmented_tokenize(self, inputs: transformers.BatchEncoding):
+        """Replace some tokens in the input sentence.
 
-    def _align_labels(
-        self, inputs: transformers.BatchEncoding, labels: List[int]
+        Parameters
+        ----------
+
+        Returns
+        -------
+        """
+        augmented_inputs = inputs.copy()
+        augmented_inputs["input_ids"] = inputs["input_ids"].clone()
+        max_idx = (
+            inputs["input_ids"][0] != self.tokenizer.pad_token_id
+        ).sum() - 2
+        nb_token_to_mask = int(math.ceil(.15 * max_idx))
+        masked_ids = random.sample(range(1, max_idx + 1), nb_token_to_mask)
+        for idx in masked_ids:
+            augmented_inputs["input_ids"][0, idx] = self.tokenizer.mask_token_id
+        with torch.no_grad():
+            logits = self.lm(**augmented_inputs)["logits"]
+        top_k_tokens = torch.topk(logits[0, masked_ids], k=3, dim=1).indices
+        for idx, position in enumerate(masked_ids):
+            replacement_id = top_k_tokens[idx, random.randint(0, 2)]
+            augmented_inputs["input_ids"][0, position] = replacement_id
+        return augmented_inputs
+
+    def align_labels(
+        self, inputs: transformers.BatchEncoding, labels: List[str]
     ):
         word_ids = inputs.word_ids()                    # type: ignore
-        self.word_ids.append(word_ids)
         label_ids = []
-        local_mask = []
-        previous_word_idx = -1
         for word_idx in word_ids:
             if word_idx is None:
                 label_ids.append(self.label2idx["O"])
-                local_mask.append(0)
-            elif word_idx != previous_word_idx:         # type: ignore
-                label_ids.append(labels[word_idx])
-                local_mask.append(1)
             else:
-                label_ids.append(labels[word_idx])
-                local_mask.append(0)
-            previous_word_idx = word_idx
-        return label_ids, local_mask
+                label_ids.append(self.label2idx[labels[word_idx]])
+        return label_ids
 

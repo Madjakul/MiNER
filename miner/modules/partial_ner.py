@@ -1,7 +1,7 @@
 # miner/modules/partial_ner.py
 
 import logging
-from typing import Optional, Literal, Dict
+from typing import Optional, Literal
 
 import torch
 import torch.nn as nn
@@ -48,19 +48,14 @@ class PartialNER(nn.Module):
     """
 
     def __init__(
-        self, lang: Literal["en", "fr"], lm_path: str, num_labels: int,
-        max_length: int, device: Literal["cpu", "cuda"], dropout: float,
+        self, lm_path: str, num_labels: int,
+        device: Literal["cpu", "cuda"], dropout: float,
         q: Optional[float]=None, padding_idx: Optional[int]=None
     ):
         super(PartialNER, self).__init__()
         self.device = device
         logging.info(f"Loading LM checkpoint from {lm_path}")
-        if lang == "fr":
-            self.transformer = CamembertModel.from_pretrained(lm_path)
-        elif max_length > 512:
-            self.transformer = LongformerModel.from_pretrained(lm_path)
-        else:
-            self.transformer = RobertaModel.from_pretrained(lm_path)
+        self.transformer = RobertaModel.from_pretrained(lm_path)
         self.linear_dropout = nn.Dropout(dropout)
         self.fc = nn.Linear(768, num_labels)    # (batch_size, max_length, num_labels)
         self.crf = PartialCRF(
@@ -71,7 +66,7 @@ class PartialNER(nn.Module):
         )
 
     def forward(
-        self, inputs: transformers.BatchEncoding, outputs: torch.LongTensor,
+        self, inputs: transformers.BatchEncoding, inputs_augmented: transformers.BatchEncoding, outputs: torch.LongTensor,
         loss_fn: Optional[Literal["nll", "c_nll", "gce"]]=None
     ):
         """Performs the forward pass.
@@ -98,7 +93,15 @@ class PartialNER(nn.Module):
             mask=inputs["attention_mask"],
             loss_fn="nll" if loss_fn is None else loss_fn
         )
-        return loss
+        h_augmented = self.transformer(**inputs_augmented).last_hidden_state
+        logits_augmented = self.fc(self.linear_dropout(h_augmented))
+        loss_augmented = self.crf(
+            emissions=logits_augmented,
+            tags=outputs,
+            mask=inputs_augmented["attention_mask"],
+            loss_fn="nll" if loss_fn is None else loss_fn
+        )
+        return loss + loss_augmented
 
     @torch.inference_mode()
     def viterbi_decode(self, inputs: transformers.BatchEncoding):

@@ -7,11 +7,11 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-TEST_CORPUS_PATH="$DATA_ROOT/conll/gold/conll_test.conll"
-LABELS_PATH="$DATA_ROOT/conll/labels.txt"
-LM_PATH="$PROJECT_ROOT/tmp/conll_lm-128"
-MAX_LENGTH=128
-NER_PATH="$PROJECT_ROOT/tmp/conll_ner-128.pt"
+TEST_CORPUS_PATH="$DATA_ROOT/wikigold/gold/wiki_test.conll"
+LABELS_PATH="$DATA_ROOT/wikigold/labels.txt"
+LM_PATH="$PROJECT_ROOT/tmp/wiki_lm-128"
+MAX_LENGTH=256
+NER_PATH="$PROJECT_ROOT/tmp/wiki_ner-128.pt"
 
 # -----------------------------------------------------------------------------
 

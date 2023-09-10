@@ -41,3 +41,16 @@ def create_possible_tag_masks(
     masks[no_annotation_idx] = 1
     return masks    # type: ignore
 
+
+def custom_argmax(input_tensor, threshold=0.7):
+    # Find the maximum value along the last dimension (num_labels)
+    max_values, max_indices = torch.max(input_tensor, dim=-1)
+
+    # Create a mask for values greater than the threshold
+    mask = max_values > threshold
+
+    # Replace indices where the mask is False with 0
+    max_indices[~mask] = 0
+
+    return max_indices
+

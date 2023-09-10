@@ -10,6 +10,7 @@ import transformers
 from transformers import AutoTokenizer, RobertaForMaskedLM
 
 from miner.modules import PartialNER
+from miner.utils.crf_utils import custom_argmax, create_possible_tag_masks
 
 
 class SmoothNERDataset(Dataset):
@@ -25,10 +26,11 @@ class SmoothNERDataset(Dataset):
     def __init__(
         self, partial_ner: PartialNER, corpus: List[List[str]],
         max_length: int, lm_path: str,
-        device: Optional[Literal["cpu", "cuda"]]="cpu"
+        device: Optional[Literal["cpu", "cuda"]]="cpu", labels: Optional[List[List[str]]]=None
     ):
         self.partial_ner = partial_ner
         self.corpus = corpus
+        self.labels = labels
         self.max_length = max_length
         self.device = device
         self.tokenizer = AutoTokenizer.from_pretrained(
@@ -42,9 +44,9 @@ class SmoothNERDataset(Dataset):
 
     def __getitem__(self, idx: int):
         x = self.tokenize(idx)
-        augmented_x = self.augmented_tokenize(x)
+        x_augmented = self.augmented_tokenize(x)
         y = self.enhanced_marginal_probabilities(x)
-        return x, augmented_x, y
+        return x, x_augmented, y
 
     def tokenize(self, idx: int):
         """Tokenizes a list of token.
@@ -114,7 +116,10 @@ class SmoothNERDataset(Dataset):
         mask = inputs["attention_mask"].unsqueeze(2).expand(tmp_p.shape[0], tmp_p.shape[1], tmp_p.shape[2])
         p = tmp_p * mask
         squared_p = p ** 2
-        denominator = squared_p.sum(dim=1)
-        enhanced_p = squared_p / denominator.unsqueeze(1)
-        return enhanced_p
+        denominator = squared_p.sum(dim=2)
+        enhanced_p = squared_p / denominator.unsqueeze(2)
+        outputs = custom_argmax(enhanced_p, threshold=0.7)
+        outputs = create_possible_tag_masks(num_tags=p.shape[2], tags=outputs)
+        return outputs.squeeze(0).float()
+        # return p
 

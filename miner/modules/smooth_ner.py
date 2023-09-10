@@ -42,12 +42,13 @@ class SmoothNER(nn.Module):
         """
         h = self.transformer(**inputs).last_hidden_state
         logits = self.fc(self.linear_dropout(h))
-        mask = inputs["attention_mask"].unsqueeze(2).expand(logits.shape[0], logits.shape[1], logits.shape[2])
-        log_p = F.log_softmax(logits, dim=2) * mask
+        log_p = F.log_softmax(logits, dim=2)
+        # log_p = F.log_softmax(logits, dim=1) * mask
         kl_loss = self.kl_loss(log_p, targets)
         h_augmented = self.transformer(**augmented_inputs).last_hidden_state
         logits_augmented = self.fc(self.linear_dropout(h_augmented))
-        log_p_augmented = F.log_softmax(logits_augmented, dim=2) * mask
+        log_p_augmented = F.log_softmax(logits_augmented, dim=2)
+        # log_p_augmented = F.log_softmax(logits_augmented, dim=1) * mask
         kl_loss_augmented = self.kl_loss(log_p_augmented, targets)
         return kl_loss + kl_loss_augmented
 
@@ -64,6 +65,7 @@ class SmoothNER(nn.Module):
         h = self.transformer(**inputs).last_hidden_state
         logits = self.fc(self.linear_dropout(h))
         p = F.softmax(logits, dim=2)
+        # p = F.softmax(logits, dim=1)
         return p
 
     @torch.inference_mode()
@@ -79,6 +81,7 @@ class SmoothNER(nn.Module):
         h = self.transformer(**inputs).last_hidden_state
         logits = self.fc(self.linear_dropout(h))
         p = F.softmax(logits, dim=2)
+        # p = F.softmax(logits, dim=1)
         tags = p.argmax(dim=2)
         return tags.tolist()
 

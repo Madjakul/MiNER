@@ -10,10 +10,10 @@ TRAIN_DATA_PATH="$DATA_ROOT/wikigold/distant/wiki_train.conll"
 LABELS_PATH="$DATA_ROOT/wikigold/labels.txt"
 LM_PATH="$PROJECT_ROOT/tmp/wiki_lm-128"
 MAX_LENGTH=128
-NER_BATCH_SIZE=16
+NER_BATCH_SIZE=8
 ACCUMULATION_STEPS=1
 # LR=0.0005
-# NER_EPOCHS=10
+NER_EPOCHS=10
 NER_PATH="$PROJECT_ROOT/tmp/wiki_ner-128.pt"
 SMOOTH_NER_PATH="$PROJECT_ROOT/tmp/wiki_smooth-ner-128.pt"
 # DORPOUT=0.2
@@ -39,7 +39,7 @@ cmd=( python3 train_smooth_ner.py \
     --max_length ${MAX_LENGTH:-512} \
     --ner_batch_size ${NER_BATCH_SIZE:-4} \
     --accumulation_steps ${ACCUMULATION_STEPS:-8} \
-    --lr ${LR:-0.0000005} \
+    --lr ${LR:-0.00001} \
     --ner_epochs ${NER_EPOCHS:-5} \
     --partial_ner_path ${NER_PATH:-"$PROJECT_ROOT/tmp/cdr_ner-512.pt"} \
     --smooth_ner_path ${SMOOTH_NER_PATH:-"$PROJECT_ROOT/tmp/cdr_smooth-ner-512"} \

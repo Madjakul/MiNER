@@ -129,7 +129,7 @@ class PretrainArgParse():
 
 
 class TrainPartialArgParse():
-    """Arguments to train the name entity recognizer.
+    """Arguments to train the partial named entity recognizer.
     """
 
     @classmethod
@@ -234,7 +234,7 @@ class TrainPartialArgParse():
 
 
 class TrainSmoothArgParse():
-    """Arguments to train the name entity recognizer.
+    """Arguments to train the smooth named entity recognizer.
     """
 
     @classmethod
@@ -322,7 +322,7 @@ class TrainSmoothArgParse():
 
 
 class TestPartialArgParse():
-    """Arguments to train the name entity recognizer.
+    """Arguments to test the partial named entity recognizer.
     """
 
     @classmethod
@@ -354,3 +354,39 @@ class TestPartialArgParse():
         )
         args, _ = parser.parse_known_args()
         return args
+
+
+class TestSmoothArgParse():
+    """Arguments to test the smooth named entity recognizer.
+    """
+
+    @classmethod
+    def parse_known_args(cls):
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--lang", type=str, default="en")
+        parser.add_argument(
+            "--test_corpus_path",
+            type=str,
+        )
+        parser.add_argument(
+            "--labels_path",
+            type=str,
+        )
+        parser.add_argument(
+            "--lm_path",
+            type=str,
+            help="Local path/huggingface checkpoint to a language model."
+        )
+        parser.add_argument(
+            "--max_length",
+            type=int,
+            help="Maximum sequence length."
+        )
+        parser.add_argument(
+            "--ner_path",
+            type=str,
+            help="Path to the trained named entity recognizer."
+        )
+        args, _ = parser.parse_known_args()
+        return args
+

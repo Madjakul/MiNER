@@ -1,16 +1,15 @@
 # test_smooth_ner
 
 import logging
-import argparse
 
 import torch
 from transformers import AutoTokenizer
 from tqdm import tqdm
-from seqeval.metrics import classification_report, f1_score, precision_score, recall_score
 from seqeval.scheme import IOB2
+from seqeval.metrics import classification_report, f1_score, precision_score, recall_score
 
-from miner.utils import logging_config, align_labels
 from miner.modules import SmoothNER
+from miner.utils import TestSmoothArgParse, logging_config, align_labels
 from miner.utils.data import preprocessing as pp
 
 
@@ -21,19 +20,7 @@ if DEVICE == "cuda":
 
 
 if __name__=="__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--test_corpus_path",
-        type=str,
-    )
-    parser.add_argument(
-        "--labels_path",
-        type=str,
-    )
-    parser.add_argument("--lm_path", type=str)
-    parser.add_argument("--max_length", type=int)
-    parser.add_argument("--ner_path", type=str)
-    args = parser.parse_args()
+    args = TestSmoothArgParse.parse_known_args()
 
     logging.info("=== Testing ===")
 

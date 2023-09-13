@@ -8,7 +8,8 @@ from miner.utils.arg_parse import (
     PretrainArgParse,
     TrainPartialArgParse,
     TrainSmoothArgParse,
-    TestPartialArgParse
+    TestPartialArgParse,
+    TestSmoothArgParse
 )
 
 
@@ -19,6 +20,7 @@ __all__ = [
     "TrainPartialArgParse",
     "TrainSmoothArgParse",
     "TestPartialArgParse",
+    "TestSmoothArgParse",
     "logging_config",
     "create_possible_tag_masks",
     "LRScheduler",

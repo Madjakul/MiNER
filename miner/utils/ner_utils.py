@@ -9,30 +9,24 @@ from miner.optimizer import SAM
 
 
 class LRScheduler():
-    """Learning rate scheduler. If the validation loss does not decrease for
-    the given number of `patience` epochs, then the learning rate will decrease
-    by a given `factor`.
+    """Learning rate scheduler wrapper.
 
     Parameters
     ----------
-    optimizer: ``torch.optim.SGD``
-        The optimizer we are using.
-    patience: ``int``
-        How many epochs to wait before updating the learning rate.
-    factor: ``float``
-        Factor by which the learning rate should be updated.
+    optimizer: Union[SGD, AdamW, SAM]
+        The optimizer used.
+    patience: int
+        How many epochs/steps to wait before updating the learning rate.
+    factor: float
+        Learning rate shrinking factor.
 
     Attributes
     ----------
-    optimizer: ``miner.optimizer.SAM``
-        The optimizer we are using.
-    patience: ``int``
-        How many epochs to wait before updating the learning rate.
-    min_lr: ``float``
-        Last learning rate value to reduce to while updating.
-    factor: ``float``
-        Factor by which the learning rate should be updated.
-    lr_scheduler: ``torch.optim.lr_scheduler.ReduceLROnPlateau``
+    optimizer: Union[SGD, AdamW, SAM]
+        The optimizer used.
+    patience: int
+        How many epochs/steps to wait before updating the learning rate.
+    lr_scheduler: lr_scheduler.StepLR
     """
 
     def __init__(
@@ -49,16 +43,34 @@ class LRScheduler():
         self.lr_scheduler.step()
 
 
-def align_labels(inputs: transformers.BatchEncoding, labels: List[int], idx2label: Dict[int, str]):
-        word_ids = inputs.word_ids()                    # type: ignore
-        label_ids = []
-        previous_word_idx = -1
-        # print(word_ids, "\n")
-        # print(labels, "\n")
-        for idx, word_idx in enumerate(word_ids):
-            if word_idx != previous_word_idx and word_idx is not None:         # type: ignore
-                label_ids.append(idx2label[labels[idx]])
-            previous_word_idx = word_idx
-        # print(label_ids, "\n\n\n")
-        return label_ids
+def align_labels(
+    inputs: transformers.BatchEncoding, labels: List[int],
+    idx2label: Dict[int, str]
+):
+    """Get the label of the first token of each subword in order to align a
+    model's output to the real labels. Transforms the output integers into
+    strings.
+
+    Parameters
+    ----------
+    inputs: transformers.BatchEncoding
+        ``transformers`` tokenizer's output.
+    labels: List[int]
+        List of predicted labels.
+    idx2label: Dict[int, str]
+        Dictionary mapping the output integers to their string value.
+
+    Returns
+    -------
+    label_ids: List[str]
+        List of predicted labels as list of strings.
+    """
+    word_ids = inputs.word_ids()                                    # type: ignore
+    label_ids = []
+    previous_word_idx = -1
+    for idx, word_idx in enumerate(word_ids):
+        if word_idx != previous_word_idx and word_idx is not None:  # type: ignore
+            label_ids.append(idx2label[labels[idx]])
+        previous_word_idx = word_idx
+    return label_ids
 

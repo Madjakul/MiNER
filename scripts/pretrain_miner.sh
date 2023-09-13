@@ -7,16 +7,16 @@ DATA_ROOT=$PROJECT_ROOT/data                        # Do not modify
 # ************************* Customizable Arguments ****************************
 
 # LANG="en"
-TRAIN_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_train_corpus.txt"
-VAL_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_test_corpus.txt"
-MAX_LENGTH=128
-LM_PATH="./tmp/wiki_lm-128"
+# TRAIN_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_train_corpus.txt"
+# VAL_CORPUS_PATH="$DATA_ROOT/wikigold/wiki_test_corpus.txt"
+# MAX_LENGTH=128
+# LM_PATH="./tmp/wiki_lm-128"
 # SEED=0
 # MLM_PROBABILITY=0.0
-LM_TRAIN_BATCH_SIZE=4
+# LM_TRAIN_BATCH_SIZE=4
 # MAX_STEPS=0
 # LM_ACCUMULATION_STEPS=4
-MAX_STEPS=1000
+# MAX_STEPS=1000
 
 # WANDB=
 
@@ -37,7 +37,7 @@ cmd=( python3 pretrain_miner.py \
     --seed ${SEED:-8} \
     --mlm_probability ${MLM_PROBABILITY:-0.15} \
     --lm_train_batch_size ${LM_TRAIN_BATCH_SIZE:-4} \
-    --max_steps ${MAX_STEPS:-1000} \
+    --max_steps ${MAX_STEPS:-500} \
     --lm_accumulation_steps ${LM_ACCUMULATION_STEPS:-4} )
 
 if [[ -v WANDB ]]; then

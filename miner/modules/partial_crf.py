@@ -1,156 +1,73 @@
 # miner/modules/partial_crf.py
 
-from typing import Optional
+from typing import Optional, Literal
 
 import torch
-import torch.nn as nn
 
 from miner.modules.base_crf import BaseCRF
-from miner.utils import (
-    IMPOSSIBLE_SCORE, create_possible_tag_masks, log_sum_exp
-)
+from miner.utils import IMPOSSIBLE_SCORE, create_possible_tag_masks
 
 
 class PartialCRF(BaseCRF):
-    """Partial/Fuzzy Conditional random field[1]_.
+    """Partial/Fuzzy Conditional random field.
 
     Parameters
     ----------
-    num_tags: ``int``
-        Number of possible tags.
-    padding_idx: ``int``
-        Integer representing the padding tag.
+    q: float, optional
+        Hyperparameter used to modify the generalized cross-entropy.
 
-    References
+    Attributes
     ----------
-    ..  [1] Kajyuuen. Pytorch-partial-crf/partial_crf.py at master ·
-        Kajyuuen/pytorch-partial-CRF. Retrieved November 8, 2022 from
-        https://github.com/kajyuuen/pytorch-partial-crf/blob/master/pytorch_partial_crf/partial_crf.py
+    q: float, default=0.7
+        Hyperparameter used to modify the generalized cross-entropy.
     """
+
     def __init__(
-        self, num_tags: int, padding_idx: Optional[int]=None,
-        corrected_loss: Optional[bool]=None
+        self, num_tags: int, device: Literal["cpu", "cuda"],
+        q: Optional[float]=None, padding_idx: Optional[int]=None
     ):
-        super().__init__(num_tags, padding_idx, corrected_loss)
-
-    def _reset_parameters(self) -> None:
-        nn.init.uniform_(self.start_transitions, -0.1, 0.1)
-        nn.init.uniform_(self.end_transitions, -0.1, 0.1)
-        nn.init.uniform_(self.transitions, -0.1, 0.1)
-
-    def forward(
-        self, emissions: torch.Tensor, tags: torch.Tensor,
-        mask: Optional[torch.Tensor]=None
-    ):
-        """Compute the negative log-likelihood of an observed sequence of tags.
-
-        Parameters
-        ----------
-        emissions: ``torch.Tensor``
-            Emission scores of each tokens.
-        tags: ``torch.Tensor``
-            Seqeuence of true labels.
-        mask: ``torch.Tensor``
-            Binary tensor mapping the padding labels to 0.
-
-        Returns
-        -------
-        torch.sum(forward_score - gold_score): ``torch.Tensor``
-            Negative log-likelihood.
-        """
-        if mask is None:
-            mask = torch.ones_like(tags, dtype=torch.uint8)
-        possible_tags = create_possible_tag_masks(self.num_tags, tags)
-
-        gold_score = self._numerator_score(emissions, mask, possible_tags).double()
-        forward_score = self._denominator_score(emissions, mask).double()
-        nll = forward_score - gold_score
-        if self.corrected_loss:
-            nlu = -(1 - (-nll).exp()).log()
-            if torch.isnan(nlu).any() or torch.isinf(nlu).any():
-                nl = (1 - (-nll).exp())
-                nl = nl + (nl < 1e-4).to(nl).detach() * (1e-4 - nl).detach()
-                nlu = - nl.log()
-            return torch.sum(nll + nlu)
-        return torch.sum(nll)
-
-    def _denominator_score(
-        self, emissions: torch.Tensor, mask: torch.Tensor
-    ):
-        """ Computes the partition score.
-
-        Parameters
-        ----------
-        emissions: ``torch.Tensor``
-            (batch_size, sequence_length, num_tags).
-        mask: ``torch.Tensor``
-            Show padding tags. 0 don't calculate score. (batch_size,
-            sequence_length).
-
-        Returns
-        -------
-        scores: ``torch.Tensor``
-            (batch_size).
-        """
-        batch_size, sequence_length, num_tags = emissions.data.shape
-
-        emissions = emissions.transpose(0, 1).contiguous()
-        mask = mask.float().transpose(0, 1).contiguous()
-
-        # Start transition score and first emissions score
-        alpha = self.start_transitions.view(1, num_tags) + emissions[0]
-
-        for i in range(1, sequence_length):
-
-            emissions_score = emissions[i].view(batch_size, 1, num_tags)      # (batch_size, 1, num_tags)
-            transition_scores = self.transitions.view(1, num_tags, num_tags)  # (1, num_tags, num_tags)
-            broadcast_alpha = alpha.view(batch_size, num_tags, 1)             # (batch_size, num_tags, 1)
-
-            inner = broadcast_alpha + emissions_score + transition_scores     # (batch_size, num_tags, num_tags)
-
-            alpha = (log_sum_exp(inner, 1) * mask[i].view(batch_size, 1) +
-                     alpha * (1 - mask[i]).view(batch_size, 1))
-
-        # Add end transition score
-        stops = alpha + self.end_transitions.view(1, num_tags)
-
-        return log_sum_exp(stops) # (batch_size,)
+        super().__init__(num_tags, device, padding_idx)
+        self.q = q if q is not None else 0.7
 
     def _numerator_score(
-        self, emissions: torch.Tensor, mask: torch.Tensor,
-        possible_tags: torch.Tensor
+        self, emissions: torch.FloatTensor, mask: torch.ByteTensor,
+        possible_tags: torch.ByteTensor,
     ):
-        """Computes the sentence's score.
+        """
+        Computes the log of the emission/unary score plus the transition score
+        for the whole sequence.
 
         Parameters
         ----------
-        emissions: ``torch.Tensor``
+        emissions: torch.FloatTensor
+            Unary/emission score of each tokens.
             (batch_size, sequence_length, num_tags).
-        mask: ``torch.Tensor``
-            Show padding tags. 0 don't calculate score. (batch_size,
-            sequence_length).
+        mask: torch.ByteTensor
+            Masked used to to discard subwords, special tokens or padding from
+            being added to the log-probability. (batch_size, sequence_length).
+        possible_tags: torch.ByteTensor
+            Mask corresponding to the target label(s).
+            (batch_size, sequence_length, num_tags).
 
         Returns
         -------
-        scores: ``torch.Tensor``
-            (batch_size).
+        torch.FloatTensor
+            Log probability of the emission/unary score plus the transition
+            score for the whole sequence. (batch_size,)
         """
-
         batch_size, sequence_length, num_tags = emissions.data.shape
-
-        emissions = emissions.transpose(0, 1).contiguous()
-        mask = mask.float().transpose(0, 1).contiguous()
-        possible_tags = possible_tags.float().transpose(0, 1)
+        emissions = emissions.transpose(0, 1).contiguous()                  # type: ignore
+        mask = mask.float().transpose(0, 1).contiguous()                    # type: ignore
+        possible_tags = possible_tags.float().transpose(0, 1)               # type: ignore
 
         # Start transition score and first emission
         first_possible_tag = possible_tags[0]
-
-        alpha = self.start_transitions + emissions[0]      # (batch_size, num_tags)
+        alpha = self.start_transitions + emissions[0]                       # (batch_size, num_tags)
         alpha[(first_possible_tag == 0)] = IMPOSSIBLE_SCORE
 
         for i in range(1, sequence_length):
-            current_possible_tags = possible_tags[i-1] # (batch_size, num_tags)
-            next_possible_tags = possible_tags[i]      # (batch_size, num_tags)
+            current_possible_tags = possible_tags[i-1]                      # (batch_size, num_tags)
+            next_possible_tags = possible_tags[i]                           # (batch_size, num_tags)
 
             # Emissions scores
             emissions_score = emissions[i]
@@ -158,103 +75,164 @@ class PartialCRF(BaseCRF):
             emissions_score = emissions_score.view(batch_size, 1, num_tags)
 
             # Transition scores
-            transition_scores = self.transitions.view(
-                1, num_tags, num_tags
-            ).expand(batch_size, num_tags, num_tags).clone()
+            transition_scores = self.transitions.unsqueeze(0).expand(
+                batch_size, num_tags, num_tags
+            ).clone()
             transition_scores[(current_possible_tags == 0)] = IMPOSSIBLE_SCORE
-            transition_scores.transpose(1, 2)[(next_possible_tags == 0)] =\
+            transition_scores.transpose(1, 2)[(next_possible_tags == 0)] = \
                 IMPOSSIBLE_SCORE
 
             # Broadcast alpha
-            broadcast_alpha = alpha.view(batch_size, num_tags, 1)
+            broadcast_alpha = alpha.unsqueeze(2)
 
             # Add all scores
-            inner = broadcast_alpha + emissions_score + transition_scores # (batch_size, num_tags, num_tags)
-            alpha = (log_sum_exp(inner, 1) * mask[i].view(batch_size, 1) +
-                     alpha * (1 - mask[i]).view(batch_size, 1))
+            inner = broadcast_alpha + emissions_score + transition_scores   # (batch_size, num_tags, num_tags)
+            alpha = (
+                torch.logsumexp(inner, 1) * mask[i].unsqueeze(1)
+                + alpha * (1 - mask[i]).unsqueeze(1)
+            )
 
         # Add end transition score
         last_tag_indexes = mask.sum(0).long() - 1
         end_transitions = (
             self.end_transitions.expand(batch_size, num_tags)
-            * possible_tags.transpose(0, 1).view(sequence_length
-            * batch_size, num_tags)[
+            * possible_tags.transpose(0, 1).view(
+                sequence_length * batch_size, num_tags
+            )[
                 last_tag_indexes
                 + torch.arange(batch_size, device=possible_tags.device)
                 * sequence_length
             ]
         )
         end_transitions[(end_transitions == 0)] = IMPOSSIBLE_SCORE
-        stops = alpha + end_transitions
+        stops = alpha + end_transitions                                     # (batch_size, num_tags)
+        return torch.logsumexp(stops, 1)                                    # (batch_size,) # type: ignore
 
-        return log_sum_exp(stops) # (batch_size,)
-
-    def _forward_algorithm(
-        self, emissions: torch.Tensor, mask: torch.Tensor,
-        reverse_direction: bool=False
+    def _denominator_score(
+        self, emissions: torch.FloatTensor, mask: torch.ByteTensor,
     ):
-        """Computes the log probabilities.
+        """
+        Computes the log-partition score for the whole sequence.
 
         Parameters
         ----------
-        emissions: ``torch.Tensor``
+        emissions: torch.FloatTensor
+            Unary/emission score of each tokens.
             (batch_size, sequence_length, num_tags).
-        mask:  ``torch.ByteTensor``
-            Show padding tags. 0 don't calculate score. (batch_size,
-            sequence_length).
-        reverse: ``bool``
-            This parameter decide algorithm direction.
+        mask: torch.ByteTensor
+            Masked used to to discard subwords, special tokens or padding from
+            being added to the log-probability. (batch_size, sequence_length).
 
         Returns
         -------
-        log_probabilities: ``torch.Tensor``
-            (sequence_length, batch_size, num_tags).
+        torch.FloatTensor
+            Log-partition score. (batch_size,)
         """
-        batch_size, sequence_length, num_tags = emissions.data.shape
+        _, sequence_length, num_tags = emissions.data.shape
+        emissions = emissions.transpose(0, 1).contiguous()                  # type: ignore
+        mask = mask.float().transpose(0, 1).contiguous()                    # type: ignore
+        # Start transition score and first emissions score
+        alpha = self.start_transitions.view(1, num_tags) + emissions[0]
 
-        broadcast_emissions = emissions.transpose(0, 1).unsqueeze(2).contiguous() # (sequence_length, batch_size, 1, num_tags)
-        mask = mask.float().transpose(0, 1).contiguous()                          # (sequence_length, batch_size)
-        broadcast_transitions = self.transitions.unsqueeze(0)                     # (1, num_tags, num_tags)
-        sequence_iter = range(1, sequence_length)
-
-        # backward algorithm
-        if reverse_direction:
-            # Transpose transitions matrix and emissions
-            broadcast_transitions = broadcast_transitions.transpose(1, 2)         # (1, num_tags, num_tags)
-            broadcast_emissions = broadcast_emissions.transpose(2, 3)             # (sequence_length, batch_size, num_tags, 1)
-            sequence_iter = reversed(sequence_iter)
-
-            # It is beta
-            log_proba = [self.end_transitions.expand(batch_size, num_tags)]
-        # forward algorithm
-        else:
-            # It is alpha
-            log_proba = [emissions.transpose(0, 1)[0] + self.start_transitions.view(1, -1)]
-
-        for i in sequence_iter:
-            # Broadcast log probability
-            broadcast_log_proba = log_proba[-1].unsqueeze(2) # (batch_size, num_tags, 1)
-
-            # Add all scores
-            # inner: (batch_size, num_tags, num_tags)
-            # broadcast_log_proba:   (batch_size, num_tags, 1)
-            # broadcast_transitions: (1, num_tags, num_tags)
-            # broadcast_emissions:   (batch_size, 1, num_tags)
-            inner = (
-                broadcast_log_proba
-                + broadcast_transitions
-                + broadcast_emissions[i]
-            )
-            # Append log proba
-            log_proba.append(
-                log_sum_exp(inner, 1)
-                * mask[i].view(batch_size, 1)
-                + log_proba[-1]
-                * (1 - mask[i]).view(batch_size, 1)
+        for i in range(1, sequence_length):
+            emissions_score = emissions[i].unsqueeze(1)                     # (batch_size, 1, num_tags)
+            transition_scores = self.transitions.unsqueeze(0)               # (1, num_tags, num_tags)
+            broadcast_alpha = alpha.unsqueeze(2)                            # (batch_size, num_tags, 1)
+            inner = broadcast_alpha + emissions_score + transition_scores   # (batch_size, num_tags, num_tags)
+            alpha = (
+                torch.logsumexp(inner, 1) * mask[i].unsqueeze(1)
+                + alpha * (1 - mask[i]).unsqueeze(1)
             )
 
-        if reverse_direction:
-            log_proba.reverse()
+        # Add end transition score
+        stops = alpha + self.end_transitions.unsqueeze(0)
+        return torch.logsumexp(stops, 1)                                    # (batch_size,) # type: ignore
 
-        return torch.stack(log_proba)
+    def forward(
+        self, emissions: torch.FloatTensor, tags: torch.LongTensor,
+        loss_fn: Literal["nll", "c_nll", "gce"]="nll",
+        mask: Optional[torch.ByteTensor]=None
+    ):
+        """Performs the forward pass depending on the loss function chosen: the
+        classic negative log-likelihood, the corrected negative log-likelihood
+        where the the negative log-unlikelihood [1]_ is computed and used as a
+        regularizer [2]_ and the generelized cross-entropy [3]_ [4]_.
+
+        Parameters
+        ----------
+        emissions: torch.FloatTensor
+            Unary/emission score of each tokens.
+            (batch_size, sequence_length, num_tags).
+        tags: torch.LongTensor
+            Tensor containing the target labels. (batch_size, sequence_length).
+        loss_fn: str, {"nll", "c_nll", "gce"}, default="nll"
+            Loss function to use: "nll" for negative log-likelihood, "c_nll"
+            for corrected negative log-likelihood or "gce" for generalized
+            cross-entropy.
+        mask: torch.ByteTensor, optional
+            Masked used to to discard subwords, special tokens or padding from
+            being added to the log-probability. (batch_size, sequence_length).
+
+        Returns
+        -------
+        torch.FloatTensor
+            Mean of the losses over the mini-batch. (0,)
+
+        References
+        ----------
+        ..  [1] Welleck, Sean, et al. "Neural text generation with unlikelihood
+                training." arXiv preprint arXiv:1908.04319 (2019).
+        ..  [2] Jiang, Haoming, et al. "Named entity recognition with small
+                strongly labeled and large weakly labeled data." arXiv preprint
+                arXiv:2106.08977 (2021).
+        ..  [3] Zhang, Zhilu, and Mert Sabuncu. "Generalized cross entropy loss
+                for training deep neural networks with noisy labels." Advances
+                in neural information processing systems 31 (2018).
+        ..  [4] Meng, Yu, et al. "Distantly-supervised named entity recognition
+                with noise-robust learning and language model augmented
+                self-training." arXiv preprint arXiv:2109.05003 (2021).
+        """
+        possible_tags = create_possible_tag_masks(self.num_tags, tags)          # (batch_size, sequence_length, num_tags)
+        # If you want NLL
+        if loss_fn == "nll":
+            gold_score = self._numerator_score(emissions, mask, possible_tags)  # (batch_size,) # type: ignore
+            forward_score = self._denominator_score(emissions, mask)            # (batch_size,) # type: ignore
+            nll = forward_score - gold_score                                    # (batch_size,)
+            return torch.mean(nll)                                              # Mean instead of sum # type: ignore
+        pred = self.marginal_probabilities(emissions, mask).transpose(0, 1)     # (batch_size, sequence_length, num_tags)
+        batch_size, sequence_length, num_tags = pred.shape
+        p_mask = (
+            mask.unsqueeze(2).expand(batch_size, sequence_length, num_tags)     # type: ignore
+            * possible_tags
+            != 0.
+        )
+        # If you want corrected NLL
+        if loss_fn == "c_nll":
+            gold_score = self._numerator_score(emissions, mask, possible_tags)  # (batch_size,) # type: ignore
+            forward_score = self._denominator_score(emissions, mask)            # (batch_size,) # type: ignore
+            nll = forward_score - gold_score                                    # (batch_size,)
+            nlu = -(1 - (-nll).exp()).log()
+            nlu[torch.isnan(nlu) | torch.isinf(nlu)].fill_(1e-4)
+            weights = []
+            weights_bar = []
+            for i, sequence in enumerate(pred):
+                p = torch.masked_select(sequence, p_mask[i])                    # (possible_tags==1,)
+                hist = torch.histc(p, bins=20, min=0., max=1.)
+                hist_mask = hist > 0
+                hist = hist[hist_mask]
+                max_weight = torch.max(hist)
+                local_weights = (max_weight - hist) / max_weight
+                weights.append(torch.sum(local_weights))
+                weights_bar.append(torch.sum(1 - local_weights))
+            weights = torch.stack(weights)
+            weights_bar = torch.stack(weights_bar)
+            c_nll = weights * nll + weights_bar * nlu
+            return torch.mean(c_nll)                                            # type: ignore
+        # If you want GCE
+        if loss_fn == "gce":
+            p = torch.masked_select(pred, p_mask)                               # (possible_tags==1,)
+            gce = ((1 - p**self.q) + 1e-4) / (self.q + 1e-4)
+            gce = gce.sum()
+            return gce                                                          # type: ignore
+        raise ValueError(f"Invalid loss function: {loss_fn}")
 

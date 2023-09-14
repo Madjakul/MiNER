@@ -8,7 +8,7 @@ import torch.backends.cudnn
 from miner.utils import PretrainArgParse, logging_config
 from miner.trainers import TransformerTrainer
 from miner.utils.data import TransformerDataset
-from miner.modules import RoBERTa, CamemBERT, Longformer
+from miner.modules import RoBERTa
 
 
 logging_config()
@@ -25,7 +25,7 @@ if __name__=="__main__":
     torch.manual_seed(args.seed)
     torch.cuda.manual_seed(args.seed)
 
-    logging.info("=== Pretraining LM for MiNER ===")
+    logging.info("\n\n=== Pretraining LM for MiNER ===")
 
 
     logging.info(f"Loading training data from {args.train_corpus_path}")
@@ -35,25 +35,23 @@ if __name__=="__main__":
     with open(args.val_corpus_path, "r", encoding="utf-8") as f:
         val_corpus = f.read().splitlines()
 
-    if args.lang == "fr":
-        logging.info("Using CamemBERT checkpoint as language model")
-        lm = CamemBERT(DEVICE)
-    elif args.max_length > 512:
-        logging.info("Using Longformer checkpoint as language model")
-        lm = Longformer(DEVICE)
-    else:
-        logging.info("Using  RoBERTa checkpoint as language model")
-        lm = RoBERTa(DEVICE)
+    logging.info("Using  RoBERTa checkpoint as language model")
+    lm = RoBERTa(DEVICE)
 
     logging.info("Building the dataset...")
     lm_dataset = TransformerDataset(
-        lang=args.lang,
         train_corpus=train_corpus,
         valid_corpus=val_corpus,
         max_length=args.max_length,
         mlm_probability=args.mlm_probability,
     )
-    lm_dataset.add_vocab(train_corpus, lm)
+
+    # There is a silent bug on HuggingFace modifying the beavior of the
+    # tokenizers, upon using the ``add_vocab`` function.
+    # see: https://github.com/huggingface/transformers/pull/23909
+    # I don't know how token encoding impact the performances on a downstream
+    # task, therefor, won't use it for further pre-training.
+    # lm_dataset.add_vocab(train_corpus, lm)
 
     logging.info("*** Training ***")
     lm_trainer = TransformerTrainer(
@@ -63,10 +61,10 @@ if __name__=="__main__":
         per_device_train_batch_size=args.lm_train_batch_size,
         seed=args.seed,
         per_device_eval_batch_size=args.lm_train_batch_size,
-        num_train_epochs=args.lm_epochs,
+        max_steps=args.max_steps,
         gradient_accumulation_steps=args.lm_accumulation_steps,
         wandb=args.wandb
     )
     lm_trainer.train()
-    logging.info("=== Done ===\n\n")
+    logging.info("=== Done ===")
 

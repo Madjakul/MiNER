@@ -1,243 +1,1251 @@
-malaria
-arthritis
-polyps
-dystonia
-visual
-cardiomyopathy
-colon
-attenuated
-anomalies
-neoplasms
-hair
-death
-infections
-heart
-adrenal
-metabolic
-myotonia
-dysfunction
-cognitive
-macular
-glycerol
-galactose
-meningococcal
-state
-diseases
-infection
-hypoplasia
-xanthomatosis
-autoimmune
-peroxisomal
-disomy
-cholesteryl
-cerebellar
-untranslated
-transgenic
-malignant
-tightly
-lymphoproliferative
-confidence
-neurodegenerative
-anomaly
-chronic
-white
-acyl
-assignment
-lip
-possibility
-compatible
-active
-combination
-counseling
-diabetes
-density
-messenger
-animal
-spondylitis
-reading
-variable
-stage
-proportion
-degeneration
-zinc
-vision
-phosphatase
-correlated
-coa
-anemia
-failure
-nt
-contribute
-tumour
-palate
-localization
-account
-transfer
-finger
-carcinoma
-leukodystrophy
-investigate
-panel
-means
-prenatal
-man
-boy
-rate
-confirmed
-symptoms
-scores
-led
-der
-regulation
-pathogenesis
-status
-gastric
-impaired
-lipoprotein
-liver
-alpha
-disease
-instability
-cancers
-subunit
-evaluation
-occurrence
-cholesterol
-obtained
-fever
-screen
-series
-general
-radiation
-adrenoleukodystrophy
-metabolism
-signs
-15q11
-implications
-retinal
-q13
-hemolytic
-failed
-growth
-maps
-color
-comparison
-characteristic
-phenotypic
-strong
-trinucleotide
-manifestations
-vwf
-congenital
-cancer
-tissue
-child
-examination
-late
-identical
-disorders
-abnormalities
-tumors
-encoded
-chromosomal
-founder
-syndrome
-analysis
-maximum
-interval
-ratio
-frameshift
-structure
-cleft
-isolation
-detect
-incidence
-cardiac
-oxidation
-predicted
-tumor
-regions
-majority
-amplification
-formation
-blood
-mutation
-accumulation
-friedreich ataxia
-prostate cancer
-ataxia telangiectasia
-kniest dysplasia
-myotonic dystrophy
-denys drash syndrome
-prader willi syndrome
-ionizing radiation
-familial mediterranean fever
-van der woude syndrome
-ankylosing spondylitis
-pelizaeus merzbacher disease
-wiskott aldrich syndrome
-von willebrand disease
-von willebrand factor
-hearing loss
-pendred syndrome
-mental retardation
-duchenne muscular dystrophy
-machado joseph disease
-wilson disease
-tay sachs disease
-metachromatic leukodystrophy
 phenylalanine hydroxylase
-polymerase chain reaction
-adenomatous polyposis coli
-diastrophic dysplasia
-gel electrophoresis
-renal cell carcinoma
-cerebrotendinous xanthomatosis
-amino acid
-beta catenin
-tumour suppressor
-huntington disease
-breast cancer
-color vision
-reading frame
-ovarian cancer
-muscular dystrophy
-mg dl
-lesch nyhan
-somatic cell hybrids
-amino acids
-becker muscular dystrophy
-glucose 6 phosphate dehydrogenase
-von hippel lindau
-hemolytic anemia
+duchenne muscular dystrophy
+ionizing radiation
 familial adenomatous polyposis
-norrie disease
-emery dreifuss muscular dystrophy
-cholesteryl ester transfer protein
+amino acids
+amino acid
+familial mediterranean fever
+prader willi syndrome
+renal cell carcinoma
+metachromatic leukodystrophy
+pelizaeus merzbacher disease
+denys drash syndrome
+ankylosing spondylitis
+color vision
+mental retardation
+reading frame
+beta catenin
 wild type
-ashkenazi jewish
+myotonic dystrophy
+adenomatous polyposis coli
+friedreich ataxia
+wiskott aldrich syndrome
+cell cycle
 autosomal dominant
-messenger rna
-lod score
+ataxia telangiectasia
 rt pcr
-southern blot
-autosomal recessive
-gastric cancer
-colorectal cancer
-base pair
-prenatal diagnosis
-tay sachs
 zinc finger
+hearing loss
+kniest dysplasia
+gel electrophoresis
+van der woude syndrome
+ashkenazi jewish
+huntington disease
+wilson disease
+polymerase chain reaction
+diastrophic dysplasia
+messenger rna
+machado joseph disease
+hemolytic anemia
+glucose 6 phosphate dehydrogenase
 linkage disequilibrium
-wilms tumor
-cell lines
-lesch nyhan syndrome
-fragile x syndrome
-lod scores
+von willebrand factor
+prostate cancer
+pendred syndrome
+ovarian cancer
+prenatal diagnosis
+tay sachs disease
+confidence interval
+breast cancer
 animal model
-15q11 q13
-restriction fragment length
-ovarian cancers
+uniparental disomy
+autosomal recessive
+muscular dystrophy
+diabetes mellitus
+von willebrand disease
+cell line
+norrie disease
+french canadian
+dna damage
+base pair
 tumor suppressor
-prader willi
+diabetes insipidus
+cholesteryl ester transfer protein
+beta oxidation
+colorectal cancer
+mg dl
+emery dreifuss muscular dystrophy
+missense mutations
+segregation distortion
+cell lines
+southern blot
+becker muscular dystrophy
+skeletal muscle
+fluorescence in situ hybridization
+fatty acids
+renal cell carcinomas
+neurohypophyseal diabetes insipidus
+cerebrotendinous xanthomatosis
+lysosomal storage
+lod score
+point mutations
+mps iva
+missense mutation
+15q11 q13
+protein kinase
+genotype phenotype correlations
 pax3 fkhr
+c9 deficiency
+wilms tumor
+founder effect
+premature termination
+germ line
+gastric cancer
+von hippel lindau
+lesch nyhan
+tumour suppressor
+canavan disease
+genetic counseling
+transgenic mice
+ctg repeat
+lesch nyhan syndrome
+somatic cell hybrids
+alpha subunit
+c2 deficiency
+tay sachs
+peripheral blood
+direct sequencing
+nuclear membrane
+acyl coa
+cag repeat
+genetic linkage
+stop codon
+coding sequence
+family members
+tumor suppressor gene
+adult onset
+highly conserved
+ovarian cancers
+skin fibroblasts
+linkage analysis
+galactose 1 phosphate
+fragile x syndrome
+von willebrand
+cholesteryl ester
+dna sequencing
+dna sequence
+prader willi
+frameshift mutation
+transcription factor
+single strand conformation polymorphism
+coding region
+somatic cell
+type ii
+genetic disorder
+proteolipid protein
+lod scores
+genomic dna
+nonsense mutation
+vlcad deficiency
+breast and ovarian cancer
+point mutation
+tightly linked
+late infantile
+sequence analysis
+clinical manifestations
+pelizaeus merzbacher
+splice donor site
+compound heterozygotes
+c3 deficiency
+closely linked
+membrane protein
+vwf ag
+splice site
+dominant negative
+g6pd deficiency
+amino acid substitutions
+cerebral ald
+early onset
+sulfate transporter
+carrier status
+growth factor
+coa dehydrogenase
+late onset
+donor splice site
+hypoxanthine guanine
+heteroduplex analysis
+hdl cholesterol
+ethnic groups
+africa
+clinical features
+genetic analysis
+g6pd mediterranean
+japanese and caucasian
+very long chain acyl
+splice acceptor
+adenomatous polyposis
+dutch
+glycerol
+melanoma
+spinal
+eastern
+irish
+arthritis
+analysis revealed
+previously identified
+genetic heterogeneity
+consensus
+enzymatic activity
+europe
+binding domain
+mass
+biopsy
+british
+culture
+termination codon
+mucopolysaccharidosis
+pancreatic
+idiopathic
+affected individuals
+carrier detection
+behavioral
+red
+microsatellite markers
+histocompatibility
+leukemia
+macular
+chloride
+antibodies
+bacterial
+field
+genetics
+differential
+component of complement
+cag repeats
+high density
+neuronal
+lip
+neonatal
+c3
+dysfunction
+malignant
+methylation
+previously reported
+visual
+impairment
+neurological
+restriction fragment length
+cognitive
+myotonia
+brca1
+italian
+oral
+caucasian
+metabolic
+very long chain fatty acids
+molecular analysis
+facial
+immunodeficiency
+conformational
+colon
+pigment
+hereditary breast
+embryonic
+hair
+enzymes
+malaria
+japanese
+cysteine
+extracellular
+dystonia
+high frequency
+polymerase chain
+antibody
+assess
+french
+polyps
+targeting
+sensorineural
+meningococcal
+acute
+differentiation
+ashkenazi
+jews
+moroccan
+bone
+premature stop codon
+mouse model
+lymphoma
+cluster
+heart
+gastric
+coa
+milk
+platelet
+selection
+enzyme activity
+nt
+knockout
+guanine
+brca2
+cardiomyopathy
+transmembrane
+na
+mutations
+g6pd
+dna
+variation
+dm kinase
+hypoxanthine
+hereditary hemochromatosis
+homozygosity
+family
+adenomas
+eye
+motif
+brca1 and brca2
+chromosome
+autoimmune
+iodide
+essential
+hypoplasia
+kidney
+chronic
+hormone
+failure
+anomaly
+western
+american
+genome
+splice donor
+phosphorylation
+immune
+iva
+hex
+african
+sulfate
+transporter
+genetic
+exon
+sodium
+alternative
+human
+island
+fact
+mutation
+pax3
+c282y
+neoplasms
+random
+mediterranean
+trinucleotide repeat
+short
+reverse
+insufficiency
+c9
+progression
+ndp
+advantage
+enzymatic
+life
+testing
+sequence
+rna
+southern
+heterozygous
+single strand conformation
+high
+ethnic
+wilms
+examination
+photoreceptor
+channel
+nonsense mutations
+truncating
+generalized
+dinucleotide
+der
+gamma
+affinity
+responses
+anomalies
+area
+double
+myelin
+probability
+actin
+countries
+cohort
+hdl
+diagnostic
+apc
+expression
+results
+pds
+vlcad
+patient
+canadian
+disomy
+c2
+jewish
+cell
+provide evidence
+pairs
+microsatellite
+close linkage
+muscle
+adrenal
+epithelial
+ald
+pcr
+synthesis
+child
+fkhr
+cetp
+determination
+genomic
+reduction
+pax6
+high risk
+white
+type
+infections
+greater
+molecular
+nucleotide position
+cerebellar
+scores
+cleft
+individuals
+homozygous
+ii
+impaired
+fusion
+vhl
+lipoprotein
+c6
+familial
+properties
+ag
+palate
+tumor
+cancer
+wt1
+mice
+mutant
+manifestation
+presenting
+understanding
+atm
+haplotype
+breast ovarian cancer
+hla
+severe
+c7 deficiency
+sensitive
+young
+repair
+c7
+duchenne
+infantile
+tightly
+relationship
+mutation causing
+european
+ct
+clinical
+colorectal
+nature
+heterozygosity
+truncation
+inherited
+studies
+location
+deletion
+electrophoresis
+peptide
+germline
+complement
+acceptor
+population
+study
+affected
+products
+relatives
+protein truncation test
+hd
+dmd
+segregation
+analysis
+hexa
+process
+duplication
+observations
+lysosomal
+attenuated
+common
+wasp
+breast ovarian
+status
+signal
+heterozygote
+degeneration
+rb1
+increased
+protein
+utr
+infection
+pah
+fap
+dm
+somatic
+means
+unrelated families
+chromosomal
+northern
+organization
+appeared
+man
+series
+plp
+patients
+cardiac
+angelman
+data
+adrenoleukodystrophy
+sscp
+cag
+gene
+hybrids
+large
+codon
+spectrum
+linkage
+nucleotide
+peroxisomal
+wide
+cerebral
+dominant
+color
+define
+disease
+ctg
+mg
+active
+molecular genetic
+hprt
+hereditary
+splicing
+male
+recombination
+diagnosis
+long
+oxidation
+phenotype
+fever
+galactose
+families
+mitochondrial
+severe phenotype
+predisposition
+key
+heteroduplex
+screen
+age
+single
+phase
+boy
+frequent
+single strand
+long chain fatty acids
+transfer
+correlated
+evidence
+isolated
+cholesteryl
+breast and or ovarian cancer
+alleles
+mutation detection
+truncating mutations
+skin
+founder
+nucleotide sequence
+g6pd variants
+samples
+similar
+mouse
+survival
+physical
+xanthomatosis
+imprinting
+phenotypic
+direct
+encoded
+canavan
+markers
+previously
+alterations
+carriers
+region
+implicated
+human chromosome
+strong
+state
+hemochromatosis
+factor
+amounts
+panel
+compound
+brain
+group
+fraction
+required
+leukodystrophy
+signs
+dna analysis
+human complement
+ratio
+order
+cancer susceptibility
+blood
+primary
+transcription
+familial cases
+diseases
+members
+gene expression
+variants
+previous
+prostate
+significant
+produce
+species
+sporadic
+bp
+rise
+risk
+transmission
+function
+differences
+percent
+low
+candidate
+deficiency
+genotype
+identified
+polyposis coli
+syndrome
+allele
+hemolytic
+locus
+kniest
+carry
+correlation
+cloning
+report
+enzyme
+incidence
+end
+stop
+chain
+long chain
+rate
+combination
+evaluation
+subjects
+results provide
+premature stop
+becker
+domains
+lupus
+zinc
+women
+lod
+deleted
+molecular basis
+binding
+cholesterol
+renal
+amplification
+disorder
+major
+trinucleotide
+comparison
+detected
+variable
+counseling
+cells
+substitutions
+restriction
+frequency
+characterized
+repeat length
+cetp deficiency
+mechanism
+activity
+increase
+maps
+structure
+cancer risk
+general
+serum
+screening
+groups
+therapy
+genotype phenotype
+animal
+congenital
+q13
+metabolism
+manifestations
+dystrophy
+association
+repeat expansion
+dystrophin
+15q11
+total
+repeat
+detect
+maximum
+gene product
+iron
+mps
+tumors
+thought
+reported
+cases
+specific
+characteristics
+identical
+site
+homologue
+sex
+breast
+carcinomas
+pathogenesis
+repeats
+lymphoproliferative
+percentage
+radiation
+liver
+involvement
+condition
+set
+assignment
+fluorescence
+skeletal
+consequence
+neurodegenerative
+observed
+isolation
+genes
+fibroblasts
+breast and ovarian cancers
+termination
+adult
+presented
+mapping
+age of onset
+critical
+vivo
+germline mutation
+deficient
+change
+form
+implications
+control
+abnormalities
+pendred
+north
+identification
+splice
+levels
+range
+terminal
+screened
+structural
+breast and ovarian
+present
+suggest
+heterozygotes
+identify
+estimated
+hypothesis
+half
+polymorphism
+addition
+homology
+defect
+revealed
+response
+closely
+unrelated
+characteristic
+localized
+pair
+member
+transgenic
+prevalence
+dystrophin gene
+sequencing
+phosphatase
+vision
+case
+death
+assay
+portion
+instability
+growth
+amino
+stem
+accumulation
+reading
+susceptibility gene
+intron
+messenger
+premature
+fragile
+analyzed
+recombinant
+alpha
+homologous
+effect
+proband
+carrier frequency
+peripheral
+onset
+forms
+conformation
+norrie
+heterogeneity
+southern blot analysis
+line
+prenatal
+carrier
+receptor
+damage
+expressed
+fap patients
+defined
+linked
+loss of heterozygosity
+domain
+kinase
+polymorphic
+frameshift
+loss
+dna binding
+late
+regulation
+model
+sporadic breast
+base pair deletion
+investigate
+mice carrying
+based
+dysplasia
+lack
+basis
+missense
+size
+in situ hybridization
+bp deletion
+cancers
+somatic mutations
+early
+pathway
+retinal
+tissue
+inheritance
+compared
+single nucleotide
+defects
+nonsense
+led
+breast ovarian cancer families
+germline mutations
+base
+close
+confirmed
+anemia
+polymorphisms
+compatible
+occurred
+brca1 or brca2
+acid
+findings
+features
+provide
+vwf
+localization
+interval
+theta
+population based
+distribution
+recessive
+related
+component
+hepatic
+involved
+carcinoma
+acyl
+finger
+kb
+phenylalanine
+glucose
+possibility
+development
+demonstrate
+potential
+encodes
+substitution
+male breast cancer
+carrying
+amino acid substitution
+disorders
+autosomal
+symptoms
+beta
+effects
+shown
+susceptibility
+lines
+negative
+coding
+inactivation
+chinese
+caused
+cos
+ovarian
+gel
+polymorphic markers
+determined
+candidate gene
+correlations
+hybridization
+fragment
+cpg
+transcript
+normal
+map
+dcc
+density
+length
+decreased
+transport
+elevated
+membrane
+multiple
+transition
+contribute
+xq28
+severity
+encoding
+cd
+expansion
+nuclear
+ews
+obtained
+product
+pcr products
+expanded
+located
+proximal
+detection
+alu
+resulted
+hmgic
+polyposis
+pten
+dehydrogenase
+derived
+highly
+fmr1
+tp53
+males
+splice site mutation
+dna markers
+int14
+msh2
+d2
+stage
+lesions
+ec
+atp
+conclusions
+position
+progressive
+spondylitis
+result
+date
+occur
+dependent
+history
+finally
+gaa
+appears
+sp1
+subunit
+resulting
+regions
+point
+ability
+b27
+la
+six5
+mapped
+thr
+mutant alleles
+dtdst
+atp7b
+arg
+donor
+mb
+arm
+fluorescence in situ
+contrast
+tumour
+xp21
+strand
+sglt1
+n314d
+translocation
+gly
+finnish
+n370s
+genet
+c4
+central
+single base
+tcd
+rare
+aspa
+level
+npii
+ao
+relative
+mri
+types
+dgs
+sjs
+distal
+pdgfb
+ocrl
+untranslated
+mhc
+hms
+ube3a
+xlrs1
+occurrence
+test
+agu
+kit
+score
+proportion
+sls
+age at diagnosis
+formation
+pls
+snrpn
+japan
+l1
+sit
+dxs7
+humans
+protein truncation
+long arm of chromosome
+diabetes
+magel2
+apoc2
+sca3
+rflp
+ataxia
+aj
+objective
+cug
+disequilibrium
+an2
+s135l
+hh
+yac
+allele specific
+nbs
+responsible
+dtd
+alps
+cp
+met
+i1307k
+mefv
+bmd
+gd
+gs
+aapc
+pmd
+number
+mjd
+edmd
+phosphate
+leads
+consistent
+absence
+causing
+h63d
+dmt1
+gt
+avp
+p16ink4a
+disease causing
+role
+c6 deficiency
+hgo
+gldc
+fmrp
+fas
+ricof
+predicted
+frame
+protein product
+fmf
+chm
+apoe
+cancer susceptibility gene
+central nervous system
+amn
+tf
+d442g
+tfr
+rflps
+arsa
+rcc
+galns
+mld
+iq
+leu
+hydroxylase
+dds
+suppressor
+interestingly
+lead
+val
+muscular
+degree
+germ
+loh
+mental
+enzyme deficiency
+haplotype analysis
+retardation
+conserved
+caucasians
+determine
+piebaldism
+bard1
+ctx
+duarte
+galt
+fish
+characterization
+col17a1
+cdk4
+alkaptonuria
+pattern
+mutated
+account
+q188r
+yeast
+vws
+wild
+aga
+huntington
+colorectal tumors
+erg
+coli
+situ
+frda
+restriction fragment
+reaction
+tsd
+leading
+c2q0
+cdh1
+ptt
+dmpk
+colchicine
+overexpression
+multipoint
+proteins
+blot
+anticipation
+conclusion
+mouse chromosome
+glu
+targeted
+hfe
+fourth
+knowledge
+fatty
+pku
+sf
+copper
+rds
+acids
+hp2
+meiotic
+frataxin
+marker
+mutant mice
+ph
+black
+subsequent
+aberrant
+critical region
+submicroscopic
+investigation
+sera
+stable
+subsequently
+diverse
+deficient mice
+very long chain fatty
+cis
+deficiencies
+cytogenetic
+constitutional
+apolipoprotein
+iii
+men
+extracts
+erythrocyte
+considerable
+hemizygous
+rearrangement
+obesity
+embryos
+transversion
+brother
+asymptomatic
+copy
+anti
+excess
+pendrin
+c5
+electrophoretic
+extensive
+choroideremia
+fatal
+moderate
+lymphocyte
+conservation
+pws
+information
+obligate
+marked
+patterns
+classic
+quantitative
+milder
+cyp27
+chain acyl coa
+q21
+genetically
+current
+residual
+pedigree
+markedly
+specifically
+variability
+ala
+affected males
+detailed
+hmre11

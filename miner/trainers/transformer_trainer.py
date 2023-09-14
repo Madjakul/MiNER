@@ -3,7 +3,7 @@
 from typing import Union
 from transformers import TrainingArguments, Trainer
 
-from miner.modules import RoBERTa, CamemBERT, Longformer
+from miner.modules import RoBERTa
 from miner.utils.data import TransformerDataset
 
 
@@ -13,29 +13,29 @@ class TransformerTrainer():
 
     Parameters
     ----------
-    lm: ``miner.modules.RoBERTa``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
+    lm: miner.modules.RoBERTa
         Language model checkpoint from **HuggingFace**.
-    lm_path: ``str``
+    lm_path: str
         Path to the local file that will contained the trained language model.
-    lm_dataset: ``miner.utils.data.TransformerDataset``
+    lm_dataset: miner.utils.data.TransformerDataset
         Iterable object containing the training and validation data.
-    per_device_train_batch_size: ``int``
+    per_device_train_batch_size: int
         Training batch size.
-    seed: ``int``
+    seed: int
         Integers used to initialized the weight of the LLM. Used for
         replicability.
-    per_device_eval_batch_size: ``int``
+    per_device_eval_batch_size: int
         Validation batch size.
-    num_train_epochs: ``int``
+    num_train_epochs: int
         Maximum number of training epochs.
-    gradient_accumulation_steps: ``int``
+    gradient_accumulation_steps: int
         For how manys steps the gradient is accumulated.
 
     Attributes
     ----------
-    training_args: ``transformers.TrainingArguments``
+    training_args: transformers.TrainingArguments
         Stores the hyperparameters to pretrain the large language model.
-    trainer: ``transformers.Trainer``
+    trainer: transformers.Trainer
         Stores the datasets to perform MLM and feed the large language model
         with.
 
@@ -51,9 +51,9 @@ class TransformerTrainer():
     """
 
     def __init__(
-        self, lm: Union[RoBERTa, CamemBERT, Longformer], lm_path: str,
+        self, lm: RoBERTa, lm_path: str,
         lm_dataset: TransformerDataset, per_device_train_batch_size: int,
-        seed: int, per_device_eval_batch_size: int, num_train_epochs: int,
+        seed: int, per_device_eval_batch_size: int, max_steps: int,
         gradient_accumulation_steps: int, wandb: bool
     ):
         self.lm_path = lm_path
@@ -63,25 +63,27 @@ class TransformerTrainer():
             do_train=True,
             do_eval=True,
             evaluation_strategy="epoch",
-            warmup_ratio=0.06,
-            learning_rate=5e-4,
             eval_accumulation_steps=gradient_accumulation_steps,
             per_device_train_batch_size=per_device_train_batch_size,
             per_device_eval_batch_size=per_device_eval_batch_size,
             gradient_accumulation_steps=gradient_accumulation_steps,
-            num_train_epochs=num_train_epochs,
+            max_steps=max_steps,
+            num_train_epochs=max_steps/ (
+                len(lm_dataset.mlm_ds["train"]) / per_device_train_batch_size
+            ),
             logging_strategy="epoch",
-            save_strategy="no",
+            save_strategy="epoch",
             seed=seed,
             data_seed=seed,
             log_level="error",
             report_to="wandb" if wandb else "none",
-            fp16_full_eval=True,
+            load_best_model_at_end=True,
+            metric_for_best_model="eval_loss",
+            greater_is_better=False,
             save_total_limit=1
         )
         self.trainer = Trainer(
             model=lm.model,
-            tokenizer=lm_dataset.tokenizer,
             args=self.training_args,
             data_collator=lm_dataset.data_collator,
             train_dataset=lm_dataset.mlm_ds["train"],   # type: ignore

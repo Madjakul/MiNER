@@ -1,7 +1,7 @@
 # MiNER
 ---
 
-MiNER: a way to learn an efficient named entity recognition model, using only dictionaries.
+MiNER: a way to learn an efficient named entity recognition model, using only dictionnaries.
 
 
 ## Overview

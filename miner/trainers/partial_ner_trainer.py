@@ -18,62 +18,70 @@ from miner.modules import PartialNER
 from miner.utils import LRScheduler
 
 
-
 class PartialNERTrainer():
-    """Named entity recognizer's trainer. Train and validate on given train and
-    validation datasets. Learning is automatically reduced upon hitting a
-    plateau. Stops the training early if needed. The model with the lowest
-    validation loss is saved at the end of each epoch.
+    """Partial Named entity recognizer's trainer. Train and validate on given
+    train and validation datasets. Learning is automatically shrunk after each
+    epoch by 40%. The model with the greatest validation F-score is saved at
+    the end of each epoch.
 
     Parameters
     ----------
-    ner: ``miner.modules.NER``
-        Named entity recognizer module to train.
-    lr: ``float``
-        Initial leanring rate.
-    momentum: ``float``
+    ner: miner.modules.PartialNER
+        Partial Named entity recognizer module to train.
+    lr: float
+        Initial learning rate.
+    momentum: float
         Gradient momentum.
-    patience: ``int``
-        Number of steps without improvement of the training loss before
-        stopping the training. Number of steps without improvement of the
-        validation loss before reducing the learning rate.
-    epochs: ``int``
+    epochs: int
         Maximum number of training epochs.
-    max_length: ``int``
-        Maximum sequence length.
-    device: ``str``, {"cpu", "cuda"}
+    device: str, {"cpu", "cuda"}
         Wether or not to use the GPU for computation.
-    accumulation_steps: ``int``
-        Number of steps during the gradient is accumulated.
-    ner_path: ``str``
+    ner_path: str
         Path to the lcoal file containing the trained model
+    idx2label: Dict[int, str]
+        Maps the unique integer ids to their string label.
+    loss_fn: str, optional
+        The loss function to choose between {"nll", "c_nll", "gce"}.
+    clip: float
+        Gradient clipping norm value.
+    sam: bool
+        If you want to use Google's Sharpness Aware Minimization [1]_ or not.
 
     Attributes
     ----------
-    ner: ``miner.modules.NER``
-        Named entity recognizer module to train.
-    epochs: ``int``
+    ner: miner.modules.PartialNER
+        Partial Named entity recognizer module to train.
+    epochs: int
         Maximum number of training epochs.
-    max_length: ``int``
-        Maximum sequence length.
-    device: ``str``, {"cpu", "cuda"}
+    device: str
         Wether or not to use the GPU for computation.
-    accumulation_steps: ``int``
-        Number of steps during the gradient is accumulated.
-    path: ``str``
+    ner_path: str
         Path to the lcoal file containing the trained model
-    optimizer: ``torch.optim.SGD``
-        Stochastic gradient descent optimizer.
-    lrs: ``miner.trainers.ner_trainer.LRScheduler``
-        Object of the learning rate scheduler class.
-    early_stopping: ``miner.trainers.ner_trainer.EarlyStopping``
-        Object of the early stopper class.
+    idx2label: Dict[int, str]
+        Maps the unique integer ids to their string label.
+    loss_fn: str, default="nll"
+        The loss function to choose between {"nll", "c_nll", "gce"}
+    clip: float
+        Gradient clipping norm value.
+    sam: bool
+        If you want to use Google's Sharpness Aware Minimization [1]_ or not.
+    optimizer: Union[SAM, SGP]
+        Optimizing algorithm. If ``sam`` is set to true, ``self.optimizer``
+        will be an instance of ``SAM``.
+    lrs: miner.utils.LRScheduler
+        Learning rate scheduler.
+
+    References
+    ----------
+    ..  [1] Foret, P., Kleiner, A., Mobahi, H., & Neyshabur, B. (2020).
+            Sharpness-aware minimization for efficiently improving
+            generalization. arXiv preprint arXiv:2010.01412.
     """
 
     def __init__(
         self, ner: PartialNER, lr: float, epochs: int,
         device: Literal["cpu", "cuda"], ner_path: str,
-        momentum: float,sam: bool, idx2label: Dict[int, str], clip: float,
+        momentum: float, sam: bool, idx2label: Dict[int, str], clip: float,
         loss_fn: Optional[str]=None
     ):
         self.sam = sam
@@ -154,13 +162,18 @@ class PartialNERTrainer():
         self, train_dataloader: DataLoader,
         val_dataloader: Optional[DataLoader]=None, wandb_: bool=False
     ):
-        """Trains the named entity recognizer and saves the best one at the end
-        of each epoch.
+        """Trains the partial named entity recognizer and saves the one with
+        highest validation F-score or the last one at the end of each epoch.
 
         Parameters
         ----------
-        train_dataloader: ``torch.utils.data.DataLoader``
+        train_dataloader: torch.utils.data.DataLoader
             Iterable object used for training.
+        val_dataloader: torch.utils.data.DataLoader, optional
+            Iterable object used for validation.
+        wandb_: bool, default=False
+            If you want to log the training data on **Weigh and Biases** or
+            not.
         """
         best_loss = 1e100
         train_loss = 0.0

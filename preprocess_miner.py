@@ -12,12 +12,11 @@ logging_config()
 
 if __name__=="__main__":
     args = PreprocessArgParse.parse_known_args()
-    logging.info("=== Preprocessing Miner ===")
+    logging.info("\n\n=== Preprocessing Miner ===")
 
     logging.info(f"Reading training data from {args.corpus_path}")
     with open(args.corpus_path, "r", encoding="utf-8") as f:
         corpus = f.read().splitlines()
-    # corpus = [text for text in corpus]
 
     logging.info(f"Loading gazetteers from {args.gazetteers_path}")
     phrase_miner = PhraseMiner(lang=args.lang)
@@ -37,5 +36,5 @@ if __name__=="__main__":
 
     logging.info(f"Dumping training data to {args.conll_path}")
     phrase_miner.dump(corpus, args.conll_path)
-    logging.info("--- Done ---\n\n")
+    logging.info("== Done ===")
 

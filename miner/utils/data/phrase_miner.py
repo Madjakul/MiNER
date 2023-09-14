@@ -22,22 +22,18 @@ class PhraseMiner():
     ruling. This class also holds the methods to mine potential important
     propostions.
 
-    Notes
-    -----
-    The **SpaCy** tokennizer only takes care of english or french languages.
-
     Parameters
     ----------
-    lang: ``str``, {"en", "fr"}
-        Language of the corpus. `fr` for french or `en` for english.
+    lang: str, {"en", "fr"}
+        Language of the corpus.
 
     Attributes
     ----------
-    nlp: ``spacy.lang.en.English``, ``spacy.lang.fr.French``
+    nlp: Union[spacy.lang.en.English, spacy.lang.fr.French]
         **SpaCy** tokenizer to use.
-    ruler: ``spacy.pipeline.entity_ruler.EntityRuler``
+    ruler: spacy.pipeline.entity_ruler.EntityRuler
         **SpaCy**'s entity ruler object to perform string matching.
-    n_grams: ``defaultdict(lambda: defaultdict(int))``
+    n_grams: defaultdict(lambda: defaultdict(int))
         Defaultdict to perform principal propositions mining. The first set of
         keys represent the length of the propositon. For each length, there are
         keys representing their frequency in a given corpus. `{1: {"Hello": 2,
@@ -98,12 +94,12 @@ class PhraseMiner():
 
         Parameters
         ----------
-        corpus: ``list``
+        corpus: List[str]
             List of entries in natural language.
 
         Returns
         -------
-        patterns: ``list``
+        patterns: List[str]
             List of principal propositions for the given corpus.
 
         References
@@ -146,7 +142,7 @@ class PhraseMiner():
 
         Parameters
         ----------
-        gazetteers: ``dict``
+        gazetteers: Dict[str, List[str]]
             Dictionary. `{"name_of_file": ["list", "of", "entries"]}`.
 
         References
@@ -159,19 +155,11 @@ class PhraseMiner():
         for label, entries in gazetteers.items():
             logging.info(f"Adding {len(entries)} entries to {label}")
             for entry in entries:
-                # escaped_text = pp.escape(entry)
                 pattern = self.nlp(entry)
-                # if len(pattern) > 1: # If there are more than one token in the entry
                 patterns.append({
                     "label": label,
                     "pattern": [{"lower": token.text} for token in pattern]
                 })
-                # else:
-                #     # print(pattern.text)
-                #     patterns.append({
-                #         "label": label,
-                #         "pattern": escaped_text
-                #     })
         self.ruler.add_patterns(patterns)
 
     def dump(self, corpus: List[str], path: str):
@@ -179,9 +167,9 @@ class PhraseMiner():
 
         Parameters
         ----------
-        corpus: ``list``
+        corpus: List[str]
             List of text.
-        path: ``str``
+        path: str
             Path to the dumped file.
         """
         with open(path, "w", encoding="utf-8") as f:
@@ -194,7 +182,8 @@ class PhraseMiner():
                         )
                     else:
                         f.write(
-                            f"{token.text}\t{token.ent_iob_}-{token.ent_type_}\n"
+                            f"{token.text}\t{token.ent_iob_}-{token.ent_type_}"
                         )
+                        f.write("\n")
                 f.write("\n")
 

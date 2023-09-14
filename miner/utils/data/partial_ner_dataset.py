@@ -5,55 +5,58 @@ import random
 from typing import Literal, List
 
 import torch
-import transformers
 from torch.utils.data import Dataset
+import transformers
 from transformers import AutoTokenizer, RobertaForMaskedLM
 
 
 class PartialNERDataset(Dataset):
-    """Custom Dataset taiking care of the training and the inference of the
-    NER.
+    """Custom Dataset used to train the partial NER.
 
     Parameters
     ----------
-    lang: ``str``, {"en", "fr"}
-        Language of the training data.
-    device: ``str``, {"cpu", "cuda"}
-        Wether or not to use the GPU for computation.
-    max_length: ``int``
-        Maximum length of a sentence.
-    iterable_corpus: ``list``
-        List of tokens per document.
-    labels: ``list``
-        List of possible labels in natural language.
-    iterable_labels: ``list``, ``None``
-        List of label per document.
+    device: str, {"cpu", "cuda"}
+        Deveice where the computations are performed.
+    do_augment: bool
+        If you want to perform language augmentation or not.
+    max_length: int
+        Maximum sequence length.
+    iterable_corpus: List[List[str]]
+        Corpus containing lists of segmented texts.
+    labels: List[str]
+        List of possible labels.
+    iterable_labels: List[List[str]]
+        Corpus containing lists of labels mapped to the text at the same index
+        in ``iterable_corpus``.
+    lm_path: str
+        Path to a **transformers** pre-trained language model.
 
     Attributes
     ----------
-    device: ``str``, {"cpu", "cuda"}
-        Wether or not to use the GPU for computation.
-    max_length: ``int``
-        Maximum length of a sentence.
-    iterable_corpus: ``list``
-        List of tokens per document.
-    iterable_labels: ``list``, ``None``
-        List of label per document.
-    label2idx: ``dict``
-        maps each label to a unique integer.
-    tokenizer: ``transformers.AutoTokenizer``
-        LLM tokenizer.
-    inputs: ``list``
-        List of dictionaries returned by ``self.tokenizer``.
-    outputs: ``list``
-        List of labels from ``self.iterable_labels`` expressed as a list of
-        integers.
+    device: str, {"cpu", "cuda"}
+        Deveice where the computations are performed.
+    do_augment: bool
+        If you want to perform language augmentation or not.
+    max_length: int
+        Maximum sequence length.
+    iterable_corpus: List[List[str]]
+        Corpus containing lists of segmented texts.
+    iterable_labels: List[List[str]]
+        Corpus containing lists of labels mapped to the text at the same index
+        in ``iterable_corpus``.
+    label2idx: Dict[str, int]
+        Maps the string label to a unique integer id. Also adds a mapping for
+        the "UNK" label to -1.
+    tokenizer: AutoTokenizer
+        "roberta-base" tokenizer from **transformers**.
+    lm: RobertaForMaskedLM
+        Pre-trained RoBERTa used to perform language augmentation.
     """
 
     def __init__(
         self, device: Literal["cpu", "cuda"], do_augment: bool,
-        max_length: int, iterable_corpus: List[str], labels: List[str],
-        iterable_labels: List[str], lm_path: str
+        max_length: int, iterable_corpus: List[List[str]], labels: List[str],
+        iterable_labels: List[List[str]], lm_path: str
     ):
         self.iterable_corpus = iterable_corpus
         self.iterable_labels = iterable_labels
@@ -84,6 +87,19 @@ class PartialNERDataset(Dataset):
         return len(self.iterable_corpus)
 
     def tokenize(self, idx: int):
+        """Tokenizes a segmented text from ``self.iterable_corpus`` at a given
+        index.
+
+        Parameters
+        ----------
+        idx: int
+            Index of the segmented text to tokenize.
+
+        Returns
+        -------
+        inputs: transformers.BatchEncoding
+            Tokenized text.
+        """
         inputs = self.tokenizer(
             self.iterable_corpus[idx],
             is_split_into_words=True,
@@ -95,13 +111,18 @@ class PartialNERDataset(Dataset):
         return inputs.to(self.device)
 
     def augmented_tokenize(self, inputs: transformers.BatchEncoding):
-        """Replace some tokens in the input sentence.
+        """Randomly replaces 15% of the tokens in the input sentence with other
+        tokens sampled from ``self.lm``'s top 3 output.
 
         Parameters
         ----------
+        inputs: transformers.BatchEncoding
+            Original tokenized text
 
         Returns
         -------
+        augmented_inputs: transformers.BatchEncoding
+            Augmented tokenized text.
         """
         augmented_inputs = inputs.copy()
         augmented_inputs["input_ids"] = inputs["input_ids"].clone()
@@ -111,7 +132,8 @@ class PartialNERDataset(Dataset):
         nb_token_to_mask = int(math.ceil(.15 * max_idx))
         masked_ids = random.sample(range(1, max_idx + 1), nb_token_to_mask)
         for idx in masked_ids:
-            augmented_inputs["input_ids"][0, idx] = self.tokenizer.mask_token_id
+            augmented_inputs["input_ids"][0, idx] = \
+                self.tokenizer.mask_token_id
         with torch.no_grad():
             logits = self.lm(**augmented_inputs)["logits"]
         top_k_tokens = torch.topk(logits[0, masked_ids], k=3, dim=1).indices
@@ -123,7 +145,23 @@ class PartialNERDataset(Dataset):
     def align_labels(
         self, inputs: transformers.BatchEncoding, labels: List[str]
     ):
-        word_ids = inputs.word_ids()                    # type: ignore
+        """Align the sub-words with labels. All the sub-words are given the
+        the label of the original word. The padding token are given an "O"
+        label.
+
+        Parameters
+        ----------
+        inputs: transformers.BatchEncoding
+            Tokenized text.
+        labels: List[str]
+            Word-level labels of the original text.
+
+        Returns
+        -------
+        label_ids: List[int]
+            Token-level labels of the tokenized text.
+        """
+        word_ids = inputs.word_ids()    # type: ignore
         label_ids = []
         for word_idx in word_ids:
             if word_idx is None:

@@ -2,11 +2,6 @@
 
 import os
 import re
-from typing import Union, Optional
-
-from spacy.tokens import Doc
-from spacy.lang.fr import French
-from spacy.lang.en import English
 
 
 STOP_WORDS_FR = set(
@@ -134,12 +129,12 @@ def load_gazetteers(path: str):
 
     Parameters
     ----------
-    path: ``str``
+    path: str
         Path to the directory containing the dictionaries.
 
     Returns
     -------
-    gazetteers: ``dict``
+    gazetteers: Dict[str, List[str]]
         Dictionary with format {"name_of_file": ["list", "of", "entries"]}.
 
     Warnings
@@ -163,19 +158,19 @@ def escape(text: str):
     return escaped_text
 
 def read_conll(path: str):
-    """Reads a ``conll`` file and returns a tuple containing the list of tokens
+    """Reads a `conll` file and returns a tuple containing the list of tokens
     per doc and tags epr doc.
 
     Parameters
     ----------
-    path: ``str``
+    path: str
         Path to the conll file.
 
     Returns
     -------
-    token_docs: ``list``
+    token_docs: List[List[str]]
         List of tokens per document.
-    tag_docs: ``list``
+    tag_docs: List[List[str]]
         List of labels per document.
     """
     with open(path, "r", encoding="utf-8") as f:

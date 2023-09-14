@@ -3,7 +3,7 @@
 from typing import Union
 from transformers import TrainingArguments, Trainer
 
-from miner.modules import RoBERTa, CamemBERT, Longformer
+from miner.modules import RoBERTa
 from miner.utils.data import TransformerDataset
 
 
@@ -13,29 +13,29 @@ class TransformerTrainer():
 
     Parameters
     ----------
-    lm: ``miner.modules.DeBERTaV2``, ``miner.modules.CamemBERT``, ``miner.modules.Longformer``
+    lm: miner.modules.RoBERTa
         Language model checkpoint from **HuggingFace**.
-    lm_path: ``str``
+    lm_path: str
         Path to the local file that will contained the trained language model.
-    lm_dataset: ``miner.utils.data.TransformerDataset``
+    lm_dataset: miner.utils.data.TransformerDataset
         Iterable object containing the training and validation data.
-    per_device_train_batch_size: ``int``
+    per_device_train_batch_size: int
         Training batch size.
-    seed: ``int``
+    seed: int
         Integers used to initialized the weight of the LLM. Used for
         replicability.
-    per_device_eval_batch_size: ``int``
+    per_device_eval_batch_size: int
         Validation batch size.
-    num_train_epochs: ``int``
+    num_train_epochs: int
         Maximum number of training epochs.
-    gradient_accumulation_steps: ``int``
+    gradient_accumulation_steps: int
         For how manys steps the gradient is accumulated.
 
     Attributes
     ----------
-    training_args: ``transformers.TrainingArguments``
+    training_args: transformers.TrainingArguments
         Stores the hyperparameters to pretrain the large language model.
-    trainer: ``transformers.Trainer``
+    trainer: transformers.Trainer
         Stores the datasets to perform MLM and feed the large language model
         with.
 
@@ -51,7 +51,7 @@ class TransformerTrainer():
     """
 
     def __init__(
-        self, lm: Union[RoBERTa, CamemBERT, Longformer], lm_path: str,
+        self, lm: RoBERTa, lm_path: str,
         lm_dataset: TransformerDataset, per_device_train_batch_size: int,
         seed: int, per_device_eval_batch_size: int, max_steps: int,
         gradient_accumulation_steps: int, wandb: bool

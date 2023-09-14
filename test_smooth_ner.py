@@ -6,7 +6,9 @@ import torch
 from transformers import AutoTokenizer
 from tqdm import tqdm
 from seqeval.scheme import IOB2
-from seqeval.metrics import classification_report, f1_score, precision_score, recall_score
+from seqeval.metrics import (
+    classification_report, f1_score, precision_score, recall_score
+)
 
 from miner.modules import SmoothNER
 from miner.utils import TestSmoothArgParse, logging_config, align_labels
@@ -22,7 +24,7 @@ if DEVICE == "cuda":
 if __name__=="__main__":
     args = TestSmoothArgParse.parse_known_args()
 
-    logging.info("=== Testing ===")
+    logging.info("\n\n=== Testing Smooth NER===")
 
     logging.info(f"Reading labels from {args.labels_path}")
     with open(args.labels_path, "r", encoding="utf-8") as f:
@@ -60,8 +62,17 @@ if __name__=="__main__":
             local_y_pred = ner.decode(inputs)[0]
             local_y_pred = align_labels(inputs, local_y_pred, idx2label)
             y_pred.append(local_y_pred)
-    logging.warning(classification_report(test_labels, y_pred, mode="strict", scheme=IOB2))
-    logging.warning(precision_score(test_labels, y_pred, mode="strict", scheme=IOB2))
-    logging.warning(recall_score(test_labels, y_pred, mode="strict", scheme=IOB2))
-    logging.warning(f1_score(test_labels, y_pred, mode="strict", scheme=IOB2))
+    logging.warning(
+        classification_report(test_labels, y_pred, mode="strict", scheme=IOB2)
+    )
+    logging.warning(
+        precision_score(test_labels, y_pred, mode="strict", scheme=IOB2)
+    )
+    logging.warning(
+        recall_score(test_labels, y_pred, mode="strict", scheme=IOB2)
+    )
+    logging.warning(
+        f1_score(test_labels, y_pred, mode="strict", scheme=IOB2)
+    )
+    logging.info("== Done ==")
 

@@ -35,7 +35,7 @@ if __name__=="__main__":
                 f"""lr{args.lr}-m{args.momentum}-c{args.clip}"""
         )
 
-    logging.info("=== Training ===")
+    logging.info("\n\n=== Training Partial NER ===")
 
     logging.info(f"Loading labels from {args.labels_path}")
     with open(args.labels_path, "r", encoding="utf-8") as f:
@@ -100,8 +100,9 @@ if __name__=="__main__":
     )
     trainer.train(
         train_dataloader,
-        val_dataloader=val_dataloader if "val_dataloader" in locals() else None,
+        val_dataloader=val_dataloader if "val_dataloader" in locals() \
+            else None,
         wandb_=args.wandb
     )
-    logging.info("--- Done ---\n\n")
+    logging.info("=== Done ===")
 

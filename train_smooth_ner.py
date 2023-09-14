@@ -35,7 +35,7 @@ if __name__=="__main__":
                 f"""lr{args.lr}-m{args.momentum}-c{args.clip}"""
         )
 
-    logging.info("=== Training Smooth NER ===")
+    logging.info("\n\n=== Training Smooth NER ===")
     logging.info(f"Loading labels from {args.labels_path}")
     with open(args.labels_path, "r", encoding="utf-8") as f:
         labels = f.read().splitlines()
@@ -48,7 +48,9 @@ if __name__=="__main__":
         device=DEVICE,
         dropout=args.dropout,
     ).to(DEVICE)
-    partial_ner.load_state_dict(torch.load(args.partial_ner_path)["model_state_dict"])
+    partial_ner.load_state_dict(
+        torch.load(args.partial_ner_path)["model_state_dict"]
+    )
     partial_ner.eval()
 
     logging.info(f"Loading training data from {args.train_data_path}")
@@ -104,5 +106,5 @@ if __name__=="__main__":
         val_dataset=val_dataset,
         wandb_=args.wandb
     )
-    logging.info("=== Done ===\n\n")
+    logging.info("=== Done ===")
 

@@ -1,7 +1,7 @@
 # miner/modules/base_crf.py
 
 from abc import abstractmethod
-from typing import Optional, Literal, List
+from typing import Optional, Literal
 
 import torch
 import torch.nn as nn
@@ -50,7 +50,7 @@ class BaseCRF(nn.Module):
     def __init__(
         self, num_tags: int, device: Literal["cpu", "cuda"],
         padding_idx: Optional[int]=None
-    ) -> None:
+    ):
         super(BaseCRF, self).__init__()
         self.device = device
         self.num_tags = num_tags
@@ -76,13 +76,13 @@ class BaseCRF(nn.Module):
     def forward(
         self, emissions: torch.FloatTensor, tags: torch.LongTensor,
         mask: Optional[torch.ByteTensor]=None
-    ) -> torch.FloatTensor:
+    ):
         raise NotImplementedError()
 
     def _forward_algorithm(
         self, emissions: torch.FloatTensor, mask: torch.ByteTensor,
         reverse_direction: bool=False
-    ) -> torch.FloatTensor:
+    ):
         """Computes the logarithm of the unary/emission scores of each token
         plus their transition score. Despite its name, this function is used to
         compute the `forward-backward algorithm https://en.wikipedia.org/wiki/Forward%E2%80%93backward_algorithm`__.
@@ -150,7 +150,7 @@ class BaseCRF(nn.Module):
     def marginal_probabilities(
         self, emissions: torch.FloatTensor,
         mask: Optional[torch.ByteTensor]=None
-    ) -> torch.FloatTensor:
+    ):
         """Computes the marginal probability of each token to belong to a given
         class.
 
@@ -195,7 +195,7 @@ class BaseCRF(nn.Module):
 
     def viterbi_decode(
         self, emissions: torch.Tensor, mask: Optional[torch.ByteTensor]=None
-    ) -> List[List[int]]:
+    ):
         """
         Dynamically computes the best sequence of tags.
 

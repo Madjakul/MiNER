@@ -1,4 +1,5 @@
 # miner/optimizer/sam.py
+# Original code from: https://github.com/davda54/sam
 
 import torch
 

@@ -14,19 +14,44 @@ from miner.utils.crf_utils import custom_argmax, create_possible_tag_masks
 
 
 class SmoothNERDataset(Dataset):
-    """Dataset to feed the smooth NER with.
+    """Custom dataset used to train the smooth NER.
 
     Parameters
     ----------
+    partial_ner: PartialNER
+        Previously trained partial NER, used to generate labels.
+    corpus: List[List[str]]
+        List of word-level segmented texts.
+    lm_path: str
+        Path to a ``transformers`` pretrained language model.
+    max_length: int
+        Maximum text length.
+    device: str, {"cpu", "cuda"}
+        The device where the computations are done.
+    labels: List[List[str]], optional
 
     Attributes
     ----------
+    partial_ner: PartialNER
+        Previously trained partial NER, used to generate labels.
+    corpus: List[List[str]]
+        List of word-level segmented texts.
+    max_length: int
+        Maximum text length.
+    device: str, {"cpu", "cuda"}
+        The device where the computations are done.
+    labels: List[List[str]], optional
+        List of word-level labels of ``self.corpus``.
+    tokenizer: AutoTokenizer
+        "roberta-base" tokenizer from **transformers**.
+    lm: RobertaForMaskedLM
+        Pre-trained RoBERTa used to perform language augmentation.
     """
 
     def __init__(
-        self, partial_ner: PartialNER, corpus: List[List[str]],
-        max_length: int, lm_path: str,
-        device: Optional[Literal["cpu", "cuda"]]="cpu", labels: Optional[List[List[str]]]=None
+        self, partial_ner: PartialNER, corpus: List[List[str]], lm_path: str,
+        max_length: int, device: Literal["cpu", "cuda"],
+        labels: Optional[List[List[str]]]=None
     ):
         self.partial_ner = partial_ner
         self.corpus = corpus
@@ -49,13 +74,18 @@ class SmoothNERDataset(Dataset):
         return x, x_augmented, y
 
     def tokenize(self, idx: int):
-        """Tokenizes a list of token.
+        """Tokenizes a segmented text from ``self.iterable_corpus`` at a given
+        index.
 
         Parameters
         ----------
+        idx: int
+            Index of the segmented text to tokenize.
 
         Returns
         -------
+        inputs: transformers.BatchEncoding
+            Tokenized text.
         """
         inputs = self.tokenizer(
             self.corpus[idx],
@@ -68,13 +98,18 @@ class SmoothNERDataset(Dataset):
         return inputs.to(self.device)
 
     def augmented_tokenize(self, inputs: transformers.BatchEncoding):
-        """Replace some tokens in the input sentence.
+        """Randomly replaces 15% of the tokens in the input sentence with other
+        tokens sampled from ``self.lm``'s top 3 output.
 
         Parameters
         ----------
+        inputs: transformers.BatchEncoding
+            Original tokenized text
 
         Returns
         -------
+        augmented_inputs: transformers.BatchEncoding
+            Augmented tokenized text.
         """
         augmented_inputs = inputs.copy()
         augmented_inputs["input_ids"] = inputs["input_ids"].clone()
@@ -84,7 +119,8 @@ class SmoothNERDataset(Dataset):
         nb_token_to_mask = int(math.ceil(.15 * max_idx))
         masked_ids = random.sample(range(1, max_idx + 1), nb_token_to_mask)
         for idx in masked_ids:
-            augmented_inputs["input_ids"][0, idx] = self.tokenizer.mask_token_id
+            augmented_inputs["input_ids"][0, idx] = \
+                self.tokenizer.mask_token_id
         with torch.no_grad():
             logits = self.lm(**augmented_inputs)["logits"]
         top_k_tokens = torch.topk(logits[0, masked_ids], k=3, dim=1).indices
@@ -102,9 +138,15 @@ class SmoothNERDataset(Dataset):
 
         Parameters
         ----------
+        inputs: transformers.BatchEncoding
+            Tokenzed input text.
 
         Returns
         -------
+        output: torch.FloatTensor
+            Float tensor containing the enhanced marginal probabilities of each
+            token to belong to a given class. (batch_size, sequence_length,
+            num_tags)
 
         References
         ----------
@@ -112,8 +154,12 @@ class SmoothNERDataset(Dataset):
                 deep embedding for clustering analysis." International
                 conference on machine learning. PMLR, 2016.
         """
-        tmp_p = self.partial_ner.marginal_probabilities(inputs) # * mask
-        mask = inputs["attention_mask"].unsqueeze(2).expand(tmp_p.shape[0], tmp_p.shape[1], tmp_p.shape[2])
+        tmp_p = self.partial_ner.marginal_probabilities(inputs)
+        mask = inputs["attention_mask"].unsqueeze(2).expand(
+            tmp_p.shape[0],
+            tmp_p.shape[1],
+            tmp_p.shape[2]
+        )
         p = tmp_p * mask
         squared_p = p ** 2
         denominator = squared_p.sum(dim=2)
@@ -121,5 +167,4 @@ class SmoothNERDataset(Dataset):
         outputs = custom_argmax(enhanced_p, threshold=0.7)
         outputs = create_possible_tag_masks(num_tags=p.shape[2], tags=outputs)
         return outputs.squeeze(0).float()
-        # return p
 

@@ -62,11 +62,6 @@ class PretrainArgParse():
             description="Arguments to preprocess MiNER's data."
         )
         parser.add_argument(
-            "--lang",
-            type=str,
-            help="Language of the corpus {'en', 'fr'}"
-        )
-        parser.add_argument(
             "--train_corpus_path",
             type=str,
         )

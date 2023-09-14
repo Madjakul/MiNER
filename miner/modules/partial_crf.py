@@ -25,14 +25,14 @@ class PartialCRF(BaseCRF):
     def __init__(
         self, num_tags: int, device: Literal["cpu", "cuda"],
         q: Optional[float]=None, padding_idx: Optional[int]=None
-    ) -> None:
+    ):
         super().__init__(num_tags, device, padding_idx)
         self.q = q if q is not None else 0.7
 
     def _numerator_score(
         self, emissions: torch.FloatTensor, mask: torch.ByteTensor,
         possible_tags: torch.ByteTensor,
-    ) -> torch.FloatTensor:
+    ):
         """
         Computes the log of the emission/unary score plus the transition score
         for the whole sequence.
@@ -79,7 +79,8 @@ class PartialCRF(BaseCRF):
                 batch_size, num_tags, num_tags
             ).clone()
             transition_scores[(current_possible_tags == 0)] = IMPOSSIBLE_SCORE
-            transition_scores.transpose(1, 2)[(next_possible_tags == 0)] = IMPOSSIBLE_SCORE
+            transition_scores.transpose(1, 2)[(next_possible_tags == 0)] = \
+                IMPOSSIBLE_SCORE
 
             # Broadcast alpha
             broadcast_alpha = alpha.unsqueeze(2)
@@ -109,7 +110,7 @@ class PartialCRF(BaseCRF):
 
     def _denominator_score(
         self, emissions: torch.FloatTensor, mask: torch.ByteTensor,
-    ) -> torch.FloatTensor:
+    ):
         """
         Computes the log-partition score for the whole sequence.
 
@@ -151,7 +152,7 @@ class PartialCRF(BaseCRF):
         self, emissions: torch.FloatTensor, tags: torch.LongTensor,
         loss_fn: Literal["nll", "c_nll", "gce"]="nll",
         mask: Optional[torch.ByteTensor]=None
-    ) -> torch.FloatTensor:
+    ):
         """Performs the forward pass depending on the loss function chosen: the
         classic negative log-likelihood, the corrected negative log-likelihood
         where the the negative log-unlikelihood [1]_ is computed and used as a
@@ -191,8 +192,6 @@ class PartialCRF(BaseCRF):
                 with noise-robust learning and language model augmented
                 self-training." arXiv preprint arXiv:2109.05003 (2021).
         """
-        # if mask is None:
-        #     mask = torch.ones_like(tags, dtype=torch.uint8, device=self.device) # type: ignore
         possible_tags = create_possible_tag_masks(self.num_tags, tags)          # (batch_size, sequence_length, num_tags)
         # If you want NLL
         if loss_fn == "nll":
@@ -231,24 +230,9 @@ class PartialCRF(BaseCRF):
             return torch.mean(c_nll)                                            # type: ignore
         # If you want GCE
         if loss_fn == "gce":
-            # tau = 1 / num_tags
-            # gce = []
-            # for i, sequence in enumerate(pred):
-            #     p = torch.masked_select(sequence, p_mask[i])
-            #     weights = torch.where(p > tau, 1., 0.)
-            #     local_gce = ((1 - p**self.q) / self.q)
-            #     local_gce = ((weights * local_gce) + 1e-4).sum() / (weights + 1e-4).sum()
-            #     gce.append(local_gce)
-            # gce = torch.stack(gce)
-            # return torch.mean(gce)
-            # tau = 1 / num_tags
             p = torch.masked_select(pred, p_mask)                               # (possible_tags==1,)
-            # weights = torch.where(p > tau , 1., 0.)
             gce = ((1 - p**self.q) + 1e-4) / (self.q + 1e-4)
-            # print(gce)
-            # gce = ((weights * gce) + 1e-4).sum() / (weights + 1e-4).sum()     # (loss.view(-1)*weights).sum() / weights.sum()
-            gce = gce.sum()       # (loss.view(-1)*weights).sum() / weights.sum()
-            # print(gce, "\n\n")
+            gce = gce.sum()
             return gce                                                          # type: ignore
         raise ValueError(f"Invalid loss function: {loss_fn}")
 

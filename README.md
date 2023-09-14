@@ -30,6 +30,7 @@ sentencepiece                   ~=0.1.97
 spacy                           ~=3.5.1
 torch                           ~=1.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 transformers                    ~=4.27.3
+seqeval
 wandb
 ```
 

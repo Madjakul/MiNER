@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>miner.utils.data.partial_ner_dataset &mdash; MiNER  documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            MiNER
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../installation.html#install">Install</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../quickstart.html">How to Use MiNER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../quickstart.html#running-with-provided-datasets">Running with Provided Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../quickstart.html#running-with-custom-datasets">Running with Custom Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../overview.html#explanation">Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../overview.html#benchmark">Benchmark</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/modules/transformer.html">Transformer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/modules/transformer.html#miner.modules.transformer.RoBERTa"><code class="docutils literal notranslate"><span class="pre">RoBERTa</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/transformer.html#miner.modules.transformer.RoBERTa.model"><code class="docutils literal notranslate"><span class="pre">RoBERTa.model</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/modules/base_crf.html">BaseCRF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF"><code class="docutils literal notranslate"><span class="pre">BaseCRF</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.num_tags"><code class="docutils literal notranslate"><span class="pre">BaseCRF.num_tags</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.start_transitions"><code class="docutils literal notranslate"><span class="pre">BaseCRF.start_transitions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.device"><code class="docutils literal notranslate"><span class="pre">BaseCRF.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.end_transitions"><code class="docutils literal notranslate"><span class="pre">BaseCRF.end_transitions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.transitions"><code class="docutils literal notranslate"><span class="pre">BaseCRF.transitions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.forward"><code class="docutils literal notranslate"><span class="pre">BaseCRF.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.marginal_probabilities"><code class="docutils literal notranslate"><span class="pre">BaseCRF.marginal_probabilities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.viterbi_decode"><code class="docutils literal notranslate"><span class="pre">BaseCRF.viterbi_decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/modules/partial_crf.html">PartialCRF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/modules/partial_crf.html#miner.modules.partial_crf.PartialCRF"><code class="docutils literal notranslate"><span class="pre">PartialCRF</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_crf.html#miner.modules.partial_crf.PartialCRF.q"><code class="docutils literal notranslate"><span class="pre">PartialCRF.q</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_crf.html#miner.modules.partial_crf.PartialCRF.forward"><code class="docutils literal notranslate"><span class="pre">PartialCRF.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/modules/partial_ner.html">PartialNER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER"><code class="docutils literal notranslate"><span class="pre">PartialNER</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.device"><code class="docutils literal notranslate"><span class="pre">PartialNER.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.transformer"><code class="docutils literal notranslate"><span class="pre">PartialNER.transformer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.linear_dropout"><code class="docutils literal notranslate"><span class="pre">PartialNER.linear_dropout</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.fc"><code class="docutils literal notranslate"><span class="pre">PartialNER.fc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.crf"><code class="docutils literal notranslate"><span class="pre">PartialNER.crf</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.forward"><code class="docutils literal notranslate"><span class="pre">PartialNER.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.marginal_probabilities"><code class="docutils literal notranslate"><span class="pre">PartialNER.marginal_probabilities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.viterbi_decode"><code class="docutils literal notranslate"><span class="pre">PartialNER.viterbi_decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html">SmoothNER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER"><code class="docutils literal notranslate"><span class="pre">SmoothNER</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.device"><code class="docutils literal notranslate"><span class="pre">SmoothNER.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.transformer"><code class="docutils literal notranslate"><span class="pre">SmoothNER.transformer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.linear_dropout"><code class="docutils literal notranslate"><span class="pre">SmoothNER.linear_dropout</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.fc"><code class="docutils literal notranslate"><span class="pre">SmoothNER.fc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.kl_loss"><code class="docutils literal notranslate"><span class="pre">SmoothNER.kl_loss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.decode"><code class="docutils literal notranslate"><span class="pre">SmoothNER.decode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.forward"><code class="docutils literal notranslate"><span class="pre">SmoothNER.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.get_proba"><code class="docutils literal notranslate"><span class="pre">SmoothNER.get_proba()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/trainers/transformer_trainer.html">TransformerTrainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer.training_args"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer.training_args</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer.trainer"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer.trainer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer.train"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer.train()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html">PartialNERTrainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.ner"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.ner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.epochs"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.epochs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.device"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.ner_path"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.ner_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.idx2label"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.idx2label</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.loss_fn"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.loss_fn</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.clip"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.clip</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.sam"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.sam</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.optimizer"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.optimizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.lrs"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.lrs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.train"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.train()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html">SmoothNERTrainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.best_train_loss"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.best_train_loss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.best_f1"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.best_f1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.smooth_ner"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.smooth_ner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.max_length"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.idx2label"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.idx2label</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.ner_path"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.ner_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.epochs"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.epochs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.accumulation_steps"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.accumulation_steps</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.device"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.optimizer"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.optimizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.scheduler"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.scheduler</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.save_model"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.save_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.train"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.wandb_log"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.wandb_log()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/utils/data/preprocessing.html">Preprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/data/preprocessing.html#miner.utils.data.preprocessing.load_gazetteers"><code class="docutils literal notranslate"><span class="pre">load_gazetteers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/data/preprocessing.html#miner.utils.data.preprocessing.read_conll"><code class="docutils literal notranslate"><span class="pre">read_conll()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html">TransformerDataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset"><code class="docutils literal notranslate"><span class="pre">TransformerDataset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.mlm_ds"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.mlm_ds</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.max_length"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.train_corpus"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.train_corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.valid_corpus"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.valid_corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.tokenizer"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.tokenizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.data_collator"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.data_collator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.add_vocab"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.add_vocab()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html">PartialNERDataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.device"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.do_augment"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.do_augment</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.max_length"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.iterable_corpus"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.iterable_corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.iterable_labels"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.iterable_labels</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.label2idx"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.label2idx</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.tokenizer"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.tokenizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.lm"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.lm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.align_labels"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.align_labels()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.augmented_tokenize"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.augmented_tokenize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.tokenize"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.tokenize()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html">SmoothNERDataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.partial_ner"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.partial_ner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.corpus"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.max_length"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.device"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.labels"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.labels</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.tokenizer"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.tokenizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.lm"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.lm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.augmented_tokenize"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.augmented_tokenize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.enhanced_marginal_probabilities"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.enhanced_marginal_probabilities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.tokenize"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.tokenize()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/utils/crf_utils.html">CRF Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/crf_utils.html#miner.utils.crf_utils.create_possible_tag_masks"><code class="docutils literal notranslate"><span class="pre">create_possible_tag_masks()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/crf_utils.html#miner.utils.crf_utils.custom_argmax"><code class="docutils literal notranslate"><span class="pre">custom_argmax()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../miner/utils/ner_utils.html">NER Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler"><code class="docutils literal notranslate"><span class="pre">LRScheduler</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler.optimizer"><code class="docutils literal notranslate"><span class="pre">LRScheduler.optimizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler.patience"><code class="docutils literal notranslate"><span class="pre">LRScheduler.patience</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler.lr_scheduler"><code class="docutils literal notranslate"><span class="pre">LRScheduler.lr_scheduler</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../miner/utils/ner_utils.html#miner.utils.ner_utils.align_labels"><code class="docutils literal notranslate"><span class="pre">align_labels()</span></code></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../license.html">MIT License</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../license.html#copyright-c-2023-madjakul">Copyright (c) 2023 Madjakul</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">MiNER</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">miner.utils.data.partial_ner_dataset</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for miner.utils.data.partial_ner_dataset</h1><div class="highlight"><pre>
+<span></span><span class="c1"># miner/utils/data/ner_dataset.py</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Literal</span><span class="p">,</span> <span class="n">List</span>
+
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
+<span class="kn">import</span> <span class="nn">transformers</span>
+<span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">AutoTokenizer</span><span class="p">,</span> <span class="n">RobertaForMaskedLM</span>
+
+
+<div class="viewcode-block" id="PartialNERDataset"><a class="viewcode-back" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset">[docs]</a><span class="k">class</span> <span class="nc">PartialNERDataset</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Custom Dataset used to train the partial NER.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    device: str, {&quot;cpu&quot;, &quot;cuda&quot;}</span>
+<span class="sd">        Deveice where the computations are performed.</span>
+<span class="sd">    do_augment: bool</span>
+<span class="sd">        If you want to perform language augmentation or not.</span>
+<span class="sd">    max_length: int</span>
+<span class="sd">        Maximum sequence length.</span>
+<span class="sd">    iterable_corpus: List[List[str]]</span>
+<span class="sd">        Corpus containing lists of segmented texts.</span>
+<span class="sd">    labels: List[str]</span>
+<span class="sd">        List of possible labels.</span>
+<span class="sd">    iterable_labels: List[List[str]]</span>
+<span class="sd">        Corpus containing lists of labels mapped to the text at the same index</span>
+<span class="sd">        in ``iterable_corpus``.</span>
+<span class="sd">    lm_path: str</span>
+<span class="sd">        Path to a **transformers** pre-trained language model.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    device: str, {&quot;cpu&quot;, &quot;cuda&quot;}</span>
+<span class="sd">        Deveice where the computations are performed.</span>
+<span class="sd">    do_augment: bool</span>
+<span class="sd">        If you want to perform language augmentation or not.</span>
+<span class="sd">    max_length: int</span>
+<span class="sd">        Maximum sequence length.</span>
+<span class="sd">    iterable_corpus: List[List[str]]</span>
+<span class="sd">        Corpus containing lists of segmented texts.</span>
+<span class="sd">    iterable_labels: List[List[str]]</span>
+<span class="sd">        Corpus containing lists of labels mapped to the text at the same index</span>
+<span class="sd">        in ``iterable_corpus``.</span>
+<span class="sd">    label2idx: Dict[str, int]</span>
+<span class="sd">        Maps the string label to a unique integer id. Also adds a mapping for</span>
+<span class="sd">        the &quot;UNK&quot; label to -1.</span>
+<span class="sd">    tokenizer: AutoTokenizer</span>
+<span class="sd">        &quot;roberta-base&quot; tokenizer from **transformers**.</span>
+<span class="sd">    lm: RobertaForMaskedLM</span>
+<span class="sd">        Pre-trained RoBERTa used to perform language augmentation.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">device</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;cpu&quot;</span><span class="p">,</span> <span class="s2">&quot;cuda&quot;</span><span class="p">],</span> <span class="n">do_augment</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
+        <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">iterable_corpus</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">labels</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+        <span class="n">iterable_labels</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span> <span class="n">lm_path</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">iterable_corpus</span> <span class="o">=</span> <span class="n">iterable_corpus</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">iterable_labels</span> <span class="o">=</span> <span class="n">iterable_labels</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label2idx</span> <span class="o">=</span> <span class="p">{</span><span class="n">label</span><span class="p">:</span> <span class="n">idx</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">labels</span><span class="p">)}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label2idx</span><span class="p">[</span><span class="s2">&quot;B-UNK&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label2idx</span><span class="p">[</span><span class="s2">&quot;I-UNK&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span>
+            <span class="s2">&quot;roberta-base&quot;</span><span class="p">,</span> <span class="n">add_prefix_space</span><span class="o">=</span><span class="kc">True</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lm</span> <span class="o">=</span> <span class="n">RobertaForMaskedLM</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="n">lm_path</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_length</span> <span class="o">=</span> <span class="n">max_length</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="n">device</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">do_augment</span> <span class="o">=</span> <span class="n">do_augment</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">align_labels</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">iterable_labels</span><span class="p">[</span><span class="n">idx</span><span class="p">]),</span>
+            <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">int64</span><span class="p">,</span>
+            <span class="n">device</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">device</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">do_augment</span><span class="p">:</span>
+            <span class="n">x_augmented</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">augmented_tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">x_augmented</span><span class="p">,</span> <span class="n">y</span>
+        <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float</span><span class="p">),</span> <span class="n">y</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">iterable_corpus</span><span class="p">)</span>
+
+<div class="viewcode-block" id="PartialNERDataset.tokenize"><a class="viewcode-back" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.tokenize">[docs]</a>    <span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Tokenizes a segmented text from ``self.iterable_corpus`` at a given</span>
+<span class="sd">        index.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        idx: int</span>
+<span class="sd">            Index of the segmented text to tokenize.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        inputs: transformers.BatchEncoding</span>
+<span class="sd">            Tokenized text.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">inputs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">iterable_corpus</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span>
+            <span class="n">is_split_into_words</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">max_length</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_length</span><span class="p">,</span>
+            <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;max_length&quot;</span><span class="p">,</span>
+            <span class="n">truncation</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">return_tensors</span><span class="o">=</span><span class="s2">&quot;pt&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">inputs</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">device</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="PartialNERDataset.augmented_tokenize"><a class="viewcode-back" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.augmented_tokenize">[docs]</a>    <span class="k">def</span> <span class="nf">augmented_tokenize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">:</span> <span class="n">transformers</span><span class="o">.</span><span class="n">BatchEncoding</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Randomly replaces 15% of the tokens in the input sentence with other</span>
+<span class="sd">        tokens sampled from ``self.lm``&#39;s top 3 output.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        inputs: transformers.BatchEncoding</span>
+<span class="sd">            Original tokenized text</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        augmented_inputs: transformers.BatchEncoding</span>
+<span class="sd">            Augmented tokenized text.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">augmented_inputs</span> <span class="o">=</span> <span class="n">inputs</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">augmented_inputs</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">inputs</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
+        <span class="n">max_idx</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">inputs</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">pad_token_id</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">-</span> <span class="mi">2</span>
+        <span class="n">nb_token_to_mask</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">.15</span> <span class="o">*</span> <span class="n">max_idx</span><span class="p">))</span>
+        <span class="n">masked_ids</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">nb_token_to_mask</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">masked_ids</span><span class="p">:</span>
+            <span class="n">augmented_inputs</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">,</span> <span class="n">idx</span><span class="p">]</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">mask_token_id</span>
+        <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+            <span class="n">logits</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">lm</span><span class="p">(</span><span class="o">**</span><span class="n">augmented_inputs</span><span class="p">)[</span><span class="s2">&quot;logits&quot;</span><span class="p">]</span>
+        <span class="n">top_k_tokens</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">topk</span><span class="p">(</span><span class="n">logits</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">masked_ids</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">indices</span>
+        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">masked_ids</span><span class="p">):</span>
+            <span class="n">replacement_id</span> <span class="o">=</span> <span class="n">top_k_tokens</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+            <span class="n">augmented_inputs</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">,</span> <span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="n">replacement_id</span>
+        <span class="k">return</span> <span class="n">augmented_inputs</span></div>
+
+<div class="viewcode-block" id="PartialNERDataset.align_labels"><a class="viewcode-back" href="../../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.align_labels">[docs]</a>    <span class="k">def</span> <span class="nf">align_labels</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">:</span> <span class="n">transformers</span><span class="o">.</span><span class="n">BatchEncoding</span><span class="p">,</span> <span class="n">labels</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Align the sub-words with labels. All the sub-words are given the</span>
+<span class="sd">        the label of the original word. The padding token are given an &quot;O&quot;</span>
+<span class="sd">        label.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        inputs: transformers.BatchEncoding</span>
+<span class="sd">            Tokenized text.</span>
+<span class="sd">        labels: List[str]</span>
+<span class="sd">            Word-level labels of the original text.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        label_ids: List[int]</span>
+<span class="sd">            Token-level labels of the tokenized text.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">word_ids</span> <span class="o">=</span> <span class="n">inputs</span><span class="o">.</span><span class="n">word_ids</span><span class="p">()</span>    <span class="c1"># type: ignore</span>
+        <span class="n">label_ids</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">word_idx</span> <span class="ow">in</span> <span class="n">word_ids</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">word_idx</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">label_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">label2idx</span><span class="p">[</span><span class="s2">&quot;O&quot;</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">label_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">label2idx</span><span class="p">[</span><span class="n">labels</span><span class="p">[</span><span class="n">word_idx</span><span class="p">]])</span>
+        <span class="k">return</span> <span class="n">label_ids</span></div></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Madjakul.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>miner.trainers.partial_ner_trainer &mdash; MiNER  documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            MiNER
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html#install">Install</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quickstart.html">How to Use MiNER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../quickstart.html#running-with-provided-datasets">Running with Provided Datasets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../quickstart.html#running-with-custom-datasets">Running with Custom Datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#explanation">Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../overview.html#benchmark">Benchmark</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/modules/transformer.html">Transformer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/modules/transformer.html#miner.modules.transformer.RoBERTa"><code class="docutils literal notranslate"><span class="pre">RoBERTa</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/transformer.html#miner.modules.transformer.RoBERTa.model"><code class="docutils literal notranslate"><span class="pre">RoBERTa.model</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/modules/base_crf.html">BaseCRF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF"><code class="docutils literal notranslate"><span class="pre">BaseCRF</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.num_tags"><code class="docutils literal notranslate"><span class="pre">BaseCRF.num_tags</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.start_transitions"><code class="docutils literal notranslate"><span class="pre">BaseCRF.start_transitions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.device"><code class="docutils literal notranslate"><span class="pre">BaseCRF.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.end_transitions"><code class="docutils literal notranslate"><span class="pre">BaseCRF.end_transitions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.transitions"><code class="docutils literal notranslate"><span class="pre">BaseCRF.transitions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.forward"><code class="docutils literal notranslate"><span class="pre">BaseCRF.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.marginal_probabilities"><code class="docutils literal notranslate"><span class="pre">BaseCRF.marginal_probabilities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/base_crf.html#miner.modules.base_crf.BaseCRF.viterbi_decode"><code class="docutils literal notranslate"><span class="pre">BaseCRF.viterbi_decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/modules/partial_crf.html">PartialCRF</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/modules/partial_crf.html#miner.modules.partial_crf.PartialCRF"><code class="docutils literal notranslate"><span class="pre">PartialCRF</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_crf.html#miner.modules.partial_crf.PartialCRF.q"><code class="docutils literal notranslate"><span class="pre">PartialCRF.q</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_crf.html#miner.modules.partial_crf.PartialCRF.forward"><code class="docutils literal notranslate"><span class="pre">PartialCRF.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/modules/partial_ner.html">PartialNER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER"><code class="docutils literal notranslate"><span class="pre">PartialNER</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.device"><code class="docutils literal notranslate"><span class="pre">PartialNER.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.transformer"><code class="docutils literal notranslate"><span class="pre">PartialNER.transformer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.linear_dropout"><code class="docutils literal notranslate"><span class="pre">PartialNER.linear_dropout</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.fc"><code class="docutils literal notranslate"><span class="pre">PartialNER.fc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.crf"><code class="docutils literal notranslate"><span class="pre">PartialNER.crf</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.forward"><code class="docutils literal notranslate"><span class="pre">PartialNER.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.marginal_probabilities"><code class="docutils literal notranslate"><span class="pre">PartialNER.marginal_probabilities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/partial_ner.html#miner.modules.partial_ner.PartialNER.viterbi_decode"><code class="docutils literal notranslate"><span class="pre">PartialNER.viterbi_decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/modules/smooth_ner.html">SmoothNER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER"><code class="docutils literal notranslate"><span class="pre">SmoothNER</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.device"><code class="docutils literal notranslate"><span class="pre">SmoothNER.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.transformer"><code class="docutils literal notranslate"><span class="pre">SmoothNER.transformer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.linear_dropout"><code class="docutils literal notranslate"><span class="pre">SmoothNER.linear_dropout</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.fc"><code class="docutils literal notranslate"><span class="pre">SmoothNER.fc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.kl_loss"><code class="docutils literal notranslate"><span class="pre">SmoothNER.kl_loss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.decode"><code class="docutils literal notranslate"><span class="pre">SmoothNER.decode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.forward"><code class="docutils literal notranslate"><span class="pre">SmoothNER.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/modules/smooth_ner.html#miner.modules.smooth_ner.SmoothNER.get_proba"><code class="docutils literal notranslate"><span class="pre">SmoothNER.get_proba()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/trainers/transformer_trainer.html">TransformerTrainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer.training_args"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer.training_args</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer.trainer"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer.trainer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/transformer_trainer.html#miner.trainers.transformer_trainer.TransformerTrainer.train"><code class="docutils literal notranslate"><span class="pre">TransformerTrainer.train()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html">PartialNERTrainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.ner"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.ner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.epochs"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.epochs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.device"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.ner_path"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.ner_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.idx2label"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.idx2label</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.loss_fn"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.loss_fn</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.clip"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.clip</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.sam"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.sam</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.optimizer"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.optimizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.lrs"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.lrs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.train"><code class="docutils literal notranslate"><span class="pre">PartialNERTrainer.train()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html">SmoothNERTrainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.best_train_loss"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.best_train_loss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.best_f1"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.best_f1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.smooth_ner"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.smooth_ner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.max_length"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.idx2label"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.idx2label</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.ner_path"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.ner_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.epochs"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.epochs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.accumulation_steps"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.accumulation_steps</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.device"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.optimizer"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.optimizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.scheduler"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.scheduler</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.save_model"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.save_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.train"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/trainers/smooth_ner_trainer.html#miner.trainers.smooth_ner_trainer.SmoothNERTrainer.wandb_log"><code class="docutils literal notranslate"><span class="pre">SmoothNERTrainer.wandb_log()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/utils/data/preprocessing.html">Preprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/data/preprocessing.html#miner.utils.data.preprocessing.load_gazetteers"><code class="docutils literal notranslate"><span class="pre">load_gazetteers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/data/preprocessing.html#miner.utils.data.preprocessing.read_conll"><code class="docutils literal notranslate"><span class="pre">read_conll()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html">TransformerDataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset"><code class="docutils literal notranslate"><span class="pre">TransformerDataset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.mlm_ds"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.mlm_ds</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.max_length"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.train_corpus"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.train_corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.valid_corpus"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.valid_corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.tokenizer"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.tokenizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.data_collator"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.data_collator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/transformer_dataset.html#miner.utils.data.transformer_dataset.TransformerDataset.add_vocab"><code class="docutils literal notranslate"><span class="pre">TransformerDataset.add_vocab()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html">PartialNERDataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.device"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.do_augment"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.do_augment</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.max_length"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.iterable_corpus"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.iterable_corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.iterable_labels"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.iterable_labels</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.label2idx"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.label2idx</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.tokenizer"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.tokenizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.lm"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.lm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.align_labels"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.align_labels()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.augmented_tokenize"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.augmented_tokenize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/partial_ner_dataset.html#miner.utils.data.partial_ner_dataset.PartialNERDataset.tokenize"><code class="docutils literal notranslate"><span class="pre">PartialNERDataset.tokenize()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html">SmoothNERDataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.partial_ner"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.partial_ner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.corpus"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.corpus</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.max_length"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.max_length</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.device"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.device</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.labels"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.labels</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.tokenizer"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.tokenizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.lm"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.lm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.augmented_tokenize"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.augmented_tokenize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.enhanced_marginal_probabilities"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.enhanced_marginal_probabilities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/data/smooth_ner_dataset.html#miner.utils.data.smooth_ner_dataset.SmoothNERDataset.tokenize"><code class="docutils literal notranslate"><span class="pre">SmoothNERDataset.tokenize()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/utils/crf_utils.html">CRF Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/crf_utils.html#miner.utils.crf_utils.create_possible_tag_masks"><code class="docutils literal notranslate"><span class="pre">create_possible_tag_masks()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/crf_utils.html#miner.utils.crf_utils.custom_argmax"><code class="docutils literal notranslate"><span class="pre">custom_argmax()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../miner/utils/ner_utils.html">NER Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler"><code class="docutils literal notranslate"><span class="pre">LRScheduler</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler.optimizer"><code class="docutils literal notranslate"><span class="pre">LRScheduler.optimizer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler.patience"><code class="docutils literal notranslate"><span class="pre">LRScheduler.patience</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../miner/utils/ner_utils.html#miner.utils.ner_utils.LRScheduler.lr_scheduler"><code class="docutils literal notranslate"><span class="pre">LRScheduler.lr_scheduler</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../miner/utils/ner_utils.html#miner.utils.ner_utils.align_labels"><code class="docutils literal notranslate"><span class="pre">align_labels()</span></code></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">MIT License</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../license.html#copyright-c-2023-madjakul">Copyright (c) 2023 Madjakul</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">MiNER</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">miner.trainers.partial_ner_trainer</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for miner.trainers.partial_ner_trainer</h1><div class="highlight"><pre>
+<span></span><span class="c1"># miner/trainers/partial_ner_trainer.py</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Literal</span>
+
+<span class="kn">import</span> <span class="nn">wandb</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">DataLoader</span>
+<span class="kn">from</span> <span class="nn">torch.optim</span> <span class="kn">import</span> <span class="n">SGD</span>
+<span class="kn">from</span> <span class="nn">seqeval.scheme</span> <span class="kn">import</span> <span class="n">IOB2</span>
+<span class="kn">from</span> <span class="nn">seqeval.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span>
+
+<span class="kn">from</span> <span class="nn">miner.optimizer</span> <span class="kn">import</span> <span class="n">SAM</span>
+<span class="kn">from</span> <span class="nn">miner.modules</span> <span class="kn">import</span> <span class="n">PartialNER</span>
+<span class="kn">from</span> <span class="nn">miner.utils</span> <span class="kn">import</span> <span class="n">LRScheduler</span>
+
+
+<div class="viewcode-block" id="PartialNERTrainer"><a class="viewcode-back" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer">[docs]</a><span class="k">class</span> <span class="nc">PartialNERTrainer</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Partial Named entity recognizer&#39;s trainer. Train and validate on given</span>
+<span class="sd">    train and validation datasets. Learning is automatically shrunk after each</span>
+<span class="sd">    epoch by 40%. The model with the greatest validation F-score is saved at</span>
+<span class="sd">    the end of each epoch.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ner: miner.modules.PartialNER</span>
+<span class="sd">        Partial Named entity recognizer module to train.</span>
+<span class="sd">    lr: float</span>
+<span class="sd">        Initial learning rate.</span>
+<span class="sd">    momentum: float</span>
+<span class="sd">        Gradient momentum.</span>
+<span class="sd">    epochs: int</span>
+<span class="sd">        Maximum number of training epochs.</span>
+<span class="sd">    device: str, {&quot;cpu&quot;, &quot;cuda&quot;}</span>
+<span class="sd">        Wether or not to use the GPU for computation.</span>
+<span class="sd">    ner_path: str</span>
+<span class="sd">        Path to the lcoal file containing the trained model</span>
+<span class="sd">    idx2label: Dict[int, str]</span>
+<span class="sd">        Maps the unique integer ids to their string label.</span>
+<span class="sd">    loss_fn: str, optional</span>
+<span class="sd">        The loss function to choose between {&quot;nll&quot;, &quot;c_nll&quot;, &quot;gce&quot;}.</span>
+<span class="sd">    clip: float</span>
+<span class="sd">        Gradient clipping norm value.</span>
+<span class="sd">    sam: bool</span>
+<span class="sd">        If you want to use Google&#39;s Sharpness Aware Minimization [1]_ or not.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ner: miner.modules.PartialNER</span>
+<span class="sd">        Partial Named entity recognizer module to train.</span>
+<span class="sd">    epochs: int</span>
+<span class="sd">        Maximum number of training epochs.</span>
+<span class="sd">    device: str</span>
+<span class="sd">        Wether or not to use the GPU for computation.</span>
+<span class="sd">    ner_path: str</span>
+<span class="sd">        Path to the lcoal file containing the trained model</span>
+<span class="sd">    idx2label: Dict[int, str]</span>
+<span class="sd">        Maps the unique integer ids to their string label.</span>
+<span class="sd">    loss_fn: str, default=&quot;nll&quot;</span>
+<span class="sd">        The loss function to choose between {&quot;nll&quot;, &quot;c_nll&quot;, &quot;gce&quot;}</span>
+<span class="sd">    clip: float</span>
+<span class="sd">        Gradient clipping norm value.</span>
+<span class="sd">    sam: bool</span>
+<span class="sd">        If you want to use Google&#39;s Sharpness Aware Minimization [1]_ or not.</span>
+<span class="sd">    optimizer: Union[SAM, SGP]</span>
+<span class="sd">        Optimizing algorithm. If ``sam`` is set to true, ``self.optimizer``</span>
+<span class="sd">        will be an instance of ``SAM``.</span>
+<span class="sd">    lrs: miner.utils.LRScheduler</span>
+<span class="sd">        Learning rate scheduler.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ..  [1] Foret, P., Kleiner, A., Mobahi, H., &amp; Neyshabur, B. (2020).</span>
+<span class="sd">            Sharpness-aware minimization for efficiently improving</span>
+<span class="sd">            generalization. arXiv preprint arXiv:2010.01412.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">ner</span><span class="p">:</span> <span class="n">PartialNER</span><span class="p">,</span> <span class="n">lr</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">epochs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">device</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;cpu&quot;</span><span class="p">,</span> <span class="s2">&quot;cuda&quot;</span><span class="p">],</span> <span class="n">ner_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">momentum</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">sam</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">idx2label</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span> <span class="n">clip</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
+        <span class="n">loss_fn</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sam</span> <span class="o">=</span> <span class="n">sam</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">=</span> <span class="n">ner_path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">device</span> <span class="o">=</span> <span class="n">device</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ner</span> <span class="o">=</span> <span class="n">ner</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">epochs</span> <span class="o">=</span> <span class="n">epochs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clip</span> <span class="o">=</span> <span class="n">clip</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">idx2label</span> <span class="o">=</span> <span class="n">idx2label</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">loss_fn</span> <span class="o">=</span> <span class="s2">&quot;nll&quot;</span> <span class="k">if</span> <span class="n">loss_fn</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">loss_fn</span>
+        <span class="k">if</span> <span class="n">sam</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">=</span> <span class="n">SAM</span><span class="p">(</span>
+                <span class="n">ner</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span>
+                <span class="n">SGD</span><span class="p">,</span>
+                <span class="n">lr</span><span class="o">=</span><span class="n">lr</span><span class="p">,</span>
+                <span class="n">momentum</span><span class="o">=</span><span class="n">momentum</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span> <span class="o">=</span> <span class="n">SGD</span><span class="p">(</span>
+                <span class="n">ner</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span>
+                <span class="n">lr</span><span class="o">=</span><span class="n">lr</span><span class="p">,</span>
+                <span class="n">momentum</span><span class="o">=</span><span class="n">momentum</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lrs</span> <span class="o">=</span> <span class="n">LRScheduler</span><span class="p">(</span>
+            <span class="n">optimizer</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="p">,</span>
+            <span class="n">patience</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">factor</span><span class="o">=</span><span class="mf">0.6</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">train_dataloader</span><span class="p">:</span> <span class="n">DataLoader</span><span class="p">):</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Training...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+        <span class="n">losses</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">x_augmented</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">train_dataloader</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">val</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+            <span class="n">x_augmented</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">val</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">x_augmented</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+            <span class="n">loss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x_augmented</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">loss_fn</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">loss_fn</span><span class="p">)</span>
+            <span class="n">losses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">())</span>
+            <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">sam</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">first_step</span><span class="p">(</span><span class="n">zero_grad</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                <span class="n">loss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x_augmented</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">loss_fn</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">loss_fn</span><span class="p">)</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">clip</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">nn</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">clip_grad_norm_</span><span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">clip</span>
+                    <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">second_step</span><span class="p">(</span><span class="n">zero_grad</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">losses</span><span class="p">)</span>
+
+    <span class="nd">@torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">_validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val_dataloader</span><span class="p">:</span> <span class="n">DataLoader</span><span class="p">):</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Validating...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+        <span class="n">y_true</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">val_dataloader</span><span class="p">):</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">val</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="o">.</span><span class="n">viterbi_decode</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="n">y_pred</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+            <span class="n">y_true</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">y_pred</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+                <span class="n">y_pred</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">idx2label</span><span class="p">[</span><span class="n">y_pred</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]]</span>
+                <span class="n">y_true</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">idx2label</span><span class="p">[</span><span class="n">y_true</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]]</span>
+            <span class="n">y_true</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_true</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="nb">len</span><span class="p">(</span><span class="n">y_pred</span><span class="p">[</span><span class="n">i</span><span class="p">])]</span>
+        <span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;f1&quot;</span><span class="p">:</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;strict&quot;</span><span class="p">,</span> <span class="n">scheme</span><span class="o">=</span><span class="n">IOB2</span><span class="p">),</span>
+            <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;strict&quot;</span><span class="p">,</span> <span class="n">scheme</span><span class="o">=</span><span class="n">IOB2</span><span class="p">),</span>
+            <span class="s2">&quot;r&quot;</span><span class="p">:</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;strict&quot;</span><span class="p">,</span> <span class="n">scheme</span><span class="o">=</span><span class="n">IOB2</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">metrics</span>
+
+<div class="viewcode-block" id="PartialNERTrainer.train"><a class="viewcode-back" href="../../../miner/trainers/partial_ner_trainer.html#miner.trainers.partial_ner_trainer.PartialNERTrainer.train">[docs]</a>    <span class="k">def</span> <span class="nf">train</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">train_dataloader</span><span class="p">:</span> <span class="n">DataLoader</span><span class="p">,</span>
+        <span class="n">val_dataloader</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">DataLoader</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">wandb_</span><span class="p">:</span> <span class="nb">bool</span><span class="o">=</span><span class="kc">False</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Trains the partial named entity recognizer and saves the one with</span>
+<span class="sd">        highest validation F-score or the last one at the end of each epoch.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        train_dataloader: torch.utils.data.DataLoader</span>
+<span class="sd">            Iterable object used for training.</span>
+<span class="sd">        val_dataloader: torch.utils.data.DataLoader, optional</span>
+<span class="sd">            Iterable object used for validation.</span>
+<span class="sd">        wandb_: bool, default=False</span>
+<span class="sd">            If you want to log the training data on **Weigh and Biases** or</span>
+<span class="sd">            not.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">best_loss</span> <span class="o">=</span> <span class="mf">1e100</span>
+        <span class="n">train_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">best_f1</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">f1</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">epochs</span><span class="p">)):</span>
+                <span class="n">lr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">lrs</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">param_groups</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;lr&quot;</span><span class="p">]</span>
+                <span class="n">train_loss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fit</span><span class="p">(</span><span class="n">train_dataloader</span><span class="o">=</span><span class="n">train_dataloader</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">val_dataloader</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">metrics</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate</span><span class="p">(</span><span class="n">val_dataloader</span><span class="p">)</span>
+                    <span class="n">f1</span> <span class="o">=</span> <span class="n">metrics</span><span class="p">[</span><span class="s2">&quot;f1&quot;</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="n">wandb_</span><span class="p">:</span>
+                        <span class="n">logs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;lr&quot;</span><span class="p">:</span> <span class="n">lr</span><span class="p">,</span> <span class="s2">&quot;train_loss&quot;</span><span class="p">:</span> <span class="n">train_loss</span><span class="p">,</span> <span class="o">**</span><span class="n">metrics</span><span class="p">}</span>
+                        <span class="n">wandb</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">logs</span><span class="p">)</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Epoch: </span><span class="si">{</span><span class="n">epoch</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;LR: </span><span class="si">{</span><span class="n">lr</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;Train Loss: </span><span class="si">{</span><span class="n">train_loss</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;F1: </span><span class="si">{</span><span class="n">f1</span><span class="si">}</span><span class="s2">&quot;</span>
+                <span class="p">)</span>
+                <span class="k">if</span> <span class="n">val_dataloader</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">f1</span> <span class="o">&gt;=</span> <span class="n">best_f1</span><span class="p">:</span>
+                    <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">({</span>
+                        <span class="s2">&quot;model_state_dict&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
+                        <span class="s2">&quot;optimizer_state_dict&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
+                        <span class="s2">&quot;loss&quot;</span><span class="p">:</span> <span class="n">train_loss</span><span class="p">,</span>
+                    <span class="p">},</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+                    <span class="n">best_f1</span> <span class="o">=</span> <span class="n">f1</span>
+                <span class="k">elif</span> <span class="n">train_loss</span> <span class="o">&lt;=</span> <span class="n">best_loss</span><span class="p">:</span>
+                    <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">({</span>
+                        <span class="s2">&quot;model_state_dict&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
+                        <span class="s2">&quot;optimizer_state_dict&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
+                        <span class="s2">&quot;loss&quot;</span><span class="p">:</span> <span class="n">train_loss</span><span class="p">,</span>
+                    <span class="p">},</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+                    <span class="n">best_loss</span> <span class="o">=</span> <span class="n">train_loss</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">lrs</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Exiting from training early.&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">train_loss</span> <span class="o">&lt;=</span> <span class="n">best_loss</span><span class="p">:</span>
+                <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">({</span>
+                    <span class="s2">&quot;model_state_dict&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">ner</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
+                    <span class="s2">&quot;optimizer_state_dict&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
+                    <span class="s2">&quot;loss&quot;</span><span class="p">:</span> <span class="n">train_loss</span><span class="p">,</span>
+                <span class="p">},</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span></div></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Madjakul.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

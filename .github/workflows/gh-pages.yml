@@ -5,7 +5,7 @@ name: 'Build and Deploy GitHub Pages'
 on:
   push:
     branches:
-      - master # Event only triggered when pushing on the master branch
+      - main # Event only triggered when pushing on the master branch
 jobs:
   docs:
     runs-on: ubuntu-latest
